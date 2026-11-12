@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Патихаус — дома с баней и чаном для праздников в Нижнем Новгороде</title><meta property="og:type" content="website"><meta property="og:title" content="Патихаус — дома с баней и чаном для праздников в Нижнем Новгороде"><meta property="og:description" content="Патихаус: загородные дома с баней, чаном и беседками в черте Нижнего Новгорода. Дни рождения, корпоративы, отдых компанией. СНТ Дружба-2, 15. Ежедневно 10:00–24:00."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/patikhaus/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Патихаус: загородные дома с баней, чаном и беседками в черте Нижнего Новгорода. Дни рождения, корпоративы, отдых компанией. СНТ Дружба-2, 15. Ежедневно 10:00–24:00.">
+<meta name="theme-color" content="#1f3a2d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --cream:#f5eee2;--paper:#fbf7f0;--ink:#1b2620;--muted:#55605a;
+  --pine:#1f3a2d;--pine2:#2c5240;--moss:#7f9a6c;
+  --copper:#c26a32;--copper-d:#94461b;--glow:#f4c45a;--berry:#d9476a;
+  --line:rgba(27,38,32,.14);--r:22px;
+  --h:'Unbounded',system-ui,sans-serif;--b:'Onest',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.55 var(--b);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--copper);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:1360px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.demo{background:var(--ink);color:#e9e2d4;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+/* header */
+.hd{position:sticky;top:0;z-index:30;background:rgba(245,238,226,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:900 19px/1 var(--h);letter-spacing:-.02em}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--pine);display:grid;place-items:center}
+.nav{display:flex;gap:26px;margin-left:auto;font-weight:500;font-size:15px}
+.nav a{text-decoration:none;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--copper);transition:right .3s}
+.nav a:hover::after{right:0}
+.hd-tel{font-weight:700;text-decoration:none;white-space:nowrap;font-size:15px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;border:0;text-decoration:none;font-weight:600;font-size:16px;transition:transform .2s,background .2s,box-shadow .2s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-c{background:var(--copper-d);color:#fff;box-shadow:0 10px 24px -10px rgba(148,70,27,.7)}
+.btn-c:hover{background:#7d3a15;transform:translateY(-2px)}
+.btn-g{background:var(--pine);color:#fff}
+.btn-g:hover{background:var(--pine2);transform:translateY(-2px)}
+.btn-o{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn-o:hover{background:var(--ink);color:var(--cream)}
+.btn svg{width:20px;height:20px;flex:none}
+/* hero */
+.hero{padding:clamp(28px,4vw,56px) 0 clamp(40px,6vw,80px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(24px,4vw,64px);align-items:center}
+.kick{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--copper-d)}
+.kick::before{content:"";width:28px;height:2px;background:currentColor}
+h1{font:900 clamp(42px,7vw,108px)/.92 var(--h);letter-spacing:-.045em;margin:16px 0 18px}
+h1 span{display:block;color:var(--copper-d);font-size:.56em;letter-spacing:-.035em;line-height:1.02;margin-top:.12em}
+.lead{font-size:clamp(18px,1.5vw,22px);line-height:1.45;max-width:34ch;color:#2c3731}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin:20px 0 26px;font-size:15px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--ink)}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#9aa39d}
+[data-status].is-open::before{background:#2f9a5a;box-shadow:0 0 0 4px rgba(47,154,90,.18)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.sub-ctas{display:flex;gap:18px;margin-top:16px;font-weight:600;font-size:15px}
+.sub-ctas a{text-decoration:none;border-bottom:1.5px solid var(--copper);padding-bottom:2px}
+.scene{position:relative;border-radius:32px;overflow:hidden;background:var(--pine);aspect-ratio:1/0.96;box-shadow:0 40px 80px -40px rgba(31,58,45,.6)}
+.scene svg{width:100%;height:100%}
+.badge{position:absolute;left:20px;bottom:20px;background:var(--paper);border-radius:18px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 14px 30px -14px rgba(0,0,0,.5)}
+.badge strong{font:900 30px/1 var(--h);letter-spacing:-.03em}
+.badge small{display:block;font-size:13px;line-height:1.3;color:var(--muted)}
+.stars{color:var(--copper);letter-spacing:2px;font-size:13px}
+.steam path{animation:steam 5s ease-in-out infinite;transform-origin:center bottom;opacity:.0}
+.steam path:nth-child(2){animation-delay:1.6s}.steam path:nth-child(3){animation-delay:3.2s}
+@keyframes steam{0%{opacity:0;transform:translateY(14px) scaleY(.8)}30%{opacity:.75}100%{opacity:0;transform:translateY(-40px) scaleY(1.2)}}
+.bulb{animation:tw 2.4s ease-in-out infinite}
+.bulb:nth-child(3n){animation-delay:.8s}.bulb:nth-child(3n+1){animation-delay:1.6s}
+@keyframes tw{50%{opacity:.45}}
+.bunny{transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.scene:hover .bunny{transform:translate(-14px,-10px)}
+/* sections */
+section{scroll-margin-top:72px}
+.sec{padding:clamp(64px,9vw,128px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(32px,5vw,60px)}
+h2{font:700 clamp(30px,4.2vw,60px)/1.02 var(--h);letter-spacing:-.035em}
+h2 em{font-style:normal;color:var(--copper-d)}
+.sh p{color:var(--muted);max-width:46ch;font-size:18px}
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.cell{border-radius:var(--r);padding:clamp(22px,2.4vw,34px);background:var(--paper);border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.cell:hover{transform:translateY(-4px);box-shadow:0 24px 40px -28px rgba(27,38,32,.5)}
+.cell h3{font:700 clamp(20px,1.8vw,26px)/1.15 var(--h);letter-spacing:-.02em;margin-bottom:10px}
+.cell p{color:var(--muted);font-size:16px;max-width:38ch}
+.cell .ill{position:absolute;right:-6px;bottom:-6px;width:46%;max-width:240px;opacity:.95}
+.c-house{grid-column:span 7;min-height:360px;background:var(--pine);color:#f4ecdc;border:0}
+.c-house p{color:#c9d3c6}
+.c-house .num{font:900 clamp(80px,10vw,150px)/.8 var(--h);color:var(--glow);letter-spacing:-.06em;margin-bottom:16px}
+.c-bath{grid-column:span 5;background:#ead9c4}
+.c-chan{grid-column:span 5;background:var(--copper-d);color:#fff;border:0}
+.c-chan p{color:#f6dcc8}
+.c-bbq{grid-column:span 4}
+.c-kar{grid-column:span 3;background:var(--berry);color:#fff;border:0}
+.c-kar p{color:#ffe3ea}
+.c-bath,.c-chan,.c-bbq,.c-kar{min-height:260px}
+.c-bath p,.c-chan p,.c-bbq p,.c-kar p{max-width:60%}
+.c-kar p{max-width:none}
+.extras{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;padding-top:8px}
+.tag{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:transparent;border:1px solid var(--line);font-size:15px;font-weight:500}
+.tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--moss)}
+/* occasions strip */
+.occ{background:var(--pine);color:#f4ecdc;padding:clamp(64px,8vw,110px) 0;overflow:hidden}
+.occ h2 em{color:var(--glow)}
+.occ .sh p{color:#c3cdc0}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:clamp(16px,4vw,48px);padding:4px clamp(16px,4vw,48px) 20px;scrollbar-width:none;max-width:1360px;margin:0 auto}
+.strip::-webkit-scrollbar{display:none}
+.oc{flex:0 0 clamp(260px,30vw,380px);scroll-snap-align:start;border-radius:26px;padding:28px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;background:var(--pine2);transition:background .3s,transform .3s}
+.oc:hover{background:#355f4a;transform:rotate(-1deg)}
+.oc .n{font:500 14px/1 var(--h);color:var(--glow);letter-spacing:.08em}
+.oc h3{font:700 clamp(24px,2.2vw,32px)/1.08 var(--h);letter-spacing:-.025em;margin:auto 0 12px}
+.oc p{color:#c9d3c6;font-size:16px}
+.oc button{margin-top:22px;align-self:flex-start;background:none;border:0;color:var(--glow);font-weight:600;min-height:44px;display:inline-flex;align-items:center;gap:8px;border-bottom:1.5px solid var(--glow)}
+.oc:nth-child(2){background:#e8d6bf;color:var(--ink)}.oc:nth-child(2) p{color:#5b5446}.oc:nth-child(2) .n,.oc:nth-child(2) button{color:var(--copper-d);border-color:var(--copper-d)}
+.oc:nth-child(4){background:var(--copper-d)}.oc:nth-child(4) p{color:#f6dcc8}
+.strip-hint{max-width:1360px;margin:0 auto;padding:0 clamp(16px,4vw,48px);display:flex;gap:10px;justify-content:flex-end}
+.arr{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(244,236,220,.4);background:none;color:#f4ecdc;display:grid;place-items:center;transition:background .2s}
+.arr:hover{background:rgba(244,236,220,.12)}
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.score{position:sticky;top:96px}
+.score .big{font:900 clamp(96px,14vw,200px)/.82 var(--h);letter-spacing:-.07em;color:var(--pine)}
+.score .big sup{font-size:.28em;vertical-align:top;color:var(--copper-d);letter-spacing:0;margin-left:6px}
+.score p{margin-top:18px;color:var(--muted);max-width:30ch}
+.score a{font-weight:600;color:var(--ink)}
+.pts{list-style:none;counter-reset:p}
+.pts li{counter-increment:p;display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid var(--line)}
+.pts li:last-child{border-bottom:1px solid var(--line)}
+.pts li::before{content:"0" counter(p);font:500 15px/1.9 var(--h);color:var(--copper-d)}
+.pts h3{font:700 clamp(22px,2.2vw,30px)/1.15 var(--h);letter-spacing:-.025em;margin-bottom:10px}
+.pts p{color:var(--muted);max-width:52ch}
+/* quiz */
+.quiz-sec{background:linear-gradient(180deg,var(--cream),#efe3d1)}
+.quiz{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(20px,3vw,40px);align-items:start}
+.qf{background:var(--paper);border-radius:28px;padding:clamp(20px,3vw,40px);border:1px solid var(--line)}
+.q{padding:22px 0;border-bottom:1px dashed var(--line)}
+.q:first-child{padding-top:0}.q:last-child{border:0;padding-bottom:0}
+.q legend,.q .ql{font:700 17px/1.3 var(--h);letter-spacing:-.01em;margin-bottom:14px;display:flex;gap:12px;align-items:baseline}
+.q legend b,.q .ql b{font:500 13px/1 var(--h);color:var(--copper-d)}
+fieldset{border:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-weight:500;font-size:15px;transition:all .2s}
+.chip:hover{border-color:var(--pine)}
+.chip[aria-pressed="true"]{background:var(--pine);border-color:var(--pine);color:#fff}
+.row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.date{min-height:48px;border-radius:14px;border:1.5px solid var(--line);background:#fff;padding:0 14px;font:500 16px var(--b);color:var(--ink)}
+.step{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;background:#fff}
+.step button{width:48px;height:48px;border:0;background:none;font-size:22px;border-radius:50%}
+.step button:hover{background:var(--cream)}
+.step output{min-width:56px;text-align:center;font:700 22px var(--h)}
+.ticket{position:sticky;top:92px;background:var(--pine);color:#f4ecdc;border-radius:28px;padding:30px 28px;overflow:hidden}
+.ticket::before,.ticket::after{content:"";position:absolute;width:28px;height:28px;border-radius:50%;background:#f0e5d4;top:190px}
+.ticket::before{left:-14px}.ticket::after{right:-14px}
+.ticket .tt{font:500 13px/1 var(--h);letter-spacing:.12em;text-transform:uppercase;color:var(--glow)}
+.ticket h3{font:900 30px/1 var(--h);letter-spacing:-.03em;margin:14px 0 22px;min-height:60px}
+.ticket dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 16px;font-size:15px;border-top:1.5px dashed rgba(244,236,220,.3);padding-top:22px}
+.ticket dt{color:#a9b8a9}.ticket dd{font-weight:600}
+.ticket .go{display:grid;gap:10px;margin-top:26px}
+.ticket .btn{width:100%}
+.btn-y{background:var(--glow);color:var(--ink)}.btn-y:hover{background:#ffd676;transform:translateY(-2px)}
+.btn-l{background:transparent;color:#f4ecdc;box-shadow:inset 0 0 0 1.5px rgba(244,236,220,.45)}.btn-l:hover{background:rgba(244,236,220,.1)}
+.note{font-size:13px;color:#a9b8a9;margin-top:14px}
+.hop{position:absolute;right:22px;top:22px;width:44px;transition:transform .4s}
+.ticket.done .hop{animation:hop .7s ease 2}
+@keyframes hop{40%{transform:translateY(-16px)}}
+/* how */
+.how{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;border-top:1.5px solid var(--ink)}
+.how li{list-style:none;counter-increment:s;padding:26px 22px 0 0;position:relative}
+.how li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--cream);font:700 16px var(--h);margin:-49px 0 22px}
+.how h3{font:700 19px/1.2 var(--h);margin-bottom:8px;letter-spacing:-.015em}
+.how p{color:var(--muted);font-size:15px}
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px}
+.ci{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;gap:22px}
+.ci .lbl{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci .v{font:700 clamp(19px,1.7vw,24px)/1.25 var(--h);letter-spacing:-.015em}
+.ci .v a{text-decoration:none}
+.ci .v a:hover{color:var(--copper-d)}
+.soc{display:flex;flex-wrap:wrap;gap:10px}
+.soc a{min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);display:inline-flex;align-items:center;font-weight:600;text-decoration:none;font-size:15px;transition:all .2s}
+.soc a:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.map{border-radius:28px;overflow:hidden;min-height:440px;background:#dcd3c3;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+/* final */
+.fin{background:var(--copper-d);color:#fff;border-radius:36px;padding:clamp(40px,6vw,88px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:32px;align-items:end;position:relative;overflow:hidden}
+.fin h2{font-size:clamp(32px,5vw,72px)}
+.fin p{color:#f6dcc8;margin-top:16px;max-width:40ch;font-size:18px}
+.fin .ctas{justify-content:flex-end}
+.fin .btn-o{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)}
+.fin .btn-o:hover{background:#fff;color:var(--copper-d)}
+.ft{padding:40px 0 110px;font-size:14px;color:var(--muted)}
+.ft .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.fab{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){
+  .nav{display:none}.hd-tel{margin-left:auto}
+  .c-house{grid-column:span 12}.c-bath,.c-chan{grid-column:span 6}.c-bbq{grid-column:span 7}.c-kar{grid-column:span 5}
+  .how{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:40px}
+}
+@media (max-width:900px){
+  .hero .wrap,.sh,.praise,.quiz,.ct,.fin{grid-template-columns:minmax(0,1fr)}
+  .scene{aspect-ratio:1/.8;max-height:520px}
+  .score{position:static}.ticket{position:relative;top:auto}
+  .fin .ctas{justify-content:flex-start}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .hd .wrap{height:58px}
+  .hd-tel{display:none}
+  .lead{font-size:18px}
+  .ctas .btn{flex:1 1 100%}
+  .bento{gap:12px}
+  .c-bath,.c-chan,.c-bbq,.c-kar{grid-column:span 12;min-height:0}
+  .c-bath p,.c-chan p,.c-bbq p{max-width:62%}
+  .c-house{min-height:0}
+  .cell .ill{width:38%}
+  .how{grid-template-columns:minmax(0,1fr);row-gap:0;border-top:0;border-left:1.5px solid var(--ink);margin-left:22px}
+  .how li{padding:0 0 30px 34px}
+  .how li::before{position:absolute;left:-23px;top:-4px;margin:0}
+  .pts li{grid-template-columns:44px minmax(0,1fr);gap:12px;padding:24px 0}
+  .map,.map iframe{min-height:340px}
+  .fin{border-radius:28px}
+  .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:40;gap:10px}
+  .fab a{flex:1;min-height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.45)}
+  .fab .f1{background:var(--pine);color:#fff}.fab .f2{background:var(--glow);color:var(--ink)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Патихаус, наверх"><i><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 10 10 3l8 7v8H2z" fill="#f4c45a"/><rect x="8" y="12" width="4" height="6" fill="#1f3a2d"/></svg></i>Патихаус</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#what">Что есть</a><a href="#occasions">Поводы</a><a href="#quiz">Собрать праздник</a><a href="#contacts">Как доехать</a>
+    </nav>
+    <a class="hd-tel" href="tel:+79527827755">+7 952 782-77-55</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kick">Нижний Новгород · в черте города</div>
+      <h1>Патихаус<span>дом для праздника</span></h1>
+      <p class="lead">Отдельные дома с баней, горячим чаном и беседкой для шашлыка. День рождения, корпоратив или просто вечер с друзьями — без поездки за город.</p>
+      <div class="meta">
+        <span><b>СНТ Дружба-2, 15</b></span>
+        <span>Ежедневно 10:00–24:00</span>
+        <span data-status></span>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-c" href="#quiz">Собрать праздник
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-g" href="https://wa.me/79527827755?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D0%BC%20%D0%B2%20%D0%9F%D0%B0%D1%82%D0%B8%D1%85%D0%B0%D1%83%D1%81.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D1%82%D1%8B%3F" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+          Написать в WhatsApp</a>
+      </div>
+      <div class="sub-ctas">
+        <a href="tel:+79527827755">Позвонить</a>
+        <a href="https://yandex.ru/maps/?rtext=~56.294868,43.998714" target="_blank" rel="noopener">Маршрут</a>
+      </div>
+    </div>
+
+    <div class="scene" data-r>
+      <svg viewBox="0 0 600 576" role="img" aria-label="Иллюстрация: дом с гирляндой, баня и горячий чан с паром, рядом кролик">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a3327"/><stop offset=".7" stop-color="#2c5240"/><stop offset="1" stop-color="#3f6b52"/></linearGradient>
+          <radialGradient id="win" cx=".5" cy=".5" r=".7"><stop offset="0" stop-color="#ffe2a0"/><stop offset="1" stop-color="#f4c45a"/></radialGradient>
+          <radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f4c45a" stop-opacity=".45"/><stop offset="1" stop-color="#f4c45a" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="600" height="576" fill="url(#sky)"/>
+        <circle cx="478" cy="96" r="34" fill="#f5eee2" opacity=".92"/>
+        <circle cx="492" cy="88" r="30" fill="#1d372a"/>
+        <g fill="#16291f">
+          <path d="M40 420 90 250l50 170z"/><path d="M100 430 145 290l45 140z"/><path d="M500 430 545 270l45 160z"/><path d="M455 430 490 320l35 110z"/>
+        </g>
+        <path d="M0 140 C120 190 230 200 300 175 S470 140 600 190" fill="none" stroke="#0e1d16" stroke-width="2"/>
+        <g>
+          <circle class="bulb" cx="40" cy="157" r="7" fill="#f4c45a"/><circle class="bulb" cx="95" cy="174" r="7" fill="#d9476a"/><circle class="bulb" cx="150" cy="186" r="7" fill="#f4c45a"/><circle class="bulb" cx="205" cy="190" r="7" fill="#f5eee2"/><circle class="bulb" cx="260" cy="184" r="7" fill="#f4c45a"/><circle class="bulb" cx="315" cy="171" r="7" fill="#d9476a"/><circle class="bulb" cx="370" cy="161" r="7" fill="#f4c45a"/><circle class="bulb" cx="425" cy="157" r="7" fill="#f5eee2"/><circle class="bulb" cx="480" cy="163" r="7" fill="#f4c45a"/><circle class="bulb" cx="535" cy="175" r="7" fill="#d9476a"/>
+        </g>
+        <rect x="0" y="430" width="600" height="146" fill="#24432f"/>
+        <path d="M0 430 Q300 405 600 430 V440 H0z" fill="#2f5a40"/>
+        <!-- house -->
+        <ellipse cx="250" cy="330" rx="200" ry="130" fill="url(#halo)"/>
+        <path d="M120 300 250 205 380 300z" fill="#94461b"/>
+        <path d="M110 306 250 196 390 306" fill="none" stroke="#5e2c10" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+        <rect x="140" y="300" width="220" height="134" fill="#e8d6bf"/>
+        <g stroke="#cdb595" stroke-width="2"><path d="M140 322h220M140 346h220M140 370h220M140 394h220M140 418h220"/></g>
+        <rect x="166" y="330" width="58" height="52" rx="4" fill="url(#win)"/><path d="M195 330v52M166 356h58" stroke="#94461b" stroke-width="4"/>
+        <rect x="268" y="338" width="54" height="96" rx="4" fill="#5e2c10"/><rect x="278" y="350" width="34" height="34" rx="3" fill="url(#win)"/><circle cx="312" cy="396" r="3" fill="#f4c45a"/>
+        <circle cx="250" cy="260" r="16" fill="url(#win)"/><path d="M250 244v32M234 260h32" stroke="#94461b" stroke-width="3"/>
+        <rect x="320" y="210" width="20" height="50" fill="#5e2c10"/>
+        <!-- chan -->
+        <g class="steam" fill="none" stroke="#f5eee2" stroke-width="5" stroke-linecap="round">
+          <path d="M440 380c-12-16 12-24 0-42s10-26 0-40"/><path d="M470 384c-12-16 12-24 0-42s10-26 0-40"/><path d="M500 380c-12-16 12-24 0-42s10-26 0-40"/>
+        </g>
+        <ellipse cx="470" cy="400" rx="78" ry="18" fill="#7fc1c4"/>
+        <path d="M392 400v52a78 18 0 0 0 156 0v-52a78 18 0 0 1-156 0z" fill="#c26a32"/>
+        <g stroke="#94461b" stroke-width="3"><path d="M414 412v50M440 416v50M470 418v50M500 416v50M526 412v50"/></g>
+        <path d="M392 424a78 18 0 0 0 156 0M392 444a78 18 0 0 0 156 0" fill="none" stroke="#1b2620" stroke-width="5"/>
+        <ellipse cx="470" cy="400" rx="78" ry="18" fill="none" stroke="#94461b" stroke-width="6"/>
+        <!-- bunny -->
+        <g class="bunny">
+          <ellipse cx="96" cy="500" rx="30" ry="22" fill="#f5eee2"/>
+          <circle cx="122" cy="482" r="15" fill="#f5eee2"/>
+          <ellipse cx="116" cy="452" rx="6" ry="20" fill="#f5eee2" transform="rotate(-12 116 452)"/>
+          <ellipse cx="130" cy="454" rx="6" ry="19" fill="#f5eee2" transform="rotate(10 130 454)"/>
+          <ellipse cx="130" cy="455" rx="2.5" ry="12" fill="#e7a6b4" transform="rotate(10 130 455)"/>
+          <circle cx="127" cy="480" r="2.6" fill="#1b2620"/><circle cx="135" cy="486" r="2.2" fill="#d9476a"/>
+          <circle cx="66" cy="496" r="8" fill="#fff"/>
+        </g>
+        <g fill="#1d3a2b"><path d="M220 520c40-14 120-14 170 0z"/></g>
+      </svg>
+      <div class="badge"><strong>4,9</strong><div><span class="stars" aria-hidden="true">★★★★★</span><small>122 оценки в 2ГИС</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="what" style="padding-top:clamp(32px,4vw,60px)">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <h2>Всё для праздника <em>на одной территории</em></h2>
+      <p>Приезжаете с компанией — и не думаете, где париться, где жарить мясо и где петь. Всё рядом, и своя парковка тоже.</p>
+    </div>
+    <div class="bento">
+      <article class="cell c-house" data-r>
+        <div class="num">4</div>
+        <h3>дома для отдыха</h3>
+        <p>Гости пишут: просторно, уютно и красиво, а зимой в домах тепло. В номерах кондиционер, есть стиральная машина и Wi-Fi.</p>
+      </article>
+      <article class="cell c-bath" data-r>
+        <h3>Баня и сауна</h3>
+        <p>Баню в отзывах хвалят отдельно — после неё как раз в чан.</p>
+        <svg class="ill" viewBox="0 0 200 160" aria-hidden="true"><path d="M30 150V70l70-50 70 50v80z" fill="#c9ad8a"/><g stroke="#a8855f" stroke-width="3"><path d="M30 90h140M30 110h140M30 130h140"/></g><rect x="84" y="96" width="32" height="54" fill="#5e2c10"/><path d="M60 60c-8-10 8-14 0-26M140 60c-8-10 8-14 0-26" fill="none" stroke="#94461b" stroke-width="4" stroke-linecap="round"/></svg>
+      </article>
+      <article class="cell c-chan" data-r>
+        <h3>Горячий банный чан</h3>
+        <p>Чан готовят по запросу — скажите заранее, и к приезду он будет горячим.</p>
+        <svg class="ill" viewBox="0 0 200 160" aria-hidden="true"><ellipse cx="100" cy="90" rx="80" ry="18" fill="#7fc1c4"/><path d="M20 90v44a80 18 0 0 0 160 0V90a80 18 0 0 1-160 0z" fill="#e7955e"/><path d="M20 110a80 18 0 0 0 160 0" fill="none" stroke="#1b2620" stroke-width="5"/><path d="M70 66c-10-12 10-18 0-32M100 66c-10-12 10-18 0-32M130 66c-10-12 10-18 0-32" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8"/></svg>
+      </article>
+      <article class="cell c-bbq" data-r>
+        <h3>Беседки с мангалом</h3>
+        <p>Есть всё, чтобы приготовить шашлык. Беседки стоят на хорошем расстоянии друг от друга.</p>
+        <svg class="ill" viewBox="0 0 200 160" aria-hidden="true"><path d="M30 60 100 20l70 40z" fill="#1f3a2d"/><g stroke="#1f3a2d" stroke-width="7"><path d="M44 60v90M156 60v90"/></g><rect x="70" y="112" width="60" height="16" rx="3" fill="#1b2620"/><path d="M80 128l-6 22M120 128l6 22" stroke="#1b2620" stroke-width="5"/><path d="M86 104c-6-8 6-12 0-20M114 104c-6-8 6-12 0-20" fill="none" stroke="#c26a32" stroke-width="5" stroke-linecap="round"/></svg>
+      </article>
+      <article class="cell c-kar" data-r>
+        <h3>Караоке</h3>
+        <p>Можно взять дополнительно — гости так и делают на днях рождения.</p>
+      </article>
+      <div class="extras" data-r>
+        <span class="tag">Можно с животными</span><span class="tag">Своя парковка</span><span class="tag">Отдельный туалет</span><span class="tag">Хранение багажа</span><span class="tag">Наличные и перевод с карты</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="occ" id="occasions">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <h2>По какому <em>поводу</em> приезжают</h2>
+      <p>Так гости описывают свои праздники в отзывах. Выберите свой — квиз ниже подставит его в заявку.</p>
+    </div>
+  </div>
+  <div class="strip" id="strip" data-qa-skip tabindex="0" aria-label="Поводы, листается вбок">
+    <article class="oc"><span class="n">01</span><h3>День рождения</h3><p>Дом, баня, беседка и чан — всё в одном месте. Караоке берут дополнительно.</p><button type="button" data-occ="День рождения">Собрать такой →</button></article>
+    <article class="oc"><span class="n">02</span><h3>Детский праздник</h3><p>На территории живут кролики: их приносят детям — погладить, покормить, сфотографироваться.</p><button type="button" data-occ="Детский день рождения">Собрать такой →</button></article>
+    <article class="oc"><span class="n">03</span><h3>Корпоратив</h3><p>Тихо, своя отдельная территория, чисто и вежливые администраторы.</p><button type="button" data-occ="Корпоратив">Собрать такой →</button></article>
+    <article class="oc"><span class="n">04</span><h3>Праздники с друзьями</h3><p>Майские, выходные, просто повод собраться — с баней, горячим чаном и большим столом.</p><button type="button" data-occ="Отдых с друзьями">Собрать такой →</button></article>
+    <article class="oc"><span class="n">05</span><h3>Вдвоём</h3><p>Один из домов так и называется — «Любовь».</p><button type="button" data-occ="Отдых вдвоём">Собрать такой →</button></article>
+  </div>
+  <div class="strip-hint">
+    <button class="arr" type="button" aria-label="Листать назад" data-dir="-1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+    <button class="arr" type="button" aria-label="Листать вперёд" data-dir="1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap praise">
+    <div class="score" data-r>
+      <div class="big">4,9<sup>★</sup></div>
+      <p>Средняя оценка по 122 отзывам в 2ГИС. Многие пишут, что приезжают уже не в первый раз. <a href="https://2gis.ru/n_novgorod/firm/70000001061529205" target="_blank" rel="noopener">Читать отзывы</a></p>
+    </div>
+    <ol class="pts">
+      <li data-r><div><h3>Загород — прямо в городе</h3><p>Главное, что отмечают гости: не нужно ехать час по трассе. Дом с баней и чаном находится в черте Нижнего Новгорода.</p></div></li>
+      <li data-r><div><h3>Своя территория и тишина</h3><p>Беседки и дома стоят далеко друг от друга, у каждой компании отдельный туалет. Чисто — об этом пишут почти все.</p></div></li>
+      <li data-r><div><h3>Кролики и Сергей</h3><p>Под конец отдыха гостям приносят пушистых кроликов — дети в восторге, взрослые тоже. А администратора Сергея в отзывах называют «директором по кайфу»: быстро решает любые вопросы.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec quiz-sec" id="quiz">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <h2>Соберите <em>свой праздник</em></h2>
+      <p>Пять вопросов — и готовая заявка уходит администратору в WhatsApp. Он подскажет, какие дома свободны, и сориентирует по стоимости.</p>
+    </div>
+    <div class="quiz">
+      <form class="qf" id="qf" onsubmit="return false" data-r>
+        <fieldset class="q"><legend><b>01</b>Какой повод?</legend>
+          <div class="chips" data-q="occ" data-single>
+            <button type="button" class="chip" aria-pressed="false">День рождения</button><button type="button" class="chip" aria-pressed="false">Детский день рождения</button><button type="button" class="chip" aria-pressed="false">Корпоратив</button><button type="button" class="chip" aria-pressed="false">Отдых с друзьями</button><button type="button" class="chip" aria-pressed="false">Отдых вдвоём</button><button type="button" class="chip" aria-pressed="false">Другое</button>
+          </div></fieldset>
+        <div class="q"><label class="ql" for="qd"><b>02</b>Когда?</label>
+          <div class="row"><input class="date" type="date" id="qd"><div class="chips" data-q="time" data-single><button type="button" class="chip" aria-pressed="false">Днём</button><button type="button" class="chip" aria-pressed="false">Вечером</button><button type="button" class="chip" aria-pressed="false">С ночёвкой</button></div></div></div>
+        <div class="q"><span class="ql" id="ql3"><b>03</b>Сколько будет гостей?</span>
+          <div class="row"><div class="step" role="group" aria-labelledby="ql3"><button type="button" data-g="-1" aria-label="Меньше гостей">−</button><output id="qg" aria-live="polite">10</output><button type="button" data-g="1" aria-label="Больше гостей">+</button></div>
+          <div class="chips" data-q="kids"><button type="button" class="chip" aria-pressed="false">Будут дети</button><button type="button" class="chip" aria-pressed="false">Возьмём питомца</button></div></div></div>
+        <fieldset class="q"><legend><b>04</b>Что добавить к дому?</legend>
+          <div class="chips" data-q="add">
+            <button type="button" class="chip" aria-pressed="false">Баня</button><button type="button" class="chip" aria-pressed="false">Сауна</button><button type="button" class="chip" aria-pressed="false">Горячий чан</button><button type="button" class="chip" aria-pressed="false">Беседка с мангалом</button><button type="button" class="chip" aria-pressed="false">Караоке</button><button type="button" class="chip" aria-pressed="false">Кролики для детей</button>
+          </div></fieldset>
+        <div class="q"><label class="ql" for="qn"><b>05</b>Как к вам обращаться?</label>
+          <input class="date" id="qn" type="text" placeholder="Имя" autocomplete="given-name" style="width:100%;max-width:340px"></div>
+      </form>
+
+      <aside class="ticket" id="ticket" aria-live="polite" data-r>
+        <svg class="hop" viewBox="0 0 60 60" aria-hidden="true"><ellipse cx="26" cy="44" rx="18" ry="12" fill="#f5eee2"/><circle cx="42" cy="34" r="9" fill="#f5eee2"/><ellipse cx="38" cy="16" rx="4" ry="12" fill="#f5eee2"/><ellipse cx="46" cy="17" rx="4" ry="11" fill="#f5eee2"/><circle cx="45" cy="33" r="1.8" fill="#1b2620"/></svg>
+        <div class="tt">Приглашение · Патихаус</div>
+        <h3 id="t-occ">Ваш праздник</h3>
+        <dl>
+          <dt>Когда</dt><dd id="t-date">дата не выбрана</dd>
+          <dt>Гостей</dt><dd id="t-g">10</dd>
+          <dt>Добавить</dt><dd id="t-add">пока ничего</dd>
+          <dt>Где</dt><dd>СНТ Дружба-2, 15</dd>
+        </dl>
+        <div class="go">
+          <a class="btn btn-y" id="t-wa" href="https://wa.me/79527827755" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+          <a class="btn btn-l" href="https://t.me/+79527827755" target="_blank" rel="noopener">Написать в Telegram</a>
+        </div>
+        <p class="note">Стоимость и свободные дома администратор назовёт в ответ. Ни к чему не обязывает.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sh" data-r><h2>Как <em>забронировать</em></h2><p>Без долгих переписок: всё решается в одном чате.</p></div>
+    <ol class="how" data-r>
+      <li><h3>Заявка</h3><p>Квиз выше, WhatsApp, Telegram или звонок.</p></li>
+      <li><h3>Подбираем дом</h3><p>Администратор проверит даты и предложит дом под вашу компанию.</p></li>
+      <li><h3>Бронь</h3><p>Согласуете баню, чан и караоке — что нужно именно вам.</p></li>
+      <li><h3>Приезд</h3><p>Своя парковка, а ехать недалеко — место в черте города.</p></li>
+      <li><h3>Праздник</h3><p>Отдыхаете. Если что-то нужно — администратор на связи.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="contacts" style="padding-top:0">
+  <div class="wrap ct">
+    <div class="ci" data-r>
+      <div><div class="lbl">Адрес</div><div class="v">Нижний Новгород,<br>СНТ Дружба-2, 15</div></div>
+      <div><div class="lbl">Часы</div><div class="v">Ежедневно 10:00–24:00</div><div style="margin-top:6px"><span data-status></span></div></div>
+      <div><div class="lbl">Телефоны</div><div class="v"><a href="tel:+79527827755">+7 952 782-77-55</a><br><a href="tel:+79535688858">+7 953 568-88-58</a></div></div>
+      <div class="soc">
+        <a href="https://wa.me/79527827755" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://t.me/+79527827755" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://vk.ru/patyhaus" target="_blank" rel="noopener">ВКонтакте</a>
+        <a href="https://yandex.ru/maps/?rtext=~56.294868,43.998714" target="_blank" rel="noopener">Маршрут</a>
+      </div>
+    </div>
+    <div class="map" data-r><iframe loading="lazy" title="Патихаус на карте" src="https://yandex.ru/map-widget/v1/?ll=43.998714,56.294868&z=16&pt=43.998714,56.294868,pm2rdm"></iframe></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="fin" data-r>
+      <div><h2>Праздник ближе, чем кажется</h2><p>Напишите дату и сколько вас будет — администратор подберёт дом с баней и чаном.</p></div>
+      <div class="ctas">
+        <a class="btn btn-y" href="#quiz">Собрать праздник</a>
+        <a class="btn btn-o" href="tel:+79527827755">Позвонить</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft"><div class="wrap"><span>Патихаус · Нижний Новгород, СНТ Дружба-2, 15</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+
+<div class="fab"><a class="f1" href="tel:+79527827755">Позвонить</a><a class="f2" href="#quiz">Собрать праздник</a></div>
+
+<script>
+(function(){
+  var S={occ:'',time:'',kids:[],add:[]},g=10;
+  var $=function(s){return document.querySelector(s)};
+  var d=$('#qd');try{d.min=new Date().toISOString().slice(0,10)}catch(e){}
+  function sel(k){var el=document.querySelector('[data-q="'+k+'"]');return [].filter.call(el.children,function(b){return b.getAttribute('aria-pressed')==='true'}).map(function(b){return b.textContent})}
+  function fmt(v){if(!v)return '';var p=v.split('-');return p[2]+'.'+p[1]+'.'+p[0]}
+  function upd(){
+    S.occ=sel('occ')[0]||'';S.time=sel('time')[0]||'';S.kids=sel('kids');S.add=sel('add');
+    var date=fmt(d.value),when=[date,S.time&&S.time.toLowerCase()].filter(Boolean).join(', ');
+    $('#t-occ').textContent=S.occ||'Ваш праздник';
+    $('#t-date').textContent=when||'дата не выбрана';
+    $('#t-g').textContent=g+(S.kids.length?' · '+S.kids.join(', ').toLowerCase():'');
+    $('#t-add').textContent=S.add.length?S.add.join(', ').toLowerCase():'пока ничего';
+    var n=$('#qn').value.trim();
+    var t='Здравствуйте! Хочу забронировать дом в Патихаусе.'+(S.occ?'\nПовод: '+S.occ:'')+(when?'\nКогда: '+when:'')+'\nГостей: '+g+(S.kids.length?'\n'+S.kids.join(', '):'')+(S.add.length?'\nДобавить: '+S.add.join(', '):'')+(n?'\nМеня зовут '+n:'')+'\nПодскажите, пожалуйста, свободные дома и стоимость.';
+    $('#t-wa').href='https://wa.me/79527827755?text='+encodeURIComponent(t);
+    $('#ticket').classList.toggle('done',!!(S.occ&&(d.value||S.time)));
+  }
+  document.querySelectorAll('[data-q]').forEach(function(grp){
+    grp.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;var on=b.getAttribute('aria-pressed')!=='true';
+      if(grp.hasAttribute('data-single'))[].forEach.call(grp.children,function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed',String(on));upd();});
+  });
+  document.querySelectorAll('[data-g]').forEach(function(b){b.addEventListener('click',function(){g=Math.max(1,Math.min(80,g+ +b.dataset.g));$('#qg').textContent=g;upd()})});
+  d.addEventListener('change',upd);$('#qn').addEventListener('input',upd);
+  document.querySelectorAll('[data-occ]').forEach(function(b){b.addEventListener('click',function(){
+    var v=b.dataset.occ;[].forEach.call(document.querySelector('[data-q="occ"]').children,function(x){x.setAttribute('aria-pressed',String(x.textContent===v))});
+    if(v==='Детский день рождения'){var k=document.querySelector('[data-q="add"]').children[5];k.setAttribute('aria-pressed','true')}
+    upd();document.getElementById('quiz').scrollIntoView({behavior:'smooth'});});});
+  var st=$('#strip');document.querySelectorAll('[data-dir]').forEach(function(b){b.addEventListener('click',function(){st.scrollBy({left:+b.dataset.dir*st.clientWidth*.7,behavior:'smooth'})})});
+  upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","24:00"]],"tue":[["10:00","24:00"]],"wed":[["10:00","24:00"]],"thu":[["10:00","24:00"]],"fri":[["10:00","24:00"]],"sat":[["10:00","24:00"]],"sun":[["10:00","24:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

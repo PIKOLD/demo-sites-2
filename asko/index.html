@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ASKO в Сочи — скандинавская техника для кухни и прачечной</title><meta property="og:type" content="website"><meta property="og:title" content="ASKO в Сочи — скандинавская техника для кухни и прачечной"><meta property="og:description" content="Шоурум ASKO в Сочи: духовые шкафы, варочные панели, вытяжки, встраиваемые кофемашины, стиральные и сушильные машины. Подбор комплекта и заявка в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/asko/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Шоурум ASKO в Сочи: духовые шкафы, варочные панели, вытяжки, встраиваемые кофемашины, стиральные и сушильные машины. Подбор комплекта и заявка в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{--ink:#0d0e0f;--ink2:#161819;--ink3:#202325;--ln:rgba(255,255,255,.13);--paper:#f3f1ec;--paper2:#e9e6df;--tx:#17181a;--mu:#5a5e63;--mud:#a6aaaf;--glow:#f1b965;--glow2:#ffdca3;--walnut:#7a5434;--steel:#cfd3d6;--r:4px;--wrap:1360px;--pad:clamp(16px,4vw,48px);
+--h:'Inter Tight',system-ui,sans-serif;--b:'Golos Text',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--tx);font:400 17px/1.6 var(--b);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+:focus-visible{outline:2px solid var(--glow);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.demo{background:#000;color:#cfd2d5;font:500 12.5px/1.4 var(--m);text-align:center;padding:8px 16px;letter-spacing:.02em}
+.mono{font:500 12px/1.4 var(--m);letter-spacing:.14em;text-transform:uppercase}
+/* LED-линия — фирменный приём: тёплая подсветка как профиль под шкафами в их шоуруме */
+.led{display:block;height:2px;width:72px;background:linear-gradient(90deg,transparent,var(--glow) 25%,var(--glow2) 50%,var(--glow) 75%,transparent);box-shadow:0 0 14px 2px rgba(241,185,101,.55);margin:0 0 22px;transform-origin:left;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.js [data-r] .led,.js .led[data-r]{transform:scaleX(0)}
+.js [data-r].in .led,.js .led[data-r].in{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);font:600 16px/1 var(--h);letter-spacing:.01em;text-decoration:none;transition:background .25s,color .25s,border-color .25s,transform .25s,box-shadow .25s}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-glow{background:var(--glow);color:#1b1306;box-shadow:0 0 0 rgba(241,185,101,0)}
+.btn-glow:hover{background:var(--glow2);box-shadow:0 8px 30px -8px rgba(241,185,101,.7)}
+.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--ink3)}
+.btn-ol{border:1px solid rgba(0,0,0,.25)}
+.btn-ol:hover{border-color:var(--tx);background:rgba(0,0,0,.04)}
+[data-status]{display:inline-flex;align-items:center;gap:9px;font:500 13px/1.3 var(--m);letter-spacing:.04em}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#7c8085}
+[data-status].is-open::before{background:#6fdc8c;box-shadow:0 0 10px #6fdc8c}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+
+/* header */
+.hd{position:sticky;top:0;z-index:40;background:rgba(13,14,15,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid var(--ln)}
+.hd .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.logo{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.logo b{font:800 26px/1 var(--h);letter-spacing:.06em}
+.logo span{font:500 11px/1 var(--m);letter-spacing:.2em;color:var(--mud);text-transform:uppercase}
+.hd nav{display:flex;gap:26px;margin-left:auto}
+.hd nav a{text-decoration:none;font:500 14.5px/1 var(--b);color:#d9dcdf;padding:10px 0;position:relative}
+.hd nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--glow);transform:scaleX(0);transition:transform .3s}
+.hd nav a:hover{color:#fff}.hd nav a:hover::after{transform:scaleX(1)}
+.hd .tel{font:600 15px/1 var(--h);text-decoration:none;white-space:nowrap;padding:12px 0}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);min-height:min(calc(100svh - 100px),860px)}
+.hero-t{padding:clamp(36px,6vh,72px) clamp(24px,4vw,64px) clamp(36px,6vh,64px) max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad)));display:flex;flex-direction:column;justify-content:center}
+.hero .k{color:var(--mud);margin-bottom:22px}
+.hero h1{font:700 clamp(36px,4.9vw,84px)/1 var(--h);letter-spacing:-.035em;margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--glow);text-shadow:0 0 28px rgba(241,185,101,.35)}
+.hero .lead{font-size:clamp(16px,1.25vw,19px);color:#c8cbcf;max-width:34em;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;color:#c8cbcf;align-items:center}
+.hero-meta a{font:500 13px/1.3 var(--m);letter-spacing:.04em;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3);padding:12px 0 2px}
+.hero-meta a:hover{border-color:var(--glow);color:#fff}
+.hero-p{position:relative;overflow:hidden;min-height:420px}
+.hero-p img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:38% 50%;transform:scale(1.06);transition:transform 2.4s cubic-bezier(.2,.7,.2,1)}
+.hero-p.in img,html:not(.js) .hero-p img{transform:scale(1)}
+.hero-p::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;z-index:2;background:linear-gradient(90deg,transparent,var(--glow2),var(--glow),transparent);box-shadow:0 0 30px 6px rgba(241,185,101,.45)}
+.hero-p::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0,rgba(13,14,15,0) 22%)}
+.hero-p figcaption{position:absolute;right:20px;bottom:18px;z-index:2;color:#e6e8ea;background:rgba(0,0,0,.55);padding:8px 12px;border-radius:2px}
+
+/* spec ribbon */
+.rib{background:var(--ink2);color:#e3e5e7;border-top:1px solid var(--ln)}
+.rib ul{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.rib li{padding:20px 22px 20px 0;display:flex;flex-direction:column;gap:6px;font:600 16px/1.3 var(--h)}
+.rib li+li{padding-left:22px;border-left:1px solid var(--ln)}
+.rib li span{color:var(--mud)}
+
+/* section heads */
+.sec{padding:clamp(72px,10vw,140px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px 64px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sh h2{font:700 clamp(32px,4.2vw,64px)/1.02 var(--h);letter-spacing:-.03em}
+.sh p{color:var(--mu);max-width:30em}
+.dark{background:var(--ink);color:#fff}
+.dark .sh p{color:var(--mud)}
+.k2{color:var(--mu);margin-bottom:16px}.dark .k2{color:var(--mud)}
+
+/* tech index */
+.tech{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,80px);align-items:start}
+.tl{list-style:none;border-top:1px solid rgba(0,0,0,.14)}
+.tl button{width:100%;display:grid;grid-template-columns:52px minmax(0,1fr) 28px;gap:14px;align-items:baseline;text-align:left;padding:22px 4px;border-bottom:1px solid rgba(0,0,0,.14);transition:background .3s,padding .3s}
+.tl .n{font:500 13px/1 var(--m);color:var(--mu)}
+.tl h3{font:600 clamp(21px,2.1vw,32px)/1.12 var(--h);letter-spacing:-.02em}
+.tl p{grid-column:2;font-size:15.5px;color:var(--mu);max-height:0;overflow:hidden;opacity:0;transition:max-height .45s,opacity .45s,margin .45s}
+.tl .ar{font:500 20px/1 var(--h);color:var(--mu);transition:transform .3s,color .3s}
+.tl button:hover,.tl button.on{background:#fff;padding-left:16px}
+.tl button.on p{max-height:120px;opacity:1;margin-top:8px}
+.tl button.on .ar{transform:rotate(-45deg);color:var(--walnut)}
+.tl button.on .n{color:var(--walnut)}
+.tf{position:sticky;top:96px}
+.tf .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ink);border-radius:var(--r)}
+.tf img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.tf img.sw{opacity:.15}
+.tf .ph::after{content:"";position:absolute;left:12%;right:12%;bottom:0;height:2px;background:var(--glow);box-shadow:0 0 24px 4px rgba(241,185,101,.6)}
+.tf figcaption{display:flex;justify-content:space-between;gap:16px;margin-top:14px;color:var(--mu)}
+
+/* showroom strip */
+.strip-h{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:40px}
+.strip-h h2{font:700 clamp(32px,4.2vw,64px)/1.02 var(--h);letter-spacing:-.03em;max-width:12em}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border:1px solid var(--ln);border-radius:50%;display:grid;place-items:center;font:500 20px/1 var(--h);transition:border-color .25s,background .25s}
+.arrows button:hover{border-color:var(--glow);background:rgba(241,185,101,.1)}
+.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad))) 18px;scrollbar-width:thin;scrollbar-color:#444 transparent;-webkit-overflow-scrolling:touch}
+.strip figure{flex:none;scroll-snap-align:start;width:clamp(240px,26vw,400px)}
+.strip figure.w{width:clamp(300px,44vw,640px)}
+.strip .fr{height:clamp(340px,56vh,600px);overflow:hidden;border-radius:var(--r);background:var(--ink2)}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.strip figure:hover img{transform:scale(1.04)}
+.strip figcaption{margin-top:14px;color:var(--mud);font-size:15px;max-width:26em}
+.strip figcaption b{display:block;color:#fff;font:600 17px/1.3 var(--h);margin-bottom:2px}
+
+/* why live */
+.why{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(32px,6vw,96px);align-items:center}
+.why-p{position:relative}
+.why-p .a{aspect-ratio:3/2;overflow:hidden;border-radius:var(--r)}
+.why-p .a img{width:100%;height:100%;object-fit:cover}
+.why-p .b{position:absolute;right:-6%;bottom:-14%;width:38%;aspect-ratio:2/3;overflow:hidden;border-radius:var(--r);border:6px solid var(--paper);box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.why-p .b img{width:100%;height:100%;object-fit:cover}
+.why h2{font:700 clamp(30px,3.6vw,56px)/1.04 var(--h);letter-spacing:-.03em;margin-bottom:34px}
+.wl{list-style:none;counter-reset:w}
+.wl li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:8px;padding:22px 0;border-top:1px solid rgba(0,0,0,.14)}
+.wl li:nth-child(2){margin-left:clamp(0px,3vw,48px)}.wl li:nth-child(3){margin-left:clamp(0px,6vw,96px)}
+.wl li::before{counter-increment:w;content:"0" counter(w);font:500 13px/1.9 var(--m);color:var(--walnut)}
+.wl b{display:block;font:600 20px/1.3 var(--h);margin-bottom:4px}
+.wl p{color:var(--mu);font-size:16px}
+.note{margin-top:22px;font-size:14px;color:var(--mu)}
+
+/* quiz */
+.qz{background:var(--paper2)}
+.qg{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(28px,4vw,64px);align-items:start}
+.qf fieldset{border:0;padding:26px 0;border-top:1px solid rgba(0,0,0,.14)}
+.qf legend{display:flex;gap:14px;align-items:baseline;font:600 20px/1.3 var(--h);margin-bottom:16px;float:left;width:100%}
+.qf legend span{font:500 12px/1 var(--m);color:var(--walnut);letter-spacing:.1em}
+.qf legend small{font:400 14px/1 var(--b);color:var(--mu)}
+.ch{display:flex;flex-wrap:wrap;gap:10px;clear:both}
+.ch label{position:relative}
+.ch input{position:absolute;opacity:0;width:1px;height:1px}
+.ch span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1px solid rgba(0,0,0,.2);border-radius:999px;background:var(--paper);font:500 15.5px/1.2 var(--b);cursor:pointer;transition:background .2s,border-color .2s,color .2s,box-shadow .2s}
+.ch span:hover{border-color:var(--tx)}
+.ch input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff;box-shadow:inset 0 -2px 0 var(--glow)}
+.ch input:focus-visible+span{outline:2px solid var(--walnut);outline-offset:2px}
+.qf .nm{clear:both;display:grid;gap:8px;max-width:420px}
+.qf .nm label{font-size:14px;color:var(--mu)}
+.qf .nm input{height:50px;border:1px solid rgba(0,0,0,.25);border-radius:var(--r);background:var(--paper);padding:0 16px;font:500 16px var(--b);color:var(--tx)}
+.qf .nm input:focus{outline:2px solid var(--walnut);outline-offset:1px}
+.tk{position:sticky;top:96px;background:var(--ink);color:#fff;border-radius:6px;padding:28px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.tk .led{width:100%;margin-bottom:20px}
+.tk h3{font:600 22px/1.2 var(--h);margin-bottom:6px}
+.tk .s{color:var(--mud);font-size:14.5px;margin-bottom:18px}
+.tk pre{white-space:pre-wrap;word-break:break-word;font:400 13.5px/1.65 var(--m);color:#e5e7e9;background:var(--ink2);border:1px solid var(--ln);border-radius:var(--r);padding:16px;min-height:150px;margin-bottom:18px}
+.tk .btn{width:100%}
+.tk .lv{display:flex;justify-content:space-between;margin-bottom:12px;color:var(--mud)}
+.tk .bar{height:3px;background:var(--ink3);border-radius:2px;margin-bottom:20px;overflow:hidden}
+.tk .bar i{display:block;height:100%;width:0;background:var(--glow);transition:width .4s}
+
+/* steps */
+.st{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--ln)}
+.st li{padding:28px 22px 8px 0;position:relative}
+.st li::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--ink);border:1px solid var(--glow);box-shadow:0 0 12px rgba(241,185,101,.6)}
+.st .mono{color:var(--glow);display:block;margin-bottom:14px}
+.st b{display:block;font:600 21px/1.2 var(--h);margin-bottom:8px}
+.st p{color:var(--mud);font-size:15.5px}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:stretch}
+.ct h2{font:700 clamp(32px,4.2vw,64px)/1.02 var(--h);letter-spacing:-.03em;margin-bottom:30px}
+.big{display:inline-block;font:700 clamp(28px,3.4vw,50px)/1.1 var(--h);letter-spacing:-.02em;text-decoration:none;margin-bottom:28px;background:linear-gradient(var(--glow),var(--glow)) 0 100%/0 2px no-repeat;transition:background-size .4s}
+.big:hover{background-size:100% 2px}
+.dl{display:grid;grid-template-columns:150px minmax(0,1fr);border-top:1px solid var(--ln);margin-bottom:32px}
+.dl dt,.dl dd{padding:16px 0;border-bottom:1px solid var(--ln)}
+.dl dt{color:var(--mud)}
+.dl dd a{color:#fff}
+.ct-p{position:relative;min-height:420px;border-radius:var(--r);overflow:hidden}
+.ct-p img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 50%}
+.ct-p span{position:absolute;left:20px;bottom:20px;background:rgba(0,0,0,.6);color:#fff;padding:8px 12px}
+
+/* final */
+.fin{padding:clamp(80px,11vw,160px) 0;text-align:center;background:radial-gradient(60% 80% at 50% 120%,rgba(241,185,101,.28),transparent 70%),var(--paper)}
+.fin .led{margin:0 auto 30px;width:140px}
+.fin h2{font:700 clamp(34px,5.4vw,88px)/1 var(--h);letter-spacing:-.035em;max-width:14em;margin:0 auto 24px}
+.fin p{color:var(--mu);max-width:34em;margin:0 auto 34px}
+.fin .cta{justify-content:center}
+.ft{background:var(--ink);color:var(--mud);padding:34px 0 40px;font-size:14px}
+.ft .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between}
+.ft b{color:#fff;font:800 18px/1 var(--h);letter-spacing:.06em}
+.fab{display:none}
+
+@media (max-width:1100px){
+ .hd nav{display:none}
+ .rib ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .rib li:nth-child(3){padding-left:0;border-left:0}
+ .rib li:nth-child(n+3){border-top:1px solid var(--ln)}
+ .st{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:20px}
+}
+@media (max-width:860px){
+ body{font-size:16px}
+ .hero{grid-template-columns:minmax(0,1fr);min-height:0}
+ .hero-t{padding:36px var(--pad) 32px}
+ .hero-p{min-height:0;aspect-ratio:4/3;order:-1}
+ .hero-p::after{background:linear-gradient(0deg,var(--ink) 0,rgba(13,14,15,0) 30%)}
+ .hero-p figcaption{top:14px;bottom:auto;right:14px}
+ .sh,.tech,.why,.qg,.ct{grid-template-columns:minmax(0,1fr)}
+ .tf{position:relative;top:0;order:-1}
+ .tf .ph{aspect-ratio:4/3}
+ .tech{display:flex;flex-direction:column}
+ .tk{position:relative;top:0}
+ .why-p{margin-bottom:40px;margin-right:12%}
+ .why-p .b{right:-14%}
+ .wl li:nth-child(n){margin-left:0}
+ .st{grid-template-columns:minmax(0,1fr);border-top:0;border-left:1px solid var(--ln);margin-left:4px}
+ .st li{padding:4px 0 26px 26px}
+ .st li::before{left:-5px;top:8px}
+ .strip-h .arrows{display:none}
+ .ct-p{min-height:0;aspect-ratio:3/2}
+ .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:50;gap:10px}
+ .fab a{flex:1;min-height:54px;box-shadow:0 14px 34px -10px rgba(0,0,0,.55)}
+ .ft{padding-bottom:100px}
+}
+@media (max-width:520px){
+ .hd .wrap{gap:14px;height:60px}
+ .logo span{display:none}
+ .cta .btn{flex:1 1 100%}
+ .rib li{font-size:14.5px;padding:16px 12px 16px 0}
+ .rib li+li{padding-left:12px}
+ .rib li:nth-child(3){padding-left:0}
+ .tl button{grid-template-columns:34px minmax(0,1fr) 22px;gap:10px;padding:18px 2px}
+ .tl button:hover,.tl button.on{padding-left:10px}
+ .dl{grid-template-columns:minmax(0,1fr)}
+ .dl dt{padding-bottom:0;border-bottom:0}
+ .dl dd{padding-top:4px}
+ .tk{padding:22px 18px}
+ .strip figure,.strip figure.w{width:78vw}
+}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{transition:none!important;animation:none!important}
+ .js [data-r]{opacity:1;transform:none}
+ .js [data-r] .led,.js .led[data-r]{transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="hd">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="ASKO, Сочи — наверх"><b>ASKO</b><span>Сочи</span></a>
+  <nav aria-label="Разделы">
+   <a href="#tech">Техника</a><a href="#show">Шоурум</a><a href="#podbor">Подбор</a><a href="#contacts">Контакты</a>
+  </nav>
+  <a class="tel" href="tel:+79284151295">+7 928 415-12-95</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="hero-t">
+  <p class="mono k">Шоурум · Сочи, Краснодарский край</p>
+  <h1>Скандинавская техника для <em>кухни</em> и&nbsp;прачечной</h1>
+  <p class="lead">ASKO в Сочи: духовые шкафы, варочные панели, вытяжки, встраиваемые кофемашины, стиральные и сушильные машины. Подберём комплект под вашу кухню — посмотрите технику вживую, в интерьере.</p>
+  <div class="cta">
+   <a class="btn btn-glow" href="#podbor">Подобрать технику</a>
+   <a class="btn btn-line" data-wa href="https://wa.me/79284151295?text=Здравствуйте!%20Хочу%20подобрать%20технику%20ASKO."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Написать в WhatsApp</a>
+  </div>
+  <div class="hero-meta">
+   <span data-status></span>
+   <a href="tel:+79284151295">Позвонить</a>
+   <a href="https://2gis.ru/sochi/firm/70000001099707423" target="_blank" rel="noopener">Маршрут в 2ГИС</a>
+  </div>
+ </div>
+ <figure class="hero-p" data-r>
+  <img src="img/p14.jpg" srcset="img/p14-m.jpg 900w, img/p14.jpg 1440w" sizes="(max-width:860px) 100vw, 72vw" width="1440" height="960" alt="Стиральная машина ASKO в шоуруме среди прозрачных шаров, над ней логотип ASKO" fetchpriority="high">
+  <figcaption class="mono">Inspired by Scandinavia</figcaption>
+ </figure>
+</section>
+
+<div class="rib">
+ <ul class="wrap">
+  <li><span class="mono">Город</span>Сочи и край</li>
+  <li><span class="mono">На связи</span>Круглосуточно</li>
+  <li><span class="mono">Зоны</span>Кухня · Прачечная</li>
+  <li><span class="mono">Формат</span>Шоурум в интерьере</li>
+ </ul>
+</div>
+
+<section class="sec" id="tech">
+ <div class="wrap">
+  <div class="sh" data-r>
+   <div><span class="led"></span><p class="mono k2">Что стоит в шоуруме</p><h2>Техника, которая встаёт в&nbsp;кухню, а&nbsp;не&nbsp;рядом с&nbsp;ней</h2></div>
+   <p>Всё, что ниже, — с фотографий нашего зала. Нажмите на строку, чтобы увидеть технику в интерьере.</p>
+  </div>
+  <div class="tech">
+   <ol class="tl" data-r>
+    <li><button class="on" data-img="p3" data-cap="Духовой шкаф с сенсорным экраном"><span class="n">01</span><h3>Духовые шкафы</h3><span class="ar" aria-hidden="true">→</span><p>Встраиваемые, в чёрном стекле и стали, с сенсорным экраном и подсветкой камеры. В зале стоят колонной — по два друг над другом.</p></button></li>
+    <li><button data-img="p10" data-cap="Варочная панель в столешнице"><span class="n">02</span><h3>Варочные панели</h3><span class="ar" aria-hidden="true">→</span><p>Чёрное стекло с сенсорными зонами, вровень со столешницей — на острове и у стены.</p></button></li>
+    <li><button data-img="p2" data-cap="Островная вытяжка и колонна шкафов"><span class="n">03</span><h3>Вытяжки</h3><span class="ar" aria-hidden="true">→</span><p>Островная вытяжка из стали над рабочей зоной — рядом с колонной духовых шкафов и мраморной столешницей.</p></button></li>
+    <li><button data-img="p4" data-cap="Встраиваемая кофемашина ASKO"><span class="n">04</span><h3>Встраиваемые кофемашины</h3><span class="ar" aria-hidden="true">→</span><p>Кофемашина в линию со шкафами: эспрессо прямо в двойной стеклянный стакан.</p></button></li>
+    <li><button data-img="p8" data-cap="Шкаф для вина с подсветкой"><span class="n">05</span><h3>Винные шкафы</h3><span class="ar" aria-hidden="true">→</span><p>Стеклянная дверь, подсветка и дисплей — шкаф, который хочется показывать гостям.</p></button></li>
+    <li><button data-img="p14" data-cap="Стиральная машина ASKO"><span class="n">06</span><h3>Стиральные машины</h3><span class="ar" aria-hidden="true">→</span><p>Стальной корпус и большой люк — главный экспонат зала стоит прямо под логотипом.</p></button></li>
+    <li><button data-img="p9" data-cap="Сушильная машина: Butterfly drying, heat pump, steam"><span class="n">07</span><h3>Сушильные машины</h3><span class="ar" aria-hidden="true">→</span><p>На панели написано: Butterfly drying, heat pump, steam — сушка с тепловым насосом и паром. Ставится колонной со стиральной.</p></button></li>
+   </ol>
+   <figure class="tf" data-r>
+    <div class="ph"><img id="tfi" src="img/p3-m.jpg" srcset="img/p3-m.jpg 600w, img/p3.jpg 1200w" sizes="(max-width:860px) 100vw, 36vw" width="600" height="900" alt="Духовой шкаф с сенсорным экраном" loading="lazy"></div>
+    <figcaption><span id="tfc">Духовой шкаф с сенсорным экраном</span><span class="mono" id="tfn">01 / 07</span></figcaption>
+   </figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec dark" id="show">
+ <div class="wrap strip-h" data-r>
+  <div><span class="led"></span><p class="mono k2">Шоурум</p><h2>Техника в деле, а&nbsp;не на&nbsp;полке</h2></div>
+  <div class="arrows"><button type="button" data-s="-1" aria-label="Листать назад">←</button><button type="button" data-s="1" aria-label="Листать вперёд">→</button></div>
+ </div>
+ <div class="strip" id="strip" data-qa-skip tabindex="0" aria-label="Фото шоурума, листайте вбок">
+  <figure><div class="fr"><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 600w, img/p1.jpg 1200w" sizes="(max-width:520px) 78vw, 400px" width="600" height="900" alt="Мраморный фартук, смеситель и тёплая подсветка полок" loading="lazy"></div><figcaption><b>Тёплый свет</b>Мрамор, орех и подсветка под полками.</figcaption></figure>
+  <figure><div class="fr"><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 600w, img/p12.jpg 1200w" sizes="(max-width:520px) 78vw, 400px" width="600" height="900" alt="Кухонный остров с варочной панелью и световыми линиями на потолке" loading="lazy" style="object-position:50% 60%"></div><figcaption><b>Остров</b>Варочная панель в камне, световые линии над рабочей зоной.</figcaption></figure>
+  <figure class="w"><div class="fr"><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 900w, img/p11.jpg 1440w" sizes="(max-width:520px) 190vw, 900px" width="900" height="600" alt="Пиццу достают из духового шкафа" loading="lazy"></div><figcaption><b>Пицца из духовки</b>Шкафы в зале подключены — в них готовят.</figcaption></figure>
+  <figure><div class="fr"><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 600w, img/p6.jpg 1200w" sizes="(max-width:520px) 78vw, 400px" width="600" height="900" alt="Колонна духовых шкафов в светлой кухне у окна" loading="lazy" style="object-position:40% 50%"></div><figcaption><b>Светлая кухня</b>Колонна шкафов в белых фасадах у окна.</figcaption></figure>
+  <figure><div class="fr"><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 600w" sizes="(max-width:520px) 78vw, 400px" width="600" height="900" alt="Повар в фартуке ASKO снимает колпак с блюда, из-под него идёт дым" loading="lazy"></div><figcaption><b>Шеф в фартуке ASKO</b>Подача под дымным колпаком прямо в зале.</figcaption></figure>
+  <figure><div class="fr"><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 600w" sizes="(max-width:520px) 78vw, 400px" width="600" height="900" alt="Эспрессо из встраиваемой кофемашины" loading="lazy"></div><figcaption><b>Эспрессо</b>Встраиваемая кофемашина в чёрном фасаде.</figcaption></figure>
+  <figure><div class="fr"><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 600w, img/p13.jpg 1200w" sizes="(max-width:520px) 78vw, 400px" width="600" height="900" alt="Колонна из стиральной и сушильной машин под вывеской ASKO Inspired by Scandinavia" loading="lazy" style="object-position:50% 40%"></div><figcaption><b>Прачечная</b>Стиральная и сушильная колонной под вывеской Inspired by Scandinavia.</figcaption></figure>
+ </div>
+</section>
+
+<section class="sec">
+ <div class="wrap why">
+  <div class="why-p" data-r>
+   <div class="a"><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 600w, img/p2.jpg 1200w" sizes="(max-width:860px) 88vw, 46vw" width="600" height="900" alt="Колонна духовых шкафов и островная вытяжка в кухне с ореховыми полками" loading="lazy" style="object-position:50% 40%"></div>
+   <div class="b"><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1440w" sizes="(max-width:860px) 80vw, 600px" width="900" height="600" alt="Панель сушильной машины ASKO" loading="lazy" style="object-position:72% 50%"></div>
+  </div>
+  <div data-r>
+   <span class="led"></span>
+   <p class="mono k2">Почему смотреть вживую</p>
+   <h2>Технику за сотни тысяч выбирают глазами и&nbsp;руками</h2>
+   <ol class="wl">
+    <li><div><b>Всё подключено</b><p>На фото зала из духовки достают пиццу, кофемашина наливает эспрессо, а повар в фартуке ASKO подаёт блюдо под дымом.</p></div></li>
+    <li><div><b>Сразу в интерьере</b><p>Шкафы, панели и вытяжка встроены в кухню из ореха, мрамора и чёрного стекла — видно, как это будет выглядеть дома.</p></div></li>
+    <li><div><b>Кухня и прачечная рядом</b><p>Стиральная и сушильная машины собраны в колонну — удобно прикинуть, как они встанут в вашу постирочную.</p></div></li>
+   </ol>
+   <p class="note">Карточка в 2ГИС: <a href="https://2gis.ru/sochi/firm/70000001099707423" target="_blank" rel="noopener">ASKO, Сочи</a></p>
+  </div>
+ </div>
+</section>
+
+<section class="sec qz" id="podbor">
+ <div class="wrap">
+  <div class="sh" data-r>
+   <div><span class="led"></span><p class="mono k2">Подбор комплекта · 1 минута</p><h2>Соберите запрос — мы подберём технику под вашу кухню</h2></div>
+   <p>Отметьте, что нужно. Справа сразу собирается сообщение — отправьте его в WhatsApp, и менеджер ответит по наличию и вариантам.</p>
+  </div>
+  <div class="qg">
+   <form class="qf" id="qf" onsubmit="return false">
+    <fieldset><legend><span>01</span>Для какой зоны</legend><div class="ch">
+     <label><input type="radio" name="zone" value="Кухня" checked><span>Кухня</span></label>
+     <label><input type="radio" name="zone" value="Прачечная"><span>Прачечная</span></label>
+     <label><input type="radio" name="zone" value="Кухня и прачечная"><span>Кухня и прачечная</span></label>
+    </div></fieldset>
+    <fieldset><legend><span>02</span>Что нужно <small>можно несколько</small></legend><div class="ch" id="items">
+     <label data-z="k"><input type="checkbox" name="it" value="духовой шкаф"><span>Духовой шкаф</span></label>
+     <label data-z="k"><input type="checkbox" name="it" value="варочная панель"><span>Варочная панель</span></label>
+     <label data-z="k"><input type="checkbox" name="it" value="вытяжка"><span>Вытяжка</span></label>
+     <label data-z="k"><input type="checkbox" name="it" value="встраиваемая кофемашина"><span>Кофемашина</span></label>
+     <label data-z="k"><input type="checkbox" name="it" value="винный шкаф"><span>Винный шкаф</span></label>
+     <label data-z="l"><input type="checkbox" name="it" value="стиральная машина"><span>Стиральная машина</span></label>
+     <label data-z="l"><input type="checkbox" name="it" value="сушильная машина"><span>Сушильная машина</span></label>
+    </div></fieldset>
+    <fieldset><legend><span>03</span>На каком этапе</legend><div class="ch">
+     <label><input type="radio" name="stage" value="кухня ещё в проекте"><span>Кухня в проекте</span></label>
+     <label><input type="radio" name="stage" value="мебель уже заказана"><span>Мебель заказана</span></label>
+     <label><input type="radio" name="stage" value="меняю старую технику"><span>Меняю старую технику</span></label>
+    </div></fieldset>
+    <fieldset><legend><span>04</span>Бюджет на технику</legend><div class="ch">
+     <label><input type="radio" name="bud" value="до 300&nbsp;000 ₽"><span>до 300&nbsp;000&nbsp;₽</span></label>
+     <label><input type="radio" name="bud" value="300&nbsp;000 – 700&nbsp;000 ₽"><span>300–700&nbsp;тыс.&nbsp;₽</span></label>
+     <label><input type="radio" name="bud" value="от 700&nbsp;000 ₽"><span>от 700&nbsp;000&nbsp;₽</span></label>
+     <label><input type="radio" name="bud" value="пока не знаю, нужна консультация"><span>Нужна консультация</span></label>
+    </div></fieldset>
+    <fieldset><legend><span>05</span>Как удобнее</legend><div class="ch">
+     <label><input type="radio" name="how" value="приехать в шоурум"><span>Приехать в шоурум</span></label>
+     <label><input type="radio" name="how" value="созвониться"><span>Созвониться</span></label>
+     <label><input type="radio" name="how" value="пришлю проект кухни сюда в WhatsApp"><span>Пришлю проект кухни</span></label>
+    </div></fieldset>
+    <fieldset><legend><span>06</span>Как к вам обращаться <small>по желанию</small></legend>
+     <div class="nm"><label for="nm">Имя</label><input id="nm" name="nm" type="text" autocomplete="given-name" maxlength="40"></div>
+    </fieldset>
+   </form>
+   <aside class="tk" aria-live="polite">
+    <span class="led"></span>
+    <h3>Ваш запрос</h3>
+    <p class="s">Сообщение уйдёт в WhatsApp ASKO Сочи — его можно дописать перед отправкой.</p>
+    <div class="lv mono"><span>Заполнено</span><span id="pc">1 / 5</span></div>
+    <div class="bar"><i id="pb"></i></div>
+    <pre id="msg"></pre>
+    <a class="btn btn-glow" id="send" href="https://wa.me/79284151295?text=Здравствуйте!%20Хочу%20подобрать%20технику%20ASKO." target="_blank" rel="noopener">Отправить в WhatsApp</a>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section class="sec dark">
+ <div class="wrap">
+  <div class="sh" data-r>
+   <div><span class="led"></span><p class="mono k2">Как мы работаем</p><h2>От заявки до техники в&nbsp;вашей кухне</h2></div>
+   <p>Общий порядок. Детали — наличие, сроки, поставку — менеджер обсудит с вами лично.</p>
+  </div>
+  <ol class="st" data-r>
+   <li><span class="mono">Шаг 01</span><b>Заявка</b><p>Подбор на сайте, звонок или сообщение в WhatsApp.</p></li>
+   <li><span class="mono">Шаг 02</span><b>Подбор</b><p>Уточняем кухню или постирочную, размеры ниш и пожелания.</p></li>
+   <li><span class="mono">Шаг 03</span><b>Шоурум</b><p>Смотрите технику вживую, в интерьере, в работе.</p></li>
+   <li><span class="mono">Шаг 04</span><b>Договор</b><p>Фиксируем комплект и условия.</p></li>
+   <li><span class="mono">Шаг 05</span><b>Передача</b><p>Техника едет к вам — под мебель или на замену старой.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="sec dark" id="contacts" style="padding-top:0">
+ <div class="wrap ct">
+  <div data-r>
+   <span class="led"></span>
+   <p class="mono k2">Контакты</p>
+   <h2>ASKO в&nbsp;Сочи</h2>
+   <a class="big" href="tel:+79284151295">+7 928 415-12-95</a>
+   <dl class="dl">
+    <dt>Город</dt><dd>Сочи, Краснодарский край</dd>
+    <dt>Адрес</dt><dd>Точка шоурума и маршрут — <a href="https://2gis.ru/sochi/firm/70000001099707423" target="_blank" rel="noopener">в карточке 2ГИС</a></dd>
+    <dt>Часы</dt><dd>Круглосуточно, без выходных · <span data-status></span></dd>
+    <dt>WhatsApp</dt><dd><a data-wa href="https://wa.me/79284151295?text=Здравствуйте!%20Хочу%20подобрать%20технику%20ASKO.">+7 928 415-12-95</a></dd>
+   </dl>
+   <div class="cta">
+    <a class="btn btn-glow" href="tel:+79284151295">Позвонить</a>
+    <a class="btn btn-line" href="https://2gis.ru/sochi/firm/70000001099707423" target="_blank" rel="noopener">Маршрут в 2ГИС</a>
+   </div>
+  </div>
+  <figure class="ct-p" data-r>
+   <img src="img/p4-m.jpg" srcset="img/p4-m.jpg 900w, img/p4.jpg 1440w" sizes="(max-width:860px) 100vw, 64vw" width="900" height="600" alt="Эспрессо в стеклянном стакане под встраиваемой кофемашиной ASKO" loading="lazy">
+   <span class="mono">Кофе в шоуруме</span>
+  </figure>
+ </div>
+</section>
+
+<section class="fin">
+ <div class="wrap" data-r>
+  <span class="led"></span>
+  <h2>Приезжайте посмотреть — или начните с&nbsp;подбора</h2>
+  <p>Расскажите, какая у вас кухня или постирочная. Ответим в WhatsApp и подскажем, что из ASKO встанет в ваши ниши.</p>
+  <div class="cta">
+   <a class="btn btn-dark" href="#podbor">Подобрать технику</a>
+   <a class="btn btn-ol" data-wa href="https://wa.me/79284151295?text=Здравствуйте!%20Хочу%20подобрать%20технику%20ASKO.">Написать в WhatsApp</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="ft">
+ <div class="wrap">
+  <b>ASKO · Сочи</b>
+  <span>Демо-концепт по открытым данным 2ГИС. Не официальный сайт.</span>
+  <a href="tel:+79284151295">+7 928 415-12-95</a>
+ </div>
+</footer>
+
+<div class="fab">
+ <a class="btn btn-glow" href="tel:+79284151295">Позвонить</a>
+ <a class="btn btn-dark" data-wa href="https://wa.me/79284151295?text=Здравствуйте!%20Хочу%20подобрать%20технику%20ASKO.">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+ var W='79284151295';
+ /* техника: переключение превью */
+ var bs=document.querySelectorAll('.tl button'),im=document.getElementById('tfi'),cp=document.getElementById('tfc'),nn=document.getElementById('tfn');
+ var L={p10:1,p4:1,p8:1,p14:1,p9:1};
+ function pick(b,i){if(b.classList.contains('on'))return;bs.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+  var k=b.getAttribute('data-img');im.classList.add('sw');
+  setTimeout(function(){im.srcset='img/'+k+'-m.jpg '+(L[k]?900:600)+'w, img/'+k+'.jpg '+(L[k]?1440:1200)+'w';im.sizes=L[k]?'(max-width:860px) 100vw, 56vw':'(max-width:860px) 100vw, 36vw';im.src='img/'+k+'-m.jpg';im.alt=b.getAttribute('data-cap');im.onload=function(){im.classList.remove('sw')}},180);
+  cp.textContent=b.getAttribute('data-cap');nn.textContent=('0'+(i+1)).slice(-2)+' / 07';}
+ bs.forEach(function(b,i){b.addEventListener('click',function(){pick(b,i)});if(matchMedia('(hover:hover)').matches)b.addEventListener('mouseenter',function(){pick(b,i)})});
+ /* лента */
+ var s=document.getElementById('strip');
+ document.querySelectorAll('[data-s]').forEach(function(b){b.addEventListener('click',function(){s.scrollBy({left:+b.getAttribute('data-s')*s.clientWidth*.6,behavior:'smooth'})})});
+ /* подбор */
+ var f=document.getElementById('qf'),pre=document.getElementById('msg'),send=document.getElementById('send'),pb=document.getElementById('pb'),pc=document.getElementById('pc');
+ function v(n){var e=f.querySelector('input[name='+n+']:checked');return e?e.value.replace(/ /g,' '):''}
+ function upd(){
+  var z=v('zone');
+  f.querySelectorAll('#items label').forEach(function(l){var t=l.getAttribute('data-z'),show=z==='Кухня и прачечная'||(z==='Кухня'?t==='k':t==='l');l.style.display=show?'':'none';if(!show)l.querySelector('input').checked=false});
+  var it=[].map.call(f.querySelectorAll('input[name=it]:checked'),function(e){return e.value});
+  var nm=f.nm.value.trim(),L=['Здравствуйте!'+(nm?' Меня зовут '+nm+'.':'')+' Хочу подобрать технику ASKO.','Зона: '+z.toLowerCase()];
+  if(it.length)L.push('Нужно: '+it.join(', '));
+  if(v('stage'))L.push('Этап: '+v('stage'));
+  if(v('bud'))L.push('Бюджет: '+v('bud'));
+  if(v('how'))L.push('Удобнее: '+v('how'));
+  var t=L.join('\n');pre.textContent=t;send.href='https://wa.me/'+W+'?text='+encodeURIComponent(t);
+  var n=1+(it.length?1:0)+(v('stage')?1:0)+(v('bud')?1:0)+(v('how')?1:0);pc.textContent=n+' / 5';pb.style.width=n*20+'%';
+ }
+ f.addEventListener('change',upd);f.addEventListener('input',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

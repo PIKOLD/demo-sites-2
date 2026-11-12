@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Fiesta event — свидания, предложения и праздники в Казани</title><meta property="og:type" content="website"><meta property="og:title" content="Fiesta event — свидания, предложения и праздники в Казани"><meta property="og:description" content="Fiesta event, Казань: свидания на крыше, предложения руки и сердца, прогулки на катере, полёты, свадьбы, огненные буквы, салют и холодные фонтаны. На связи круглосуточно."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/fiesta-event/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Fiesta event, Казань: свидания на крыше, предложения руки и сердца, прогулки на катере, полёты, свадьбы, огненные буквы, салют и холодные фонтаны. На связи круглосуточно.">
+<meta name="theme-color" content="#140d26">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Onest:wght@400;500;700&family=Unbounded:wght@600;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Onest:wght@400;500;700&family=Unbounded:wght@600;800&display=swap"></noscript>
+<style>
+:root{--night:#140d26;--night2:#21153d;--plum:#3a1f52;--fire:#ffb03a;--ember:#ff5b36;--rose:#ff86a0;--cream:#fbf3e8;--sand:#f3e4cf;--ink:#1c1229;--mut:#5f5070;--mutd:#cbbfdc;--r:22px;--ser:"Playfair Display",Georgia,serif;--sans:"Onest",system-ui,sans-serif;--disp:"Unbounded","Onest",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.6 var(--sans);color:var(--ink);background:var(--cream);overflow-x:hidden}
+img,svg,canvas{display:block;max-width:100%}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--fire);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1320px,100% - 40px);margin-inline:auto}
+.demo{background:#000;color:#f5e9d6;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+.lab{font:600 12px/1.3 var(--disp);letter-spacing:.14em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0) scale(.98)}
+.b-fire{background:linear-gradient(135deg,#ffc556,var(--ember));color:#1d0d07;box-shadow:0 10px 30px -10px rgba(255,91,54,.8)}
+.b-fire:hover{box-shadow:0 16px 40px -10px rgba(255,120,60,.95)}
+.b-wa{background:#1fae5b;color:#fff}.b-wa:hover{background:#18984f}
+.b-gh{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.b-gh:hover{background:rgba(255,255,255,.08)}
+svg.i{width:20px;height:20px;flex:none}
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(20,13,38,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.07)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:66px}
+.logo{display:flex;align-items:baseline;gap:6px;text-decoration:none;font:800 21px/1 var(--disp);letter-spacing:-.02em}
+.logo i{font:600 italic 20px/1 var(--ser);color:var(--fire);letter-spacing:0}
+.logo b{width:7px;height:7px;border-radius:50%;background:var(--ember);box-shadow:0 0 12px 3px rgba(255,140,60,.8);align-self:center}
+.nav{display:flex;gap:24px;margin-left:auto;font-size:15px}
+.nav a{text-decoration:none;opacity:.8;transition:opacity .2s}.nav a:hover{opacity:1;color:var(--fire)}
+.tphone{font:600 15px var(--disp);text-decoration:none;white-space:nowrap}
+.tphone:hover{color:var(--fire)}
+/* hero */
+.hero{position:relative;background:radial-gradient(120% 70% at 75% 110%,rgba(255,91,54,.38),transparent 60%),radial-gradient(60% 50% at 10% 0%,rgba(122,60,170,.45),transparent 70%),var(--night);color:#fff;overflow:hidden;isolation:isolate}
+.stars{position:absolute;inset:0;z-index:-1;opacity:.55;background-image:radial-gradient(1.4px 1.4px at 12% 18%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 31% 8%,#fff 50%,transparent 51%),radial-gradient(1.2px 1.2px at 48% 26%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 66% 12%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 86% 22%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 93% 6%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 22% 40%,#fff 50%,transparent 51%),radial-gradient(1.2px 1.2px at 58% 4%,#fff 50%,transparent 51%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:24px;align-items:center;min-height:min(calc(100svh - 100px),780px);padding:48px 0 40px}
+.hero .lab{color:var(--fire);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.st{font:500 13px var(--sans);letter-spacing:0;text-transform:none;color:#d9f5e3;display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:99px;background:rgba(31,174,91,.18)}
+.st::before{content:"";width:7px;height:7px;border-radius:50%;background:#3ddc84;box-shadow:0 0 8px #3ddc84}
+h1{font:700 clamp(40px,5.6vw,88px)/1.02 var(--ser);letter-spacing:-.02em;margin:22px 0 22px}
+h1 em{font-style:italic;font-weight:600;background:linear-gradient(90deg,#ffd27a,var(--ember) 70%,var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(17px,1.35vw,20px);color:var(--mutd);max-width:34em}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .note{margin-top:22px;font-size:14px;color:#a99cbf;display:flex;gap:18px;flex-wrap:wrap}
+.hero .note b{color:#fff;font-weight:700}
+.stage{position:relative;height:min(62vh,560px);min-height:300px}
+.stage canvas{width:100%;height:100%;cursor:pointer}
+.stage small{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);font-size:12px;color:#8f82a8;white-space:nowrap}
+.ribbon{border-top:1px solid rgba(255,255,255,.08)}
+.ribbon::-webkit-scrollbar{display:none}
+.ribbon ul{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;padding:16px 20px;max-width:1320px;margin-inline:auto}
+.ribbon li{font:500 14px var(--sans);padding:9px 16px;border-radius:99px;background:rgba(255,255,255,.06);white-space:nowrap;color:#e9def7}
+.ribbon li::before{content:"✦ ";color:var(--fire)}
+/* sections */
+section{padding:clamp(72px,9vw,130px) 0}
+h2{font:700 clamp(34px,4.4vw,64px)/1.05 var(--ser);letter-spacing:-.02em}
+h2 em{font-style:italic;font-weight:600;color:var(--ember)}
+.shead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:40px;align-items:end;margin-bottom:48px}
+.shead p{color:var(--mut);font-size:18px}
+.shead .lab{color:var(--ember);margin-bottom:16px}
+/* services bento */
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.card{position:relative;border-radius:var(--r);padding:30px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s;min-height:240px;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(40,10,60,.45)}
+.card h3{font:700 clamp(24px,2.2vw,34px)/1.12 var(--ser);margin-bottom:12px;letter-spacing:-.01em}
+.card p{font-size:16px;opacity:.85;max-width:30em}
+.card .lab{margin-bottom:auto;padding-bottom:26px;opacity:.75}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{font-size:13px;padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.12)}
+.c1{grid-column:span 7;grid-row:span 2;background:linear-gradient(180deg,#2a1748 0%,#4a2266 62%,#b5476a 100%);color:#fff;min-height:520px}
+.c1 svg.sky{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;opacity:.95;pointer-events:none}
+.c1 .moon{position:absolute;right:46px;top:44px;width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff6dc,#ffd48a 60%,#f2a85a);box-shadow:0 0 60px 10px rgba(255,200,120,.35)}
+.c1 .txt{position:relative;z-index:1;max-width:460px}
+.c2{grid-column:span 5;background:linear-gradient(140deg,#ff7a4c,var(--ember) 45%,#d6315a);color:#fff}
+.c3{grid-column:span 5;background:#10335a;color:#fff}
+.c3 .wave{position:absolute;right:-10px;bottom:-6px;width:62%;opacity:.5}
+.c4{grid-column:span 3;background:var(--sand)}
+.c4 .tags span,.c5 .tags span{background:rgba(28,18,41,.07)}
+.c5{grid-column:span 4;background:#fff;box-shadow:inset 0 0 0 1px #eadbc6}
+.c6{grid-column:span 5;background:var(--night);color:#fff}
+.c6 .sp{position:absolute;inset:auto 0 0 auto;width:55%;height:100%;background:radial-gradient(circle at 70% 70%,rgba(255,176,58,.5),transparent 55%)}
+.c7{grid-column:span 12;min-height:0;background:linear-gradient(90deg,#e9f1ff,#fdf0f4);flex-direction:row;align-items:center;gap:30px;flex-wrap:wrap}
+.c7 .lab{margin:0;padding:0}
+.c7 h3{margin:0}
+.c7 p{flex:1 1 300px}
+/* praise */
+.praise{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.praise::after{content:"";position:absolute;width:640px;height:640px;left:-200px;bottom:-320px;border-radius:50%;background:radial-gradient(circle,rgba(255,91,54,.35),transparent 65%)}
+.pgrid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,6vw,100px);position:relative;z-index:1}
+.score{font:800 clamp(110px,15vw,220px)/.85 var(--disp);letter-spacing:-.06em;background:linear-gradient(180deg,#ffe0a0,var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+.score+p{margin-top:18px;color:var(--mutd);font-size:18px}
+.score+p b{color:#fff}
+.stars5{display:flex;gap:6px;margin-top:22px;color:var(--fire)}
+.stars5 svg{width:24px;height:24px}
+.praise .lab{color:var(--fire);margin-bottom:18px}
+.pts{list-style:none;counter-reset:p}
+.pts li{counter-increment:p;display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.pts li:first-child{padding-top:0}
+.pts li::before{content:"0" counter(p);font:600 15px var(--disp);color:var(--fire);padding-top:8px}
+.pts h3{font:600 italic clamp(24px,2.2vw,32px)/1.15 var(--ser);margin-bottom:8px}
+.pts p{color:var(--mutd)}
+/* steps */
+.how .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,96px);align-items:start}
+.how .stk{position:sticky;top:110px}
+.how .stk .lab{color:var(--ember);margin-bottom:16px}
+.how .stk p{margin-top:20px;color:var(--mut);font-size:18px}
+.steps{list-style:none;position:relative}
+.steps::before{content:"";position:absolute;left:27px;top:20px;bottom:20px;width:2px;background:linear-gradient(var(--fire),var(--ember),var(--rose))}
+.steps li{position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:22px;padding:0 0 38px}
+.steps b{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--cream);box-shadow:inset 0 0 0 2px var(--ember);font:600 17px var(--disp);color:var(--ember);position:relative;z-index:1}
+.steps h3{font:700 24px/1.2 var(--ser);margin:12px 0 6px}
+.steps p{color:var(--mut)}
+/* builder */
+.build{background:linear-gradient(180deg,var(--night),#1b1033);color:#fff}
+.build .shead p{color:var(--mutd)}
+.build .shead .lab{color:var(--fire)}
+.bgrid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:24px;align-items:start}
+.q{display:grid;gap:16px}
+fieldset{border:0;background:rgba(255,255,255,.05);border-radius:var(--r);padding:26px;min-width:0}
+legend{float:left;width:100%;display:flex;align-items:baseline;gap:12px;font:700 22px/1.2 var(--ser);margin-bottom:16px}
+legend span{font:600 12px var(--disp);color:var(--fire);letter-spacing:.1em}
+.ch{display:flex;flex-wrap:wrap;gap:10px;clear:both}
+.ch label{position:relative;cursor:pointer}
+.ch input{position:absolute;opacity:0;pointer-events:none}
+.ch span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:99px;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);font-size:15px;transition:background .2s,box-shadow .2s,color .2s}
+.ch label:hover span{box-shadow:inset 0 0 0 1px var(--fire)}
+.ch input:checked+span{background:linear-gradient(135deg,#ffc556,var(--ember));color:#1d0d07;box-shadow:none;font-weight:700}
+.ch input:focus-visible+span{outline:3px solid var(--fire);outline-offset:3px}
+.fl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;clear:both}
+.fld label{display:block;font-size:14px;color:var(--mutd);margin-bottom:6px}
+.fld input,.fld textarea{width:100%;min-height:50px;border-radius:14px;border:0;background:rgba(255,255,255,.09);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);padding:12px 16px;color:#fff;color-scheme:dark}
+.fld textarea{min-height:84px;resize:vertical}
+.fld input:focus,.fld textarea:focus{outline:0;box-shadow:inset 0 0 0 2px var(--fire)}
+.cnt{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.09);border-radius:14px;padding:3px;width:max-content}
+.cnt button{width:46px;height:46px;border:0;border-radius:11px;background:rgba(255,255,255,.1);font-size:22px;cursor:pointer}
+.cnt button:hover{background:var(--fire);color:#1d0d07}
+.cnt output{min-width:48px;text-align:center;font:600 18px var(--disp)}
+.firebox{clear:both;border-radius:16px;background:#0c0718;height:200px;margin-top:14px;position:relative;overflow:hidden}
+.firebox canvas{width:100%;height:100%}
+.full{grid-column:1/-1}
+.sum{position:sticky;top:96px;border-radius:var(--r);padding:30px;background:var(--cream);color:var(--ink)}
+.sum h3{font:700 30px/1.1 var(--ser);margin-bottom:6px}
+.sum>p{color:var(--mut);font-size:15px}
+.sum dl{margin:22px 0;display:grid;gap:0}
+.sum dl div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;padding:11px 0;border-bottom:1px dashed #dccbb3;font-size:15px}
+.sum dt{color:var(--mut)}
+.sum dd{font-weight:500;overflow-wrap:anywhere}
+.sum dd.e{color:#a596b3;font-weight:400}
+.sum .btn{width:100%}
+.sum .alt{display:flex;gap:10px;margin-top:10px}
+.sum .alt .btn{flex:1;min-height:48px;font-size:15px;padding:0 12px}
+.sum small{display:block;margin-top:14px;color:var(--mut);font-size:13px}
+/* contacts */
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px}
+.cbox{background:#fff;border-radius:var(--r);padding:clamp(26px,3vw,42px);box-shadow:inset 0 0 0 1px #eadbc6}
+.cbox .lab{color:var(--ember);margin-bottom:14px}
+.phones a{display:block;font:700 clamp(24px,2.4vw,34px)/1.3 var(--ser);text-decoration:none}
+.phones a:hover{color:var(--ember)}
+.phones a+a{font-size:clamp(19px,1.6vw,22px);color:var(--mut)}
+.rows{margin-top:26px;display:grid;gap:18px}
+.rows div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;font-size:16px}
+.rows dt{color:var(--mut)}
+.soc{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.soc a{min-height:46px;display:inline-flex;align-items:center;gap:8px;padding:0 18px;border-radius:99px;background:var(--sand);text-decoration:none;font-weight:500;transition:background .2s}
+.soc a:hover{background:var(--fire)}
+.st2{color:#13804a;font-weight:500}
+.map{border-radius:var(--r);overflow:hidden;min-height:420px;background:var(--sand);position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* final */
+.fin{background:radial-gradient(80% 120% at 50% 120%,rgba(255,91,54,.55),transparent 60%),var(--night);color:#fff;text-align:center}
+.fin h2{max-width:14em;margin:0 auto}
+.fin p{color:var(--mutd);margin:20px auto 34px;max-width:36em;font-size:18px}
+.fin .acts{justify-content:center}
+footer{background:#0c0718;color:#8f82a8;font-size:14px;padding:30px 0 100px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;display:none;gap:10px}
+.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.5)}
+.fab a svg{width:26px;height:26px}
+.fab .f1{background:linear-gradient(135deg,#ffc556,var(--ember));color:#1d0d07}
+.fab .f2{background:#1fae5b;color:#fff}
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){.nav{display:none}.tphone{margin-left:auto}
+.c1{grid-column:span 12;min-height:460px}.c2,.c3{grid-column:span 6}.c4,.c5,.c6{grid-column:span 4}}
+@media (max-width:860px){
+.hero .wrap{grid-template-columns:minmax(0,1fr);min-height:0;padding:34px 0 10px;gap:0}
+.stage{height:230px;min-height:0;margin-top:16px}
+.shead,.pgrid,.how .wrap,.bgrid,.cgrid{grid-template-columns:minmax(0,1fr)}
+.shead{gap:16px;margin-bottom:34px}
+.how .stk{position:static}
+.c2,.c3,.c4,.c5,.c6{grid-column:span 12}
+.sum{position:static}
+.map{min-height:320px}
+.fab{display:flex}.ribbon{display:none}
+}
+@media (max-width:520px){
+.wrap{width:min(100% - 32px,1320px)}
+body{font-size:16px}
+.top .wrap{height:58px}.tphone{font-size:13px}
+.logo{font-size:18px}
+h1{font-size:clamp(36px,10.4vw,46px);margin:16px 0}
+.acts .btn{flex:1 1 100%}
+.card{padding:24px;min-height:0}
+.c1{min-height:440px}
+.c1 .moon{width:52px;height:52px;right:24px;top:24px}
+fieldset{padding:20px 16px}
+.fl{grid-template-columns:minmax(0,1fr)}
+.ch span{padding:0 14px;font-size:14px}
+.pts li{grid-template-columns:minmax(0,1fr);gap:4px}
+.rows div{grid-template-columns:minmax(0,1fr);gap:2px}
+.sum{padding:24px 18px}
+.sum dl div{grid-template-columns:90px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,.js [data-r]{transition:none!important;animation:none!important}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top" aria-label="Fiesta event, наверх">Fiesta<b></b><i>event</i></a>
+<nav class="nav" aria-label="Разделы"><a href="#what">Что устраиваем</a><a href="#praise">Отзывы</a><a href="#how">Как работаем</a><a href="#build">Собрать вечер</a><a href="#contacts">Контакты</a></nav>
+<a class="tphone" href="tel:+79376152610">+7 937 615-26-10</a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="stars" aria-hidden="true"></div>
+<div class="wrap">
+<div>
+<p class="lab">Казань · праздники и сюрпризы <span class="st" data-status></span></p>
+<h1>Свидание на крыше, катер, <em>огненное «да»</em></h1>
+<p class="lead">Fiesta event устраивает в Казани свидания, предложения руки и сердца, дни рождения и свадьбы — от сервировки и музыки до салюта и холодных фонтанов.</p>
+<div class="acts">
+<a class="btn b-fire" href="#build">Собрать свой вечер</a>
+<a class="btn b-wa" href="https://wa.me/79376152610?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%B8%D0%BA%D0%B5%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8"><svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>Написать в WhatsApp</a>
+<a class="btn b-gh" href="tel:+79376152610">Позвонить</a>
+</div>
+<p class="note"><span><b>4,6</b> в 2ГИС · 144 отзыва</span><span>На связи <b>круглосуточно</b></span></p>
+</div>
+<div class="stage"><canvas id="heroFire" aria-label="Огненные буквы складываются в слова ДА и LOVE" role="img"></canvas><small>Нажмите — будет салют</small></div>
+</div>
+<div class="ribbon" aria-label="Поводы"><ul><li>Свидание на крыше</li><li>Предложение руки и сердца</li><li>День рождения на катере</li><li>Полёт с пилотом</li><li>Огненные буквы</li><li>Салют и холодные фонтаны</li><li>Свадьба и выездная регистрация</li><li>Свадьба за рубежом</li><li>Дед Мороз и Снегурочка</li><li>Детский праздник и аниматор</li></ul></div>
+</section>
+
+<section id="what"><div class="wrap">
+<div class="shead" data-r><div><p class="lab">Что устраиваем</p><h2>Один звонок — и вечер <em>собран</em> целиком</h2></div><p>Место, оформление, угощения, эффекты и люди, которые всё это проведут. Вы приходите и просто наслаждаетесь.</p></div>
+<div class="bento">
+<article class="card c1" data-r>
+<div class="moon" aria-hidden="true"></div>
+<p class="lab">Для двоих</p>
+<div class="txt"><h3>Свидание на крыше или в студии с панорамными окнами</h3><p>Сервировка, фрукты и сладости, музыка и вечерний город под ногами. Гости пишут, что вечером здесь особенно атмосферно.</p>
+<div class="tags"><span>крыша</span><span>студия</span><span>сервировка</span><span>музыка</span></div></div>
+<svg class="sky" viewBox="0 0 800 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path fill="#1a0e2e" d="M0 220V150h40v-30h30v30h30V96h14V70l6-14 6 14v26h14v54h40v-40h50v40h30V40l5-22 5 22v110h20v-60h60v-20l24-26 24 26v20h20v60h30V54l6-20 6 20v96h40v-50h60v50h40V30l4-18 4 18v120h30v-40h40v40h60v-70h50v70h20v70Z"/><g fill="#ffcf7a" opacity=".8"><rect x="118" y="110" width="4" height="6"/><rect x="200" y="125" width="4" height="6"/><rect x="390" y="110" width="4" height="6"/><rect x="420" y="125" width="4" height="6"/><rect x="560" y="120" width="4" height="6"/><rect x="690" y="100" width="4" height="6"/><rect x="720" y="120" width="4" height="6"/></g></svg>
+</article>
+<article class="card c2" data-r><p class="lab">Предложение</p><h3>Момент, когда она скажет «да»</h3><p>Огненная надпись, холодные фонтаны, салют. Перед вечером созвонимся, расскажем варианты и пришлём видео, как это выглядит.</p></article>
+<article class="card c3" data-r><svg class="wave" viewBox="0 0 300 120" aria-hidden="true"><path d="M0 70q37-30 75 0t75 0 75 0 75 0V120H0Z" fill="#2c6fae"/><path d="M0 92q37-24 75 0t75 0 75 0 75 0V120H0Z" fill="#4b9be0"/></svg><p class="lab">На воде</p><h3>Прогулка на катере с капитаном</h3><p>День рождения или свидание на воде: капитан и катает, и удивляет.</p></article>
+<article class="card c4" data-r><p class="lab">В небе</p><h3>Полёт с пилотом</h3><p>Себе или в подарок, можно с ребёнком. После полёта — горячий чай и тёплый приём.</p></article>
+<article class="card c5" data-r><p class="lab">Свадьбы</p><h3>Свадьба и выездная регистрация</h3><p>А ещё свадьбы за рубежом.</p></article>
+<article class="card c6" data-r><div class="sp" aria-hidden="true"></div><p class="lab">Эффекты</p><h3>Огненные буквы, салют, холодные фонтаны</h3><p>Особенно эффектно на фоне вечернего неба.</p></article>
+<article class="card c7" data-r><p class="lab">Детям и на Новый год</p><h3>Дед Мороз и Снегурочка, аниматоры</h3><p>Детские праздники и новогодние поздравления дома, в саду или в офисе — с теми, кого ждут весь год.</p><a class="btn b-gh" href="#build">Выбрать</a></article>
+</div>
+</div></section>
+
+<section class="praise" id="praise"><div class="wrap pgrid">
+<div data-r><p class="lab">За что хвалят</p><div class="score">4,6</div><p><b>144 отзыва</b> в 2ГИС — о свиданиях, предложениях, свадьбах и полётах</p><div class="stars5" aria-label="Оценка 4,6 из 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" opacity=".45"><path d="m12 2 3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg></div></div>
+<ol class="pts">
+<li data-r><div><h3>Успевают даже за день</h3><p>Обратились за день до дня рождения — и всё равно получили день рождения с прогулкой на катере, который гости называют сногсшибательным.</p></div></li>
+<li data-r><div><h3>Продумано до мелочей</h3><p>На свидании на крыше — фрукты, сладости и сервировка, всё по прайсу. После предложения девушка сказала «да», и всё прошло организованно и чётко.</p></div></li>
+<li data-r><div><h3>Эльмира и Максим творят волшебство</h3><p>Огненные буквы, салют и фонтаны на свадьбе выглядели эффектно на фоне вечера, а на катере Максим и катает, и удивляет.</p></div></li>
+</ol>
+</div></section>
+
+<section class="how" id="how"><div class="wrap">
+<div class="stk" data-r><p class="lab">Как мы работаем</p><h2>От идеи до салюта — <em>пять шагов</em></h2><p>Все детали обсуждаем заранее, а в день праздника вы ни о чём не думаете.</p></div>
+<ol class="steps">
+<li data-r><b>1</b><div><h3>Заявка</h3><p>Пишете в WhatsApp, Telegram или звоните — на связи круглосуточно.</p></div></li>
+<li data-r><b>2</b><div><h3>Созвон и варианты</h3><p>Рассказываем, что можно сделать под ваш повод, и присылаем видео, как это выглядит.</p></div></li>
+<li data-r><b>3</b><div><h3>Договорились</h3><p>Фиксируем место, время, эффекты, меню и сценарий. Оплата наличными, переводом, по QR-коду или через банк.</p></div></li>
+<li data-r><b>4</b><div><h3>Подготовка</h3><p>Готовим площадку, оформление и всё, о чём договорились — ваши просьбы выполняем как обсудили.</p></div></li>
+<li data-r><b>5</b><div><h3>Ваш вечер</h3><p>Вы приходите — и всё уже горит, играет и ждёт.</p></div></li>
+</ol>
+</div></section>
+
+<section class="build" id="build"><div class="wrap">
+<div class="shead" data-r><div><p class="lab">Конструктор вечера</p><h2>Соберите праздник <em>за минуту</em></h2></div><p>Отметьте, что хотите, напишите слово для огненных букв — и отправьте готовую заявку в WhatsApp. Мы перезвоним и предложим варианты.</p></div>
+<div class="bgrid">
+<form class="q" id="q" onsubmit="return false">
+<fieldset><legend><span>01</span>Какой повод?</legend><div class="ch" data-k="why">
+<label><input type="radio" name="why" value="Свидание" checked><span>Свидание</span></label><label><input type="radio" name="why" value="Предложение руки и сердца"><span>Предложение</span></label><label><input type="radio" name="why" value="День рождения"><span>День рождения</span></label><label><input type="radio" name="why" value="Свадьба"><span>Свадьба</span></label><label><input type="radio" name="why" value="Новый год"><span>Новый год</span></label><label><input type="radio" name="why" value="Детский праздник"><span>Детский праздник</span></label><label><input type="radio" name="why" value="Другое"><span>Другое</span></label>
+</div></fieldset>
+<fieldset><legend><span>02</span>Где?</legend><div class="ch">
+<label><input type="radio" name="where" value="На крыше" checked><span>На крыше</span></label><label><input type="radio" name="where" value="На катере"><span>На катере</span></label><label><input type="radio" name="where" value="В студии с панорамными окнами"><span>Студия с панорамными окнами</span></label><label><input type="radio" name="where" value="Полёт"><span>Полёт</span></label><label><input type="radio" name="where" value="На моей площадке"><span>У меня / на моей площадке</span></label><label><input type="radio" name="where" value="Подскажите"><span>Подскажите</span></label>
+</div></fieldset>
+<fieldset><legend><span>03</span>Что добавить?</legend><div class="ch">
+<label><input type="checkbox" name="add" value="Огненные буквы" id="addFire" checked><span>Огненные буквы</span></label><label><input type="checkbox" name="add" value="Салют"><span>Салют</span></label><label><input type="checkbox" name="add" value="Холодные фонтаны"><span>Холодные фонтаны</span></label><label><input type="checkbox" name="add" value="Сервировка, фрукты и сладости"><span>Сервировка и угощения</span></label><label><input type="checkbox" name="add" value="Дед Мороз и Снегурочка"><span>Дед Мороз и Снегурочка</span></label><label><input type="checkbox" name="add" value="Аниматор"><span>Аниматор</span></label>
+</div></fieldset>
+<fieldset><legend><span>04</span>Надпись огнём</legend>
+<div class="fld" style="clear:both"><label for="word">Слово или имя, до 10 знаков</label><input id="word" maxlength="10" value="ДА?" autocomplete="off"></div>
+<div class="firebox"><canvas id="qFire" role="img" aria-label="Превью огненной надписи"></canvas></div>
+</fieldset>
+<fieldset><legend><span>05</span>Когда и сколько гостей?</legend>
+<div class="fl"><div class="fld"><label for="date">Дата</label><input id="date" type="date"></div>
+<div class="fld"><label id="gl">Гостей</label><div class="cnt" role="group" aria-labelledby="gl"><button type="button" data-d="-1" aria-label="Меньше гостей">−</button><output id="guests">2</output><button type="button" data-d="1" aria-label="Больше гостей">+</button></div></div>
+<div class="fld full"><label for="note">Пожелания (необязательно)</label><textarea id="note" placeholder="Например: сюрприз для мужа, он не должен знать"></textarea></div></div>
+</fieldset>
+</form>
+<aside class="sum" data-r aria-live="polite">
+<h3>Ваш вечер</h3><p>Заявка соберётся в сообщение — останется нажать «Отправить».</p>
+<dl id="sum"></dl>
+<a class="btn b-wa" id="send" href="https://wa.me/79376152610"><svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>Отправить в WhatsApp</a>
+<div class="alt"><a class="btn b-gh" href="https://t.me/+79376152610">Telegram</a><a class="btn b-gh" href="tel:+79376152610">Позвонить</a></div>
+<small>Стоимость назовём после созвона — она зависит от места, даты и эффектов.</small>
+</aside>
+</div>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+<div class="shead" data-r><div><p class="lab">Контакты</p><h2>Работаем <em>по всей Казани</em></h2></div><p>Праздник устраиваем там, где вы захотите, или предлагаем своё место — крышу, катер, студию с панорамными окнами.</p></div>
+<div class="cgrid">
+<div class="cbox" data-r>
+<p class="lab">Телефоны</p>
+<div class="phones"><a href="tel:+79376152610">+7 937 615-26-10</a><a href="tel:+78432452610">+7 843 245-26-10</a><a href="tel:+79956882610">+7 995 688-26-10</a></div>
+<dl class="rows">
+<div><dt>Часы</dt><dd>Круглосуточно, без выходных · <span class="st2" data-status></span></dd></div>
+<div><dt>Город</dt><dd>Казань</dd></div>
+<div><dt>Оплата</dt><dd>Наличные, перевод с карты, QR-код, оплата через банк</dd></div>
+</dl>
+<div class="soc"><a href="https://wa.me/79376152610">WhatsApp</a><a href="https://t.me/+79376152610">Telegram</a><a href="https://vk.ru/uhkak_kzn">ВКонтакте</a><a href="https://2gis.ru/kazan/firm/70000001006211244">Отзывы в 2ГИС</a></div>
+</div>
+<div class="map" data-r><iframe loading="lazy" title="Карта Казани" src="https://yandex.ru/map-widget/v1/?ll=49.1221%2C55.7887&amp;z=11"></iframe></div>
+</div>
+</div></section>
+
+<section class="fin"><div class="wrap" data-r>
+<h2>Расскажите, что задумали. <em>Остальное — наше.</em></h2>
+<p>Свидание, предложение, день рождения или свадьба — напишите повод и дату, и мы предложим, как сделать этот день особенным.</p>
+<div class="acts"><a class="btn b-fire" href="#build">Собрать вечер</a><a class="btn b-wa" href="https://wa.me/79376152610?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%B8%D0%BA">Написать в WhatsApp</a><a class="btn b-gh" href="tel:+79376152610">+7 937 615-26-10</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>Fiesta event · Казань · праздники и сюрпризы</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+<div class="fab"><a class="f2" href="https://wa.me/79376152610" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg></a><a class="f1" href="tel:+79376152610" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1Z"/></svg></a></div>
+
+<script>
+(function(){
+var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var SP=(function(){var s=document.createElement('canvas');s.width=s.height=64;var g=s.getContext('2d'),r=g.createRadialGradient(32,32,0,32,32,32);r.addColorStop(0,'rgba(255,250,225,1)');r.addColorStop(.16,'rgba(255,206,100,.95)');r.addColorStop(.42,'rgba(255,112,48,.42)');r.addColorStop(1,'rgba(255,60,30,0)');g.fillStyle=r;g.fillRect(0,0,64,64);return s})();
+function Fire(cv){
+ var c=cv.getContext('2d'),P=[],K=[],W=0,H=0,st=8,on=false,raf=0,txt='',t0=0;
+ function size(){var r=cv.getBoundingClientRect(),d=Math.min(2,window.devicePixelRatio||1);W=Math.max(1,r.width);H=Math.max(1,r.height);cv.width=W*d;cv.height=H*d;c.setTransform(d,0,0,d,0,0)}
+ function pts(t){var o=document.createElement('canvas');o.width=W;o.height=H;var g=o.getContext('2d'),f=H*.6,F=function(){g.font='800 '+f+'px Unbounded, Onest, sans-serif'};F();var w=g.measureText(t).width;if(w>W*.88){f*=W*.88/w;F()}
+  g.textAlign='center';g.textBaseline='middle';g.fillStyle='#fff';g.fillText(t,W/2,H/2);st=Math.max(5,Math.round(f/8));var d=g.getImageData(0,0,W,H).data,a=[];
+  for(var y=st/2|0;y<H;y+=st)for(var x=st/2|0;x<W;x+=st)if(d[((y|0)*(W|0)+(x|0))*4+3]>140)a.push([x,y]);return a}
+ function set(t){txt=t;if(!W)return;var a=pts(t||' ');for(var i=0;i<Math.max(a.length,P.length);i++){var p=P[i];if(!p){p=P[i]={x:W/2+(Math.random()-.5)*W,y:H+20,a:0,ph:Math.random()*7,sp:2+Math.random()*3}}
+  if(i<a.length){p.tx=a[i][0];p.ty=a[i][1];p.ta=1}else{p.tx=p.x+(Math.random()-.5)*40;p.ty=p.y-60-Math.random()*60;p.ta=0}if(still){p.x=p.tx;p.y=p.ty;p.a=p.ta}}
+  if(still)draw(0)}
+ function burst(x,y){for(var i=0;i<70;i++){var an=Math.random()*6.283,v=1.5+Math.random()*4.5;K.push({x:x,y:y,vx:Math.cos(an)*v,vy:Math.sin(an)*v-1,l:1,s:3+Math.random()*4})}if(!on||still)loop()}
+ function draw(t){c.clearRect(0,0,W,H);c.globalCompositeOperation='lighter';var s0=st*2.3;
+  for(var i=0;i<P.length;i++){var p=P[i];if(!still){p.x+=(p.tx-p.x)*.07;p.y+=(p.ty-p.y)*.07;p.a+=(p.ta-p.a)*.06}if(p.a<.02)continue;var fl=.72+.2*Math.sin(t*.001*p.sp+p.ph)+(still?0:Math.random()*.12),s=s0*fl;c.globalAlpha=Math.min(1,p.a*fl);c.drawImage(SP,p.x-s/2,p.y-s/2-(still?0:Math.sin(t*.002+p.ph)*1.2),s,s)
+   if(!still&&p.ta>0&&Math.random()<.0025)K.push({x:p.x,y:p.y,vx:(Math.random()-.5)*.6,vy:-1-Math.random()*1.5,l:1,s:2+Math.random()*2})}
+  for(var j=K.length-1;j>=0;j--){var k=K[j];k.x+=k.vx;k.y+=k.vy;k.vy+=.05;k.vx*=.985;k.l-=.016;if(k.l<=0){K.splice(j,1);continue}c.globalAlpha=k.l;var z=k.s*4*k.l+2;c.drawImage(SP,k.x-z/2,k.y-z/2,z,z)}
+  c.globalAlpha=1;c.globalCompositeOperation='source-over'}
+ function loop(){cancelAnimationFrame(raf);var f=function(t){draw(t);if(on||K.length)raf=requestAnimationFrame(f)};raf=requestAnimationFrame(f)}
+ if('IntersectionObserver' in window)new IntersectionObserver(function(e){on=e[0].isIntersecting&&!still;if(on)loop()}).observe(cv);else{on=!still;loop()}
+ var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){var w=W;size();if(Math.abs(w-W)>2){P=[];set(txt)}},200)});
+ cv.addEventListener('click',function(e){var r=cv.getBoundingClientRect();burst(e.clientX-r.left,e.clientY-r.top)});
+ size();return{set:set,burst:burst}}
+var ready=document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve();
+var hero=Fire(document.getElementById('heroFire')),q=Fire(document.getElementById('qFire'));
+var words=['ДА','LOVE','FIESTA'],wi=0;
+ready.then(function(){hero.set(words[0]);q.set(document.getElementById('word').value);
+ if(!still)setInterval(function(){if(document.hidden)return;wi=(wi+1)%words.length;hero.set(words[wi])},3600)});
+/* builder */
+var f=document.getElementById('q'),G=2,sum=document.getElementById('sum'),send=document.getElementById('send'),word=document.getElementById('word'),date=document.getElementById('date');
+try{var td=new Date();date.min=td.toISOString().slice(0,10)}catch(e){}
+function val(n){var a=[].slice.call(f.querySelectorAll('[name='+n+']:checked')).map(function(i){return i.value});return a.join(', ')}
+function fmt(d){if(!d)return'';var p=d.split('-');return p[2]+'.'+p[1]+'.'+p[0]}
+function upd(){var fire=document.getElementById('addFire').checked,w=word.value.trim(),rows=[['Повод',val('why')],['Где',val('where')],['Добавить',val('add')],['Надпись',fire&&w?'«'+w+'»':''],['Дата',fmt(date.value)],['Гостей',String(G)],['Пожелания',document.getElementById('note').value.trim()]];
+ sum.innerHTML=rows.map(function(r){return'<div><dt>'+r[0]+'</dt><dd'+(r[1]?'':' class="e"')+'>'+(r[1]?r[1].replace(/[<>&]/g,''):'—')+'</dd></div>'}).join('');
+ var m='Здравствуйте! Хочу заказать праздник через сайт.\n'+rows.filter(function(r){return r[1]}).map(function(r){return r[0]+': '+r[1]}).join('\n');
+ send.href='https://wa.me/79376152610?text='+encodeURIComponent(m)}
+f.addEventListener('change',upd);f.addEventListener('input',upd);
+word.addEventListener('input',function(){document.getElementById('addFire').checked=true;q.set(word.value.trim()||' ');upd()});
+f.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){G=Math.max(1,Math.min(300,G+ +b.dataset.d));document.getElementById('guests').textContent=G;upd()})});
+upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script><script src="app.js"></script>
+</body>
+</html>

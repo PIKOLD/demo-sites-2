@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Новосап — прогулки на сапах, каяки и катера в Новосибирске</title><meta property="og:type" content="website"><meta property="og:title" content="Новосап — прогулки на сапах, каяки и катера в Новосибирске"><meta property="og:description" content="Новосап: прогулки на сапсёрфах с инструктором, вечерние заплывы с подсветкой, каяки, катера и яхты без капитана, активные туры. Новосибирск, ул. Владимира Заровного, 28/1. Ежедневно 9:00–23:00."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/novosap/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Новосап: прогулки на сапсёрфах с инструктором, вечерние заплывы с подсветкой, каяки, катера и яхты без капитана, активные туры. Новосибирск, ул. Владимира Заровного, 28/1. Ежедневно 9:00–23:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap"></noscript>
+<style>
+:root{
+  --night:#0b1433;--dusk:#17285e;--deep:#22408c;--water:#2f74b8;--sky:#9fc6ea;
+  --foam:#eef4f9;--paper:#f7fafc;--ink:#0b1430;--mute:#55627e;
+  --red:#e3342b;--red-d:#c4241c;--glow:#46f0d0;--glow2:#a879ff;--line:rgba(11,20,48,.12);
+  --h:'Unbounded',system-ui,sans-serif;--b:'Manrope',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1320px;--r:22px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.6 var(--b);color:var(--ink);background:var(--paper);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:8px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.demo{background:var(--ink);color:#c9d4ee;font:500 12px/1.4 var(--m);text-align:center;padding:8px 16px;letter-spacing:.02em}
+.mono{font:500 12px/1.4 var(--m);letter-spacing:.12em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 16px/1 var(--b);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .25s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 30px -10px rgba(227,52,43,.8)}
+.btn-red:hover{background:var(--red-d)}
+.btn-glow{background:var(--glow);color:var(--night);box-shadow:0 0 0 0 rgba(70,240,208,.5)}
+.btn-glow:hover{box-shadow:0 0 34px -2px rgba(70,240,208,.7)}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--deep)}
+
+/* HERO */
+.hero{position:relative;color:#fff;background:linear-gradient(180deg,#0a1230 0%,#17285e 46%,#3a3f8f 72%,#7a5aa8 100%);overflow:hidden;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:auto -10% -30% -10%;height:70%;background:radial-gradient(ellipse at 30% 40%,rgba(70,240,208,.28),transparent 60%),radial-gradient(ellipse at 75% 60%,rgba(168,121,255,.35),transparent 60%);filter:blur(10px);z-index:-1}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 18px/1 var(--h);letter-spacing:.02em}
+.logo svg{width:40px;height:40px}
+.nav-l{display:flex;gap:28px;align-items:center}
+.nav-l a{text-decoration:none;font-weight:500;font-size:15px;opacity:.82;transition:opacity .2s}
+.nav-l a:hover{opacity:1}
+.nav-tel{font:700 15px/1 var(--b);text-decoration:none;padding:12px 18px;border:1.5px solid rgba(255,255,255,.3);border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav-tel:hover{border-color:var(--glow);color:var(--glow)}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,4vw,64px);align-items:end;padding:clamp(8px,2vh,28px) 0 clamp(36px,6vh,72px)}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:var(--glow);margin-bottom:18px}
+.kicker i{width:8px;height:8px;border-radius:50%;background:var(--glow);box-shadow:0 0 14px var(--glow);animation:pulse 2.4s infinite}
+@keyframes pulse{50%{opacity:.35}}
+h1{font:800 clamp(50px,7.1vw,112px)/.9 var(--h);letter-spacing:-.04em;position:relative}
+h1 .gl{background:linear-gradient(90deg,#fff 0%,#fff 35%,var(--glow) 50%,#fff 65%,#fff 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s ease-in-out infinite}
+@keyframes shine{0%{background-position:100% 0}60%,100%{background-position:-60% 0}}
+.lead{font:500 clamp(19px,1.7vw,24px)/1.4 var(--b);margin:22px 0 10px;max-width:30ch}
+.proof{color:#c8d3f2;max-width:46ch;font-size:16px}
+.proof b{color:#fff}
+.where{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 26px;color:#c8d3f2;font-size:15px}
+.where span{display:inline-flex;align-items:center;gap:8px}
+.where svg{width:16px;height:16px;color:var(--glow)}
+[data-status]{font-weight:700}
+[data-status].is-open{color:var(--glow)}
+[data-status].is-closed{color:#ffb4ae}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta-2{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:16px}
+.cta-2 a{color:#dfe6fa;font-weight:700;font-size:15px;text-decoration:none;border-bottom:1.5px solid rgba(255,255,255,.3);padding:10px 0 4px;min-height:44px;display:inline-flex;align-items:flex-end}
+.cta-2 a:hover{border-color:var(--glow);color:#fff}
+.hero-ph{position:relative;justify-self:end;width:min(100%,460px)}
+.hero-ph figure{border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 80px -30px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.12);transform:translateY(var(--py,0))}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.tag{position:absolute;left:-28px;bottom:36px;background:rgba(11,20,51,.78);backdrop-filter:blur(8px);border:1px solid rgba(70,240,208,.4);color:#fff;border-radius:16px;padding:14px 16px;max-width:230px;font-size:14px;line-height:1.35}
+.tag b{display:block;font:700 13px/1.3 var(--h);color:var(--glow);margin-bottom:4px}
+.waves{display:block;width:100%;height:clamp(60px,9vw,130px);margin-top:-1px}
+.waves path{animation:drift 14s ease-in-out infinite alternate}
+.waves path:nth-child(2){animation-duration:18s}
+@keyframes drift{to{transform:translateX(-4%)}}
+
+/* SECTION BASICS */
+section{position:relative}
+.sec{padding:clamp(64px,10vw,130px) 0}
+.h2{font:700 clamp(32px,4.6vw,64px)/1.02 var(--h);letter-spacing:-.03em}
+.h2 em{font-style:normal;color:var(--water)}
+.sub{color:var(--mute);max-width:52ch;margin-top:16px;font-size:18px}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto);gap:24px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+
+/* SERVICES */
+.svc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,3vw,40px)}
+.svc-main{position:relative;border-radius:var(--r);overflow:hidden;min-height:560px;color:#fff;display:flex;align-items:flex-end;background:var(--dusk)}
+.svc-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.svc-main:hover img{transform:scale(1.04)}
+.svc-main:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(11,20,51,.92))}
+.svc-main div{position:relative;z-index:1;padding:32px}
+.svc-main h3{font:700 clamp(30px,3vw,44px)/1 var(--h);letter-spacing:-.02em;margin:10px 0 12px}
+.svc-main p{color:#dbe3f6;max-width:34ch}
+.svc-list{list-style:none;border-top:1px solid var(--line)}
+.svc-list li{border-bottom:1px solid var(--line)}
+.svc-list a{display:grid;grid-template-columns:56px minmax(0,1fr) 44px;gap:16px;align-items:center;padding:26px 6px;text-decoration:none;transition:background .25s,padding .25s}
+.svc-list a:hover{background:var(--foam);padding-left:18px}
+.svc-list .n{font:500 13px/1 var(--m);color:var(--water)}
+.svc-list h3{font:700 clamp(21px,2vw,28px)/1.15 var(--h);letter-spacing:-.02em}
+.svc-list p{color:var(--mute);font-size:15px;margin-top:6px}
+.arr{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;transition:background .25s,border-color .25s,transform .25s}
+.arr svg{width:18px;height:18px}
+.svc-list a:hover .arr{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(-45deg)}
+.pay{margin-top:22px;color:var(--mute);font-size:15px}
+
+/* NIGHT STRIP */
+.night{background:var(--night);color:#fff;overflow:hidden}
+.night .h2 em{color:var(--glow)}
+.night .sub{color:#aebadb}
+.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 clamp(18px,4vw,48px) 22px;scrollbar-width:thin;scrollbar-color:var(--glow) transparent;max-width:1600px;margin:0 auto}
+.strip figure{flex:0 0 auto;width:clamp(250px,26vw,380px);scroll-snap-align:start;position:relative}
+.strip .ph{border-radius:20px;overflow:hidden;aspect-ratio:3/4;background:var(--dusk)}
+.strip .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.strip figure:hover img{transform:scale(1.05)}
+.strip figcaption{margin-top:12px;color:#aebadb;font-size:15px}
+.strip figcaption b{color:#fff;display:block;font:700 16px/1.3 var(--h)}
+.strip .sm{width:clamp(240px,22vw,320px)}
+.drag{display:flex;align-items:center;gap:12px;color:#aebadb}
+.drag button{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .2s,border-color .2s}
+.drag button:hover{background:var(--glow);color:var(--night);border-color:var(--glow)}
+.drag svg{width:18px;height:18px}
+
+/* PRAISE */
+.praise{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,5vw,80px);align-items:start}
+.score{position:sticky;top:30px;background:linear-gradient(160deg,var(--deep),var(--dusk));color:#fff;border-radius:var(--r);padding:36px 32px;overflow:hidden}
+.score:after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(70,240,208,.45),transparent 70%)}
+.score .big{font:800 clamp(80px,9vw,128px)/.9 var(--h);letter-spacing:-.05em}
+.stars{display:flex;gap:4px;margin:14px 0 10px;color:#ffd166}
+.stars svg{width:22px;height:22px}
+.score p{color:#c8d3f2;position:relative;z-index:1}
+.score a{display:inline-flex;min-height:44px;align-items:center;margin-top:10px;color:var(--glow);font-weight:700;text-decoration:none;position:relative;z-index:1}
+.pts{display:grid;gap:0}
+.pt{display:grid;grid-template-columns:minmax(0,90px) minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid var(--line)}
+.pt:last-child{border-bottom:1px solid var(--line)}
+.pt .ic{width:72px;height:72px;border-radius:20px;background:var(--foam);display:grid;place-items:center;color:var(--water)}
+.pt .ic svg{width:36px;height:36px}
+.pt h3{font:700 clamp(22px,2.2vw,30px)/1.15 var(--h);letter-spacing:-.02em;margin-bottom:10px}
+.pt p{color:var(--mute);max-width:56ch}
+.pt:nth-child(2){margin-left:clamp(0px,4vw,60px)}
+.pt:nth-child(3){margin-left:clamp(0px,8vw,120px)}
+
+/* PLANNER */
+.plan{background:linear-gradient(180deg,var(--foam),#dfeaf4);overflow:hidden}
+.plan-g{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);align-items:start}
+.q{background:#fff;border-radius:28px;padding:clamp(22px,3vw,40px);box-shadow:0 30px 60px -40px rgba(23,40,94,.5)}
+.step{border:0;padding:0 0 26px;margin-bottom:26px;border-bottom:1px dashed var(--line)}
+.step:last-of-type{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.step legend{display:flex;align-items:baseline;gap:12px;font:700 19px/1.3 var(--h);letter-spacing:-.01em;margin-bottom:14px}
+.step legend span{font:500 12px/1 var(--m);color:var(--water)}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt span{display:inline-flex;align-items:center;min-height:46px;padding:10px 18px;border-radius:14px;border:1.5px solid var(--line);font-weight:500;font-size:15.5px;cursor:pointer;transition:border-color .2s,background .2s,color .2s,transform .15s;user-select:none}
+.opt span:hover{border-color:var(--water)}
+.opt input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.opt input:focus-visible+span{outline:3px solid var(--water);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cnt{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:14px;overflow:hidden}
+.cnt button{width:48px;height:48px;border:0;background:transparent;font:700 22px/1 var(--b);cursor:pointer;color:var(--ink)}
+.cnt button:hover{background:var(--foam)}
+.cnt output{min-width:56px;text-align:center;font:700 20px/1 var(--h)}
+.date{min-height:48px;border:1.5px solid var(--line);border-radius:14px;padding:0 14px;font:500 16px var(--b);color:var(--ink);background:#fff}
+.lbl{font-size:14px;color:var(--mute);display:block;margin-bottom:6px}
+.res{position:sticky;top:24px;background:var(--night);color:#fff;border-radius:28px;padding:clamp(24px,3vw,36px);overflow:hidden}
+.res:before{content:"";position:absolute;inset:auto -30% -40% -30%;height:60%;background:radial-gradient(ellipse,rgba(70,240,208,.25),transparent 65%)}
+.res>*{position:relative}
+.res h3{font:700 24px/1.15 var(--h);margin:10px 0 18px}
+.ticket{border-top:1px dashed rgba(255,255,255,.25)}
+.ticket div{display:grid;grid-template-columns:minmax(0,110px) minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.25);font-size:15px}
+.ticket dt{color:#8fa0c8}
+.ticket dd{font-weight:700}
+.res .btn{width:100%;margin-top:22px}
+.res small{display:block;color:#8fa0c8;margin-top:14px;font-size:13.5px}
+.res .tg{color:var(--glow);font-weight:700;display:inline-flex;min-height:44px;align-items:center}
+
+/* STEPS */
+.how{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;position:relative}
+.how:before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:linear-gradient(90deg,var(--water),var(--glow2),var(--red))}
+.how li{list-style:none;padding-right:20px;position:relative}
+.how li:before{counter-increment:s;content:counter(s,decimal-leading-zero);display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--paper);border:2px solid var(--water);font:700 16px/1 var(--h);color:var(--water);margin-bottom:22px;position:relative}
+.how li:nth-child(5):before{border-color:var(--red);color:var(--red)}
+.how h3{font:700 19px/1.2 var(--h);margin-bottom:8px;letter-spacing:-.01em}
+.how p{color:var(--mute);font-size:15.5px}
+
+/* CONTACTS */
+.ct{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,3vw,40px);align-items:stretch}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3vw,40px)}
+.card h3{font:700 clamp(24px,2.4vw,32px)/1.1 var(--h);letter-spacing:-.02em}
+.card .addr{font-size:18px;margin:10px 0 4px}
+.dl{margin:22px 0}
+.dl div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:16px}
+.dl dt{color:var(--mute)}
+.dl dd{font-weight:700;text-align:right}
+.dl a{text-decoration:none}
+.dl a:hover{color:var(--water)}
+.soc{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.soc a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--foam);text-decoration:none;font-weight:700;font-size:15px;transition:background .2s,color .2s}
+.soc a:hover{background:var(--ink);color:#fff}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;background:var(--foam);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+/* FINAL */
+.final{background:var(--red);color:#fff;overflow:hidden}
+.final .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto);gap:30px;align-items:center}
+.final h2{font:800 clamp(36px,6vw,92px)/.95 var(--h);letter-spacing:-.04em}
+.final p{margin-top:16px;font-size:18px;max-width:44ch;color:#ffe3e1}
+.final .cta{flex-direction:column;align-items:stretch}
+.btn-wh{background:#fff;color:var(--red-d)}
+.btn-wh:hover{background:var(--ink);color:#fff}
+.btn-ol{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-ol:hover{border-color:#fff;background:rgba(255,255,255,.12)}
+footer{background:var(--ink);color:#8fa0c8;font-size:14px;padding:28px 0 100px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.fcall{position:fixed;right:16px;bottom:16px;z-index:50;display:none;align-items:center;gap:10px;min-height:56px;padding:0 22px;border-radius:999px;background:var(--red);color:#fff;font:700 16px/1 var(--b);text-decoration:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+.fcall svg{width:20px;height:20px}
+
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+
+@media (max-width:1100px){
+  .nav-l a:not(.nav-tel){display:none}
+  .how{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 20px}
+  .how:before{display:none}
+}
+@media (max-width:900px){
+  .hero-g{grid-template-columns:minmax(0,1fr)}
+  .hero-ph{justify-self:start;width:100%;max-width:520px;order:2}
+  .hero-ph figure{aspect-ratio:5/4}
+  .tag{left:12px;bottom:12px}
+  .svc,.praise,.plan-g,.ct,.final .wrap{grid-template-columns:minmax(0,1fr)}
+  .svc-main{min-height:440px}
+  .score{position:relative;top:0}
+  .res{position:relative;top:0}
+  .pt:nth-child(2),.pt:nth-child(3){margin-left:0}
+  .head{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .nav{padding:14px 0}
+  .logo{font-size:16px}.logo svg{width:34px;height:34px}
+  .nav-tel{display:none}
+  h1{font-size:clamp(44px,13.4vw,64px)}
+  .lead{margin-top:16px}
+  .cta .btn{flex:1 1 100%}
+  .hero-ph figure{aspect-ratio:4/3.4}
+  .svc-list a{grid-template-columns:36px minmax(0,1fr) 44px;gap:12px;padding:22px 0}
+  .pt{grid-template-columns:minmax(0,1fr);gap:14px;padding:26px 0}
+  .pt .ic{width:56px;height:56px;border-radius:16px}
+  .how{grid-template-columns:minmax(0,1fr)}
+  .how li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:0 16px;padding:0}
+  .how li:before{margin:0;grid-row:span 2}
+  .ticket div{grid-template-columns:minmax(0,90px) minmax(0,1fr)}
+  .map,.map iframe{min-height:320px}
+  .fcall{display:inline-flex}
+  .opt span{padding:10px 14px;font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Главное меню">
+      <a class="logo" href="#top" id="top" aria-label="Новосап, в начало">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="#46f0d0" stroke-width="2"/><path d="M8 25c4-3 8-3 12 0s8 3 12 0" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><rect x="11" y="15" width="18" height="5" rx="2.5" fill="#e3342b"/><path d="M20 6v13" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+        НОВОСАП
+      </a>
+      <div class="nav-l">
+        <a href="#services">Прогулки</a>
+        <a href="#praise">Отзывы</a>
+        <a href="#plan">Собрать заплыв</a>
+        <a href="#contacts">Контакты</a>
+        <a class="nav-tel" href="tel:+79237028033">+7 923 702-80-33</a>
+      </div>
+    </nav>
+
+    <div class="hero-g">
+      <div>
+        <p class="kicker mono"><i></i>Сап-клуб · Новосибирск</p>
+        <h1><span class="gl">Новосап</span></h1>
+        <p class="lead">Прогулки на сапах с&nbsp;инструктором, каяки, катера и&nbsp;яхты без капитана — днём, на&nbsp;закате и&nbsp;вечером с&nbsp;подсветкой.</p>
+        <p class="proof"><b>5,0 в 2ГИС при 219 оценках.</b> Пишут, что встают на сап впервые — и&nbsp;инструкторы спокойно всё объясняют и&nbsp;дают освоиться на&nbsp;воде.</p>
+        <div class="where">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>ул. Владимира Заровного, 28/1</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Ежедневно 9:00–23:00</span><span data-status></span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-glow" href="#plan">Собрать прогулку
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-red" data-wa="Здравствуйте! Хочу на прогулку с Новосап. Подскажите свободное время?" href="https://wa.me/79237028033">Написать в WhatsApp</a>
+        </div>
+        <div class="cta-2">
+          <a href="tel:+79237028033">Позвонить</a>
+          <a href="https://yandex.ru/maps/?rtext=~54.990431,82.967671" target="_blank" rel="noopener">Маршрут до офиса</a>
+          <a href="https://t.me/novosup" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+      <div class="hero-ph">
+        <figure>
+          <img src="img/p1-m.jpg" srcset="img/p1-m.jpg 506w, img/p1.jpg 1012w" sizes="(max-width:900px) 92vw, 460px" width="506" height="900" alt="Прозрачные сапы с цветной подсветкой на причале в сумерках" fetchpriority="high">
+        </figure>
+        <p class="tag"><b>Вечерние заплывы</b>Сапы с подсветкой — то, о чём чаще всего вспоминают в отзывах.</p>
+      </div>
+    </div>
+  </div>
+  <svg class="waves" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 60c120-30 240-30 360 0s240 30 360 0 240-30 360 0 240 30 360 0 240-30 360 0v80H0z" fill="#22408c" opacity=".55"/>
+    <path d="M0 80c160-28 320-28 480 0s320 28 480 0 320-28 480 0 320 28 480 0v60H0z" fill="#f7fafc"/>
+  </svg>
+</header>
+
+<main>
+<section class="sec" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div>
+        <p class="mono" style="color:var(--water)">Что на воде</p>
+        <h2 class="h2" id="svc-h">Выберите, <em>как</em> выйти на&nbsp;воду</h2>
+      </div>
+      <a class="btn btn-ink" href="#plan">Подобрать формат</a>
+    </div>
+    <div class="svc">
+      <article class="svc-main" data-r>
+        <img src="img/p3-m.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 1350w" sizes="(max-width:900px) 92vw, 520px" width="675" height="900" loading="lazy" alt="Три девушки на сапах на реке в солнечный день">
+        <div>
+          <p class="mono" style="color:var(--glow)">Главное</p>
+          <h3>Прогулки на&nbsp;сапах</h3>
+          <p>Группой с инструктором по живописному маршруту. Подходит тем, кто ни разу не стоял на доске.</p>
+        </div>
+      </article>
+      <div data-r>
+        <ul class="svc-list">
+          <li><a href="#plan" data-pick="Прогулка на сапах"><span class="n">01</span><div><h3>Сапсёрфы</h3><p>Прогулки с инструктором и вечерние заплывы с подсветкой</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="#plan" data-pick="Каяки"><span class="n">02</span><div><h3>Каяки</h3><p>Для тех, кто хочет сидя и с веслом в обеих руках</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="#plan" data-pick="Катер или яхта"><span class="n">03</span><div><h3>Катера и яхты без капитана</h3><p>Своя компания, своё время на воде</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="#plan" data-pick="Водная прогулка"><span class="n">04</span><div><h3>Водные прогулки</h3><p>Отдых на воде для пары, друзей или коллег</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="#plan" data-pick="Активный тур"><span class="n">05</span><div><h3>Активные туры</h3><p>Организуем выезд под вашу группу</p></div><span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        </ul>
+        <p class="pay">Оплата наличными или переводом с карты.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec night" aria-labelledby="night-h">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div>
+        <p class="mono" style="color:var(--glow)">Как это выглядит</p>
+        <h2 class="h2" id="night-h">От&nbsp;полуденного солнца до&nbsp;<em>подсветки</em> в&nbsp;темноте</h2>
+      </div>
+      <div class="drag"><span class="mono">Листайте</span>
+        <button type="button" data-scroll="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button type="button" data-scroll="1" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="strip" id="strip" data-qa-skip tabindex="0" aria-label="Фото с прогулок">
+    <figure><div class="ph"><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 506w, img/p1.jpg 1012w" sizes="380px" width="506" height="900" loading="lazy" alt="Сапы с подсветкой на деревянном причале вечером"></div><figcaption><b>Вечер</b>Доски светятся прямо на воде</figcaption></figure>
+    <figure><div class="ph"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 1350w" sizes="380px" width="675" height="900" loading="lazy" alt="Компания подруг сидит на сапах посреди реки" style="object-position:50% 60%"></div><figcaption><b>Днём</b>Небольшой группой, без спешки</figcaption></figure>
+    <figure><div class="ph"><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 1350w" sizes="380px" width="675" height="900" loading="lazy" alt="Девушка в красной толстовке отдыхает на сапе у берега" style="object-position:40% 55%"></div><figcaption><b>Пауза</b>Время просто посидеть на воде</figcaption></figure>
+    <figure class="sm"><div class="ph"><img src="img/p2-m.jpg" width="808" height="900" loading="lazy" alt="Девушка в красном платье и шляпе на катере на закате" style="object-position:45% 40%"></div><figcaption><b>Катер</b>Фотосессия на закате</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="praise" aria-labelledby="pr-h">
+  <div class="wrap">
+    <div class="praise">
+      <aside class="score" data-r>
+        <p class="mono" style="color:var(--glow)">Рейтинг 2ГИС</p>
+        <div class="big">5,0</div>
+        <div class="stars" aria-label="5 из 5">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .7-5.3 4.7 1.6 7L12 17.3 5.7 21l1.6-7L2 9.3l7-.7z"/></svg>
+        </div>
+        <p>219 оценок. Многие возвращаются снова — кто-то по несколько раз за пару недель, кто-то в итоге покупает свой сап.</p>
+        <a href="https://2gis.ru/novosibirsk/firm/70000001100707697" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a>
+      </aside>
+      <div>
+        <h2 class="h2" id="pr-h" data-r style="margin-bottom:34px">За что <em>хвалят</em></h2>
+        <div class="pts">
+          <div class="pt" data-r>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3 3 0 0 1 0 5.5M18 14c2 .7 3 3 3 6"/></svg></span>
+            <div><h3>Инструкторы, с которыми не страшно</h3><p>Новички пишут, что всё объяснили подробно, дали время освоиться и пристегнули страховочный лиш. Отдельно благодарят Артура и Александра за инструктаж и сопровождение.</p></div>
+          </div>
+          <div class="pt" data-r>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 15c3-2 6-2 9 0s6 2 9 0"/><path d="M3 19c3-2 6-2 9 0s6 2 9 0"/><circle cx="12" cy="7" r="3"/><path d="M12 1v1.5M5.6 4.6l1 1M18.4 4.6l-1 1"/></svg></span>
+            <div><h3>Атмосфера, ради которой возвращаются</h3><p>Красивый маршрут, вечерние прогулки с подсветкой, никто никуда не торопит. На берег выходят по-настоящему отдохнувшими и приходят ещё.</p></div>
+          </div>
+          <div class="pt" data-r>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></svg></span>
+            <div><h3>Удобно от записи до финиша</h3><p>Записывают быстро и понятно, встречают, а в офисе можно оставить вещи и воспользоваться уборной. На день рождения инструктор даже включил песню в честь именинницы.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec plan" id="plan" aria-labelledby="plan-h">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div>
+        <p class="mono" style="color:var(--water)">Заявка за минуту</p>
+        <h2 class="h2" id="plan-h">Соберите свой <em>заплыв</em></h2>
+        <p class="sub">Отметьте, что хочется, — мы соберём это в сообщение. Отправьте его в WhatsApp, и администратор подскажет свободное время и стоимость.</p>
+      </div>
+    </div>
+    <div class="plan-g">
+      <form class="q" id="quiz" onsubmit="return false" data-r>
+        <fieldset class="step"><legend><span>01</span>Что хотите попробовать</legend>
+          <div class="opts" data-k="what">
+            <label class="opt"><input type="radio" name="what" value="Прогулка на сапах" checked><span>Прогулка на сапах</span></label>
+            <label class="opt"><input type="radio" name="what" value="Каяки"><span>Каяки</span></label>
+            <label class="opt"><input type="radio" name="what" value="Катер или яхта"><span>Катер или яхта без капитана</span></label>
+            <label class="opt"><input type="radio" name="what" value="Водная прогулка"><span>Водная прогулка</span></label>
+            <label class="opt"><input type="radio" name="what" value="Активный тур"><span>Активный тур</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="step"><legend><span>02</span>Когда</legend>
+          <div class="opts" data-k="time" style="margin-bottom:14px">
+            <label class="opt"><input type="radio" name="time" value="днём"><span>Днём</span></label>
+            <label class="opt"><input type="radio" name="time" value="на закате" checked><span>На закате</span></label>
+            <label class="opt"><input type="radio" name="time" value="вечером, с подсветкой"><span>Вечером, с подсветкой</span></label>
+          </div>
+          <label><span class="lbl">Дата (можно не указывать)</span><input class="date" type="date" name="date"></label>
+        </fieldset>
+        <fieldset class="step"><legend><span>03</span>Сколько вас</legend>
+          <div class="row">
+            <div class="cnt"><button type="button" data-d="-1" aria-label="Меньше">−</button><output id="ppl" aria-live="polite">2</output><button type="button" data-d="1" aria-label="Больше">+</button></div>
+            <div class="opts" data-k="exp">
+              <label class="opt"><input type="radio" name="exp" value="впервые" checked><span>Впервые</span></label>
+              <label class="opt"><input type="radio" name="exp" value="уже катались"><span>Уже катались</span></label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="step"><legend><span>04</span>Повод</legend>
+          <div class="opts" data-k="why">
+            <label class="opt"><input type="radio" name="why" value="просто отдохнуть" checked><span>Просто отдохнуть</span></label>
+            <label class="opt"><input type="radio" name="why" value="день рождения"><span>День рождения</span></label>
+            <label class="opt"><input type="radio" name="why" value="с коллегами"><span>С коллегами</span></label>
+            <label class="opt"><input type="radio" name="why" value="свидание"><span>Свидание</span></label>
+            <label class="opt"><input type="radio" name="why" value="фотосессия"><span>Фотосессия</span></label>
+          </div>
+        </fieldset>
+      </form>
+      <aside class="res" aria-live="polite" data-r>
+        <p class="mono" style="color:var(--glow)">Ваш заплыв</p>
+        <h3 id="r-title">Прогулка на сапах</h3>
+        <dl class="ticket">
+          <div><dt>Когда</dt><dd id="r-when">на закате</dd></div>
+          <div><dt>Сколько</dt><dd id="r-ppl">2 человека</dd></div>
+          <div><dt>Опыт</dt><dd id="r-exp">впервые</dd></div>
+          <div><dt>Повод</dt><dd id="r-why">просто отдохнуть</dd></div>
+        </dl>
+        <a class="btn btn-red" id="send" href="https://wa.me/79237028033" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+          Отправить в WhatsApp</a>
+        <small>Удобнее в Telegram? <a class="tg" href="https://t.me/novosup" target="_blank" rel="noopener">@novosup</a></small>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div>
+        <p class="mono" style="color:var(--water)">Как всё проходит</p>
+        <h2 class="h2" id="how-h">От сообщения до&nbsp;берега</h2>
+      </div>
+    </div>
+    <ol class="how" data-r>
+      <li><h3>Заявка</h3><p>Пишете в WhatsApp или Telegram, звоните.</p></li>
+      <li><h3>Время</h3><p>Администратор подбирает прогулку и подтверждает запись.</p></li>
+      <li><h3>Встреча</h3><p>Офис на Заровного, 28/1: вещи оставляете там.</p></li>
+      <li><h3>Инструктаж</h3><p>Объясняют, как стоять и грести, пристёгивают лиш.</p></li>
+      <li><h3>Вода</h3><p>Маршрут с инструктором — и обратно на берег.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="contacts" aria-labelledby="ct-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="ct">
+      <div class="card" data-r>
+        <p class="mono" style="color:var(--water)">Офис клуба</p>
+        <h3 id="ct-h">Новосибирск</h3>
+        <p class="addr">улица Владимира Заровного, 28/1<br><span style="color:var(--mute)">цокольный этаж</span></p>
+        <dl class="dl">
+          <div><dt>Каждый день</dt><dd>9:00–23:00</dd></div>
+          <div><dt>Сейчас</dt><dd><span data-status></span></dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79237028033">+7 923 702-80-33</a></dd></div>
+          <div><dt>Ещё телефон</dt><dd><a href="tel:+79529487309">+7 952 948-73-09</a></dd></div>
+          <div><dt>Оплата</dt><dd>наличные, перевод</dd></div>
+        </dl>
+        <div class="soc">
+          <a data-wa="Здравствуйте! Хочу на прогулку с Новосап." href="https://wa.me/79237028033" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://t.me/novosup" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://vk.ru/novosup" target="_blank" rel="noopener">ВКонтакте</a>
+          <a href="https://yandex.ru/maps/?rtext=~54.990431,82.967671" target="_blank" rel="noopener">Маршрут</a>
+        </div>
+      </div>
+      <div class="map" data-r>
+        <iframe loading="lazy" title="Новосап на карте" src="https://yandex.ru/map-widget/v1/?ll=82.967671,54.990431&z=16&pt=82.967671,54.990431,pm2rdm"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="fin-h">
+  <div class="sec wrap">
+    <div data-r>
+      <h2 id="fin-h">Пока тепло — на&nbsp;воду.</h2>
+      <p>Напишите, когда хотите выйти, — подберём прогулку днём, на закате или вечером с подсветкой.</p>
+    </div>
+    <div class="cta" data-r>
+      <a class="btn btn-wh" data-wa="Здравствуйте! Хочу записаться на прогулку с Новосап." href="https://wa.me/79237028033" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+      <a class="btn btn-ol" href="tel:+79237028033">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Новосап · Новосибирск, ул. Владимира Заровного, 28/1</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+<a class="fcall" href="tel:+79237028033"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+
+<script>
+(function(){
+  var WA='https://wa.me/79237028033?text=';
+  document.querySelectorAll('[data-wa]').forEach(function(a){a.href=WA+encodeURIComponent(a.getAttribute('data-wa'))});
+  var f=document.getElementById('quiz'),n=2,out=document.getElementById('ppl');
+  function word(k){var a=k%10,b=k%100;return (a===1&&b!==11)?'человек':(a>=2&&a<=4&&(b<12||b>14))?'человека':'человек'}
+  function v(name){var e=f.querySelector('input[name="'+name+'"]:checked');return e?e.value:''}
+  function upd(){
+    out.textContent=n;
+    var d=f.date.value,ds='';
+    if(d){var p=d.split('-');ds=p[2]+'.'+p[1]+'.'+p[0]+', '}
+    var what=v('what'),when=ds+v('time');
+    document.getElementById('r-title').textContent=what;
+    document.getElementById('r-when').textContent=when;
+    document.getElementById('r-ppl').textContent=n+' '+word(n);
+    document.getElementById('r-exp').textContent=v('exp');
+    document.getElementById('r-why').textContent=v('why');
+    var t='Здравствуйте! Хочу записаться в Новосап.\nФормат: '+what+'\nКогда: '+when+'\nНас: '+n+' '+word(n)+'\nОпыт: '+v('exp')+'\nПовод: '+v('why')+'\nПодскажите свободное время и стоимость?';
+    document.getElementById('send').href=WA+encodeURIComponent(t);
+  }
+  f.addEventListener('change',upd);
+  f.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){n=Math.min(40,Math.max(1,n+ +b.getAttribute('data-d')));upd()})});
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){var i=f.querySelector('input[name="what"][value="'+a.getAttribute('data-pick')+'"]');if(i){i.checked=true;upd()}})});
+  upd();
+  var s=document.getElementById('strip');
+  document.querySelectorAll('[data-scroll]').forEach(function(b){b.addEventListener('click',function(){s.scrollBy({left:+b.getAttribute('data-scroll')*s.clientWidth*.7,behavior:'smooth'})})});
+  var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,fig=document.querySelector('.hero-ph figure');
+  if(!still&&fig){var tk=0;addEventListener('scroll',function(){if(tk)return;tk=requestAnimationFrame(function(){tk=0;var y=Math.min(scrollY,900);fig.style.setProperty('--py',(y*-.08)+'px')})},{passive:true})}
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["09:00","23:00"]],"tue":[["09:00","23:00"]],"wed":[["09:00","23:00"]],"thu":[["09:00","23:00"]],"fri":[["09:00","23:00"]],"sat":[["09:00","23:00"]],"sun":[["09:00","23:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

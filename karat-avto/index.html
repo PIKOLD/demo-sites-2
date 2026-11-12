@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Carat Auto — автосалон в Челябинске, Профессора Благих, 14</title><meta property="og:type" content="website"><meta property="og:title" content="Carat Auto — автосалон в Челябинске, Профессора Благих, 14"><meta property="og:description" content="Carat Auto, Челябинск: подержанные и новые автомобили любых марок, авто с аукциона, trade-in, выкуп, тест-драйв. 4,9 в 2ГИС. Подбор машины с заявкой в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/karat-avto/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Carat Auto, Челябинск: подержанные и новые автомобили любых марок, авто с аукциона, trade-in, выкуп, тест-драйв. 4,9 в 2ГИС. Подбор машины с заявкой в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"></noscript>
+<style>
+:root{
+  --ink:#0c0e0d;--coal:#141816;--coal2:#1c211e;--line:#2a302c;
+  --paper:#f2f3ef;--paper2:#e6e8e2;--white:#fff;--text:#131614;--muted:#5b625d;--mutedD:#a3aba5;
+  --green:#4ee23a;--green2:#3bc828;--greenInk:#18780f;
+  --r:18px;--max:1320px;
+  --disp:'Unbounded',system-ui,sans-serif;--body:'Manrope',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:17px;line-height:1.55;color:var(--text);background:var(--paper);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.demo{background:var(--green);color:var(--ink);font:600 13px/1.3 var(--body);text-align:center;padding:7px 16px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+
+/* wordmark like their sign */
+.mark{display:inline-flex;align-items:center;gap:.32em;background:#050605;border:1px solid #2c332e;border-radius:6px;padding:.42em .7em .38em;font:800 15px/1 var(--disp);letter-spacing:.06em;transform:skewX(-8deg);text-decoration:none}
+.mark b{color:var(--green);font-weight:800}.mark i{color:#fff;font-style:normal}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:700 16px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,border-color .2s,color .2s,box-shadow .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-g{background:var(--green);color:var(--ink);box-shadow:0 10px 30px -12px rgba(78,226,58,.7)}
+.btn-g:hover{background:#6af256;transform:translateY(-2px)}
+.btn-o{border-color:#3a423c;color:#fff}
+.btn-o:hover{border-color:var(--green);color:var(--green)}
+.btn-d{background:var(--ink);color:#fff}
+.btn-d:hover{background:#262c28;transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(12,14,13,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #1f2521}
+.top .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.top nav{display:flex;gap:26px;margin-left:auto}
+.top nav a{color:#c9d0cb;text-decoration:none;font-weight:600;font-size:15px}
+.top nav a:hover{color:var(--green)}
+.top .tel{color:#fff;font:700 16px var(--body);text-decoration:none;white-space:nowrap}
+.top .tel:hover{color:var(--green)}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:auto -10% -40% 30%;height:80%;background:radial-gradient(closest-side,rgba(78,226,58,.18),transparent);z-index:-1}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,4vw,64px);align-items:center;padding-top:clamp(28px,4.5vh,64px);padding-bottom:clamp(36px,6vh,80px)}
+.kicker{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin-bottom:clamp(16px,2.6vh,28px)}
+.kicker .mono{color:var(--mutedD)}
+h1{font:800 clamp(28px,3.9vw,56px)/1.06 var(--disp);letter-spacing:-.02em;margin-bottom:clamp(14px,2.2vh,24px)}
+h1 em{font-style:normal;color:var(--green)}
+.lead{font-size:clamp(16px,1.35vw,19px);color:#c8cfca;max-width:36em;margin-bottom:clamp(18px,2.6vh,28px)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:clamp(16px,2.4vh,26px)}
+.sub{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;font-size:15px;color:#c8cfca}
+.sub a{color:#fff;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.sub a:hover{color:var(--green)}
+.sub svg{width:18px;height:18px;color:var(--green)}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#888}
+[data-status].is-open::before{background:var(--green);box-shadow:0 0 0 4px rgba(78,226,58,.2)}
+[data-status].is-closed::before{background:#e0a03a}
+.shot{position:relative}
+.shot .ph{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3.3;clip-path:polygon(0 0,88% 0,100% 12%,100% 100%,0 100%);background:#222}
+.shot img{position:absolute;inset:0;width:100%;height:100%;transform:scale(1.1);object-fit:cover;object-position:50% 40%;will-change:transform}
+.shot .plate{position:absolute;left:-14px;bottom:28px;background:#fff;color:var(--ink);border:3px solid var(--ink);border-radius:10px;padding:10px 14px;font:700 15px/1.2 var(--mono);box-shadow:0 18px 40px -16px #000}
+.shot .plate small{display:block;font:600 11px/1.3 var(--body);color:#555;letter-spacing:.04em}
+.rate{position:absolute;right:16px;top:16px;display:flex;align-items:baseline;gap:8px;background:var(--green);color:var(--ink);border-radius:14px;padding:10px 14px;font-weight:700;font-size:13px}
+.rate b{font:800 26px/1 var(--disp)}
+.hero .big{position:absolute;right:-2vw;bottom:-0.24em;font:800 clamp(80px,17vw,300px)/1 var(--disp);color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.06);letter-spacing:-.03em;z-index:-1;pointer-events:none;white-space:nowrap}
+
+/* sections */
+section{padding:clamp(64px,9vw,128px) 0}
+.h2{font:800 clamp(28px,4vw,54px)/1.06 var(--disp);letter-spacing:-.02em}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--greenInk)}
+.eyebrow::before{content:"";width:28px;height:3px;background:currentColor;border-radius:2px}
+.dark .eyebrow{color:var(--green)}
+.intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px 64px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.intro p{color:var(--muted);font-size:18px;max-width:34em}
+.dark{background:var(--ink);color:#fff}.dark .intro p{color:var(--mutedD)}
+
+/* services bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.card{position:relative;background:var(--white);border:1px solid #dcdfd8;border-radius:var(--r);padding:clamp(20px,2.2vw,30px);display:flex;flex-direction:column;gap:10px;transition:transform .25s,box-shadow .25s,border-color .25s;overflow:hidden}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(0,0,0,.45);border-color:#c5cac1}
+.card h3{font:700 clamp(19px,1.6vw,23px)/1.2 var(--disp);letter-spacing:-.01em}
+.card p{color:var(--muted);font-size:16px}
+.card .n{font:700 12px var(--mono);color:var(--greenInk);letter-spacing:.1em}
+.c-used{grid-column:span 3;grid-row:span 2;background:var(--ink);color:#fff;border-color:var(--ink);padding:0;min-height:460px}
+.c-used img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;transition:transform .8s}
+.c-used:hover img{transform:scale(1.04)}
+.c-used .in{position:relative;margin-top:auto;padding:clamp(22px,2.6vw,34px);background:linear-gradient(transparent,rgba(8,10,9,.92) 38%)}
+.c-used .in p{color:#d6dbd7}.c-used .n{color:var(--green)}
+.c-used h3{font-size:clamp(24px,2.4vw,34px)}
+.c-new,.c-auc{grid-column:span 3}
+.c-any,.c-ti,.c-buy{grid-column:span 2}
+.c-test{grid-column:span 4;background:var(--green);border-color:var(--green);flex-direction:row;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.c-test p{color:#173d12}.c-test .n{color:#14480f}
+.c-pay{grid-column:span 2;background:var(--paper2)}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.pay span{border:1px solid #c3c8c0;border-radius:999px;padding:6px 12px;font-weight:600;font-size:14px;background:#fff}
+.card .go{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;min-height:44px;color:var(--ink)}
+.card .go:hover{text-decoration:underline}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.step{padding:26px 22px 8px 0;position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);display:block;font:800 clamp(34px,3.6vw,52px)/1 var(--disp);color:var(--paper2);-webkit-text-stroke:1.5px var(--ink);margin-bottom:16px}
+.step::after{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--green);border:2px solid var(--ink)}
+.step h3{font:700 18px/1.25 var(--disp);margin-bottom:8px}
+.step p{color:var(--muted);font-size:15.5px}
+
+/* ribbon */
+.rib-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:2px solid #3a423c;background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:border-color .2s,color .2s,background .2s}
+.arrows button:hover{border-color:var(--green);color:var(--green)}
+.arrows svg{width:22px;height:22px}
+.rib{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(250px,30vw,440px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 clamp(16px,4vw,48px) 18px;scroll-padding:0 clamp(16px,4vw,48px);scrollbar-width:thin;scrollbar-color:#3a423c transparent;max-width:1600px;margin:0 auto}
+.rib figure{scroll-snap-align:start;position:relative;border-radius:16px;overflow:hidden;background:#1d221f;aspect-ratio:4/3}
+.rib img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.rib figure:hover img{transform:scale(1.05)}
+.rib figcaption{position:absolute;left:12px;bottom:12px;background:rgba(8,10,9,.82);color:#fff;border-radius:8px;padding:6px 10px;font:600 13px var(--body)}
+.rib figcaption b{color:var(--green);font-family:var(--mono);margin-right:6px}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:clamp(28px,5vw,72px);align-items:start}
+.score{position:sticky;top:96px;background:var(--ink);color:#fff;border-radius:24px;padding:clamp(26px,3vw,40px)}
+.score b{display:block;font:800 clamp(72px,9vw,128px)/.9 var(--disp);color:var(--green);letter-spacing:-.04em}
+.score .stars{display:flex;gap:4px;margin:16px 0 10px}
+.score .stars svg{width:22px;height:22px;color:var(--green)}
+.score p{color:var(--mutedD)}
+.score a{display:inline-flex;margin-top:18px;min-height:44px;align-items:center;color:#fff;font-weight:700}
+.quotes{display:grid;gap:14px}
+.q{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 22px;background:#fff;border:1px solid #dcdfd8;border-radius:var(--r);padding:clamp(22px,2.4vw,32px)}
+.q .i{grid-row:span 2;width:52px;height:52px;border-radius:14px;background:var(--ink);display:grid;place-items:center;color:var(--green)}
+.q .i svg{width:26px;height:26px}
+.q h3{font:700 clamp(19px,1.7vw,24px)/1.2 var(--disp)}
+.q p{color:var(--muted)}
+
+/* quiz */
+.quiz{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.modes{display:flex;gap:6px;background:var(--coal2);border:1px solid var(--line);border-radius:999px;padding:6px;margin-bottom:30px;width:max-content;max-width:100%;overflow-x:auto}
+.modes button{min-height:46px;padding:0 20px;border-radius:999px;border:0;background:transparent;color:#c8cfca;font:700 15px var(--body);cursor:pointer;white-space:nowrap;transition:background .2s,color .2s}
+.modes button[aria-pressed=true]{background:var(--green);color:var(--ink)}
+.modes button:hover:not([aria-pressed=true]){color:#fff}
+fieldset{border:0;margin-bottom:26px}
+fieldset[hidden]{display:none}
+legend{font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mutedD);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips label{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid #353c37;border-radius:12px;color:#e3e7e4;font-weight:600;font-size:15.5px;cursor:pointer;transition:border-color .2s,background .2s,color .2s;user-select:none}
+.chips label:hover{border-color:#6a736c}
+.chips input:checked+label{background:var(--green);border-color:var(--green);color:var(--ink)}
+.chips input:focus-visible+label{outline:3px solid var(--green);outline-offset:3px}
+.fld{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fld label{display:grid;gap:6px;font-size:14px;color:var(--mutedD);font-weight:600}
+.fld input{min-height:50px;border-radius:12px;border:1.5px solid #353c37;background:var(--coal);color:#fff;padding:0 14px;font:500 16px var(--body)}
+.fld input:focus{border-color:var(--green);outline:none}
+.ticket{position:sticky;top:96px;background:#fff;color:var(--ink);border-radius:22px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
+.ticket .tt{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--paper2);padding:16px 22px;border-bottom:2px dashed #b9beb5}
+.ticket .tt .mark{font-size:12px}
+.ticket pre{white-space:pre-wrap;font:500 14.5px/1.6 var(--mono);padding:22px;min-height:220px;color:#1d221f}
+.ticket .act{display:grid;gap:10px;padding:0 22px 22px}
+.ticket .act .btn{width:100%}
+.ticket .note{font-size:13px;color:var(--muted);padding:0 22px 22px;margin-top:-6px}
+
+/* contacts */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:16px}
+.info{background:#fff;border:1px solid #dcdfd8;border-radius:24px;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:22px}
+.info .row span{display:block;font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.info .row strong,.info .row a.v{font:700 clamp(19px,1.8vw,24px)/1.3 var(--disp);text-decoration:none}
+.info .row a.v:hover{color:var(--greenInk)}
+.soc{display:flex;flex-wrap:wrap;gap:10px}
+.soc a{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:12px;background:var(--paper);border:1px solid #d3d7cf;font-weight:700;text-decoration:none;transition:background .2s,border-color .2s}
+.soc a:hover{background:var(--green);border-color:var(--green)}
+.map{border-radius:24px;overflow:hidden;min-height:440px;background:var(--paper2);border:1px solid #dcdfd8}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+/* final */
+.final{background:var(--green);color:var(--ink);padding:clamp(56px,8vw,110px) 0;position:relative;overflow:hidden}
+.final .wrap{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:end}
+.final h2{font:800 clamp(28px,3.8vw,56px)/1.06 var(--disp);letter-spacing:-.03em}
+.final p{font-size:18px;margin-top:16px;max-width:30em;color:#173d12}
+.final .cta{justify-content:flex-end;margin:0}
+.final .btn-o{border-color:var(--ink);color:var(--ink)}.final .btn-o:hover{background:var(--ink);color:var(--green)}
+footer{background:var(--ink);color:var(--mutedD);font-size:14px;padding:28px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:50;width:60px;height:60px;border-radius:50%;background:var(--green);color:var(--ink);display:none;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.6)}
+.fab svg{width:26px;height:26px}
+
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+
+@media (max-width:1100px){
+  .top nav{display:none}.top .tel{margin-left:auto}
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:12px}
+  .c-used{grid-column:span 6;min-height:420px}.c-new,.c-auc{grid-column:span 3}.c-test{grid-column:span 6}.c-pay{grid-column:span 6}
+}
+@media (max-width:900px){
+  .hero .wrap,.intro,.praise,.quiz,.contact,.final .wrap{grid-template-columns:minmax(0,1fr)}
+  .shot{max-width:640px}.shot img{transform:none!important}
+  .score,.ticket{position:static}
+  .final .cta{justify-content:flex-start}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .fab{display:grid}
+  .top .wrap{height:60px}
+  .top .tel{font-size:15px}
+  .top .mark{font-size:13px}
+  .cta .btn{flex:1 1 100%}
+  .c-new,.c-auc,.c-any,.c-ti,.c-buy,.c-test,.c-pay{grid-column:span 6}
+  .c-used{min-height:0;grid-row:auto}.c-used img{position:relative;inset:auto;height:auto;aspect-ratio:4/3}.c-used .in{background:var(--ink)}
+  .steps{grid-template-columns:minmax(0,1fr);border-top:0;border-left:2px solid var(--ink);padding-left:22px}
+  .step{padding:4px 0 26px}
+  .step::after{left:-30px;top:10px}
+  .step::before{font-size:30px;margin-bottom:8px}
+  .fld{grid-template-columns:minmax(0,1fr)}
+  .modes{width:100%}.modes button{flex:1;padding:0 12px;font-size:14px}
+  .chips label{padding:0 14px;font-size:15px}
+  .shot .plate{left:10px;bottom:12px;font-size:13px}
+  .map,.map iframe{min-height:340px}
+  .rib{grid-auto-columns:82%}
+  .arrows{display:none}
+  .q{grid-template-columns:minmax(0,1fr)}.q .i{grid-row:auto}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Carat Auto, наверх"><b>CARAT</b><i>AUTO</i></a>
+    <nav aria-label="Разделы">
+      <a href="#services">Что продаём</a><a href="#cars">Покупатели</a><a href="#reviews">Отзывы</a><a href="#pick">Подбор</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="tel" href="tel:+79000236151">+7 900 023-61-51</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <div class="kicker">
+        <span class="mono">Автосалон · Челябинск</span>
+        <span data-status></span>
+      </div>
+      <h1 id="h1">Машина под ваш бюджет <em>с&nbsp;документами и&nbsp;тест-драйвом</em></h1>
+      <p class="lead">Carat Auto: подержанные и новые автомобили любых марок, машины с аукциона, trade-in и выкуп. Площадка на Профессора Благих,&nbsp;14 в Челябинске.</p>
+      <div class="cta">
+        <a class="btn btn-g" href="#pick">Подобрать машину
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-o" href="https://wa.me/79000236151?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20Carat%20Auto%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C." target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+      <div class="sub">
+        <a href="tel:+79000236151"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a href="https://yandex.ru/maps/?rtext=~55.221649,61.296109" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Маршрут</a>
+        <span>Каждый день 10:00–19:00</span>
+      </div>
+    </div>
+    <div class="shot">
+      <div class="ph">
+        <img src="img/p13.jpg" srcset="img/p13-m.jpg 900w, img/p13.jpg 1280w" sizes="(max-width:900px) 92vw, 46vw" alt="Покупатель у купленного BMW на площадке Carat Auto в Челябинске" width="1280" height="960" data-par>
+        <div class="rate"><b>4,9</b> 2ГИС · 58 оценок</div>
+      </div>
+      <div class="plate">ПРОФЕССОРА БЛАГИХ 14<small>Челябинск · площадка Carat Auto</small></div>
+    </div>
+  </div>
+  <div class="big" aria-hidden="true">CARAT</div>
+</section>
+
+<section id="services" aria-labelledby="sv">
+  <div class="wrap">
+    <div class="intro" data-r>
+      <div><span class="eyebrow mono">Что продаём</span><h2 class="h2" id="sv">Купить, поменять или&nbsp;продать — в&nbsp;одном месте</h2></div>
+      <p>Седаны, хэтчбеки, кроссоверы и пикапы — на фото покупателей видно, насколько разные машины уезжают с площадки.</p>
+    </div>
+    <div class="bento">
+      <article class="card c-used" data-r>
+        <img src="img/p3-m.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1280w" sizes="(max-width:1100px) 92vw, 50vw" loading="lazy" alt="Пара с документами у кроссовера Ford на площадке Carat Auto" width="1280" height="960">
+        <div class="in"><span class="n">01</span><h3>Подержанные авто</h3><p>Машину можно осмотреть вживую, сверить с объявлением, изучить документы и проехать перед покупкой.</p></div>
+      </article>
+      <article class="card c-new" data-r><span class="n">02</span><h3>Новые автомобили</h3><p>Уточните у менеджера, какие новые машины есть сейчас.</p></article>
+      <article class="card c-auc" data-r><span class="n">03</span><h3>Автомобили с аукциона</h3><p>Расскажите, какую машину ищете, — обсудим варианты с аукциона.</p></article>
+      <article class="card c-any" data-r><span class="n">04</span><h3>Любые марки</h3><p>Не привязаны к одному бренду: подбираем под задачу и бюджет.</p></article>
+      <article class="card c-ti" data-r><span class="n">05</span><h3>Trade-in</h3><p>Свою машину можно сдать в зачёт новой покупки.</p></article>
+      <article class="card c-buy" data-r><span class="n">06</span><h3>Выкуп авто</h3><p>Хотите продать машину — привезите её на осмотр.</p></article>
+      <article class="card c-test" data-r>
+        <div><span class="n">07</span><h3>Тест-драйв</h3><p>Прокатиться перед покупкой — обычная часть показа.</p></div>
+        <a class="btn btn-d" href="#pick">Подобрать машину</a>
+      </article>
+      <article class="card c-pay" data-r><span class="n">Оплата</span><h3>Как удобно</h3><div class="pay"><span>Наличными</span><span>Через банк</span><span>Переводом с карты</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0" aria-labelledby="hw">
+  <div class="wrap">
+    <div class="intro" data-r>
+      <div><span class="eyebrow mono">Как проходит покупка</span><h2 class="h2" id="hw">От заявки до ключей</h2></div>
+      <p>Общий порядок. Детали по конкретной машине расскажет менеджер.</p>
+    </div>
+    <div class="steps" data-r>
+      <div class="step"><h3>Заявка</h3><p>Звонок, WhatsApp или подбор на этом сайте: бюджет, кузов, коробка.</p></div>
+      <div class="step"><h3>Подбор и показ</h3><p>Варианты под ваш запрос, осмотр на площадке.</p></div>
+      <div class="step"><h3>Тест-драйв и документы</h3><p>Проезжаете на машине и смотрите документы по ней.</p></div>
+      <div class="step"><h3>Оформление</h3><p>Наличными, через банк или переводом с карты.</p></div>
+      <div class="step"><h3>Ключи</h3><p>И фото у вывески — как у покупателей ниже.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cars" class="dark" aria-labelledby="cr">
+  <div class="wrap rib-head" data-r>
+    <div><span class="eyebrow mono">Уехали на своей</span><h2 class="h2" id="cr">Покупатели Carat&nbsp;Auto</h2></div>
+    <div class="arrows"><button type="button" data-rib="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-rib="1" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+  <div class="rib" data-qa-skip id="rib" tabindex="0" aria-label="Фото покупателей, листайте вбок">
+    <figure><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 900w, img/p12.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель у чёрного седана Kia" width="900" height="675"><figcaption><b>01</b>Kia Cerato</figcaption></figure>
+    <figure><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 900w, img/p11.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Пара с ключами у белого Audi" width="900" height="675"><figcaption><b>02</b>Audi A4</figcaption></figure>
+    <figure><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 900w, img/p4.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель у белого пикапа Nissan" width="900" height="675"><figcaption><b>03</b>Nissan, пикап</figcaption></figure>
+    <figure><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 900w, img/p10.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатели с документами у белой Lada XRAY" width="900" height="675"><figcaption><b>04</b>Lada XRAY</figcaption></figure>
+    <figure><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель у серебристого Ford Focus" width="900" height="675"><figcaption><b>05</b>Ford Focus</figcaption></figure>
+    <figure><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 900w, img/p5.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель у серебристого седана Hyundai" width="900" height="675"><figcaption><b>06</b>Hyundai Elantra</figcaption></figure>
+    <figure><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 900w, img/p7.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупательница с документами у Renault" width="900" height="675"><figcaption><b>07</b>Renault Sandero Stepway</figcaption></figure>
+    <figure><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Довольная пара у купленного хэтчбека" width="900" height="675"><figcaption><b>08</b>Хэтчбек</figcaption></figure>
+    <figure><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 900w, img/p14.jpg 1440w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель у чёрного минивэна" width="900" height="675"><figcaption><b>09</b>Минивэн</figcaption></figure>
+    <figure><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 900w, img/p8.jpg 1280w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель у синей Lada Granta" width="900" height="675"><figcaption><b>10</b>Lada Granta</figcaption></figure>
+    <figure><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1280w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель с документами у чёрной Lada Priora" width="900" height="675"><figcaption><b>11</b>Lada Priora</figcaption></figure>
+    <figure><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1280w" sizes="(max-width:760px) 82vw, 30vw" loading="lazy" alt="Покупатель у чёрного Citroen" width="900" height="675"><figcaption><b>12</b>Citroen C4</figcaption></figure>
+  </div>
+</section>
+
+<section id="reviews" aria-labelledby="rv">
+  <div class="wrap">
+    <div class="intro" data-r>
+      <div><span class="eyebrow mono">За что хвалят</span><h2 class="h2" id="rv">Что пишут покупатели</h2></div>
+      <p>Пересказ отзывов из 2ГИС.</p>
+    </div>
+    <div class="praise">
+      <div class="score" data-r>
+        <b>4,9</b>
+        <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.5 7L12 17.5 5.8 21l1.5-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.5 7L12 17.5 5.8 21l1.5-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.5 7L12 17.5 5.8 21l1.5-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.5 7L12 17.5 5.8 21l1.5-7L2 9.3l7-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.5 7L12 17.5 5.8 21l1.5-7L2 9.3l7-.7z"/></svg></div>
+        <p>Рейтинг в 2ГИС по 58 оценкам</p>
+        <a href="https://2gis.ru/chelyabinsk/firm/70000001077239121" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a>
+      </div>
+      <div class="quotes">
+        <div class="q" data-r><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><h3>Без спешки и со всеми документами</h3><p>Менеджера Влада благодарят чаще всего: подробно показывает машину даже в конце рабочего дня, даёт все документы на авто и проводит тест-драйв. Илью хвалят за консультацию и помощь в подборе.</p></div>
+        <div class="q" data-r><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg></span><h3>Машина такая, как в объявлении</h3><p>Пишут, что описание и цена совпали с объявлением, а цена не завышена. Одна семья объехала весь город и нашла нужную машину только здесь.</p></div>
+        <div class="q" data-r><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></span><h3>Выбор и помощь с оформлением</h3><p>Отмечают большой выбор и вежливых сотрудников. Один покупатель пишет, что ему помогли оформить машину в кредит.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pick" class="dark" aria-labelledby="pk">
+  <div class="wrap">
+    <div class="intro" data-r>
+      <div><span class="eyebrow mono">Подбор за минуту</span><h2 class="h2" id="pk">Какую машину ищем?</h2></div>
+      <p>Отметьте, что важно, — заявка соберётся справа. Отправьте её в WhatsApp, и менеджер подберёт варианты.</p>
+    </div>
+    <div class="quiz">
+      <form id="qz" onsubmit="return false">
+        <div class="modes" role="group" aria-label="Что хотите сделать">
+          <button type="button" data-mode="buy" aria-pressed="true">Купить</button>
+          <button type="button" data-mode="ti" aria-pressed="false">Trade-in</button>
+          <button type="button" data-mode="sell" aria-pressed="false">Продать</button>
+        </div>
+        <fieldset data-m="ti sell"><legend>Ваша машина</legend>
+          <div class="fld"><label>Марка и модель<input name="car" autocomplete="off" placeholder="например, Kia Rio"></label><label>Год выпуска<input name="year" inputmode="numeric" maxlength="4" placeholder="2015"></label></div>
+        </fieldset>
+        <fieldset data-m="ti sell" data-g="Пробег"><legend>Пробег</legend><div class="chips"></div></fieldset>
+        <fieldset data-m="buy ti" data-g="Кузов"><legend>Кузов</legend><div class="chips"></div></fieldset>
+        <fieldset data-m="buy ti" data-g="Бюджет"><legend>Бюджет</legend><div class="chips"></div></fieldset>
+        <fieldset data-m="buy ti" data-g="Коробка"><legend>Коробка</legend><div class="chips"></div></fieldset>
+        <fieldset data-m="buy" data-g="Оплата"><legend>Как планируете платить</legend><div class="chips"></div></fieldset>
+        <fieldset data-m="buy ti sell" data-g="Когда"><legend>Когда удобно приехать</legend><div class="chips"></div></fieldset>
+        <fieldset data-m="buy ti"><legend>Пожелания</legend>
+          <div class="fld"><label style="grid-column:1/-1">Марка, год, цвет — что угодно<input name="wish" autocomplete="off" placeholder="например, кроссовер не старше 2016"></label></div>
+        </fieldset>
+      </form>
+      <aside class="ticket" aria-live="polite">
+        <div class="tt"><span class="mark"><b>CARAT</b><i>AUTO</i></span><span class="mono" style="color:#555">Заявка</span></div>
+        <pre id="msg"></pre>
+        <div class="act">
+          <a class="btn btn-g" id="wa" href="https://wa.me/79000236151" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.5.4.1.1.1.7-.1 1.3z"/></svg>Отправить в WhatsApp</a>
+          <a class="btn btn-d" href="https://t.me/+79000236151" target="_blank" rel="noopener">Написать в Telegram</a>
+        </div>
+        <p class="note">Цены и наличие менеджер сообщит в ответ.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" aria-labelledby="ct">
+  <div class="wrap">
+    <div class="intro" data-r>
+      <div><span class="eyebrow mono">Площадка</span><h2 class="h2" id="ct">Приезжайте посмотреть</h2></div>
+      <p><span data-status></span></p>
+    </div>
+    <div class="contact">
+      <div class="info" data-r>
+        <div class="row"><span>Адрес</span><strong>Челябинск, ул. Профессора Благих,&nbsp;14</strong></div>
+        <div class="row"><span>Часы</span><strong>Ежедневно 10:00–19:00</strong></div>
+        <div class="row"><span>Телефон</span><a class="v" href="tel:+79000236151">+7 900 023-61-51</a></div>
+        <div class="row"><span>Оплата</span><strong style="font-size:18px">Наличные · через банк · перевод с карты</strong></div>
+        <div class="soc">
+          <a href="https://wa.me/79000236151" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://t.me/+79000236151" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://vk.ru/club15408168" target="_blank" rel="noopener">ВКонтакте</a>
+          <a href="https://yandex.ru/maps/?rtext=~55.221649,61.296109" target="_blank" rel="noopener">Маршрут</a>
+        </div>
+      </div>
+      <div class="map" data-r><iframe loading="lazy" title="Carat Auto на карте" src="https://yandex.ru/map-widget/v1/?ll=61.296109,55.221649&z=16&pt=61.296109,55.221649,pm2rdm"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="fn">
+  <div class="wrap">
+    <div data-r><h2 id="fn">Найдём машину, на&nbsp;которой захочется уехать сразу</h2><p>Напишите бюджет и пожелания — или приезжайте на Профессора Благих,&nbsp;14 на осмотр и тест-драйв.</p></div>
+    <div class="cta" data-r>
+      <a class="btn btn-d" href="#pick">Подобрать машину</a>
+      <a class="btn btn-o" href="tel:+79000236151">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span class="mark"><b>CARAT</b><i>AUTO</i></span><span>Автосалон · Челябинск, Профессора Благих, 14 · ежедневно 10:00–19:00</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+
+<a class="fab" href="tel:+79000236151" aria-label="Позвонить в Carat Auto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
+
+<script>
+(function(){
+  var O={'Пробег':['до 50 тыс. км','50–100 тыс.','100–150 тыс.','150–200 тыс.','больше 200 тыс.'],
+    'Кузов':['седан','хэтчбек','кроссовер / внедорожник','универсал / минивэн','пикап','не важно'],
+    'Бюджет':['до 500 тыс. ₽','500 тыс. – 1 млн ₽','1–1,5 млн ₽','1,5–2,5 млн ₽','от 2,5 млн ₽'],
+    'Коробка':['автомат','механика','не важно'],
+    'Оплата':['наличными','через банк','переводом с карты','хочу обсудить кредит'],
+    'Когда':['сегодня','на этой неделе','пока присматриваюсь']};
+  var f=document.getElementById('qz'),mode='buy',n=0;
+  f.querySelectorAll('[data-g]').forEach(function(fs){var g=fs.dataset.g,box=fs.querySelector('.chips');
+    O[g].forEach(function(v){n++;var id='o'+n;box.insertAdjacentHTML('beforeend','<input type="radio" name="'+g+'" id="'+id+'" value="'+v.replace(/ /g,' ')+'"><label for="'+id+'">'+v.replace(/ /g,' ')+'</label>');});});
+  var T={buy:'Хочу купить автомобиль.',ti:'Хочу поменять свою машину по trade-in.',sell:'Хочу продать автомобиль (выкуп).'};
+  function upd(){
+    var L=['Здравствуйте! Пишу с сайта Carat Auto.',T[mode]];
+    f.querySelectorAll('fieldset').forEach(function(fs){
+      var on=fs.dataset.m.split(' ').indexOf(mode)>-1;fs.hidden=!on;if(!on)return;
+      if(fs.dataset.g){var c=fs.querySelector('input:checked');if(c)L.push((fs.dataset.g==='Когда'?'Приехать: ':fs.dataset.g+': ')+c.value.replace(/ /g,' '));}
+    });
+    var car=f.car.value.trim(),y=f.year.value.trim(),w=f.wish.value.trim();
+    if(mode!=='buy'&&(car||y))L.splice(2,0,'Моя машина: '+[car,y&&y+' г.'].filter(Boolean).join(', '));
+    if(mode!=='sell'&&w)L.push('Пожелания: '+w);
+    if(L.length<3)L.push('(отметьте параметры слева)');
+    var t=L.join('\n');document.getElementById('msg').textContent=t;
+    document.getElementById('wa').href='https://wa.me/79000236151?text='+encodeURIComponent(t);
+  }
+  f.querySelectorAll('[data-mode]').forEach(function(b){b.addEventListener('click',function(){mode=b.dataset.mode;f.querySelectorAll('[data-mode]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});upd();});});
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+  var r=document.getElementById('rib');
+  document.querySelectorAll('[data-rib]').forEach(function(b){b.addEventListener('click',function(){var fg=r.querySelector('figure');r.scrollBy({left:(+b.dataset.rib)*(fg.offsetWidth+16)*2,behavior:'smooth'});});});
+  var im=document.querySelector('[data-par]');
+  if(im&&!(matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){var tk=0;addEventListener('scroll',function(){if(tk)return;tk=1;requestAnimationFrame(function(){var y=Math.min(scrollY,900);im.style.transform='scale(1.1) translateY('+(-y*0.04)+'px)';tk=0;});},{passive:true});}
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","19:00"]],"tue":[["10:00","19:00"]],"wed":[["10:00","19:00"]],"thu":[["10:00","19:00"]],"fri":[["10:00","19:00"]],"sat":[["10:00","19:00"]],"sun":[["10:00","19:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

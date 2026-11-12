@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Credo — ювелирная мастерская в Уфе</title><meta property="og:type" content="website"><meta property="og:title" content="Credo — ювелирная мастерская в Уфе"><meta property="og:description" content="Ювелирная мастерская Credo в Уфе: ремонт цепочек, браслетов, колец и серёг, замена замков, пайка, украшения на заказ. Баязита Бикбая, 19/1. 5,0 в 2ГИС."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/credo/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Ювелирная мастерская Credo в Уфе: ремонт цепочек, браслетов, колец и серёг, замена замков, пайка, украшения на заказ. Баязита Бикбая, 19/1. 5,0 в 2ГИС.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{
+  --wood:#16100c;--wood2:#211811;--wood3:#2c2017;
+  --ink:#f4ece3;--mute:#bcaa98;--line:rgba(244,236,227,.14);
+  --gold:#d9a27f;--gold2:#f0c9a8;--silver:#cfd3d8;--velvet:#8c1a2b;
+  --paper:#efe5d6;--pink:#2a1c13;--pmute:#6b5646;
+  --serif:"Prata",Georgia,serif;--sans:"Manrope",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;
+  --wrap:min(1320px,100% - 48px);--ease:cubic-bezier(.2,.7,.2,1)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+main{overflow-x:clip}
+body{background:var(--wood);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase}
+.demo{background:var(--velvet);color:#fff;text-align:center;font:500 13px/1.4 var(--sans);padding:8px 16px}
+/* шапка */
+.top{position:sticky;top:0;z-index:40;background:rgba(22,16,12,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark svg{width:58px;height:34px;flex:none}
+.mark b{font:400 22px/1 var(--serif);letter-spacing:.04em}
+.top nav{display:flex;gap:26px;margin-left:auto}
+.top nav a{text-decoration:none;font-size:15px;color:var(--mute);transition:color .2s}
+.top nav a:hover{color:var(--ink)}
+.top .tel{text-decoration:none;font-weight:600;white-space:nowrap}
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s,box-shadow .25s}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold) 55%,#b97c5a);color:#1d120b;box-shadow:0 10px 30px -12px rgba(217,162,127,.7)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 36px -12px rgba(217,162,127,.85)}
+.btn-line{border-color:rgba(244,236,227,.35);color:var(--ink)}
+.btn-line:hover{border-color:var(--ink);background:rgba(244,236,227,.06)}
+.btn svg{width:19px;height:19px;flex:none}
+/* первый экран */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(70% 90% at 80% 20%,rgba(217,162,127,.16),transparent 60%),
+  repeating-linear-gradient(92deg,rgba(255,255,255,.012) 0 3px,transparent 3px 11px),var(--wood)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,80px);align-items:center;min-height:calc(100svh - 104px);max-height:940px;padding-block:clamp(32px,5vh,64px)}
+.kick{color:var(--gold);display:flex;align-items:center;gap:14px}
+.kick::before{content:"";width:38px;height:1px;background:currentColor}
+.hero h1{font:400 clamp(4.2rem,12vw,10.5rem)/.86 var(--serif);letter-spacing:-.01em;margin:18px 0 6px;background:linear-gradient(100deg,var(--ink) 30%,var(--gold2) 48%,var(--ink) 62%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s var(--ease) 1s infinite}
+@keyframes shine{0%{background-position:100% 0}45%,100%{background-position:0 0}}
+.hero .lead{font:400 clamp(1.35rem,2.3vw,2.1rem)/1.25 var(--serif);max-width:20ch;margin-bottom:22px}
+.proof{display:flex;gap:16px;align-items:flex-start;max-width:520px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:26px;color:var(--mute);font-size:15.5px}
+.proof strong{font:400 2.4rem/1 var(--serif);color:var(--gold2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:var(--mute)}
+.meta a{text-decoration:none;border-bottom:1px solid var(--line)}
+.meta a:hover{color:var(--ink)}
+[data-status]{display:inline-flex;align-items:center;gap:8px;color:var(--ink)}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#7f6a5a}
+[data-status].is-open::before{background:#7fd18e;box-shadow:0 0 0 4px rgba(127,209,142,.18)}
+.hero-pic{position:relative;justify-self:end;width:min(100%,470px)}
+.hero-pic .frame{position:relative;aspect-ratio:3/4.4;border-radius:18px;overflow:hidden;box-shadow:0 40px 80px -30px #000}
+.hero-pic .frame{border-radius:18px}
+.hero-pic img{width:100%;height:115%;object-fit:cover;object-position:50% 30%;will-change:transform}
+.hero-pic::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid rgba(217,162,127,.45);border-radius:22px;pointer-events:none}
+.stamp{position:absolute;left:-46px;bottom:38px;width:132px;height:132px;animation:spin 28s linear infinite}
+.stamp text{font:500 11px var(--mono);letter-spacing:.32em;fill:var(--gold2);text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tag{position:absolute;right:16px;top:16px;background:rgba(22,16,12,.72);backdrop-filter:blur(6px);padding:8px 12px;border-radius:999px;font:500 12px var(--mono);letter-spacing:.08em;color:var(--gold2)}
+/* цепь-разделитель */
+.chain{height:26px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='26'%3E%3Crect x='3' y='7' width='26' height='12' rx='6' fill='none' stroke='%23d9a27f' stroke-width='2'/%3E%3Crect x='25' y='9.5' width='16' height='7' rx='3.5' fill='none' stroke='%23b97c5a' stroke-width='2'/%3E%3C/svg%3E") repeat-x center/44px 26px;opacity:.55;animation:roll 30s linear infinite}
+@keyframes roll{to{background-position:440px 50%}}
+/* секции */
+section{padding-block:clamp(72px,10vw,140px)}
+.h2{font:400 clamp(2.2rem,5vw,4.4rem)/1.04 var(--serif);letter-spacing:-.01em;max-width:16ch}
+.h2 em{font-style:normal;color:var(--gold)}
+.sub{color:var(--mute);max-width:52ch;margin-top:18px}
+/* услуги */
+.serv .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(32px,6vw,96px)}
+.serv-list{margin-top:44px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;padding:26px 0;border-bottom:1px solid var(--line);transition:padding .35s var(--ease),background .35s}
+.row:hover{padding-left:12px;background:linear-gradient(90deg,rgba(217,162,127,.08),transparent)}
+.row .n{font:400 13px var(--mono);color:var(--gold);padding-top:8px}
+.row h3{font:400 clamp(1.4rem,2.2vw,1.9rem)/1.2 var(--serif);margin-bottom:6px}
+.row p{color:var(--mute);font-size:16px}
+.serv-pic{position:sticky;top:96px;align-self:start}
+.serv-pic .ph{border-radius:18px;overflow:hidden;aspect-ratio:3/4}
+.serv-pic img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.serv-pic small{display:block;margin-top:14px;color:var(--mute);font-size:14px}
+.pay{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.pay span{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;color:var(--mute)}
+/* лента работ */
+.works{background:var(--wood2);overflow:hidden}
+.works-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(244,236,227,.3);background:none;color:var(--ink);cursor:pointer;font-size:20px;transition:background .2s,border-color .2s}
+.arrows button:hover{background:var(--gold);border-color:var(--gold);color:#1d120b}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:44px max(24px,calc((100vw - 1320px)/2)) 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;align-items:flex-start;scroll-padding-inline:max(24px,calc((100vw - 1320px)/2))}
+.rail::-webkit-scrollbar{display:none}
+.card{flex:none;scroll-snap-align:start;width:clamp(240px,24vw,330px);margin:0}
+.card.w{width:clamp(280px,30vw,420px)}
+.card.w .ph,.card.sq .ph{height:auto;aspect-ratio:4/3}
+.card.sq .ph{aspect-ratio:1}
+.card .ph{border-radius:14px;overflow:hidden;height:clamp(340px,34vw,460px);background:var(--wood3)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.card:hover img{transform:scale(1.04)}
+.card figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:15px;color:var(--mute)}
+.card figcaption b{font:400 12px var(--mono);color:var(--gold);letter-spacing:.1em}
+/* отзывы */
+.praise .wrap{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(32px,6vw,96px);align-items:start}
+.score{position:sticky;top:110px}
+.score .big{font:400 clamp(6rem,13vw,11rem)/.85 var(--serif);color:var(--gold2)}
+.score p{color:var(--mute);margin-top:14px}
+.score .stars{letter-spacing:.3em;color:var(--gold);font-size:20px;margin-top:12px}
+.score a{display:inline-block;margin-top:18px;text-decoration:none;border-bottom:1px solid var(--gold);color:var(--gold2);font-size:15px}
+.quotes{display:grid;gap:18px}
+.q{padding:30px 32px;border-radius:18px;background:var(--wood2);border:1px solid var(--line);transition:border-color .3s,transform .3s var(--ease)}
+.q:hover{border-color:rgba(217,162,127,.5);transform:translateX(-4px)}
+.q:nth-child(2){margin-left:clamp(0px,6vw,80px)}
+.q h3{font:400 1.6rem/1.2 var(--serif);margin-bottom:10px}
+.q p{color:var(--mute)}
+.masters{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.masters span{display:inline-flex;align-items:center;gap:10px;padding:10px 18px 10px 10px;border-radius:999px;background:var(--wood3);font-weight:600}
+.masters i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#1d120b;font:400 16px var(--serif);font-style:normal}
+/* шаги */
+.steps-wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:48px;counter-reset:s}
+.step{padding:28px 26px 8px 0;border-top:1px solid var(--gold);position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font:400 13px var(--mono);color:var(--gold);display:block;margin-bottom:28px}
+.step::after{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.step h3{font:400 1.4rem/1.2 var(--serif);margin-bottom:8px}
+.step p{color:var(--mute);font-size:16px;max-width:30ch}
+/* квитанция */
+.order{background:radial-gradient(60% 80% at 15% 0%,rgba(140,26,43,.35),transparent 70%),var(--wood)}
+.order .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(28px,5vw,72px);align-items:start}
+.qz fieldset{border:0;margin-top:34px}
+.qz legend{font:400 1.35rem/1.2 var(--serif);margin-bottom:14px;display:flex;gap:12px;align-items:baseline}
+.qz legend span{font:400 12px var(--mono);color:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:1px solid rgba(244,236,227,.25);font-size:15.5px;transition:all .2s;cursor:pointer}
+.chip:hover span{border-color:var(--gold)}
+.chip input:checked+span{background:var(--gold);border-color:var(--gold);color:#1d120b;font-weight:600}
+.chip input:focus-visible+span{outline:2px solid var(--gold2);outline-offset:3px}
+.qz label.f{display:block;margin-top:14px;font-size:14px;color:var(--mute)}
+.qz input[type=text],.qz textarea{width:100%;margin-top:6px;background:var(--wood2);border:1px solid rgba(244,236,227,.22);border-radius:12px;color:var(--ink);font:400 16px var(--sans);padding:14px 16px;transition:border-color .2s}
+.qz textarea{min-height:92px;resize:vertical}
+.qz input:focus,.qz textarea:focus{outline:none;border-color:var(--gold)}
+.ticket{position:sticky;top:96px;background:var(--paper);color:var(--pink);border-radius:6px;padding:32px 30px 30px;box-shadow:0 40px 80px -30px #000;transform:rotate(1.2deg);transition:transform .4s var(--ease)}
+.ticket:hover{transform:rotate(0)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:0;right:0;height:12px;background:radial-gradient(circle at 8px -2px,var(--wood) 7px,transparent 7.5px) repeat-x 0 0/16px 12px}
+.ticket::before{top:-1px}
+.ticket::after{bottom:-1px;transform:rotate(180deg)}
+.ticket h3{font:400 1.7rem/1.1 var(--serif);display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.ticket h3 small{font:500 12px var(--mono);color:var(--pmute);letter-spacing:.08em}
+.ticket .who{color:var(--pmute);font-size:14px;margin:6px 0 18px}
+.ticket dl{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);border-top:1.5px dashed rgba(42,28,19,.35)}
+.ticket dt,.ticket dd{padding:12px 0;border-bottom:1.5px dashed rgba(42,28,19,.2);font-size:15px}
+.ticket dt{color:var(--pmute);font:500 12px/1.9 var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.ticket dd{font-weight:600}
+.ticket dd.e{color:#a5917f;font-weight:400}
+.ticket .note{font-size:14px;color:var(--pmute);margin:16px 0 18px}
+.ticket .btn{width:100%}
+.ticket .btn-wa{background:#1d120b;color:var(--paper)}
+.ticket .btn-wa:hover{background:var(--velvet)}
+.ticket .tg{display:block;text-align:center;margin-top:12px;font-size:15px;color:var(--pmute)}
+.seal{position:absolute;right:22px;bottom:150px;width:104px;height:104px;border:3px double var(--velvet);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--velvet);font:600 12px/1.2 var(--mono);letter-spacing:.12em;transform:rotate(-14deg) scale(1.15);opacity:0;transition:all .45s var(--ease);pointer-events:none}
+.seal.on{opacity:.85;transform:rotate(-14deg) scale(1)}
+/* контакты */
+.contact .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px)}
+.addr{font:400 clamp(1.8rem,3.4vw,2.8rem)/1.15 var(--serif);margin:22px 0 6px}
+.hours{margin:28px 0;border-top:1px solid var(--line)}
+.hours div{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hours div span:last-child{font-family:var(--mono);font-size:15px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.map{border-radius:18px;overflow:hidden;min-height:440px;background:var(--wood2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block;filter:grayscale(.35) contrast(1.05)}
+/* финал */
+.final{text-align:center;padding-block:clamp(90px,12vw,170px);background:radial-gradient(50% 70% at 50% 100%,rgba(217,162,127,.22),transparent 70%),var(--wood2)}
+.final .h2{margin-inline:auto;max-width:18ch}
+.final .cta{justify-content:center;margin-top:34px}
+footer{padding:28px 0 100px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fab{display:none}
+/* появления */
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){
+  .top nav{display:none}
+  .steps-wrap{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:34px}
+}
+@media (max-width:860px){
+  :root{--wrap:min(100% - 32px,1320px)}
+  body{font-size:16px}
+  .top .wrap{height:60px}
+  .top .tel{display:none}
+  .mark{margin-right:auto}
+  .hero .wrap{grid-template-columns:minmax(0,1fr);min-height:0;max-height:none;padding-block:28px 56px;gap:30px}
+  .hero h1{font-size:clamp(4rem,22vw,6.4rem)}
+  .hero-pic{justify-self:stretch;width:100%;order:2}
+  .hero-pic .frame{aspect-ratio:4/4.4}
+  .hero-pic::before{inset:-10px 10px 10px -10px}
+  .stamp{left:auto;right:-14px;bottom:-30px;width:104px;height:104px}
+  .cta .btn{flex:1 1 100%}
+  .serv .wrap,.praise .wrap,.order .wrap,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .serv-pic{position:static;order:-1}
+  .serv-pic .ph{aspect-ratio:4/3}
+  .score{position:static}
+  .q{padding:24px 22px}
+  .q:nth-child(2){margin-left:0}
+  .steps-wrap{grid-template-columns:minmax(0,1fr)}
+  .rail{padding-inline:16px;scroll-padding-inline:16px}
+  .ticket{position:relative;top:0;transform:none;padding:28px 20px 24px}
+  .seal{bottom:140px;right:12px;width:88px;height:88px;font-size:10.5px}
+  .map,.map iframe{min-height:340px}
+  .fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;gap:8px}
+  .fab a{flex:1;min-height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;box-shadow:0 12px 30px -10px #000}
+  .fab .c{background:var(--gold);color:#1d120b}
+  .fab .w{background:#1d120b;color:var(--ink);border:1px solid rgba(244,236,227,.3)}
+  .fab svg{width:18px;height:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Credo — наверх">
+      <svg viewBox="0 0 58 34" aria-hidden="true"><ellipse cx="29" cy="17" rx="27" ry="15" fill="none" stroke="#d9a27f" stroke-width="1.5"/><ellipse cx="29" cy="17" rx="22.5" ry="11" fill="none" stroke="#d9a27f" stroke-width=".8" opacity=".6"/><text x="29" y="21.5" text-anchor="middle" font-family="Prata,serif" font-size="12" fill="#f0c9a8">C</text></svg>
+      <b>Credo</b>
+    </a>
+    <nav aria-label="Разделы">
+      <a href="#serv">Ремонт</a><a href="#works">Работы</a><a href="#praise">Отзывы</a><a href="#order">Квитанция</a><a href="#contact">Адрес</a>
+    </nav>
+    <a class="tel" href="tel:+79191494513">+7 919 149-45-13</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="kick mono">Ювелирная мастерская · Уфа</p>
+      <h1>Credo</h1>
+      <p class="lead">Ремонт и изготовление украшений: цепи, браслеты, кольца, серьги</p>
+      <div class="proof"><strong>5,0</strong><span>в 2ГИС при 135 оценках. Пишут, что мастер Никита умеет всё, работает быстро, а украшения уходят блестящими, как новые.</span></div>
+      <div class="cta">
+        <a class="btn btn-gold" href="#order">Оценить ремонт</a>
+        <a class="btn btn-line" href="https://wa.me/79191494513?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D1%83%D0%BA%D1%80%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%BF%D1%80%D0%B8%D1%88%D0%BB%D1%8E%20%D1%84%D0%BE%D1%82%D0%BE." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3Z"/></svg>Написать в WhatsApp</a>
+      </div>
+      <div class="meta">
+        <span data-status></span>
+        <a href="https://yandex.ru/maps/?rtext=~54.769265,56.06244" target="_blank" rel="noopener">Баязита Бикбая, 19/1 · маршрут</a>
+        <a href="tel:+79191494513">Позвонить</a>
+      </div>
+    </div>
+    <div class="hero-pic">
+      <div class="frame">
+        <img id="par" src="img/p10.jpg" srcset="img/p10-m.jpg 450w, img/p10.jpg 640w" sizes="(max-width:860px) 100vw, 470px" width="640" height="1280" alt="Цепь из красного золота на деревянной колодке в мастерской Credo" fetchpriority="high">
+      </div>
+      <span class="tag">с верстака мастерской</span>
+      <svg class="stamp" viewBox="0 0 132 132" aria-hidden="true"><defs><path id="cir" d="M66 66m-48 0a48 48 0 1 1 96 0a48 48 0 1 1-96 0"/></defs><circle cx="66" cy="66" r="62" fill="#16100c" stroke="#d9a27f" stroke-width="1"/><text><textPath href="#cir">Credo · ремонт · Уфа · на заказ ·</textPath></text><text x="66" y="74" text-anchor="middle" style="font:400 24px Prata,serif;letter-spacing:0;fill:#f0c9a8">C</text></svg>
+    </div>
+  </div>
+</section>
+<div class="chain" aria-hidden="true"></div>
+
+<section class="serv" id="serv">
+  <div class="wrap">
+    <div>
+      <p class="kick mono" data-r>Что приносят мастеру</p>
+      <h2 class="h2" data-r>Порвалась, потерялся замок, <em>потускнело</em> — чинят</h2>
+      <div class="serv-list">
+        <div class="row" data-r><span class="n">01</span><div><h3>Укоротить или удлинить цепочку</h3><p>Подгонка длины цепей и браслетов — с этим к мастеру Никите приходят чаще всего.</p></div></div>
+        <div class="row" data-r><span class="n">02</span><div><h3>Заменить замок</h3><p>Подберут замок, который подходит изделию. Если нужен другой — скажут честно и пересчитают цену.</p></div></div>
+        <div class="row" data-r><span class="n">03</span><div><h3>Починить серьги, кольца, подвески</h3><p>Сломанные швензы, разрывы, разошедшиеся звенья — мастер сначала посмотрит и проконсультирует.</p></div></div>
+        <div class="row" data-r><span class="n">04</span><div><h3>Вернуть блеск</h3><p>По отзывам, после мастерской украшения сияют как новые.</p></div></div>
+        <div class="row" data-r><span class="n">05</span><div><h3>Изделия на заказ</h3><p>Плетёные браслеты и цепи, кольца, подвески — работы мастерской в ленте ниже.</p></div></div>
+      </div>
+      <div class="pay" data-r><span>Наличные</span><span>Перевод с карты</span><span>1 этаж</span></div>
+    </div>
+    <aside class="serv-pic" data-r>
+      <div class="ph"><img src="img/p13.jpg" srcset="img/p13-m.jpg 506w, img/p13.jpg 720w" sizes="(max-width:860px) 100vw, 520px" width="720" height="1280" loading="lazy" alt="Серебряная цепь на рабочем месте ювелира"></div>
+      <small>Рабочее место мастерской Credo: цепь перед сдачей клиенту.</small>
+    </aside>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap works-head">
+    <div>
+      <p class="kick mono" data-r>Работы мастерской</p>
+      <h2 class="h2" data-r>Плетения, кольца, подвески</h2>
+    </div>
+    <div class="arrows"><button type="button" data-dir="-1" aria-label="Листать назад">&larr;</button><button type="button" data-dir="1" aria-label="Листать вперёд">&rarr;</button></div>
+  </div>
+  <div class="rail" id="rail" data-qa-skip tabindex="0" aria-label="Лента фотографий работ">
+    <figure class="card"><div class="ph"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 506w, img/p8.jpg 720w" sizes="330px" width="720" height="1280" loading="lazy" alt="Массивный браслет из красного золота"></div><figcaption>Браслет плотного плетения<b>01</b></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 675w, img/p14.jpg 960w" sizes="330px" width="960" height="1280" loading="lazy" alt="Серебряный браслет с кольцом-соединителем"></div><figcaption>Серебро с чернением<b>02</b></figcaption></figure>
+    <figure class="card w"><div class="ph"><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 900w, img/p11.jpg 1280w" sizes="500px" width="1280" height="960" loading="lazy" alt="Два обручальных кольца на деревянном столе"></div><figcaption>Пара колец<b>03</b></figcaption></figure>
+    <figure class="card sq"><div class="ph"><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 900w" sizes="330px" width="1280" height="1280" loading="lazy" alt="Серебряная подвеска с чернёным узором" style="object-position:55% 60%"></div><figcaption>Подвеска<b>04</b></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 506w, img/p9.jpg 720w" sizes="330px" width="720" height="1280" loading="lazy" alt="Браслет из золота с тёмными вставками"></div><figcaption>Браслет после работы<b>05</b></figcaption></figure>
+    <figure class="card w"><div class="ph"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1280w" sizes="500px" width="1280" height="720" loading="lazy" alt="Перстень с камнями в пинцете ювелира"></div><figcaption>Перстень в работе<b>06</b></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 506w, img/p6.jpg 720w" sizes="330px" width="720" height="1280" loading="lazy" alt="Две цепочки на деревянной колодке"></div><figcaption>Цепи на колодке<b>07</b></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 960w" sizes="330px" width="960" height="1280" loading="lazy" alt="Серьги и кольцо с полумесяцем в бархатном футляре" style="object-position:50% 40%"></div><figcaption>Серьги и кольцо<b>08</b></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 506w, img/p7.jpg 719w" sizes="330px" width="719" height="1280" loading="lazy" alt="Серебряная цепь с крестом на ладони"></div><figcaption>Цепь с крестом<b>09</b></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 450w, img/p4.jpg 640w" sizes="330px" width="640" height="1280" loading="lazy" alt="Браслет с короной из золота"></div><figcaption>Браслет с короной<b>10</b></figcaption></figure>
+    <figure class="card"><div class="ph"><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 406w, img/p1.jpg 600w" sizes="330px" width="600" height="1331" loading="lazy" alt="Монета с изображением кабана"></div><figcaption>Монета с рисунком<b>11</b></figcaption></figure>
+  </div>
+</section>
+
+<section class="praise" id="praise">
+  <div class="wrap">
+    <div class="score" data-r>
+      <p class="kick mono">2ГИС</p>
+      <div class="big">5,0</div>
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <p>135 оценок. Многие пишут, что обращаются не в первый раз и приводят подруг.</p>
+      <a href="https://2gis.ru/ufa/firm/70000001017839841" target="_blank" rel="noopener">Читать отзывы в 2ГИС</a>
+    </div>
+    <div class="quotes">
+      <h2 class="h2" data-r style="margin-bottom:14px">За что <em>хвалят</em></h2>
+      <article class="q" data-r><h3>Быстро и аккуратно</h3><p>Цепочки укоротили, замок заменили, серьги и цепочку вернули в строй — и почти в каждом отзыве слово «оперативно».</p></article>
+      <article class="q" data-r><h3>Честная цена</h3><p>Цены называют приемлемыми и адекватными. Одна клиентка рассказала: поставили другой замок и взяли меньше оговорённой суммы.</p></article>
+      <article class="q" data-r><h3>Мастера, которых знают годами</h3><p>Сюда приходят по совету других ювелиров, а за мастером Анатолием — постоянные клиенты, которые знают его много лет.</p>
+        <div class="masters"><span><i>Н</i>Никита</span><span><i>А</i>Анатолий</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="how" style="background:var(--wood2)">
+  <div class="wrap">
+    <p class="kick mono" data-r>Как проходит ремонт</p>
+    <h2 class="h2" data-r>Четыре шага от поломки до блеска</h2>
+    <div class="steps-wrap">
+      <div class="step" data-r><h3>Фото или визит</h3><p>Пришлите фото в WhatsApp или приходите на Баязита Бикбая, 19/1.</p></div>
+      <div class="step" data-r><h3>Осмотр и цена</h3><p>Мастер посмотрит изделие, подскажет, как лучше, и назовёт стоимость.</p></div>
+      <div class="step" data-r><h3>Работа</h3><p>Ремонт в мастерской — без посредников и пересылок.</p></div>
+      <div class="step" data-r><h3>Забираете</h3><p>Изделие снова можно носить. Оплата наличными или переводом.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="order" id="order">
+  <div class="wrap">
+    <form class="qz" id="qz" onsubmit="return false">
+      <p class="kick mono" data-r>Квитанция приёма</p>
+      <h2 class="h2" data-r>Опишите изделие — мастер ответит с ценой</h2>
+      <p class="sub" data-r>Три вопроса, и квитанция уйдёт в WhatsApp. Фото изделия пришлёте следующим сообщением.</p>
+      <fieldset><legend><span>01</span>Что за изделие</legend><div class="chips" data-k="item">
+        <label class="chip"><input type="radio" name="item" value="Цепочка"><span>Цепочка</span></label>
+        <label class="chip"><input type="radio" name="item" value="Браслет"><span>Браслет</span></label>
+        <label class="chip"><input type="radio" name="item" value="Кольцо"><span>Кольцо</span></label>
+        <label class="chip"><input type="radio" name="item" value="Серьги"><span>Серьги</span></label>
+        <label class="chip"><input type="radio" name="item" value="Подвеска или крест"><span>Подвеска / крест</span></label>
+        <label class="chip"><input type="radio" name="item" value="Другое"><span>Другое</span></label>
+      </div></fieldset>
+      <fieldset><legend><span>02</span>Что сделать <small style="font:400 13px var(--sans);color:var(--mute)">можно несколько</small></legend><div class="chips" data-k="job">
+        <label class="chip"><input type="checkbox" name="job" value="укоротить / удлинить"><span>Укоротить / удлинить</span></label>
+        <label class="chip"><input type="checkbox" name="job" value="заменить замок"><span>Заменить замок</span></label>
+        <label class="chip"><input type="checkbox" name="job" value="спаять разрыв"><span>Спаять разрыв</span></label>
+        <label class="chip"><input type="checkbox" name="job" value="изменить размер"><span>Изменить размер</span></label>
+        <label class="chip"><input type="checkbox" name="job" value="вернуть блеск"><span>Вернуть блеск</span></label>
+        <label class="chip"><input type="checkbox" name="job" value="изготовить на заказ"><span>Сделать на заказ</span></label>
+        <label class="chip"><input type="checkbox" name="job" value="нужна консультация"><span>Не знаю — посоветуйте</span></label>
+      </div></fieldset>
+      <fieldset><legend><span>03</span>Металл</legend><div class="chips" data-k="metal">
+        <label class="chip"><input type="radio" name="metal" value="золото"><span>Золото</span></label>
+        <label class="chip"><input type="radio" name="metal" value="серебро"><span>Серебро</span></label>
+        <label class="chip"><input type="radio" name="metal" value="не знаю"><span>Не знаю</span></label>
+      </div></fieldset>
+      <label class="f" for="nm">Как к вам обращаться</label><input type="text" id="nm" autocomplete="given-name">
+      <label class="f" for="cm">Подробности (необязательно)</label><textarea id="cm" placeholder="например: цепь 50 см, нужна 45"></textarea>
+    </form>
+    <aside class="ticket" data-r aria-live="polite">
+      <h3>Квитанция<small id="tno">№ —</small></h3>
+      <p class="who">Ювелирная мастерская Credo · Уфа</p>
+      <dl>
+        <dt>Изделие</dt><dd id="o-item" class="e">не выбрано</dd>
+        <dt>Работа</dt><dd id="o-job" class="e">не выбрано</dd>
+        <dt>Металл</dt><dd id="o-metal" class="e">не выбрано</dd>
+        <dt>Клиент</dt><dd id="o-nm" class="e">—</dd>
+      </dl>
+      <p class="note">Стоимость мастер назовёт после фото или осмотра.</p>
+      <div class="seal" id="seal">ПРИНЯТО<br>CREDO</div>
+      <a class="btn btn-wa" id="send" href="#" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+      <a class="tg" href="https://t.me/trusty" target="_blank" rel="noopener">или написать в Telegram</a>
+    </aside>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div data-r>
+      <p class="kick mono">Адрес и часы</p>
+      <p class="addr">Уфа, улица Баязита Бикбая, 19/1</p>
+      <p style="color:var(--mute)">1 этаж · <span data-status></span></p>
+      <div class="hours">
+        <div><span>Понедельник — пятница</span><span>11:00–18:00</span></div>
+        <div><span>Суббота, воскресенье</span><span>11:00–16:00</span></div>
+      </div>
+      <div class="links">
+        <a class="btn btn-gold" href="tel:+79191494513">+7 919 149-45-13</a>
+        <a class="btn btn-line" href="https://yandex.ru/maps/?rtext=~54.769265,56.06244" target="_blank" rel="noopener">Маршрут</a>
+        <a class="btn btn-line" href="https://wa.me/79191494513" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-line" href="https://t.me/trusty" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <div class="map" data-r><iframe loading="lazy" title="Credo на карте Уфы" src="https://yandex.ru/map-widget/v1/?ll=56.06244,54.769265&amp;z=16&amp;pt=56.06244,54.769265,pm2rdm"></iframe></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <p class="kick mono" style="justify-content:center" data-r>Credo · Уфа</p>
+    <h2 class="h2" data-r>Любимое украшение снова <em>на вас</em></h2>
+    <div class="cta" data-r>
+      <a class="btn btn-gold" href="#order">Заполнить квитанцию</a>
+      <a class="btn btn-line" href="tel:+79191494513">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Credo — ювелирная мастерская, Уфа, ул. Баязита Бикбая, 19/1</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+
+<div class="fab">
+  <a class="c" href="tel:+79191494513"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>Позвонить</a>
+  <a class="w" href="#order">Квитанция</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('qz'),send=document.getElementById('send'),seal=document.getElementById('seal');
+  var no=String(Date.now()).slice(-5);document.getElementById('tno').textContent='№ '+no;
+  function val(n){var a=[].slice.call(f.querySelectorAll('[name="'+n+'"]:checked')).map(function(i){return i.value});return a.join(', ')}
+  function put(id,v,empty){var d=document.getElementById(id);d.textContent=v||empty;d.classList.toggle('e',!v)}
+  function upd(){
+    var it=val('item'),jb=val('job'),mt=val('metal'),nm=document.getElementById('nm').value.trim(),cm=document.getElementById('cm').value.trim();
+    put('o-item',it,'не выбрано');put('o-job',jb,'не выбрано');put('o-metal',mt,'не выбрано');put('o-nm',nm,'—');
+    seal.classList.toggle('on',!!(it&&jb&&mt));
+    var t='Здравствуйте! Квитанция с сайта Credo № '+no+'.\nИзделие: '+(it||'—')+'\nЧто сделать: '+(jb||'—')+'\nМеталл: '+(mt||'—');
+    if(cm)t+='\nПодробности: '+cm;
+    if(nm)t+='\nМеня зовут '+nm;
+    t+='\nФото изделия пришлю следующим сообщением. Подскажите цену?';
+    send.href='https://wa.me/79191494513?text='+encodeURIComponent(t);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+  var r=document.getElementById('rail');
+  document.querySelectorAll('.arrows button').forEach(function(b){b.addEventListener('click',function(){r.scrollBy({left:+b.dataset.dir*r.clientWidth*.7,behavior:'smooth'})})});
+  var down=false,sx=0,sl=0;
+  r.addEventListener('mousedown',function(e){down=true;sx=e.pageX;sl=r.scrollLeft;r.style.scrollSnapType='none'});
+  window.addEventListener('mouseup',function(){if(down){down=false;r.style.scrollSnapType=''}});
+  r.addEventListener('mousemove',function(e){if(down){e.preventDefault();r.scrollLeft=sl-(e.pageX-sx)}});
+  var p=document.getElementById('par');
+  if(p&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    var tk=false;window.addEventListener('scroll',function(){if(tk)return;tk=true;requestAnimationFrame(function(){var y=Math.min(window.scrollY,900);p.style.transform='translateY('+(-y*.08)+'px)';tk=false})},{passive:true});
+  }
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["11:00","18:00"]],"tue":[["11:00","18:00"]],"wed":[["11:00","18:00"]],"thu":[["11:00","18:00"]],"fri":[["11:00","18:00"]],"sat":[["11:00","16:00"]],"sun":[["11:00","16:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

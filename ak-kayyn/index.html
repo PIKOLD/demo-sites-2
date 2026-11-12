@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ак Кайын — база отдыха с баней и чаном под Уфой</title><meta property="og:type" content="website"><meta property="og:title" content="Ак Кайын — база отдыха с баней и чаном под Уфой"><meta property="og:description" content="Ак Кайын — база отдыха в Уфе: домик, баня, банный чан, купель и беседки среди берёз. Малая Искинская, 24Б. Ежедневно 10:00–22:00."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/ak-kayyn/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Ак Кайын — база отдыха в Уфе: домик, баня, банный чан, купель и беседки среди берёз. Малая Искинская, 24Б. Ежедневно 10:00–22:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600&family=Onest:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600&family=Onest:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --bark:#f3f0e8;--bark2:#e8e3d6;--paper:#fbfaf6;
+  --ink:#1c1e1b;--ink2:#2a2d28;--mute:#5d6058;
+  --larch:#a9652c;--larch2:#c98a4b;--amber:#f0bd62;--leaf:#55663a;
+  --line:rgba(28,30,27,.14);--lineD:rgba(243,240,232,.16);
+  --f1:'Unbounded',system-ui,sans-serif;--f2:'Onest',system-ui,sans-serif;
+  --r:14px;--w:1360px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bark);color:var(--ink);font:400 17px/1.6 var(--f2);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--larch);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+.demo{background:var(--ink);color:var(--bark2);font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+.eyebrow{font:500 12px/1.3 var(--f2);letter-spacing:.18em;text-transform:uppercase;color:var(--larch)}
+h1,h2,h3{font-family:var(--f1);font-weight:400;letter-spacing:-.02em;line-height:1.05}
+h2{font-size:clamp(30px,4.4vw,64px);font-weight:300}
+h2 b{font-weight:600}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;border:1.5px solid var(--ink);font:600 15px/1 var(--f2);text-decoration:none;transition:transform .25s,background .25s,color .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-dark{background:var(--ink);color:var(--bark)}
+.btn-dark:hover{background:var(--larch);border-color:var(--larch);box-shadow:0 10px 30px -10px rgba(169,101,44,.7)}
+.btn-wa{background:transparent}
+.btn-wa:hover{background:var(--ink);color:var(--bark)}
+.btn svg{width:18px;height:18px;flex:none}
+.lnk{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.lnk:hover{color:var(--larch);border-color:currentColor}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(243,240,232,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:66px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:34px;height:34px}
+.logo span{font:600 16px/1 var(--f1);letter-spacing:.02em}
+.logo small{display:block;font:400 11px/1.2 var(--f2);color:var(--mute);letter-spacing:.08em;margin-top:4px}
+.nav{display:flex;gap:28px}
+.nav a{font-size:14px;font-weight:500;text-decoration:none;color:var(--mute);transition:color .2s}
+.nav a:hover{color:var(--ink)}
+.top .tel{font:600 15px var(--f2);text-decoration:none;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);min-height:clamp(600px,50vw,860px)}
+.hero-txt{position:relative;padding:clamp(28px,5vh,64px) clamp(18px,4vw,56px) clamp(28px,5vh,56px) max(clamp(18px,4vw,56px),calc((100vw - var(--w))/2 + 56px));display:flex;flex-direction:column;justify-content:center;gap:clamp(16px,2.6vh,28px)}
+.bark{position:absolute;left:0;top:0;bottom:0;width:clamp(10px,1.4vw,22px);background:var(--paper)}
+.bark svg{width:100%;height:100%}
+.hero h1{font-size:clamp(54px,8.4vw,138px);font-weight:300;line-height:.92;letter-spacing:-.045em}
+.hero h1 em{display:block;font-style:normal;font-weight:600}
+.hero .tr{font-size:14px;color:var(--mute);display:flex;align-items:center;gap:10px}
+.hero .tr:before{content:"";width:34px;height:1px;background:var(--ink)}
+.hero .lead{font-size:clamp(17px,1.35vw,21px);line-height:1.5;max-width:30em}
+.proof{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:var(--mute)}
+.proof b{color:var(--ink);font-weight:600}
+.status{display:inline-flex;align-items:center;gap:8px}
+[data-status]:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#9a9a90;margin-right:8px;vertical-align:1px}
+[data-status].is-open:before{background:#4f8a3a;box-shadow:0 0 0 4px rgba(79,138,58,.18)}
+[data-status].is-closed:before{background:var(--larch)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.sub{display:flex;flex-wrap:wrap;gap:4px 26px}
+.hero-ph{position:relative;overflow:hidden;background:var(--ink)}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:30% 55%;transform:scale(1.04);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.hero-ph.in img{transform:scale(1)}
+.hero-ph .tag{position:absolute;left:clamp(16px,2vw,28px);bottom:clamp(16px,2vw,28px);background:rgba(28,30,27,.78);color:var(--bark);padding:14px 18px;border-radius:12px;font-size:13px;line-height:1.45;max-width:300px;backdrop-filter:blur(6px)}
+.hero-ph .tag b{display:block;font:600 14px var(--f1);margin-bottom:4px;color:var(--amber)}
+.aframe{position:absolute;right:clamp(16px,3vw,40px);top:clamp(16px,3vw,40px);width:clamp(70px,8vw,120px);opacity:.9}
+
+/* sections */
+section{position:relative}
+.sec{padding:clamp(72px,10vw,150px) 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(36px,5vw,72px)}
+.head p{color:var(--mute);max-width:34em}
+
+/* what's inside */
+.inside{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,80px);align-items:start}
+.inside figure{position:sticky;top:96px;border-radius:var(--r);overflow:hidden;aspect-ratio:2/3;max-height:calc(100vh - 130px);background:var(--ink)}
+.inside figure img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.inside figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 22px 18px;background:linear-gradient(transparent,rgba(28,30,27,.85));color:var(--bark);font-size:14px}
+.rows{list-style:none;border-top:1px solid var(--line)}
+.rows li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:8px 20px;padding:clamp(22px,2.6vw,34px) 0;border-bottom:1px solid var(--line);transition:padding .35s}
+.rows li:hover{padding-left:10px}
+.rows .n{font:300 15px var(--f1);color:var(--larch);padding-top:8px}
+.rows h3{font-size:clamp(22px,2.3vw,34px);font-weight:400}
+.rows p{grid-column:2;color:var(--mute);max-width:36em}
+.rows .chip{display:inline-block;font:500 12px var(--f2);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);border-radius:99px;padding:4px 10px;margin-left:10px;vertical-align:middle;color:var(--mute)}
+
+/* planes */
+.sky{background:var(--ink);color:var(--bark);overflow:hidden}
+.sky .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px 80px;align-items:center}
+.sky h2{color:var(--bark)}
+.sky h2 b{color:var(--amber)}
+.sky p{color:#c9c5b8;max-width:32em}
+.sky p + p{margin-top:14px}
+.sky .note{font-size:14px;color:#9d998d;border-left:2px solid var(--larch2);padding-left:14px;margin-top:24px}
+.route{position:absolute;inset:0;pointer-events:none}
+.route svg{width:100%;height:100%}
+.plane{offset-path:path("M-80,420 C 300,380 700,140 1500,60");offset-rotate:auto;animation:fly 14s linear infinite}
+@keyframes fly{from{offset-distance:0%}to{offset-distance:100%}}
+.lights{display:flex;gap:clamp(10px,2vw,22px);margin-top:36px}
+.lights i{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 14px 3px rgba(240,189,98,.55);animation:glow 3s ease-in-out infinite}
+.lights i:nth-child(2n){animation-delay:.8s}.lights i:nth-child(3n){animation-delay:1.6s}
+@keyframes glow{50%{opacity:.35;box-shadow:none}}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(30px,6vw,96px)}
+.score{border-top:2px solid var(--ink);padding-top:22px}
+.score .big{font:300 clamp(88px,11vw,170px)/.85 var(--f1);letter-spacing:-.06em}
+.score .stars{display:flex;gap:4px;margin:18px 0 10px}
+.score .stars svg{width:20px;height:20px}
+.score p{color:var(--mute);font-size:15px}
+.score a{font-size:14px}
+.quotes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 48px}
+.q{padding:28px 0;border-top:1px solid var(--line)}
+.q:first-child{grid-column:1/-1;padding-top:0;border-top:0}
+.q:first-child h3{font-size:clamp(26px,3vw,44px);font-weight:300;max-width:18em}
+.q h3{font-size:clamp(20px,1.8vw,26px);margin-bottom:12px}
+.q p{color:var(--mute)}
+
+/* booking */
+.book{background:var(--bark2)}
+.bk{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,64px);align-items:start}
+.form{background:var(--paper);border-radius:22px;padding:clamp(22px,3vw,44px);border:1px solid var(--line)}
+.step{padding:22px 0;border-bottom:1px dashed var(--line)}
+.step:first-child{padding-top:0}
+.step:last-of-type{border-bottom:0}
+.step > span{display:flex;align-items:baseline;gap:12px;font:500 16px var(--f2);margin-bottom:14px}
+.step > span i{font:400 12px var(--f1);color:var(--larch);font-style:normal}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips button{min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:transparent;font-size:15px;font-weight:500;transition:border-color .2s,background .2s,color .2s,transform .2s}
+.chips button:hover{border-color:var(--ink)}
+.chips button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bark)}
+.chips button:active{transform:scale(.97)}
+.fld{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.fld label{display:block;font-size:13px;color:var(--mute);margin-bottom:6px}
+.fld input,.form textarea{width:100%;min-height:50px;border:1.5px solid var(--line);border-radius:12px;background:#fff;padding:12px 14px;font:500 16px var(--f2);color:var(--ink)}
+.form textarea{min-height:84px;resize:vertical;margin-top:12px}
+.fld input:focus,.form textarea:focus{outline:0;border-color:var(--larch)}
+.pass{position:sticky;top:96px;background:var(--ink);color:var(--bark);border-radius:22px;overflow:hidden}
+.pass-top{padding:24px 26px 20px;display:flex;justify-content:space-between;align-items:center;font:500 11px var(--f2);letter-spacing:.2em;text-transform:uppercase;color:#a9a597}
+.pass-top svg{width:30px;height:30px}
+.route-line{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:14px;padding:0 26px 22px}
+.route-line b{font:600 clamp(20px,2vw,28px)/1 var(--f1);letter-spacing:-.02em}
+.route-line small{display:block;font-size:11px;color:#a9a597;letter-spacing:.1em;margin-top:6px}
+.route-line .dash{height:1px;border-top:1.5px dashed rgba(243,240,232,.35);position:relative}
+.route-line .dash svg{position:absolute;left:50%;top:-11px;width:22px;height:22px;transform:translateX(-50%) rotate(90deg)}
+.perf{height:24px;position:relative;background:radial-gradient(circle at 0 50%,var(--bark2) 12px,transparent 13px),radial-gradient(circle at 100% 50%,var(--bark2) 12px,transparent 13px)}
+.perf:after{content:"";position:absolute;left:24px;right:24px;top:50%;border-top:1.5px dashed rgba(243,240,232,.22)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px 20px;padding:20px 26px}
+.grid div{min-width:0}
+.grid small{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#a9a597;margin-bottom:4px}
+.grid strong{font:500 16px/1.35 var(--f2);overflow-wrap:anywhere}
+.grid .wide{grid-column:1/-1}
+.grid strong.empty{color:#77746a;font-weight:400}
+.pass-bot{padding:6px 26px 26px}
+.pass-bot .btn{width:100%;background:var(--amber);border-color:var(--amber);color:var(--ink)}
+.pass-bot .btn:hover{background:#fff;border-color:#fff}
+.pass-bot p{font-size:12.5px;color:#a9a597;margin-top:12px;text-align:center}
+.bars{display:flex;gap:2px;height:34px;margin:4px 26px 0;opacity:.5}
+.bars i{flex:1;background:var(--bark)}
+
+/* steps */
+.how{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;border-top:1px solid var(--line)}
+.how li{list-style:none;padding:26px 22px 0 0;position:relative}
+.how li:before{counter-increment:s;content:"0" counter(s);display:block;font:300 13px var(--f1);color:var(--larch);margin-bottom:22px}
+.how li:after{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--ink)}
+.how h3{font-size:clamp(17px,1.4vw,21px);font-weight:400;margin-bottom:10px}
+.how p{font-size:15px;color:var(--mute)}
+
+/* contacts */
+.cont{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,64px)}
+.info dl{display:grid;gap:22px;margin:28px 0 30px}
+.info dt{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+.info dd{font-size:clamp(18px,1.5vw,22px);font-weight:500}
+.info dd a{text-decoration:none}
+.info dd a:hover{color:var(--larch)}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;background:var(--bark2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+/* final */
+.final{background:var(--ink);color:var(--bark);text-align:left;overflow:hidden}
+.final .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px 60px;align-items:end}
+.final h2{font-size:clamp(34px,5.6vw,88px);color:var(--bark)}
+.final h2 b{color:var(--amber)}
+.final .btn-dark{background:var(--amber);border-color:var(--amber);color:var(--ink)}
+.final .btn-dark:hover{background:#fff;border-color:#fff}
+.final .btn-wa{border-color:var(--bark);color:var(--bark)}
+.final .btn-wa:hover{background:var(--bark);color:var(--ink)}
+.final .cta{flex-direction:column;align-items:stretch}
+.birchrow{position:absolute;inset:auto 0 0 0;height:100%;opacity:.07;pointer-events:none}
+footer{background:var(--ink);color:#8f8b80;font-size:13px;border-top:1px solid var(--lineD);padding:26px 0 30px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between}
+footer a{color:#c9c5b8}
+
+.fab{display:none}
+
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .js [data-r]{opacity:1;transform:none}
+  .hero-ph img{transform:none}
+}
+
+@media (max-width:1100px){
+  .nav{display:none}
+  .how{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:30px}
+  .bk{grid-template-columns:minmax(0,1fr)}
+  .pass{position:relative;top:0;max-width:560px}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0;max-height:none}
+  .hero-txt{padding:30px 18px 30px 34px}
+  .hero-ph{height:min(62vw,420px)}
+  .head,.inside,.praise,.cont,.sky .wrap,.final .wrap{grid-template-columns:minmax(0,1fr)}
+  .inside figure{position:relative;top:0;aspect-ratio:4/5;max-height:520px}
+  .quotes{grid-template-columns:minmax(0,1fr)}
+  .rows li{grid-template-columns:40px minmax(0,1fr);gap:6px 12px}
+  .rows .chip{margin:6px 0 0;display:table}
+  .how{grid-template-columns:minmax(0,1fr)}
+  .how li{padding:22px 0 8px 28px;border-left:1px solid var(--line)}
+  .how li:after{left:-5px;top:28px}
+  .how li:before{margin-bottom:8px}
+  .how{border-top:0}
+  .map,.map iframe{min-height:340px}
+  .top .tel{display:none}
+  .fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:50;align-items:center;gap:10px;min-height:54px;padding:0 22px;border-radius:999px;background:var(--larch);color:#fff;font:600 15px var(--f2);text-decoration:none;box-shadow:0 12px 30px -8px rgba(28,30,27,.5)}
+  .fab svg{width:18px;height:18px}
+  footer{padding-bottom:96px}
+}
+@media (max-width:480px){
+  .cta .btn{flex:1 1 100%}
+  .hero-ph .tag{display:none}
+  .hero-ph{height:min(78vw,420px)}
+  .fld{grid-template-columns:minmax(0,1fr)}
+  .chips button{padding:0 15px;font-size:14px}
+  .grid{padding:18px 20px}
+  .pass-top,.route-line,.pass-bot{padding-left:20px;padding-right:20px}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Ак Кайын — на главную">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 37 37H3Z" fill="none" stroke="#1c1e1b" stroke-width="2.4" stroke-linejoin="round"/><rect x="18.4" y="14" width="3.2" height="23" fill="#f3f0e8" stroke="#1c1e1b" stroke-width="1.4"/><path d="M18.4 20h2M19.6 26h2M18.4 31h1.8" stroke="#1c1e1b" stroke-width="1.6"/></svg>
+      <span>АК КАЙЫН<small>база отдыха · Уфа</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#inside">Что внутри</a><a href="#praise">Отзывы</a><a href="#book">Бронь</a><a href="#contacts">Как добраться</a>
+    </nav>
+    <a class="tel" href="tel:+79273222660">+7 927 322-26-60</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-txt">
+    <div class="bark" aria-hidden="true"><svg viewBox="0 0 20 600" preserveAspectRatio="none"><g fill="#1c1e1b"><rect x="0" y="40" width="12" height="3"/><rect x="6" y="96" width="14" height="4"/><rect x="0" y="150" width="8" height="2"/><rect x="4" y="210" width="16" height="6"/><rect x="0" y="262" width="11" height="2"/><rect x="8" y="318" width="12" height="3"/><rect x="0" y="372" width="15" height="5"/><rect x="5" y="430" width="9" height="2"/><rect x="0" y="486" width="13" height="4"/><rect x="7" y="548" width="13" height="3"/></g></svg></div>
+    <p class="eyebrow" data-r>База отдыха · Уфа, Республика Башкортостан</p>
+    <h1 data-r>Ак<em>Кайын</em></h1>
+    <p class="tr" data-r>по-башкирски — «белая берёза»</p>
+    <p class="lead" data-r>Уютный домик среди деревьев, баня, горячий банный чан и купель недалеко от города. Гости пишут, что к приезду всё готовят моментально.</p>
+    <div class="proof" data-r>
+      <span><b>4,7</b> в 2ГИС · 176 оценок</span>
+      <span class="status"><span data-status>Ежедневно 10:00–22:00</span></span>
+      <span>Малая Искинская ул., 24Б</span>
+    </div>
+    <div class="cta" data-r>
+      <a class="btn btn-dark" href="#book">Собрать бронь</a>
+      <a class="btn btn-wa" href="https://wa.me/79273222660?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%90%D0%BA%20%D0%9A%D0%B0%D0%B9%D1%8B%D0%BD." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Написать в WhatsApp</a>
+    </div>
+    <div class="sub" data-r>
+      <a class="lnk" href="tel:+79273222660">Позвонить</a>
+      <a class="lnk" href="https://yandex.ru/maps/?rtext=~54.521117,55.900068" target="_blank" rel="noopener">Маршрут →</a>
+    </div>
+  </div>
+  <div class="hero-ph" data-r>
+    <img src="img/p1.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1440w" sizes="(max-width:860px) 100vw, 80vw" width="1440" height="957" alt="Домик-шалаш Ак Кайын с панорамными окнами, деревянная терраса и пергола среди берёз">
+    <svg class="aframe" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 4 96 86H4Z" fill="none" stroke="#f3f0e8" stroke-width="1.5"/><path d="M50 30 74 86M50 30 26 86" fill="none" stroke="#f0bd62" stroke-width="1" stroke-dasharray="2 5"/></svg>
+    <div class="tag"><b>Домик, баня, чан, купель</b>Всё на одной территории, среди берёз — на перезагрузку вдвоём или с семьёй.</div>
+  </div>
+</section>
+
+<section class="sec" id="inside">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow" data-r>Что внутри</p><h2 data-r>Всё для <b>перезагрузки</b> в одном месте</h2></div>
+      <p data-r>Приехали, растопили, нырнули в купель — и мысли отключаются. Так о базе пишут гости, которые возвращаются сюда снова.</p>
+    </div>
+    <div class="inside">
+      <figure data-r>
+        <img src="img/p2-m.jpg" srcset="img/p2-m.jpg 600w, img/p2.jpg 1200w" sizes="(max-width:860px) 100vw, 40vw" width="1200" height="1800" loading="lazy" alt="Деревянный банный чан на террасе под навесом, за забором из лиственницы — берёзы">
+        <figcaption>Банный чан на террасе — гости хвалят, что он горячий и чистый</figcaption>
+      </figure>
+      <ol class="rows">
+        <li data-r><span class="n">01</span><h3>Домик</h3><p>Уютный, чистый, с деревьями вокруг. Гости приезжают и вдвоём, и семьёй — внутри есть всё необходимое.</p></li>
+        <li data-r><span class="n">02</span><h3>Баня</h3><p>Хорошая и чистая. Сауну можно подтапливать самим — и сразу в купель.</p></li>
+        <li data-r><span class="n">03</span><h3>Банный чан</h3><p>Главная причина вернуться, судя по отзывам: тёплый, чистый, готов к приезду.</p></li>
+        <li data-r><span class="n">04</span><h3>Купель</h3><p>Холодный контраст после бани и чана — то самое «всё, что нужно».</p></li>
+        <li data-r><span class="n">05</span><h3>Беседки <span class="chip">Wi-Fi</span></h3><p>Посидеть компанией на воздухе. Wi-Fi для гостей — если нужно остаться на связи.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec sky">
+  <div class="route" aria-hidden="true">
+    <svg viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice">
+      <path d="M-80,420 C 300,380 700,140 1500,60" fill="none" stroke="rgba(240,189,98,.35)" stroke-width="1.5" stroke-dasharray="3 10"/>
+      <g class="plane"><path d="M-14 -2 14 0-14 2-10 0Z M-2 0-8-12h4L6 0-4 12h-4Z M-14 0-17-5h2L-10 0-15 5h-2Z" fill="#f3f0e8"/></g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" data-r>Особенность места</p>
+      <h2 data-r>Берёзы, гирлянды — и <b>самолёты</b> над головой</h2>
+      <div class="lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div>
+      <p data-r>База стоит рядом с аэропортом Уфы. Гости признаются, что заходящие на посадку самолёты завораживают — смотреть на них из горячего чана радостно, как в детстве.</p>
+      <p data-r>И при этом — недалеко от города: приехать можно даже из другого города, многие так и делают.</p>
+      <p class="note" data-r>Честно: рядом трасса и взлётная полоса, иногда бывает шумно. Большинству гостей это не мешает, но если нужна полная тишина — спросите, какой домик выбрать.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="praise">
+  <div class="wrap praise">
+    <div class="score" data-r>
+      <div class="big">4,7</div>
+      <div class="stars" aria-label="Рейтинг 4,7 из 5"><svg viewBox="0 0 20 20"><path d="m10 1 2.7 6 6.3.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.2 1.4-6.3L1 7.6 7.3 7Z" fill="#a9652c"/></svg><svg viewBox="0 0 20 20"><path d="m10 1 2.7 6 6.3.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.2 1.4-6.3L1 7.6 7.3 7Z" fill="#a9652c"/></svg><svg viewBox="0 0 20 20"><path d="m10 1 2.7 6 6.3.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.2 1.4-6.3L1 7.6 7.3 7Z" fill="#a9652c"/></svg><svg viewBox="0 0 20 20"><path d="m10 1 2.7 6 6.3.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.2 1.4-6.3L1 7.6 7.3 7Z" fill="#a9652c"/></svg><svg viewBox="0 0 20 20"><defs><linearGradient id="h"><stop offset="70%" stop-color="#a9652c"/><stop offset="70%" stop-color="#d6cfbf"/></linearGradient></defs><path d="m10 1 2.7 6 6.3.6-4.8 4.3 1.4 6.3L10 15l-5.6 3.2 1.4-6.3L1 7.6 7.3 7Z" fill="url(#h)"/></svg></div>
+      <p>176 оценок гостей в 2ГИС</p>
+      <a class="lnk" href="https://2gis.ru/ufa/firm/70000001085769837" target="_blank" rel="noopener">Читать отзывы в 2ГИС →</a>
+    </div>
+    <div class="quotes">
+      <div class="q" data-r><p class="eyebrow" style="margin-bottom:14px">За что хвалят</p><h3>Приезжаешь — и все мысли отключаются. Гости называют энергетику места наполняющей.</h3></div>
+      <div class="q" data-r><h3>Чан, баня, купель</h3><p>Горячий и чистый чан, хорошая баня, купель рядом. И цену гости называют приемлемой.</p></div>
+      <div class="q" data-r><h3>Быстро и на месте</h3><p>Домик, чан и баню готовят к приезду очень быстро, а если возникает вопрос — ребята приезжают или решают на месте.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec book" id="book">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow" data-r>Бронь за минуту</p><h2 data-r>Соберите свой <b>посадочный</b> на отдых</h2></div>
+      <p data-r>Выберите дату, состав и что приготовить к приезду. Билет справа заполнится сам — отправьте его в WhatsApp, и администратор подтвердит свободные даты и стоимость.</p>
+    </div>
+    <div class="bk">
+      <form class="form" id="q" data-r onsubmit="return false">
+        <div class="step"><span><i>01</i>Когда приедете</span>
+          <div class="fld">
+            <div><label for="d1">Заезд</label><input type="date" id="d1"></div>
+            <div><label for="d2">Выезд (если с ночёвкой)</label><input type="date" id="d2"></div>
+          </div>
+        </div>
+        <div class="step"><span><i>02</i>Сколько гостей</span>
+          <div class="chips" data-k="g" data-one>
+            <button type="button" aria-pressed="false">Вдвоём</button><button type="button" aria-pressed="false">3–4</button><button type="button" aria-pressed="false">5–8</button><button type="button" aria-pressed="false">Больше 8</button>
+          </div>
+        </div>
+        <div class="step"><span><i>03</i>Что приготовить к приезду</span>
+          <div class="chips" data-k="s">
+            <button type="button" aria-pressed="true">Домик</button><button type="button" aria-pressed="true">Баня</button><button type="button" aria-pressed="true">Банный чан</button><button type="button" aria-pressed="false">Купель</button><button type="button" aria-pressed="false">Беседка</button>
+          </div>
+        </div>
+        <div class="step"><span><i>04</i>Повод</span>
+          <div class="chips" data-k="p" data-one>
+            <button type="button" aria-pressed="false">Вдвоём, в тишине</button><button type="button" aria-pressed="false">Семьёй</button><button type="button" aria-pressed="false">Компанией</button><button type="button" aria-pressed="false">День рождения</button><button type="button" aria-pressed="false">Просто перезагрузка</button>
+          </div>
+        </div>
+        <div class="step"><span><i>05</i>Как к вам обращаться</span>
+          <div class="fld"><div><label for="nm">Имя</label><input id="nm" autocomplete="given-name" placeholder="Например, Айгуль"></div><div><label for="tm">Удобное время заезда</label><input id="tm" placeholder="например, после 14:00"></div></div>
+          <label for="cm" style="display:block;font-size:13px;color:var(--mute);margin-top:12px">Пожелания</label>
+          <textarea id="cm" style="margin-top:6px" placeholder="Например, нужен домик потише"></textarea>
+        </div>
+      </form>
+
+      <aside class="pass" aria-live="polite" data-r>
+        <div class="pass-top"><span>Посадочный талон</span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 37 37H3Z" fill="none" stroke="#f0bd62" stroke-width="2"/></svg></div>
+        <div class="route-line"><div><b>УФА</b><small>ГОРОД</small></div><div class="dash"><svg viewBox="-16 -16 32 32"><path d="M-14 -2 14 0-14 2-10 0Z M-2 0-8-12h4L6 0-4 12h-4Z" fill="#f0bd62"/></svg></div><div style="text-align:right"><b>АК&nbsp;КАЙЫН</b><small>БАЗА ОТДЫХА</small></div></div>
+        <div class="perf" aria-hidden="true"></div>
+        <div class="grid">
+          <div><small>Заезд</small><strong id="o-d1" class="empty">дата</strong></div>
+          <div><small>Выезд</small><strong id="o-d2" class="empty">—</strong></div>
+          <div><small>Гостей</small><strong id="o-g" class="empty">не выбрано</strong></div>
+          <div><small>Повод</small><strong id="o-p" class="empty">—</strong></div>
+          <div class="wide"><small>К приезду</small><strong id="o-s">Домик, Баня, Банный чан</strong></div>
+        </div>
+        <div class="bars" aria-hidden="true"><i></i><i style="flex:.4"></i><i style="flex:2"></i><i style="flex:.6"></i><i></i><i style="flex:.3"></i><i style="flex:1.6"></i><i style="flex:.5"></i><i></i><i style="flex:2.4"></i><i style="flex:.4"></i><i></i><i style="flex:.7"></i><i style="flex:1.8"></i><i style="flex:.3"></i><i></i></div>
+        <div class="pass-bot">
+          <a class="btn" id="send" href="https://wa.me/79273222660" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Отправить в WhatsApp</a>
+          <p>Стоимость и свободные даты подтвердит администратор</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow" data-r>Как это устроено</p><h2 data-r>От заявки до <b>купели</b></h2></div>
+      <p data-r>Общий порядок — детали администратор расскажет при подтверждении брони.</p>
+    </div>
+    <ol class="how">
+      <li data-r><h3>Заявка</h3><p>Соберите бронь выше или позвоните — с 10:00 до 22:00.</p></li>
+      <li data-r><h3>Подтверждение</h3><p>Администратор сверит даты, домик и назовёт стоимость.</p></li>
+      <li data-r><h3>Подготовка</h3><p>К вашему приезду готовят домик, баню и чан.</p></li>
+      <li data-r><h3>Отдых</h3><p>Баня, чан, купель, беседка. Есть вопрос — ребята рядом.</p></li>
+      <li data-r><h3>Возвращение</h3><p>Многие гости приезжают сюда второй раз и дальше.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="contacts" style="padding-top:0">
+  <div class="wrap cont">
+    <div class="info">
+      <p class="eyebrow" data-r>Как добраться</p>
+      <h2 data-r>Рядом с <b>городом</b></h2>
+      <dl data-r>
+        <div><dt>Адрес</dt><dd>Уфа, Малая Искинская ул., 24Б</dd></div>
+        <div><dt>Часы</dt><dd>Ежедневно 10:00–22:00<br><span data-status style="font-size:15px;color:var(--mute);font-weight:400"></span></dd></div>
+        <div><dt>Телефон и WhatsApp</dt><dd><a href="tel:+79273222660">+7 927 322-26-60</a></dd></div>
+        <div><dt>Соцсети</dt><dd><a href="https://vk.ru/houseakkayan" target="_blank" rel="noopener">ВКонтакте →</a></dd></div>
+      </dl>
+      <div class="cta" data-r>
+        <a class="btn btn-dark" href="https://yandex.ru/maps/?rtext=~54.521117,55.900068" target="_blank" rel="noopener">Построить маршрут</a>
+        <a class="btn btn-wa" href="tel:+79273222660">Позвонить</a>
+      </div>
+    </div>
+    <div class="map" data-r>
+      <iframe loading="lazy" title="Ак Кайын на карте" src="https://yandex.ru/map-widget/v1/?ll=55.900068,54.521117&z=16&pt=55.900068,54.521117,pm2rdm"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="sec final">
+  <svg class="birchrow" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#f3f0e8"><rect x="80" y="0" width="18" height="400"/><rect x="260" y="40" width="12" height="360"/><rect x="520" y="0" width="22" height="400"/><rect x="900" y="20" width="14" height="380"/><rect x="1120" y="0" width="20" height="400"/><rect x="1330" y="60" width="12" height="340"/></g></svg>
+  <div class="wrap">
+    <h2 data-r>Чан уже <b>горячий</b>.<br>Осталось выбрать дату.</h2>
+    <div class="cta" data-r>
+      <a class="btn btn-dark" href="#book">Собрать бронь</a>
+      <a class="btn btn-wa" href="https://wa.me/79273222660?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D0%B2%20%D0%90%D0%BA%20%D0%9A%D0%B0%D0%B9%D1%8B%D0%BD." target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Ак Кайын · база отдыха · Уфа, Малая Искинская ул., 24Б</span>
+    <span>Данные — <a href="https://2gis.ru/ufa/firm/70000001085769837" target="_blank" rel="noopener">2ГИС</a>. Демо-концепт, не официальный сайт</span>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+79273222660"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1Z"/></svg>Позвонить</a>
+
+<script>
+(function(){
+  var f=document.getElementById('q');if(!f)return;
+  var st={g:'',s:['Домик','Баня','Банный чан'],p:''};
+  var $=function(i){return document.getElementById(i)};
+  var today=new Date();today.setMinutes(today.getMinutes()-today.getTimezoneOffset());
+  var iso=today.toISOString().slice(0,10);$('d1').min=iso;$('d2').min=iso;
+  function fmt(v){if(!v)return'';var p=v.split('-');var m=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];return +p[2]+' '+m[+p[1]-1];}
+  function set(id,v,ph){var e=$(id);e.textContent=v||ph;e.classList.toggle('empty',!v);}
+  function upd(){
+    var d1=fmt($('d1').value),d2=fmt($('d2').value);
+    set('o-d1',d1,'дата');set('o-d2',d2,'—');set('o-g',st.g,'не выбрано');set('o-p',st.p,'—');set('o-s',st.s.join(', '),'не выбрано');
+    var t=['Здравствуйте! Хочу забронировать отдых в Ак Кайын.'];
+    if(d1)t.push('Заезд: '+d1+(d2?', выезд: '+d2:''));
+    if(st.g)t.push('Гостей: '+st.g.toLowerCase());
+    if(st.s.length)t.push('К приезду: '+st.s.join(', ').toLowerCase());
+    if(st.p)t.push('Повод: '+st.p.toLowerCase());
+    if($('tm').value.trim())t.push('Время заезда: '+$('tm').value.trim());
+    if($('cm').value.trim())t.push('Пожелания: '+$('cm').value.trim());
+    if($('nm').value.trim())t.push('Меня зовут '+$('nm').value.trim()+'.');
+    t.push('Подскажите, пожалуйста, свободные даты и стоимость.');
+    $('send').href='https://wa.me/79273222660?text='+encodeURIComponent(t.join('\n'));
+  }
+  f.querySelectorAll('.chips').forEach(function(g){
+    var k=g.getAttribute('data-k'),one=g.hasAttribute('data-one');
+    g.addEventListener('click',function(e){
+      var b=e.target.closest('button');if(!b)return;var v=b.textContent;
+      if(one){var on=b.getAttribute('aria-pressed')!=='true';g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed',on?'true':'false');st[k]=on?v:'';}
+      else{var p=b.getAttribute('aria-pressed')==='true';b.setAttribute('aria-pressed',p?'false':'true');st[k]=[].slice.call(g.querySelectorAll('[aria-pressed="true"]')).map(function(x){return x.textContent});}
+      upd();
+    });
+  });
+  $('d1').addEventListener('change',function(){$('d2').min=this.value||iso;upd()});
+  ['d2','nm','tm','cm'].forEach(function(i){$(i).addEventListener('input',upd);$(i).addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","22:00"]],"tue":[["10:00","22:00"]],"wed":[["10:00","22:00"]],"thu":[["10:00","22:00"]],"fri":[["10:00","22:00"]],"sat":[["10:00","22:00"]],"sun":[["10:00","22:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

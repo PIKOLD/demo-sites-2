@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Эврен — банкеты и турецкая кухня в Уфе, Менделеева 130</title><meta property="og:type" content="website"><meta property="og:title" content="Эврен — банкеты и турецкая кухня в Уфе, Менделеева 130"><meta property="og:description" content="Эврен в Уфе: банкеты, турецкий завтрак, восточная и турецкая кухня, доставка и навынос. Улица Менделеева, 130. Ежедневно с 9:00 до 01:00."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/evren/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Эврен в Уфе: банкеты, турецкий завтрак, восточная и турецкая кухня, доставка и навынос. Улица Менделеева, 130. Ежедневно с 9:00 до 01:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap"></noscript>
+<style>
+:root{
+  --cream:#f6efe2;--paper:#fbf7ef;--sand:#eadcc4;
+  --cobalt:#1c3578;--ink:#14204a;--turq:#1f8a83;--turq-l:#6fc3b8;
+  --pom:#a8303a;--gold:#b98a3e;--txt:#2a2a33;--mut:#5d5a63;
+  --r:22px;--max:1320px;
+  --serif:"Prata",Georgia,serif;--sans:"Manrope",system-ui,sans-serif;--hand:"Marck Script",cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--txt);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--turq);outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--max),100% - 32px);margin-inline:auto}
+.demo{background:var(--ink);color:#e9e3d6;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+/* nav */
+.nav{position:sticky;top:0;z-index:40;background:rgba(246,239,226,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(28,53,120,.12)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 26px/1 var(--serif);color:var(--cobalt)}
+.logo svg{width:34px;height:34px}
+.nav ul{display:flex;gap:28px;list-style:none;font-weight:600;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--ink);padding:10px 0;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:2px;background:var(--pom);transition:right .3s}
+.nav ul a:hover::after{right:0}
+.nav .tel{font-weight:700;text-decoration:none;color:var(--cobalt);white-space:nowrap}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 16px/1 var(--sans);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s,color .2s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.b-main{background:var(--pom);color:#fff;box-shadow:0 10px 24px -10px rgba(168,48,58,.7)}
+.b-main:hover{background:#8f2530;transform:translateY(-2px)}
+.b-wa{background:var(--turq);color:#fff}
+.b-wa:hover{background:#176f69;transform:translateY(-2px)}
+.b-line{border-color:var(--cobalt);color:var(--cobalt);background:transparent}
+.b-line:hover{background:var(--cobalt);color:#fff}
+/* hero */
+.hero{position:relative;padding:clamp(28px,5vh,64px) 0 clamp(40px,6vh,80px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,72px);align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--turq)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--turq)}
+h1{font:400 clamp(64px,10vw,168px)/.92 var(--serif);color:var(--cobalt);letter-spacing:-.02em;margin:14px 0 6px}
+.h1-sub{font:400 clamp(22px,2.4vw,36px)/1.2 var(--serif);color:var(--ink);max-width:16em}
+.h1-sub em{font-style:normal;color:var(--pom)}
+.lead{margin-top:16px;color:var(--mut);max-width:34em;font-size:clamp(16px,1.15vw,18px)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;font-size:15px;align-items:center}
+.meta a{font-weight:600;text-decoration-color:rgba(28,53,120,.35);text-underline-offset:4px}
+.meta a:hover{color:var(--pom)}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--mut)}
+[data-status].is-open::before{background:#2e9d5b;box-shadow:0 0 0 4px rgba(46,157,91,.18)}
+[data-status].is-closed::before{background:var(--pom)}
+.medal{position:relative;aspect-ratio:1;width:min(100%,600px);justify-self:center}
+.medal .spin{position:absolute;inset:0;animation:spin 140s linear infinite}
+.medal .core{position:absolute;inset:23%;border-radius:50%;background:var(--cobalt);display:grid;place-items:center;text-align:center;color:#f3ead8;box-shadow:inset 0 0 0 6px var(--cream),inset 0 0 0 8px var(--gold)}
+.core b{display:block;font:400 clamp(30px,3.4vw,52px)/1 var(--hand);color:#f7d9a3}
+.core span{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:8px;opacity:.85}
+.medal .rate{position:absolute;right:2%;bottom:6%;background:var(--paper);border-radius:18px;padding:14px 18px;box-shadow:0 18px 40px -18px rgba(20,32,74,.45);border:1px solid var(--sand)}
+.rate strong{font:400 34px/1 var(--serif);color:var(--cobalt)}
+.rate small{display:block;font-size:13px;color:var(--mut)}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* tile band */
+.tiles{height:46px;background-color:var(--cobalt);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46' viewBox='0 0 46 46'%3E%3Cg fill='none' stroke='%236fc3b8' stroke-width='1.6'%3E%3Cpath d='M23 4 L27 19 L42 23 L27 27 L23 42 L19 27 L4 23 L19 19Z'/%3E%3C/g%3E%3Ccircle cx='23' cy='23' r='3.2' fill='%23a8303a'/%3E%3Ccircle cx='0' cy='0' r='4' fill='%23f6efe2'/%3E%3Ccircle cx='46' cy='0' r='4' fill='%23f6efe2'/%3E%3Ccircle cx='0' cy='46' r='4' fill='%23f6efe2'/%3E%3Ccircle cx='46' cy='46' r='4' fill='%23f6efe2'/%3E%3C/svg%3E");background-size:46px 46px}
+/* sections */
+section{padding:clamp(64px,9vw,128px) 0}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--pom)}
+h2{font:400 clamp(34px,4.6vw,68px)/1.04 var(--serif);color:var(--ink);letter-spacing:-.01em;margin-top:10px;max-width:15em}
+h2 i{font-style:normal;color:var(--turq)}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(32px,4vw,56px)}
+.sh p{max-width:28em;color:var(--mut)}
+/* services: bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.card{position:relative;border-radius:var(--r);padding:clamp(22px,2.4vw,36px);background:var(--paper);border:1px solid var(--sand);overflow:hidden;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(20,32,74,.4)}
+.card h3{font:400 clamp(24px,2.2vw,34px)/1.12 var(--serif);color:var(--ink);margin-bottom:10px}
+.card p{color:var(--mut);font-size:16px}
+.card .n{font:600 13px/1 var(--sans);letter-spacing:.14em;color:var(--gold);margin-bottom:18px;display:block}
+.c-ban{grid-column:span 4;grid-row:span 2;background:var(--cobalt);color:#e8e2d4;border:0;display:flex;flex-direction:column;justify-content:space-between;min-height:420px}
+.c-ban h3{color:#fff;font-size:clamp(34px,3.6vw,58px)}
+.c-ban p{color:#c9cfe2;max-width:30em;font-size:17px}
+.c-ban .n{color:var(--turq-l)}
+.c-ban .btn{align-self:flex-start;margin-top:24px}
+.c-ban svg.orn{position:absolute;right:-90px;top:-90px;width:380px;opacity:.9}
+.c-bre{grid-column:span 2;background:#f3e3c7}
+.c-kit{grid-column:span 2}
+.c-go{grid-column:span 3}
+.c-kid{grid-column:span 3;background:#dcefea;border-color:#c3e2da}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(28,53,120,.07);color:var(--cobalt)}
+.c-ban .tags span{background:rgba(255,255,255,.1);color:#e8e2d4}
+/* praise */
+.praise{background:var(--ink);color:#e7e1d3;position:relative;overflow:hidden}
+.praise h2{color:#fff}
+.praise .eyebrow{color:var(--turq-l)}
+.pg{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.score{position:sticky;top:110px}
+.score .big{font:400 clamp(110px,14vw,210px)/.9 var(--serif);color:#f7d9a3;margin-top:24px}
+.score .stars{display:flex;gap:6px;margin:14px 0 10px}
+.score .stars svg{width:24px;height:24px}
+.score p{color:#b9c0d6;font-size:16px}
+.score a{color:#fff;font-weight:600}
+.plist{list-style:none;counter-reset:p}
+.plist li{counter-increment:p;padding:clamp(26px,3vw,40px) 0;border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px}
+.plist li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.plist li::before{content:"0" counter(p);font:400 28px/1 var(--serif);color:var(--turq-l)}
+.plist h3{font:400 clamp(26px,2.6vw,40px)/1.1 var(--serif);color:#fff;margin-bottom:8px}
+.plist p{color:#b9c0d6}
+.praise .note{margin-top:22px;font-size:14px;color:#8f97b3}
+/* occasions band */
+.band{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.occ{border-radius:var(--r);padding:clamp(18px,1.8vw,26px);min-height:clamp(190px,17vw,250px);gap:18px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--sand);background:var(--paper);cursor:pointer;text-align:left;font:inherit;color:inherit;transition:transform .25s,background .25s,border-color .25s}
+.occ:hover{transform:translateY(-4px);border-color:var(--cobalt)}
+.occ svg{width:clamp(44px,4vw,64px);height:clamp(44px,4vw,64px)}
+.occ.on{outline:3px solid var(--pom);outline-offset:-3px}
+.occ b{font:400 clamp(21px,1.7vw,27px)/1.1 var(--serif);color:var(--ink);display:block}
+.occ small{color:var(--mut);font-size:14px}
+.occ:nth-child(3n+1){background:#f3e3c7}.occ:nth-child(3n+2){background:#dcefea}
+/* quiz */
+.quiz-s{background:var(--paper);border-top:1px solid var(--sand)}
+.qg{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:clamp(24px,4vw,56px);align-items:start}
+.q{border:1px solid var(--sand);background:var(--cream);border-radius:28px;padding:clamp(22px,3vw,44px)}
+.qstep{border:0;margin-bottom:30px}
+.qstep legend,.qlab{font:400 clamp(22px,2vw,28px)/1.2 var(--serif);color:var(--ink);margin-bottom:14px;display:flex;gap:12px;align-items:baseline}
+.qstep legend span,.qlab span{font:700 13px/1 var(--sans);color:var(--pom);letter-spacing:.1em}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid rgba(28,53,120,.25);background:var(--paper);font-weight:600;font-size:15px;cursor:pointer;transition:all .2s;user-select:none}
+.chip span:hover{border-color:var(--cobalt)}
+.chip input:checked+span{background:var(--cobalt);border-color:var(--cobalt);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--turq);outline-offset:2px}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.field label{display:block;font-weight:600;font-size:14px;margin-bottom:6px;color:var(--mut)}
+.field input{width:100%;min-height:52px;border-radius:14px;border:1.5px solid rgba(28,53,120,.25);background:var(--paper);padding:0 16px;font:500 16px var(--sans);color:var(--ink)}
+.field input:focus{border-color:var(--cobalt);outline:none;box-shadow:0 0 0 4px rgba(31,138,131,.2)}
+.guests{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.step{display:flex;align-items:center;border:1.5px solid rgba(28,53,120,.25);border-radius:999px;background:var(--paper)}
+.step button{width:52px;height:52px;border:0;background:none;font:600 24px/1 var(--sans);color:var(--cobalt);cursor:pointer;border-radius:50%}
+.step button:hover{background:rgba(28,53,120,.08)}
+.step output{min-width:64px;text-align:center;font:400 30px/1 var(--serif);color:var(--ink)}
+input[type=range]{flex:1;min-width:180px;accent-color:var(--pom);height:44px}
+.hint{font-size:14px;color:var(--mut);margin-top:8px}
+.sum{position:sticky;top:96px;background:var(--cobalt);color:#e8e2d4;border-radius:28px;padding:clamp(24px,2.6vw,36px);overflow:hidden}
+.sum h3{font:400 30px/1.1 var(--serif);color:#fff;margin-bottom:18px}
+.sum dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 16px;font-size:15px;margin-bottom:24px}
+.sum dt{color:#9fb0d8}
+.sum dd{color:#fff;font-weight:600;overflow-wrap:anywhere}
+.sum .btn{width:100%}
+.sum small{display:block;margin-top:14px;font-size:13px;color:#aab6d6}
+.sum svg.orn{position:absolute;right:-70px;bottom:-70px;width:220px;opacity:.35;pointer-events:none}
+/* steps */
+.how{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:h;border-top:2px solid var(--ink)}
+.how li{list-style:none;counter-increment:h;padding:26px 24px 0 0;position:relative}
+.how li::before{content:counter(h);font:400 64px/1 var(--serif);color:var(--turq);display:block;margin-bottom:12px}
+.how h3{font:400 24px/1.2 var(--serif);color:var(--ink);margin-bottom:6px}
+.how p{color:var(--mut);font-size:16px}
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px}
+.info{background:var(--paper);border:1px solid var(--sand);border-radius:28px;padding:clamp(24px,3vw,44px)}
+.info h3{font:400 clamp(28px,3vw,42px)/1.1 var(--serif);color:var(--ink)}
+.info .addr{margin-top:8px;color:var(--mut)}
+.hours{margin:24px 0;padding:20px 0;border-block:1px solid var(--sand);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.hours b{font:400 30px/1 var(--serif);color:var(--cobalt)}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.facts span{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:#dcefea;color:#155f5a}
+.info .cta{margin-top:0}
+.map{border-radius:28px;overflow:hidden;min-height:440px;background:var(--sand);border:1px solid var(--sand)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+/* final */
+.final{background:var(--pom);color:#fff;text-align:center;position:relative;overflow:hidden}
+.final h2{color:#fff;margin-inline:auto;max-width:14em}
+.final p{max-width:32em;margin:16px auto 0;color:#f6d9d6}
+.final .cta{justify-content:center}
+.final .b-wa{background:#fff;color:var(--pom)}
+.final .b-wa:hover{background:var(--cream)}
+.final .b-line{border-color:#fff;color:#fff}
+.final .b-line:hover{background:#fff;color:var(--pom)}
+.final svg.orn{position:absolute;width:420px;left:-140px;top:-140px;opacity:.18}
+footer{background:var(--ink);color:#9fa8c4;font-size:14px;padding:30px 0 100px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fab{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+/* responsive */
+@media (max-width:1100px){
+  .nav ul{display:none}
+  .c-ban{grid-column:span 6;min-height:360px}.c-bre,.c-kit{grid-column:span 3}
+  .how{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:32px}
+  .band{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  .hero .wrap,.pg,.qg,.ct{grid-template-columns:minmax(0,1fr)}
+  .medal{width:min(74vw,320px);margin-top:8px}
+  .medal .rate{right:-4%;bottom:2%;padding:10px 14px}
+  .rate strong{font-size:26px}
+  .score{position:static}.sum{position:relative;top:0}
+  .bento{grid-template-columns:minmax(0,1fr)}
+  .c-ban,.c-bre,.c-kit,.c-go,.c-kid{grid-column:auto}
+  .c-ban{min-height:0}
+  .c-ban svg.orn{width:240px;right:-80px;top:-80px;opacity:.6}
+  .map,.map iframe{min-height:340px}
+  .fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;gap:10px}
+  .fab .btn{flex:1;min-height:54px;box-shadow:0 12px 30px -10px rgba(20,32,74,.55)}
+  .nav .tel{display:none}
+}
+@media (max-width:520px){
+  .cta .btn{flex:1 1 100%}
+  .row2{grid-template-columns:minmax(0,1fr)}
+  .how{grid-template-columns:minmax(0,1fr)}
+  .plist li{grid-template-columns:minmax(0,1fr);gap:6px}
+  .sum dl{grid-template-columns:minmax(0,1fr);gap:2px}
+  .sum dd{margin-bottom:8px}
+  .chip span{padding:0 14px}
+  .band{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .occ{min-height:170px}
+  .occ small{font-size:13px}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="star"><path d="M50 4 L61 30 L88 22 L74 47 L96 64 L68 67 L66 95 L50 74 L34 95 L32 67 L4 64 L26 47 L12 22 L39 30Z"/></g>
+    <symbol id="ic-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+    <symbol id="ic-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 16.5v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.5 5.2 2 2 0 0 1 4.5 3h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.5 10.7a16 16 0 0 0 4.8 4.8l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="ic-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Zm0-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></symbol>
+    <symbol id="rosette" viewBox="0 0 200 200">
+      <g fill="none" stroke="currentColor" stroke-width="1.4">
+        <circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/>
+        <path d="M100 8 L118 64 L176 46 L136 92 L188 124 L128 124 L120 184 L100 136 L80 184 L72 124 L12 124 L64 92 L24 46 L82 64Z"/>
+        <rect x="45" y="45" width="110" height="110" transform="rotate(45 100 100)"/><rect x="45" y="45" width="110" height="110"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Эврен — наверх">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#star" fill="#1c3578"/><circle cx="50" cy="50" r="12" fill="#a8303a"/></svg>Эврен
+    </a>
+    <ul>
+      <li><a href="#menu">Кухня и залы</a></li>
+      <li><a href="#praise">Отзывы</a></li>
+      <li><a href="#quiz">Банкет</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+    <a class="tel" href="tel:+79613680267">+7 961 368-02-67</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Уфа · Менделеева, 130</span>
+      <h1>Эврен</h1>
+      <p class="h1-sub">Банкеты, турецкая и&nbsp;восточная кухня — <em>щедро, по-домашнему, без суеты</em></p>
+      <p class="lead">Свадьба, никах, юбилей или день рождения — накроем стол турецкой кухней в&nbsp;зале с&nbsp;панорамным видом. Утром — турецкий завтрак, днём — обед, навынос и&nbsp;доставка.</p>
+      <div class="cta">
+        <a class="btn b-main" href="#quiz">Рассчитать банкет</a>
+        <a class="btn b-wa" href="https://wa.me/79613680267?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%20%D0%B2%20%D0%AD%D0%B2%D1%80%D0%B5%D0%BD%D0%B5." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>Написать в WhatsApp</a>
+      </div>
+      <div class="meta">
+        <span data-status></span>
+        <a href="tel:+79613680267">Позвонить</a>
+        <a href="https://yandex.ru/maps/?rtext=~54.714667,56.001415" target="_blank" rel="noopener">Маршрут</a>
+        <span>Ежедневно 9:00–01:00</span>
+      </div>
+    </div>
+    <div class="medal" aria-hidden="true">
+      <svg class="spin" viewBox="0 0 400 400">
+        <defs>
+          <pattern id="pt" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M20 3 L24 16 L37 20 L24 24 L20 37 L16 24 L3 20 L16 16Z" fill="#1f8a83" opacity=".55"/></pattern>
+        </defs>
+        <circle cx="200" cy="200" r="196" fill="#fbf7ef" stroke="#b98a3e" stroke-width="1.5"/>
+        <circle cx="200" cy="200" r="182" fill="url(#pt)"/>
+        <g fill="#1c3578">
+          <g id="pet"><path d="M200 22 C222 60 222 92 200 120 C178 92 178 60 200 22Z"/></g>
+          <use href="#pet" transform="rotate(30 200 200)"/><use href="#pet" transform="rotate(60 200 200)"/><use href="#pet" transform="rotate(90 200 200)"/>
+          <use href="#pet" transform="rotate(120 200 200)"/><use href="#pet" transform="rotate(150 200 200)"/><use href="#pet" transform="rotate(180 200 200)"/>
+          <use href="#pet" transform="rotate(210 200 200)"/><use href="#pet" transform="rotate(240 200 200)"/><use href="#pet" transform="rotate(270 200 200)"/>
+          <use href="#pet" transform="rotate(300 200 200)"/><use href="#pet" transform="rotate(330 200 200)"/>
+        </g>
+        <g fill="#a8303a">
+          <g id="dot"><circle cx="200" cy="44" r="6"/></g>
+          <use href="#dot" transform="rotate(15 200 200)"/><use href="#dot" transform="rotate(45 200 200)"/><use href="#dot" transform="rotate(75 200 200)"/>
+          <use href="#dot" transform="rotate(105 200 200)"/><use href="#dot" transform="rotate(135 200 200)"/><use href="#dot" transform="rotate(165 200 200)"/>
+          <use href="#dot" transform="rotate(195 200 200)"/><use href="#dot" transform="rotate(225 200 200)"/><use href="#dot" transform="rotate(255 200 200)"/>
+          <use href="#dot" transform="rotate(285 200 200)"/><use href="#dot" transform="rotate(315 200 200)"/><use href="#dot" transform="rotate(345 200 200)"/>
+        </g>
+      </svg>
+      <div class="core"><div><b>evren</b><span>по-турецки «вселенная»</span></div></div>
+      <div class="rate"><strong>4,4</strong><small>375 оценок в&nbsp;2ГИС</small></div>
+    </div>
+  </div>
+</section>
+<div class="tiles" role="presentation"></div>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="eyebrow">Кухня и залы</span><h2>Один дом — <i>от&nbsp;завтрака</i> до&nbsp;праздника на&nbsp;всю семью</h2></div>
+      <p>Работаем каждый день с&nbsp;девяти утра до&nbsp;часу ночи. Средний чек — около 500&nbsp;₽.</p>
+    </div>
+    <div class="bento">
+      <article class="card c-ban" data-r>
+        <svg class="orn" style="color:#6fc3b8" aria-hidden="true"><use href="#rosette"/></svg>
+        <div><span class="n">01 · БАНКЕТЫ</span><h3>Банкет в&nbsp;зале с&nbsp;панорамным видом</h3>
+        <p>Проводим банкеты — повод выбираете вы: свадьба, никах, юбилей, день рождения, встреча с&nbsp;коллегами. Стол — турецкая и&nbsp;восточная кухня, а&nbsp;порции, как пишут гости, большие и&nbsp;гостеприимные.</p>
+        <div class="tags"><span>Турецкая кухня</span><span>Восточная кухня</span><span>Панорамный вид</span><span>Детская комната</span></div></div>
+        <a class="btn b-main" href="#quiz">Собрать заявку на&nbsp;банкет</a>
+      </article>
+      <article class="card c-bre" data-r><span class="n">02 · УТРО</span><h3>Турецкий завтрак</h3><p>С&nbsp;9:00 каждый день. Неспешное утро за&nbsp;большим столом — с&nbsp;семьёй или с&nbsp;ноутбуком: Wi‑Fi есть.</p></article>
+      <article class="card c-kit" data-r><span class="n">03 · КУХНЯ</span><h3>Турецкая и&nbsp;восточная кухня</h3><p>То, за&nbsp;что сюда возвращаются: вкусно, сытно и&nbsp;большими порциями.</p></article>
+      <article class="card c-go" data-r><span class="n">04 · С СОБОЙ</span><h3>Навынос, доставка, кофе с&nbsp;собой</h3><p>Заберите заказ по&nbsp;дороге или закажите домой. Оплата картой или наличными.</p></article>
+      <article class="card c-kid" data-r><span class="n">05 · С ДЕТЬМИ</span><h3>Детская комната и&nbsp;вход без ступеней</h3><p>Пока взрослые за&nbsp;столом, дети в&nbsp;детском уголке. Пандус и&nbsp;вход без ступеней — удобно с&nbsp;коляской.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="praise" id="praise">
+  <div class="wrap pg">
+    <div class="score" data-r>
+      <span class="eyebrow">За что хвалят</span>
+      <div class="big">4,4</div>
+      <div class="stars" aria-label="Рейтинг 4,4 из 5">
+        <svg viewBox="0 0 24 24"><path fill="#f7d9a3" d="m12 2 3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7Z"/></svg><svg viewBox="0 0 24 24"><path fill="#f7d9a3" d="m12 2 3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7Z"/></svg><svg viewBox="0 0 24 24"><path fill="#f7d9a3" d="m12 2 3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7Z"/></svg><svg viewBox="0 0 24 24"><path fill="#f7d9a3" d="m12 2 3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7Z"/></svg><svg viewBox="0 0 24 24"><path fill="#f7d9a3" opacity=".35" d="m12 2 3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.3 5.5 22l1.7-7.4-5.7-5 7.5-.7Z"/></svg>
+      </div>
+      <p>375 оценок гостей в&nbsp;2ГИС. <a href="https://2gis.ru/ufa/firm/70000001054971442" target="_blank" rel="noopener">Читать отзывы</a></p>
+    </div>
+    <div>
+      <h2 data-r>Гости пишут <i>о&nbsp;трёх вещах</i></h2>
+      <ol class="plist">
+        <li data-r><div><h3>Вкусная восточная еда</h3><p>Возвращаются именно за&nbsp;кухней — восточной и&nbsp;турецкой.</p></div></li>
+        <li data-r><div><h3>Большие порции</h3><p>Щедро, по-гостеприимному: из-за стола никто не&nbsp;встаёт голодным — для банкета это главное.</p></div></li>
+        <li data-r><div><h3>Спокойная атмосфера</h3><p>Гости отмечают спокойную обстановку — то, что нужно для семейного застолья и&nbsp;долгого разговора.</p></div></li>
+      </ol>
+      <p class="note">Пересказ отзывов гостей из&nbsp;2ГИС.</p>
+    </div>
+  </div>
+</section>
+
+<section id="occ">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="eyebrow">Поводы</span><h2>Какой праздник <i>соберём</i>?</h2></div>
+      <p>Выберите повод — он сразу подставится в&nbsp;заявку ниже. Остальное уточним в&nbsp;разговоре.</p>
+    </div>
+    <div class="band" data-r>
+      <button class="occ" type="button" data-occ="Свадьба"><svg viewBox="0 0 64 64" fill="none" stroke="#1c3578" stroke-width="2"><circle cx="24" cy="38" r="14"/><circle cx="40" cy="38" r="14"/><path d="M28 10h8l4 8H24z" fill="#a8303a" stroke="none"/></svg><span><b>Свадьба</b><small>Большой стол на&nbsp;две семьи</small></span></button>
+      <button class="occ" type="button" data-occ="Никах"><svg viewBox="0 0 64 64" fill="none" stroke="#1c3578" stroke-width="2"><path d="M40 10a20 20 0 1 0 14 34A16 16 0 1 1 40 10Z"/><path d="m46 22 2 5 5 .5-4 3.5 1.3 5L46 33l-4.3 3 1.3-5-4-3.5 5-.5Z" fill="#a8303a" stroke="none"/></svg><span><b>Никах</b><small>Восточный стол для родных</small></span></button>
+      <button class="occ" type="button" data-occ="Юбилей"><svg viewBox="0 0 64 64" fill="none" stroke="#1c3578" stroke-width="2"><path d="M14 54h36V30H14z"/><path d="M14 40c6 4 12-4 18 0s12-4 18 0"/><path d="M24 30v-8M32 30v-8M40 30v-8"/><circle cx="24" cy="16" r="3" fill="#a8303a" stroke="none"/><circle cx="32" cy="16" r="3" fill="#a8303a" stroke="none"/><circle cx="40" cy="16" r="3" fill="#a8303a" stroke="none"/></svg><span><b>Юбилей</b><small>Для родителей, бабушек, дедушек</small></span></button>
+      <button class="occ" type="button" data-occ="День рождения"><svg viewBox="0 0 64 64" fill="none" stroke="#1c3578" stroke-width="2"><path d="M32 8v8"/><path d="M20 24h24l-4 30H24z"/><path d="m32 8 4 4-4 4-4-4z" fill="#a8303a" stroke="none"/></svg><span><b>День рождения</b><small>Есть детская комната</small></span></button>
+      <button class="occ" type="button" data-occ="Корпоратив"><svg viewBox="0 0 64 64" fill="none" stroke="#1c3578" stroke-width="2"><rect x="10" y="22" width="44" height="30" rx="4"/><path d="M24 22v-6h16v6M10 34h44"/><circle cx="32" cy="34" r="3" fill="#a8303a" stroke="none"/></svg><span><b>Корпоратив</b><small>Коллегам — спокойный зал</small></span></button>
+      <button class="occ" type="button" data-occ="Выпускной"><svg viewBox="0 0 64 64" fill="none" stroke="#1c3578" stroke-width="2"><path d="m4 26 28-12 28 12-28 12z"/><path d="M16 32v12c8 6 24 6 32 0V32"/><path d="M56 28v14" stroke="#a8303a"/></svg><span><b>Выпускной</b><small>Праздник для класса и&nbsp;родителей</small></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="quiz-s" id="quiz">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="eyebrow">Заявка на банкет</span><h2>Соберите праздник <i>за&nbsp;минуту</i></h2></div>
+      <p>Пять коротких вопросов. Ответы сложатся в&nbsp;готовое сообщение — администратор ответит в&nbsp;WhatsApp и&nbsp;подскажет по&nbsp;меню и&nbsp;стоимости.</p>
+    </div>
+    <div class="qg">
+      <form class="q" id="qf" data-r onsubmit="return false">
+        <fieldset class="qstep"><legend><span>01</span>Повод</legend>
+          <div class="chips" data-name="occ">
+            <label class="chip"><input type="radio" name="occ" value="Свадьба"><span>Свадьба</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Никах"><span>Никах</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Юбилей"><span>Юбилей</span></label>
+            <label class="chip"><input type="radio" name="occ" value="День рождения" checked><span>День рождения</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Корпоратив"><span>Корпоратив</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Выпускной"><span>Выпускной</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Поминальный обед"><span>Поминальный обед</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Другое"><span>Другое</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qstep"><legend><span>02</span>Когда</legend>
+          <div class="row2">
+            <div class="field"><label for="qd">Дата</label><input id="qd" type="date"></div>
+            <div class="chips" style="align-self:end">
+              <label class="chip"><input type="radio" name="tm" value="днём"><span>Днём</span></label>
+              <label class="chip"><input type="radio" name="tm" value="вечером" checked><span>Вечером</span></label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="qstep"><legend><span>03</span>Сколько гостей</legend>
+          <div class="guests">
+            <div class="step"><button type="button" id="gm" aria-label="Меньше гостей">−</button><output id="go" aria-live="polite">30</output><button type="button" id="gp" aria-label="Больше гостей">+</button></div>
+            <input type="range" id="gr" min="5" max="150" step="5" value="30" aria-label="Количество гостей">
+          </div>
+          <p class="hint">Примерно — точное число и&nbsp;рассадку уточним с&nbsp;администратором.</p>
+        </fieldset>
+        <fieldset class="qstep"><legend><span>04</span>Какой стол</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="menu" value="турецкая кухня" checked><span>Турецкая кухня</span></label>
+            <label class="chip"><input type="radio" name="menu" value="восточный стол"><span>Восточный стол</span></label>
+            <label class="chip"><input type="radio" name="menu" value="смешанное меню"><span>Смешанное</span></label>
+            <label class="chip"><input type="radio" name="menu" value="подскажите по меню"><span>Подскажите</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qstep" style="margin-bottom:0"><legend><span>05</span>Важно учесть</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="ex" value="будут дети, нужна детская комната"><span>Будут дети</span></label>
+            <label class="chip"><input type="checkbox" name="ex" value="нужен вход без ступеней"><span>Гости с&nbsp;коляской или пожилые</span></label>
+            <label class="chip"><input type="checkbox" name="ex" value="хочу посмотреть зал заранее"><span>Посмотреть зал заранее</span></label>
+          </div>
+          <div class="field" style="margin-top:18px"><label for="qn">Как к&nbsp;вам обращаться (необязательно)</label><input id="qn" type="text" autocomplete="given-name" placeholder="Например, Айгуль"></div>
+        </fieldset>
+      </form>
+      <aside class="sum" data-r aria-live="polite">
+        <svg class="orn" style="color:#6fc3b8" aria-hidden="true"><use href="#rosette"/></svg>
+        <h3>Ваша заявка</h3>
+        <dl>
+          <dt>Повод</dt><dd id="s-occ">День рождения</dd>
+          <dt>Когда</dt><dd id="s-dt">дата не выбрана, вечером</dd>
+          <dt>Гостей</dt><dd id="s-g">около 30</dd>
+          <dt>Стол</dt><dd id="s-m">турецкая кухня</dd>
+          <dt>Учесть</dt><dd id="s-ex">—</dd>
+        </dl>
+        <a class="btn b-wa" id="qwa" href="https://wa.me/79613680267" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>Отправить в WhatsApp</a>
+        <small>Откроется WhatsApp с&nbsp;готовым текстом. Ничего не&nbsp;отправится без вашего нажатия.</small>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sh" data-r><div><span class="eyebrow">Как это устроено</span><h2>От заявки <i>до&nbsp;праздника</i></h2></div></div>
+    <ol class="how" data-r>
+      <li><h3>Заявка</h3><p>Собираете её выше или звоните — повод, дата, число гостей.</p></li>
+      <li><h3>Разговор с&nbsp;администратором</h3><p>Свободна ли дата, какой стол, сколько это будет стоить.</p></li>
+      <li><h3>Меню и&nbsp;бронь</h3><p>Согласуем блюда и&nbsp;рассадку, фиксируем дату за&nbsp;вами.</p></li>
+      <li><h3>Ваш праздник</h3><p>Вы встречаете гостей — кухня и&nbsp;зал на&nbsp;нас.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh" data-r><div><span class="eyebrow">Контакты</span><h2>Как <i>нас найти</i></h2></div></div>
+    <div class="ct">
+      <div class="info" data-r>
+        <h3>Уфа, улица Менделеева, 130</h3>
+        <p class="addr">1 этаж · Республика Башкортостан</p>
+        <div class="hours"><div><small style="color:var(--mut)">Ежедневно</small><br><b>9:00 — 01:00</b></div><span data-status></span></div>
+        <div class="facts"><span>Пандус</span><span>Вход без ступеней</span><span>Детская комната</span><span>Wi‑Fi</span><span>Карта и наличные</span><span>Доставка</span></div>
+        <div class="cta">
+          <a class="btn b-main" href="tel:+79613680267"><svg aria-hidden="true"><use href="#ic-tel"/></svg>+7 961 368-02-67</a>
+          <a class="btn b-wa" href="https://wa.me/79613680267?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%20%D0%B2%20%D0%AD%D0%B2%D1%80%D0%B5%D0%BD%D0%B5." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a>
+          <a class="btn b-line" href="https://yandex.ru/maps/?rtext=~54.714667,56.001415" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ic-pin"/></svg>Маршрут</a>
+        </div>
+      </div>
+      <div class="map" data-r><iframe loading="lazy" title="Эврен на карте Уфы" src="https://yandex.ru/map-widget/v1/?ll=56.001415,54.714667&z=16&pt=56.001415,54.714667,pm2rdm"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <svg class="orn" style="color:#fff" aria-hidden="true"><use href="#rosette"/></svg>
+  <div class="wrap" data-r>
+    <span class="eyebrow" style="color:#f7d9a3">Дата ещё свободна?</span>
+    <h2>Спросите сегодня — праздник ждать не&nbsp;будет</h2>
+    <p>Напишите повод, дату и&nbsp;число гостей — ответим, свободен ли зал, и&nbsp;предложим стол.</p>
+    <div class="cta">
+      <a class="btn b-wa" href="#quiz">Собрать заявку</a>
+      <a class="btn b-line" href="tel:+79613680267">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Эврен · Уфа, Менделеева, 130</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+
+<div class="fab">
+  <a class="btn b-main" href="tel:+79613680267"><svg aria-hidden="true"><use href="#ic-tel"/></svg>Позвонить</a>
+  <a class="btn b-wa" href="#quiz"><svg aria-hidden="true"><use href="#ic-wa"/></svg>Банкет</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('qf');if(!f)return;
+  var gr=document.getElementById('gr'),go=document.getElementById('go'),wa=document.getElementById('qwa');
+  function v(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:'';}
+  function setG(n){n=Math.max(5,Math.min(300,n));gr.value=Math.min(150,n);go.textContent=n;upd();}
+  document.getElementById('gm').onclick=function(){setG(+go.textContent-5)};
+  document.getElementById('gp').onclick=function(){setG(+go.textContent+5)};
+  gr.oninput=function(){go.textContent=gr.value;upd()};
+  function fmt(d){if(!d)return'';var p=d.split('-');return p[2]+'.'+p[1]+'.'+p[0];}
+  function upd(){
+    var occ=v('occ'),tm=v('tm'),d=fmt(document.getElementById('qd').value),m=v('menu'),g=go.textContent;
+    var ex=[].map.call(f.querySelectorAll('input[name="ex"]:checked'),function(e){return e.value});
+    var nm=document.getElementById('qn').value.trim();
+    document.getElementById('s-occ').textContent=occ;
+    document.getElementById('s-dt').textContent=(d||'дата не выбрана')+', '+tm;
+    document.getElementById('s-g').textContent='около '+g;
+    document.getElementById('s-m').textContent=m;
+    document.getElementById('s-ex').textContent=ex.length?ex.join('; '):'—';
+    var t='Здравствуйте! Хочу банкет в «Эврен».\nПовод: '+occ+'\nКогда: '+(d||'дату уточню')+', '+tm+'\nГостей: около '+g+'\nСтол: '+m+(ex.length?'\nВажно: '+ex.join('; '):'')+(nm?'\nМеня зовут '+nm:'')+'\nПодскажите, свободна ли дата и сколько это будет стоить?';
+    wa.href='https://wa.me/79613680267?text='+encodeURIComponent(t);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);
+  [].forEach.call(document.querySelectorAll('[data-occ]'),function(b){b.addEventListener('click',function(){
+    var r=f.querySelector('input[name="occ"][value="'+b.dataset.occ+'"]');if(r){r.checked=true;upd();}[].forEach.call(document.querySelectorAll("[data-occ]"),function(x){x.classList.toggle("on",x===b)});
+    document.getElementById('quiz').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+  })});
+  upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["09:00","01:00"]],"tue":[["09:00","01:00"]],"wed":[["09:00","01:00"]],"thu":[["09:00","01:00"]],"fri":[["09:00","01:00"]],"sat":[["09:00","01:00"]],"sun":[["09:00","01:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

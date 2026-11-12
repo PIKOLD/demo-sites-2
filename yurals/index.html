@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Юралс — ресторан и банкетные залы в Перми, ул. Попова, 9</title><meta property="og:type" content="website"><meta property="og:title" content="Юралс — ресторан и банкетные залы в Перми, ул. Попова, 9"><meta property="og:description" content="Юралс — ресторан и банкетные залы в центре Перми: авторская кухня, винная карта, джазовые вечера и танцпол. Соберите заявку на банкет и отправьте в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/yurals/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Юралс — ресторан и банкетные залы в центре Перми: авторская кухня, винная карта, джазовые вечера и танцпол. Соберите заявку на банкет и отправьте в WhatsApp.">
+<meta name="theme-color" content="#15131f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Forum&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
+<link rel="preload" as="image" href="img/p1-m.jpg" imagesrcset="img/p1-m.jpg 900w, img/p1.jpg 1440w" imagesizes="(max-width: 900px) 150vw, 1440px">
+<style>
+:root{
+  --ink:#15131f;--ink2:#1f1c2e;--ink3:#2a2640;
+  --velvet:#9d97b8;--lilac:#c9c4de;--muted:#bab5d0;
+  --led:#9a97ff;--silver:#ecebf3;--paper:#efedf5;--paper2:#e4e1ee;
+  --wine:#a3223a;--wine2:#c02c47;--brass:#c9a65d;
+  --text:#1d1a2b;--text2:#4c4763;
+  --r:18px;--wrap:1320px;
+  --disp:'Forum',Georgia,serif;--it:'Cormorant Garamond',Georgia,serif;--sans:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--silver);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--led);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 clamp(18px,4vw,48px)}
+.demo{background:#0c0b13;color:#a9a4c2;font-size:12.5px;letter-spacing:.02em;text-align:center;padding:7px 14px}
+.it{font-family:var(--it);font-style:italic;font-weight:500}
+.eyebrow{font:600 12px/1.2 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--velvet)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 15.5px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s,border-color .25s,color .25s}
+.btn:active{transform:scale(.97)}
+.btn-wine{background:var(--wine);color:#fff;box-shadow:0 10px 30px -12px rgba(192,44,71,.8)}
+.btn-wine:hover{background:var(--wine2);transform:translateY(-2px)}
+.btn-line{border-color:rgba(236,235,243,.35);color:var(--silver)}
+.btn-line:hover{border-color:var(--silver);background:rgba(236,235,243,.07)}
+.btn svg{width:18px;height:18px;flex:none}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+
+/* top bar */
+.top{position:absolute;left:0;right:0;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font:400 26px/1 var(--disp);letter-spacing:.14em;text-decoration:none;text-transform:uppercase}
+.logo small{display:block;font:600 9.5px/1 var(--sans);letter-spacing:.32em;color:var(--velvet);margin-top:6px}
+.nav{display:flex;gap:28px;font-size:14.5px}
+.nav a{text-decoration:none;color:var(--lilac);transition:color .2s}
+.nav a:hover{color:#fff}
+.top-tel{font-weight:600;text-decoration:none;font-size:15px}
+
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);min-height:min(100vh,860px);background:var(--ink)}
+.hero-text{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:110px clamp(18px,4vw,64px) 48px max(clamp(18px,4vw,48px),calc((100vw - var(--wrap))/2 + 48px))}
+.hero h1{margin:14px 0 0;font:400 clamp(76px,10.5vw,168px)/.86 var(--disp);letter-spacing:.02em;color:#fff}
+.hero .sub{display:block;font-size:clamp(28px,3vw,44px);line-height:1.05;color:var(--lilac);margin-top:12px}
+.lede{max-width:34ch;margin:22px 0 0;color:var(--muted);font-size:clamp(16px,1.25vw,18.5px)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:14.5px;color:var(--muted)}
+.meta a{text-decoration:none;border-bottom:1px solid rgba(201,196,222,.35);padding:6px 0}
+.meta a:hover{color:#fff;border-color:#fff}
+[data-status]{display:inline-flex;align-items:center;gap:8px;padding:6px 0}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--velvet)}
+[data-status].is-open::before{background:#7ee0a8;box-shadow:0 0 0 4px rgba(126,224,168,.16)}
+.hero-photo{position:relative;overflow:hidden;min-height:420px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 40%}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,rgba(21,19,31,.35) 22%,rgba(21,19,31,0) 45%),linear-gradient(0deg,rgba(21,19,31,.85),rgba(21,19,31,0) 30%)}
+.score{position:absolute;z-index:2;right:clamp(18px,3vw,44px);bottom:clamp(18px,3vw,40px);display:flex;align-items:center;gap:14px;padding:14px 20px 14px 16px;border-radius:16px;background:rgba(21,19,31,.72);backdrop-filter:blur(8px);border:1px solid rgba(236,235,243,.14)}
+.score b{font:400 44px/1 var(--disp);color:#fff}
+.score span{font-size:13px;line-height:1.35;color:var(--lilac)}
+/* fringe: hanging light rods like their chandelier */
+.fringe{position:absolute;top:0;left:0;right:0;height:62%;display:flex;justify-content:space-around;pointer-events:none;z-index:1}
+.fringe i{position:relative;width:1px;background:linear-gradient(rgba(236,235,243,0),rgba(236,235,243,.55));transform-origin:top;animation:sway 7s ease-in-out infinite alternate}
+.fringe i::after{content:"";position:absolute;left:-2px;bottom:-1px;width:5px;height:5px;border-radius:50%;background:#fff;box-shadow:0 0 12px 3px rgba(154,151,255,.85)}
+@keyframes sway{from{transform:rotate(-.7deg)}to{transform:rotate(.7deg)}}
+
+/* ribbon of evening */
+.day{background:var(--ink2);padding:clamp(56px,7vw,96px) 0;overflow:hidden}
+.day-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.h2{font:400 clamp(38px,5vw,72px)/1 var(--disp);margin:12px 0 0;letter-spacing:.01em}
+.h2 .it{color:var(--lilac)}
+.swipe-hint{color:var(--velvet);font-size:14px}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:36px max(clamp(18px,4vw,48px),calc((100vw - var(--wrap))/2 + 48px)) 8px;scrollbar-width:thin;scrollbar-color:var(--ink3) transparent;-webkit-overflow-scrolling:touch}
+.slot{flex:0 0 clamp(250px,24vw,330px);scroll-snap-align:start;border-radius:var(--r);padding:26px 24px 24px;background:var(--ink3);border:1px solid rgba(236,235,243,.08);display:flex;flex-direction:column;min-height:300px;transition:transform .35s,border-color .35s}
+.slot:hover{transform:translateY(-6px);border-color:rgba(154,151,255,.5)}
+.slot .t{font:600 12px/1 var(--sans);letter-spacing:.2em;color:var(--velvet);text-transform:uppercase}
+.slot h3{font:400 34px/1.05 var(--disp);margin:auto 0 10px;color:#fff}
+.slot p{margin:0;color:var(--muted);font-size:15px}
+.slot.big{flex-basis:clamp(290px,34vw,460px);background:linear-gradient(160deg,#3a1520,var(--wine) 120%);border-color:rgba(255,255,255,.12)}
+.slot.big .t{color:#f1c9d1}
+.slot.big p{color:#f3dde2}
+.slot svg{width:52px;height:52px;color:var(--lilac)}
+
+/* services */
+.svc{background:var(--paper);color:var(--text);padding:clamp(64px,8vw,120px) 0}
+.svc .eyebrow{color:#6d6788}
+.svc .h2 .it,.praise .h2 .it,.contact .h2 .it{color:#6a5f97}
+.svc-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);margin-top:44px;align-items:start}
+.feat{position:sticky;top:24px;border-radius:24px;padding:clamp(28px,3.5vw,48px);background:var(--ink);color:var(--silver);overflow:hidden;min-height:440px;display:flex;flex-direction:column}
+.feat .fringe{height:46%;opacity:.8}
+.feat h3{position:relative;z-index:2;font:400 clamp(40px,4.4vw,64px)/1 var(--disp);margin:auto 0 16px;color:#fff}
+.feat p{position:relative;z-index:2;margin:0 0 24px;color:var(--muted);max-width:40ch}
+.feat .tags{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.tag{font-size:13px;padding:7px 13px;border-radius:999px;border:1px solid rgba(236,235,243,.22);color:var(--lilac)}
+.feat .btn{position:relative;z-index:2;align-self:flex-start}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding:22px 0;border-top:1px solid #cfcadd}
+.list li:last-child{border-bottom:1px solid #cfcadd}
+.list .n{font:400 22px/1.3 var(--disp);color:var(--wine)}
+.list h3{margin:0;font:400 27px/1.15 var(--disp)}
+.list p{margin:6px 0 0;color:var(--text2);font-size:15.5px}
+.pay{margin-top:26px;font-size:14.5px;color:var(--text2)}
+.pay b{color:var(--text)}
+
+/* praise */
+.praise{background:var(--paper2);color:var(--text);padding:clamp(64px,8vw,120px) 0}
+.praise-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px);align-items:start}
+.praise-side{position:sticky;top:28px}
+.big-score{display:flex;align-items:baseline;gap:14px;margin-top:28px}
+.big-score b{font:400 clamp(88px,10vw,150px)/.8 var(--disp);color:var(--wine)}
+.big-score span{color:var(--text2);font-size:15px;line-height:1.4}
+.quotes{display:grid;gap:18px}
+.q{background:#fff;border-radius:22px;padding:clamp(24px,3vw,38px);box-shadow:0 1px 0 #d9d5e6,0 20px 40px -30px rgba(29,26,43,.35);transition:transform .35s}
+.q:hover{transform:translateX(6px)}
+.q:nth-child(2){margin-left:clamp(0px,5vw,64px)}
+.q:nth-child(3){margin-left:clamp(0px,2.5vw,32px)}
+.q .eyebrow{color:var(--wine)}
+.q h3{font:400 clamp(28px,2.6vw,36px)/1.1 var(--disp);margin:12px 0 10px}
+.q p{margin:0;color:var(--text2)}
+
+/* planner */
+.plan{background:var(--ink);padding:clamp(64px,8vw,120px) 0;position:relative;overflow:hidden}
+.plan::before{content:"";position:absolute;width:900px;height:900px;right:-300px;top:-380px;background:radial-gradient(closest-side,rgba(154,151,255,.18),transparent);pointer-events:none}
+.plan-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(28px,4vw,64px);margin-top:40px;align-items:start}
+.q-step{border-top:1px solid rgba(236,235,243,.14);padding:22px 0 24px}
+.q-step legend{float:left;width:100%;padding:0;margin-bottom:14px;font:400 25px/1.2 var(--disp);color:#fff}
+.q-step legend small{font:600 12px/1 var(--sans);letter-spacing:.18em;color:var(--velvet);margin-right:12px;vertical-align:3px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.chips{clear:both;display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:1px solid rgba(236,235,243,.22);color:var(--lilac);font-size:15px;transition:all .22s;cursor:pointer;user-select:none}
+.chip:hover span{border-color:var(--lilac);color:#fff}
+.chip input:checked+span{background:var(--silver);color:var(--ink);border-color:var(--silver);font-weight:600}
+.chip input:focus-visible+span{outline:2px solid var(--led);outline-offset:3px}
+.row2{clear:both;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.field label{display:block;font-size:13px;color:var(--velvet);margin-bottom:6px}
+.field input,.field select{width:100%;min-height:50px;border-radius:14px;border:1px solid rgba(236,235,243,.22);background:var(--ink2);color:#fff;font:500 16px var(--sans);padding:0 14px;color-scheme:dark}
+.field input:focus,.field select:focus{border-color:var(--led);outline:none}
+.card{position:sticky;top:24px;border-radius:24px;background:var(--silver);color:var(--text);padding:clamp(26px,3vw,38px);box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.card::before{content:"";position:absolute;inset:10px;border:1px solid #c9c4de;border-radius:16px;pointer-events:none}
+.card .eyebrow{color:#6d6788;position:relative}
+.card h3{font:400 34px/1.05 var(--disp);margin:10px 0 18px;position:relative}
+.card dl{margin:0 0 22px;position:relative}
+.card dl div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px dashed #c3bed6;font-size:15px}
+.card dt{color:#6d6788}
+.card dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.card dd.empty{font-weight:400;color:#8f89a8}
+.card .btn{width:100%;position:relative}
+.card .alt{display:block;text-align:center;margin-top:12px;font-size:14px;color:var(--text2);position:relative}
+.card .note{position:relative;margin:14px 0 0;font-size:12.5px;color:#6d6788;text-align:center}
+
+/* steps */
+.steps{background:var(--ink2);padding:clamp(56px,7vw,100px) 0}
+.steps ol{list-style:none;margin:44px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s}
+.steps li{position:relative;padding:28px 22px 0 0;border-top:1px solid rgba(236,235,243,.18);counter-increment:s}
+.steps li::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 14px 3px rgba(154,151,255,.8)}
+.steps li::after{content:"0" counter(s);position:absolute;top:22px;right:22px;font:400 15px var(--disp);color:var(--velvet)}
+.steps h3{font:400 25px/1.15 var(--disp);margin:0 0 8px;color:#fff;padding-right:28px}
+.steps p{margin:0;color:var(--muted);font-size:15px}
+
+/* contacts */
+.contact{background:var(--paper);color:var(--text);padding:clamp(64px,8vw,110px) 0}
+.c-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,4vw,60px);margin-top:40px}
+.c-info h3{font:400 30px/1.15 var(--disp);margin:0 0 4px}
+.c-info .addr{color:var(--text2);margin:0 0 24px}
+.c-block{padding:18px 0;border-top:1px solid #cfcadd}
+.c-block .eyebrow{color:#6d6788;display:block;margin-bottom:10px}
+.c-block a.tel{display:inline-block;font:400 30px/1.2 var(--disp);text-decoration:none;padding:4px 0}
+.c-block a.tel:hover{color:var(--wine)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 24px;font-size:15.5px}
+.hours span:nth-child(odd){color:var(--text2)}
+.c-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.contact .btn-line{color:var(--text);border-color:#b9b3cc}
+.contact .btn-line:hover{border-color:var(--text);background:#fff}
+.map{border-radius:24px;overflow:hidden;min-height:440px;background:var(--paper2);border:1px solid #d9d5e6}
+.map iframe{display:block;width:100%;height:100%;min-height:440px;border:0}
+
+/* final */
+.final{position:relative;padding:clamp(80px,10vw,150px) 0;overflow:hidden;text-align:center;background:var(--ink)}
+.final .fringe{height:55%;opacity:.7}
+.final h2{position:relative;z-index:2;font:400 clamp(44px,7vw,108px)/.95 var(--disp);margin:0 auto;max-width:14ch;color:#fff}
+.final p{position:relative;z-index:2;color:var(--muted);margin:22px auto 0;max-width:46ch}
+.final .cta{position:relative;z-index:2;justify-content:center}
+footer{background:#0c0b13;color:#8c87a5;font-size:13px;padding:26px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer a{color:#b4afcb}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;display:none;align-items:center;gap:8px;min-height:54px;padding:0 22px;border-radius:999px;background:var(--wine);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 12px 30px -8px rgba(0,0,0,.6)}
+.fab svg{width:18px;height:18px}
+
+@media (max-width:1100px){
+  .nav{display:none}
+  .steps ol{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:34px}
+}
+@media (max-width:900px){
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0}
+  .hero-photo{order:-1;height:clamp(300px,96vw,460px);min-height:0}
+  .hero-photo img{inset:0;height:100%;transform:none!important}
+  .hero-photo::after{background:linear-gradient(0deg,var(--ink) 2%,rgba(21,19,31,0) 55%),linear-gradient(180deg,rgba(21,19,31,.7),rgba(21,19,31,0) 30%)}
+  .hero-text{padding:0 18px 44px;margin-top:-70px}
+  .score{top:86px;bottom:auto;right:16px;padding:10px 14px}
+  .score b{font-size:34px}
+  .top-tel{display:none}
+  .svc-grid,.praise-grid,.plan-grid,.c-grid{grid-template-columns:minmax(0,1fr)}
+  .feat,.praise-side,.card{position:relative;top:0}
+  .feat{min-height:380px}
+  .q:nth-child(n){margin-left:0}
+  .map,.map iframe{min-height:340px}
+  .fab{display:inline-flex}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .steps ol{grid-template-columns:minmax(0,1fr);row-gap:26px}
+  .steps li{padding-top:22px}
+  .cta .btn{flex:1 1 100%}
+  .row2{grid-template-columns:minmax(0,1fr)}
+  .chip span{padding:0 15px;font-size:14.5px}
+  .card dl div{grid-template-columns:84px minmax(0,1fr)}
+  .c-block a.tel{font-size:26px}
+  .slot{min-height:260px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Юралс<small>Пермь · Попова, 9</small></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#formats">Форматы</a><a href="#praise">Отзывы</a><a href="#plan">Банкет</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+79922064047">+7 992 206-40-47</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <span class="eyebrow">Ресторан и банкетные залы · центр Перми</span>
+    <h1>Юралс<span class="sub it">праздник под хрустальным светом</span></h1>
+    <p class="lede">Авторская кухня, винная карта, джазовые вечера и танцпол. Здесь отмечают дни рождения и собирают гостей в красивых залах на улице Попова, 9.</p>
+    <div class="cta">
+      <a class="btn btn-wine" href="#plan">Собрать банкет</a>
+      <a class="btn btn-line" href="https://wa.me/79922064047?text=Здравствуйте!%20Хочу%20узнать%20про%20банкет%20в%20Юралс" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>Написать в WhatsApp</a>
+    </div>
+    <div class="meta">
+      <a href="tel:+79922064047">Позвонить: +7 992 206-40-47</a>
+      <a href="https://yandex.ru/maps/?rtext=~58.012804,56.223557" target="_blank" rel="noopener">Маршрут · ул. Попова, 9</a>
+      <span data-status></span>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img id="heroImg" src="img/p1-m.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1440w" sizes="(max-width: 900px) 150vw, 1440px" alt="Зал ресторана Юралс: серо-сиреневые бархатные кресла, люстры из светящихся подвесов и серебряной бахромы" width="1440" height="960">
+    <div class="fringe" data-fringe="18" aria-hidden="true"></div>
+    <div class="score"><b>4,9</b><span>рейтинг в 2ГИС<br>490 оценок</span></div>
+  </div>
+</section>
+
+<section class="day" aria-labelledby="day-h">
+  <div class="wrap day-head" data-r>
+    <div><span class="eyebrow">С 11:00 до полуночи</span><h2 class="h2" id="day-h">Один адрес — <span class="it">весь день</span></h2></div>
+    <span class="swipe-hint">листайте ленту →</span>
+  </div>
+  <div class="strip" data-qa-skip tabindex="0" aria-label="Форматы дня в ресторане">
+    <article class="slot"><span class="t">Утро</span><svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M10 22h26v10a12 12 0 0 1-12 12h-2a12 12 0 0 1-12-12z"/><path d="M36 25h3a5 5 0 0 1 0 10h-4"/><path d="M18 8c-2 3 2 5 0 9M25 6c-2 3 2 5 0 10"/></svg><h3>Завтрак и кофе</h3><p>Кофе и чай можно взять с собой. Wi-Fi для гостей.</p></article>
+    <article class="slot"><span class="t">День</span><svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="26" cy="27" r="15"/><circle cx="26" cy="27" r="9"/><path d="M6 8v14M4 8v6a2 2 0 0 0 4 0V8M46 8c-3 2-4 6-4 10h4v26"/></svg><h3>Ланч и бизнес-ланч</h3><p>Средний чек — около 1&nbsp;500&nbsp;₽. Есть заказ навынос.</p></article>
+    <article class="slot big"><span class="t">Вечер</span><svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M18 6h16l-2 14a6 6 0 0 1-12 0z"/><path d="M26 26v18M18 46h16"/><path d="M19 13h14"/></svg><h3>Винный ресторан и авторская кухня</h3><p>Гости вспоминают форель, палтус, посикунчики и оливье, который открывается по-новому.</p></article>
+    <article class="slot"><span class="t">Вечер</span><svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M20 38V12l22-5v26"/><circle cx="15" cy="38" r="5"/><circle cx="37" cy="33" r="5"/><path d="M20 19l22-5"/></svg><h3>Джазовые вечера</h3><p>Живая музыка и вечерние программы — по отзывам, ради них возвращаются.</p></article>
+    <article class="slot"><span class="t">Праздник</span><svg viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M26 4v8M26 12l-9 30h18z"/><path d="M14 46h24"/><circle cx="26" cy="12" r="2"/><path d="M8 16l4 3M44 16l-4 3M6 28h5M41 28h5"/></svg><h3>Банкет и танцпол</h3><p>Красивые залы для дней рождения и вечеров для своих.</p></article>
+  </div>
+</section>
+
+<section class="svc" id="formats" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div data-r><span class="eyebrow">Форматы</span><h2 class="h2" id="svc-h">Что можно <span class="it">отметить и заказать</span></h2></div>
+    <div class="svc-grid">
+      <div class="feat" data-r>
+        <div class="fringe" data-fringe="14" aria-hidden="true"></div>
+        <h3>Банкет в зале «Юралс»</h3>
+        <p>Серо-сиреневый бархат, светящиеся люстры с бахромой и танцпол. Меню собирается из авторской кухни и винной карты.</p>
+        <div class="tags"><span class="tag">танцпол</span><span class="tag">винная карта</span><span class="tag">детское меню</span><span class="tag">постное меню</span></div>
+        <a class="btn btn-wine" href="#plan">Собрать заявку</a>
+      </div>
+      <div data-r>
+        <ul class="list">
+          <li><span class="n">01</span><div><h3>Дни рождения и семейные праздники</h3><p>Гости отмечают здесь дни рождения и пишут про красивые залы и внимательных официантов.</p></div></li>
+          <li><span class="n">02</span><div><h3>Мероприятия и вечера</h3><p>В ресторане проходит много событий — от джазовых вечеров до фестиваля искусств медиков.</p></div></li>
+          <li><span class="n">03</span><div><h3>Ужин и заказ столиков</h3><p>Авторская кухня и винная карта, столик можно забронировать заранее.</p></div></li>
+          <li><span class="n">04</span><div><h3>Ланч, бизнес-ланч, завтрак</h3><p>Дневное меню для работы и встреч в центре города.</p></div></li>
+          <li><span class="n">05</span><div><h3>Навынос и кофе с собой</h3><p>Заказ навынос, кофе и чай с собой.</p></div></li>
+        </ul>
+        <p class="pay"><b>Оплата:</b> картой, наличными, по QR-коду, есть «Плати частями». Вход доступен с детской коляской.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="praise" id="praise" aria-labelledby="pr-h">
+  <div class="wrap praise-grid">
+    <div class="praise-side" data-r>
+      <span class="eyebrow" style="color:#6d6788">За что хвалят</span>
+      <h2 class="h2" id="pr-h">Гости пишут <span class="it">про атмосферу</span></h2>
+      <div class="big-score"><b>4,9</b><span>средняя оценка<br>в 2ГИС, 490 оценок</span></div>
+    </div>
+    <div class="quotes">
+      <article class="q" data-r><span class="eyebrow">Залы и интерьер</span><h3>Сказочная атмосфера и стильные залы</h3><p>Почти в каждом отзыве — про оформление: красивые залы, уют, атмосферу называют сказочной. Даже после первого визита гости пишут, что в восторге.</p></article>
+      <article class="q" data-r><span class="eyebrow">Кухня</span><h3>Блюда, которых нет в других местах</h3><p>Хвалят необычное меню: нежную форель, палтус, посикунчики и оливье в новом прочтении. Вкусно всё — от салата до десерта и коктейля.</p></article>
+      <article class="q" data-r><span class="eyebrow">Сервис и музыка</span><h3>Быстрая подача и живой джаз</h3><p>Обслуживание называют высоким уровнем, отдельно благодарят официанта Михаила. По вечерам — джаз, ради которого обещают вернуться.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="plan" id="plan" aria-labelledby="plan-h">
+  <div class="wrap">
+    <div data-r><span class="eyebrow">Заявка на банкет</span><h2 class="h2" id="plan-h">Соберите праздник <span class="it">за минуту</span></h2>
+    <p style="color:var(--muted);max-width:54ch;margin:16px 0 0">Отметьте, что задумали, — карточка заявки соберёт всё в одно сообщение. Отправьте её в WhatsApp, и ресторан ответит по залу и меню.</p></div>
+    <div class="plan-grid">
+      <form id="planner" onsubmit="return false">
+        <fieldset class="q-step"><legend><small>01</small>Повод</legend>
+          <div class="chips" data-k="occ">
+            <label class="chip"><input type="radio" name="occ" value="День рождения" checked><span>День рождения</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Юбилей"><span>Юбилей</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Свадьба"><span>Свадьба</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Корпоратив"><span>Корпоратив</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Выпускной"><span>Выпускной</span></label>
+            <label class="chip"><input type="radio" name="occ" value="Другой повод"><span>Другое</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="q-step"><legend><small>02</small>Сколько гостей</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="guests" value="до 10"><span>до 10</span></label>
+            <label class="chip"><input type="radio" name="guests" value="10–20" checked><span>10–20</span></label>
+            <label class="chip"><input type="radio" name="guests" value="20–40"><span>20–40</span></label>
+            <label class="chip"><input type="radio" name="guests" value="40–70"><span>40–70</span></label>
+            <label class="chip"><input type="radio" name="guests" value="больше 70"><span>больше 70</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="q-step"><legend><small>03</small>Формат</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="fmt" value="банкет за столами" checked><span>Банкет за столами</span></label>
+            <label class="chip"><input type="radio" name="fmt" value="фуршет"><span>Фуршет</span></label>
+            <label class="chip"><input type="radio" name="fmt" value="ужин за общим столом"><span>Ужин за общим столом</span></label>
+            <label class="chip"><input type="radio" name="fmt" value="пока не знаю, нужен совет"><span>Нужен совет</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="q-step"><legend><small>04</small>Когда</legend>
+          <div class="row2">
+            <div class="field"><label for="date">Дата</label><input id="date" name="date" type="date"></div>
+            <div class="field"><label for="time">Время</label><select id="time" name="time"><option value="">не важно</option><option>днём</option><option>вечером</option></select></div>
+          </div>
+        </fieldset>
+        <fieldset class="q-step"><legend><small>05</small>Важно для вас</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="wish" value="танцпол"><span>Танцпол</span></label>
+            <label class="chip"><input type="checkbox" name="wish" value="подбор вин"><span>Подбор вин</span></label>
+            <label class="chip"><input type="checkbox" name="wish" value="детское меню"><span>Детское меню</span></label>
+            <label class="chip"><input type="checkbox" name="wish" value="постное меню"><span>Постное меню</span></label>
+            <label class="chip"><input type="checkbox" name="wish" value="обсудить музыку"><span>Обсудить музыку</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="q-step"><legend><small>06</small>Как к вам обращаться</legend>
+          <div class="row2"><div class="field"><label for="nm">Имя (необязательно)</label><input id="nm" name="nm" type="text" autocomplete="given-name" maxlength="40"></div></div>
+        </fieldset>
+      </form>
+      <aside class="card" aria-live="polite">
+        <span class="eyebrow">Карточка заявки</span>
+        <h3 id="cTitle">День рождения в «Юралс»</h3>
+        <dl>
+          <div><dt>Гостей</dt><dd id="cG">10–20</dd></div>
+          <div><dt>Формат</dt><dd id="cF">банкет за столами</dd></div>
+          <div><dt>Когда</dt><dd id="cD" class="empty">дата не выбрана</dd></div>
+          <div><dt>Пожелания</dt><dd id="cW" class="empty">—</dd></div>
+        </dl>
+        <a class="btn btn-wine" id="send" href="https://wa.me/79922064047" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+        <a class="alt" href="tel:+73422773373">или позвоните: +7 342 277-33-73</a>
+        <p class="note">Стоимость и свободные залы ресторан называет в ответ на заявку.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="steps" aria-labelledby="st-h">
+  <div class="wrap">
+    <div data-r><span class="eyebrow">Как проходит</span><h2 class="h2" id="st-h">От заявки <span class="it">до первого тоста</span></h2></div>
+    <ol data-r>
+      <li><h3>Заявка</h3><p>Повод, гости и дата — через карточку выше или звонком.</p></li>
+      <li><h3>Зал</h3><p>Ресторан подбирает зал под число гостей и формат.</p></li>
+      <li><h3>Меню</h3><p>Блюда авторской кухни, вино, детское или постное меню.</p></li>
+      <li><h3>Детали</h3><p>Рассадка, музыка, танцпол — обсуждаете заранее.</p></li>
+      <li><h3>Праздник</h3><p>Вы встречаете гостей, остальное — забота команды зала.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contacts" aria-labelledby="ct-h">
+  <div class="wrap">
+    <div data-r><span class="eyebrow" style="color:#6d6788">Контакты</span><h2 class="h2" id="ct-h">Улица Попова, 9 <span class="it">— центр Перми</span></h2></div>
+    <div class="c-grid">
+      <div class="c-info" data-r>
+        <h3>Ресторан «Юралс»</h3>
+        <p class="addr">Пермь, ул. Попова, 9, 1 этаж</p>
+        <div class="c-block"><span class="eyebrow">Телефоны</span>
+          <a class="tel" href="tel:+79922064047">+7 992 206-40-47</a><br>
+          <a class="tel" href="tel:+73422773373">+7 342 277-33-73</a>
+        </div>
+        <div class="c-block"><span class="eyebrow">Часы работы · <span data-status></span></span>
+          <div class="hours"><span>Пн–Чт, Вс</span><span>11:00–23:00</span><span>Пт–Сб</span><span>11:00–24:00</span></div>
+        </div>
+        <div class="c-btns">
+          <a class="btn btn-wine" href="https://wa.me/79922064047?text=Здравствуйте!%20Хочу%20забронировать%20столик%20в%20Юралс" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-line" href="https://yandex.ru/maps/?rtext=~58.012804,56.223557" target="_blank" rel="noopener">Маршрут</a>
+          <a class="btn btn-line" href="https://2gis.ru/perm/firm/70000001079894318" target="_blank" rel="noopener">2ГИС</a>
+        </div>
+      </div>
+      <div class="map" data-r>
+        <iframe loading="lazy" title="Юралс на карте: Пермь, улица Попова, 9" src="https://yandex.ru/map-widget/v1/?ll=56.223557,58.012804&z=16&pt=56.223557,58.012804,pm2rdm"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="fn-h">
+  <div class="fringe" data-fringe="22" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 id="fn-h" data-r>Ваш вечер — <span class="it">под нашими люстрами</span></h2>
+    <p data-r>Расскажите о празднике: зал, меню и музыку ресторан подберёт под ваших гостей.</p>
+    <div class="cta" data-r>
+      <a class="btn btn-wine" href="#plan">Собрать банкет</a>
+      <a class="btn btn-line" href="tel:+79922064047">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>«Юралс», Пермь, ул. Попова, 9 · рейтинг 4,9 в <a href="https://2gis.ru/perm/firm/70000001079894318" target="_blank" rel="noopener">2ГИС</a></span><span>Демо-концепт по открытым данным 2ГИС</span></div></footer>
+
+<a class="fab" href="tel:+79922064047" aria-label="Позвонить в ресторан Юралс"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+
+<script>
+(function(){
+  // chandelier rods
+  document.querySelectorAll('[data-fringe]').forEach(function(f){
+    var n=+f.getAttribute('data-fringe'),h='';
+    for(var i=0;i<n;i++){var len=18+((i*37)%55)+((i*13)%17);h+='<i style="height:'+len+'%;animation-delay:-'+(i%7)+'s"></i>';}
+    f.innerHTML=h;
+  });
+  // planner
+  var f=document.getElementById('planner'),send=document.getElementById('send');
+  var $=function(id){return document.getElementById(id)};
+  var d=$('date'),t=new Date();t.setDate(t.getDate()+1);d.min=t.toISOString().slice(0,10);
+  function val(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+  function fmtDate(v){if(!v)return'';var p=v.split('-');return p[2]+'.'+p[1]+'.'+p[0]}
+  function upd(){
+    var occ=val('occ'),g=val('guests'),fm=val('fmt'),dt=fmtDate(d.value),tm=$('time').value,nm=$('nm').value.trim();
+    var w=[].map.call(f.querySelectorAll('input[name="wish"]:checked'),function(e){return e.value});
+    $('cTitle').textContent=occ+' в «Юралс»';
+    $('cG').textContent=g;$('cF').textContent=fm;
+    var when=[dt,tm].filter(Boolean).join(', ');
+    $('cD').textContent=when||'дата не выбрана';$('cD').className=when?'':'empty';
+    $('cW').textContent=w.length?w.join(', '):'—';$('cW').className=w.length?'':'empty';
+    var msg='Здравствуйте! Хочу заказать банкет в «Юралс».\nПовод: '+occ+'\nГостей: '+g+'\nФормат: '+fm+'\nКогда: '+(when||'дату уточню')+(w.length?'\nПожелания: '+w.join(', '):'')+(nm?'\nМеня зовут '+nm:'')+'\nПодскажите, пожалуйста, свободный зал и варианты меню.';
+    send.href='https://wa.me/79922064047?text='+encodeURIComponent(msg);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["11:00","23:00"]],"tue":[["11:00","23:00"]],"wed":[["11:00","23:00"]],"thu":[["11:00","23:00"]],"fri":[["11:00","24:00"]],"sat":[["11:00","24:00"]],"sun":[["11:00","23:00"]]},"is247":false}</script><script src="app.js"></script>
+</body>
+</html>

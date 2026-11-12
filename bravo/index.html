@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bravo — ювелирная мастерская в Перми, ул. Мира, 18</title><meta property="og:type" content="website"><meta property="og:title" content="Bravo — ювелирная мастерская в Перми, ул. Мира, 18"><meta property="og:description" content="Ювелирная мастерская Bravo в Перми: изделия на заказ из вашего золота и камня, обручальные кольца, ремонт и изменение размера. Ул. Мира, 18. Рейтинг 4,9 в 2ГИС."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/bravo/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Ювелирная мастерская Bravo в Перми: изделия на заказ из вашего золота и камня, обручальные кольца, ремонт и изменение размера. Ул. Мира, 18. Рейтинг 4,9 в 2ГИС.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{
+  --paper:#f2efea;--paper2:#e8e3dc;--card:#fbfaf8;--ink:#1e1b19;--ink2:#4c4641;--mute:#6e665f;
+  --gold:#8c5b2e;--gold2:#c4915f;--rose:#d9b08e;--line:#d6cfc5;--night:#181615;--night2:#25211f;--topaz:#2c7d98;
+  --serif:"Forum","Times New Roman",serif;--sans:"Manrope",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1320px;--pad:clamp(16px,4vw,48px);--r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--topaz);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase}
+.demo{background:var(--night);color:#d8d0c6;text-align:center;font-size:13px;padding:7px 16px}
+/* nav */
+.nav{position:sticky;top:0;z-index:30;background:rgba(242,239,234,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.sc{border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.logo{font:400 30px/1 var(--serif);text-decoration:none;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.logo i{width:9px;height:9px;border:1.5px solid var(--gold2);transform:rotate(45deg);display:block}
+.nav nav{display:flex;gap:26px;margin-left:auto}
+.nav nav a{text-decoration:none;font-size:15px;color:var(--ink2);position:relative;padding:6px 0}
+.nav nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav nav a:hover::after{transform:scaleX(1)}
+.nav .tel{font-weight:600;text-decoration:none;font-size:15px;white-space:nowrap}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;border:1px solid var(--ink);text-decoration:none;font-weight:600;font-size:15.5px;transition:transform .25s,background .25s,color .25s,box-shadow .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn.dark:hover{background:#000;box-shadow:0 10px 30px -12px rgba(30,27,25,.6)}
+.btn.wa{background:#1f7a4d;border-color:#1f7a4d;color:#fff}
+.btn.wa:hover{background:#17663f}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn svg{width:18px;height:18px;flex:none}
+.lnk{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1px solid var(--line)}
+.lnk:hover{border-color:var(--gold)}
+/* hero */
+.hero{padding:clamp(24px,4vh,56px) 0 clamp(40px,6vw,80px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,80px);align-items:center}
+.eyebrow{color:var(--gold);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+.word{font:400 clamp(84px,min(13vw,21vh),200px)/.82 var(--serif);letter-spacing:-.01em;margin:clamp(10px,2vh,22px) 0 clamp(12px,2vh,22px);position:relative;display:inline-block}
+.word .sh{background:linear-gradient(100deg,var(--ink) 0 40%,var(--gold2) 48%,#f3dcc2 50%,var(--gold2) 52%,var(--ink) 60% 100%);background-size:300% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s ease-in-out 1s infinite}
+@keyframes shine{0%,55%{background-position:100% 0}85%,100%{background-position:0 0}}
+h1{font:400 clamp(26px,2.6vw,40px)/1.15 var(--serif);max-width:24ch}
+.lead{color:var(--ink2);max-width:46ch;margin-top:14px;font-size:clamp(16px,1.2vw,18px)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(18px,3vh,30px)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;margin-top:16px;color:var(--ink2);font-size:15px}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-size:14px}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#9a928a}
+[data-status].is-open::before{background:#2f9a5d;box-shadow:0 0 0 4px rgba(47,154,93,.15)}
+.stage{position:relative}
+.loupe{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#ddd8d2;touch-action:pan-y;cursor:zoom-in;max-height:calc(100vh - 150px);margin-left:auto}
+.loupe img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.lens{position:absolute;width:190px;height:190px;border-radius:50%;pointer-events:none;border:2px solid rgba(255,255,255,.9);box-shadow:0 0 0 1px rgba(0,0,0,.15),0 20px 40px -10px rgba(0,0,0,.45);background-repeat:no-repeat;opacity:0;transform:translate(-50%,-50%) scale(.6);transition:opacity .25s,transform .25s}
+.loupe.on .lens{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.hint{position:absolute;left:16px;bottom:16px;background:rgba(24,22,21,.78);color:#f2efea;padding:8px 14px;border-radius:999px;font-size:12px;transition:opacity .3s}
+.loupe.on .hint{opacity:0}
+.stamp{position:absolute;left:-34px;top:12%;width:112px;height:72px;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;text-align:center;background:var(--paper);transform:rotate(-12deg);font:500 10px/1.35 var(--mono);letter-spacing:.12em;color:var(--gold);box-shadow:inset 0 0 0 5px var(--paper),inset 0 0 0 6px var(--rose)}
+.rate{display:flex;align-items:baseline;gap:10px;margin-top:16px}
+.rate b{font:400 34px/1 var(--serif)}
+.rate span{color:var(--mute);font-size:14px}
+/* section heads */
+section{scroll-margin-top:70px}
+.sec{padding:clamp(64px,9vw,130px) 0}
+.h2{font:400 clamp(36px,5vw,72px)/1.02 var(--serif);letter-spacing:-.005em}
+.h2 em{font-style:normal;color:var(--gold)}
+.sub{color:var(--ink2);max-width:52ch;margin-top:16px}
+/* works ribbon */
+.works{padding-top:clamp(40px,5vw,70px)}
+.works .top{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.arrows{display:flex;gap:10px}
+.arrows button{width:52px;height:52px;border-radius:50%;border:1px solid var(--ink);background:none;display:grid;place-items:center;transition:background .25s,color .25s}
+.arrows button:hover{background:var(--ink);color:var(--paper)}
+.arrows svg{width:20px;height:20px}
+.ribbon{display:flex;gap:clamp(12px,1.6vw,22px);overflow-x:auto;scroll-snap-type:x mandatory;padding:36px max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad))) 16px;scrollbar-width:none;cursor:grab}
+.ribbon::-webkit-scrollbar{display:none}
+.ribbon.drag{cursor:grabbing;scroll-snap-type:none}
+.ribbon figure{flex:none;scroll-snap-align:start;width:clamp(240px,24vw,360px)}
+.ribbon figure:nth-child(3n+2){width:clamp(260px,30vw,440px)}
+.ribbon .ph{border-radius:14px;overflow:hidden;aspect-ratio:4/5;background:var(--paper2)}
+.ribbon figure:nth-child(3n+2) .ph{aspect-ratio:1/1}
+.ribbon img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1);pointer-events:none;user-select:none}
+.ribbon figure:hover img{transform:scale(1.05)}
+.ribbon figcaption{display:flex;gap:12px;margin-top:12px;font-size:14.5px;color:var(--ink2)}
+.ribbon figcaption b{font:500 12px/1.9 var(--mono);color:var(--gold);font-weight:500}
+/* services */
+.svc .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,100px);align-items:start}
+.svc .side{position:sticky;top:96px}
+.svc .side .ph{margin-top:32px;border-radius:var(--r);overflow:hidden;aspect-ratio:5/4;max-width:460px}
+.svc .side img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.list{border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:64px minmax(0,1fr);gap:8px 20px;padding:28px 0;border-bottom:1px solid var(--line);transition:padding .35s}
+.row:hover{padding-left:10px}
+.row .n{font:400 30px/1 var(--serif);color:var(--gold2)}
+.row h3{font:400 clamp(24px,2.3vw,32px)/1.15 var(--serif)}
+.row p{grid-column:2;color:var(--ink2);max-width:56ch}
+.row .tag{grid-column:2;justify-self:start;font:500 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--topaz);border:1px solid rgba(44,125,152,.35);padding:7px 10px;border-radius:999px;margin-top:4px}
+.pay{margin-top:28px;color:var(--mute);font-size:14.5px}
+/* praise (dark) */
+.dark{background:var(--night);color:#efe9e2;position:relative;overflow:hidden}
+.dark .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,90px);align-items:center}
+.score{display:flex;align-items:flex-end;gap:20px;margin-top:26px}
+.score b{font:400 clamp(110px,14vw,190px)/.78 var(--serif);background:linear-gradient(180deg,#f3dcc2,#c4915f 70%,#8c5b2e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.score span{color:#b9b0a6;font-size:15px;padding-bottom:8px}
+.dark .h2 em{color:var(--rose)}
+.quotes{display:grid;gap:16px;margin-top:36px}
+.q{border:1px solid #3a3431;border-radius:var(--r);padding:22px 24px;background:var(--night2);transition:border-color .3s,transform .3s}
+.q:hover{border-color:#6e5a48;transform:translateX(6px)}
+.q h3{font:400 23px/1.2 var(--serif);color:#f6efe7}
+.q p{color:#c4bbb1;margin-top:8px;font-size:15.5px}
+.q:first-child{padding:30px 28px}
+.q:first-child h3{font-size:30px}
+.dark .pic{border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;max-width:560px;justify-self:end;width:100%}
+.dark .pic img{width:100%;height:115%;object-fit:cover;will-change:transform}
+/* order quiz */
+.order{background:var(--paper2)}
+.order .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(28px,4vw,64px);align-items:start}
+.qz{margin-top:34px;display:grid;gap:28px}
+.grp legend{display:flex;gap:12px;align-items:baseline;font:400 23px/1.2 var(--serif);margin-bottom:14px}
+.grp legend b{font:500 12px/1 var(--mono);color:var(--gold)}
+.grp{border:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips button{min-height:46px;padding:0 18px;border-radius:999px;border:1px solid #c3baae;background:var(--card);font-size:15px;transition:all .2s}
+.chips button:hover{border-color:var(--ink)}
+.chips button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.fld{display:grid;gap:6px;font-size:14px;color:var(--ink2)}
+.fld input,.fld textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:1px solid #c3baae;border-radius:12px;padding:12px 14px;min-height:48px;width:100%}
+.fld textarea{min-height:90px;resize:vertical}
+.fld input:focus,.fld textarea:focus{outline:2px solid var(--topaz);outline-offset:1px;border-color:transparent}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.ticket{position:sticky;top:90px;background:var(--card);border-radius:6px;padding:28px 26px 26px;box-shadow:0 30px 60px -30px rgba(30,27,25,.35);font-family:var(--mono);font-size:13.5px;line-height:1.55}
+.ticket::before,.ticket::after{content:"";position:absolute;left:0;right:0;height:10px;background:radial-gradient(circle at 7px 0,transparent 6px,var(--card) 6.5px) repeat-x;background-size:14px 10px}
+.ticket::before{top:-9px;transform:scaleY(-1)}
+.ticket::after{bottom:-9px}
+.ticket h3{font:400 26px/1.1 var(--serif);margin-bottom:4px}
+.ticket .no{color:var(--mute);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase}
+.ticket dl{margin:18px 0;border-top:1px dashed #c3baae}
+.ticket dl div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px dashed #c3baae}
+.ticket dt{color:var(--mute)}
+.ticket dd{text-align:right;color:var(--ink);transition:color .3s}
+.ticket dd.e{color:#b3aaa0}
+.ticket dd.flash{color:var(--gold)}
+.ticket .btn{width:100%;font-family:var(--sans);margin-top:4px}
+.ticket small{display:block;margin-top:12px;color:var(--mute);font-size:12px;line-height:1.5}
+/* steps — chain */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;margin-top:48px;position:relative}
+.steps::before{content:"";position:absolute;left:28px;right:28px;top:22px;height:1px;background:linear-gradient(90deg,var(--gold2),var(--line))}
+.st{position:relative}
+.st .lk{width:56px;height:44px;border-radius:50%;border:2px solid var(--gold2);background:var(--paper);display:grid;place-items:center;font:500 13px/1 var(--mono);color:var(--gold);position:relative;z-index:1;transition:transform .4s}
+.st:nth-child(even) .lk{transform:rotate(90deg) scale(.82)}
+.st:nth-child(even) .lk span{transform:rotate(-90deg)}
+.st:hover .lk{transform:rotate(180deg)}
+.st:nth-child(even):hover .lk{transform:rotate(270deg) scale(.82)}
+.st h3{font:400 23px/1.2 var(--serif);margin-top:20px}
+.st p{color:var(--ink2);font-size:15px;margin-top:6px}
+/* contacts */
+.ct .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px);align-items:stretch}
+.addr{font:400 clamp(30px,3.4vw,46px)/1.1 var(--serif);margin-top:20px}
+.info{display:grid;gap:22px;margin-top:28px}
+.info h3{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.hours{display:grid;grid-template-columns:auto auto;gap:4px 28px;justify-content:start;font-size:15.5px}
+.hours span:nth-child(odd){color:var(--mute)}
+.ph-l{display:block;font-weight:600;font-size:19px;text-decoration:none;min-height:36px}
+.ph-l:hover{color:var(--gold)}
+.socials{display:flex;flex-wrap:wrap;gap:10px}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;background:var(--paper2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+/* final */
+.fin{background:var(--ink);color:var(--paper);text-align:center;padding:clamp(70px,10vw,140px) 0;position:relative;overflow:hidden}
+.fin .h2{max-width:16ch;margin:0 auto}
+.fin .h2 em{color:var(--rose)}
+.fin p{color:#bdb4aa;margin:18px auto 0;max-width:46ch}
+.fin .cta{justify-content:center}
+.fin .btn.ghost{border-color:#f2efea;color:#f2efea}
+.fin .btn.ghost:hover{background:#f2efea;color:var(--ink)}
+.fin .ring{position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(217,176,142,.18);left:50%;top:50%;transform:translate(-50%,-50%)}
+.fin .ring+.ring{width:760px;height:760px;border-color:rgba(217,176,142,.09)}
+footer{background:var(--ink);color:#8f877e;font-size:13px;padding:0 0 100px;text-align:center}
+footer .wrap{border-top:1px solid #34302d;padding-top:22px}
+.fab{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1080px){
+  .nav nav{display:none}
+  .nav .tel{margin-left:auto}
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:40px}
+  .steps::before{display:none}
+}
+@media (max-width:900px){
+  .hero .wrap,.svc .wrap,.dark .wrap,.order .wrap,.ct .wrap{grid-template-columns:minmax(0,1fr)}
+  .loupe{max-height:none;margin:0}
+  .svc .side{position:static}
+  .svc .side .ph{display:none}
+  .dark .pic{justify-self:start;max-width:none;aspect-ratio:4/3}
+  .ticket{position:relative;top:0}
+  .stamp{left:auto;right:-6px;top:-22px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .nav .wrap{height:58px}
+  .nav .tel{font-size:14px}
+  .word{font-size:clamp(84px,27vw,120px)}
+  .cta .btn{flex:1 1 100%}
+  .steps{grid-template-columns:minmax(0,1fr);row-gap:26px}
+  .st{display:grid;grid-template-columns:56px minmax(0,1fr);gap:0 18px}
+  .st h3{margin-top:6px}
+  .st p{grid-column:2}
+  .row{grid-template-columns:44px minmax(0,1fr);gap:6px 12px;padding:22px 0}
+  .row .n{font-size:24px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .ticket{padding:24px 18px}
+  .map,.map iframe{min-height:320px}
+  .stamp{width:96px;height:62px;font-size:9px}
+  .lens{width:150px;height:150px}
+  .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:40;gap:10px;transform:translateY(140%);transition:transform .4s}
+  .fab.show{transform:none}
+  .fab a{flex:1;min-height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;text-decoration:none;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+  .fab .c{background:var(--ink);color:var(--paper)}
+  .fab .w{background:#1f7a4d;color:#fff;flex:0 0 54px}
+  .fab svg{width:20px;height:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Bravo — наверх"><i></i>Bravo</a>
+    <nav aria-label="Разделы">
+      <a href="#works">Работы</a><a href="#services">Что делаем</a><a href="#order">Заказ</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="tel" href="tel:+79824542908">+7 982 454-29-08</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="mono eyebrow">Ювелирная мастерская · Пермь</p>
+      <div class="word"><span class="sh">Bravo</span></div>
+      <h1>Кольцо из вашего золота и&nbsp;вашего камня. И&nbsp;ремонт, после которого следов не&nbsp;видно</h1>
+      <p class="lead">Изделия на заказ, обручальные кольца, изменение размера и мелкий ремонт — в мастерской на улице Мира, 18, Пермь, Пермский край.</p>
+      <div class="cta">
+        <a class="btn dark" href="#order">Рассчитать заказ</a>
+        <a class="btn wa" href="https://wa.me/79824542908?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D1%83%D0%BA%D1%80%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D1%8E." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .3-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>Написать в WhatsApp</a>
+      </div>
+      <div class="meta">
+        <a class="lnk" href="tel:+79824542908">Позвонить</a>
+        <a class="lnk" href="https://yandex.ru/maps/?rtext=~57.982825,56.200644" target="_blank" rel="noopener">Маршрут до Мира, 18</a>
+        <span data-status></span>
+      </div>
+      <div class="rate"><b>4,9</b><span>98 оценок в 2ГИС</span></div>
+    </div>
+    <div class="stage" data-r>
+      <div class="loupe" id="loupe" data-full="img/p10.jpg">
+        <img src="img/p10-m.jpg" srcset="img/p10-m.jpg 756w, img/p10.jpg 969w" sizes="(max-width:900px) 92vw, 40vw" width="756" height="900" alt="Золотое кольцо в виде совы с цветными камнями-глазами, работа мастерской Bravo">
+        <div class="lens" aria-hidden="true"></div>
+        <span class="hint">Наведите или коснитесь — как под лупой</span>
+      </div>
+      <div class="stamp" aria-hidden="true">BRAVO<br>ПЕРМЬ</div>
+    </div>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap top">
+    <div>
+      <p class="mono eyebrow">Из мастерской</p>
+      <h2 class="h2" data-r>Вещи, которые <em>спрашивают,</em> где&nbsp;сделали</h2>
+    </div>
+    <div class="arrows">
+      <button type="button" data-dir="-1" aria-label="Предыдущие работы"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" data-dir="1" aria-label="Следующие работы"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="ribbon" id="ribbon" data-qa-skip>
+    <figure><div class="ph"><img src="img/p13-m.jpg" sizes="360px" loading="lazy" width="763" height="900" alt="Резная золотая подвеска с образом"></div><figcaption><b>01</b>Резная подвеска</figcaption></figure>
+    <figure><div class="ph"><img src="img/p6-m.jpg" sizes="440px" loading="lazy" width="815" height="900" alt="Пара обручальных колец: матовое и с дорожкой камней" style="object-position:50% 55%"></div><figcaption><b>02</b>Обручальная пара</figcaption></figure>
+    <figure><div class="ph"><img src="img/p2-m.jpg" sizes="480px" loading="lazy" width="900" height="849" alt="Серьги с прямоугольными голубыми камнями"></div><figcaption><b>03</b>Серьги с голубыми камнями</figcaption></figure>
+    <figure><div class="ph"><img src="img/p12-m.jpg" sizes="360px" loading="lazy" width="876" height="900" alt="Кольцо с крупным зелёным камнем в ажурной оправе"></div><figcaption><b>04</b>Кольцо с зелёным камнем</figcaption></figure>
+    <figure><div class="ph"><img src="img/p14-m.jpg" sizes="440px" loading="lazy" width="797" height="900" alt="Кольцо с чёрным кристаллом в золотой ажурной оправе"></div><figcaption><b>05</b>Чёрный кристалл в золоте</figcaption></figure>
+    <figure><div class="ph"><img src="img/p9-m.jpg" sizes="360px" loading="lazy" width="900" height="832" alt="Подвеска с двумя жёлтыми камнями в обрамлении"></div><figcaption><b>06</b>Подвеска на шнурке</figcaption></figure>
+    <figure><div class="ph"><img src="img/p1-m.jpg" sizes="360px" loading="lazy" width="854" height="900" alt="Кольцо с бабочками из синих и зелёных камней"></div><figcaption><b>07</b>Кольцо с бабочками</figcaption></figure>
+    <figure><div class="ph"><img src="img/p8-m.jpg" sizes="440px" loading="lazy" width="896" height="900" alt="Серьги-завитки с голубыми камнями"></div><figcaption><b>08</b>Серьги-завитки</figcaption></figure>
+    <figure><div class="ph"><img src="img/p11-m.jpg" sizes="360px" loading="lazy" width="826" height="900" alt="Цепной браслет с застёжкой в виде головы пантеры"></div><figcaption><b>09</b>Браслет с пантерой</figcaption></figure>
+    <figure><div class="ph"><img src="img/p4-m.jpg" sizes="360px" loading="lazy" width="438" height="900" alt="Крест на золотой цепи" style="object-position:50% 30%"></div><figcaption><b>10</b>Крест на цепи</figcaption></figure>
+    <figure><div class="ph"><img src="img/p5-m.jpg" sizes="440px" loading="lazy" width="900" height="899" alt="Кольцо из красного золота с россыпью камней"></div><figcaption><b>11</b>Кольцо-цветок</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec svc" id="services">
+  <div class="wrap">
+    <div class="side">
+      <p class="mono eyebrow">Что делаем</p>
+      <h2 class="h2" data-r>От идеи на&nbsp;словах до&nbsp;вещи <em>на&nbsp;руке</em></h2>
+      <p class="sub">Ювелирные изделия, дизайн украшений и работа с камнями — всё в одной мастерской, без посредников.</p>
+      <div class="ph"><img src="img/p6-m.jpg" sizes="460px" loading="lazy" width="815" height="900" alt="Обручальные кольца из мастерской Bravo"></div>
+    </div>
+    <div>
+      <div class="list">
+        <article class="row" data-r><span class="n">01</span><h3>Изделия на заказ</h3><p>Кольца, подвески, серьги по вашей идее. Можно принести своё золото и свой камень — мастер соберёт из них новую вещь.</p><span class="tag">о чём пишут в отзывах</span></article>
+        <article class="row" data-r><span class="n">02</span><h3>Обручальные кольца</h3><p>Пара, которую носят каждый день: аккуратная, удобная на руке, сделанная под вас.</p></article>
+        <article class="row" data-r><span class="n">03</span><h3>Дизайн и выбор модели</h3><p>Не знаете, какой должна быть вещь, — в мастерской помогут выбрать модель, металл и камень.</p></article>
+        <article class="row" data-r><span class="n">04</span><h3>Ремонт и размер</h3><p>Уменьшить или выровнять кольцо, починить застёжку на серьгах, восстановить украшение так, чтобы камень сидел крепко, а следов работы не было видно. Мелкое часто делают при вас.</p><span class="tag">о чём пишут в отзывах</span></article>
+        <article class="row" data-r><span class="n">05</span><h3>Цепочки и ансамбли</h3><p>Подберут цепь к кулону, чтобы они смотрелись одним комплектом, а не случайной парой.</p></article>
+        <article class="row" data-r><span class="n">06</span><h3>Ювелирные камни</h3><p>Подбор камня под оправу или новая оправа для камня, который у вас уже есть.</p></article>
+      </div>
+      <p class="pay">Оплата картой, наличными, переводом, по QR-коду, есть «Плати частями».</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="reviews">
+  <div class="wrap">
+    <div>
+      <p class="mono eyebrow" style="color:var(--rose)">За что хвалят</p>
+      <h2 class="h2" data-r>Люди возвращаются <em>сюда снова</em></h2>
+      <div class="score"><b>4,9</b><span>рейтинг в 2ГИС<br>98 оценок</span></div>
+      <div class="quotes">
+        <div class="q" data-r><h3>Делают из вашего материала</h3><p>Клиенты приносят своё золото и свой камень и пишут, что получают кольцо, про которое потом все спрашивают контакты ювелира.</p></div>
+        <div class="q" data-r><h3>Ремонт без следов</h3><p>Уменьшили помолвочное кольцо так, что камень держится крепко, а вмешательства не видно. Застёжки на серьгах исправили за минуту при клиенте.</p></div>
+        <div class="q" data-r><h3>Объясняют и помогают выбрать</h3><p>Пишут, что Андрей помог с выбором модели, заказ сделали в срок, а на приёме всё досконально разъясняют.</p></div>
+      </div>
+    </div>
+    <div class="pic" data-r><img id="par" src="img/p8-m.jpg" sizes="(max-width:900px) 92vw, 560px" loading="lazy" width="896" height="900" alt="Серьги с голубыми камнями на тёмном фоне"></div>
+  </div>
+</section>
+
+<section class="sec order" id="order">
+  <div class="wrap">
+    <div>
+      <p class="mono eyebrow">Заказ-наряд</p>
+      <h2 class="h2" data-r>Расскажите, что&nbsp;сделать, — <em>мастер ответит</em> в&nbsp;WhatsApp</h2>
+      <p class="sub">Пять вопросов вместо долгой переписки. Цену мастер назовёт после того, как увидит изделие или эскиз — фото можно приложить прямо в чате.</p>
+      <div class="qz" id="qz">
+        <fieldset class="grp"><legend><b>01</b>Что нужно</legend><div class="chips" data-k="Задача"><button type="button">Изделие на заказ</button><button type="button">Обручальные кольца</button><button type="button">Ремонт</button><button type="button">Изменить размер</button><button type="button">Переделать старое</button><button type="button">Цепочка к кулону</button></div></fieldset>
+        <fieldset class="grp"><legend><b>02</b>Изделие</legend><div class="chips" data-k="Изделие"><button type="button">Кольцо</button><button type="button">Серьги</button><button type="button">Подвеска или крест</button><button type="button">Цепочка или браслет</button><button type="button">Другое</button></div></fieldset>
+        <fieldset class="grp"><legend><b>03</b>Металл</legend><div class="chips" data-k="Металл"><button type="button">Жёлтое золото</button><button type="button">Красное золото</button><button type="button">Белое золото</button><button type="button">Серебро</button><button type="button">Посоветуйте</button></div></fieldset>
+        <fieldset class="grp"><legend><b>04</b>Свои материалы</legend><div class="chips" data-k="Материалы"><button type="button">Есть своё золото</button><button type="button">Есть свой камень</button><button type="button">И золото, и камень</button><button type="button">Нет, подберите</button></div></fieldset>
+        <fieldset class="grp"><legend><b>05</b>К какому сроку</legend><div class="chips" data-k="Срок"><button type="button">К свадьбе</button><button type="button">К празднику</button><button type="button">Не спешу</button><button type="button">Обсудим</button></div></fieldset>
+        <div class="two">
+          <label class="fld">Как к вам обращаться<input id="nm" type="text" autocomplete="given-name" maxlength="40"></label>
+          <label class="fld">Размер кольца, если знаете<input id="sz" type="text" inputmode="decimal" maxlength="10"></label>
+        </div>
+        <label class="fld">Пара слов об идее<textarea id="cm" maxlength="400" placeholder="Например: хочу кольцо с бабушкиным камнем"></textarea></label>
+      </div>
+    </div>
+    <aside class="ticket" aria-live="polite" data-r>
+      <p class="no">Bravo · Мира, 18</p>
+      <h3>Ваш заказ</h3>
+      <dl id="tk"></dl>
+      <a class="btn wa" id="send" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Отправить мастеру</a>
+      <small>Откроется WhatsApp с готовым текстом. Ничего не уходит, пока вы сами не нажмёте «Отправить». Фото изделия или эскиза добавьте в чате.</small>
+    </aside>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <p class="mono eyebrow">Как проходит заказ</p>
+    <h2 class="h2" data-r>Пять звеньев — <em>одна цепочка</em></h2>
+    <div class="steps">
+      <div class="st" data-r><div class="lk"><span>01</span></div><h3>Идея</h3><p>Пишете в WhatsApp или приходите на Мира, 18 с фото, эскизом или своим украшением.</p></div>
+      <div class="st" data-r><div class="lk"><span>02</span></div><h3>Разговор</h3><p>Мастер смотрит изделие, помогает выбрать модель, металл и камень.</p></div>
+      <div class="st" data-r><div class="lk"><span>03</span></div><h3>Согласование</h3><p>Договариваетесь о стоимости и сроке до начала работы.</p></div>
+      <div class="st" data-r><div class="lk"><span>04</span></div><h3>Работа</h3><p>Изделие делают в мастерской, по ходу можно задать вопросы.</p></div>
+      <div class="st" data-r><div class="lk"><span>05</span></div><h3>Примерка</h3><p>Забираете готовую вещь и проверяете, как она сидит на руке.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ct" id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div>
+      <p class="mono eyebrow">Мастерская</p>
+      <p class="addr">Пермь, улица Мира, 18<br><span style="color:var(--mute)">1 этаж</span></p>
+      <div class="info">
+        <div><h3>Часы работы</h3><div class="hours"><span>Пн–Пт</span><span>10:00–19:00</span><span>Суббота</span><span>11:00–17:00</span><span>Воскресенье</span><span>выходной</span></div><p style="margin-top:10px"><span data-status></span></p></div>
+        <div><h3>Телефоны</h3><a class="ph-l" href="tel:+79824542908">+7 982 454-29-08</a><a class="ph-l" href="tel:+79024712991">+7 902 471-29-91</a></div>
+        <div><h3>Написать</h3><div class="socials"><a class="btn wa" href="https://wa.me/79824542908?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D1%83%D0%BA%D1%80%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D1%8E." target="_blank" rel="noopener">WhatsApp</a><a class="btn ghost" href="https://vk.ru/bravo_jewellery" target="_blank" rel="noopener">ВКонтакте</a><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~57.982825,56.200644" target="_blank" rel="noopener">Маршрут</a></div></div>
+      </div>
+    </div>
+    <div class="map" data-r><iframe loading="lazy" title="Bravo на карте: Пермь, улица Мира, 18" src="https://yandex.ru/map-widget/v1/?ll=56.200644,57.982825&amp;z=16&amp;pt=56.200644,57.982825,pm2rdm"></iframe></div>
+  </div>
+</section>
+
+<section class="fin">
+  <div class="ring" aria-hidden="true"></div><div class="ring" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative">
+    <h2 class="h2" data-r>Принесите идею. <em>Остальное</em> сделают руками</h2>
+    <p>Опишите украшение в WhatsApp или загляните в мастерскую на Мира, 18 — посмотрят при вас.</p>
+    <div class="cta">
+      <a class="btn wa" href="#order">Рассчитать заказ</a>
+      <a class="btn ghost" href="tel:+79824542908">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">Bravo — ювелирная мастерская · Пермь, ул. Мира, 18 · Демо-концепт по данным 2ГИС</div></footer>
+
+<div class="fab">
+  <a class="c" href="tel:+79824542908"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a class="w" href="https://wa.me/79824542908" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var fab=document.querySelector('.fab');addEventListener('scroll',function(){nav.classList.toggle('sc',scrollY>10);fab.classList.toggle('show',scrollY>420)},{passive:true});
+  /* loupe */
+  var L=document.getElementById('loupe'),lens=L.querySelector('.lens'),Z=2.1;
+  lens.style.backgroundImage='url('+L.dataset.full+')';
+  function mv(e){var r=L.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+    if(x<0||y<0||x>r.width||y>r.height){L.classList.remove('on');return}
+    var s=Math.max(r.width/969,r.height/1153),dw=969*s,dh=1153*s,ox=(dw-r.width)*.5,oy=(dh-r.height)*.38;
+    lens.style.left=x+'px';lens.style.top=y+'px';lens.style.backgroundSize=(dw*Z)+'px '+(dh*Z)+'px';
+    var w=lens.offsetWidth/2;lens.style.backgroundPosition=(w-(x+ox)*Z)+'px '+(w-(y+oy)*Z)+'px';L.classList.add('on')}
+  L.addEventListener('pointermove',mv);L.addEventListener('pointerdown',mv);
+  L.addEventListener('pointerleave',function(){L.classList.remove('on')});
+  L.addEventListener('pointerup',function(e){if(e.pointerType!=='mouse')setTimeout(function(){L.classList.remove('on')},900)});
+  /* ribbon */
+  var R=document.getElementById('ribbon');
+  document.querySelectorAll('.arrows button').forEach(function(b){b.addEventListener('click',function(){R.scrollBy({left:+b.dataset.dir*R.clientWidth*.7,behavior:'smooth'})})});
+  var dn=false,sx=0,sl=0;
+  R.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;sx=e.clientX;sl=R.scrollLeft;R.classList.add('drag')});
+  addEventListener('pointermove',function(e){if(dn)R.scrollLeft=sl-(e.clientX-sx)});
+  addEventListener('pointerup',function(){dn=false;R.classList.remove('drag')});
+  /* parallax */
+  var P=document.getElementById('par'),still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!still)addEventListener('scroll',function(){var r=P.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;P.style.transform='translateY('+(-(r.top/innerHeight)*7-6)+'%)'},{passive:true});
+  /* order */
+  var st={},tk=document.getElementById('tk'),send=document.getElementById('send'),keys=['Задача','Изделие','Металл','Материалы','Срок'];
+  var nm=document.getElementById('nm'),sz=document.getElementById('sz'),cm=document.getElementById('cm');
+  document.querySelectorAll('#qz .chips').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed','false');
+    b.addEventListener('click',function(){var on=b.getAttribute('aria-pressed')==='true';g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      if(on)delete st[g.dataset.k];else{b.setAttribute('aria-pressed','true');st[g.dataset.k]=b.textContent}draw(g.dataset.k)})})});
+  [nm,sz,cm].forEach(function(i){i.addEventListener('input',function(){draw()})});
+  function draw(f){var h='';keys.forEach(function(k){var v=st[k];h+='<div><dt>'+k+'</dt><dd class="'+(v?(k===f?'flash':''):'e')+'">'+(v||'—')+'</dd></div>'});
+    if(sz.value.trim())h+='<div><dt>Размер</dt><dd>'+esc(sz.value.trim())+'</dd></div>';
+    tk.innerHTML=h;if(f)setTimeout(function(){var d=tk.querySelector('.flash');if(d)d.classList.remove('flash')},700);
+    var t='Здравствуйте! Пишу с сайта мастерской Bravo.';keys.forEach(function(k){if(st[k])t+='\n'+k+': '+st[k]});
+    if(sz.value.trim())t+='\nРазмер: '+sz.value.trim();if(cm.value.trim())t+='\nИдея: '+cm.value.trim();
+    t+='\nФото пришлю в этом чате.';if(nm.value.trim())t+='\n'+nm.value.trim();
+    send.href='https://wa.me/79824542908?text='+encodeURIComponent(t)}
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  draw();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","19:00"]],"tue":[["10:00","19:00"]],"wed":[["10:00","19:00"]],"thu":[["10:00","19:00"]],"fri":[["10:00","19:00"]],"sat":[["11:00","17:00"]],"sun":null},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

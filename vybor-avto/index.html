@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Выбор Авто — автосалон автомобилей с пробегом в Волгограде</title><meta property="og:type" content="website"><meta property="og:title" content="Выбор Авто — автосалон автомобилей с пробегом в Волгограде"><meta property="og:description" content="Выбор Авто, Волгоград: автомобили с пробегом, подбор под бюджет, оформление сделки и ОСАГО. Университетский проспект, 2/2, ежедневно 8:00–20:00."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/vybor-avto/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Выбор Авто, Волгоград: автомобили с пробегом, подбор под бюджет, оформление сделки и ОСАГО. Университетский проспект, 2/2, ежедневно 8:00–20:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap"></noscript>
+<style>
+:root{--ink:#0f1012;--asph:#1a1c20;--asph2:#24272c;--paper:#f2f1ec;--plate:#fbfbf7;--line:#d9d7cf;--mute:#5f6168;--y:#f5c518;--y2:#ffd94a;--blue:#1c4fb8;--red:#d52b1e;--wa:#1f9d55;
+--d:'Oswald',Impact,sans-serif;--t:'Onest',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace;--w:1320px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.55 var(--t);color:var(--ink);background:var(--paper);overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--y);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.demo{background:var(--y);color:var(--ink);font:500 13px/1.3 var(--t);text-align:center;padding:7px 16px}
+.mono{font-family:var(--m);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+/* header */
+.hd{position:sticky;top:0;z-index:30;background:rgba(26,28,32,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.hd .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mini{display:inline-flex;align-items:stretch;border:2px solid #000;border-radius:5px;background:var(--plate);color:#000;font:700 15px/1.25 var(--d);letter-spacing:.06em}
+.mini b{padding:3px 8px}.mini i{font-style:normal;border-left:2px solid #000;padding:4px 6px 3px;font-size:12px;line-height:1.25}
+.logo span{font:600 18px/1 var(--d);letter-spacing:.04em;text-transform:uppercase}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:15px}
+.nav a{text-decoration:none;opacity:.78;transition:opacity .2s}.nav a:hover{opacity:1}
+.hd .tel{font:600 16px/1 var(--t);text-decoration:none;white-space:nowrap;padding:12px 0}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:12px;font:600 16px/1 var(--t);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0) scale(.98)}
+.btn-y{background:var(--y);color:var(--ink);box-shadow:0 10px 30px -12px rgba(245,197,24,.7)}.btn-y:hover{background:var(--y2)}
+.btn-wa{background:var(--wa);color:#fff}.btn-wa:hover{background:#18b35e}
+.btn-o{border-color:rgba(255,255,255,.28);color:#fff}.btn-o:hover{border-color:#fff}
+.btn-d{background:var(--ink);color:#fff}.btn-d:hover{background:#2c2f35}
+.btn svg{width:20px;height:20px;flex:none}
+/* hero */
+.hero{background:var(--asph);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(70% 90% at 85% 30%,#30343b 0,transparent 60%),radial-gradient(50% 60% at 0 100%,#22252a 0,transparent 70%)}
+.road{position:absolute;z-index:-1;right:-10%;top:-20%;width:58%;height:150%;transform:rotate(18deg);background:linear-gradient(90deg,transparent 0,rgba(255,255,255,.035) 0 100%);border-left:2px solid rgba(255,255,255,.07);border-right:2px solid rgba(255,255,255,.07)}
+.road:after{content:"";position:absolute;left:50%;top:0;bottom:0;width:10px;margin-left:-5px;background:repeating-linear-gradient(180deg,var(--y) 0 70px,transparent 70px 140px);opacity:.85;animation:drive 2.4s linear infinite}
+@keyframes drive{to{background-position:0 140px}}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,64px);align-items:center;padding-top:clamp(36px,6vh,72px);padding-bottom:clamp(40px,7vh,84px)}
+.eyebrow{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;color:#c9cbd1}
+.eyebrow .mono{color:var(--y)}
+h1{font:700 clamp(64px,10.5vw,172px)/.86 var(--d);text-transform:uppercase;letter-spacing:-.01em;margin:18px 0 22px}
+h1 em{font-style:normal;display:block;color:transparent;-webkit-text-stroke:2px #fff}
+.lead{font-size:clamp(18px,1.5vw,22px);line-height:1.45;max-width:34em;color:#e4e5e8}
+.lead b{color:#fff;font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.sub{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:20px;font-size:15px;color:#c9cbd1;align-items:center}
+.sub a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3);padding:10px 0 2px}
+.sub a:hover{border-color:var(--y);color:#fff}
+[data-status]{display:inline-flex;align-items:center;gap:8px}
+[data-status]:before{content:"";width:9px;height:9px;border-radius:50%;background:#888}
+[data-status].is-open:before{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
+[data-status].is-closed:before{background:#e0a03a}
+/* plate */
+.stage{position:relative;display:grid;gap:18px;justify-items:center}
+.plate{width:min(100%,520px);aspect-ratio:520/113;display:flex;background:linear-gradient(180deg,#fff,#ecebe4);color:#0b0b0b;border:5px solid #0b0b0b;border-radius:14px;box-shadow:0 0 0 2px #fff,0 40px 60px -30px rgba(0,0,0,.9),0 2px 0 4px rgba(0,0,0,.25);transform:rotate(-4deg);font-family:var(--d);overflow:hidden;position:relative;container-type:inline-size;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.plate:hover{transform:rotate(-1deg) scale(1.02)}
+.plate .n{flex:1;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14.5cqw;letter-spacing:.06em;line-height:1.1}
+.plate .rg{width:27%;border-left:5px solid #0b0b0b;display:grid;place-items:center;align-content:center;gap:4%}
+.plate .rg b{font-weight:600;font-size:10.5cqw;line-height:1}
+.plate .rg small{display:flex;align-items:center;gap:6px;font:700 2.8cqw/1 var(--t);letter-spacing:.06em}
+.flag{width:1.9em;height:1.2em;border:1px solid #0b0b0b;background:linear-gradient(#fff 33.3%,var(--blue) 0 66.6%,var(--red) 0)}
+.plate:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.75) 45%,transparent 60%);transform:translateX(-100%);animation:shine 6s ease-in-out 1.2s infinite}
+@keyframes shine{0%,70%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.score{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 18px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px 22px;width:min(100%,420px);margin-top:14px}
+.score strong{grid-row:span 2;font:700 64px/.9 var(--d);color:var(--y)}
+.stars{--p:92%;width:120px;height:20px;background:linear-gradient(90deg,var(--y) var(--p),rgba(255,255,255,.2) 0);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20'%3E%3Cg%3E%3Cpath d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(24)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(48)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(72)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(96)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3C/g%3E%3C/svg%3E") 0 0/100% 100%;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20'%3E%3Cg%3E%3Cpath d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(24)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(48)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(72)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3Cpath transform='translate(96)' d='M10 1l2.7 5.6 6.1.9-4.4 4.3 1 6.1L10 15l-5.4 2.9 1-6.1L1.2 7.5l6.1-.9z'/%3E%3C/g%3E%3C/svg%3E") 0 0/100% 100%}
+.score p{font-size:14px;color:#c9cbd1;line-height:1.4}
+/* sections */
+section{padding:clamp(72px,10vw,140px) 0}
+.kicker{display:flex;align-items:center;gap:14px;color:var(--mute);margin-bottom:18px}
+.kicker:before{content:"";width:46px;height:6px;background:repeating-linear-gradient(90deg,var(--y) 0 14px,transparent 14px 22px)}
+h2{font:700 clamp(40px,6vw,88px)/.92 var(--d);text-transform:uppercase;letter-spacing:-.005em;max-width:14em}
+h3{font:600 clamp(22px,2vw,28px)/1.15 var(--d);text-transform:uppercase;letter-spacing:.01em}
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(16px,2vw,24px);margin-top:clamp(36px,5vw,64px)}
+.card{border-radius:22px;padding:clamp(24px,3vw,40px);background:#fff;border:1px solid var(--line);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(0,0,0,.35)}
+.card p{color:var(--mute);margin-top:12px;max-width:30em}
+.card .mono{color:var(--mute)}
+.big{grid-row:span 3;background:var(--ink);color:#fff;border:0;display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:420px;position:relative;overflow:hidden}
+.big p{color:#c9cbd1}
+.big h3{font-size:clamp(34px,4vw,60px);line-height:.95;margin-top:14px}
+.big .mono{color:var(--y)}
+.big>*{position:relative;z-index:1}
+.big svg.odo{z-index:0;pointer-events:none;position:absolute;right:-60px;bottom:-60px;width:320px;opacity:.9}
+.side{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 18px;align-items:start}
+.side .ix{font:700 44px/1 var(--d);color:var(--y);-webkit-text-stroke:1px var(--ink);grid-row:span 2}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pay span{font-size:14px;border:1px solid var(--line);border-radius:99px;padding:6px 12px;background:var(--paper)}
+/* praise */
+.praise{background:var(--plate);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pr{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.pr .sticky{position:sticky;top:110px}
+.rate{display:flex;align-items:flex-end;gap:18px;margin-top:36px}
+.rate b{font:700 clamp(96px,12vw,170px)/.8 var(--d)}
+.rate span{color:var(--mute);font-size:15px;line-height:1.4;padding-bottom:6px}
+.rate .stars{background:linear-gradient(90deg,var(--ink) var(--p),#cfcdc4 0);margin-bottom:8px}
+.ol{list-style:none;counter-reset:k}
+.ol li{counter-increment:k;display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:34px 0;border-top:2px solid var(--ink)}
+.ol li:last-child{border-bottom:2px solid var(--ink)}
+.ol li:before{content:"0" counter(k);font:600 15px/1.6 var(--m);color:var(--mute)}
+.ol h3{font-size:clamp(26px,2.6vw,38px)}
+.ol p{margin-top:10px;color:#3c3e44;max-width:36em}
+/* quiz */
+.qz{background:var(--asph);color:#fff}
+.qz .kicker{color:#a9acb3}
+.qz-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,56px);margin-top:clamp(36px,5vw,60px);align-items:start}
+.qz-intro{color:#c9cbd1;max-width:36em;margin-top:18px}
+fieldset{border:0;padding:26px 0;border-top:1px solid rgba(255,255,255,.12)}
+legend{display:flex;gap:14px;align-items:baseline;font:600 22px/1.2 var(--d);text-transform:uppercase;letter-spacing:.02em;margin-bottom:16px;padding:0}
+legend .mono{color:var(--y);font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chips span{display:flex;align-items:center;min-height:46px;padding:0 18px;border-radius:12px;border:1.5px solid rgba(255,255,255,.2);font-size:15px;font-weight:500;transition:background .2s,border-color .2s,color .2s;user-select:none}
+.chips label:hover span{border-color:rgba(255,255,255,.55)}
+.chips input:checked+span{background:var(--y);border-color:var(--y);color:var(--ink)}
+.chips input:focus-visible+span{outline:3px solid var(--y);outline-offset:3px}
+.odo-out{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.digits{display:inline-flex;gap:3px;font:700 clamp(26px,3.4vw,40px)/1 var(--m)}
+.digits i{font-style:normal;background:#0c0d0f;border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:8px 6px;min-width:1ch;text-align:center;box-shadow:inset 0 -12px 16px -10px rgba(255,255,255,.08)}
+.digits i.sp{background:none;border:0;box-shadow:none;padding:8px 1px;min-width:.4ch}
+.odo-out small{color:#a9acb3;font-size:15px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;margin-top:14px;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:8px;background:linear-gradient(90deg,var(--y) var(--v,30%),rgba(255,255,255,.15) 0)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:6px solid var(--y);margin-top:-11px;box-shadow:0 4px 12px rgba(0,0,0,.5)}
+input[type=range]::-moz-range-track{height:8px;border-radius:8px;background:rgba(255,255,255,.15)}
+input[type=range]::-moz-range-progress{height:8px;border-radius:8px;background:var(--y)}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:6px solid var(--y)}
+.scale{display:flex;justify-content:space-between;color:#8d9097;font:500 12px/1 var(--m)}
+.name{display:grid;gap:8px;font-size:15px;color:#c9cbd1}
+.name input{min-height:52px;border-radius:12px;border:1.5px solid rgba(255,255,255,.2);background:#111316;color:#fff;font:500 17px var(--t);padding:0 16px;width:100%;max-width:420px}
+.name input:focus{border-color:var(--y);outline:0}
+.ticket{position:sticky;top:96px;background:var(--plate);color:var(--ink);border-radius:22px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.ticket header{background:var(--y);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.ticket header b{font:700 24px/1 var(--d);text-transform:uppercase}
+.ticket dl{padding:12px 24px 4px}
+.ticket dl div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.ticket dt{color:var(--mute);font:500 11px/1.9 var(--m);letter-spacing:.1em;text-transform:uppercase}
+.ticket dd{font-weight:600;overflow-wrap:anywhere}
+.ticket dd.e{color:#9a9ca2;font-weight:400}
+.ticket .go{padding:18px 24px 24px;display:grid;gap:10px}
+.ticket .go .btn{width:100%}
+.ticket .go p{font-size:13px;color:var(--mute);text-align:center}
+/* steps */
+.km{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:clamp(40px,6vw,72px);position:relative}
+.km:before{content:"";position:absolute;left:0;right:0;top:27px;height:6px;background:repeating-linear-gradient(90deg,var(--ink) 0 26px,transparent 26px 40px)}
+.km li{list-style:none;position:relative;padding-right:24px}
+.km .post{width:60px;height:60px;border-radius:14px;background:var(--y);border:3px solid var(--ink);display:grid;place-items:center;font:700 26px/1 var(--d);position:relative;transition:transform .3s}
+.km li:hover .post{transform:translateY(-6px) rotate(-4deg)}
+.km h3{margin-top:22px;font-size:24px}
+.km p{color:var(--mute);margin-top:8px;font-size:15px}
+.note{margin-top:36px;color:var(--mute);font-size:14px}
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,3vw,40px);margin-top:clamp(36px,5vw,60px)}
+.info{display:grid;gap:0;align-content:start}
+.info>div{padding:22px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px}
+.info dt{color:var(--mute)}
+.info dd a{text-decoration:none;border-bottom:1px solid var(--line)}.info dd a:hover{border-color:var(--ink)}
+.info dd{font-size:18px;font-weight:500}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.links a{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:12px;border:1.5px solid var(--ink);text-decoration:none;font-weight:600;font-size:15px;transition:background .2s,color .2s}
+.links a:hover{background:var(--ink);color:#fff}
+.map{border-radius:22px;overflow:hidden;min-height:440px;background:#ddd;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block;filter:grayscale(.35)}
+/* final */
+.fin{background:var(--y);padding:clamp(64px,9vw,120px) 0}
+.fin .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end}
+.fin h2{max-width:12em}
+.fin p{margin-top:18px;font-size:19px;max-width:30em}
+.fin .cta{margin-top:0;flex-direction:column}
+.ft{background:var(--ink);color:#9a9ca2;font-size:14px;padding:28px 0 100px}
+.ft .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;display:none;align-items:center;gap:10px;min-height:56px;padding:0 22px;border-radius:99px;background:var(--y);color:var(--ink);font-weight:700;text-decoration:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.55)}
+.fab svg{width:20px;height:20px}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){.nav{display:none}.hd .tel{margin-left:auto}.km{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:40px}.km:before{display:none}}
+@media (max-width:900px){
+.hero .wrap{grid-template-columns:minmax(0,1fr)}
+.stage{justify-items:start}
+.plate{width:min(100%,440px);transform:rotate(-2deg)}
+.svc,.pr,.qz-grid,.ct{grid-template-columns:minmax(0,1fr)}
+.big{grid-row:auto;min-height:340px}
+.pr .sticky,.ticket{position:static}
+.fin .wrap{grid-template-columns:minmax(0,1fr)}
+.fin .cta{flex-direction:row}
+}
+@media (max-width:640px){
+body{font-size:16px}
+h1{font-size:24vw}
+.plate{width:92%}
+.hd .wrap{height:58px}.hd .tel{display:none}
+.cta .btn{flex:1 1 100%}
+.road{width:90%;right:-45%}
+.score{width:100%}
+.km{grid-template-columns:minmax(0,1fr);row-gap:0}
+.km li{display:grid;grid-template-columns:60px minmax(0,1fr);gap:4px 18px;padding:0 0 28px;position:relative}
+.km li:not(:last-child):after{content:"";position:absolute;left:27px;top:64px;bottom:4px;width:6px;background:repeating-linear-gradient(180deg,var(--ink) 0 14px,transparent 14px 24px)}
+.km .post{grid-row:span 2}.km h3{margin-top:4px}.km p{margin-top:0}
+.info>div{grid-template-columns:minmax(0,1fr);gap:4px}
+.map,.map iframe{min-height:340px}
+.ticket dl div{grid-template-columns:84px minmax(0,1fr)}
+.fab{display:inline-flex}
+.fin .cta{flex-direction:column}
+.big svg.odo{width:180px;right:-56px;top:-56px;bottom:auto;opacity:.45}
+}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="hd"><div class="wrap">
+<a class="logo" href="#top" aria-label="Выбор Авто — наверх"><span class="mini"><b>ВЫБОР</b><i>34</i></span><span>Авто</span></a>
+<nav class="nav" aria-label="Разделы"><a href="#svc">Что делаем</a><a href="#praise">Отзывы</a><a href="#quiz">Подбор</a><a href="#how">Как купить</a><a href="#contacts">Контакты</a></nav>
+<a class="tel" href="tel:+79610673459">+7 961 067-34-59</a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="road" aria-hidden="true"></div>
+<div class="wrap">
+<div>
+<div class="eyebrow"><span class="mono">Волгоград · регион 34</span><span>Автосалон автомобилей с пробегом</span></div>
+<h1>Выбор<em>Авто</em></h1>
+<p class="lead">Подберём машину с пробегом под ваш бюджет и задачу, покажем на площадке и оформим сделку вместе с ОСАГО. <b>В отзывах нас называют честным автосалоном города.</b></p>
+<div class="cta">
+<a class="btn btn-y" href="#quiz">Подобрать автомобиль <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="btn btn-wa" href="https://wa.me/79610673459?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%20%D0%B2%20%D0%92%D1%8B%D0%B1%D0%BE%D1%80%20%D0%90%D0%B2%D1%82%D0%BE." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Написать в WhatsApp</a>
+</div>
+<div class="sub">
+<a href="tel:+79610673459">Позвонить</a>
+<a href="https://yandex.ru/maps/?rtext=~48.685834,44.450807" target="_blank" rel="noopener">Маршрут: Университетский пр., 2/2</a>
+<span data-status></span>
+</div>
+</div>
+<div class="stage" data-r>
+<div class="plate" role="img" aria-label="Номерной знак ВЫБОР, регион 34"><div class="n">ВЫБОР</div><div class="rg"><b>34</b><small>RUS <span class="flag"></span></small></div></div>
+<div class="score"><strong>4,6</strong><span class="stars" style="--p:92%" aria-hidden="true"></span><p>рейтинг в 2ГИС · 47 отзывов от тех, кто уже купил</p></div>
+</div>
+</div>
+</section>
+
+<section id="svc"><div class="wrap">
+<div class="kicker mono">01 · Что мы делаем</div>
+<h2 data-r>Машина с пробегом без лотереи</h2>
+<div class="svc">
+<article class="card big" data-r>
+<div><span class="mono">Основное</span><h3>Продажа автомобилей с пробегом</h3><p>Большой выбор машин на площадке на Университетском проспекте. Приезжайте посмотреть вживую или напишите, что ищете, — расскажем, что есть сейчас.</p></div>
+<a class="btn btn-y" href="#quiz" style="align-self:flex-start">Рассказать, что ищу</a>
+<svg class="odo" viewBox="0 0 200 200" fill="none" aria-hidden="true"><circle cx="100" cy="100" r="86" stroke="rgba(255,255,255,.12)" stroke-width="14" stroke-dasharray="4 10"/><path d="M30 140A80 80 0 1 1 170 140" stroke="#f5c518" stroke-width="6" stroke-linecap="round"/><path d="M100 100L150 62" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="100" cy="100" r="10" fill="#fff"/></svg>
+</article>
+<article class="card side" data-r><span class="ix">А</span><h3>Подбор под задачу</h3><p>Менеджер сориентирует по бюджету, кузову и марке и ответит на вопросы, прежде чем вы приедете.</p></article>
+<article class="card side" data-r><span class="ix">Б</span><h3>Оформление и ОСАГО</h3><p>Сделку оформляем на месте, полис ОСАГО можно сделать здесь же — уезжаете уже на своей машине.</p></article>
+<article class="card side" data-r><span class="ix">В</span><div style="grid-column:2"><h3>Как удобно платить</h3><div class="pay"><span>Наличные</span><span>Карта</span><span>Через банк</span><span>QR-код</span></div></div></article>
+</div>
+</div></section>
+
+<section class="praise" id="praise"><div class="wrap pr">
+<div class="sticky">
+<div class="kicker mono">02 · За что хвалят</div>
+<h2 data-r>Говорят те, кто уже за рулём</h2>
+<div class="rate" data-r><b>4,6</b><span><span class="stars" style="--p:92%;display:block" aria-hidden="true"></span>47 отзывов<br>в 2ГИС</span></div>
+</div>
+<ol class="ol">
+<li data-r><div><h3>Честно</h3><p>Покупатели называют «Выбор Авто» самым честным автосалоном Волгограда и советуют его знакомым как проверенное место для покупки машины с пробегом.</p></div></li>
+<li data-r><div><h3>Алексей и Данил</h3><p>Менеджеров благодарят по именам: грамотно подсказали с выбором, ответили на все вопросы и провели сделку добросовестно.</p></div></li>
+<li data-r><div><h3>Выбор и сервис</h3><p>Пишут про большой выбор машин и сервис, которого не ожидали: заехали мимоходом — уехали с покупкой и не пожалели.</p></div></li>
+</ol>
+</div></section>
+
+<section class="qz" id="quiz"><div class="wrap">
+<div class="kicker mono">03 · Подбор за минуту</div>
+<h2 data-r>Соберите заявку — пришлём варианты</h2>
+<p class="qz-intro">Отметьте, что важно. Справа сразу собирается карточка, её можно отправить менеджеру в WhatsApp одним нажатием.</p>
+<div class="qz-grid">
+<form id="q" onsubmit="return false">
+<fieldset><legend><span class="mono">1/7</span>Бюджет</legend>
+<div class="odo-out"><span class="digits" id="dg" aria-hidden="true"></span><small>₽, до</small></div>
+<input type="range" id="bud" min="300000" max="8000000" step="100000" value="1500000" aria-label="Бюджет, рублей">
+<div class="scale"><span>300 тыс.</span><span>8 млн</span></div>
+<div class="chips" style="margin-top:14px"><label><input type="checkbox" id="nob"><span>Пока не определился</span></label></div>
+</fieldset>
+<fieldset><legend><span class="mono">2/7</span>Кузов</legend><div class="chips" data-k="body" data-multi>
+<label><input type="checkbox" value="седан"><span>Седан</span></label><label><input type="checkbox" value="хэтчбек"><span>Хэтчбек</span></label><label><input type="checkbox" value="универсал"><span>Универсал</span></label><label><input type="checkbox" value="кроссовер"><span>Кроссовер</span></label><label><input type="checkbox" value="внедорожник"><span>Внедорожник</span></label><label><input type="checkbox" value="минивэн"><span>Минивэн</span></label><label><input type="checkbox" value="пикап"><span>Пикап</span></label></div></fieldset>
+<fieldset><legend><span class="mono">3/7</span>Коробка</legend><div class="chips" data-k="gear">
+<label><input type="radio" name="gear" value="автомат"><span>Автомат</span></label><label><input type="radio" name="gear" value="механика"><span>Механика</span></label><label><input type="radio" name="gear" value="не важно"><span>Не важно</span></label></div></fieldset>
+<fieldset><legend><span class="mono">4/7</span>Марка</legend><div class="chips" data-k="brand" data-multi>
+<label><input type="checkbox" value="Audi"><span>Audi</span></label><label><input type="checkbox" value="BMW"><span>BMW</span></label><label><input type="checkbox" value="BYD"><span>BYD</span></label><label><input type="checkbox" value="Cadillac"><span>Cadillac</span></label><label><input type="checkbox" value="Changan"><span>Changan</span></label><label><input type="checkbox" value="Chery"><span>Chery</span></label><label><input type="checkbox" value="Chevrolet"><span>Chevrolet</span></label><label><input type="checkbox" value="Chrysler"><span>Chrysler</span></label><label><input type="checkbox" value="Acura"><span>Acura</span></label><label><input type="checkbox" value="Brilliance"><span>Brilliance</span></label><label><input type="checkbox" value="другая марка"><span>Другая</span></label><label><input type="checkbox" value="любая, главное состояние"><span>Не важно</span></label></div></fieldset>
+<fieldset><legend><span class="mono">5/7</span>Оплата</legend><div class="chips" data-k="pay">
+<label><input type="radio" name="pay" value="наличные"><span>Наличные</span></label><label><input type="radio" name="pay" value="карта"><span>Карта</span></label><label><input type="radio" name="pay" value="через банк"><span>Через банк</span></label><label><input type="radio" name="pay" value="QR-код"><span>QR-код</span></label></div></fieldset>
+<fieldset><legend><span class="mono">6/7</span>Когда хотите купить</legend><div class="chips" data-k="when">
+<label><input type="radio" name="when" value="на этой неделе"><span>На этой неделе</span></label><label><input type="radio" name="when" value="в течение месяца"><span>В течение месяца</span></label><label><input type="radio" name="when" value="пока присматриваюсь"><span>Присматриваюсь</span></label></div>
+<div class="chips" style="margin-top:12px"><label><input type="checkbox" id="osago"><span>Оформить ОСАГО вместе с покупкой</span></label></div></fieldset>
+<fieldset><legend><span class="mono">7/7</span>Как к вам обращаться</legend><label class="name">Имя, необязательно<input id="nm" type="text" autocomplete="given-name" maxlength="40" placeholder="Например, Сергей"></label></fieldset>
+</form>
+<aside class="ticket" aria-live="polite">
+<header><b>Ваш выбор</b><span class="mini"><b>ЗАЯВКА</b><i>34</i></span></header>
+<dl>
+<div><dt>Бюджет</dt><dd id="o-bud"></dd></div>
+<div><dt>Кузов</dt><dd id="o-body"></dd></div>
+<div><dt>Коробка</dt><dd id="o-gear"></dd></div>
+<div><dt>Марка</dt><dd id="o-brand"></dd></div>
+<div><dt>Оплата</dt><dd id="o-pay"></dd></div>
+<div><dt>Когда</dt><dd id="o-when"></dd></div>
+</dl>
+<div class="go"><a class="btn btn-wa" id="send" href="https://wa.me/79610673459" target="_blank" rel="noopener">Отправить в WhatsApp</a><p>Откроется чат с готовым текстом — останется нажать «отправить»</p></div>
+</aside>
+</div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<div class="kicker mono">04 · Как купить</div>
+<h2 data-r>От заявки до ключей</h2>
+<ol class="km">
+<li data-r><span class="post">1</span><h3>Заявка</h3><p>Звонок, WhatsApp или карточка подбора на этой странице.</p></li>
+<li data-r><span class="post">2</span><h3>Варианты</h3><p>Менеджер подберёт машины под бюджет и ответит на вопросы.</p></li>
+<li data-r><span class="post">3</span><h3>Осмотр</h3><p>Приезжаете на Университетский проспект и смотрите машину вживую.</p></li>
+<li data-r><span class="post">4</span><h3>Сделка</h3><p>Оформляем документы на месте, при желании — сразу ОСАГО.</p></li>
+<li data-r><span class="post">5</span><h3>Ключи</h3><p>Оплата удобным способом — и вы уезжаете на своей машине.</p></li>
+</ol>
+<p class="note">Общий порядок покупки. Детали по конкретной машине уточняйте у менеджера.</p>
+</div></section>
+
+<section id="contacts" style="padding-top:0"><div class="wrap">
+<div class="kicker mono">05 · Контакты</div>
+<h2 data-r>Университетский, 2/2</h2>
+<div class="ct">
+<div>
+<dl class="info">
+<div><dt>Адрес</dt><dd>Волгоград, Университетский проспект, 2/2</dd></div>
+<div><dt>Часы</dt><dd>Ежедневно 8:00–20:00<br><span data-status style="font-size:15px;font-weight:400"></span></dd></div>
+<div><dt>Телефоны</dt><dd><a href="tel:+79610673459">+7 961 067-34-59</a><br><a href="tel:+79610634701">+7 961 063-47-01</a></dd></div>
+<div><dt>Оплата</dt><dd>Наличные, карта, через банк, QR-код</dd></div>
+</dl>
+<div class="links"><a href="https://wa.me/79610673459" target="_blank" rel="noopener">WhatsApp</a><a href="https://vk.ru/clubvyboravto34" target="_blank" rel="noopener">ВКонтакте</a><a href="https://2gis.ru/volgograd/firm/70000001110282739" target="_blank" rel="noopener">2ГИС</a><a href="https://yandex.ru/maps/?rtext=~48.685834,44.450807" target="_blank" rel="noopener">Маршрут</a></div>
+</div>
+<div class="map"><iframe loading="lazy" title="Выбор Авто на карте" src="https://yandex.ru/map-widget/v1/?ll=44.450807,48.685834&z=16&pt=44.450807,48.685834,pm2rdm"></iframe></div>
+</div>
+</div></section>
+
+<section class="fin"><div class="wrap">
+<div><h2 data-r>Ваша следующая машина уже где-то рядом</h2><p>Напишите, что ищете, — менеджер подскажет, что есть на площадке, и пригласит посмотреть.</p></div>
+<div class="cta"><a class="btn btn-d" href="#quiz">Подобрать автомобиль</a><a class="btn btn-d" href="tel:+79610673459">Позвонить: +7 961 067-34-59</a></div>
+</div></section>
+</main>
+<footer class="ft"><div class="wrap"><span>Выбор Авто · Волгоград, Университетский проспект, 2/2</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+<a class="fab" href="tel:+79610673459"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Позвонить</a>
+
+<script>
+(function(){
+var q=document.getElementById('q'),b=document.getElementById('bud'),nob=document.getElementById('nob'),dg=document.getElementById('dg'),send=document.getElementById('send');
+function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
+function vals(k){return [].map.call(document.querySelectorAll('[data-k="'+k+'"] input:checked'),function(i){return i.value})}
+function set(id,v,empty){var e=document.getElementById(id);e.textContent=v||empty;e.className=v?'':'e'}
+function upd(){
+var v=+b.value;b.style.setProperty('--v',((v-b.min)/(b.max-b.min)*100)+'%');
+var s=fmt(v),h='';for(var i=0;i<s.length;i++){h+=s[i]===' '?'<i class="sp"> </i>':'<i>'+s[i]+'</i>'}dg.innerHTML=h;
+dg.style.opacity=nob.checked?.35:1;b.disabled=nob.checked;
+var bud=nob.checked?'пока не определился':'до '+s+' ₽',body=vals('body').join(', '),gear=vals('gear').join(''),brand=vals('brand').join(', '),pay=vals('pay').join(''),when=vals('when').join(''),os=document.getElementById('osago').checked,nm=document.getElementById('nm').value.trim();
+set('o-bud',bud);set('o-body',body,'любой');set('o-gear',gear,'не выбрано');set('o-brand',brand,'любая');set('o-pay',pay,'обсудим');set('o-when',(when||'')+(os?(when?', ':'')+'+ ОСАГО':''),'не выбрано');
+var t='Здравствуйте! Хочу подобрать автомобиль с пробегом в «Выбор Авто».\nБюджет: '+bud+'\nКузов: '+(body||'любой')+'\nКоробка: '+(gear||'не важно')+'\nМарка: '+(brand||'любая')+'\nОплата: '+(pay||'обсудим')+'\nКогда: '+(when||'не решил')+(os?'\nНужно ОСАГО вместе с покупкой':'')+(nm?'\nМеня зовут '+nm:'');
+send.href='https://wa.me/79610673459?text='+encodeURIComponent(t);
+}
+q.addEventListener('input',upd);q.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["08:00","20:00"]],"tue":[["08:00","20:00"]],"wed":[["08:00","20:00"]],"thu":[["08:00","20:00"]],"fri":[["08:00","20:00"]],"sat":[["08:00","20:00"]],"sun":[["08:00","20:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

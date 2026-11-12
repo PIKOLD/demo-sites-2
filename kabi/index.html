@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Каби — кухни и мебель на заказ в Красноярске</title><meta property="og:type" content="website"><meta property="og:title" content="Каби — кухни и мебель на заказ в Красноярске"><meta property="og:description" content="Каби: кухни, мебель для ванных и корпусная мебель на заказ в Красноярске. Замер, проект, изготовление, доставка и монтаж. Новосибирская, 7."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/kabi/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Каби: кухни, мебель для ванных и корпусная мебель на заказ в Красноярске. Замер, проект, изготовление, доставка и монтаж. Новосибирская, 7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{
+  --bg:#f2f0eb; --paper:#faf9f6; --ink:#202326; --ink2:#4b5054; --mute:#6b7074;
+  --sage:#7f9384; --sage-d:#56685b; --sage-l:#dfe5de; --oak:#b4834f; --oak-l:#e9d7c1;
+  --led:#ffd596; --line:#d6d3cb; --graph:#2a2e31;
+  --r:6px; --wrap:1320px;
+  --f:"Manrope",system-ui,sans-serif; --m:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--f);color:var(--ink);background:var(--bg);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--oak);outline-offset:3px;border-radius:4px}
+.wrap{width:min(100% - 40px,var(--wrap));margin-inline:auto}
+.mono{font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.demo{background:var(--graph);color:#cfd3d0;font-size:13px;text-align:center;padding:7px 16px}
+/* шапка */
+.top{position:sticky;top:0;z-index:30;background:rgba(242,240,235,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:62px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:22px;letter-spacing:.02em}
+.logo i{display:block;width:26px;height:26px;border:2px solid var(--ink);border-radius:3px;position:relative}
+.logo i::after{content:"";position:absolute;left:3px;right:3px;bottom:5px;height:2px;background:var(--oak);box-shadow:0 0 8px var(--led)}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:15px}
+.nav a{text-decoration:none;color:var(--ink2)}
+.nav a:hover{color:var(--ink)}
+.top .tel{font-weight:700;text-decoration:none;white-space:nowrap}
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:var(--r);font:600 16px/1 var(--f);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s,color .2s}
+.btn:active{transform:translateY(1px)}
+.b-ink{background:var(--ink);color:#fff}
+.b-ink:hover{background:#000;box-shadow:0 10px 24px -10px rgba(0,0,0,.5)}
+.b-wa{background:var(--sage-d);color:#fff}
+.b-wa:hover{background:#465749}
+.b-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.b-line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+/* hero */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(40px,6vw,80px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-weight:300;font-size:clamp(40px,6.2vw,92px);line-height:.98;letter-spacing:-.035em;margin:18px 0 0}
+.hero h1 b{font-weight:800;display:block}
+.led{position:relative;height:3px;margin:26px 0 24px;max-width:520px;background:var(--line);border-radius:3px;overflow:hidden}
+.led::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--oak),var(--led));box-shadow:0 0 18px 2px var(--led);transform-origin:left;animation:led 1.6s .3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes led{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.lead{font-size:clamp(17px,1.4vw,20px);color:var(--ink2);max-width:560px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin:22px 0 28px;font-size:15px;color:var(--ink2)}
+.meta span{display:flex;align-items:center;gap:8px}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#b9b6ad;display:inline-block}
+[data-status].is-open::before{background:#4c9a63;box-shadow:0 0 0 4px rgba(76,154,99,.18)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta2{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:16px;font-size:15px}
+.cta2 a{color:var(--ink2);text-underline-offset:4px}
+.hero-pic{position:relative}
+.hero-pic img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 40%;border-radius:var(--r)}
+.dim{position:absolute;font-family:var(--m);font-size:11px;color:var(--ink2);letter-spacing:.06em}
+.dim-v{left:-30px;top:0;bottom:0;width:14px;border-left:1px solid var(--ink2)}
+.dim-v::before,.dim-v::after{content:"";position:absolute;left:-5px;width:9px;border-top:1px solid var(--ink2)}
+.dim-v::before{top:0}.dim-v::after{bottom:0}
+.dim-v span{position:absolute;top:50%;left:-2px;transform:translate(-50%,-50%) rotate(-90deg);background:var(--bg);padding:0 6px;white-space:nowrap}
+.tag{position:absolute;right:-14px;bottom:28px;background:var(--paper);border-radius:var(--r);padding:16px 18px;box-shadow:0 20px 40px -20px rgba(32,35,38,.35);max-width:230px}
+.tag strong{display:block;font-size:34px;line-height:1;font-weight:800}
+.tag small{font-size:13px;color:var(--ink2);line-height:1.4;display:block;margin-top:6px}
+/* факты */
+.facts{border-block:1px solid var(--line);background:var(--paper)}
+.facts ul{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.facts li{padding:22px 20px;border-left:1px solid var(--line);font-size:15px;color:var(--ink2)}
+.facts li:first-child{border-left:0;padding-left:0}
+.facts b{display:block;color:var(--ink);font-size:17px}
+/* секции */
+section{padding:clamp(64px,9vw,128px) 0}
+.h2{font-weight:300;font-size:clamp(32px,4.4vw,62px);line-height:1.04;letter-spacing:-.03em;max-width:15ch}
+.h2 b{font-weight:800}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(32px,4vw,56px);flex-wrap:wrap}
+.head p{max-width:420px;color:var(--ink2)}
+/* услуги */
+.svc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px}
+.card{position:relative;background:var(--paper);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -30px rgba(32,35,38,.45)}
+.card .ph{overflow:hidden}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover img{transform:scale(1.04)}
+.card .tx{padding:22px 24px 26px}
+.card h3{font-size:clamp(22px,2vw,28px);letter-spacing:-.02em;line-height:1.15;margin:8px 0 8px}
+.card p{color:var(--ink2);font-size:15.5px}
+.c-kit{grid-column:span 7;grid-row:span 2}
+.c-kit .ph{aspect-ratio:4/3}
+.c-bath{grid-column:span 5}
+.c-bath .ph{aspect-ratio:16/10}
+.c-bath img{object-position:50% 35%}
+.c-case{grid-column:span 5;background:var(--sage-l);flex-direction:row}
+.c-case .ph{flex:0 0 42%}
+.c-case .tx{align-self:end}
+
+.c-off{grid-column:span 12;background:var(--graph);color:#eceae4;flex-direction:row;align-items:center;justify-content:space-between;gap:24px}
+.c-off .tx{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 28px;align-items:baseline}
+.c-off .tx .mono{grid-row:span 2}
+.c-off h3{margin:0}
+.c-off .btn{margin:0 24px 0 0;flex:none;border-color:#eceae4;color:#eceae4}
+.c-off .btn:hover{background:#eceae4;color:var(--ink)}
+.c-off p{color:#b9bcb7}
+.c-off .mono{color:#9aa39b}
+.card .lnk{margin-top:14px;font-weight:700;font-size:15px;text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+.card .lnk:hover{color:var(--sage-d)}
+/* лента работ */
+.works{background:var(--graph);color:#eceae4}
+.works .head p{color:#b9bcb7}
+.works .h2{color:#fff}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px max(20px,calc((100vw - var(--wrap))/2)) 24px;scrollbar-width:thin;scrollbar-color:var(--oak) transparent;cursor:grab}
+.rail::-webkit-scrollbar{height:4px}.rail::-webkit-scrollbar-thumb{background:var(--oak)}
+.rail figure{flex:none;scroll-snap-align:start;position:relative}
+.rail img{height:clamp(320px,52vh,480px);width:auto;border-radius:var(--r);object-fit:cover}
+.rail .w-l img{aspect-ratio:4/3}.rail .w-p img{aspect-ratio:3/4}
+.rail img.sm{height:min(375px,52vh)}
+.rail figcaption{font-family:var(--m);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9aa39b;margin-top:10px}
+.rail-ctl{display:flex;gap:8px}
+.rail-ctl button{width:48px;height:48px;border-radius:50%;border:1px solid #5a6062;background:transparent;color:#fff;cursor:pointer;font-size:20px;transition:background .2s,border-color .2s}
+.rail-ctl button:hover{background:var(--oak);border-color:var(--oak)}
+/* отзывы */
+.praise .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px)}
+.score{position:sticky;top:110px;align-self:start}
+.score .big{font-size:clamp(96px,12vw,170px);font-weight:800;line-height:.85;letter-spacing:-.05em}
+.score .big span{color:var(--oak)}
+.score p{margin-top:18px;color:var(--ink2);max-width:320px}
+.score a{font-weight:700}
+.pts{list-style:none;counter-reset:p}
+.pts li{counter-increment:p;padding:32px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px}
+.pts li:last-child{border-bottom:1px solid var(--line)}
+.pts li::before{content:"0" counter(p);font-family:var(--m);font-size:13px;color:var(--oak);padding-top:8px}
+.pts h3{font-size:clamp(21px,2vw,27px);line-height:1.2;letter-spacing:-.02em;margin-bottom:8px}
+.pts p{color:var(--ink2)}
+/* квиз */
+.quiz{background:var(--sage-l)}
+.qz{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.qform{background:var(--paper);border-radius:var(--r);padding:clamp(22px,3vw,40px)}
+fieldset{border:0;margin-bottom:26px}
+fieldset[hidden]{display:none}
+legend{font-weight:700;font-size:17px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid var(--line);border-radius:40px;font-size:15px;background:#fff;transition:border-color .2s,background .2s,color .2s;cursor:pointer}
+.chips label:hover span{border-color:var(--sage)}
+.chips input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.chips input:focus-visible+span{outline:2px solid var(--oak);outline-offset:2px}
+.range{display:flex;align-items:center;gap:16px}
+.range input{flex:1;accent-color:var(--sage-d);height:44px}
+.range output{font-family:var(--m);font-size:18px;min-width:76px;text-align:right}
+.plan{position:sticky;top:96px;background:var(--paper);border-radius:var(--r);padding:clamp(18px,2.4vw,32px)}
+#plan{width:100%;height:auto;display:block}
+.plan .mono{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.sum{margin-top:18px;font-size:15px;color:var(--ink2);border-top:1px dashed var(--line);padding-top:16px;min-height:96px}
+.sum b{color:var(--ink)}
+.plan .btn{width:100%;margin-top:18px}
+.note{font-size:13px;color:var(--mute);margin-top:10px}
+/* шаги */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;border-top:2px solid var(--ink);position:relative}
+.steps li{padding:26px 18px 0 0;position:relative}
+.steps li::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
+.steps li:last-child::before{background:var(--oak);border-color:var(--oak);box-shadow:0 0 12px var(--led)}
+.steps .mono{display:block;margin-bottom:8px}
+.steps h3{font-size:19px;line-height:1.25;margin-bottom:6px}
+.steps p{font-size:15px;color:var(--ink2)}
+/* контакты */
+.contact{background:var(--paper)}
+.ct{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,4vw,64px)}
+.ct dl{display:grid;gap:22px;margin:30px 0}
+.ct dt{font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.ct dd{font-size:19px;font-weight:500}
+.ct dd small{display:block;font-size:15px;color:var(--ink2);font-weight:400}
+.map{border-radius:var(--r);overflow:hidden;min-height:420px;background:var(--line)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+/* финал */
+.final{position:relative;color:#fff;padding:clamp(90px,14vw,190px) 0;overflow:hidden;background:var(--graph)}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38}
+.final::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(32,35,38,.92),rgba(32,35,38,.35))}
+.final .wrap{position:relative;z-index:1}
+.final h2{font-weight:300;font-size:clamp(36px,5.4vw,80px);line-height:1;letter-spacing:-.035em;max-width:13ch}
+.final h2 b{font-weight:800}
+.final p{margin:20px 0 30px;color:#d9dbd6;max-width:480px}
+.final .b-line{border-color:#fff;color:#fff}
+.final .b-line:hover{background:#fff;color:var(--ink)}
+footer{background:var(--graph);color:#9aa09c;font-size:14px;padding:26px 0 90px;border-top:1px solid #3a3f42}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;display:none;width:58px;height:58px;border-radius:50%;background:var(--ink);color:#fff;align-items:center;justify-content:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.55)}
+.fab svg{width:24px;height:24px}
+/* появления */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js [data-r]{opacity:1;transform:none}}
+/* адаптив */
+@media (max-width:1100px){
+  .nav{display:none}.top .tel{margin-left:auto}
+  .c-kit{grid-column:span 12;grid-row:auto}
+  .c-bath{grid-column:span 6}.c-case{grid-column:span 6;flex-direction:column}
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:40px}
+}
+@media (max-width:860px){
+  .hero .wrap,.praise .wrap,.qz,.ct{grid-template-columns:minmax(0,1fr)}
+  .hero-pic{max-width:520px;margin-left:30px}
+  .score,.plan{position:static}
+
+  .facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts li:nth-child(3){border-left:0;padding-left:0}
+  .facts li{border-top:1px solid var(--line)}.facts li:nth-child(-n+2){border-top:0}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{width:min(100% - 32px,var(--wrap))}
+  .top .tel{font-size:15px}
+  .hero h1{font-size:clamp(38px,11vw,52px)}
+  .cta .btn{flex:1 1 100%}
+  .hero-pic{margin-left:24px}
+  .dim-v{left:-24px}
+  .tag{right:10px;bottom:14px;max-width:200px;padding:12px 14px}
+  .tag strong{font-size:28px}
+  .c-bath,.c-case{grid-column:span 12}
+  .c-case .ph{aspect-ratio:16/10;flex:none}
+  .c-off{flex-direction:column;align-items:flex-start}.c-off .tx{grid-template-columns:minmax(0,1fr)}.c-off .btn{margin:0 24px 24px}
+  .final{padding:72px 0}.final img{height:min(100%,560px);bottom:auto}.final::after{background:linear-gradient(180deg,rgba(32,35,38,.55),rgba(32,35,38,.96) 70%)}
+  .rail{padding-inline:16px}
+  .rail img{height:340px}
+  .rail-ctl{display:none}
+  .pts li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .steps{grid-template-columns:minmax(0,1fr);border-top:0;border-left:2px solid var(--ink);row-gap:28px;padding-left:22px}
+  .steps li{padding:0}
+  .steps li::before{top:4px;left:-30px}
+  .facts li{padding:16px 12px 16px 0}
+  .facts li:nth-child(even){padding-left:12px}
+  .map,.map iframe{min-height:320px}
+  .fab{display:flex}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Каби — в начало"><i></i>Каби</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Что делаем</a><a href="#works">Работы</a><a href="#praise">Отзывы</a><a href="#calc">Расчёт</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="tel" href="tel:+79333200987">+7 933 320-09-87</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-top:clamp(28px,5vw,64px)">
+  <div class="wrap">
+    <div>
+      <span class="mono">Красноярск · мебель на заказ</span>
+      <h1>Кухни на заказ<b>по вашим стенам</b></h1>
+      <div class="led" aria-hidden="true"></div>
+      <p class="lead">Каби проектирует и делает кухни, мебель для ванных и шкафы под размеры вашей квартиры: замер, несколько вариантов проекта и цены, изготовление, доставка и монтаж.</p>
+      <div class="meta">
+        <span><span data-status></span></span>
+        <span>Новосибирская ул., 7 · 3 этаж, пом. 283</span>
+      </div>
+      <div class="cta">
+        <a class="btn b-ink" href="#calc">Рассчитать кухню
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn b-wa" href="https://wa.me/79333200987?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BA%D1%83%D1%85%D0%BD%D1%8E%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%2C%20%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80%3F" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+          Написать в WhatsApp</a>
+      </div>
+      <div class="cta2">
+        <a href="tel:+79333200987">Позвонить: +7 933 320-09-87</a>
+        <a href="https://yandex.ru/maps/?rtext=~56.017421,92.821307" target="_blank" rel="noopener">Маршрут до офиса</a>
+      </div>
+    </div>
+    <div class="hero-pic">
+      <div class="dim dim-v" aria-hidden="true"><span>до потолка</span></div>
+      <img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 960w" sizes="(max-width:860px) 90vw, 40vw" width="960" height="1280" alt="Угловая кухня Каби: шалфейно-зелёные фасады без ручек, пенал со встроенной техникой и подсветка рабочей зоны" fetchpriority="high">
+      <div class="tag"><strong>5,0</strong><small>средняя оценка по 77 отзывам в 2ГИС</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="wrap">
+    <ul>
+      <li><b>Кухни</b>прямые, угловые, до потолка</li>
+      <li><b>Ванные</b>тумбы, шкафы, столешницы</li>
+      <li><b>Доставка</b>и монтаж</li>
+      <li><b>Оплата</b>картой, наличными, по QR, через банк</li>
+    </ul>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head" data-r>
+      <h2 class="h2">Мебель, которая <b>встаёт на своё место</b></h2>
+      <p>Каждый предмет делают под конкретную комнату: от замера до установки. Основное — кухни, но к ребятам приходят и за ванной, и за шкафами.</p>
+    </div>
+    <div class="svc">
+      <article class="card c-kit" data-r>
+        <div class="ph"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1156w" sizes="(max-width:1100px) 92vw, 760px" loading="lazy" width="1156" height="868" alt="Угловая кухня: графитовый низ, верхние шкафы под дуб, подсветка столешницы"></div>
+        <div class="tx">
+          <span class="mono">01 · главное</span>
+          <h3>Кухни на заказ</h3>
+          <p>Прямые, угловые, П-образные, с островом и колоннами под технику. Фасады МДФ, встроенная техника, подсветка рабочей зоны, продуманное наполнение ящиков.</p>
+          <a class="lnk" href="#calc">Собрать свою кухню →</a>
+        </div>
+      </article>
+      <article class="card c-bath" data-r>
+        <div class="ph"><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 675w, img/p12.jpg 960w" sizes="(max-width:600px) 92vw, (max-width:1100px) 46vw, 540px" loading="lazy" width="960" height="1280" alt="Санузел с панелями и шкафом под дерево от пола до потолка"></div>
+        <div class="tx">
+          <span class="mono">02</span>
+          <h3>Мебель для ванных</h3>
+          <p>Встроенные шкафы, тумбы со столешницей, панели — под размеры санузла.</p>
+        </div>
+      </article>
+      <article class="card c-case" data-r>
+        <div class="ph"><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 675w, img/p6.jpg 960w" sizes="(max-width:600px) 92vw, (max-width:1100px) 46vw, 320px" loading="lazy" width="960" height="1280" alt="Выдвижной ящик кухни с отделкой под дуб" style="object-position:50% 70%"></div>
+        <div class="tx">
+          <span class="mono">03</span>
+          <h3>Корпусная мебель</h3>
+          <p>Шкафы и системы хранения под нишу и потолок.</p>
+        </div>
+      </article>
+      <article class="card c-off" data-r>
+        <div class="tx">
+          <span class="mono">04</span>
+          <h3>Офисная мебель</h3>
+          <p>Столы, стеллажи и шкафы для рабочих помещений.</p>
+        </div>
+        <a class="btn b-line" href="#calc">Обсудить проект</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="head" data-r>
+      <h2 class="h2">Кухни, которые <b>уже готовят</b></h2>
+      <div class="rail-ctl"><button type="button" data-dir="-1" aria-label="Листать назад">←</button><button type="button" data-dir="1" aria-label="Листать вперёд">→</button></div>
+    </div>
+  </div>
+  <div class="rail" data-qa-skip id="rail" tabindex="0" aria-label="Фотографии работ, листайте вбок">
+    <figure class="w-l"><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1280w" sizes="640px" loading="lazy" width="1280" height="960" alt="Светлая классическая кухня с филёнчатыми фасадами в загородном доме"><figcaption>Классика · дом</figcaption></figure>
+    <figure class="w-p"><img src="img/p1-m.jpg" sizes="360px" loading="lazy" width="675" height="900" alt="Кухня-гостиная с тёмно-зелёными фасадами до потолка"><figcaption>Кухня-гостиная</figcaption></figure>
+    <figure class="w-p"><img src="img/p7-m.jpg" sizes="360px" loading="lazy" width="675" height="900" alt="Светлая кухня с мраморным фартуком и латунными ручками"><figcaption>Мрамор и латунь</figcaption></figure>
+    <figure class="w-p"><img src="img/p11-m.jpg" sizes="360px" loading="lazy" width="675" height="900" alt="Кухня с закруглённой столешницей под мрамор"><figcaption>Радиусная столешница</figcaption></figure>
+    <figure class="w-l"><img src="img/p14-m.jpg" sizes="640px" loading="lazy" width="900" height="675" alt="Белая угловая кухня с витриной и фартуком под мрамор"><figcaption>Витрина и пенал</figcaption></figure>
+    <figure class="w-p"><img src="img/p10-m.jpg" sizes="360px" loading="lazy" width="506" height="900" alt="Прямая кухня с рейками на верхнем шкафу и подсветкой"><figcaption>Прямая · с подсветкой</figcaption></figure>
+    <figure class="w-p"><img src="img/p5-m.jpg" sizes="360px" loading="lazy" width="675" height="900" alt="Кухня с чёрной столешницей и фасадами под дерево"><figcaption>Чёрный камень и дерево</figcaption></figure>
+    <figure class="w-l"><img src="img/p4-m.jpg" sizes="500px" loading="lazy" width="900" height="675" class="sm" alt="Белая кухня с полуостровом и фартуком под мрамор"><figcaption>С полуостровом</figcaption></figure>
+    <figure class="w-l"><img src="img/p8-m.jpg" sizes="500px" loading="lazy" width="900" height="675" class="sm" alt="Графитовая кухня с островом под серый камень"><figcaption>Остров под камень</figcaption></figure>
+  </div>
+</section>
+
+<section class="praise" id="praise">
+  <div class="wrap">
+    <div class="score" data-r>
+      <span class="mono">Отзывы в 2ГИС</span>
+      <div class="big">5<span>,</span>0</div>
+      <p>Средняя оценка по 77 отзывам. Пересказываем, что пишут заказчики чаще всего. <a href="https://2gis.ru/krasnoyarsk/firm/70000001029809525" target="_blank" rel="noopener">Читать в 2ГИС</a></p>
+    </div>
+    <ol class="pts">
+      <li data-r><div><h3>Несколько вариантов цены и проекта ещё до заказа</h3><p>На старте предлагают разные варианты стоимости и проекты, в том числе удалённо. Заказчики удивляются, что хорошая кухня с МДФ, нормальной фурнитурой и подсветкой обошлась дешевле, чем пугали знакомые.</p></div></li>
+      <li data-r><div><h3>В срок, а бывает и раньше</h3><p>Дату доставки подстраивают под сложный график, договорённости выполняют. Установщиков отдельно хвалят за аккуратность: после монтажа не остаётся мусора.</p></div></li>
+      <li data-r><div><h3>К ним возвращаются</h3><p>Приходят по рекомендации знакомых и заказывают снова после следующего ремонта. Даже спустя несколько лет помогли с заменой сломавшейся детали в кухне.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="quiz" id="calc">
+  <div class="wrap">
+    <div class="head" data-r>
+      <h2 class="h2">Соберите кухню <b>на чертеже</b></h2>
+      <p>Отметьте, что хотите, — план справа меняется. Ответы уйдут в WhatsApp, а Каби предложит варианты проекта и цены после замера.</p>
+    </div>
+    <div class="qz">
+      <form class="qform" id="qf" onsubmit="return false">
+        <fieldset>
+          <legend>Что нужно сделать?</legend>
+          <div class="chips">
+            <label><input type="radio" name="what" value="Кухня" checked><span>Кухня</span></label>
+            <label><input type="radio" name="what" value="Мебель для ванной"><span>Мебель для ванной</span></label>
+            <label><input type="radio" name="what" value="Шкаф / корпусная мебель"><span>Шкаф</span></label>
+            <label><input type="radio" name="what" value="Офисная мебель"><span>Офис</span></label>
+          </div>
+        </fieldset>
+        <fieldset data-k>
+          <legend>Форма кухни</legend>
+          <div class="chips">
+            <label><input type="radio" name="shape" value="Прямая" checked><span>Прямая</span></label>
+            <label><input type="radio" name="shape" value="Угловая"><span>Угловая</span></label>
+            <label><input type="radio" name="shape" value="П-образная"><span>П-образная</span></label>
+            <label><input type="radio" name="shape" value="С островом"><span>С островом</span></label>
+          </div>
+        </fieldset>
+        <fieldset data-k>
+          <legend>Длина по главной стене</legend>
+          <div class="range"><input type="range" id="len" min="1.5" max="7" step="0.1" value="3.2" aria-label="Длина кухни, метров"><output id="lenOut">3,2 м</output></div>
+        </fieldset>
+        <fieldset data-k>
+          <legend>Фасады</legend>
+          <div class="chips">
+            <label><input type="radio" name="front" value="Однотонные матовые" checked><span>Однотонные матовые</span></label>
+            <label><input type="radio" name="front" value="Под дерево"><span>Под дерево</span></label>
+            <label><input type="radio" name="front" value="Комбинированные"><span>Цвет + дерево</span></label>
+            <label><input type="radio" name="front" value="Классика с филёнкой"><span>Классика</span></label>
+          </div>
+        </fieldset>
+        <fieldset data-k>
+          <legend>Что добавить</legend>
+          <div class="chips">
+            <label><input type="checkbox" name="opt" value="подсветка рабочей зоны" checked><span>Подсветка</span></label>
+            <label><input type="checkbox" name="opt" value="встроенная техника"><span>Встроенная техника</span></label>
+            <label><input type="checkbox" name="opt" value="шкафы до потолка"><span>До потолка</span></label>
+            <label><input type="checkbox" name="opt" value="столешница под камень/мрамор"><span>Столешница под камень</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Бюджет</legend>
+          <div class="chips">
+            <label><input type="radio" name="bud" value="хочу увидеть несколько вариантов цены" checked><span>Покажите варианты</span></label>
+            <label><input type="radio" name="bud" value="есть ориентир, обсудим"><span>Есть ориентир</span></label>
+          </div>
+        </fieldset>
+        <fieldset style="margin-bottom:0">
+          <legend>Размеры</legend>
+          <div class="chips">
+            <label><input type="radio" name="meas" value="нужен замер" checked><span>Нужен замер</span></label>
+            <label><input type="radio" name="meas" value="есть размеры/план, пришлю фото"><span>Пришлю план и фото</span></label>
+          </div>
+        </fieldset>
+      </form>
+      <aside class="plan" aria-live="polite">
+        <div class="mono"><span>План · вид сверху</span><span id="pLabel">Прямая</span></div>
+        <svg id="plan" viewBox="0 0 400 300" role="img" aria-label="Схема кухни вид сверху">
+          <defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#c9c5bb" stroke-width="2"/></pattern></defs>
+          <rect x="20" y="20" width="360" height="12" fill="url(#hatch)"/>
+          <rect x="20" y="20" width="12" height="260" fill="url(#hatch)"/>
+          <rect x="368" y="20" width="12" height="260" fill="url(#hatch)"/>
+          <g id="units"></g>
+          <g id="dims" font-family="JetBrains Mono, monospace" font-size="11" fill="#4b5054"></g>
+        </svg>
+        <div class="sum" id="sum"></div>
+        <a class="btn b-wa" id="send" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          Отправить в WhatsApp</a>
+        <p class="note">Это не расчёт цены: стоимость считают по вашему проекту и материалам.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="head" data-r>
+      <h2 class="h2">Как идёт <b>работа</b></h2>
+      <p>Общий порядок от заявки до готовой кухни. Сроки и детали обсуждаются под ваш проект.</p>
+    </div>
+    <ol class="steps" data-r>
+      <li><span class="mono">01</span><h3>Заявка</h3><p>Звонок, WhatsApp или визит в офис на Новосибирской.</p></li>
+      <li><span class="mono">02</span><h3>Замер</h3><p>Снимают размеры помещения, обсуждают розетки, технику, хранение.</p></li>
+      <li><span class="mono">03</span><h3>Проект</h3><p>Несколько вариантов планировки и цены, можно удалённо.</p></li>
+      <li><span class="mono">04</span><h3>Договор</h3><p>Фиксируют материалы, фурнитуру и дату.</p></li>
+      <li><span class="mono">05</span><h3>Изготовление</h3><p>Мебель делают под ваши размеры.</p></li>
+      <li><span class="mono">06</span><h3>Доставка и монтаж</h3><p>Привозят в удобный день, собирают и убирают за собой.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contacts">
+  <div class="wrap ct">
+    <div data-r>
+      <h2 class="h2">Офис <b>в Красноярске</b></h2>
+      <dl>
+        <div><dt>Адрес</dt><dd>Новосибирская улица, 7<small>3 этаж, помещение 283 · Красноярск</small></dd></div>
+        <div><dt>Часы</dt><dd>Пн–Пт 10:00–20:00<small>Сб, Вс — выходные · <span data-status></span></small></dd></div>
+        <div><dt>Телефон и WhatsApp</dt><dd><a href="tel:+79333200987">+7 933 320-09-87</a></dd></div>
+        <div><dt>ВКонтакте</dt><dd><a href="https://vk.ru/kuhnikrsk" target="_blank" rel="noopener">vk.ru/kuhnikrsk</a></dd></div>
+      </dl>
+      <div class="cta">
+        <a class="btn b-ink" href="https://yandex.ru/maps/?rtext=~56.017421,92.821307" target="_blank" rel="noopener">Построить маршрут</a>
+        <a class="btn b-line" href="tel:+79333200987">Позвонить</a>
+      </div>
+    </div>
+    <div class="map" data-r>
+      <iframe loading="lazy" title="Каби на карте" src="https://yandex.ru/map-widget/v1/?ll=92.821307,56.017421&z=16&pt=92.821307,56.017421,pm2rdm"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="img/p9-m.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1280w" sizes="(max-width:600px) 180vw, 100vw" loading="lazy" width="1280" height="960" alt="">
+  <div class="wrap" data-r>
+    <h2>Начните <b>с замера</b></h2>
+    <p>Напишите, какая у вас кухня или комната, — договоримся о замере и покажем варианты.</p>
+    <div class="cta">
+      <a class="btn b-wa" href="https://wa.me/79333200987?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80." target="_blank" rel="noopener">Записаться на замер</a>
+      <a class="btn b-line" href="tel:+79333200987">+7 933 320-09-87</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Каби · кухни и мебель на заказ · Красноярск</span><span>Демо-концепт по данным 2ГИС</span></div>
+</footer>
+<a class="fab" href="tel:+79333200987" aria-label="Позвонить в Каби"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></a>
+
+<script>
+(function(){
+  var f=document.getElementById('qf'),len=document.getElementById('len'),out=document.getElementById('lenOut'),
+      U=document.getElementById('units'),D=document.getElementById('dims'),sum=document.getElementById('sum'),
+      send=document.getElementById('send'),lab=document.getElementById('pLabel'),NS='http://www.w3.org/2000/svg';
+  function v(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+  function el(t,a,txt){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt)e.textContent=txt;U.appendChild(e);return e}
+  function box(x,y,w,h,col){el('rect',{x:x,y:y,width:w,height:h,rx:2,fill:col,stroke:'#202326','stroke-width':1.5})}
+  function led(x,y,w){el('rect',{x:x,y:y,width:w,height:3,fill:'#ffd596',opacity:.95})}
+  function dim(x1,x2,y,t){var g=D;var l=document.createElementNS(NS,'path');l.setAttribute('d','M'+x1+' '+y+'H'+x2+'M'+x1+' '+(y-5)+'v10M'+x2+' '+(y-5)+'v10');l.setAttribute('stroke','#4b5054');g.appendChild(l);
+    var tx=document.createElementNS(NS,'text');tx.setAttribute('x',(x1+x2)/2);tx.setAttribute('y',y+18);tx.setAttribute('text-anchor','middle');tx.textContent=t;g.appendChild(tx)}
+  function draw(){
+    U.textContent='';D.textContent='';
+    var what=v('what'),k=what==='Кухня',L=parseFloat(len.value),sh=v('shape'),fr=v('front');
+    f.querySelectorAll('[data-k]').forEach(function(x){x.hidden=!k});
+    out.textContent=String(L.toFixed(1)).replace('.',',')+' м';
+    var col=fr==='Под дерево'?'#d9b48c':fr==='Классика с филёнкой'?'#ece4d4':fr==='Комбинированные'?'#9fb0a3':'#b9c6bb';
+    var light=f.querySelector('input[value="подсветка рабочей зоны"]').checked;
+    if(!k){
+      lab.textContent=what;
+      var w=what==='Мебель для ванной'?150:what==='Офисная мебель'?260:220;
+      box(200-w/2,32,w,56,'#d9b48c');
+      if(what==='Офисная мебель'){box(110,150,180,70,'#ece4d4')}
+      dim(200-w/2,200+w/2,112,'размер — после замера');
+    }else{
+      lab.textContent=sh;
+      var px=Math.round(Math.min(336,70+L*48)),x0=32,d=56;
+      box(x0,32,px,d,col);if(light)led(x0+6,32+d-6,px-12);
+      if(sh==='Угловая'||sh==='П-образная'){box(x0,32+d,d,150,col);if(light)el('rect',{x:x0+d-6,y:32+d+6,width:3,height:138,fill:'#ffd596'})}
+      if(sh==='П-образная'){var xr=x0+px-d;box(xr,32+d,d,150,col);if(light)el('rect',{x:xr+3,y:32+d+6,width:3,height:138,fill:'#ffd596'})}
+      if(sh==='С островом'){var iw=Math.min(200,px-40);box(x0+(px-iw)/2,170,iw,64,'#cfcac0')}
+      if(f.querySelector('input[value="встроенная техника"]').checked){box(x0+px-50,40,40,40,'#202326')}
+      dim(x0,x0+px,262,String(L.toFixed(1)).replace('.',',')+' м');
+    }
+    var opts=[].map.call(f.querySelectorAll('input[name="opt"]:checked'),function(i){return i.value});
+    var lines=['Здравствуйте! Хочу заказать: '+what+'.'];
+    if(k){lines.push('Форма: '+sh.toLowerCase()+', длина около '+String(L.toFixed(1)).replace('.',',')+' м.');lines.push('Фасады: '+fr.toLowerCase()+'.');if(opts.length)lines.push('Добавить: '+opts.join(', ')+'.')}
+    lines.push('Бюджет: '+v('bud')+'.');lines.push('Размеры: '+v('meas')+'.');lines.push('Когда можно обсудить?');
+    sum.innerHTML='<b>'+lines[0].replace('Здравствуйте! ','')+'</b><br>'+lines.slice(1,-1).join('<br>');
+    send.href='https://wa.me/79333200987?text='+encodeURIComponent(lines.join('\n'));
+  }
+  f.addEventListener('input',draw);f.addEventListener('change',draw);draw();
+  var r=document.getElementById('rail');
+  document.querySelectorAll('.rail-ctl button').forEach(function(b){b.addEventListener('click',function(){r.scrollBy({left:b.dataset.dir*Math.min(640,r.clientWidth*.8),behavior:'smooth'})})});
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","20:00"]],"tue":[["10:00","20:00"]],"wed":[["10:00","20:00"]],"thu":[["10:00","20:00"]],"fri":[["10:00","20:00"]],"sat":null,"sun":null},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>
