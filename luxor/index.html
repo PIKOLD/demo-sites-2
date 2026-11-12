@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Luxor — меховой салон в Самаре, проспект Кирова, 147</title><meta property="og:type" content="website"><meta property="og:title" content="Luxor — меховой салон в Самаре, проспект Кирова, 147"><meta property="og:description" content="Меховой салон Luxor в Самаре: норковые шубы, автоледи, куртки и пуховики с мехом, кожа. Проспект Кирова, 147, 2 этаж. Каждый день 10:00–22:00. Подбор шубы и запись на примерку в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/luxor/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Меховой салон Luxor в Самаре: норковые шубы, автоледи, куртки и пуховики с мехом, кожа. Проспект Кирова, 147, 2 этаж. Каждый день 10:00–22:00. Подбор шубы и запись на примерку в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap"></noscript>
+<link rel="preload" as="image" href="img/p7-m.jpg">
+<style>
+:root{--bg:#F4EFE8;--milk:#FBF8F3;--sand:#EBE1D3;--line:#D6C7B3;--ink:#171311;--ink2:#4F453D;--car:#B3844F;--car-d:#7A4E23;--gold:#DDBF92;--rib:#161312;--ok:#2E7A4A;--serif:"Prata",Georgia,"Times New Roman",serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--w:1360px;--g:clamp(16px,4vw,48px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--car-d);outline-offset:3px;border-radius:2px}
+.wrap{width:100%;max-width:calc(var(--w) + var(--g)*2);margin:0 auto;padding:0 var(--g)}
+.kick{font:600 12px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--car-d);display:flex;align-items:center;gap:12px}
+.kick::before{content:"";width:28px;height:1px;background:currentColor}
+.h2{font:400 clamp(34px,4.6vw,68px)/1.04 var(--serif);letter-spacing:-.01em;margin:18px 0 0;max-width:16ch}
+.ribs{background:repeating-linear-gradient(180deg,#0c0a09 0 2px,#3a3431 2px 4px,#25201d 4px 11px,#171412 11px 19px,#0f0d0c 19px 22px)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .25s,background .25s,color .25s,box-shadow .25s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.b-ink{background:var(--ink);color:var(--milk)}
+.b-ink:hover{background:#000;box-shadow:0 10px 26px -12px rgba(23,19,17,.7)}
+.b-car{background:var(--car-d);color:#fff}
+.b-car:hover{background:#653f1b;box-shadow:0 10px 26px -12px rgba(122,78,35,.8)}
+.b-out{border-color:var(--ink);color:var(--ink);background:transparent}
+.b-out:hover{background:var(--ink);color:var(--milk)}
+.b-light{background:var(--gold);color:var(--ink)}
+.b-light:hover{background:#ead2ad}
+.lnk{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.lnk:hover{border-color:currentColor;color:var(--car-d)}
+.lnk svg{width:17px;height:17px}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--ink2)}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#B5A898}
+[data-status].is-open::before{background:var(--ok);box-shadow:0 0 0 4px rgba(46,122,74,.16)}
+/* top */
+.demo{background:var(--ink);color:#E6DBCD;font-size:12.5px;text-align:center;padding:7px 16px;line-height:1.4}
+.hd{position:sticky;top:0;z-index:40;background:rgba(244,239,232,.95);border-bottom:1px solid rgba(214,199,179,.7)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:66px}
+.logo{text-decoration:none;display:flex;align-items:baseline;gap:12px}
+.logo b{font:400 25px/1 var(--serif);letter-spacing:.3em;font-weight:400}
+.logo small{font-size:12px;color:var(--ink2);letter-spacing:.06em}
+.nav{display:flex;gap:30px}
+.nav a{font-size:14.5px;font-weight:500;text-decoration:none;padding:12px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:6px;height:1px;background:var(--car-d);transition:right .3s}
+.nav a:hover::after{right:0}
+.hd-tel{font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(28px,4vw,72px);align-items:center;padding-top:clamp(22px,3.2vh,44px);padding-bottom:clamp(36px,5vh,64px)}
+.eyebrow{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--car-d)}
+h1{margin:22px 0 0;font-weight:400}
+h1 .s{display:block;font:500 clamp(18px,1.6vw,24px)/1.2 var(--sans);letter-spacing:.02em;color:var(--ink2)}
+h1 .b{display:block;font:400 clamp(84px,12.6vw,200px)/.86 var(--serif);letter-spacing:-.025em;margin-top:.12em;margin-left:-.04em}
+h1 .b i{font-style:normal;color:var(--car)}
+.lead{margin-top:clamp(18px,2.4vh,30px);font-size:clamp(16px,1.25vw,19px);line-height:1.6;color:var(--ink2);max-width:36em}
+.lead b{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(20px,3vh,34px)}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;margin-top:16px}
+.hero-m{position:relative;justify-self:end;width:100%;max-width:520px}
+.wall{position:absolute;top:-80px;bottom:-80px;left:18%;right:calc(-1 * var(--g) - 50vw);z-index:-1}
+.ph{position:relative;overflow:hidden;background:var(--rib);aspect-ratio:3/4;max-height:calc(100svh - 190px);margin-left:auto;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.ph img{width:100%;height:112%;object-fit:cover;object-position:50% 20%;transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.mini{position:absolute;left:-14%;bottom:9%;width:36%;aspect-ratio:3/4;border:6px solid var(--bg);overflow:hidden;box-shadow:0 24px 50px -24px rgba(0,0,0,.55)}
+.mini img{width:100%;height:100%;object-fit:cover;object-position:64% 45%}
+.rate{position:absolute;top:22px;left:-26px;background:var(--milk);padding:14px 18px 12px;display:flex;align-items:center;gap:14px;box-shadow:0 18px 40px -22px rgba(0,0,0,.45)}
+.rate b{font:400 40px/1 var(--serif)}
+.rate span{font-size:12.5px;line-height:1.35;color:var(--ink2)}
+.rate em{display:block;font-style:normal;color:var(--car-d);letter-spacing:.12em;font-size:12px}
+.vtag{position:absolute;right:-34px;top:50%;transform:rotate(90deg) translateX(50%);transform-origin:right center;color:#bfae98;font-size:11px;letter-spacing:.32em;text-transform:uppercase;white-space:nowrap}
+/* catalog */
+.sec{padding:clamp(72px,10vw,140px) 0}
+.cat-g{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,5vw,80px)}
+.cat-h{position:sticky;top:110px;align-self:start}
+.cat-h p{margin-top:22px;color:var(--ink2);max-width:30em}
+.rows{list-style:none;border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:52px minmax(0,1fr) 132px;gap:24px;align-items:center;padding:26px 0;border-top:1px solid var(--line);transition:background .35s,padding .35s}
+.row:hover{background:var(--milk);padding-left:16px;padding-right:16px}
+.row .n{font:400 15px/1 var(--serif);color:var(--car-d)}
+.row h3{font:400 clamp(26px,2.7vw,40px)/1.1 var(--serif)}
+.row p{margin-top:8px;color:var(--ink2);font-size:15.5px;max-width:34em}
+.row figure{aspect-ratio:3/4;overflow:hidden;background:var(--sand)}
+.row figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.row:hover figure img{transform:scale(1.08)}
+/* strip */
+.strip-sec{padding-bottom:clamp(72px,10vw,140px)}
+.strip-top{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:32px}
+.arr{display:flex;gap:10px}
+.arr button{width:52px;height:52px;border-radius:50%;border:1px solid var(--ink);background:transparent;cursor:pointer;display:grid;place-items:center;transition:background .2s,color .2s}
+.arr button:hover{background:var(--ink);color:var(--milk)}
+.arr svg{width:20px;height:20px}
+.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 max(var(--g),calc((100vw - var(--w))/2));cursor:grab;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing;scroll-snap-type:none}
+.strip figure{flex:0 0 clamp(236px,23vw,330px);scroll-snap-align:start}
+.strip figure:nth-child(even){margin-top:56px}
+.strip .im{aspect-ratio:3/4;overflow:hidden;background:var(--sand)}
+.strip img{width:100%;height:100%;object-fit:cover;pointer-events:none;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.strip figure:hover img{transform:scale(1.05)}
+.strip figcaption{margin-top:12px;font-size:14px;color:var(--ink2);display:flex;gap:10px}
+.strip figcaption span{color:var(--car-d);font-family:var(--serif)}
+/* praise */
+.praise{background:var(--milk)}
+.pr-g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,100px);align-items:start}
+.score{margin-top:36px;display:flex;align-items:flex-end;gap:20px}
+.score b{font:400 clamp(110px,13vw,190px)/.8 var(--serif);letter-spacing:-.04em}
+.score div{padding-bottom:10px;font-size:15px;color:var(--ink2);line-height:1.45}
+.stars{display:flex;gap:4px;margin-bottom:8px;color:var(--car)}
+.stars svg{width:18px;height:18px}
+.score a{color:var(--car-d);font-weight:600}
+.pts{list-style:none;counter-reset:p}
+.pts li{counter-increment:p;padding:30px 0 30px 70px;border-top:1px solid var(--line);position:relative}
+.pts li:last-child{border-bottom:1px solid var(--line)}
+.pts li::before{content:"0" counter(p);position:absolute;left:0;top:34px;font:400 15px/1 var(--serif);color:var(--car-d)}
+.pts h3{font:400 clamp(24px,2.3vw,34px)/1.15 var(--serif)}
+.pts li:first-child h3{font-size:clamp(30px,3.2vw,48px)}
+.pts p{margin-top:10px;color:var(--ink2);max-width:38em}
+/* fitting quiz */
+.fit-sec{background:var(--sand)}
+.fit-g{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);margin-top:48px;align-items:start}
+.fit-sec .intro{margin-top:20px;color:var(--ink2);max-width:36em}
+fieldset{border:0;padding:0 0 30px;margin:0 0 30px;border-bottom:1px solid var(--line)}
+fieldset:last-of-type{border:0;margin:0}
+legend{font:400 22px/1.2 var(--serif);margin-bottom:16px;display:flex;gap:14px;align-items:baseline}
+legend span{font:600 12px/1 var(--sans);letter-spacing:.16em;color:var(--car-d)}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts input{position:absolute;opacity:0;width:1px;height:1px}
+.chip{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border:1px solid #C3B097;border-radius:999px;font-size:15px;font-weight:500;cursor:pointer;background:rgba(251,248,243,.5);transition:background .2s,color .2s,border-color .2s,transform .2s;user-select:none}
+.chip:hover{border-color:var(--ink);background:var(--milk)}
+.opts input:checked+.chip{background:var(--ink);border-color:var(--ink);color:var(--milk)}
+.opts input:focus-visible+.chip,.opts input:focus-visible+.sw{outline:2px solid var(--car-d);outline-offset:3px}
+.sws{gap:14px}
+.sw{display:flex;flex-direction:column;align-items:center;gap:8px;width:92px;cursor:pointer;font-size:13px;text-align:center;line-height:1.25}
+.sw i{width:64px;height:64px;border-radius:50%;background-color:#ccc;background-size:520%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);transition:transform .25s,box-shadow .25s}
+.sw:hover i{transform:scale(1.06)}
+.opts input:checked+.sw i{box-shadow:0 0 0 3px var(--sand),0 0 0 5px var(--ink)}
+.opts input:checked+.sw{font-weight:700}
+.c-wh{background-image:url(img/p14-m.jpg);background-position:68% 58%}
+.c-bk{background-image:url(img/p12-m.jpg);background-position:74% 38%}
+.c-cr{background-image:url(img/p7-m.jpg);background-position:40% 45%}
+.c-gr{background-image:url(img/p2-m.jpg);background-position:28% 80%}
+.c-pt{background-image:url(img/p4-m.jpg);background-position:42% 42%}
+.aside{position:sticky;top:96px;background:var(--milk);box-shadow:0 30px 60px -40px rgba(60,40,20,.5)}
+.pv{position:relative;aspect-ratio:4/4.4;overflow:hidden;background:var(--rib)}
+.pv img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:opacity .35s}
+.pv img.fade{opacity:.2}
+.pv figcaption{position:absolute;left:16px;bottom:16px;background:rgba(23,19,17,.82);color:var(--milk);font-size:13px;padding:8px 12px}
+.tk{padding:24px 26px 26px;position:relative}
+.tk::before{content:"";position:absolute;top:-9px;right:28px;width:18px;height:18px;border-radius:50%;background:var(--sand);box-shadow:inset 0 0 0 1px var(--line)}
+.tk h3{font:400 24px/1.2 var(--serif)}
+.bar{height:3px;background:var(--line);margin:14px 0 16px}
+.bar i{display:block;height:100%;width:0;background:var(--car-d);transition:width .4s}
+.tk dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:7px 16px;font-size:14.5px}
+.tk dt{color:var(--ink2)}
+.tk dd{font-weight:600;text-align:right}
+.tk .btn{width:100%;margin-top:22px}
+.tk small{display:block;margin-top:10px;font-size:13px;color:var(--ink2);text-align:center}
+/* steps on a rail */
+.rail{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2.4vw,36px);margin-top:70px;padding-top:58px}
+.rail::before{content:"";position:absolute;top:0;left:-2%;right:-2%;height:8px;border-radius:8px;background:linear-gradient(180deg,#e9e3dc,#a59c93 55%,#6f665e);box-shadow:0 6px 12px -6px rgba(0,0,0,.4)}
+.tag{position:relative;background:var(--milk);padding:44px 26px 30px;clip-path:polygon(22px 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%,0 22px);transform-origin:50% -58px;transition:transform .5s cubic-bezier(.3,1.6,.5,1);box-shadow:0 1px 0 var(--line)}
+.tag::before{content:"";position:absolute;top:16px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--bg);box-shadow:inset 0 1px 2px rgba(0,0,0,.3)}
+.tag-w{position:relative}
+.tag-w::before{content:"";position:absolute;left:50%;top:-58px;height:80px;width:1px;background:#8d8378;z-index:1}
+.tag-w:nth-child(1) .tag{transform:rotate(-2.2deg)}
+.tag-w:nth-child(2) .tag{transform:rotate(1.6deg)}
+.tag-w:nth-child(3) .tag{transform:rotate(-1.2deg)}
+.tag-w:nth-child(4) .tag{transform:rotate(2deg)}
+.tag-w:hover .tag{transform:rotate(0)}
+.tag b{font:400 14px/1 var(--serif);color:var(--car-d)}
+.tag h3{font:400 26px/1.15 var(--serif);margin-top:12px}
+.tag p{margin-top:10px;font-size:15px;color:var(--ink2)}
+/* contacts */
+.ct-g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,80px);align-items:stretch}
+.info{margin-top:36px;display:grid;gap:0}
+.info div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.info dt{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--car-d);font-weight:600;padding-top:3px}
+.info dd{font-size:16px}
+.info dd a{font-weight:600}
+.soc{display:flex;flex-wrap:wrap;gap:6px 20px}
+.map{position:relative;min-height:440px;background:var(--sand);overflow:hidden}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* final */
+.fin{position:relative;color:var(--milk);overflow:hidden}
+.fin-g{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:end}
+.fin-t{padding:clamp(72px,9vw,130px) 0}
+.fin .kick{color:var(--gold)}
+.fin h2{font:400 clamp(44px,6.4vw,104px)/.98 var(--serif);margin-top:20px;letter-spacing:-.015em}
+.fin p{margin-top:22px;color:#D9CCBC;max-width:32em;font-size:17px}
+.fin .cta{margin-top:34px}
+.fin .b-out{border-color:#8f8170;color:var(--milk)}
+.fin .b-out:hover{background:var(--milk);color:var(--ink)}
+.fin-ph{align-self:end;max-width:440px;justify-self:end;width:100%}
+.fin-ph img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 20%;-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent);mask-image:linear-gradient(180deg,#000 80%,transparent)}
+.ft{background:var(--ink);color:#BDB0A1;font-size:14px;padding:30px 0 34px}
+.ft .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:space-between}
+.ft b{color:var(--milk);font:400 18px var(--serif);letter-spacing:.24em}
+.fab{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){
+ .nav{display:none}
+ .row{grid-template-columns:40px minmax(0,1fr) 104px}
+ .rail{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:90px}
+}
+@media (max-width:860px){
+ body{padding-bottom:84px}
+ .logo small{display:none}
+ .hero-g{grid-template-columns:minmax(0,1fr);gap:34px;padding-top:26px}
+ h1 .b{font-size:clamp(84px,25vw,150px)}
+ .hero-m{justify-self:stretch;max-width:none;padding-left:10%}
+ .ph{max-height:none}
+ .mini{left:0;width:34%;bottom:7%;border-width:5px}
+ .rate{top:auto;bottom:-22px;left:auto;right:12px;padding:10px 14px}
+ .rate b{font-size:32px}
+ .wall{left:40%;top:40px;bottom:-60px}
+ .vtag{display:none}
+ .cat-g,.pr-g,.fit-g,.ct-g,.fin-g{grid-template-columns:minmax(0,1fr)}
+ .cat-h,.aside{position:static}
+ .row{grid-template-columns:minmax(0,1fr) 92px;gap:16px;padding:22px 0}
+ .row .n{display:none}
+ .row:hover{padding-left:0;padding-right:0;background:none}
+ .strip figure{flex-basis:44vw}
+ .strip figure:nth-child(even){margin-top:28px}
+ .arr{display:none}
+ .pts li{padding-left:44px}
+ .pv{aspect-ratio:16/11}
+ .rail{grid-template-columns:minmax(0,1fr);padding-top:0;margin-top:44px;row-gap:22px}
+ .rail::before,.tag-w::before{display:none}
+ .tag,.tag-w:nth-child(n) .tag{transform:none}
+ .map{min-height:340px}
+ .fin-t{padding-bottom:10px}
+ .fin-ph{justify-self:center;max-width:330px}
+ .fab{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;padding:6px;background:rgba(23,19,17,.94);border-radius:999px;box-shadow:0 16px 40px -14px rgba(0,0,0,.6)}
+ .fab a{min-height:50px;padding:0 14px;font-size:15px}
+}
+@media (max-width:600px){.strip figure{flex-basis:72vw}}
+@media (max-width:420px){
+ .btn{width:100%}
+ .sub{gap:4px 20px}
+ .sws{gap:8px 4px}
+ .sw{width:66px;font-size:12px}
+ .sw i{width:52px;height:52px}
+ .chip{padding:0 16px;font-size:14.5px}
+ .info div{grid-template-columns:minmax(0,1fr);gap:4px}
+ .fab .btn{width:auto}
+}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{transition:none!important;animation:none!important}
+ .js [data-r]{opacity:1;transform:none}
+ .ph img{transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="hd">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Luxor, в начало"><b>LUXOR</b><small>меховой салон · Самара</small></a>
+  <nav class="nav" aria-label="Разделы">
+   <a href="#zal">В зале</a><a href="#otzyvy">Отзывы</a><a href="#podbor">Подбор</a><a href="#kontakty">Контакты</a>
+  </nav>
+  <a class="hd-tel" href="tel:+79272082696">+7 927 208-26-96</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-g">
+  <div>
+   <div class="eyebrow"><span>Самара</span><span>пр. Кирова, 147 · 2 этаж</span></div>
+   <h1><span class="s">Меховой салон</span><span class="b">Lux<i>o</i>r</span></h1>
+   <p class="lead">Норковые шубы, автоледи, куртки и пуховики с мехом, кожа. <b>Сюда приезжают за той шубой, которую долго не могли найти</b>, а консультант помогает с фасоном, цветом и размером.</p>
+   <div class="cta">
+    <a class="btn b-ink" href="#podbor">Подобрать шубу
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn b-car" href="https://wa.me/79272082696?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%88%D1%83%D0%B1%D1%83%20%D0%B2%20Luxor.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D1%87%D1%82%D0%BE%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%20%D0%B7%D0%B0%D0%BB%D0%B5%3F">
+     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3Z"/></svg>
+     Написать в WhatsApp</a>
+   </div>
+   <div class="sub">
+    <a class="lnk" href="tel:+79272082696"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+    <a class="lnk" href="https://yandex.ru/maps/?rtext=~53.220846,50.263182" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Маршрут</a>
+    <span data-status></span>
+   </div>
+  </div>
+  <div class="hero-m">
+   <div class="wall ribs" aria-hidden="true"></div>
+   <div class="ph" id="ph"><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 675w, img/p7.jpg 1350w" sizes="(max-width:860px) 95vw, 600px" width="675" height="900" alt="Шуба из золотистого лисьего меха на примерке в салоне Luxor" fetchpriority="high"></div>
+   <div class="mini"><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 675w, img/p14.jpg 960w" sizes="(max-width:860px) 34vw, 200px" width="675" height="900" alt="Светлые шубы на вешалах в зале салона" loading="lazy"></div>
+   <div class="rate"><b>4,8</b><span><em>★★★★★</em>25 оценок в 2ГИС</span></div>
+   <div class="vtag" aria-hidden="true">Luxor · Самара · проспект Кирова 147</div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="zal">
+ <div class="wrap cat-g">
+  <div class="cat-h" data-r>
+   <div class="kick">Что в зале</div>
+   <h2 class="h2">Мех, кожа и всё, в чём тепло зимой</h2>
+   <p>Женская верхняя одежда — от классической норки до ярких парок. Что есть в вашем размере и цвете, проще спросить в WhatsApp перед поездкой.</p>
+  </div>
+  <ol class="rows">
+   <li class="row" data-r><span class="n">01</span><div><h3>Шубы из натурального меха</h3><p>Норка — белая, графитовая, карамельная. В отзывах пишут, что именно здесь нашлась белая норковая шуба после долгих поисков.</p></div><figure><img src="img/p14-m.jpg" width="675" height="900" sizes="132px" srcset="img/p14-m.jpg 675w" alt="Белая шуба с меховым воротником" loading="lazy" style="object-position:66% 45%"></figure></li>
+   <li class="row" data-r><span class="n">02</span><div><h3>Автоледи</h3><p>Короткие шубы, в которых удобно за рулём. За ними в Luxor приезжают специально и находят модель быстро.</p></div><figure><img src="img/p12-m.jpg" width="675" height="900" sizes="132px" srcset="img/p12-m.jpg 675w" alt="Короткие меховые куртки на вешалах" loading="lazy" style="object-position:70% 40%"></figure></li>
+   <li class="row" data-r><span class="n">03</span><div><h3>Пуховики и куртки с мехом</h3><p>Пуховые куртки с меховой отделкой, капюшоны с мехом, яркие цвета и принты.</p></div><figure><img src="img/p2-m.jpg" width="675" height="900" sizes="132px" srcset="img/p2-m.jpg 675w" alt="Серо-голубой пуховик с меховой отделкой" loading="lazy" style="object-position:50% 30%"></figure></li>
+   <li class="row" data-r><span class="n">04</span><div><h3>Кожа и замша</h3><p>Куртки-косухи, укороченные модели с поясом — на межсезонье и тёплую зиму.</p></div><figure><img src="img/p10-m.jpg" width="675" height="900" sizes="132px" srcset="img/p10-m.jpg 675w" alt="Светлая кожаная куртка-косуха" loading="lazy" style="object-position:55% 55%"></figure></li>
+   <li class="row" data-r><span class="n">05</span><div><h3>Цвет и необычный мех</h3><p>Голубой, изумрудный, пятнистый, леопард — для тех, кто хотел шубу «не как у всех».</p></div><figure><img src="img/p6-m.jpg" width="675" height="900" sizes="132px" srcset="img/p6-m.jpg 675w" alt="Голубая меховая куртка и изумрудная модель" loading="lazy" style="object-position:50% 25%"></figure></li>
+  </ol>
+ </div>
+</section>
+
+<section class="strip-sec" aria-label="Фото из зала">
+ <div class="wrap strip-top" data-r>
+  <div><div class="kick">Из зала на Кирова</div><h2 class="h2">Листайте, как вешала</h2></div>
+  <div class="arr"><button type="button" data-d="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-d="1" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+ </div>
+ <div class="strip" id="strip" data-qa-skip tabindex="0" aria-label="Лента фото, листается вбок">
+  <figure><div class="im"><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 675w, img/p12.jpg 960w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Серебристый мех и графитовая шуба ёлочкой"></div><figcaption><span>01</span>Серебро и графит</figcaption></figure>
+  <figure><div class="im"><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 674w, img/p13.jpg 959w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="674" height="900" loading="lazy" alt="Молочная шуба с поясом и серая модель с капюшоном"></div><figcaption><span>02</span>Молочная шуба с поясом</figcaption></figure>
+  <figure><div class="im"><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 960w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Белый мех в тёмное пятнышко"></div><figcaption><span>03</span>Белый мех в пятнышко</figcaption></figure>
+  <figure><div class="im"><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 1350w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Длинная шуба карамельного цвета с капюшоном" style="object-position:50% 20%"></div><figcaption><span>04</span>Карамель с капюшоном</figcaption></figure>
+  <figure><div class="im"><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 960w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Длинный пуховик с леопардовым принтом"></div><figcaption><span>05</span>Леопардовый пуховик</figcaption></figure>
+  <figure><div class="im"><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 675w, img/p6.jpg 960w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Голубая меховая куртка и модели в зелёных тонах"></div><figcaption><span>06</span>Голубой и изумрудный</figcaption></figure>
+  <figure><div class="im"><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 959w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Парка с принтом и меховым капюшоном"></div><figcaption><span>07</span>Принт и мех на капюшоне</figcaption></figure>
+  <figure><div class="im"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 675w, img/p8.jpg 1350w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Куртка с капюшоном из чёрного меха"></div><figcaption><span>08</span>Чёрный мех на капюшоне</figcaption></figure>
+  <figure><div class="im"><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="(max-width:600px) 72vw, (max-width:860px) 44vw, 330px" width="675" height="900" loading="lazy" alt="Коричневая куртка с поясом"></div><figcaption><span>09</span>Коричневая куртка с поясом</figcaption></figure>
+ </div>
+</section>
+
+<section class="sec praise" id="otzyvy">
+ <div class="wrap pr-g">
+  <div data-r>
+   <div class="kick">Отзывы в 2ГИС</div>
+   <h2 class="h2">За что хвалят Luxor</h2>
+   <div class="score"><b>4,8</b><div><div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg></div>25 оценок<br><a href="https://2gis.ru/samara/firm/70000001040794200" target="_blank" rel="noopener">Читать в 2ГИС</a></div></div>
+  </div>
+  <ol class="pts">
+   <li data-r><h3>Находят то, что долго искали</h3><p>Белую норковую шубу, автоледи, необычный фасон — покупательницы пишут, что нужная модель нашлась здесь, и быстро. Не раз упоминают и приятные скидки.</p></li>
+   <li data-r><h3>Помогают с фасоном и размером</h3><p>Консультанты Ольга и Мария подсказывают, какой фасон и цвет подойдут, и подбирают размер так, что шуба сидит идеально.</p></li>
+   <li data-r><h3>Натуральный мех, в котором тепло</h3><p>Отмечают качество меха и аккуратный прочный пошив. Шуба, купленная осенью, греет и в сильные морозы.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="sec fit-sec" id="podbor">
+ <div class="wrap">
+  <div data-r>
+   <div class="kick">Подбор и примерка</div>
+   <h2 class="h2">Расскажите, какую шубу ищете</h2>
+   <p class="intro">Отметьте, что важно, — соберём сообщение в WhatsApp. Можно выбрать не всё: остальное подскажут в салоне.</p>
+  </div>
+  <div class="fit-g">
+   <form id="fit" onsubmit="return false">
+    <fieldset><legend><span>01</span>Что ищете</legend><div class="opts">
+     <input type="radio" name="type" id="t1" value="шубу"><label class="chip" for="t1">Шубу</label>
+     <input type="radio" name="type" id="t2" value="автоледи"><label class="chip" for="t2">Автоледи</label>
+     <input type="radio" name="type" id="t3" value="куртку или пуховик с мехом"><label class="chip" for="t3">Куртку или пуховик с мехом</label>
+     <input type="radio" name="type" id="t4" value="кожу или замшу"><label class="chip" for="t4">Кожу или замшу</label>
+     <input type="radio" name="type" id="t5" value="пока не знаю"><label class="chip" for="t5">Пока не знаю</label>
+    </div></fieldset>
+    <fieldset><legend><span>02</span>Мех</legend><div class="opts">
+     <input type="radio" name="fur" id="f1" value="норка"><label class="chip" for="f1">Норка</label>
+     <input type="radio" name="fur" id="f2" value="лиса"><label class="chip" for="f2">Лиса</label>
+     <input type="radio" name="fur" id="f3" value="другой мех"><label class="chip" for="f3">Другой</label>
+     <input type="radio" name="fur" id="f4" value="без меха"><label class="chip" for="f4">Без меха</label>
+     <input type="radio" name="fur" id="f5" value="посоветуйте"><label class="chip" for="f5">Посоветуйте</label>
+    </div></fieldset>
+    <fieldset><legend><span>03</span>Длина</legend><div class="opts">
+     <input type="radio" name="len" id="l1" value="короткая"><label class="chip" for="l1">Короткая</label>
+     <input type="radio" name="len" id="l2" value="до колена"><label class="chip" for="l2">До колена</label>
+     <input type="radio" name="len" id="l3" value="длинная"><label class="chip" for="l3">Длинная</label>
+     <input type="radio" name="len" id="l4" value="не важно"><label class="chip" for="l4">Не важно</label>
+    </div></fieldset>
+    <fieldset><legend><span>04</span>Цвет</legend><div class="opts sws">
+     <input type="radio" name="color" id="c1" value="белый, молочный" data-img="p14"><label class="sw" for="c1"><i class="c-wh"></i>Белый, молочный</label>
+     <input type="radio" name="color" id="c2" value="чёрный, графит" data-img="p12"><label class="sw" for="c2"><i class="c-bk"></i>Чёрный, графит</label>
+     <input type="radio" name="color" id="c3" value="карамель, золото" data-img="p7"><label class="sw" for="c3"><i class="c-cr"></i>Карамель, золото</label>
+     <input type="radio" name="color" id="c4" value="серый, голубой" data-img="p2"><label class="sw" for="c4"><i class="c-gr"></i>Серый, голубой</label>
+     <input type="radio" name="color" id="c5" value="необычный: принт, пятна, цвет" data-img="p4"><label class="sw" for="c5"><i class="c-pt"></i>Необычный</label>
+    </div></fieldset>
+    <fieldset><legend><span>05</span>Размер</legend><div class="opts">
+     <input type="radio" name="size" id="s1" value="40–42"><label class="chip" for="s1">40–42</label>
+     <input type="radio" name="size" id="s2" value="44–46"><label class="chip" for="s2">44–46</label>
+     <input type="radio" name="size" id="s3" value="48–50"><label class="chip" for="s3">48–50</label>
+     <input type="radio" name="size" id="s4" value="52 и больше"><label class="chip" for="s4">52+</label>
+     <input type="radio" name="size" id="s5" value="помогите подобрать"><label class="chip" for="s5">Помогите подобрать</label>
+    </div></fieldset>
+    <fieldset><legend><span>06</span>Когда приедете</legend><div class="opts">
+     <input type="radio" name="when" id="w1" value="сегодня"><label class="chip" for="w1">Сегодня</label>
+     <input type="radio" name="when" id="w2" value="завтра"><label class="chip" for="w2">Завтра</label>
+     <input type="radio" name="when" id="w3" value="в выходные"><label class="chip" for="w3">В выходные</label>
+     <input type="radio" name="when" id="w4" value="договоримся"><label class="chip" for="w4">Договоримся</label>
+    </div></fieldset>
+   </form>
+   <aside class="aside" aria-live="polite">
+    <figure class="pv"><img id="pvImg" src="img/p13-m.jpg" width="674" height="900" alt="Пример из зала салона Luxor" loading="lazy"><figcaption id="pvCap">Из зала салона</figcaption></figure>
+    <div class="tk">
+     <h3>Карта примерки</h3>
+     <div class="bar"><i id="bar"></i></div>
+     <dl id="sum">
+      <dt>Ищу</dt><dd data-k="type">—</dd><dt>Мех</dt><dd data-k="fur">—</dd><dt>Длина</dt><dd data-k="len">—</dd><dt>Цвет</dt><dd data-k="color">—</dd><dt>Размер</dt><dd data-k="size">—</dd><dt>Когда</dt><dd data-k="when">—</dd>
+     </dl>
+     <a class="btn b-car" id="send" href="https://wa.me/79272082696?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%88%D1%83%D0%B1%D1%83%20%D0%B2%20Luxor.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D1%87%D1%82%D0%BE%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%20%D0%B7%D0%B0%D0%BB%D0%B5%3F" target="_blank" rel="noopener">Записаться на примерку</a>
+     <small>Откроется WhatsApp с готовым текстом</small>
+    </div>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="kak">
+ <div class="wrap">
+  <div data-r><div class="kick">Как проходит покупка</div><h2 class="h2">Четыре бирки до новой шубы</h2></div>
+  <div class="rail">
+   <div class="tag-w" data-r><div class="tag"><b>01</b><h3>Заявка</h3><p>Напишите, что ищете, или просто приезжайте: салон открыт каждый день с 10:00 до 22:00.</p></div></div>
+   <div class="tag-w" data-r><div class="tag"><b>02</b><h3>Примерка</h3><p>Второй этаж, проспект Кирова, 147. Консультант поможет с фасоном, цветом и размером.</p></div></div>
+   <div class="tag-w" data-r><div class="tag"><b>03</b><h3>Оплата</h3><p>Картой, наличными, по QR-коду или через банк — как удобно.</p></div></div>
+   <div class="tag-w" data-r><div class="tag"><b>04</b><h3>Зима</h3><p>По отзывам, в шубе отсюда тепло и в сильный мороз.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec praise" id="kontakty">
+ <div class="wrap ct-g">
+  <div data-r>
+   <div class="kick">Контакты</div>
+   <h2 class="h2">Салон на проспекте Кирова</h2>
+   <dl class="info">
+    <div><dt>Адрес</dt><dd>Самара, проспект Кирова, 147, 2 этаж</dd></div>
+    <div><dt>Часы</dt><dd>Ежедневно 10:00–22:00<br><span data-status></span></dd></div>
+    <div><dt>Телефон</dt><dd><a href="tel:+79272082696">+7 927 208-26-96</a></dd></div>
+    <div><dt>Написать</dt><dd class="soc"><a href="https://wa.me/79272082696?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%B8%D0%B5%D1%85%D0%B0%D1%82%D1%8C%20%D0%B2%20Luxor%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BA%D1%83." target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79272082696" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/luxor_samara" target="_blank" rel="noopener">ВКонтакте</a></dd></div>
+    <div><dt>Оплата</dt><dd>Картой, наличными, по QR-коду, через банк</dd></div>
+    <div><dt>Вход</dt><dd>Автоматическая дверь, вход частично доступен для коляски</dd></div>
+   </dl>
+   <div class="cta"><a class="btn b-ink" href="https://yandex.ru/maps/?rtext=~53.220846,50.263182" target="_blank" rel="noopener">Построить маршрут</a></div>
+  </div>
+  <div class="map" data-r><iframe loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=50.263182,53.220846&amp;z=16&amp;pt=50.263182,53.220846,pm2rdm" title="Luxor на карте: Самара, проспект Кирова, 147"></iframe></div>
+ </div>
+</section>
+
+<section class="fin ribs">
+ <div class="wrap fin-g">
+  <div class="fin-t" data-r>
+   <div class="kick">Каждый день 10:00–22:00</div>
+   <h2>Приезжайте на примерку</h2>
+   <p>Мех лучше выбирать вживую: на свету, перед зеркалом и в своём размере. Проспект Кирова, 147, второй этаж.</p>
+   <div class="cta">
+    <a class="btn b-light" href="https://wa.me/79272082696?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%B8%D0%B5%D1%85%D0%B0%D1%82%D1%8C%20%D0%B2%20Luxor%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BA%D1%83.%20%D0%9A%D0%BE%D0%B3%D0%B4%D0%B0%20%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%3F">Записаться в WhatsApp</a>
+    <a class="btn b-out" href="tel:+79272082696">Позвонить</a>
+   </div>
+  </div>
+  <div class="fin-ph"><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 1350w" sizes="(max-width:860px) 330px, 440px" width="675" height="900" loading="lazy" alt="Длинная карамельная шуба с меховым капюшоном у чёрной стены салона"></div>
+ </div>
+</section>
+</main>
+
+<footer class="ft"><div class="wrap"><b>LUXOR</b><span>Меховой салон · Самара, проспект Кирова, 147, 2 этаж · +7 927 208-26-96</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+
+<div class="fab"><a class="btn b-light" href="tel:+79272082696">Позвонить</a><a class="btn b-car" href="https://wa.me/79272082696?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D1%88%D1%83%D0%B1%D1%83%20%D0%B2%20Luxor.">WhatsApp</a></div>
+
+<script>
+(function(){
+ var f=document.getElementById('fit');if(!f)return;
+ var send=document.getElementById('send'),img=document.getElementById('pvImg'),cap=document.getElementById('pvCap'),bar=document.getElementById('bar');
+ var keys=['type','fur','len','color','size','when'],lab={type:'Ищу',fur:'Мех',len:'Длина',color:'Цвет',size:'Размер',when:'Приеду'};
+ var byType={'шубу':['p1','Карамельная шуба с капюшоном'],'автоледи':['p12','Короткие модели в зале'],'куртку или пуховик с мехом':['p2','Пуховик с меховой отделкой'],'кожу или замшу':['p11','Куртка с поясом'],'пока не знаю':['p13','Из зала салона']};
+ var byColor={p14:'Светлые шубы в зале',p12:'Графит и серебро',p7:'Золотистый мех',p2:'Серо-голубой с мехом',p4:'Белый мех в пятнышко'};
+ var cur='p13';
+ function show(k,t){if(k===cur)return;cur=k;img.classList.add('fade');setTimeout(function(){img.src='img/'+k+'-m.jpg';cap.textContent=t;img.onload=function(){img.classList.remove('fade')}},180)}
+ function upd(){
+  var lines=[],n=0,c=null,t=null;
+  keys.forEach(function(k){var el=f.querySelector('input[name='+k+']:checked'),dd=document.querySelector('[data-k='+k+']');
+   if(el){n++;dd.textContent=el.value;lines.push(lab[k]+': '+el.value);if(k==='color')c=el.dataset.img;if(k==='type')t=el.value}else dd.textContent='—'});
+  bar.style.width=(n/keys.length*100)+'%';
+  if(c)show(c,byColor[c]);else if(t)show(byType[t][0],byType[t][1]);
+  var msg=n?'Здравствуйте! Хочу приехать на примерку в Luxor (пр. Кирова, 147).\n'+lines.join('\n')+'\nПодскажите, что есть в зале?':'Здравствуйте! Хочу подобрать шубу в Luxor. Подскажите, что сейчас есть в зале?';
+  send.href='https://wa.me/79272082696?text='+encodeURIComponent(msg);
+  send.textContent=n>=4?'Отправить в WhatsApp':'Записаться на примерку';
+ }
+ f.addEventListener('change',upd);
+ var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var s=document.getElementById('strip');
+ document.querySelectorAll('.arr button').forEach(function(b){b.addEventListener('click',function(){var w=s.querySelector('figure').offsetWidth+18;s.scrollBy({left:w*+b.dataset.d,behavior:still?'auto':'smooth'})})});
+ var down=false,x0=0,l0=0,moved=0;
+ s.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;moved=0;x0=e.clientX;l0=s.scrollLeft});
+ window.addEventListener('pointermove',function(e){if(!down)return;var d=e.clientX-x0;if(Math.abs(d)>4){s.classList.add('drag');moved=1}s.scrollLeft=l0-d});
+ window.addEventListener('pointerup',function(){if(!down)return;down=false;s.classList.remove('drag')});
+ if(still)return;
+ var ph=document.getElementById('ph'),tick=0;
+ window.addEventListener('scroll',function(){if(tick)return;tick=1;requestAnimationFrame(function(){var y=Math.min(window.scrollY,900);ph.style.setProperty('--py',(-y*.07)+'px');tick=0})},{passive:true});
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","22:00"]],"tue":[["10:00","22:00"]],"wed":[["10:00","22:00"]],"thu":[["10:00","22:00"]],"fri":[["10:00","22:00"]],"sat":[["10:00","22:00"]],"sun":[["10:00","22:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

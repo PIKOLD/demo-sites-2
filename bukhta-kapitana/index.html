@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Бухта Капитана — катера без капитана и сапсёрфы в Казани</title><meta property="og:type" content="website"><meta property="og:title" content="Бухта Капитана — катера без капитана и сапсёрфы в Казани"><meta property="og:description" content="Катер без капитана на час или два, прогулки на катерах и яхтах, сапсёрфы. Казань, каждый день 10:00–22:00. Оценка 4,8 в 2ГИС."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/bukhta-kapitana/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Катер без капитана на час или два, прогулки на катерах и яхтах, сапсёрфы. Казань, каждый день 10:00–22:00. Оценка 4,8 в 2ГИС.">
+<meta name="theme-color" content="#F3F7F8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap"></noscript>
+<style>
+:root{--paper:#F3F7F8;--water:#DDEEF2;--water2:#BFE0E8;--ink:#13163B;--ink2:#474C70;--v:#6A3CF0;--vd:#4E25CF;--lav:#B9A4FF;--night:#16113F;--buoy:#FF5B3A;--line:rgba(19,22,59,.13);--g:32px;--fd:'Unbounded',system-ui,sans-serif;--fb:'Onest',system-ui,sans-serif;--fm:'IBM Plex Mono',ui-monospace,monospace;--ease:cubic-bezier(.2,.7,.2,1)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--fb);-webkit-font-smoothing:antialiased}
+svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--fd);margin:0;letter-spacing:-.02em}
+p{margin:0}
+.wrap{width:min(1320px,100% - 2*var(--g));margin-inline:auto}
+.kick,.lbl,legend,.mono{font-family:var(--fm);font-weight:500}
+.kick{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--v)}
+:focus-visible{outline:3px solid var(--buoy);outline-offset:3px;border-radius:8px}
+.demo{background:var(--ink);color:#fff;font:500 12.5px/1.4 var(--fm);text-align:center;padding:8px 16px}
+/* header */
+.hd{position:sticky;top:0;z-index:40;background:rgba(243,247,248,.93);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.hd.is-s{border-color:var(--line);box-shadow:0 8px 28px -22px rgba(19,22,59,.6)}
+.hd__in{display:flex;align-items:center;gap:28px;min-height:70px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 14px/1.05 var(--fd);letter-spacing:-.01em}
+.logo svg{width:40px;height:40px;flex:none}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{position:relative;text-decoration:none;font-weight:500;font-size:15px;color:var(--ink2);padding:12px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:2px;background:var(--v);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav a:hover{color:var(--ink)}.nav a:hover::after{transform:none}
+.hd__tel{font-weight:600;font-size:15px;text-decoration:none;white-space:nowrap}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:999px;border:2px solid transparent;font:600 16px/1.2 var(--fb);text-decoration:none;white-space:nowrap;cursor:pointer;transition:transform .2s var(--ease),background .2s,box-shadow .2s,color .2s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn--v{background:var(--v);color:#fff;box-shadow:0 14px 30px -14px rgba(106,60,240,.85)}
+.btn--v:hover{background:var(--vd);transform:translateY(-2px)}
+.btn--wa{background:var(--ink);color:#fff}
+.btn--wa:hover{background:#272b62;transform:translateY(-2px)}
+.btn--s{min-height:46px;padding:0 20px;font-size:15px}
+.btn--full{width:100%}
+.more{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;min-height:44px;margin-top:auto;font-weight:600;text-decoration:none}
+.more::after{content:"→";transition:transform .25s var(--ease)}
+.more:hover::after{transform:translateX(6px)}
+/* hero */
+.hero{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;min-height:min(900px,calc(100svh - 104px));padding:44px 0 60px}
+.sea{position:absolute;inset:0}
+.sea svg{width:100%;height:100%}
+.wk{stroke-dasharray:16 26;animation:flow 2.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-84}}
+.bob{animation:bob 4.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes bob{50%{transform:translateY(-4px) rotate(-1.4deg)}}
+.hero__in{position:relative;z-index:1}
+.hero__in>*{max-width:600px}
+.hero h1{max-width:none;font-weight:800;font-size:clamp(44px,7.2vw,116px);line-height:.95;letter-spacing:-.04em;margin:18px 0 24px}
+.hero h1 span{display:block}
+.hero h1 span+span{color:var(--v)}
+.js .hero h1 span{animation:rise 1s var(--ease) both}
+.js .hero h1 span+span{animation-delay:.12s}
+@keyframes rise{from{opacity:0;transform:translateY(42px)}}
+.lead{font-size:clamp(17px,1.35vw,20px);color:var(--ink2);max-width:540px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.cta2{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;margin-top:14px}
+.lnk{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration:none;background:linear-gradient(var(--v),var(--v)) left calc(100% - 8px)/0 2px no-repeat,linear-gradient(var(--water2),var(--water2)) left calc(100% - 8px)/100% 2px no-repeat;transition:background-size .3s var(--ease)}
+.lnk:hover{background-size:100% 2px,100% 2px}
+.st{display:inline-flex;align-items:center;gap:9px;font-size:14px;color:var(--ink2)}
+.st::before{content:"";width:9px;height:9px;border-radius:50%;background:#9AA0B8;flex:none}
+.st.is-open::before{background:#1DB45A;box-shadow:0 0 0 4px rgba(29,180,90,.18)}
+.st.is-closed::before{background:var(--buoy)}
+.facts{list-style:none;padding:0;margin:34px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.facts li{background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:14px}
+.facts b{font-weight:600}
+.coords{position:absolute;z-index:1;right:var(--g);bottom:20px;font:500 12px var(--fm);letter-spacing:.06em;color:#29506A}
+/* sections */
+.sec{padding:clamp(76px,9vw,140px) 0}
+.sh{max-width:840px;margin-bottom:clamp(36px,4.4vw,60px)}
+.sh h2{font-weight:700;font-size:clamp(30px,4vw,60px);line-height:1.04;margin-top:14px}
+.sub{margin-top:18px;font-size:clamp(17px,1.3vw,19px);color:var(--ink2);max-width:640px}
+/* fleet */
+.fleet{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px}
+.fc{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:14px;border-radius:30px;padding:clamp(24px,3vw,42px);transition:translate .35s var(--ease),box-shadow .35s}
+.fc:hover{translate:0 -5px;box-shadow:0 34px 60px -38px rgba(19,22,59,.6)}
+.fc h3{font-size:clamp(24px,2.3vw,34px);font-weight:700;line-height:1.1}
+.fc--main{grid-row:span 2;background:#fff;border:1px solid var(--line)}
+.fc--night{background:var(--night);color:#fff}
+.fc--night p{color:#CFCBF2}
+.fc--sup{background:var(--water)}
+.fc__art{width:100%;height:auto;margin-bottom:6px}
+.fc--main .fc__art{margin:-6px 0 8px}
+.tag{align-self:flex-start;font:500 12px var(--fm);text-transform:uppercase;letter-spacing:.08em;background:var(--water);padding:6px 12px;border-radius:999px}
+.ticks{list-style:none;margin:6px 0 14px;padding:0;display:grid;gap:12px}
+.ticks li{position:relative;padding-left:30px}
+.ticks li::before{content:"";position:absolute;left:2px;top:.42em;width:13px;height:7px;border-left:2.5px solid var(--v);border-bottom:2.5px solid var(--v);transform:rotate(-45deg)}
+.fc--main .btn{align-self:flex-start;margin-top:auto}
+.pay{margin-top:22px;font-size:13.5px;color:var(--ink2);letter-spacing:.02em}
+/* route */
+.sec--w{position:relative;background:var(--water)}
+.sec--w::before,.sec--w::after{content:"";position:absolute;left:0;right:0;height:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 24'%3E%3Cpath d='M0 24V12q30-12 60 0t60 0v12z' fill='%23DDEEF2'/%3E%3C/svg%3E") repeat-x 0 0/120px 24px}
+.sec--w::before{top:-23px}
+.sec--w::after{bottom:-23px;transform:scaleY(-1)}
+.route{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;position:relative}
+.route::before{content:"";position:absolute;left:24px;right:24px;top:23px;height:2px;background:repeating-linear-gradient(90deg,var(--v) 0 12px,transparent 12px 22px)}
+.route li{position:relative}
+.buoy{position:relative;z-index:1;display:grid;place-items:center;width:48px;height:48px;margin-bottom:22px;border-radius:50%;background:#fff;border:2px solid var(--ink);font:500 14px var(--fm)}
+.buoy::after{content:"";position:absolute;top:-8px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--buoy)}
+.route h3{font-size:19px;font-weight:700;margin-bottom:8px;line-height:1.2}
+.route p{font-size:15.5px;color:var(--ink2)}
+.route li:nth-child(2){transition-delay:.08s}.route li:nth-child(3){transition-delay:.16s}.route li:nth-child(4){transition-delay:.24s}.route li:nth-child(5){transition-delay:.32s}
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,6vw,100px);align-items:start}
+.score{position:sticky;top:110px}
+.big{font:800 clamp(120px,15vw,230px)/.85 var(--fd);letter-spacing:-.06em;color:var(--v);margin:22px 0 16px}
+.score__t{font-size:18px;color:var(--ink2);margin-bottom:10px}
+.pts article{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;padding:30px 0;border-top:1px solid var(--line)}
+.pts article:last-child{border-bottom:1px solid var(--line)}
+.pts .n{font:500 14px var(--fm);color:var(--v);padding-top:7px}
+.pts h3{font-size:clamp(21px,2vw,28px);font-weight:700;line-height:1.15;margin-bottom:10px}
+.pts p{color:var(--ink2)}
+.loghd{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:clamp(56px,6vw,92px) auto 18px}
+.loghd p{font:500 13px var(--fm);text-transform:uppercase;letter-spacing:.1em;color:var(--ink2)}
+.arr{display:flex;gap:8px}
+.arr button{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--ink);font:600 18px var(--fb);cursor:pointer;transition:border-color .2s,background .2s}
+.arr button:hover{border-color:var(--v);background:var(--water)}
+.log{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px max(var(--g),calc((100% - 1320px)/2)) 24px;scroll-padding-inline:max(var(--g),calc((100% - 1320px)/2));scrollbar-width:thin}
+.log article{flex:0 0 min(330px,82%);scroll-snap-align:start;display:flex;flex-direction:column;gap:14px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;transition:translate .3s var(--ease),border-color .3s}
+.log article:hover{translate:0 -4px;border-color:var(--v)}
+.log .mono{font-size:12px;color:var(--v);letter-spacing:.06em}
+/* plan */
+.night{position:relative;color:#fff;padding:clamp(76px,9vw,140px) 0;background:radial-gradient(900px 520px at 88% 0%,rgba(106,60,240,.5),transparent 62%),radial-gradient(760px 420px at 0% 100%,rgba(20,120,150,.32),transparent 62%),var(--night)}
+.night .kick{color:var(--lav)}
+.night .sub{color:#CFCBF2}
+.plan{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.95fr);gap:clamp(28px,4.5vw,72px);align-items:start}
+.qs{display:grid;gap:26px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0;margin-bottom:12px;font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--lav)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.chips span{display:inline-flex;align-items:center;min-height:50px;padding:10px 20px;border-radius:16px;border:1.5px solid rgba(255,255,255,.28);font-weight:500;line-height:1.25;transition:background .2s,border-color .2s}
+.chips label:hover span{border-color:rgba(255,255,255,.65)}
+.chips input:checked+span{background:var(--v);border-color:var(--v);box-shadow:0 12px 26px -12px rgba(106,60,240,.95)}
+.chips input:checked+span::before{content:"";width:8px;height:8px;margin-right:10px;border-radius:50%;background:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--buoy);outline-offset:3px}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.field{display:grid;gap:10px;font:500 13px var(--fm);text-transform:uppercase;letter-spacing:.1em;color:var(--lav)}
+.field input{width:100%;min-height:52px;padding:10px 16px;border-radius:16px;border:1.5px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);color:#fff;font:500 16px var(--fb);letter-spacing:0;text-transform:none;color-scheme:dark}
+.field input::placeholder{color:rgba(255,255,255,.55)}
+.field input:focus{border-color:var(--lav)}
+.tk{position:sticky;top:100px;background:var(--paper);color:var(--ink);border-radius:28px;padding:clamp(22px,2.4vw,32px);box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.tk__h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font:700 21px/1.2 var(--fd)}
+.tk__h .mono{font-size:13px;color:var(--v);white-space:nowrap}
+.tk__bar{height:6px;border-radius:9px;background:var(--water);margin:16px 0 18px;overflow:hidden}
+.tk__bar i{display:block;height:100%;width:16%;border-radius:9px;background:var(--v);transition:width .4s var(--ease)}
+.tk dl{margin:0 0 22px;border-top:2px dashed rgba(19,22,59,.22)}
+.tk dl div{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.tk dt{font:500 12px/1.9 var(--fm);text-transform:uppercase;letter-spacing:.08em;color:var(--ink2)}
+.tk dd{margin:0;font-weight:600;color:#7A8099}
+.tk .ok dd{color:var(--ink)}
+.tk__f{margin-top:14px;font-size:14px;color:var(--ink2);text-align:center}
+.tk__f a{font-weight:600;white-space:nowrap}
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px}
+.ct__info{background:#fff;border:1px solid var(--line);border-radius:30px;padding:clamp(24px,3vw,42px)}
+.ct__row{display:grid;gap:6px;padding:18px 0;border-bottom:1px solid var(--line)}
+.ct__row:first-child{padding-top:0}.ct__row:last-child{border:0;padding-bottom:0}
+.lbl{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--v)}
+.ct__tel{font:700 clamp(22px,2.2vw,30px)/1.25 var(--fd);letter-spacing:-.02em;text-decoration:none}
+.ct__row .btn{justify-self:start;margin-top:8px}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);text-decoration:none;font-weight:500;transition:border-color .2s,background .2s}
+.soc a:hover{border-color:var(--v);background:var(--water)}
+.map{overflow:hidden;min-height:500px;border-radius:30px;border:1px solid var(--line);background:var(--water)}
+.map iframe{display:block;width:100%;height:100%;min-height:500px;border:0}
+/* final */
+.fin{position:relative;overflow:hidden;background:var(--v);color:#fff;padding:clamp(84px,10vw,150px) 0}
+.fin__art{position:absolute;right:-4%;top:50%;width:min(980px,95%);transform:translateY(-50%);opacity:.5}
+.fin__in{position:relative}
+.fin h2{max-width:920px;font-weight:700;font-size:clamp(34px,5.4vw,84px);line-height:1}
+.fin p{margin-top:18px;font-size:clamp(17px,1.4vw,20px);color:#E6DEFF;max-width:560px}
+.fin .btn--wa{background:#fff;color:var(--ink)}
+.fin .btn--wa:hover{background:#EDE7FF}
+.btn--line{border-color:rgba(255,255,255,.75);color:#fff}
+.btn--line:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+.ft{background:var(--ink);color:#C9CBE0;padding:30px 0 36px;font-size:14px}
+.ft__in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+.ft a{color:#fff}
+.mbar{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease),translate .35s var(--ease),box-shadow .35s}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){.nav{display:none}.hd__tel{margin-left:auto}}
+@media (max-width:899px){
+.hero{min-height:0;padding:30px 0 0;justify-content:flex-start}
+.sea{position:relative;inset:auto;order:2;height:clamp(250px,62vw,400px);margin-top:30px}
+.hero__in>*{max-width:none}
+.coords{bottom:14px}
+.fleet,.praise,.plan,.ct{grid-template-columns:minmax(0,1fr)}
+.fc--main{grid-row:auto}
+.score,.tk{position:static}
+.route{grid-template-columns:minmax(0,1fr);gap:28px}
+.route::before{left:23px;right:auto;top:24px;bottom:24px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--v) 0 12px,transparent 12px 22px)}
+.route li{padding-left:72px;min-height:48px}
+.buoy{position:absolute;left:0;top:0;margin:0}
+.map,.map iframe{min-height:360px}
+}
+@media (max-width:760px){
+:root{--g:16px}
+body{font-size:16px;padding-bottom:86px}
+.hd__tel{display:none}
+.hd__in{gap:12px;min-height:62px;justify-content:space-between}
+.cta .btn{flex:1 1 100%}
+.row2{grid-template-columns:minmax(0,1fr)}
+.arr{display:none}
+.mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:50;padding:8px;border-radius:22px;background:rgba(19,22,59,.95);box-shadow:0 16px 40px -14px rgba(0,0,0,.6)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;border-radius:15px;color:#fff;font-weight:600;text-decoration:none}
+.mbar a:first-child{background:var(--v)}
+.mbar a+a{border:1.5px solid rgba(255,255,255,.4)}
+.pts article{grid-template-columns:minmax(0,1fr);gap:6px;padding:24px 0}
+.tk dl div{grid-template-columns:92px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="hd">
+ <div class="wrap hd__in">
+  <a class="logo" href="#top" aria-label="Бухта Капитана, наверх">
+   <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 30A15 15 0 1 1 33 30" fill="none" stroke="#13163B" stroke-width="3.2" stroke-linecap="round"/><path d="M20 34C16.4 28.5 16.2 22 17.2 17.5h5.6C23.8 22 23.6 28.5 20 34z" fill="#6A3CF0"/><path d="M17.6 14.5 15 10.5M22.4 14.5l2.6-4" stroke="#6A3CF0" stroke-width="2.2" stroke-linecap="round"/></svg>
+   <span>Бухта<br>Капитана</span>
+  </a>
+  <nav class="nav" aria-label="Разделы"><a href="#fleet">На чём выйти</a><a href="#how">Как проходит</a><a href="#reviews">Отзывы</a><a href="#contacts">Где бухта</a></nav>
+  <a class="hd__tel" href="tel:+79625594940">+7 962 559-49-40</a>
+  <a class="btn btn--v btn--s" href="#plan">Забронировать</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="sea" aria-hidden="true">
+  <svg viewBox="0 0 1600 900" preserveAspectRatio="xMaxYMid slice">
+   <defs>
+    <linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ECF5F7"/><stop offset=".55" stop-color="#D4EAF0"/><stop offset="1" stop-color="#B4D9E4"/></linearGradient>
+    <pattern id="rp" width="150" height="74" patternUnits="userSpaceOnUse"><path d="M14 22q16-9 32 0M88 56q13-7 26 0" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.4" stroke-linecap="round"/></pattern>
+    <linearGradient id="fo" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+   </defs>
+   <rect width="1600" height="900" fill="url(#sg)"/>
+   <rect width="1600" height="900" fill="url(#rp)"/>
+   <g fill="#FF5B3A"><circle cx="1430" cy="640" r="13"/><circle cx="1250" cy="150" r="10"/></g>
+   <g fill="none" stroke="#fff" stroke-width="3" opacity=".8"><circle cx="1430" cy="640" r="22"/><circle cx="1250" cy="150" r="18"/></g>
+   <g id="ride">
+    <g transform="translate(1068 420) rotate(150)">
+     <path d="M0-8 1000-80V80L0 8Z" fill="url(#fo)" opacity=".75"/>
+     <path d="M0-5 360-24V24L0 5Z" fill="url(#fo)"/>
+     <path class="wk" d="M0-10 1150-408" stroke="url(#fo)" stroke-width="5" stroke-linecap="round" fill="none"/>
+     <path class="wk" d="M0 10 1150 408" stroke="url(#fo)" stroke-width="5" stroke-linecap="round" fill="none"/>
+     <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M150-50q18 50 0 100" stroke-opacity=".7"/><path d="M300-99q36 99 0 198" stroke-opacity=".5"/><path d="M450-149q54 149 0 298" stroke-opacity=".36"/><path d="M600-198q72 198 0 396" stroke-opacity=".24"/><path d="M760-251q90 251 0 502" stroke-opacity=".14"/></g>
+    </g>
+    <g transform="translate(1110 395) rotate(-30) scale(1.5)">
+     <g class="bob">
+      <ellipse cx="96" cy="12" rx="108" ry="42" fill="#0B3550" opacity=".16"/>
+      <ellipse cx="-36" cy="0" rx="18" ry="12" fill="#fff"/>
+      <path d="M150-42q38 10 56 38M150 42q38-10 56-38" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+      <path d="M0-36H118Q176-34 200 0Q176 34 118 36H0Q-6 0 0-36Z" fill="#6A3CF0"/>
+      <path d="M8-28H116Q160-26 184 0Q160 26 116 28H8Z" fill="#8C68FF"/>
+      <path d="M15-21H112Q146-19 162 0Q146 19 112 21H15Z" fill="#EEF0FA"/>
+      <rect x="22" y="-18" width="22" height="36" rx="6" fill="#6A3CF0"/>
+      <rect x="58" y="-17" width="20" height="14" rx="4" fill="#6A3CF0"/><rect x="58" y="3" width="20" height="14" rx="4" fill="#6A3CF0"/>
+      <rect x="86" y="-12" width="12" height="24" rx="3" fill="#13163B"/>
+      <path d="M102-21Q118 0 102 21" fill="none" stroke="#13163B" stroke-width="6" stroke-linecap="round"/>
+      <rect x="-24" y="-12" width="26" height="24" rx="7" fill="#13163B"/>
+     </g>
+    </g>
+   </g>
+  </svg>
+ </div>
+ <div class="wrap hero__in">
+  <p class="kick">Прокат катеров и сапсёрфов · Казань</p>
+  <h1><span>Бухта</span><span>Капитана</span></h1>
+  <p class="lead">Катер без капитана на час или два. Короткий инструктаж на месте, пара минут, чтобы освоиться, — и Казань открывается с воды, а штурвал у вас.</p>
+  <div class="cta">
+   <a class="btn btn--v" href="#plan">Забронировать выход</a>
+   <a class="btn btn--wa" href="https://wa.me/79600347711" data-wa="Здравствуйте! Хочу забронировать катер в «Бухте Капитана». Подскажите, когда есть свободное время?" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Написать в WhatsApp</a>
+  </div>
+  <div class="cta2">
+   <a class="lnk" href="tel:+79625594940">Позвонить</a>
+   <a class="lnk" href="https://yandex.ru/maps/?rtext=~55.825213,49.171328" target="_blank" rel="noopener">Маршрут до бухты</a>
+   <span class="st" data-status></span>
+  </div>
+  <ul class="facts">
+   <li><b>4,8</b> в 2ГИС · 27 оценок</li>
+   <li><b>10:00–22:00</b> каждый день</li>
+   <li><b>Наличные</b>, карта, QR</li>
+  </ul>
+ </div>
+ <p class="coords">55°49′31″ с. ш. · 49°10′17″ в. д.</p>
+</section>
+
+<section class="sec" id="fleet">
+ <div class="wrap">
+  <div class="sh" data-r>
+   <p class="kick">01 · На чём выйти</p>
+   <h2>Капитан сегодня&nbsp;— вы</h2>
+   <p class="sub">Встать за штурвал самому, прогуляться на катере или яхте, взять доску и весло — три способа оказаться на воде в Казани.</p>
+  </div>
+  <div class="fleet">
+   <article class="fc fc--main" data-r>
+    <svg class="fc__art" viewBox="0 0 360 150" aria-hidden="true"><path d="M8 92h30M0 101h36" stroke="#BFE0E8" stroke-width="4" stroke-linecap="round"/><path d="M40 58h26v24h-8v36h-8V82H40z" fill="#13163B"/><path d="M70 74h262q-14 26-50 32H64z" fill="#6A3CF0"/><path d="M68 86h244" stroke="#fff" stroke-width="3" opacity=".75"/><rect x="120" y="58" width="34" height="16" rx="5" fill="#13163B"/><path d="M190 74l16-24h18l-8 24z" fill="#13163B" opacity=".85"/><path d="M0 104q22-7 45 0t45 0 45 0 45 0 45 0 45 0 45 0 45 0V150H0z" fill="#DDEEF2" opacity=".92"/><ellipse cx="50" cy="112" rx="24" ry="5" fill="#fff"/><path d="M300 104q22-2 42-16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+    <p class="tag">За этим едут в бухту</p>
+    <h3>Катер без капитана</h3>
+    <p>Инструктаж на месте, номер для связи — и вы отходите сами. Управление простое: гости пишут, что разобрались за пару минут, даже если за штурвалом впервые.</p>
+    <ul class="ticks">
+     <li>Лёгкий катер до 10&nbsp;л.с., а идёт бодро — по словам гостей, около 30&nbsp;км/ч</li>
+     <li>Берут на час, берут на два — договоритесь, сколько нужно вам</li>
+     <li>На воде вы не одни: намотали траву на винт — инструктор приедет и поможет</li>
+     <li>Фиолетовый катер гости вспоминают отдельно</li>
+    </ul>
+    <a class="btn btn--v" href="#plan" data-pick="Катер без капитана">Забронировать катер</a>
+   </article>
+   <article class="fc fc--night" data-r>
+    <svg class="fc__art" viewBox="0 0 320 110" aria-hidden="true"><path d="M0 74h30V56h16V42h12v32h22V50h18v24h24V34h8V24h4v10h8v40h26V58h20v16h30V46h18v28h40V62h44v12H0z" fill="#2B2473"/><g fill="#FFD27A"><rect x="34" y="62" width="4" height="4"/><rect x="104" y="58" width="4" height="4"/><rect x="128" y="44" width="4" height="4"/><rect x="134" y="56" width="4" height="4"/><rect x="226" y="54" width="4" height="4"/><rect x="290" y="66" width="4" height="4"/></g><path d="M20 92h34M108 100h48M238 94h44" stroke="#6A3CF0" stroke-width="3" stroke-linecap="round"/><path d="M150 82h118q-8 14-28 16h-82z" fill="#fff"/><path d="M178 82l12-14h44l8 14z" fill="#DCD6FF"/></svg>
+    <h3>Катера и яхты</h3>
+    <p>Прогулка, чтобы увидеть город с воды. Напишите, сколько вас и когда, — подскажут, на чём выйти.</p>
+    <a class="more" href="#plan" data-pick="Прогулка на катере или яхте">Спросить о прогулке</a>
+   </article>
+   <article class="fc fc--sup" data-r>
+    <svg class="fc__art" viewBox="0 0 320 90" aria-hidden="true"><path d="M20 70q20-6 40 0t40 0M220 80q20-6 40 0t40 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M22 46q0-17 40-18l188 2q50 4 56 16-6 12-56 16L62 64q-40-1-40-18z" fill="#fff" stroke="#13163B" stroke-width="2"/><path d="M40 46h250" stroke="#6A3CF0" stroke-width="3"/><rect x="128" y="37" width="70" height="18" rx="6" fill="#BFE0E8"/><path d="M92 10l146 66" stroke="#13163B" stroke-width="4" stroke-linecap="round"/><path d="M230 70l20 8-6 11-20-8z" fill="#6A3CF0"/></svg>
+    <h3>Сапсёрфы</h3>
+    <p>Потише и своими силами: доска, весло и вода вокруг.</p>
+    <a class="more" href="#plan" data-pick="Сапсёрф">Взять сапсёрф</a>
+   </article>
+  </div>
+  <p class="pay mono" data-r>Оплата на месте: наличные · перевод с карты · QR-код</p>
+ </div>
+</section>
+
+<section class="sec sec--w" id="how">
+ <div class="wrap">
+  <div class="sh" data-r><p class="kick">02 · Как проходит выход</p><h2>От брони до&nbsp;швартовки</h2></div>
+  <ol class="route">
+   <li data-r><span class="buoy">01</span><h3>Бронь</h3><p>Пишете в WhatsApp или звоните — договариваемся о дне, времени и катере.</p></li>
+   <li data-r><span class="buoy">02</span><h3>Встреча в бухте</h3><p>Администраторы встречают на входе и готовят катер к выходу.</p></li>
+   <li data-r><span class="buoy">03</span><h3>Инструктаж</h3><p>Как управлять, куда звонить, если что-то пошло не так, и как держаться на волне.</p></li>
+   <li data-r><span class="buoy">04</span><h3>На воде</h3><p>Час, два — сколько договорились. Связь с бухтой всё это время есть.</p></li>
+   <li data-r><span class="buoy">05</span><h3>Обратно в бухту</h3><p>Возвращаете катер и решаете, когда выйти снова.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="sec" id="reviews">
+ <div class="wrap praise">
+  <div class="score" data-r>
+   <p class="kick">03 · За что хвалят</p>
+   <p class="big">4,8</p>
+   <p class="score__t">средняя оценка в 2ГИС по 27 оценкам</p>
+   <a class="more" href="https://2gis.ru/kazan/firm/70000001114769669" target="_blank" rel="noopener">Все отзывы в 2ГИС</a>
+  </div>
+  <div class="pts">
+   <article data-r><span class="n">01</span><div><h3>Первый раз — без страха</h3><p>Новичкам терпеливо всё объясняют и остаются на связи по любому вопросу. Многие впервые встают за штурвал — и пишут, что придут ещё.</p></div></article>
+   <article data-r><span class="n">02</span><div><h3>На воде вас не бросят</h3><p>Когда на винт намотало траву и катер заглох, инструктор Глеб быстро приехал и помог. Его благодарят по имени.</p></div></article>
+   <article data-r><span class="n">03</span><div><h3>Ухоженная бухта и тёплая встреча</h3><p>Уютно и чисто, администраторы встречают приветливо — с ними не скучно ждать катер, а инструктаж чёткий и понятный.</p></div></article>
+  </div>
+ </div>
+ <div class="wrap loghd"><p>Из бортового журнала гостей · пересказ отзывов</p><div class="arr"><button type="button" data-dir="-1" aria-label="Листать назад">←</button><button type="button" data-dir="1" aria-label="Листать вперёд">→</button></div></div>
+ <div class="log" id="log" data-qa-skip tabindex="0" aria-label="Пересказ отзывов, листайте вбок">
+  <article><p class="mono">Запись 01</p><p>Впервые за штурвалом катера — эмоций через край, обязательно вернусь.</p></article>
+  <article><p class="mono">Запись 02</p><p>Город с воды выглядит совсем иначе. Всё объяснили и показали, команда отличная.</p></article>
+  <article><p class="mono">Запись 03</p><p>Два часа на фиолетовом катере: погоняли от души, скорость около 30&nbsp;км/ч.</p></article>
+  <article><p class="mono">Запись 04</p><p>Мотор до 10&nbsp;л.с., а катер быстрый. Совет от гостя: на высокой волне полный ход ни к чему.</p></article>
+  <article><p class="mono">Запись 05</p><p>Катались вдвоём — незабываемо. Встретили приветливо, инструктаж чёткий.</p></article>
+  <article><p class="mono">Запись 06</p><p>Брали катер без капитана впервые: терпеливые ребята, на связи по любому вопросу. Будем брать ещё.</p></article>
+  <article><p class="mono">Запись 07</p><p>Приветливые и отзывчивые — весело, организованно, комфортно.</p></article>
+ </div>
+</section>
+
+<section class="night" id="plan">
+ <div class="wrap">
+  <div class="sh" data-r><p class="kick">04 · Заявка за минуту</p><h2>Соберите свой выход на&nbsp;воду</h2><p class="sub">Отметьте, что нужно, — заявка уйдёт в WhatsApp готовым текстом. Свободное время и стоимость вам подтвердят в ответ.</p></div>
+  <div class="plan">
+   <form class="qs" id="pf" data-r>
+    <fieldset><legend>На чём</legend><div class="chips">
+     <label><input type="radio" name="v" value="Катер без капитана" checked><span>Катер без капитана</span></label>
+     <label><input type="radio" name="v" value="Прогулка на катере или яхте"><span>Катер или яхта — прогулка</span></label>
+     <label><input type="radio" name="v" value="Сапсёрф"><span>Сапсёрф</span></label>
+    </div></fieldset>
+    <fieldset><legend>Сколько вас</legend><div class="chips">
+     <label><input type="radio" name="n" value="1–2 человека"><span>1–2</span></label>
+     <label><input type="radio" name="n" value="3–4 человека"><span>3–4</span></label>
+     <label><input type="radio" name="n" value="5 и больше"><span>5 и больше</span></label>
+    </div></fieldset>
+    <fieldset><legend>Когда</legend><div class="chips">
+     <label><input type="radio" name="d" value="сегодня"><span>Сегодня</span></label>
+     <label><input type="radio" name="d" value="завтра"><span>Завтра</span></label>
+     <label><input type="radio" name="d" value="в выходные"><span>В выходные</span></label>
+    </div></fieldset>
+    <fieldset><legend>Во сколько</legend><div class="chips">
+     <label><input type="radio" name="t" value="с 10 до 14"><span>10–14</span></label>
+     <label><input type="radio" name="t" value="с 14 до 18"><span>14–18</span></label>
+     <label><input type="radio" name="t" value="с 18 до 22, вечером"><span>18–22, вечер</span></label>
+    </div></fieldset>
+    <fieldset><legend>На сколько</legend><div class="chips">
+     <label><input type="radio" name="h" value="1 час"><span>1 час</span></label>
+     <label><input type="radio" name="h" value="2 часа"><span>2 часа</span></label>
+     <label><input type="radio" name="h" value="дольше, обсудим"><span>Дольше — обсудим</span></label>
+    </div></fieldset>
+    <fieldset><legend>Опыт</legend><div class="chips">
+     <label><input type="radio" name="x" value="первый раз"><span>Первый раз</span></label>
+     <label><input type="radio" name="x" value="уже пробовали"><span>Уже пробовали</span></label>
+    </div></fieldset>
+    <div class="row2">
+     <label class="field">Или точная дата<input type="date" name="day"></label>
+     <label class="field">Как к вам обращаться<input type="text" name="who" autocomplete="given-name" placeholder="Имя, необязательно"></label>
+    </div>
+   </form>
+   <aside class="tk" data-r aria-live="polite">
+    <p class="tk__h"><span>Путевой лист</span><span class="mono" id="prog">1 из 6</span></p>
+    <div class="tk__bar"><i id="bar"></i></div>
+    <dl>
+     <div class="ok"><dt>На чём</dt><dd data-out="v">Катер без капитана</dd></div>
+     <div><dt>Экипаж</dt><dd data-out="n">—</dd></div>
+     <div><dt>Когда</dt><dd data-out="d">—</dd></div>
+     <div><dt>Время</dt><dd data-out="t">—</dd></div>
+     <div><dt>Сколько</dt><dd data-out="h">—</dd></div>
+     <div><dt>Опыт</dt><dd data-out="x">—</dd></div>
+    </dl>
+    <a class="btn btn--v btn--full" id="send" href="https://wa.me/79600347711" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Отправить в WhatsApp</a>
+    <p class="tk__f">или позвоните: <a href="tel:+79625594940">+7 962 559-49-40</a></p>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="contacts">
+ <div class="wrap">
+  <div class="sh" data-r><p class="kick">05 · Где бухта</p><h2>Бухта в Казани</h2></div>
+  <div class="ct">
+   <div class="ct__info" data-r>
+    <div class="ct__row"><p class="lbl">Координаты</p><p>Казань · 55°49′31″ с. ш., 49°10′17″ в. д.</p><a class="btn btn--v" href="https://yandex.ru/maps/?rtext=~55.825213,49.171328" target="_blank" rel="noopener">Проложить маршрут</a></div>
+    <div class="ct__row"><p class="lbl">Часы</p><p>Каждый день 10:00–22:00</p><span class="st" data-status></span></div>
+    <div class="ct__row"><p class="lbl">Телефон</p><a class="ct__tel" href="tel:+79625594940">+7 962 559-49-40</a></div>
+    <div class="ct__row"><p class="lbl">Написать</p><div class="soc"><a href="https://wa.me/79600347711" data-wa="Здравствуйте! Хочу узнать про катер в «Бухте Капитана»." target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/kapitan_kazann" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/kapitan_kazan" target="_blank" rel="noopener">ВКонтакте</a><a href="https://2gis.ru/kazan/firm/70000001114769669" target="_blank" rel="noopener">2ГИС</a></div></div>
+    <div class="ct__row"><p class="lbl">Оплата</p><p>Наличные, перевод с карты, оплата по QR-коду</p></div>
+   </div>
+   <div class="map" data-r><iframe loading="lazy" title="Бухта Капитана на карте" src="https://yandex.ru/map-widget/v1/?ll=49.171328,55.825213&amp;z=16&amp;pt=49.171328,55.825213,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section class="fin">
+ <svg class="fin__art" viewBox="0 0 900 400" aria-hidden="true"><g fill="none" stroke="#fff" stroke-linecap="round"><path d="M900 200 80 40" stroke-width="3" opacity=".5"/><path d="M900 200 80 360" stroke-width="3" opacity=".5"/><path d="M760 172q16 28 0 56M600 140q26 60 0 120M440 109q36 91 0 182M280 78q46 122 0 244" stroke-width="3" opacity=".35"/></g></svg>
+ <div class="wrap fin__in" data-r>
+  <h2>Штурвал ждёт. Осталось выбрать&nbsp;день.</h2>
+  <p>Напишите, когда хотите на воду, — ответят и предложат свободное время.</p>
+  <div class="cta">
+   <a class="btn btn--wa" href="https://wa.me/79600347711" data-wa="Здравствуйте! Хочу на воду с «Бухтой Капитана». Когда есть свободный катер?" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Написать в WhatsApp</a>
+   <a class="btn btn--line" href="tel:+79625594940">+7 962 559-49-40</a>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="ft"><div class="wrap ft__in"><p>Бухта Капитана · прокат катеров и сапсёрфов · Казань</p><p>Демо-концепт по открытым данным <a href="https://2gis.ru/kazan/firm/70000001114769669" target="_blank" rel="noopener">2ГИС</a>, не официальный сайт</p></div></footer>
+<nav class="mbar" aria-label="Быстрая связь"><a href="tel:+79625594940">Позвонить</a><a href="https://wa.me/79600347711" data-wa="Здравствуйте! Хочу забронировать катер в «Бухте Капитана». Подскажите, когда есть свободное время?" target="_blank" rel="noopener">WhatsApp</a></nav>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","22:00"]],"tue":[["10:00","22:00"]],"wed":[["10:00","22:00"]],"thu":[["10:00","22:00"]],"fri":[["10:00","22:00"]],"sat":[["10:00","22:00"]],"sun":[["10:00","22:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+<script>
+(function(){
+var W='https://wa.me/79600347711?text=';
+document.querySelectorAll('[data-wa]').forEach(function(a){a.href=W+encodeURIComponent(a.getAttribute('data-wa'))});
+var hd=document.querySelector('.hd'),ride=document.getElementById('ride'),raf=0;
+var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function onS(){raf=0;var y=window.scrollY||0;hd.classList.toggle('is-s',y>8);if(ride&&!still){var k=Math.min(y,1000);ride.style.transform='translate('+(k*.34).toFixed(1)+'px,'+(-k*.2).toFixed(1)+'px)'}}
+addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(onS)},{passive:true});onS();
+var log=document.getElementById('log');
+document.querySelectorAll('[data-dir]').forEach(function(b){b.addEventListener('click',function(){log.scrollBy({left:+b.getAttribute('data-dir')*346,behavior:still?'auto':'smooth'})})});
+var f=document.getElementById('pf');if(!f)return;
+var send=document.getElementById('send'),day=f.elements.day,who=f.elements.who;
+var t=new Date(),pad=function(n){return(n<10?'0':'')+n};day.min=t.getFullYear()+'-'+pad(t.getMonth()+1)+'-'+pad(t.getDate());
+var L={v:'Что',n:'Нас',d:'Когда',t:'Время',h:'На сколько',x:'Опыт'};
+function val(k){if(k==='d'&&day.value){var p=day.value.split('-');return p[2]+'.'+p[1]+'.'+p[0]}var c=f.querySelector('input[name="'+k+'"]:checked');return c?c.value:''}
+function upd(){var done=0,lines=[];
+Object.keys(L).forEach(function(k){var v=val(k),o=document.querySelector('[data-out="'+k+'"]');o.textContent=v?v.charAt(0).toUpperCase()+v.slice(1):'—';o.parentNode.classList.toggle('ok',!!v);if(v){done++;lines.push('— '+L[k]+': '+v)}});
+document.getElementById('prog').textContent=done+' из 6';document.getElementById('bar').style.width=Math.max(done/6*100,4)+'%';
+var nm=who.value.trim();
+var msg='Здравствуйте! Заявка с сайта «Бухта Капитана».\n'+(lines.length?lines.join('\n')+'\n':'')+(nm?'Меня зовут '+nm+'.\n':'')+'Подскажите, есть ли свободное время и сколько это будет стоить?';
+send.href=W+encodeURIComponent(msg)}
+day.addEventListener('change',function(){if(day.value)f.querySelectorAll('input[name="d"]').forEach(function(r){r.checked=false})});
+f.querySelectorAll('input[name="d"]').forEach(function(r){r.addEventListener('change',function(){day.value=''})});
+f.addEventListener('change',upd);f.addEventListener('input',upd);
+f.addEventListener('submit',function(e){e.preventDefault()});
+document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){var r=f.querySelector('input[name="v"][value="'+a.getAttribute('data-pick')+'"]');if(r){r.checked=true;upd()}})});
+upd();
+})();
+</script>
+</body>
+</html>

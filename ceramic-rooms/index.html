@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ceramic Rooms — салон плитки, керамогранита и сантехники в Тюмени</title><meta property="og:type" content="website"><meta property="og:title" content="Ceramic Rooms — салон плитки, керамогранита и сантехники в Тюмени"><meta property="og:description" content="Ceramic Rooms, Тюмень, ул. Газовиков, 35: керамогранит, плитка, напольные покрытия и сантехника. Подбор сочетаний и визуализация с дизайнером, доставка."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/ceramic-rooms/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Ceramic Rooms, Тюмень, ул. Газовиков, 35: керамогранит, плитка, напольные покрытия и сантехника. Подбор сочетаний и визуализация с дизайнером, доставка.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Manrope:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --marble:#f4f2ed;--stone:#e7e3db;--line:#d6d0c4;--ink:#1c1d1f;--soft:#55575b;
+  --graphite:#1b1d20;--graphite2:#26292d;--gold:#c9a54e;--gold-d:#7d6220;--teal:#1f6a73;--teal-l:#2c8792;
+  --serif:"Tenor Sans","Trebuchet MS",sans-serif;--sans:"Manrope",system-ui,sans-serif;
+  --wrap:1360px;--r:4px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--marble);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(16px,4vw,56px)}
+.demo{background:var(--graphite);color:#cfc9bd;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+.eyebrow{font:600 12px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-d)}
+.h2{font:400 clamp(2rem,4.2vw,3.6rem)/1.06 var(--serif);letter-spacing:-.005em;max-width:16ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);font:600 15px/1 var(--sans);text-decoration:none;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s,transform .2s}
+.btn:active{transform:translateY(1px)}
+.btn-gold{background:var(--graphite);color:#f5ecd6;border-color:var(--graphite)}
+.btn-gold:hover{background:var(--gold);color:var(--graphite);border-color:var(--gold)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-l)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--marble)}
+.btn svg{width:18px;height:18px;flex:none}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--soft)}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#aaa}
+[data-status].is-open::before{background:#2f9e6a;box-shadow:0 0 0 4px rgba(47,158,106,.15)}
+[data-status].is-closed::before{background:#c0504d}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(244,242,237,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:34px;height:34px}
+.logo b{font:400 15px/1.05 var(--serif);letter-spacing:.24em;text-transform:uppercase}
+.nav{display:flex;gap:30px;font-size:14px;font-weight:500}
+.nav a{text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s}
+.nav a:hover{border-color:var(--gold)}
+.top-tel{font-weight:600;text-decoration:none;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(24px,4vw,64px);align-items:center;padding-top:clamp(28px,4vh,56px);padding-bottom:clamp(32px,5vh,64px)}
+.hero h1{font:400 clamp(3rem,7.4vw,7.6rem)/.92 var(--serif);text-transform:uppercase;letter-spacing:.01em;margin:18px 0 0;position:relative}
+.hero h1 span{display:block}
+.hero h1 span:last-child{padding-left:.9em}
+.vein{display:block;width:min(100%,560px);height:46px;margin:6px 0 4px}
+.vein path{fill:none;stroke:var(--gold);stroke-width:1.3;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 2.6s .3s cubic-bezier(.6,.1,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.lead{font-size:clamp(17px,1.35vw,20px);max-width:34em;color:#33353a}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 20px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;font-size:14px}
+.hero-meta a{text-decoration:none;border-bottom:1px solid var(--line);padding:10px 0}
+.hero-meta a:hover{border-color:var(--ink)}
+.hero-pic{position:relative;height:min(76vh,760px);min-height:440px}
+.hero-pic .big{position:absolute;inset:0 0 0 14%;overflow:hidden;background:var(--graphite)}
+.hero-pic .big img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;transform:scale(1.06);transition:transform 2.4s cubic-bezier(.2,.7,.2,1)}
+.hero-pic.in .big img,.no-js .hero-pic .big img{transform:scale(1)}
+.hero-pic .small{position:absolute;left:0;bottom:8%;width:38%;aspect-ratio:3/4;overflow:hidden;border:8px solid var(--marble);box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.hero-pic .small img{width:100%;height:100%;object-fit:cover;object-position:30% 40%}
+.rate{position:absolute;right:18px;top:18px;background:var(--graphite);color:#f2ead7;padding:14px 18px;display:flex;gap:12px;align-items:center}
+.rate b{font:400 34px/1 var(--serif);color:var(--gold)}
+.rate small{font-size:12px;line-height:1.35;color:#c9c2b3}
+
+/* rooms bento */
+.sec{padding:clamp(72px,10vw,140px) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:32px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.sec-head p{color:var(--soft);max-width:34em}
+.rooms{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:minmax(150px,auto);gap:16px}
+.room{position:relative;overflow:hidden;background:var(--stone);color:#fff;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;min-height:300px;isolation:isolate}
+.room img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.room::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,20,22,0) 35%,rgba(20,20,22,.78))}
+.room:hover img{transform:scale(1.05)}
+.room .no{font:600 12px var(--sans);letter-spacing:.2em;color:var(--gold);margin-bottom:8px}
+.room h3{font:400 clamp(1.5rem,2.2vw,2.2rem)/1.1 var(--serif)}
+.room p{font-size:15px;line-height:1.5;margin-top:8px;max-width:30em;color:#ecebe7}
+.r1{grid-column:span 7;grid-row:span 2;min-height:600px}
+.r2{grid-column:span 5}
+.r3{grid-column:span 5;color:var(--ink);background:#ebe7df}
+.r3::after{display:none}
+.r3 p{color:var(--soft)}
+.r3 .tiles{position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,transparent 49.5%,rgba(255,255,255,.9) 49.5% 50.5%,transparent 50.5%) 0 0/56px 28px,
+  linear-gradient(0deg,transparent 47%,rgba(255,255,255,.9) 47% 53%,transparent 53%) 0 0/56px 28px,
+  linear-gradient(135deg,#d9e3e2,#b8cfd0 45%,#e6dccd);opacity:.9;
+  -webkit-mask:linear-gradient(180deg,#000 0 46%,transparent 76%);mask:linear-gradient(180deg,#000 0 46%,transparent 76%)}
+.r4{grid-column:span 4;min-height:420px}
+.r5{grid-column:span 4;min-height:420px}
+.r6{grid-column:span 4;min-height:420px;background:var(--graphite);color:#efe9dc}
+.r6::after{display:none}
+.r6 ul{list-style:none;margin-top:14px;display:grid;gap:8px;font-size:15px;color:#cfc8b8}
+.r6 li{display:flex;gap:10px;align-items:baseline}
+.r6 li::before{content:"";width:14px;height:1px;background:var(--gold);flex:none;transform:translateY(-4px)}
+
+/* walk strip */
+.walk{background:var(--graphite);color:#efe9dc;padding:clamp(72px,9vw,120px) 0;overflow:hidden}
+.walk .eyebrow{color:var(--gold)}
+.walk .sec-head p{color:#b9b3a6}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 clamp(16px,4vw,56px) 18px;padding-left:max(clamp(16px,4vw,56px),calc((100% - var(--wrap))/2 + 56px));scroll-padding-left:max(clamp(16px,4vw,56px),calc((100% - var(--wrap))/2 + 56px));scrollbar-width:thin;scrollbar-color:var(--gold) transparent;-webkit-overflow-scrolling:touch}
+.strip figure{flex:none;scroll-snap-align:start;position:relative}
+.strip img{height:clamp(340px,52vh,560px);width:auto;aspect-ratio:3/4;object-fit:cover}
+.strip figure.wide img{aspect-ratio:4/3}
+.strip figcaption{font-size:13px;color:#a9a396;margin-top:12px;letter-spacing:.04em}
+.strip-nav{display:flex;gap:10px}
+.strip-nav button{width:52px;height:52px;border:1px solid #4a4d52;background:transparent;color:#efe9dc;border-radius:50%;transition:background .2s,border-color .2s}
+.strip-nav button:hover{background:var(--gold);border-color:var(--gold);color:var(--graphite)}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.score{position:sticky;top:110px}
+.score .big{font:400 clamp(6rem,13vw,11rem)/.85 var(--serif);color:var(--ink)}
+.score .big i{font-style:normal;color:var(--gold)}
+.score p{margin-top:16px;color:var(--soft)}
+.score a{color:var(--ink);font-weight:600}
+.pts{display:grid;gap:0}
+.pt{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:34px 0;border-top:1px solid var(--line)}
+.pt:last-child{border-bottom:1px solid var(--line)}
+.pt span{font:400 30px/1 var(--serif);color:var(--gold-d)}
+.pt h3{font:400 clamp(1.4rem,2vw,1.9rem)/1.15 var(--serif);margin-bottom:10px}
+.pt p{color:#3e4045}
+
+/* quiz */
+.quiz-sec{background:linear-gradient(180deg,var(--marble),#ece8e0)}
+.quiz{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:start}
+.q-steps{background:#fff;border:1px solid var(--line);padding:clamp(20px,3vw,40px)}
+.q{border:0;padding:0 0 26px;margin:0 0 26px;border-bottom:1px solid var(--stone)}
+.q:last-of-type{border-bottom:0;margin-bottom:8px}
+.q legend{font:400 1.3rem/1.2 var(--serif);margin-bottom:14px;display:flex;gap:12px;align-items:baseline}
+.q legend b{font:600 12px var(--sans);color:var(--gold-d);letter-spacing:.15em}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;font-size:15px;font-weight:500;background:var(--marble);transition:all .2s;cursor:pointer;user-select:none}
+.chip span:hover{border-color:var(--ink)}
+.chip input:checked+span{background:var(--graphite);color:#f5ecd6;border-color:var(--graphite)}
+.chip input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+.sw{width:16px;height:16px;border-radius:50%;border:1px solid rgba(0,0,0,.15);flex:none}
+.area{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.area input[type=range]{flex:1;min-width:200px;accent-color:var(--gold-d);height:44px}
+.area output{font:400 1.6rem var(--serif);min-width:5.5ch}
+.name{width:100%;min-height:48px;border:1px solid var(--line);background:var(--marble);padding:0 16px;font:inherit;border-radius:var(--r)}
+.name:focus{outline:2px solid var(--gold);outline-offset:1px}
+label.lbl{display:block;font-size:14px;font-weight:600;margin-bottom:8px}
+.preview{position:sticky;top:96px;background:var(--graphite);color:#efe9dc;padding:clamp(20px,2.6vw,34px)}
+.preview svg{width:100%;height:auto;display:block}
+.preview .wall,.preview .floor,.preview .side,.preview .apron{transition:fill .6s}
+.preview .hl{fill:none;stroke:var(--gold);stroke-width:2;opacity:0;transition:opacity .4s}
+.preview .hl.on{opacity:1}
+.fx{opacity:0;transition:opacity .5s}
+.fx.on{opacity:1}
+.sum{margin-top:20px;font-size:15px;color:#cfc8b8;display:grid;gap:6px}
+.sum div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px;border-bottom:1px solid #34373c;padding-bottom:6px}
+.sum dt{color:#8f897c}
+.sum dd{color:#f1ebdd}
+.p-cta{display:grid;gap:10px;margin-top:22px}
+.p-cta .btn{width:100%}
+.p-cta .btn-line{border-color:#5a5d63;color:#efe9dc}
+.p-cta .btn-line:hover{background:#efe9dc;color:var(--graphite)}
+.note{font-size:13px;color:#8f897c;margin-top:12px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;border-top:1px solid var(--ink)}
+.step{padding:28px 22px 0 0;position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font:400 46px/1 var(--serif);color:var(--gold);display:block;margin-bottom:22px}
+.step h3{font:600 17px/1.3 var(--sans);margin-bottom:8px}
+.step p{font-size:15px;color:var(--soft)}
+.step:nth-child(even){margin-top:56px}
+
+/* contacts */
+.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;background:#fff;border:1px solid var(--line)}
+.c-info{padding:clamp(24px,4vw,56px)}
+.c-info h3{font:400 clamp(1.6rem,2.4vw,2.3rem)/1.1 var(--serif);margin:12px 0 8px}
+.c-row{padding:18px 0;border-bottom:1px solid var(--stone);display:grid;gap:4px}
+.c-row small{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-d);font-weight:600}
+.c-row a{text-decoration:none;font-weight:600}
+.c-row a:hover{color:var(--teal)}
+.hours{display:grid;grid-template-columns:auto auto;justify-content:start;gap:2px 28px;font-size:15px}
+.socials{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.socials a{min-height:44px;display:inline-flex;align-items:center;padding:0 16px;border:1px solid var(--line);text-decoration:none;font-size:14px;font-weight:600;border-radius:999px;transition:all .2s}
+.socials a:hover{background:var(--graphite);color:#f5ecd6;border-color:var(--graphite)}
+.map{min-height:460px;background:var(--stone)}
+.map iframe{width:100%;height:100%;min-height:460px;border:0;display:block;filter:grayscale(.35)}
+
+/* final */
+.final{position:relative;color:#fff;isolation:isolate;overflow:hidden}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.final::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,23,26,.9),rgba(22,23,26,.55) 60%,rgba(22,23,26,.25));z-index:-1}
+.final .wrap{padding-top:clamp(90px,12vw,170px);padding-bottom:clamp(90px,12vw,170px)}
+.final h2{font:400 clamp(2.2rem,5vw,4.6rem)/1.04 var(--serif);max-width:14ch;margin:14px 0 18px}
+.final p{max-width:32em;color:#ddd8cd}
+.final .eyebrow{color:var(--gold)}
+.final .hero-cta .btn-line{border-color:#fff;color:#fff}
+.final .hero-cta .btn-line:hover{background:#fff;color:var(--ink)}
+.final .btn-gold{background:var(--gold);color:var(--graphite);border-color:var(--gold)}
+.final .btn-gold:hover{background:#e0bf6c}
+footer{background:var(--graphite);color:#8f897c;font-size:13px;padding:28px 0 32px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+
+.dock{display:none}
+
+@media (max-width:1100px){
+  .nav{display:none}
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:36px}
+  .step:nth-child(even){margin-top:0}
+}
+@media (max-width:900px){
+  body{font-size:16px}
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:28px}
+  .hero-pic{height:auto;min-height:0;aspect-ratio:4/4.4}
+  .sec-head,.praise,.quiz,.contact{grid-template-columns:minmax(0,1fr)}
+  .score,.preview{position:static}
+  .rooms{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .r1,.r2,.r3,.r4,.r5,.r6{grid-column:span 2;grid-row:auto;min-height:340px}
+  .r1{min-height:460px}
+  .r4,.r5{grid-column:span 1;min-height:320px}
+  .preview{order:-1}
+}
+@media (max-width:600px){
+  .top .wrap{height:58px}
+  .top-tel{display:none}
+  .logo b{font-size:13px}
+  .hero h1{font-size:clamp(2.7rem,13.5vw,4rem)}
+  .hero h1 span:last-child{padding-left:.5em}
+  .hero-cta .btn{flex:1 1 100%}
+  .hero-pic{aspect-ratio:1/1.05}
+  .hero-pic .big{left:10%}
+  .hero-pic .small{width:42%;border-width:5px}
+  .rate{right:10px;top:10px;padding:10px 12px}
+  .rate b{font-size:26px}
+  .room{padding:20px}
+  .r4,.r5{grid-column:span 2}
+  .strip img{height:min(62vh,420px)}
+  .strip-nav{display:none}
+  .pt{grid-template-columns:44px minmax(0,1fr);gap:12px;padding:26px 0}
+  .pt span{font-size:24px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .step{padding:22px 0 0;display:grid;grid-template-columns:60px minmax(0,1fr);column-gap:10px}
+  .step::before{font-size:34px;margin:0;grid-row:span 2}
+  .sum div{grid-template-columns:100px minmax(0,1fr)}
+  .map,.map iframe{min-height:340px}
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:12px;right:12px;bottom:12px;z-index:40}
+  .dock .btn{min-height:50px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+  footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .vein path{stroke-dashoffset:0}
+  .js [data-r]{opacity:1;transform:none}
+  .hero-pic .big img{transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Ceramic Rooms — наверх">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 4h32v32H4z" fill="none" stroke="#c9a54e" stroke-width="2.4"/><path d="M12 12h16v16" fill="none" stroke="#c9a54e" stroke-width="2.4"/></svg>
+      <b>Ceramic<br>Rooms</b>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#rooms">Комнаты</a><a href="#walk">Салон</a><a href="#quiz">Подбор</a><a href="#how">Как работаем</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+79923186060">+7 992 318-60-60</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Салон плитки и сантехники · Тюмень</div>
+      <h1><span>Ceramic</span><span>Rooms</span></h1>
+      <svg class="vein" viewBox="0 0 560 46" aria-hidden="true"><path d="M0 30 C60 34 90 12 150 18 S250 40 310 26 S400 4 452 14 S520 30 560 22"/><path d="M300 27 C330 34 352 42 392 44" style="animation-delay:1.6s"/></svg>
+      <p class="lead">Керамогранит, плитка, напольные покрытия и сантехника для ванной, кухни и всего дома. Дизайнер салона соберёт сочетание и покажет его на визуализации — ещё до покупки.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#quiz">Рассчитать материалы
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        <a class="btn btn-teal" href="https://wa.me/79923186060?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BB%D0%B8%D1%82%D0%BA%D1%83%20%D0%B2%20Ceramic%20Rooms." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+          Написать в WhatsApp</a>
+      </div>
+      <div class="hero-meta">
+        <a href="tel:+79923186060">Позвонить: +7 992 318-60-60</a>
+        <a href="https://yandex.ru/maps/?rtext=~57.172494,65.554944" target="_blank" rel="noopener">Маршрут: ул. Газовиков, 35</a>
+        <span data-status></span>
+      </div>
+    </div>
+    <div class="hero-pic" data-r>
+      <div class="big"><img src="img/p1.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 960w" sizes="(max-width:900px) 90vw, 40vw" alt="Веер крупноформатных плит керамогранита с подсветкой в салоне Ceramic Rooms" width="960" height="1280"></div>
+      <div class="small"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 960w" sizes="(max-width:900px) 40vw, 18vw" alt="Стойка консультантов Ceramic Rooms с логотипом и бирюзовыми креслами" width="960" height="1280" loading="lazy"></div>
+      <div class="rate"><b>5,0</b><small>76 оценок<br>в 2ГИС</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="rooms">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <div><div class="eyebrow">Что собираем</div><h2 class="h2" style="margin-top:14px">Каждая комната — из одного салона</h2></div>
+      <p>Плитка, пол и сантехника в одном месте — поэтому сочетание видно сразу, а не после третьего магазина. Доставка, оплата картой, наличными, по QR-коду или по счёту.</p>
+    </div>
+    <div class="rooms">
+      <a class="room r1" href="#quiz" data-r>
+        <img src="img/p7-m.jpg" srcset="img/p7-m.jpg 675w, img/p7.jpg 960w" sizes="(max-width:900px) 92vw, 54vw" alt="Ванная в экспозиции салона: керамогранит под мрамор, отдельностоящая ванна и подвесная тумба" width="960" height="1280" loading="lazy" style="object-position:50% 60%">
+        <div class="no">01</div><h3>Ванная и санузел</h3>
+        <p>Стены, пол и сантехника одним комплектом: дизайнер подберёт сочетание и нарисует проект санузла.</p>
+      </a>
+      <a class="room r2" href="#quiz" data-r>
+        <img src="img/p12-m.jpg" srcset="img/p12-m.jpg 900w, img/p12.jpg 1280w" sizes="(max-width:900px) 135vw, 38vw" alt="Стенды напольных покрытий под дерево" width="1280" height="960" loading="lazy">
+        <div class="no">02</div><h3>Пол во всём доме</h3>
+        <p>Керамогранит под дерево и камень, кварц-винил — для квартиры и загородного дома.</p>
+      </a>
+      <a class="room r3" href="#quiz" data-r>
+        <span class="tiles" aria-hidden="true"></span>
+        <div class="no">03</div><h3>Кухонный фартук</h3>
+        <p>Плитка для фартука — от спокойной классики до крупного формата под камень.</p>
+      </a>
+      <a class="room r4" href="#quiz" data-r>
+        <img src="img/p8.jpg" alt="Санузел в экспозиции: подвесной унитаз, тумба с раковиной, ниша с подсветкой" width="600" height="800" loading="lazy">
+        <div class="no">04</div><h3>Сантехника</h3>
+        <p>Подбирается вместе с плиткой — в одном стиле.</p>
+      </a>
+      <a class="room r5" href="#quiz" data-r>
+        <img src="img/p6-m.jpg" srcset="img/p6-m.jpg 675w, img/p6.jpg 960w" sizes="(max-width:900px) 92vw, 30vw" alt="Экспозиция декоративных плит и панелей разных оттенков" width="960" height="1280" loading="lazy">
+        <div class="no">05</div><h3>Декоративная отделка</h3>
+        <p>Отделочные материалы для акцентной стены и деталей.</p>
+      </a>
+      <div class="room r6" data-r>
+        <div class="no">Сервис</div><h3>Удобно купить</h3>
+        <ul><li>Доставка</li><li>Оплата картой и наличными</li><li>Перевод, QR-код</li><li>Оплата через банк для организаций</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="walk" id="walk">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <div><div class="eyebrow">Прогулка по салону</div><h2 class="h2" style="margin-top:14px">Крупный формат лучше видеть вживую</h2></div>
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap">
+        <p>Плиты стоят в полный рост, рядом готовые ванные — легко представить, как материал ляжет у вас дома.</p>
+        <div class="strip-nav"><button type="button" data-dir="-1" aria-label="Назад">&larr;</button><button type="button" data-dir="1" aria-label="Вперёд">&rarr;</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="strip" id="strip" data-qa-skip tabindex="0" aria-label="Фото салона, листайте">
+    <figure><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 960w" sizes="420px" alt="Торговый зал: ряды стендов с плиткой и мраморный пол" width="960" height="1280" loading="lazy"><figcaption>Главный зал</figcaption></figure>
+    <figure class="wide"><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 900w, img/p13.jpg 1280w" sizes="750px" alt="Зал с островной экспозицией керамогранита под камень" width="1280" height="960" loading="lazy"><figcaption>Островная экспозиция</figcaption></figure>
+    <figure><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 960w" sizes="420px" alt="Стенды крупноформатных плит под камень" width="960" height="1280" loading="lazy"><figcaption>Плиты в полный рост</figcaption></figure>
+    <figure><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 675w, img/p10.jpg 960w" sizes="420px" alt="Стенд светлого керамогранита под мрамор" width="960" height="1280" loading="lazy"><figcaption>Светлый мрамор</figcaption></figure>
+    <figure class="wide"><img src="img/p9-m.jpg" sizes="680px" alt="Высокие плиты с золотистыми прожилками" width="900" height="675" loading="lazy"><figcaption>Плиты с прожилками</figcaption></figure>
+    <figure><img src="img/p14-m.jpg" sizes="420px" alt="Стенды керамогранита в серо-бежевой гамме" width="675" height="900" loading="lazy"><figcaption>Камень и бетон</figcaption></figure>
+    <figure class="wide"><img src="img/p11-m.jpg" sizes="680px" alt="Зона консультаций с креслами и стендами" width="900" height="675" loading="lazy"><figcaption>Зона консультаций</figcaption></figure>
+    <figure><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 960w" sizes="420px" alt="Вход в салон Ceramic Rooms на улице Газовиков, 35" width="960" height="1280" loading="lazy"><figcaption>Вход с ул. Газовиков</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap praise">
+    <div class="score" data-r>
+      <div class="eyebrow">За что хвалят</div>
+      <div class="big" style="margin-top:18px">5<i>,</i>0</div>
+      <p>Средняя оценка при 76 оценках в 2ГИС. <a href="https://2gis.ru/tyumen/firm/70000001067869641" target="_blank" rel="noopener">Читать отзывы</a></p>
+    </div>
+    <div class="pts">
+      <div class="pt" data-r><span>i</span><div><h3>Нашли то, чего не было в других салонах</h3><p>Покупатели пишут, что обошли несколько магазинов и выбрали здесь: большой выбор красивой современной плитки, есть варианты на любой бюджет.</p></div></div>
+      <div class="pt" data-r><span>ii</span><div><h3>Дизайнер рисует проект и визуализацию</h3><p>Чаще всего благодарят дизайнера-консультанта Марину: подбирает сочетание плитки, пола и сантехники, объясняет разницу материалов и делает визуализацию с учётом пожеланий.</p></div></div>
+      <div class="pt" data-r><span>iii</span><div><h3>Менеджеры на связи до конца покупки</h3><p>Отмечают Викторию и Наталью: помогают выбрать сочетание, подсказывают, как лучше, вежливо и быстро решают вопросы — от фартука на кухню до санузлов целиком.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec quiz-sec" id="quiz">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <div><div class="eyebrow">Подбор за минуту</div><h2 class="h2" style="margin-top:14px">Соберите свою комнату</h2></div>
+      <p>Отметьте, что отделываете, — комната справа меняется вместе с выбором. Готовую заявку отправите в WhatsApp: дизайнер посчитает материалы и предложит варианты.</p>
+    </div>
+    <div class="quiz">
+      <form class="q-steps" id="qform" onsubmit="return false">
+        <fieldset class="q"><legend><b>01</b>Какое помещение</legend>
+          <div class="chips" data-name="room">
+            <label class="chip"><input type="radio" name="room" value="bath" data-t="Ванная / санузел" checked><span>Ванная / санузел</span></label>
+            <label class="chip"><input type="radio" name="room" value="kitchen" data-t="Кухня"><span>Кухня</span></label>
+            <label class="chip"><input type="radio" name="room" value="living" data-t="Гостиная / коридор"><span>Гостиная / коридор</span></label>
+            <label class="chip"><input type="radio" name="room" value="house" data-t="Загородный дом целиком"><span>Дом целиком</span></label>
+          </div></fieldset>
+        <fieldset class="q"><legend><b>02</b>Что отделываем</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="surf" value="wall" data-t="стены" checked><span>Стены</span></label>
+            <label class="chip"><input type="checkbox" name="surf" value="floor" data-t="пол" checked><span>Пол</span></label>
+            <label class="chip"><input type="checkbox" name="surf" value="apron" data-t="фартук"><span>Фартук</span></label>
+            <label class="chip"><input type="checkbox" name="surf" value="plumb" data-t="сантехника"><span>Сантехника</span></label>
+          </div></fieldset>
+        <fieldset class="q"><legend><b>03</b>Настроение</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="mood" value="marble" data-t="светлый мрамор" checked><span><i class="sw" style="background:#efebe4"></i>Светлый мрамор</span></label>
+            <label class="chip"><input type="radio" name="mood" value="dark" data-t="тёмный камень"><span><i class="sw" style="background:#2c2e31"></i>Тёмный камень</span></label>
+            <label class="chip"><input type="radio" name="mood" value="wood" data-t="тёплое дерево"><span><i class="sw" style="background:#a87b4f"></i>Тёплое дерево</span></label>
+            <label class="chip"><input type="radio" name="mood" value="concrete" data-t="бетон / терраццо"><span><i class="sw" style="background:#b4b0a8"></i>Бетон, терраццо</span></label>
+            <label class="chip"><input type="radio" name="mood" value="none" data-t="пока не знаю, нужен совет"><span>Нужен совет</span></label>
+          </div></fieldset>
+        <fieldset class="q"><legend><b>04</b>Площадь отделки</legend>
+          <div class="area"><input type="range" id="area" min="2" max="200" step="1" value="18" aria-label="Площадь, квадратных метров"><output id="areaOut" for="area">18&nbsp;м²</output></div>
+          <label class="chip" style="margin-top:10px;display:inline-block"><input type="checkbox" id="areaUnknown"><span>Не знаю точно — нужен замер по плану</span></label>
+        </fieldset>
+        <fieldset class="q"><legend><b>05</b>Ориентир по бюджету</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="budget" value="1" data-t="разумный" checked><span>Разумный</span></label>
+            <label class="chip"><input type="radio" name="budget" value="2" data-t="средний"><span>Средний</span></label>
+            <label class="chip"><input type="radio" name="budget" value="3" data-t="без ограничений"><span>Без ограничений</span></label>
+          </div></fieldset>
+        <fieldset class="q"><legend><b>06</b>Дополнительно</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="extra" value="vis" data-t="визуализация" checked><span>Визуализация</span></label>
+            <label class="chip"><input type="checkbox" name="extra" value="del" data-t="доставка"><span>Доставка</span></label>
+            <label class="chip"><input type="checkbox" name="extra" value="visit" data-t="приду в салон"><span>Приду в салон</span></label>
+          </div>
+          <div style="margin-top:18px"><label class="lbl" for="qname">Как к вам обращаться</label><input class="name" id="qname" type="text" autocomplete="given-name" placeholder="Например, Анна"></div>
+        </fieldset>
+      </form>
+
+      <aside class="preview" aria-live="polite">
+        <div class="eyebrow" style="color:var(--gold);margin-bottom:14px">Ваша комната</div>
+        <svg viewBox="0 0 400 300" role="img" aria-label="Схема комнаты с выбранной отделкой">
+          <defs>
+            <pattern id="pt-marble" width="120" height="120" patternUnits="userSpaceOnUse"><path d="M0 30 C30 20 50 60 80 40 S120 70 120 60 M10 120 C30 90 60 100 70 80 S100 90 120 100" fill="none" stroke="rgba(120,110,95,.35)" stroke-width="1"/></pattern>
+            <pattern id="pt-dark" width="120" height="120" patternUnits="userSpaceOnUse"><path d="M0 50 C30 40 60 80 90 55 S120 40 120 30 M20 120 C40 100 70 110 90 90" fill="none" stroke="rgba(201,165,78,.55)" stroke-width="1"/></pattern>
+            <pattern id="pt-wood" width="200" height="18" patternUnits="userSpaceOnUse"><path d="M0 17.5H200 M70 0V18" stroke="rgba(60,35,15,.35)" stroke-width="1"/><path d="M10 7 C60 5 120 10 190 6" stroke="rgba(60,35,15,.15)" fill="none"/></pattern>
+            <pattern id="pt-concrete" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="8" cy="9" r="1.6" fill="rgba(90,85,78,.35)"/><circle cx="27" cy="20" r="2.2" fill="rgba(160,120,90,.3)"/><circle cx="15" cy="32" r="1.2" fill="rgba(60,60,60,.3)"/><circle cx="34" cy="5" r="1" fill="rgba(60,60,60,.3)"/></pattern>
+            <pattern id="pt-none" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0 40 40 0" stroke="rgba(0,0,0,.08)"/></pattern>
+            <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0V24H0" fill="none" stroke="rgba(255,255,255,.35)" stroke-width=".8"/></pattern>
+          </defs>
+          <rect x="0" y="0" width="400" height="300" fill="#202327"/>
+          <!-- back wall -->
+          <polygon class="wall" points="110,30 330,30 330,200 110,200" fill="#efebe4"/>
+          <polygon class="tex-w" points="110,30 330,30 330,200 110,200" fill="url(#pt-marble)"/>
+          <polygon points="110,30 330,30 330,200 110,200" fill="url(#grid)" opacity=".6" class="tex-w"/>
+          <!-- side wall -->
+          <polygon class="side" points="30,0 110,30 110,200 30,260" fill="#e2ddd4"/>
+          <polygon class="tex-w" points="30,0 110,30 110,200 30,260" fill="url(#pt-marble)"/>
+          <!-- floor -->
+          <polygon class="floor" points="30,260 110,200 330,200 400,260 400,300 0,300 0,282" fill="#e6e1d8"/>
+          <polygon class="tex-f" points="30,260 110,200 330,200 400,260 400,300 0,300 0,282" fill="url(#pt-marble)"/>
+          <polygon class="hl" data-hl="wall" points="110,30 330,30 330,200 110,200"/>
+          <polygon class="hl" data-hl="floor" points="30,260 110,200 330,200 400,260 400,300 0,300 0,282"/>
+          <!-- bath fixtures -->
+          <g class="fx" data-fx="bath">
+            <path d="M150 168 Q150 196 180 196 H262 Q290 196 290 168 Z" fill="#fbfaf7" stroke="#cfc9bd"/>
+            <rect x="160" y="196" width="6" height="8" fill="#b9b2a4"/><rect x="274" y="196" width="6" height="8" fill="#b9b2a4"/>
+            <path d="M276 168 V120 Q276 110 286 110 H292" fill="none" stroke="#c9a54e" stroke-width="2.4"/>
+            <rect x="300" y="70" width="22" height="42" fill="none" stroke="#c9a54e" stroke-width="1.5" opacity=".9"/>
+          </g>
+          <g class="fx" data-fx="plumb">
+            <rect x="126" y="120" width="44" height="20" fill="#fbfaf7" stroke="#cfc9bd"/>
+            <path d="M132 120 Q148 108 164 120" fill="#fff" stroke="#cfc9bd"/>
+            <rect x="130" y="70" width="36" height="36" fill="none" stroke="#c9a54e" stroke-width="1.4"/>
+          </g>
+          <!-- kitchen -->
+          <g class="fx" data-fx="kitchen">
+            <rect class="apron" x="128" y="96" width="186" height="46" fill="#efebe4"/>
+            <rect class="tex-a" x="128" y="96" width="186" height="46" fill="url(#pt-marble)"/>
+            <rect x="128" y="96" width="186" height="46" fill="url(#grid)" opacity=".7"/>
+            <rect class="hl" data-hl="apron" x="128" y="96" width="186" height="46"/>
+            <rect x="124" y="142" width="194" height="8" fill="#2b2d31"/>
+            <rect x="128" y="150" width="186" height="50" fill="#f4f1ea" stroke="#d2ccbf"/>
+            <path d="M190 150V200M252 150V200" stroke="#d2ccbf"/>
+            <rect x="128" y="40" width="186" height="44" fill="#f4f1ea" stroke="#d2ccbf"/>
+          </g>
+          <g class="fx" data-fx="living">
+            <rect x="160" y="150" width="130" height="34" rx="4" fill="#1f6a73"/>
+            <rect x="152" y="140" width="146" height="18" rx="5" fill="#2c8792"/>
+            <rect x="168" y="184" width="4" height="12" fill="#1b1d20"/><rect x="278" y="184" width="4" height="12" fill="#1b1d20"/>
+            <rect x="196" y="62" width="58" height="44" fill="none" stroke="#c9a54e" stroke-width="1.5"/>
+          </g>
+          <g class="fx" data-fx="house">
+            <path d="M150 120 L220 70 L290 120 V196 H150 Z" fill="none" stroke="#c9a54e" stroke-width="1.6"/>
+            <path d="M206 196 V150 H234 V196" fill="none" stroke="#c9a54e" stroke-width="1.6"/>
+            <path d="M166 130 H194 V152 H166Z M246 130 H274 V152 H246Z" fill="none" stroke="#c9a54e" stroke-width="1.2"/>
+          </g>
+        </svg>
+        <dl class="sum" id="sum"></dl>
+        <div class="p-cta">
+          <a class="btn btn-teal" id="qwa" href="https://wa.me/79923186060" target="_blank" rel="noopener">Отправить подбор в WhatsApp</a>
+          <a class="btn btn-line" id="qtg" href="https://t.me/+79923186060" target="_blank" rel="noopener">Или написать в Telegram</a>
+        </div>
+        <p class="note">Схема условная — точные материалы подберёт дизайнер. Расчёт количества и стоимости — после консультации.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head" data-r>
+      <div><div class="eyebrow">Как работаем</div><h2 class="h2" style="margin-top:14px">От идеи до коробок у двери</h2></div>
+      <p>Обычный порядок работы с салоном. Можно начать с сообщения, а можно сразу приехать на Газовиков, 35.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-r><h3>Заявка</h3><p>Подбор из формы выше, звонок или сообщение — с планом помещения, если он есть.</p></div>
+      <div class="step" data-r><h3>Подбор в салоне</h3><p>Смотрите плиты вживую, консультант объясняет разницу материалов.</p></div>
+      <div class="step" data-r><h3>Проект и визуализация</h3><p>Дизайнер собирает сочетание плитки, пола и сантехники и показывает результат.</p></div>
+      <div class="step" data-r><h3>Расчёт и оплата</h3><p>Считаем количество под ваши размеры. Карта, наличные, QR-код, перевод или счёт.</p></div>
+      <div class="step" data-r><h3>Доставка</h3><p>Привозим материалы на объект — в квартиру или загородный дом.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact" data-r>
+      <div class="c-info">
+        <div class="eyebrow">Салон в Тюмени</div>
+        <h3>Ceramic Rooms на Газовиков</h3>
+        <span data-status></span>
+        <div class="c-row" style="margin-top:12px"><small>Адрес</small><span>Тюмень, улица Газовиков, 35</span><a href="https://yandex.ru/maps/?rtext=~57.172494,65.554944" target="_blank" rel="noopener">Построить маршрут &rarr;</a></div>
+        <div class="c-row"><small>Телефон</small><a href="tel:+79923186060" style="font-size:22px">+7 992 318-60-60</a></div>
+        <div class="c-row"><small>Часы работы</small>
+          <div class="hours"><span>Пн — Пт</span><span>10:00 — 20:00</span><span>Сб — Вс</span><span>10:00 — 19:00</span></div></div>
+        <div class="socials">
+          <a href="https://wa.me/79923186060" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://t.me/+79923186060" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://vk.ru/ceramic_rooms" target="_blank" rel="noopener">ВКонтакте</a>
+          <a href="https://2gis.ru/tyumen/firm/70000001067869641" target="_blank" rel="noopener">2ГИС</a>
+        </div>
+      </div>
+      <div class="map"><iframe loading="lazy" title="Ceramic Rooms на карте" src="https://yandex.ru/map-widget/v1/?ll=65.554944,57.172494&amp;z=16&amp;pt=65.554944,57.172494,pm2rdm"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="img/p13-m.jpg" srcset="img/p13-m.jpg 900w, img/p13.jpg 1280w" sizes="(max-width:900px) 210vw, 100vw" alt="" width="1280" height="960" loading="lazy">
+  <div class="wrap" data-r>
+    <div class="eyebrow">Ceramic Rooms · Тюмень</div>
+    <h2>Пришлите план — соберём комнату вместе</h2>
+    <p>Дизайнер подберёт плитку, пол и сантехнику под ваш бюджет и покажет, как это будет выглядеть.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#quiz">Рассчитать материалы</a>
+      <a class="btn btn-line" href="tel:+79923186060">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Ceramic Rooms · Тюмень, ул. Газовиков, 35</span><span>Демо-концепт по данным 2ГИС, не официальный сайт</span></div></footer>
+
+<div class="dock">
+  <a class="btn btn-gold" href="tel:+79923186060">Позвонить</a>
+  <a class="btn btn-teal" href="https://wa.me/79923186060" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('qform');if(!f)return;
+  var C={marble:['#efebe4','#e2ddd4','#e6e1d8','pt-marble'],dark:['#2e3034','#26282b','#323438','pt-dark'],wood:['#d9cdbb','#cfc2ae','#a87b4f','pt-wood'],concrete:['#bdb9b1','#b0aca4','#a9a59d','pt-concrete'],none:['#e8e4dc','#ddd8ce','#d9d3c8','pt-none']};
+  var svg=document.querySelector('.preview svg'),area=document.getElementById('area'),out=document.getElementById('areaOut'),unk=document.getElementById('areaUnknown');
+  function val(n){var e=f.querySelector('input[name='+n+']:checked');return e?e:null}
+  function all(n){return [].slice.call(f.querySelectorAll('input[name='+n+']:checked'))}
+  function q(s){return svg.querySelectorAll(s)}
+  function upd(){
+    var room=val('room'),mood=val('mood'),bud=val('budget'),c=C[mood.value],surf=all('surf').map(function(e){return e.value});
+    q('.wall')[0].setAttribute('fill',c[0]);q('.side')[0].setAttribute('fill',c[1]);q('.floor')[0].setAttribute('fill',c[2]);
+    var ap=q('.apron')[0];ap.setAttribute('fill',c[0]);
+    [].forEach.call(q('.tex-w,.tex-a'),function(p){if(!p.getAttribute('fill').match(/grid/))p.setAttribute('fill','url(#'+c[3]+')')});
+    q('.tex-f')[0].setAttribute('fill','url(#'+(mood.value==='marble'||mood.value==='dark'?c[3]:c[3])+')');
+    [].forEach.call(q('.hl'),function(h){h.classList.toggle('on',surf.indexOf(h.getAttribute('data-hl'))>-1)});
+    var r=room.value;
+    [].forEach.call(q('.fx'),function(g){var k=g.getAttribute('data-fx');g.classList.toggle('on',k===r||(k==='plumb'&&surf.indexOf('plumb')>-1&&r!=='kitchen'))});
+    out.innerHTML=unk.checked?'—':area.value+'&nbsp;м²';area.disabled=unk.checked;
+    var s=all('surf').map(function(e){return e.dataset.t}).join(', ')||'пока не решили',x=all('extra').map(function(e){return e.dataset.t}).join(', ');
+    var ar=unk.checked?'не знаю, нужен расчёт по плану':'около '+area.value+' м²';
+    var rows=[['Помещение',room.dataset.t],['Отделка',s],['Настроение',mood.dataset.t],['Площадь',ar],['Бюджет',bud.dataset.t]];
+    if(x)rows.push(['Дополнительно',x]);
+    document.getElementById('sum').innerHTML=rows.map(function(a){return '<div><dt>'+a[0]+'</dt><dd>'+a[1]+'</dd></div>'}).join('');
+    var nm=document.getElementById('qname').value.trim();
+    var t='Здравствуйте! Хочу подобрать материалы в Ceramic Rooms.\n'+rows.map(function(a){return a[0]+': '+a[1]}).join('\n')+(nm?'\nМеня зовут '+nm+'.':'');
+    document.getElementById('qwa').href='https://wa.me/79923186060?text='+encodeURIComponent(t);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+  var st=document.getElementById('strip');
+  [].forEach.call(document.querySelectorAll('.strip-nav button'),function(b){b.addEventListener('click',function(){st.scrollBy({left:+b.dataset.dir*Math.min(560,st.clientWidth*.8),behavior:'smooth'})})});
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","20:00"]],"tue":[["10:00","20:00"]],"wed":[["10:00","20:00"]],"thu":[["10:00","20:00"]],"fri":[["10:00","20:00"]],"sat":[["10:00","19:00"]],"sun":[["10:00","19:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Лидер55 — мягкая мебель на заказ в Омске</title><meta property="og:type" content="website"><meta property="og:title" content="Лидер55 — мягкая мебель на заказ в Омске"><meta property="og:description" content="Лидер55: диваны, угловые диваны, кровати и кресла-кровати на заказ в Омске. Салон на ул. Березовского, 19, 4 этаж. Ежедневно 10:00–21:00. Доставка, оплата картой, наличными и по QR."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/lider55/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Лидер55: диваны, угловые диваны, кровати и кресла-кровати на заказ в Омске. Салон на ул. Березовского, 19, 4 этаж. Ежедневно 10:00–21:00. Доставка, оплата картой, наличными и по QR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{
+  --milk:#F5F0EA;--milk2:#ECE4DA;--paper:#FFFDFa;--ink:#1D2140;--ink2:#4A4E68;--line:#D9CFC3;
+  --rose:#C2737A;--rose-d:#A3555D;--navy:#283566;--teal:#1F5A5C;--plum:#5E4660;--graph:#7C7F86;--cream:#E9DFCC;
+  --fab:#C2737A;
+  --disp:"Cormorant Garamond",Georgia,serif;--sans:Manrope,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+  --r:22px;--ease:cubic-bezier(.2,.7,.2,1)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--milk);color:var(--ink);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--rose-d);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1360px,100% - 48px);margin-inline:auto}
+.demo{background:var(--ink);color:#E8E4F0;font:500 12.5px/1.4 var(--mono);text-align:center;padding:8px 16px;letter-spacing:.02em}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+
+/* header */
+.hd{position:sticky;top:0;z-index:40;background:rgba(245,240,234,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hd.sc{border-color:var(--line)}
+.hd .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 21px/1 var(--sans);letter-spacing:-.02em}
+.logo b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--rose);color:#fff;font-size:15px;position:relative}
+.logo b::after{content:"";position:absolute;inset:4px;border:1.5px dashed rgba(255,255,255,.7);border-radius:50%}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;color:var(--ink2);position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--rose);transition:right .3s var(--ease)}
+.nav a:hover{color:var(--ink)}.nav a:hover::after{right:0}
+.hd-tel{font-weight:800;text-decoration:none;font-size:16px;white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;border:0;font-weight:700;font-size:16px;text-decoration:none;transition:transform .25s var(--ease),background .25s,box-shadow .25s,color .25s}
+.btn:active{transform:scale(.97)}
+.btn-ink{background:var(--ink);color:#fff;box-shadow:0 10px 24px -12px rgba(29,33,64,.6)}
+.btn-ink:hover{background:var(--rose-d);transform:translateY(-2px)}
+.btn-wa{background:#fff;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-wa:hover{background:var(--ink);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* hero */
+.hero{padding:clamp(28px,4vw,56px) 0 clamp(40px,5vw,72px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(28px,4vw,64px);align-items:center}
+.kick{display:inline-flex;align-items:center;gap:10px;color:var(--rose-d)}
+.kick::before{content:"";width:28px;height:1.5px;background:currentColor}
+h1{font:600 clamp(2.6rem,5.1vw,5.4rem)/.98 var(--disp);letter-spacing:-.015em;margin:18px 0 22px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--rose-d);position:relative;white-space:nowrap}
+h1 em svg{position:absolute;left:0;right:0;bottom:-.08em;width:100%;height:.22em}
+.lead{font-size:clamp(17px,1.35vw,19.5px);color:var(--ink2);max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--ink2);align-items:center}
+.meta a{font-weight:700;color:var(--ink);text-decoration-color:var(--rose);text-underline-offset:4px}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--ink)}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#9AA0A6}
+[data-status].is-open::before{background:#2E9B62;box-shadow:0 0 0 4px rgba(46,155,98,.18)}
+
+.stage{position:relative}
+.frame{position:relative;aspect-ratio:5/4;border-radius:var(--r);overflow:hidden;background:var(--milk2);box-shadow:0 40px 80px -40px rgba(29,33,64,.45)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .6s var(--ease),transform 1.2s var(--ease)}
+.frame img.on{opacity:1;transform:scale(1)}
+.tag{position:absolute;left:18px;top:18px;background:var(--paper);border-radius:12px;padding:10px 14px 10px 12px;display:flex;gap:10px;align-items:center;box-shadow:0 8px 20px -10px rgba(0,0,0,.35)}
+.tag i{width:26px;height:26px;border-radius:7px;background:var(--fab);transition:background .4s}
+.tag span{font:500 12px/1.3 var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.tag strong{display:block;font:700 14px/1.2 var(--sans);text-transform:none;letter-spacing:0}
+.swatches{display:flex;gap:10px;align-items:center;margin-top:18px;flex-wrap:wrap}
+.swatches .mono{color:var(--ink2);margin-right:6px}
+.sw{width:44px;height:44px;border-radius:50%;border:3px solid var(--milk);box-shadow:0 0 0 1.5px var(--line);background:var(--c);transition:transform .25s var(--ease),box-shadow .25s}
+.sw:hover{transform:translateY(-3px)}
+.sw[aria-pressed=true]{box-shadow:0 0 0 2px var(--ink);transform:scale(1.06)}
+.stamp{position:absolute;right:-14px;bottom:-22px;width:132px;height:132px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-align:center;box-shadow:0 18px 40px -16px rgba(29,33,64,.7)}
+.stamp b{display:block;font:600 44px/1 var(--disp)}
+.stamp small{display:block;font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;opacity:.8;margin-top:4px}
+.stamp::before{content:"";position:absolute;inset:7px;border:1.5px dashed rgba(255,255,255,.35);border-radius:50%}
+
+/* strip */
+.strip{border-block:1px solid var(--line);background:var(--paper)}
+.strip ul{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.strip li{padding:22px 24px;border-right:1px solid var(--line);display:flex;gap:14px;align-items:center;font-size:15px;color:var(--ink2)}
+.strip li:last-child{border-right:0}
+.strip li b{display:block;color:var(--ink);font-size:16px}
+.strip svg{width:30px;height:30px;flex:none;color:var(--rose-d)}
+
+/* sections */
+section{scroll-margin-top:80px}
+.sec{padding:clamp(72px,9vw,140px) 0}
+.h2{font:600 clamp(2.2rem,4.2vw,4rem)/1.02 var(--disp);letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--ink2);max-width:36em;margin-top:16px}
+.head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(36px,4vw,56px)}
+.head .mono{color:var(--rose-d);display:block;margin-bottom:14px}
+
+/* catalog */
+.cat{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:minmax(0,auto);gap:20px}
+.card{position:relative;border-radius:var(--r);overflow:hidden;background:var(--paper);text-decoration:none;display:flex;flex-direction:column;border:1px solid var(--line);transition:transform .4s var(--ease),box-shadow .4s}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -36px rgba(29,33,64,.5)}
+.card .ph{overflow:hidden;background:var(--milk2);position:relative}
+.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.card:hover .ph img{transform:scale(1.05)}
+.card .tx{padding:22px 24px 26px}
+.card h3{font:700 22px/1.2 var(--sans);letter-spacing:-.01em}
+.card p{color:var(--ink2);font-size:15.5px;margin-top:8px}
+.card .n{position:absolute;top:16px;right:16px;font:500 12px var(--mono);background:var(--paper);border-radius:99px;padding:6px 10px}
+.c1{grid-column:span 7}.c1 .ph{aspect-ratio:16/10}
+.c2{grid-column:span 5}.c2 .ph{aspect-ratio:4/3.3;flex:1}
+.c3{grid-column:span 4}.c3 .ph{aspect-ratio:4/4.4}
+.c4{grid-column:span 4}.c4 .ph{aspect-ratio:4/4.4}
+.c5{grid-column:span 4;background:var(--ink);color:#fff;border-color:var(--ink);justify-content:space-between;padding:30px}
+.c5 h3{font:600 34px/1.05 var(--disp)}
+.c5 p{color:#C9CBE0}
+.c5 .btn{margin-top:22px;background:var(--rose);color:#fff;align-self:flex-start}
+.c5 .btn:hover{background:#fff;color:var(--ink)}
+.c5 svg.st{width:100%;height:70px;color:rgba(255,255,255,.35)}
+
+/* gallery */
+.gal{background:var(--ink);color:#fff;padding:clamp(64px,8vw,120px) 0;overflow:hidden}
+.gal .head .mono{color:#E7A9AE}.gal .sub{color:#C9CBE0}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px max(24px,calc((100vw - 1360px)/2)) 24px;scrollbar-width:thin;scrollbar-color:var(--rose) transparent;-webkit-overflow-scrolling:touch}
+.rail figure{flex:none;scroll-snap-align:center;height:clamp(300px,34vw,460px);border-radius:18px;overflow:hidden;background:#2B2F52;position:relative}
+.rail img{height:100%;width:auto;object-fit:cover}
+.rail figcaption{position:absolute;left:12px;bottom:12px;font:500 11.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:rgba(29,33,64,.78);padding:6px 10px;border-radius:8px}
+.rail .w{width:clamp(280px,40vw,620px)}.rail .w img{width:100%}
+.rail .t{width:clamp(220px,24vw,340px)}.rail .t img{width:100%}
+.ctrl{display:flex;gap:10px;justify-content:flex-end}
+.ctrl button{width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);background:transparent;color:#fff;transition:background .25s,border-color .25s}
+.ctrl button:hover{background:var(--rose);border-color:var(--rose)}
+.ctrl svg{width:20px;height:20px}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr);gap:clamp(32px,5vw,80px);align-items:start}
+.score{position:sticky;top:110px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:36px}
+.score .big{font:600 clamp(5rem,9vw,8rem)/.9 var(--disp);color:var(--rose-d)}
+.stars{display:flex;gap:4px;margin:14px 0 10px;color:var(--rose)}
+.stars svg{width:22px;height:22px}
+.score p{color:var(--ink2)}
+.score a{display:inline-block;margin-top:18px;font-weight:700;text-underline-offset:4px;text-decoration-color:var(--rose)}
+.pl{list-style:none;display:grid;gap:0}
+.pl li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:22px;padding:34px 0;border-top:1px solid var(--line)}
+.pl li:last-child{border-bottom:1px solid var(--line)}
+.pl .k{font:600 46px/1 var(--disp);color:var(--line)}
+.pl h3{font:700 clamp(21px,1.8vw,26px)/1.25 var(--sans);letter-spacing:-.01em;margin-bottom:10px}
+.pl p{color:var(--ink2)}
+
+/* configurator */
+.cfg{background:var(--milk2)}
+.cfg-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,4vw,60px);align-items:start}
+.preview{position:sticky;top:100px;background:var(--paper);border-radius:var(--r);border:1px solid var(--line);padding:clamp(20px,3vw,36px)}
+.preview>svg{width:100%;height:auto;display:block}
+.preview .sum{margin-top:18px;border-top:1px dashed var(--line);padding-top:18px;display:grid;gap:6px;font-size:15px}
+.sum div{display:flex;justify-content:space-between;gap:16px}
+.sum span{color:var(--ink2)}.sum b{text-align:right}
+.preview .btn{width:100%;margin-top:22px}
+.preview .note{font-size:13.5px;color:var(--ink2);margin-top:12px;text-align:center}
+.q{border:0;margin-bottom:30px}
+.q legend{font-weight:800;font-size:18px;margin-bottom:14px;display:flex;gap:12px;align-items:baseline}
+.q legend i{font:500 12px var(--mono);font-style:normal;color:var(--rose-d)}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;pointer-events:none}
+.opt span{display:flex;align-items:center;gap:10px;min-height:48px;padding:10px 18px;border-radius:14px;background:var(--paper);border:1.5px solid var(--line);font-weight:600;font-size:15.5px;cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
+.opt span:hover{border-color:var(--ink2)}
+.opt input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.opt input:focus-visible+span{outline:3px solid var(--rose-d);outline-offset:2px}
+.opt .dot{width:22px;height:22px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.range{background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:16px 18px}
+.range .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.range output{font:600 30px/1 var(--disp)}
+input[type=range]{width:100%;margin-top:12px;accent-color:var(--rose-d);height:32px}
+.chk{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:15px;color:var(--ink2);min-height:44px;cursor:pointer}
+.chk input{width:20px;height:20px;accent-color:var(--rose-d)}
+
+/* steps */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;position:relative}
+.steps li{padding:28px 22px 0 0;position:relative;counter-increment:s}
+.steps li::before{content:"0" counter(s);font:500 12.5px var(--mono);color:var(--rose-d);display:block;margin-bottom:56px}
+.steps li::after{content:"";position:absolute;left:0;right:0;top:58px;border-top:1.5px dashed var(--line)}
+.steps li i{position:absolute;left:0;top:50px;width:17px;height:17px;border-radius:50%;background:var(--milk);border:2px solid var(--rose-d);z-index:1}
+.steps h3{font:700 19px/1.25 var(--sans);margin-bottom:8px}
+.steps p{font-size:15px;color:var(--ink2)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:20px}
+.ct-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;gap:24px}
+.ct-card .addr{font:600 clamp(28px,2.6vw,38px)/1.1 var(--disp)}
+.ct-card dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 20px;font-size:15.5px}
+.ct-card dt{color:var(--ink2)}.ct-card dd{font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);text-decoration:none;font-weight:700;font-size:15px;transition:border-color .2s,background .2s}
+.links a:hover{border-color:var(--ink);background:var(--milk)}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;background:var(--milk2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+/* final */
+.fin{background:var(--rose);color:#fff;border-radius:calc(var(--r) + 8px);padding:clamp(40px,6vw,90px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px;align-items:center;position:relative;overflow:hidden}
+.fin .h2{color:#fff}
+.fin p{color:#FBE9EA;margin-top:14px;max-width:30em}
+.fin .cta{margin:0;justify-content:flex-end}
+.fin .btn-ink:hover{background:#fff;color:var(--ink)}
+.fin .btn-wa{border-color:#fff;background:transparent;color:#fff}
+.fin .btn-wa:hover{background:#fff;color:var(--rose-d)}
+.fin::after{content:"";position:absolute;inset:14px;border:1.5px dashed rgba(255,255,255,.35);border-radius:var(--r);pointer-events:none}
+.ft{padding:40px 0 110px;font-size:14px;color:var(--ink2)}
+.ft .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.fab-call{display:none}
+
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js [data-r].in{opacity:1;transform:none}
+
+@media (max-width:1100px){
+  .nav{display:none}
+  .hd .wrap{justify-content:space-between}
+  .strip ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip li:nth-child(2){border-right:0}.strip li:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 20px}
+  .steps li::before{margin-bottom:40px}
+}
+@media (max-width:900px){
+  .hero .wrap,.head,.praise,.cfg-grid,.ct,.fin{grid-template-columns:minmax(0,1fr)}
+  .stage{margin-top:8px}
+  .score,.preview{position:static}
+  .c1,.c2,.c3,.c4,.c5{grid-column:span 12}
+  .c1 .ph,.c2 .ph{aspect-ratio:16/10;flex:none}
+  .frame{aspect-ratio:16/11}
+  .fin .cta{justify-content:flex-start}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .hd .wrap{height:60px}
+  .hd-tel{font-size:15px}
+  .hero{padding-top:16px}
+  h1{font-size:clamp(2.35rem,10.5vw,3rem);margin:14px 0 16px}
+  .frame{aspect-ratio:4/3}
+  .stamp{width:96px;height:96px;right:10px;bottom:auto;top:-10px}
+  .stamp b{font-size:32px}.stamp small{font-size:9.5px}
+  .tag{left:10px;top:auto;bottom:10px;padding:8px 10px}
+  .sw{width:44px;height:44px}
+  .swatches{gap:8px}
+  .swatches .mono{width:100%}
+  .cta .btn{flex:1 1 100%}
+  .strip ul{grid-template-columns:minmax(0,1fr)}
+  .strip li{border-right:0;border-bottom:1px solid var(--line);padding:16px 4px}
+  .strip li:last-child{border-bottom:0}
+  .cat{gap:14px}
+  .c3,.c4{grid-column:span 6}.c3 .ph,.c4 .ph{aspect-ratio:1/1.1}
+  .c3 .tx,.c4 .tx{padding:14px}
+  .c3 h3,.c4 h3{font-size:17px}.c3 p,.c4 p{font-size:14px}
+  .card .tx{padding:18px}
+  .pl li{grid-template-columns:minmax(0,1fr);gap:6px;padding:26px 0}
+  .pl .k{font-size:34px}
+  .score{padding:26px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .steps li{padding:0 0 26px 34px}
+  .steps li::before{margin:0 0 6px}
+  .steps li::after{left:8px;right:auto;top:20px;bottom:0;border-top:0;border-left:1.5px dashed var(--line)}
+  .steps li i{left:0;top:2px}
+  .ct-card dl{grid-template-columns:minmax(0,1fr);gap:2px}
+  .ct-card dd{margin-bottom:10px}
+  .map,.map iframe{min-height:320px}
+  .ctrl{display:none}
+  .fin{padding:36px 24px}
+  .fab-call{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:50;gap:10px}
+  .fab-call a{flex:1;min-height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;text-decoration:none;box-shadow:0 14px 30px -10px rgba(29,33,64,.6)}
+  .fab-call .c{background:var(--ink);color:#fff}
+  .fab-call .w{background:var(--rose);color:#fff}
+  .fab-call svg{width:20px;height:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="hd" id="hd">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Лидер55, наверх"><b>55</b>Лидер</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#catalog">Что делаем</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#build">Собрать диван</a>
+      <a href="#how">Как заказать</a>
+      <a href="#contacts">Салон</a>
+    </nav>
+    <a class="hd-tel" href="tel:+79087984848">+7 908 798-48-48</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="mono kick">Мягкая мебель на заказ · Омск</span>
+      <h1>Диван, который шьют <em>под&nbsp;вас<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M2 12 Q50 2 100 10 T198 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="7 6" stroke-linecap="round"/></svg></em></h1>
+      <p class="lead">Салон «Лидер55» на Березовского: прямые и угловые диваны, кровати и кресла-кровати. Модель из зала меняют под ваши размеры, ткань и пожелания — добавят полочки, поменяют подушки, сделают то, чего нет в ассортименте.</p>
+      <div class="cta">
+        <a class="btn btn-ink" href="#build">Собрать свой диван<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-wa" href="https://wa.me/79087984848?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>Написать в WhatsApp</a>
+      </div>
+      <div class="meta">
+        <span data-status></span>
+        <span>ул. Березовского, 19 · 4 этаж</span>
+        <a href="tel:+79087984848">Позвонить</a>
+        <a href="https://yandex.ru/maps/?rtext=~54.988503,73.383154" target="_blank" rel="noopener">Маршрут</a>
+      </div>
+    </div>
+
+    <div class="stage" data-r>
+      <div class="frame" id="frame">
+        <img class="on" data-k="rose" src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1440w" sizes="(max-width:640px) 140vw, (max-width:900px) 100vw, 1000px" alt="Прямой диван пудрово-розового цвета с декоративными подушками в зале салона">
+        <img data-k="graph" src="img/p5-m.jpg" srcset="img/p5-m.jpg 900w, img/p5.jpg 1440w" sizes="(max-width:640px) 140vw, (max-width:900px) 100vw, 1000px" alt="Серый диван со стёганой спинкой в зале салона" loading="lazy">
+        <img data-k="navy" src="img/p6-m.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1440w" sizes="(max-width:640px) 140vw, (max-width:900px) 100vw, 1000px" alt="Тёмно-синий диван в разложенном виде" loading="lazy">
+        <img data-k="plum" src="img/p4-m.jpg" srcset="img/p4-m.jpg 900w, img/p4.jpg 1440w" sizes="(max-width:640px) 140vw, (max-width:900px) 100vw, 1000px" alt="Диван сливового оттенка с мягкими подушками" loading="lazy">
+        <img data-k="cream" src="img/p8-m.jpg" srcset="img/p8-m.jpg 900w, img/p8.jpg 1080w" sizes="(max-width:640px) 140vw, (max-width:900px) 100vw, 1000px" alt="Молочный диван со стёжкой ромбом" loading="lazy">
+        <img data-k="teal" src="img/p9-m.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 1350w" sizes="(max-width:640px) 140vw, (max-width:900px) 100vw, 1000px" alt="Изумрудная кровать с поднятым основанием и ящиком для белья" loading="lazy" style="object-position:50% 45%">
+        <div class="tag"><i id="tagc"></i><span>в зале<strong id="tagt">Пудровый розовый</strong></span></div>
+      </div>
+      <div class="stamp" aria-label="Рейтинг 4,9 в 2ГИС"><div><b>4,9</b><small>54 оценки<br>2ГИС</small></div></div>
+      <div class="swatches" role="group" aria-label="Цвет обивки">
+        <span class="mono">Цвет обивки</span>
+        <button class="sw" style="--c:#C2737A" data-k="rose" data-n="Пудровый розовый" aria-pressed="true" aria-label="Пудровый розовый"></button>
+        <button class="sw" style="--c:#7C7F86" data-k="graph" data-n="Графит" aria-pressed="false" aria-label="Графит"></button>
+        <button class="sw" style="--c:#283566" data-k="navy" data-n="Глубокий синий" aria-pressed="false" aria-label="Глубокий синий"></button>
+        <button class="sw" style="--c:#5E4660" data-k="plum" data-n="Сливовый" aria-pressed="false" aria-label="Сливовый"></button>
+        <button class="sw" style="--c:#E9DFCC" data-k="cream" data-n="Молочный" aria-pressed="false" aria-label="Молочный"></button>
+        <button class="sw" style="--c:#1F5A5C" data-k="teal" data-n="Изумрудный" aria-pressed="false" aria-label="Изумрудный"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M16 3l3.6 7.6 8.2 1-6 5.7 1.5 8.2L16 21.5l-7.3 4 1.5-8.2-6-5.7 8.2-1z"/></svg><div><b>4,9 в 2ГИС</b>54 оценки покупателей</div></li>
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 9h16v13H3zM19 13h6l4 5v4h-10zM9 25a2.5 2.5 0 1 0 0-.1M24 25a2.5 2.5 0 1 0 0-.1"/></svg><div><b>Доставка</b>привезут домой</div></li>
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="8" width="26" height="17" rx="3"/><path d="M3 13h26M8 20h6"/></svg><div><b>Картой, наличными, по QR</b>как удобно</div></li>
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></svg><div><b>Каждый день 10:00–21:00</b>без выходных</div></li>
+  </ul>
+</div>
+
+<section class="sec" id="catalog">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div><span class="mono">Что делаем</span><h2 class="h2">Мягкая мебель для каждой комнаты</h2></div>
+      <p class="sub">В зале на Березовского можно посидеть и полежать на моделях — а потом решить с менеджером, что в ней поменять под ваш дом.</p>
+    </div>
+    <div class="cat">
+      <a class="card c1" href="#build" data-pick="Прямой диван" data-r>
+        <div class="ph"><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1440w" sizes="(max-width:900px) 100vw, 880px" alt="Прямой розовый диван со стёжкой" loading="lazy"></div>
+        <span class="n">01</span>
+        <div class="tx"><h3>Прямые диваны</h3><p>Для гостиной, детской, для родителей. Одна семья взяла сразу два: для мамы и в детскую.</p></div>
+      </a>
+      <a class="card c2" href="#build" data-pick="Угловой диван" data-r>
+        <div class="ph"><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1440w" sizes="(max-width:900px) 100vw, 840px" alt="Большой синий диван в разложенном виде" loading="lazy"></div>
+        <span class="n">02</span>
+        <div class="tx"><h3>Угловые и большие диваны</h3><p>Чтобы уместиться всей семьёй за столом, а потом разложить и выспаться.</p></div>
+      </a>
+      <a class="card c3" href="#build" data-pick="Кровать" data-r>
+        <div class="ph"><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 1350w" sizes="(max-width:640px) 50vw, (max-width:900px) 100vw, 440px" alt="Кровать с подъёмным основанием и местом для хранения" loading="lazy" style="object-position:50% 40%"></div>
+        <span class="n">03</span>
+        <div class="tx"><h3>Кровати</h3><p>С мягким изголовьем и подъёмным основанием — внутри место для белья.</p></div>
+      </a>
+      <a class="card c4" href="#build" data-pick="Кресло-кровать" data-r>
+        <div class="ph"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 506w, img/p3.jpg 1012w" sizes="(max-width:640px) 50vw, (max-width:900px) 100vw, 440px" alt="Светлое кресло-кровать с деревянными подлокотниками" loading="lazy" style="object-position:50% 62%"></div>
+        <span class="n">04</span>
+        <div class="tx"><h3>Кресла-кровати</h3><p>Компактное спальное место для небольшой комнаты или гостей.</p></div>
+      </a>
+      <div class="card c5" data-r>
+        <svg class="st" viewBox="0 0 300 70" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M10 50 Q10 18 40 18 H260 Q290 18 290 50" stroke-dasharray="6 6"/><path d="M4 50h292M30 50v12M270 50v12"/><path d="M60 36h180" stroke-dasharray="3 5"/></svg>
+        <div><h3>Нет нужной модели?</h3><p>Покупатели пишут, что им сделали диван, которого в ассортименте не было, — по их «хотелкам» и быстро.</p></div>
+        <a class="btn" href="#build">Описать свой</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gal" aria-label="Фото из салона">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div><span class="mono">Зал на 4 этаже</span><h2 class="h2">Приходите посидеть на каждом</h2></div>
+      <div><p class="sub">Это фото из салона на Березовского, 19. Листайте — а цвет и ткань подберём вживую.</p><div class="ctrl" style="margin-top:22px"><button type="button" data-dir="-1" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-dir="1" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+    </div>
+  </div>
+  <div class="rail" id="rail" data-qa-skip tabindex="0" aria-label="Лента фото, листается горизонтально">
+    <figure class="w"><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 900w, img/p5.jpg 1440w" sizes="(max-width:640px) 560px, 820px" alt="Серый диван с фактурной обивкой" loading="lazy"><figcaption>Графит</figcaption></figure>
+    <figure class="t"><img src="img/p1-m.jpg" sizes="340px" alt="Терракотовое кресло-кровать" loading="lazy"><figcaption>Кресло-кровать</figcaption></figure>
+    <figure class="w"><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 900w, img/p4.jpg 1440w" sizes="(max-width:640px) 560px, 820px" alt="Сливовый диван с тремя подушками" loading="lazy"><figcaption>Сливовый</figcaption></figure>
+    <figure class="t"><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 1350w" sizes="340px" alt="Кровать с подъёмным механизмом" loading="lazy"><figcaption>Кровать с ящиком</figcaption></figure>
+    <figure class="w"><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 900w, img/p7.jpg 1440w" sizes="(max-width:640px) 560px, 820px" alt="Серо-синее кресло-кровать" loading="lazy"><figcaption>Кресло-кровать</figcaption></figure>
+    <figure class="w"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 900w, img/p8.jpg 1080w" sizes="(max-width:640px) 560px, 820px" alt="Молочный диван со стёжкой ромбом" loading="lazy"><figcaption>Молочный</figcaption></figure>
+    <figure class="t"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 506w, img/p3.jpg 1012w" sizes="340px" alt="Светлое кресло-кровать" loading="lazy" style="object-position:50% 60%"><figcaption>Кресло-кровать</figcaption></figure>
+    <figure class="w"><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1440w" sizes="(max-width:640px) 560px, 820px" alt="Синий диван разложен" loading="lazy"><figcaption>Глубокий синий</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="praise">
+  <div class="wrap praise">
+    <div class="score" data-r>
+      <span class="mono" style="color:var(--rose-d)">Что пишут покупатели</span>
+      <div class="big" style="margin-top:12px">4,9</div>
+      <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></div>
+      <p>54 оценки в 2ГИС. Среди покупателей есть те, кто берёт у них уже третий диван.</p>
+      <a href="https://2gis.ru/omsk/firm/70000001059830899" target="_blank" rel="noopener">Все отзывы в 2ГИС</a>
+    </div>
+    <ol class="pl">
+      <li data-r><span class="k">01</span><div><h3>Сауле и Людмила помогают выбрать</h3><p>Чаще всего в отзывах благодарят менеджеров по имени: подробно рассказывают про каждую модель, подсказывают по размерам и помогают определиться, если глаза разбегаются.</p></div></li>
+      <li data-r><span class="k">02</span><div><h3>Делают так, как договорились</h3><p>К дивану добавляют полочки, меняют подушки, собирают модель под конкретные пожелания. Люди отмечают, что заказ был готов быстро, а доставили его точно в срок.</p></div></li>
+      <li data-r><span class="k">03</span><div><h3>Не пропадают после покупки</h3><p>Один покупатель рассказывает: через год часть сиденья, на которую приходится нагрузка, заменили на новую бесплатно. Другие пишут, что руководство решает вопросы без споров.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec cfg" id="build">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div><span class="mono">Конструктор заявки</span><h2 class="h2">Соберите свой диван — менеджер ответит в WhatsApp</h2></div>
+      <p class="sub">Выберите, что нужно, и примерные размеры. Получится готовое сообщение: останется нажать «Отправить», а в салоне подберут модель, ткань и расскажут о стоимости.</p>
+    </div>
+    <div class="cfg-grid">
+      <div class="preview" data-r>
+        <svg id="sofa" viewBox="0 0 420 250" role="img" aria-label="Схема выбранной мебели">
+          <defs><pattern id="weave" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 6L6 0" stroke="rgba(255,255,255,.12)" stroke-width="1"/></pattern></defs>
+          <g id="g-sofa">
+            <rect x="60" y="62" width="300" height="88" rx="20" fill="var(--fab)"/>
+            <rect x="60" y="62" width="300" height="88" rx="20" fill="url(#weave)"/>
+            <rect x="72" y="128" width="276" height="56" rx="12" fill="var(--fab)" style="filter:brightness(1.08)"/>
+            <path d="M210 70v54M80 156h260" stroke="rgba(255,255,255,.45)" stroke-width="1.5" stroke-dasharray="5 5"/>
+            <rect x="40" y="104" width="42" height="88" rx="16" fill="var(--fab)" style="filter:brightness(.9)"/>
+            <rect x="338" y="104" width="42" height="88" rx="16" fill="var(--fab)" style="filter:brightness(.9)"/>
+            <g id="g-corner"><rect x="300" y="128" width="80" height="80" rx="12" fill="var(--fab)" style="filter:brightness(1.02)"/><path d="M310 168h60" stroke="rgba(255,255,255,.45)" stroke-width="1.5" stroke-dasharray="5 5"/></g>
+            <g id="g-shelf"><rect x="336" y="96" width="46" height="10" rx="3" fill="#B58E6A"/></g>
+            <g id="g-pill"><rect x="96" y="92" width="62" height="40" rx="14" fill="#fff" opacity=".55"/><rect x="262" y="92" width="62" height="40" rx="14" fill="#fff" opacity=".55"/></g>
+            <path d="M60 192v12M360 192v12" stroke="#1D2140" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g id="g-bed" hidden>
+            <rect x="70" y="40" width="280" height="96" rx="16" fill="var(--fab)"/>
+            <rect x="70" y="40" width="280" height="96" rx="16" fill="url(#weave)"/>
+            <path d="M118 46v84M164 46v84M210 46v84M256 46v84M302 46v84" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+            <rect x="56" y="126" width="308" height="22" rx="8" fill="#fff" stroke="var(--line)"/>
+            <rect x="50" y="146" width="320" height="50" rx="10" fill="var(--fab)" style="filter:brightness(.92)"/>
+            <path d="M60 196v10M360 196v10" stroke="#1D2140" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g id="g-chair" hidden>
+            <rect x="140" y="60" width="140" height="92" rx="18" fill="var(--fab)"/>
+            <rect x="140" y="60" width="140" height="92" rx="18" fill="url(#weave)"/>
+            <rect x="148" y="128" width="124" height="56" rx="12" fill="var(--fab)" style="filter:brightness(1.08)"/>
+            <rect x="118" y="100" width="36" height="92" rx="12" fill="var(--fab)" style="filter:brightness(.9)"/>
+            <rect x="266" y="100" width="36" height="92" rx="12" fill="var(--fab)" style="filter:brightness(.9)"/>
+            <path d="M156 156h108" stroke="rgba(255,255,255,.45)" stroke-width="1.5" stroke-dasharray="5 5"/>
+            <path d="M126 192v12M294 192v12" stroke="#1D2140" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <g id="dim" stroke="#4A4E68" stroke-width="1.3" fill="none">
+            <path id="dimline" d="M40 228H380"/><path id="dimL" d="M40 220v16"/><path id="dimR" d="M380 220v16"/>
+          </g>
+          <text id="dimt" x="210" y="222" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#1D2140">≈ 220 см</text>
+        </svg>
+        <div class="sum" id="sum"></div>
+        <a class="btn btn-ink" id="send" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Отправить в WhatsApp</a>
+        <p class="note">Или в <a href="https://t.me/+79087984848" target="_blank" rel="noopener">Telegram</a> · звонок <a href="tel:+79087984848">+7 908 798-48-48</a></p>
+      </div>
+
+      <form id="cf" onsubmit="return false">
+        <fieldset class="q"><legend><i>01</i>Что нужно</legend><div class="opts">
+          <label class="opt"><input type="radio" name="type" value="Прямой диван" checked><span>Прямой диван</span></label>
+          <label class="opt"><input type="radio" name="type" value="Угловой диван"><span>Угловой диван</span></label>
+          <label class="opt"><input type="radio" name="type" value="Кровать"><span>Кровать</span></label>
+          <label class="opt"><input type="radio" name="type" value="Кресло-кровать"><span>Кресло-кровать</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><i>02</i>Куда</legend><div class="opts">
+          <label class="opt"><input type="radio" name="room" value="гостиная" checked><span>Гостиная</span></label>
+          <label class="opt"><input type="radio" name="room" value="спальня"><span>Спальня</span></label>
+          <label class="opt"><input type="radio" name="room" value="детская"><span>Детская</span></label>
+          <label class="opt"><input type="radio" name="room" value="кухня"><span>Кухня</span></label>
+          <label class="opt"><input type="radio" name="room" value="для родителей"><span>Для родителей</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><i>03</i>Ширина места под мебель</legend>
+          <div class="range"><div class="row"><label for="w">Примерно</label><output id="wo" for="w">220 см</output></div>
+          <input type="range" id="w" min="80" max="400" step="10" value="220">
+          <label class="chk"><input type="checkbox" id="wu"> Пока не знаю размер — подскажите в салоне</label></div>
+        </fieldset>
+        <fieldset class="q"><legend><i>04</i>Спальное место</legend><div class="opts">
+          <label class="opt"><input type="radio" name="sleep" value="спать каждый день" checked><span>Спать каждый день</span></label>
+          <label class="opt"><input type="radio" name="sleep" value="для гостей"><span>Для гостей</span></label>
+          <label class="opt"><input type="radio" name="sleep" value="раскладывать не нужно"><span>Не нужно</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><i>05</i>Цвет обивки</legend><div class="opts">
+          <label class="opt"><input type="radio" name="col" value="пудровый розовый" data-c="#C2737A" checked><span><i class="dot" style="--c:#C2737A"></i>Розовый</span></label>
+          <label class="opt"><input type="radio" name="col" value="графит" data-c="#7C7F86"><span><i class="dot" style="--c:#7C7F86"></i>Графит</span></label>
+          <label class="opt"><input type="radio" name="col" value="глубокий синий" data-c="#283566"><span><i class="dot" style="--c:#283566"></i>Синий</span></label>
+          <label class="opt"><input type="radio" name="col" value="сливовый" data-c="#5E4660"><span><i class="dot" style="--c:#5E4660"></i>Сливовый</span></label>
+          <label class="opt"><input type="radio" name="col" value="молочный" data-c="#D9CBB2"><span><i class="dot" style="--c:#E9DFCC"></i>Молочный</span></label>
+          <label class="opt"><input type="radio" name="col" value="изумрудный" data-c="#1F5A5C"><span><i class="dot" style="--c:#1F5A5C"></i>Изумрудный</span></label>
+          <label class="opt"><input type="radio" name="col" value="подберу в салоне" data-c="#A9A2B4"><span>Подберу в салоне</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><i>06</i>Что изменить в модели</legend><div class="opts">
+          <label class="opt"><input type="checkbox" name="add" value="полочки на подлокотник"><span>Полочки</span></label>
+          <label class="opt"><input type="checkbox" name="add" value="ящик для белья"><span>Ящик для белья</span></label>
+          <label class="opt"><input type="checkbox" name="add" value="другие подушки"><span>Другие подушки</span></label>
+          <label class="opt"><input type="checkbox" name="add" value="свои размеры"><span>Свои размеры</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><i>07</i>Бюджет</legend><div class="opts">
+          <label class="opt"><input type="radio" name="bud" value="до 50&nbsp;000 ₽"><span>до 50&nbsp;000&nbsp;₽</span></label>
+          <label class="opt"><input type="radio" name="bud" value="50–100 тыс. ₽"><span>50–100 тыс.&nbsp;₽</span></label>
+          <label class="opt"><input type="radio" name="bud" value="от 100&nbsp;000 ₽"><span>от 100&nbsp;000&nbsp;₽</span></label>
+          <label class="opt"><input type="radio" name="bud" value="пока не знаю" checked><span>Пока не знаю</span></label>
+        </div></fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="head" data-r>
+      <div><span class="mono">Как заказать</span><h2 class="h2">От заявки до дивана в вашей комнате</h2></div>
+      <p class="sub">Общий порядок. Сроки и стоимость менеджер назовёт под вашу модель.</p>
+    </div>
+    <ol class="steps" data-r>
+      <li><i></i><h3>Заявка или визит</h3><p>Пишете в WhatsApp, звоните или приходите в зал на 4 этаже.</p></li>
+      <li><i></i><h3>Выбор модели</h3><p>Садитесь, раскладываете, сравниваете — менеджер рассказывает, чем модели отличаются.</p></li>
+      <li><i></i><h3>Ваши изменения</h3><p>Размеры, цвет, подушки, полочки, ящик для белья — фиксируем всё, что обговорили.</p></li>
+      <li><i></i><h3>Оформление</h3><p>Оплата картой, наличными или по QR-коду.</p></li>
+      <li><i></i><h3>Доставка</h3><p>Привозим готовую мебель по договорённости.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="ct">
+      <div class="ct-card" data-r>
+        <span class="mono" style="color:var(--rose-d)">Салон в Омске</span>
+        <p class="addr">ул. Березовского, 19<br>4 этаж</p>
+        <dl>
+          <dt>Часы</dt><dd>Каждый день 10:00–21:00 · <span data-status></span></dd>
+          <dt>Телефон</dt><dd><a href="tel:+79087984848">+7 908 798-48-48</a></dd>
+          <dt>Оплата</dt><dd>Картой, наличными, по QR-коду</dd>
+          <dt>Доставка</dt><dd>Есть</dd>
+        </dl>
+        <div class="links">
+          <a href="https://yandex.ru/maps/?rtext=~54.988503,73.383154" target="_blank" rel="noopener">Маршрут</a>
+          <a href="https://wa.me/79087984848" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://t.me/+79087984848" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://2gis.ru/omsk/firm/70000001059830899" target="_blank" rel="noopener">2ГИС</a>
+        </div>
+      </div>
+      <div class="map" data-r><iframe loading="lazy" title="Лидер55 на карте Омска" src="https://yandex.ru/map-widget/v1/?ll=73.383154,54.988503&z=16&pt=73.383154,54.988503,pm2rdm"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="fin" data-r>
+      <div><h2 class="h2">Приходите посидеть на своём будущем диване</h2><p>Или опишите его в WhatsApp — менеджер подскажет модель, ткань и размеры.</p></div>
+      <div class="cta">
+        <a class="btn btn-ink" href="tel:+79087984848">Позвонить</a>
+        <a class="btn btn-wa" href="#build">Собрать диван</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft"><div class="wrap"><span>Лидер55 · мягкая мебель на заказ · Омск, ул. Березовского, 19</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+
+<div class="fab-call">
+  <a class="c" href="tel:+79087984848"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a class="w" href="#build">Собрать диван</a>
+</div>
+
+<script>
+(function(){
+  var hd=document.getElementById('hd');
+  addEventListener('scroll',function(){hd.classList.toggle('sc',scrollY>10)},{passive:true});
+  /* hero swatches */
+  var imgs=document.querySelectorAll('#frame img'),sws=document.querySelectorAll('.sw'),tagc=document.getElementById('tagc'),tagt=document.getElementById('tagt');
+  function pickHero(b){sws.forEach(function(s){s.setAttribute('aria-pressed',s===b)});imgs.forEach(function(i){i.classList.toggle('on',i.dataset.k===b.dataset.k)});tagc.style.background=b.style.getPropertyValue('--c');tagt.textContent=b.dataset.n}
+  sws.forEach(function(b){b.addEventListener('click',function(){pickHero(b)})});
+  tagc.style.background='#C2737A';
+  /* rail */
+  var rail=document.getElementById('rail');
+  document.querySelectorAll('.ctrl button').forEach(function(b){b.addEventListener('click',function(){rail.scrollBy({left:+b.dataset.dir*Math.min(640,rail.clientWidth*.7),behavior:'smooth'})})});
+  /* configurator */
+  var f=document.getElementById('cf'),w=document.getElementById('w'),wo=document.getElementById('wo'),wu=document.getElementById('wu'),sum=document.getElementById('sum'),send=document.getElementById('send'),svg=document.getElementById('sofa');
+  var G={sofa:document.getElementById('g-sofa'),bed:document.getElementById('g-bed'),chair:document.getElementById('g-chair'),corner:document.getElementById('g-corner'),shelf:document.getElementById('g-shelf'),pill:document.getElementById('g-pill')};
+  var defW={'Прямой диван':220,'Угловой диван':280,'Кровать':180,'Кресло-кровать':100},lastType='Прямой диван';
+  function v(n){var e=f.querySelector('[name='+n+']:checked');return e?e.value:''}
+  function upd(){
+    var t=v('type'),col=f.querySelector('[name=col]:checked'),adds=[].map.call(f.querySelectorAll('[name=add]:checked'),function(e){return e.value});
+    if(t!==lastType){w.value=defW[t];lastType=t}
+    var unk=wu.checked;w.disabled=unk;
+    var ww=unk?'не знаю, нужна подсказка':w.value+' см';wo.textContent=unk?'—':w.value+' см';
+    svg.style.setProperty('--fab',col.dataset.c);
+    G.sofa.hidden=!(t==='Прямой диван'||t==='Угловой диван');G.corner.style.display=t==='Угловой диван'?'':'none';
+    G.bed.hidden=t!=='Кровать';G.chair.hidden=t!=='Кресло-кровать';
+    G.shelf.style.display=adds.indexOf('полочки на подлокотник')>-1&&!G.sofa.hidden?'':'none';
+    G.pill.style.opacity=adds.indexOf('другие подушки')>-1?1:.0;
+    var x0=t==='Кресло-кровать'?118:t==='Кровать'?50:40,x1=420-x0;
+    document.getElementById('dimline').setAttribute('d','M'+x0+' 228H'+x1);document.getElementById('dimL').setAttribute('d','M'+x0+' 220v16');document.getElementById('dimR').setAttribute('d','M'+x1+' 220v16');
+    document.getElementById('dimt').textContent=unk?'размер подскажут в салоне':'≈ '+w.value+' см';
+    var rows=[['Что',t],['Куда',v('room')],['Ширина',ww],['Сон',v('sleep')],['Цвет',col.value],['Изменить',adds.length?adds.join(', '):'—'],['Бюджет',v('bud').replace(/&nbsp;/g,' ')]];
+    sum.innerHTML=rows.map(function(r){return '<div><span>'+r[0]+'</span><b>'+r[1]+'</b></div>'}).join('');
+    var txt='Здравствуйте! Хочу заказать мебель в «Лидер55».\n'+rows.map(function(r){return r[0]+': '+r[1]}).join('\n')+'\nПодскажите, пожалуйста, модели и стоимость.';
+    send.href='https://wa.me/79087984848?text='+encodeURIComponent(txt);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){var r=f.querySelector('[name=type][value="'+a.dataset.pick+'"]');if(r){r.checked=true;upd()}})});
+  upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","21:00"]],"tue":[["10:00","21:00"]],"wed":[["10:00","21:00"]],"thu":[["10:00","21:00"]],"fri":[["10:00","21:00"]],"sat":[["10:00","21:00"]],"sun":[["10:00","21:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>
