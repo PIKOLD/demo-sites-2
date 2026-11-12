@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Стройтакси — спецтехника по вызову в Тюмени, круглосуточно</title><meta property="og:type" content="website"><meta property="og:title" content="Стройтакси — спецтехника по вызову в Тюмени, круглосуточно"><meta property="og:description" content="Стройтакси, Тюмень: автокран, манипулятор, автовышка, самосвал, погрузчик, ассенизатор. Круглосуточно. Заявка за минуту в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/stroytaksi/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Стройтакси, Тюмень: автокран, манипулятор, автовышка, самосвал, погрузчик, ассенизатор. Круглосуточно. Заявка за минуту в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap"></noscript>
+<style>
+:root{
+  --ink:#141518;--ink2:#2a2c31;--mute:#5d5f66;--paper:#ecebe6;--paper2:#f6f5f1;--white:#fff;
+  --y:#ffc414;--y2:#ffd65a;--line:#d3d1c9;
+  --fd:'Unbounded',system-ui,sans-serif;--ft:'Onest',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,monospace;
+  --col:1360px;--g:clamp(16px,4vw,48px);
+  --chk:repeating-conic-gradient(var(--ink) 0 25%,var(--y) 0 50%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.55 var(--ft);color:var(--ink);background:var(--paper);overflow-x:hidden}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:var(--col);margin:0 auto;padding:0 var(--g)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:4px}
+.dark :focus-visible,.dark:focus-visible{outline-color:var(--y)}
+.demo{background:var(--ink);color:#d9d8d2;font:500 12.5px/1.4 var(--fm);text-align:center;padding:8px 16px;letter-spacing:.02em}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:30;background:rgba(236,235,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;min-height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:900 15px/1 var(--fd);letter-spacing:.04em}
+.logo i{width:28px;height:28px;background:var(--chk);background-size:14px 14px;border-radius:4px;flex:none}
+.nav nav{display:flex;gap:22px;margin-left:auto}
+.nav nav a{text-decoration:none;font-weight:500;font-size:15px;padding:10px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+.nav nav a:hover{border-color:var(--y)}
+.nav .tel{font:700 15px/1 var(--fm);text-decoration:none;white-space:nowrap;padding:12px 16px;border-radius:999px;background:var(--ink);color:var(--y);transition:transform .15s}
+.nav .tel:hover{transform:translateY(-1px)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:700 16px/1 var(--ft);text-decoration:none;border:2px solid var(--ink);cursor:pointer;transition:transform .16s,box-shadow .16s,background .16s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn-y{background:var(--y);color:var(--ink)}
+.btn-k{background:var(--ink);color:var(--white)}
+.btn-k:hover{box-shadow:0 6px 0 var(--y)}
+.btn-o{background:transparent;color:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* status */
+[data-status]{display:inline-flex;align-items:center;gap:8px;font:500 13px/1 var(--fm);letter-spacing:.02em}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#9a9a9a}
+[data-status].is-open::before{background:#1fa64a;box-shadow:0 0 0 4px rgba(31,166,74,.18)}
+
+/* hero */
+.hero{position:relative;padding:clamp(28px,5vh,60px) 0 0}
+.kick{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;font:500 13px/1.3 var(--fm);text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.kick b{color:var(--ink);font-weight:700}
+.h1{font:900 clamp(2.2rem,10vw,9rem)/.92 var(--fd);letter-spacing:-.035em;margin:clamp(14px,2.4vh,26px) 0 clamp(18px,3vh,34px);white-space:nowrap}
+.h1 span{display:inline-block;background:var(--y);padding:0 .08em .02em;margin-left:.04em;border-radius:.08em;position:relative}
+.h1 span::after{content:"";position:absolute;left:0;right:0;bottom:-.14em;height:.12em;background:var(--chk);background-size:.12em .12em}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end}
+.lead{font:500 clamp(1.15rem,1.6vw,1.5rem)/1.4 var(--ft);max-width:30ch}
+.lead em{font-style:normal;background:linear-gradient(transparent 62%,var(--y2) 62%)}
+.proof{margin-top:18px;color:var(--mute);max-width:46ch}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(18px,3vh,28px)}
+.meter{position:relative;background:var(--ink);color:var(--paper2);border-radius:22px;padding:22px 24px 0;overflow:hidden}
+.meter-top{display:flex;justify-content:space-between;align-items:center;gap:12px;font:500 12px/1 var(--fm);letter-spacing:.08em;text-transform:uppercase;color:#a9a8a2}
+.meter-top b{color:var(--y);font-weight:700}
+.meter dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:16px 0 4px;border-top:1px dashed #44464d}
+.meter dl div{padding:14px 12px 14px 0}
+.meter dl div+div{padding-left:14px;border-left:1px dashed #44464d}
+.meter dt{font:500 11px/1.2 var(--fm);text-transform:uppercase;letter-spacing:.08em;color:#9c9b95}
+.meter dd{font:700 clamp(1.05rem,1.6vw,1.45rem)/1.15 var(--fd);margin-top:8px;color:var(--white)}
+.meter dd small{display:block;font:400 13px/1.35 var(--ft);color:#bdbcb6;margin-top:4px}
+.truck{width:100%;height:auto;margin-top:6px}
+.truck .boom{transform-origin:356px 112px;animation:boom 6s ease-in-out infinite}
+.truck .hook{animation:hook 6s ease-in-out infinite}
+@keyframes boom{0%,100%{transform:rotate(0)}50%{transform:rotate(-5deg)}}
+@keyframes hook{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.road{height:16px;background:var(--chk);background-size:16px 16px;margin-top:clamp(28px,5vh,56px)}
+
+/* section heads */
+section{scroll-margin-top:70px}
+.sec{padding:clamp(64px,9vw,128px) 0}
+.eyebrow{font:700 12.5px/1 var(--fm);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:14px;height:14px;background:var(--chk);background-size:7px 7px;border-radius:2px}
+.h2{font:700 clamp(1.9rem,4.4vw,3.9rem)/1.02 var(--fd);letter-spacing:-.03em;margin-top:16px;max-width:18ch}
+
+/* fleet */
+.fleet-head{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:end}
+.fleet-head p{color:var(--mute);max-width:42ch}
+.fleet{margin-top:clamp(36px,5vw,64px);border-top:2px solid var(--ink)}
+.unit{display:grid;grid-template-columns:56px minmax(0,1.1fr) minmax(0,1.4fr) 128px auto;gap:20px 28px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:background .2s,padding .2s}
+.unit:hover{background:var(--paper2);padding-left:14px;padding-right:14px}
+.unit .n{font:700 14px/1 var(--fm);color:var(--mute)}
+.unit h3{font:700 clamp(1.25rem,2.2vw,1.9rem)/1.1 var(--fd);letter-spacing:-.02em}
+.unit p{color:var(--mute);font-size:16px}
+.unit svg{width:128px;height:80px;color:var(--ink)}
+.unit .go{font:700 14px/1 var(--fm);padding:12px 16px;border:2px solid var(--ink);border-radius:999px;white-space:nowrap;transition:background .2s}
+.unit:hover .go{background:var(--y)}
+.unit.alt{background:var(--y);border-bottom-color:var(--ink);padding-left:18px;padding-right:18px}
+.unit.alt p{color:var(--ink2)}
+
+/* praise */
+.dark{background:var(--ink);color:var(--paper2)}
+.dark .eyebrow{color:#a9a8a2}
+.praise{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);gap:clamp(32px,6vw,96px);align-items:start}
+.score{position:sticky;top:96px}
+.score .big{font:900 clamp(5rem,13vw,11rem)/.85 var(--fd);letter-spacing:-.05em;color:var(--y);margin-top:24px}
+.score .stars{display:flex;gap:6px;margin:18px 0 10px}
+.score .stars i{width:22px;height:22px;background:var(--y);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.score .stars i.h{background:linear-gradient(90deg,var(--y) 60%,#4a4b50 60%)}
+.score p{color:#bdbcb6}
+.score a{display:inline-flex;margin-top:18px;color:var(--y);font:700 14px/1 var(--fm);min-height:44px;align-items:center}
+.quotes{display:grid;gap:0}
+.q{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:32px 0;border-bottom:1px solid #3a3c42}
+.q:first-child{padding-top:8px}
+.q .k{font:900 40px/1 var(--fd);color:var(--ink);-webkit-text-stroke:1.5px var(--y)}
+.q h3{font:700 clamp(1.3rem,2.4vw,2rem)/1.15 var(--fd);letter-spacing:-.02em}
+.q p{margin-top:12px;color:#c8c7c1;max-width:52ch}
+.q .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.q .tags span{font:500 12.5px/1 var(--fm);padding:8px 12px;border:1px solid #4a4c52;border-radius:999px;color:#e2e1db}
+
+/* order (feature) */
+.order{background:var(--y);position:relative}
+.order::before,.order::after{content:"";position:absolute;left:0;right:0;height:16px;background:var(--chk);background-size:16px 16px}
+.order::before{top:0}.order::after{bottom:0}
+.order .h2{max-width:20ch}
+.order-sub{margin-top:14px;max-width:52ch;color:var(--ink2)}
+.board{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(20px,3vw,40px);margin-top:clamp(32px,4vw,56px);align-items:start}
+.form{background:var(--paper2);border:2px solid var(--ink);border-radius:24px;padding:clamp(20px,3vw,36px)}
+fieldset{border:0;padding:0;margin:0 0 28px}
+fieldset:last-of-type{margin-bottom:0}
+legend{display:flex;align-items:baseline;gap:12px;font:700 clamp(1.05rem,1.5vw,1.25rem)/1.2 var(--fd);margin-bottom:14px;letter-spacing:-.01em}
+legend b{font:700 12px/1 var(--fm);background:var(--ink);color:var(--y);padding:6px 8px;border-radius:6px;letter-spacing:.06em}
+.machines{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.chip input,.mc input{position:absolute;opacity:0;pointer-events:none}
+.mc{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 8px 12px;border:2px solid var(--line);border-radius:16px;background:var(--white);cursor:pointer;text-align:center;font:600 14px/1.15 var(--ft);transition:border-color .15s,background .15s,transform .15s;min-height:104px;justify-content:center}
+.mc svg{width:76px;height:46px}
+.mc:hover{border-color:var(--ink);transform:translateY(-2px)}
+.mc:has(input:checked){border-color:var(--ink);background:var(--y)}
+.mc:has(input:focus-visible),.chip:has(input:focus-visible){outline:3px solid var(--ink);outline-offset:3px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:2px solid var(--line);border-radius:999px;background:var(--white);cursor:pointer;font:500 15px/1.1 var(--ft);transition:border-color .15s,background .15s}
+.chip:hover{border-color:var(--ink)}
+.chip:has(input:checked){background:var(--ink);color:var(--white);border-color:var(--ink)}
+.field{display:grid;gap:6px;margin-top:12px}
+.field label{font:500 13px/1.2 var(--fm);color:var(--mute);letter-spacing:.02em}
+.field input,.field textarea{font:500 16px/1.4 var(--ft);color:var(--ink);background:var(--white);border:2px solid var(--line);border-radius:14px;padding:13px 16px;min-height:52px;width:100%;transition:border-color .15s}
+.field textarea{min-height:84px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:var(--ink);outline:none}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.ticket{position:sticky;top:90px;background:var(--white);border-radius:20px;padding:26px 24px 22px;border:2px solid var(--ink);font:500 14px/1.5 var(--fm)}
+.ticket::before{content:"";position:absolute;left:24px;right:24px;top:-2px;height:10px;background:radial-gradient(circle at 6px -2px,var(--y) 6px,transparent 6.5px) 0 0/16px 10px repeat-x}
+.t-head{display:flex;justify-content:space-between;gap:10px;align-items:center;padding-bottom:14px;border-bottom:2px dashed var(--line)}
+.t-head b{font:900 16px/1 var(--fd);letter-spacing:.02em}
+.t-head span{font-size:12px;color:var(--mute)}
+.t-rows{margin:6px 0 0}
+.t-rows div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.t-rows dt{color:var(--mute);font-size:12px;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.t-rows dd{font-weight:700;color:var(--ink);overflow-wrap:anywhere}
+.t-rows dd.empty{color:#a3a29c;font-weight:500}
+.t-acts{display:grid;gap:10px;margin-top:18px}
+.t-acts .btn{width:100%}
+.t-note{margin-top:12px;font:400 13px/1.45 var(--ft);color:var(--mute)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:clamp(36px,5vw,64px);counter-reset:s;position:relative}
+.step{position:relative;padding:0 22px 0 0}
+.step .dot{display:flex;align-items:center;gap:0;margin-bottom:22px}
+.step .dot b{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:700 16px/1 var(--fm);background:var(--paper2);border:2px solid var(--ink)}
+.step:first-child .dot b{background:var(--y)}
+.step .dot i{flex:1;height:0;border-top:2px dashed var(--ink);margin-left:8px}
+.step:last-child .dot i{border-top-style:solid;max-width:24px}
+.step h3{font:700 1.15rem/1.2 var(--fd);letter-spacing:-.01em}
+.step p{color:var(--mute);margin-top:8px;font-size:15.5px}
+
+/* contacts */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(24px,4vw,56px);margin-top:clamp(32px,4vw,56px);align-items:stretch}
+.lines{display:grid;gap:0;border-top:2px solid var(--ink)}
+.line{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.line dt{font:500 12.5px/1.3 var(--fm);text-transform:uppercase;letter-spacing:.08em;color:var(--mute)}
+.line dd{font-size:17px}
+.line dd a{text-decoration:none;border-bottom:2px solid var(--y);display:inline-block;padding:4px 0}
+.line dd a:hover{background:var(--y)}
+.line .ph{font:700 clamp(1.2rem,2vw,1.6rem)/1.2 var(--fm);letter-spacing:-.01em}
+.socials{display:flex;flex-wrap:wrap;gap:10px}
+.socials a{border:2px solid var(--ink)!important;border-radius:999px;padding:10px 16px!important;font-weight:600;min-height:44px;display:inline-flex;align-items:center}
+.map{position:relative;border-radius:24px;overflow:hidden;border:2px solid var(--ink);min-height:420px;background:#d9d7cf}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map .tag{position:absolute;left:16px;top:16px;z-index:2;background:var(--ink);color:var(--y);font:700 13px/1.3 var(--fm);padding:10px 14px;border-radius:12px;max-width:calc(100% - 32px)}
+
+/* final */
+.final{background:var(--ink);color:var(--white);overflow:hidden;position:relative}
+.final .wrap{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:32px;align-items:end}
+.final h2{font:900 clamp(2rem,4.6vw,4.4rem)/1 var(--fd);letter-spacing:-.04em;max-width:15ch}
+.final h2 span{color:var(--y)}
+.final p{color:#c8c7c1;margin-top:18px;max-width:40ch}
+.final .acts{justify-content:flex-end}
+.final .btn-o{color:var(--white);border-color:var(--white)}
+.final .btn-y{border-color:var(--y)}
+.final .btn-y:hover{box-shadow:0 6px 0 var(--white)}
+footer{background:var(--ink);color:#8d8c86;font:500 12.5px/1.5 var(--fm);padding:28px 0 40px;border-top:1px solid #2c2e33}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+.fab{display:none}
+
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+
+@media (min-width:1900px){:root{--col:1440px}body{font-size:18px}}
+@media (max-width:1100px){
+  .nav nav{display:none}
+  .unit{grid-template-columns:44px minmax(0,1fr) 112px;gap:8px 18px}
+  .unit p{grid-column:2/3}
+  .unit .go{display:none}
+  .unit svg{grid-row:1/3;grid-column:3;width:112px}
+  .board{grid-template-columns:minmax(0,1fr)}
+  .ticket{position:relative;top:0}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 24px}
+  .step .dot i{display:none}
+}
+@media (max-width:900px){
+  .hero-grid,.fleet-head,.praise,.contact,.final .wrap{grid-template-columns:minmax(0,1fr)}
+  .score{position:relative;top:0}
+  .final .acts{justify-content:flex-start}
+  .machines{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  body{font-size:16px;padding-bottom:76px}
+  .nav .wrap{min-height:58px}
+  .nav .tel{padding:11px 13px;font-size:13px}
+  .h1{letter-spacing:-.04em}
+  .acts .btn{flex:1 1 100%}
+  .meter{padding:18px 16px 0;border-radius:18px}
+  .meter dl{grid-template-columns:minmax(0,1fr)}
+  .meter dl div,.meter dl div+div{padding:12px 0;border-left:0;border-bottom:1px dashed #44464d;display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+  .meter dd{margin:0;text-align:right}
+  .unit{grid-template-columns:34px minmax(0,1fr) 84px;padding:18px 0}
+  .unit svg{width:84px;height:54px}
+  .unit:hover{padding-left:0;padding-right:0}
+  .unit.alt{padding-left:12px;padding-right:12px}
+  .q{grid-template-columns:minmax(0,1fr);gap:8px}
+  .machines{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .line{grid-template-columns:minmax(0,1fr);gap:6px}
+  .map{min-height:320px}
+  .fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px}
+  .fab a{flex:1;min-height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 var(--ft);text-decoration:none;border:2px solid var(--ink);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  .fab .c{background:var(--y);color:var(--ink)}
+  .fab .w{background:var(--ink);color:var(--white);flex:0 0 auto;padding:0 18px}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="base"><path d="M6 46h100" stroke="currentColor" stroke-width="3" fill="none"/><path d="M84 46V26h14l8 10v10z" fill="var(--y)" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M90 30h7l4 5h-11z" fill="currentColor"/><circle cx="24" cy="50" r="7" fill="var(--white)" stroke="currentColor" stroke-width="3"/><circle cx="92" cy="50" r="7" fill="var(--white)" stroke="currentColor" stroke-width="3"/></g>
+    <symbol id="m-crane" viewBox="0 0 112 62"><use href="#base"/><rect x="10" y="38" width="72" height="6" fill="currentColor"/><path d="M70 38l-6-8h12z" fill="currentColor"/><path d="M70 32L8 6" stroke="var(--y)" stroke-width="7" stroke-linecap="round"/><path d="M70 32L8 6" stroke="currentColor" stroke-width="2.5"/><path d="M10 8v18" stroke="currentColor" stroke-width="2"/><path d="M7 26h6l-3 5z" fill="currentColor"/></symbol>
+    <symbol id="m-manip" viewBox="0 0 112 62"><use href="#base"/><rect x="10" y="34" width="62" height="8" fill="none" stroke="currentColor" stroke-width="3"/><path d="M78 42V14" stroke="currentColor" stroke-width="5"/><path d="M78 14L36 8" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M38 9v12" stroke="currentColor" stroke-width="2"/><rect x="28" y="21" width="20" height="12" fill="var(--y)" stroke="currentColor" stroke-width="2.5"/></symbol>
+    <symbol id="m-lift" viewBox="0 0 112 62"><use href="#base"/><rect x="10" y="38" width="72" height="6" fill="currentColor"/><path d="M60 38L38 18 64 6" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><rect x="62" y="0" width="16" height="11" rx="2" fill="var(--y)" stroke="currentColor" stroke-width="2.5"/></symbol>
+    <symbol id="m-dump" viewBox="0 0 112 62"><use href="#base"/><rect x="10" y="38" width="72" height="6" fill="currentColor"/><path d="M12 36l-4-24h68l-4 24z" fill="var(--y)" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M22 18v12M36 18v12M50 18v12M64 18v12" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="m-load" viewBox="0 0 112 62"><path d="M4 56h104" stroke="currentColor" stroke-width="3"/><rect x="26" y="28" width="46" height="16" rx="3" fill="var(--y)" stroke="currentColor" stroke-width="3"/><path d="M46 28V10h22v18" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M50 14h14v10H50z" fill="currentColor"/><path d="M72 34l18 6" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M86 30l18 4-4 16H88z" fill="var(--y)" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="36" cy="48" r="8" fill="var(--white)" stroke="currentColor" stroke-width="3"/><circle cx="64" cy="48" r="8" fill="var(--white)" stroke="currentColor" stroke-width="3"/></symbol>
+    <symbol id="m-tank" viewBox="0 0 112 62"><use href="#base"/><rect x="8" y="16" width="72" height="24" rx="12" fill="var(--y)" stroke="currentColor" stroke-width="3"/><path d="M20 16v24M68 16v24" stroke="currentColor" stroke-width="2"/><path d="M8 34c-4 0-4 8 2 8" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+    <symbol id="m-q" viewBox="0 0 112 62"><rect x="30" y="4" width="52" height="52" rx="10" fill="var(--white)" stroke="currentColor" stroke-width="3" stroke-dasharray="6 5"/><text x="56" y="42" text-anchor="middle" font-family="Unbounded,sans-serif" font-weight="900" font-size="32" fill="currentColor">?</text></symbol>
+  </defs>
+</svg>
+
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Стройтакси — наверх"><i></i>СТРОЙТАКСИ</a>
+    <nav aria-label="Разделы">
+      <a href="#tehnika">Техника</a><a href="#otzyvy">Отзывы</a><a href="#vyzov">Вызов техники</a><a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="tel" href="tel:+79225174066">+7 922 517-40-66</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="kick"><span data-status></span><span><b>Тюмень</b> · подача на ваш объект</span></div>
+    <h1 class="h1">Строй<span>такси</span></h1>
+    <div class="hero-grid">
+      <div>
+        <p class="lead">Спецтехника по вызову в Тюмени — <em>как такси, только с автокраном.</em> Манипулятор, автовышка, самосвал, погрузчик, ассенизатор.</p>
+        <p class="proof">Главное, что пишут клиенты: технику подают вовремя, а по оплате идут навстречу.</p>
+        <div class="acts">
+          <a class="btn btn-y" href="#vyzov">Рассчитать стоимость
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></a>
+          <a class="btn btn-k" href="https://wa.me/79323215888?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D1%81%D0%BF%D0%B5%D1%86%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%B2%20%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D0%B8." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+            Написать в WhatsApp</a>
+          <a class="btn btn-o" href="tel:+79225174066">Позвонить</a>
+        </div>
+      </div>
+      <div class="meter" data-r>
+        <div class="meter-top"><span>Таксометр</span><b>на линии 24/7</b></div>
+        <dl>
+          <div><dt>Подача</dt><dd>24/7<small>без выходных</small></dd></div>
+          <div><dt>Оплата</dt><dd>3 способа<small>наличные, банк, карта</small></dd></div>
+          <div><dt>2ГИС</dt><dd>4,6<small>10 оценок</small></dd></div>
+        </dl>
+        <svg class="truck" viewBox="0 0 520 210" role="img" aria-label="Рисунок: манипулятор с поднятой стрелой">
+          <path d="M0 196h520" stroke="#44464d" stroke-width="2" stroke-dasharray="14 10"/>
+          <g class="boom">
+            <path d="M356 112L92 40" stroke="#ffc414" stroke-width="16" stroke-linecap="round"/>
+            <path d="M356 112L92 40" stroke="#141518" stroke-width="3" stroke-dasharray="0 22" stroke-linecap="round"/>
+            <path d="M96 42v40" stroke="#ecebe6" stroke-width="2.5"/>
+            <g class="hook"><rect x="64" y="82" width="64" height="40" rx="3" fill="#2a2c31" stroke="#ecebe6" stroke-width="2.5"/><path d="M64 96h64M80 82v40M96 82v40M112 82v40" stroke="#5d5f66" stroke-width="2"/></g>
+          </g>
+          <rect x="342" y="104" width="28" height="64" fill="#ffc414" stroke="#141518" stroke-width="3"/>
+          <rect x="60" y="150" width="300" height="20" fill="#ffc414" stroke="#141518" stroke-width="3"/>
+          <rect x="60" y="138" width="270" height="12" fill="#2a2c31"/>
+          <path d="M376 168v-62h70l34 38v24z" fill="#ffc414" stroke="#141518" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M392 116h46l24 28h-70z" fill="#141518"/>
+          <g fill="#141518"><rect x="388" y="152" width="10" height="10"/><rect x="408" y="152" width="10" height="10"/><rect x="428" y="152" width="10" height="10"/><rect x="398" y="162" width="10" height="6"/><rect x="418" y="162" width="10" height="6"/></g>
+          <rect x="54" y="168" width="432" height="10" fill="#141518"/>
+          <g fill="#ecebe6" stroke="#141518" stroke-width="5"><circle cx="118" cy="182" r="20"/><circle cx="168" cy="182" r="20"/><circle cx="420" cy="182" r="20"/></g>
+          <g fill="#141518"><circle cx="118" cy="182" r="6"/><circle cx="168" cy="182" r="6"/><circle cx="420" cy="182" r="6"/></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="road" aria-hidden="true"></div>
+</section>
+
+<section class="sec" id="tehnika">
+  <div class="wrap">
+    <div class="fleet-head">
+      <div><p class="eyebrow">Техника</p><h2 class="h2">Что у нас заказывают чаще всего</h2></div>
+      <p>Шесть машин из отзывов клиентов. Не знаете, что подойдёт под задачу, — опишите её, подберём технику сами: так один клиент быстро нашёл погрузчик.</p>
+    </div>
+    <div class="fleet">
+      <a class="unit" href="#vyzov" data-pick="Автокран" data-r><span class="n">01</span><h3>Автокран</h3><p>Подъём и монтаж тяжёлых конструкций, плит, блоков. Один клиент пишет, что заказывал кран уже несколько раз.</p><svg aria-hidden="true"><use href="#m-crane"/></svg><span class="go">Вызвать</span></a>
+      <a class="unit" href="#vyzov" data-pick="Манипулятор" data-r><span class="n">02</span><h3>Манипулятор</h3><p>Сам грузит и сам везёт: стройматериалы, бытовки, оборудование. Самая частая машина в отзывах.</p><svg aria-hidden="true"><use href="#m-manip"/></svg><span class="go">Вызвать</span></a>
+      <a class="unit" href="#vyzov" data-pick="Автовышка" data-r><span class="n">03</span><h3>Автовышка</h3><p>Работы на высоте: фасад, кровля, освещение, вывески. Клиенты отмечают своевременную подачу.</p><svg aria-hidden="true"><use href="#m-lift"/></svg><span class="go">Вызвать</span></a>
+      <a class="unit" href="#vyzov" data-pick="Самосвал" data-r><span class="n">04</span><h3>Самосвал</h3><p>Вывоз грунта и строительного мусора с объекта. Заказывают и на несколько часов.</p><svg aria-hidden="true"><use href="#m-dump"/></svg><span class="go">Вызвать</span></a>
+      <a class="unit" href="#vyzov" data-pick="Погрузчик" data-r><span class="n">05</span><h3>Погрузчик</h3><p>Погрузка, перемещение и разгрузка на площадке и складе.</p><svg aria-hidden="true"><use href="#m-load"/></svg><span class="go">Вызвать</span></a>
+      <a class="unit alt" href="#vyzov" data-pick="Ассенизатор" data-r><span class="n">06</span><h3>Ассенизатор</h3><p>Откачка септиков и выгребных ям — на даче, в частном доме, на объекте.</p><svg aria-hidden="true"><use href="#m-tank"/></svg><span class="go">Вызвать</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="otzyvy">
+  <div class="wrap praise">
+    <div class="score" data-r>
+      <p class="eyebrow">Отзывы в 2ГИС</p>
+      <div class="big">4,6</div>
+      <div class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="h"></i></div>
+      <p>Средняя оценка по 10 оценкам. Пересказываем, за что хвалят.</p>
+      <a href="https://2gis.ru/tyumen/firm/70000001054014515" target="_blank" rel="noopener">Читать отзывы в 2ГИС →</a>
+    </div>
+    <div class="quotes">
+      <article class="q" data-r><span class="k">01</span><div><h3>Подают вовремя</h3><p>Про автовышку пишут — подача своевременная. Про самосвал на три часа и манипулятор — всё сделали вовремя и чётко.</p><div class="tags"><span>автовышка</span><span>самосвал</span><span>манипулятор</span></div></div></article>
+      <article class="q" data-r><span class="k">02</span><div><h3>С оплатой без проблем</h3><p>Клиенты отмечают, что рассчитаться было удобно, а ребята пошли навстречу. Принимают наличные, оплату через банк и перевод с карты.</p><div class="tags"><span>наличные</span><span>через банк</span><span>перевод с карты</span></div></div></article>
+      <article class="q" data-r><span class="k">03</span><div><h3>Быстро находят технику и всё объясняют</h3><p>Благодарят за скорость, внимательность и разъяснения. Кто-то пишет, что обратился в первую же компанию из 2ГИС — и не пожалел, а автокран заказывает здесь не первый раз.</p><div class="tags"><span>погрузчик</span><span>автокран</span><span>ассенизатор</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec order" id="vyzov">
+  <div class="wrap">
+    <p class="eyebrow">Вызов техники</p>
+    <h2 class="h2">Закажите технику, как такси</h2>
+    <p class="order-sub">Отметьте машину, задачу, время и адрес — заявка соберётся справа. Отправьте её в WhatsApp, диспетчер уточнит детали и назовёт стоимость.</p>
+    <div class="board">
+      <form class="form" id="f" onsubmit="return false">
+        <fieldset>
+          <legend><b>01</b>Какая техника нужна</legend>
+          <div class="machines">
+            <label class="mc"><input type="radio" name="m" value="Автокран"><svg aria-hidden="true"><use href="#m-crane"/></svg>Автокран</label>
+            <label class="mc"><input type="radio" name="m" value="Манипулятор" checked><svg aria-hidden="true"><use href="#m-manip"/></svg>Манипулятор</label>
+            <label class="mc"><input type="radio" name="m" value="Автовышка"><svg aria-hidden="true"><use href="#m-lift"/></svg>Автовышка</label>
+            <label class="mc"><input type="radio" name="m" value="Самосвал"><svg aria-hidden="true"><use href="#m-dump"/></svg>Самосвал</label>
+            <label class="mc"><input type="radio" name="m" value="Погрузчик"><svg aria-hidden="true"><use href="#m-load"/></svg>Погрузчик</label>
+            <label class="mc"><input type="radio" name="m" value="Ассенизатор"><svg aria-hidden="true"><use href="#m-tank"/></svg>Ассенизатор</label>
+            <label class="mc"><input type="radio" name="m" value="Не знаю — подберите"><svg aria-hidden="true"><use href="#m-q"/></svg>Не знаю, подберите</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>02</b>Что нужно сделать</legend>
+          <div class="chips" id="tasks">
+            <label class="chip"><input type="checkbox" name="t" value="перевезти груз">Перевезти груз</label>
+            <label class="chip"><input type="checkbox" name="t" value="поднять на высоту">Поднять на высоту</label>
+            <label class="chip"><input type="checkbox" name="t" value="погрузка/разгрузка">Погрузка, разгрузка</label>
+            <label class="chip"><input type="checkbox" name="t" value="вывоз грунта или мусора">Вывоз грунта, мусора</label>
+            <label class="chip"><input type="checkbox" name="t" value="откачка септика">Откачка септика</label>
+          </div>
+          <div class="field"><label for="what">Груз, вес, высота — что знаете</label><textarea id="what" name="what" placeholder="Например: 2 поддона кирпича, 5 этаж"></textarea></div>
+        </fieldset>
+        <fieldset>
+          <legend><b>03</b>Когда подать</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="w" value="срочно, сегодня" checked>Срочно, сегодня</label>
+            <label class="chip"><input type="radio" name="w" value="завтра">Завтра</label>
+            <label class="chip"><input type="radio" name="w" value="на дату">На дату</label>
+          </div>
+          <div class="two">
+            <div class="field"><label for="date">Дата и время</label><input id="date" name="date" type="text" placeholder="12.11, к 9:00"></div>
+            <div class="field"><label for="hrs">На сколько часов</label><input id="hrs" name="hrs" type="text" inputmode="numeric" placeholder="Например: 3"></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><b>04</b>Куда и как платить</legend>
+          <div class="field" style="margin-top:0"><label for="addr">Адрес объекта в Тюмени</label><input id="addr" name="addr" type="text" placeholder="Улица, дом или ориентир" autocomplete="street-address"></div>
+          <div class="chips" style="margin-top:14px">
+            <label class="chip"><input type="radio" name="p" value="наличные" checked>Наличные</label>
+            <label class="chip"><input type="radio" name="p" value="оплата через банк">Через банк</label>
+            <label class="chip"><input type="radio" name="p" value="перевод с карты">Перевод с карты</label>
+          </div>
+        </fieldset>
+      </form>
+      <aside class="ticket" aria-live="polite">
+        <div class="t-head"><b>ЗАЯВКА</b><span>Стройтакси · Тюмень</span></div>
+        <dl class="t-rows">
+          <div><dt>Техника</dt><dd id="o-m">Манипулятор</dd></div>
+          <div><dt>Задача</dt><dd id="o-t" class="empty">не указана</dd></div>
+          <div><dt>Подача</dt><dd id="o-w">срочно, сегодня</dd></div>
+          <div><dt>Адрес</dt><dd id="o-a" class="empty">уточню по телефону</dd></div>
+          <div><dt>Оплата</dt><dd id="o-p">наличные</dd></div>
+        </dl>
+        <div class="t-acts">
+          <a class="btn btn-y" id="send" href="https://wa.me/79323215888?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D1%81%D0%BF%D0%B5%D1%86%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%B2%20%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D0%B8." target="_blank" rel="noopener">Отправить в WhatsApp</a>
+          <a class="btn btn-o" href="https://t.me/+79323215888" target="_blank" rel="noopener">Написать в Telegram</a>
+        </div>
+        <p class="t-note">Стоимость диспетчер называет после уточнения задачи. Срочно — звоните: <a href="tel:+79225174066">+7 922 517-40-66</a></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kak">
+  <div class="wrap">
+    <p class="eyebrow">Как мы работаем</p>
+    <h2 class="h2">От звонка до машины на объекте</h2>
+    <div class="steps">
+      <div class="step" data-r><div class="dot"><b>01</b><i></i></div><h3>Заявка</h3><p>Звонок, WhatsApp или Telegram — в любое время суток.</p></div>
+      <div class="step" data-r><div class="dot"><b>02</b><i></i></div><h3>Подбор и расчёт</h3><p>Уточняем груз, высоту, объём и подъезд, подбираем машину и называем стоимость.</p></div>
+      <div class="step" data-r><div class="dot"><b>03</b><i></i></div><h3>Договорённость</h3><p>Согласуем время подачи и способ оплаты: наличные, через банк или с карты.</p></div>
+      <div class="step" data-r><div class="dot"><b>04</b><i></i></div><h3>Подача и работа</h3><p>Техника приезжает на ваш адрес и выполняет задачу.</p></div>
+      <div class="step" data-r><div class="dot"><b>05</b><i></i></div><h3>Расчёт</h3><p>Принимаете работу и рассчитываетесь удобным способом.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kontakty" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">Контакты</p>
+    <h2 class="h2">Диспетчер на связи круглосуточно</h2>
+    <div class="contact">
+      <dl class="lines" data-r>
+        <div class="line"><dt>Режим</dt><dd><span data-status></span><br>Без выходных, 24/7</dd></div>
+        <div class="line"><dt>Телефон</dt><dd><a class="ph" href="tel:+79225174066">+7 922 517-40-66</a></dd></div>
+        <div class="line"><dt>Ещё номера</dt><dd><a class="ph" href="tel:+79323215888">+7 932 321-58-88</a><br><a class="ph" href="tel:+73452615888">+7 345 261-58-88</a></dd></div>
+        <div class="line"><dt>Где работаем</dt><dd>Тюмень · подача на адрес вашего объекта</dd></div>
+        <div class="line"><dt>Написать</dt><dd class="socials"><a href="https://wa.me/79323215888?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D1%81%D0%BF%D0%B5%D1%86%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%B2%20%D0%A2%D1%8E%D0%BC%D0%B5%D0%BD%D0%B8." target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79323215888" target="_blank" rel="noopener">Telegram</a><a href="https://2gis.ru/tyumen/firm/70000001054014515" target="_blank" rel="noopener">2ГИС</a></dd></div>
+      </dl>
+      <div class="map">
+        <span class="tag">Подача по Тюмени — адрес называете вы</span>
+        <iframe loading="lazy" title="Карта Тюмени" src="https://yandex.ru/map-widget/v1/?ll=65.5343,57.1530&amp;z=11"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec final dark">
+  <div class="wrap">
+    <div data-r>
+      <h2>Встала работа на объекте? <span>Вызовите технику.</span></h2>
+      <p>Днём и ночью, без выходных. Расскажите задачу — подберём машину и согласуем подачу.</p>
+    </div>
+    <div class="acts">
+      <a class="btn btn-y" href="tel:+79225174066">Позвонить</a>
+      <a class="btn btn-o" href="#vyzov">Собрать заявку</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Стройтакси · аренда спецтехники · Тюмень</span><span>Демо-концепт по открытым данным 2ГИС</span></div>
+</footer>
+
+<div class="fab">
+  <a class="c" href="tel:+79225174066">Позвонить</a>
+  <a class="w" href="#vyzov">Заявка</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('f'),send=document.getElementById('send');
+  function v(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+  function set(id,t,empty){var d=document.getElementById(id);d.textContent=t||empty;d.classList.toggle('empty',!t)}
+  function upd(){
+    var m=v('m'),t=[].map.call(f.querySelectorAll('input[name="t"]:checked'),function(e){return e.value}),
+      what=f.what.value.trim(),w=v('w'),date=f.date.value.trim(),hrs=f.hrs.value.trim(),a=f.addr.value.trim(),p=v('p');
+    var task=t.join(', ')+(what?(t.length?'; ':'')+what:'');
+    var when=w+(date?' ('+date+')':'')+(hrs?', на '+hrs+' ч':'');
+    set('o-m',m,'—');set('o-t',task,'не указана');set('o-w',when,'');set('o-a',a,'уточню по телефону');set('o-p',p,'');
+    var msg='Здравствуйте! Заявка с сайта Стройтакси.\nТехника: '+m+(task?'\nЗадача: '+task:'')+'\nПодача: '+when+'\nАдрес: '+(a||'уточню')+'\nОплата: '+p;
+    send.href='https://wa.me/79323215888?text='+encodeURIComponent(msg);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){
+    var r=f.querySelector('input[name="m"][value="'+a.getAttribute('data-pick')+'"]');if(r){r.checked=true;upd()}
+  })});
+  upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

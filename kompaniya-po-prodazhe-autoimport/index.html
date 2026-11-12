@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>АвтоДилер — автомобили в наличии и под заказ, Новочеркасск</title><meta property="og:type" content="website"><meta property="og:title" content="АвтоДилер — автомобили в наличии и под заказ, Новочеркасск"><meta property="og:description" content="Подержанные авто, автомобили с аукциона и электромобили — в наличии и под заказ. Новочеркасск, проспект Ермака, 5. Соберите заявку на авто и отправьте в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/kompaniya-po-prodazhe-autoimport/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Подержанные авто, автомобили с аукциона и электромобили — в наличии и под заказ. Новочеркасск, проспект Ермака, 5. Соберите заявку на авто и отправьте в WhatsApp.">
+<meta name="theme-color" content="#141416">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700;800&display=swap"></noscript>
+<style>
+:root{--ink:#141416;--ink2:#1d1e22;--ink3:#2b2c32;--paper:#f2ede5;--card:#fbf8f3;--line:#d9d0c2;--red:#c8161f;--red2:#ff5a5f;--logo:#e3262f;--bow:#f6c21c;--mute:#5b5751;--muted:#aba8a2;--ok:#3ecf74;--fd:'Unbounded',system-ui,sans-serif;--ft:'Manrope',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,monospace;--w:1400px;--g:clamp(16px,4vw,48px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--ft);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--fd);font-weight:700;line-height:1.06;letter-spacing:-.025em}
+p,ol,ul,dl,dd,figure{margin:0}
+ol,ul{padding:0;list-style:none}
+.wrap{width:100%;max-width:var(--w);margin:0 auto;padding:0 var(--g)}
+.mono{font-family:var(--fm);font-size:12.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+:focus-visible{outline:3px solid var(--bow);outline-offset:3px;border-radius:6px}
+.demo{background:var(--bow);color:#1d1600;text-align:center;font:700 13px/1.4 var(--ft);padding:7px 16px}
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:var(--ink);color:#fff;border-bottom:1px solid #2a2b30}
+.hdr-in{display:flex;align-items:center;gap:20px;min-height:64px}
+.logo{display:inline-flex;flex-direction:column;text-decoration:none;font:800 19px/1 var(--fd);text-transform:uppercase;letter-spacing:-.01em;color:#fff}
+.logo b{color:var(--logo);font-weight:800}
+.logo small{font:500 9.5px/1 var(--fm);letter-spacing:.13em;color:var(--muted);margin-top:6px}
+.nav{display:flex;gap:2px;margin-left:auto}
+.nav a{padding:10px 13px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;color:#d6d3cd;transition:background .2s,color .2s}
+.nav a:hover{color:#fff;background:var(--ink3)}
+.hdr-tel{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:15px;text-decoration:none;padding:0 16px;border:1.5px solid #3c3d44;border-radius:999px;white-space:nowrap;transition:border-color .2s}
+.hdr-tel:hover{border-color:var(--red2)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:700 16px/1.1 var(--ft);text-decoration:none;text-align:center;border:0;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s,border-color .2s,color .2s}
+.btn:active{transform:translateY(1px) scale(.985)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 12px 30px -14px rgba(200,22,31,.9)}
+.btn-red:hover{background:#a60e16;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid #4b4c53}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-line{background:transparent;color:inherit;border:1.5px solid currentColor}
+.btn-line:hover{background:rgba(127,127,127,.12)}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-white:hover{background:var(--bow)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn svg{flex:none}
+.wa{width:9px;height:9px;border-radius:50%;background:#25d366;flex:none}
+/* status */
+[data-status]{display:inline-flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600;color:var(--muted)}
+[data-status]:before{content:"";width:8px;height:8px;border-radius:50%;background:#807c75}
+[data-status].is-open{color:#86e3ab}
+[data-status].is-open:before{background:var(--ok);box-shadow:0 0 0 4px rgba(62,207,116,.18)}
+.light [data-status]{color:var(--mute)}
+.light [data-status].is-open{color:#17663a}
+/* oval country sticker */
+.ov{display:inline-grid;place-items:center;min-width:46px;height:30px;padding:0 10px;border:2px solid #111;border-radius:50%;background:#fff;color:#111;font:700 12px/1 var(--fm);font-style:normal;letter-spacing:.04em;flex:none}
+/* hero */
+.hero{background:var(--ink);color:#f3f1ec;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-12vw;top:-30%;width:58vw;height:150%;background:radial-gradient(closest-side,rgba(227,38,47,.16),transparent);pointer-events:none}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,5vw,88px);align-items:center;padding-top:clamp(26px,4.5vh,60px);padding-bottom:clamp(34px,6vh,72px)}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--muted)}
+.eyebrow:before{content:"";width:30px;height:2px;background:var(--logo)}
+.hero h1{font-size:clamp(44px,6.1vw,96px);font-weight:800;line-height:.94;letter-spacing:-.04em;margin:18px 0 0}
+.hero h1 b{color:var(--logo);font-weight:800;position:relative}
+.hero h1 b:after{content:"";position:absolute;left:.04em;right:.06em;bottom:-.1em;height:.07em;background:var(--logo);transform-origin:left;animation:line 1.1s .3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes line{from{transform:scaleX(0)}}
+.hero h1 small{display:block;font:700 clamp(16px,1.35vw,21px)/1.3 var(--ft);letter-spacing:0;color:#e9e6e0;margin-top:clamp(18px,2vw,26px)}
+.lead{margin-top:12px;font-size:clamp(16.5px,1.15vw,19px);color:#c9c6bf;max-width:34em}
+.proof{display:flex;gap:16px;align-items:center;margin-top:22px;padding:14px 18px;background:var(--ink2);border-left:3px solid var(--bow);border-radius:0 12px 12px 0;max-width:40em;font-size:15.5px;line-height:1.5;color:#e4e1db}
+.proof b{font:800 26px/1 var(--fd);color:#fff;white-space:nowrap}
+.proof b small{display:block;font:500 10.5px/1.3 var(--fm);letter-spacing:.06em;color:var(--muted);margin-top:5px;text-transform:uppercase}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.cta2{display:flex;flex-wrap:wrap;align-items:center;gap:4px 22px;margin-top:12px}
+.lnk{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:700;font-size:15.5px;text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:6px;transition:text-decoration-color .2s}
+.lnk:hover{text-decoration-color:var(--red2)}
+.light .lnk{text-decoration-color:rgba(0,0,0,.25)}
+.light .lnk:hover{text-decoration-color:var(--red)}
+.orig{display:flex;align-items:center;flex-wrap:wrap;gap:10px 12px;margin-top:26px;padding-top:20px;border-top:1px solid #2c2d33}
+.orig>span{color:var(--muted);margin-right:4px}
+.orig .ov{transition:transform .25s}
+.orig .ov:hover{transform:translateY(-3px) rotate(-4deg)}
+.hero-ph{position:relative;border-radius:16px;overflow:hidden;height:min(74vh,780px);min-height:420px;background:#222}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero-ph figcaption{position:absolute;left:14px;bottom:14px;display:flex;align-items:center;gap:10px;background:#fff;color:var(--ink);padding:8px 16px 8px 10px;border-radius:999px;font-weight:700;font-size:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.hero-ph .rus{position:absolute;right:16px;top:16px;min-width:64px;height:40px;font-size:14px;box-shadow:0 6px 18px -6px rgba(0,0,0,.5)}
+/* sections */
+.sec{padding:clamp(72px,9vw,140px) 0}
+.kick{color:var(--red);display:block;margin-bottom:18px}
+h2{font-size:clamp(30px,3.6vw,58px)}
+.sub{margin-top:18px;font-size:clamp(16.5px,1.2vw,19px);color:var(--mute);max-width:34em}
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);grid-template-areas:"head list" "ph list";gap:40px clamp(32px,6vw,110px);align-items:start}
+.svc-head{grid-area:head}
+.svc-ph{grid-area:ph;border-radius:14px;overflow:hidden;aspect-ratio:4/4.4;max-width:520px}
+.svc-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.svc-list{grid-area:list;border-top:2px solid var(--ink)}
+.svc-list a{display:grid;grid-template-columns:62px minmax(0,1fr) auto 44px;align-items:center;gap:18px;padding:30px 8px 30px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:background .25s,padding .25s}
+.svc-list a:hover{background:var(--card);padding-left:14px}
+.svc-list .n{font:700 14px/1 var(--fm);color:var(--mute)}
+.svc-list a:hover .n{color:var(--red)}
+.svc-list b{display:block;font:700 clamp(21px,2vw,30px)/1.12 var(--fd);letter-spacing:-.02em}
+.svc-list .t span{display:block;margin-top:8px;color:var(--mute);font-size:16px}
+.tag{font:500 11.5px/1 var(--fm);letter-spacing:.08em;text-transform:uppercase;padding:8px 12px;border:1.5px solid var(--line);border-radius:999px;white-space:nowrap;color:var(--mute)}
+.arr{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;transition:transform .25s,background .25s}
+.svc-list a:hover .arr{background:var(--red);transform:translateX(4px)}
+.pay{margin-top:34px;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.pay p{color:var(--mute)}
+.pay ul{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.pay li{padding:8px 14px;border-radius:999px;background:var(--paper);font-weight:700;font-size:15px}
+/* praise */
+.praise{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pr{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,6vw,100px);align-items:start}
+.score .big{font:800 clamp(110px,13vw,210px)/.85 var(--fd);letter-spacing:-.06em;color:var(--red)}
+.stars{display:flex;gap:4px;margin:20px 0 10px;color:var(--red)}
+.score p{color:var(--mute);font-size:16px}
+.pts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:34px}
+.pt{padding:clamp(22px,2.4vw,34px);border-radius:16px;background:var(--paper);border:1px solid var(--line)}
+.pt-1{grid-column:1/-1;background:var(--ink);color:#f2efe9;border-color:var(--ink);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:24px;align-items:end}
+.pt .mono{color:var(--mute)}
+.pt-1 .mono{color:var(--bow)}
+.pt h3{font-size:clamp(21px,1.9vw,28px);margin-top:12px}
+.pt-1 h3{font-size:clamp(26px,2.8vw,42px)}
+.pt p{margin-top:12px;color:var(--mute)}
+.pt-1 p{color:#c9c6bf;margin:0}
+.pr-foot{margin-top:22px;display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:16.5px}
+.pr-foot:before{content:"";flex:none;width:22px;height:3px;margin-top:12px;background:var(--bow)}
+/* gallery */
+.gal-head{display:flex;justify-content:space-between;align-items:end;gap:24px 60px;flex-wrap:wrap}
+.gal-head .sub{margin:0;max-width:26em}
+.gal-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:48px;padding-bottom:56px}
+.gal-grid figure{border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#ddd}
+.gal-grid figure:nth-child(even){transform:translateY(56px)}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.gal-grid figure:hover img{transform:scale(1.04)}
+/* quiz */
+.quiz{background:var(--ink);color:#f3f1ec;padding:clamp(72px,9vw,140px) 0}
+.quiz .kick{color:var(--red2)}
+.quiz .sub{color:#bdbab3}
+.qz{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);align-items:start}
+.q{margin-top:36px;background:var(--ink2);border:1px solid #2c2d33;border-radius:20px;padding:clamp(20px,3vw,36px)}
+.q-top{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.q-cnt{color:var(--muted);white-space:nowrap}
+.q-bar{flex:1;height:6px;border-radius:3px;background:#2e2f35;overflow:hidden}
+.q-bar i{display:block;height:100%;width:16%;background:linear-gradient(90deg,var(--red),var(--red2));border-radius:3px;transition:width .4s}
+.step{border:0;margin:0;padding:0;min-width:0}
+.step legend{padding:0;font:700 clamp(22px,2.1vw,30px)/1.15 var(--fd);letter-spacing:-.02em;margin-bottom:20px}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,190px),1fr));gap:10px}
+.opt{position:relative;cursor:pointer}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt>span{display:flex;align-items:center;gap:12px;min-height:58px;height:100%;padding:12px 16px;border:1.5px solid #3a3b42;border-radius:14px;font-weight:700;font-size:16px;line-height:1.25;transition:border-color .2s,background .2s,transform .2s}
+.opt:hover>span{border-color:#6a6b73}
+.opt input:checked+span{border-color:var(--red2);background:#2c1719}
+.opt input:focus-visible+span{outline:3px solid var(--bow);outline-offset:2px}
+.opt input:checked+span:after{content:"";margin-left:auto;width:10px;height:10px;border-radius:50%;background:var(--red2);flex:none}
+.q-lab{font-weight:700;color:#d8d5cf;margin:4px 0 10px}
+.q-lab+.opts{margin-bottom:22px}
+.bud output{display:block;font:800 clamp(28px,3vw,44px)/1.1 var(--fd);letter-spacing:-.03em}
+.bud input[type=range]{width:100%;height:44px;margin:14px 0 4px;accent-color:var(--red2);cursor:pointer}
+.bud-scale{display:flex;justify-content:space-between;color:var(--muted)}
+.chk{display:flex;align-items:center;gap:12px;min-height:48px;margin-top:14px;cursor:pointer;font-weight:600}
+.chk input{width:22px;height:22px;accent-color:var(--red2);flex:none;margin:0}
+.fld{display:block;margin-bottom:14px}
+.fld span{display:block;font-weight:700;font-size:15px;color:#d8d5cf;margin-bottom:8px}
+.fld input{width:100%;min-height:54px;padding:12px 16px;border-radius:12px;border:1.5px solid #3a3b42;background:#16171a;color:#fff;font:600 16px/1.3 var(--ft)}
+.fld input::placeholder{color:#8d8a84}
+.fld input:focus{border-color:var(--red2);outline:none}
+.q-nav{display:flex;justify-content:space-between;gap:12px;margin-top:26px}
+.q-nav .btn-line{color:#d8d5cf;border-color:#4b4c53}
+.q-nav button:disabled{opacity:.35;cursor:default}
+.ticket{position:sticky;top:96px;background:#fbf8f3;color:var(--ink);border-radius:18px;padding:26px clamp(20px,2.4vw,30px) 26px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)}
+.ticket:before{content:"";position:absolute;left:18px;right:18px;top:-6px;height:12px;background:radial-gradient(circle at 6px 6px,var(--ink) 5px,transparent 5.5px) 0 0/18px 12px repeat-x}
+.tk-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.tk-top .logo{color:var(--ink)}
+.tk-top .logo small{color:var(--mute)}
+.tk-top .ov{min-width:72px;height:46px;font-size:15px;border-width:2.5px;transition:transform .3s}
+.tk-top .ov.pop{animation:pop .4s}
+@keyframes pop{50%{transform:scale(1.15) rotate(-6deg)}}
+.tk-t{margin:22px 0 6px;color:var(--mute)}
+#sum div{display:grid;grid-template-columns:minmax(0,118px) minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+#sum dt{font:500 11.5px/1.7 var(--fm);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+#sum dd{font-weight:700;font-size:15.5px;line-height:1.35;overflow-wrap:anywhere}
+#sum dd.e{color:#a9a49b;font-weight:500}
+.ticket .btn{width:100%;margin-top:12px}
+.ticket .btn-red{margin-top:22px}
+.tk-note{margin-top:14px;font-size:13.5px;color:var(--mute);line-height:1.45}
+/* process */
+.how-head{max-width:860px}
+.road{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px;position:relative;margin-top:56px;padding-top:70px}
+.road:before{content:"";position:absolute;left:0;right:0;top:16px;height:16px;border-radius:8px;background:var(--ink)}
+.road:after{content:"";position:absolute;left:14px;right:14px;top:23px;height:2px;background:repeating-linear-gradient(90deg,var(--bow) 0 20px,transparent 20px 38px)}
+.road li{position:relative}
+.st{position:absolute;top:-70px;left:0;z-index:1;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:3px solid var(--ink);font:700 15px/1 var(--fm)}
+.road li:last-child .st{background:var(--bow);width:58px;height:46px;border-radius:50%}
+.road h3{font-size:clamp(17px,1.35vw,21px);letter-spacing:-.01em}
+.road p{margin-top:10px;color:var(--mute);font-size:15.5px;line-height:1.5}
+/* office */
+.of{display:grid;grid-template-columns:minmax(0,4.3fr) minmax(0,4.7fr) minmax(0,3fr);gap:20px;align-items:start}
+.of-info{padding-right:clamp(0px,2vw,24px)}
+.of-addr{margin:12px 0 16px;font-size:18px;font-weight:600}
+.hrs{margin-top:22px;border-top:2px solid var(--ink)}
+.hrs div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.hrs dt{font-weight:800}
+.hrs dd{color:var(--mute);text-align:right}
+.ct{margin:22px 0 26px}
+.ct li{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+.ct .mono{color:var(--mute)}
+.ct a{display:inline-flex;align-items:center;min-height:48px;font-weight:700;text-decoration:none}
+.ct a:hover{color:var(--red)}
+.of-map{border-radius:16px;overflow:hidden;height:560px;background:#e2dbd0;border:1px solid var(--line)}
+.of-map iframe{width:100%;height:100%;border:0;display:block}
+.of-ph{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4}
+.of-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.of-ph figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:10px;font-size:14px;font-weight:600}
+/* final */
+.fin{background:var(--red);color:#fff;padding:clamp(64px,8vw,120px) 0;overflow:hidden}
+.fin h2{font-size:clamp(34px,5vw,84px);max-width:13em;line-height:1}
+.fin p{margin-top:20px;font-size:clamp(17px,1.3vw,20px);max-width:32em;color:#ffe6e6}
+.fin .btn-ghost{border-color:rgba(255,255,255,.55)}
+.fin-ov{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:48px}
+.fin-ov .ov{border-color:#fff;background:transparent;color:#fff}
+.fin-ov .to{width:60px;height:2px;background:repeating-linear-gradient(90deg,#fff 0 8px,transparent 8px 14px)}
+.fin-ov .ov.rus{background:#fff;color:var(--ink);border-color:#fff;min-width:66px}
+.ftr{background:var(--ink);color:#bdbab3;padding:36px 0 40px;font-size:14.5px}
+.ftr-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px;align-items:center}
+.ftr a{color:#fff}
+.fab{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+.js .gal-grid figure:nth-child(even)[data-r].in{transform:translateY(56px)}
+/* responsive */
+@media (max-width:1180px){
+ .road{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:48px}
+ .road:before,.road:after{display:none}
+ .road li{padding-top:62px}.st{top:0}
+ .of{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .of-map{grid-column:1/-1;order:3;height:440px}
+}
+@media (max-width:980px){
+ .nav{display:none}.hdr-tel{margin-left:auto}
+ .hero-in{grid-template-columns:minmax(0,1fr)}
+ .hero-ph{height:auto;aspect-ratio:4/4.6;max-height:78vh;min-height:0}
+ .svc,.pr,.qz{grid-template-columns:minmax(0,1fr)}
+ .svc{grid-template-areas:"head" "list" "ph"}
+ .svc-ph{max-width:none;aspect-ratio:4/3.4}
+ .ticket{position:relative;top:0}
+}
+@media (max-width:760px){
+ body{padding-bottom:82px;font-size:16.5px}
+ .hdr-in{min-height:58px}
+ .hdr-tel{font-size:14px;padding:0 13px}
+ .proof{padding:12px 14px;gap:12px}
+ .cta .btn{flex:1 1 100%}
+ .svc-list a{grid-template-columns:40px minmax(0,1fr) 44px;gap:12px;padding:22px 0}
+ .svc-list a:hover{padding-left:0}
+ .tag{display:none}
+ .pts,.pt-1{grid-template-columns:minmax(0,1fr)}
+ .pt-1{gap:12px}
+ .gal-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:32px calc(var(--g)*-1) 0;padding:0 var(--g) 8px;scrollbar-width:none}
+ .gal-grid::-webkit-scrollbar{display:none}
+ .gal-grid figure{flex:0 0 74%;scroll-snap-align:center}
+ .gal-grid figure:nth-child(even),.js .gal-grid figure:nth-child(even)[data-r].in{transform:none}
+ .q{padding:18px 14px}
+ .opts{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .opt>span{font-size:15px;padding:12px;gap:8px}
+ .opt input:checked+span:after{display:none}
+ .opt .ov{min-width:40px;height:26px;font-size:11px;padding:0 6px}
+ .road{grid-template-columns:minmax(0,1fr);row-gap:0;padding-top:0;margin-top:40px}
+ .road:before{display:block;left:15px;right:auto;top:8px;bottom:8px;width:16px;height:auto}
+ .road li{padding:0 0 30px 64px}
+ .st{top:0;left:0;width:46px}
+ .road li:last-child .st{width:46px}
+ .of{grid-template-columns:minmax(0,1fr)}
+ .of-ph{aspect-ratio:4/4.4}
+ .of-map{height:360px}
+ .fin .btn{flex:1 1 100%}
+ .fab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:50}
+ .fab .btn{min-height:56px;box-shadow:0 10px 30px -8px rgba(0,0,0,.5)}
+}
+@media (max-width:380px){.logo{font-size:17px}.opts{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="hdr">
+ <div class="wrap hdr-in">
+  <a class="logo" href="#top" aria-label="АвтоДилер, наверх"><span><b>Авто</b>Дилер</span><small>в наличии и под заказ</small></a>
+  <nav class="nav" aria-label="Разделы"><a href="#avto">Авто</a><a href="#otzyvy">Отзывы</a><a href="#zayavka">Заявка</a><a href="#kak">Как работаем</a><a href="#ofis">Офис</a></nav>
+  <a class="hdr-tel" href="tel:+79897194628">+7 989 719-46-28</a>
+ </div>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-in">
+  <div>
+   <p class="eyebrow mono">Новочеркасск · проспект Ермака, 5</p>
+   <h1><b>Авто</b>Дилер<small>Автомобили в&nbsp;наличии и&nbsp;под заказ</small></h1>
+   <p class="lead">Подержанные машины, авто с&nbsp;аукциона и&nbsp;электромобили. Помогаем подобрать, осматриваем, выкупаем и&nbsp;оформляем всё по&nbsp;договору.</p>
+   <p class="proof"><b>5,0<small>2ГИС · 7 оценок</small></b><span>Клиенты пишут, что машину быстро нашли, осмотрели и&nbsp;выкупили, а&nbsp;менеджер был на&nbsp;связи всю сделку.</span></p>
+   <div class="cta">
+    <a class="btn btn-red" href="#zayavka">Рассчитать стоимость <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn btn-ghost" href="https://wa.me/79897194628?text=Здравствуйте!%20Пишу%20с%20сайта%20АвтоДилер%20—%20хочу%20подобрать%20автомобиль." target="_blank" rel="noopener"><i class="wa"></i>Написать в WhatsApp</a>
+   </div>
+   <div class="cta2">
+    <a class="lnk" href="tel:+79897194628">Позвонить</a>
+    <a class="lnk" href="https://yandex.ru/maps/?rtext=~47.409379,40.118125" target="_blank" rel="noopener">Маршрут</a>
+    <span data-status></span>
+   </div>
+   <div class="orig" aria-label="Страны на логотипе компании">
+    <span class="mono">Под заказ</span>
+    <i class="ov" title="Германия">D</i><i class="ov" title="США">USA</i><i class="ov" title="Китай">CN</i><i class="ov" title="Корея">ROK</i><i class="ov" title="ОАЭ">UAE</i><i class="ov" title="Армения">AM</i><i class="ov" title="Грузия">GE</i>
+   </div>
+  </div>
+  <figure class="hero-ph">
+   <img src="img/p7-m.jpg" srcset="img/p7-m.jpg 675w, img/p7.jpg 960w" sizes="(min-width:980px) 40vw, 100vw" width="960" height="1280" alt="Выдача белого автомобиля с жёлтым бантом клиентке у собора в Новочеркасске" fetchpriority="high">
+   <i class="ov rus" aria-hidden="true">RUS</i>
+   <figcaption><svg width="34" height="22" viewBox="0 0 48 32" aria-hidden="true"><path d="M24 16C16 3 3 3 3 11s13 9 21 5zM24 16c8-13 21-13 21-5s-13 9-21 5z" fill="#f6c21c"/><path d="M21 17l-6 13h6l3-7 3 7h6l-6-13z" fill="#dca200"/><circle cx="24" cy="16" r="4.5" fill="#ffd84a"/></svg>Ключи — новому владельцу</figcaption>
+  </figure>
+ </div>
+</section>
+
+<section class="sec" id="avto">
+ <div class="wrap svc">
+  <div class="svc-head" data-r>
+   <span class="mono kick">01 · Что продаём</span>
+   <h2>Машина в&nbsp;наличии или под&nbsp;заказ</h2>
+   <p class="sub">Выберите направление — квиз заявки откроется сразу с&nbsp;этим выбором.</p>
+   <div class="pay"><p class="mono">Оплата</p><ul><li>Наличными</li><li>Через банк</li><li>Переводом с&nbsp;карты</li></ul></div>
+  </div>
+  <ol class="svc-list">
+   <li data-r><a href="#zayavka" data-pre="Подержанный, из наличия"><span class="n">01</span><span class="t"><b>Подержанные авто</b><span>Машины с&nbsp;пробегом — в&nbsp;наличии и&nbsp;под заказ.</span></span><span class="tag">с пробегом</span><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+   <li data-r><a href="#zayavka" data-pre="Под заказ с аукциона"><span class="n">02</span><span class="t"><b>Автомобили с&nbsp;аукциона</b><span>Находим машину, осматриваем, выкупаем и&nbsp;привозим. Через договор.</span></span><span class="tag">под заказ</span><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+   <li data-r><a href="#zayavka" data-pre="Электромобиль"><span class="n">03</span><span class="t"><b>Электро&shy;автомобили</b><span>Электрокары в&nbsp;наличии и&nbsp;под заказ.</span></span><span class="tag">электро</span><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+   <li data-r><a href="#zayavka" data-pre="Подержанный, из наличия" data-td="1"><span class="n">04</span><span class="t"><b>Тест-драйв</b><span>Сначала проехать, потом решать.</span></span><span class="tag">за рулём</span><span class="arr" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+  </ol>
+  <figure class="svc-ph" data-r><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 574w, img/p12.jpg 817w" sizes="(min-width:980px) 36vw, 100vw" width="574" height="900" loading="lazy" alt="Зелёный автомобиль на площадке под вывеской АвтоДилер, рядом сотрудники"></figure>
+ </div>
+</section>
+
+<section class="sec praise" id="otzyvy">
+ <div class="wrap pr">
+  <div class="score" data-r>
+   <span class="mono kick">02 · Отзывы</span>
+   <div class="big">5,0</div>
+   <div class="stars" aria-hidden="true"><svg width="110" height="20" viewBox="0 0 110 20" fill="currentColor"><path id="s" d="M10 1l2.7 6 6.3.6-4.8 4.3 1.4 6.4L10 15l-5.6 3.3 1.4-6.4L1 7.6 7.3 7z"/><use href="#s" x="22"/><use href="#s" x="44"/><use href="#s" x="66"/><use href="#s" x="88"/></svg></div>
+   <p>средняя оценка в&nbsp;2ГИС по&nbsp;7&nbsp;оценкам</p>
+   <a class="lnk" href="https://2gis.ru/rostov/firm/70000001077360288" target="_blank" rel="noopener">Открыть отзывы в&nbsp;2ГИС</a>
+  </div>
+  <div>
+   <h2 data-r>За что хвалят</h2>
+   <ol class="pts">
+    <li class="pt pt-1" data-r><div><span class="mono">01 · на связи</span><h3>Всю сделку на&nbsp;связи</h3></div><p>Это повторяется почти в&nbsp;каждом отзыве: с&nbsp;клиентом держат связь от&nbsp;подбора до&nbsp;получения машины, вопросы не&nbsp;зависают.</p></li>
+    <li class="pt" data-r><span class="mono">02 · подбор</span><h3>Помогают выбрать</h3><p>Пишут, что машину помогли подобрать, а&nbsp;обслуживание называют высшим уровнем и&nbsp;хвалят приятных сотрудников.</p></li>
+    <li class="pt" data-r><span class="mono">03 · договор</span><h3>Прозрачно, через договор</h3><p>Под заказ авто быстро нашли, осмотрели и&nbsp;выкупили — по&nbsp;отзыву, через полтора месяца машина была на&nbsp;месте.</p></li>
+   </ol>
+   <p class="pr-foot" data-r>И ещё одна мысль из&nbsp;отзывов: люди пишут, что теперь будут обращаться только сюда.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="vydachi">
+ <div class="wrap">
+  <div class="gal-head" data-r>
+   <div><span class="mono kick">03 · Выдачи</span><h2>Ключи — у&nbsp;новых владельцев</h2></div>
+   <p class="sub">Фото с&nbsp;выдач: клиенты забирают свои машины — у&nbsp;собора, на&nbsp;площадке, у&nbsp;офиса.</p>
+  </div>
+  <div class="gal-grid">
+   <figure data-r><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 960w" sizes="(min-width:760px) 25vw, 74vw" width="675" height="900" loading="lazy" alt="Рукопожатие у автомобиля с жёлтым бантом на капоте" style="object-position:50% 45%"></figure>
+   <figure data-r><img src="img/p9-m.jpg" width="499" height="900" loading="lazy" alt="Передача белого внедорожника клиенту у собора в Новочеркасске" style="object-position:50% 70%"></figure>
+   <figure data-r><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 960w" sizes="(min-width:760px) 25vw, 74vw" width="675" height="900" loading="lazy" alt="Клиентка и сотрудник у чёрного внедорожника" style="object-position:50% 45%"></figure>
+   <figure data-r><img src="img/p6-m.jpg" width="828" height="740" loading="lazy" alt="Передача ключей от чёрного кроссовера у офиса" style="object-position:62% 50%"></figure>
+   <figure data-r><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 525w, img/p11.jpg 746w" sizes="(min-width:760px) 25vw, 74vw" width="525" height="900" loading="lazy" alt="Клиентка и сотрудник у чёрного седана на площадке" style="object-position:50% 62%"></figure>
+   <figure data-r><img src="img/p14-m.jpg" width="600" height="900" loading="lazy" alt="Клиент и сотрудник у белого внедорожника под вывеской АвтоДилер" style="object-position:50% 55%"></figure>
+   <figure data-r><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 529w, img/p13.jpg 752w" sizes="(min-width:760px) 25vw, 74vw" width="529" height="900" loading="lazy" alt="Сотрудник АвтоДилер беседует с клиенткой" style="object-position:50% 50%"></figure>
+   <figure data-r><img src="img/p5-m.jpg" width="675" height="900" loading="lazy" alt="Офис АвтоДилер: рабочие места менеджеров и жёлтые банты для выдачи" style="object-position:50% 50%"></figure>
+  </div>
+ </div>
+</section>
+
+<section class="quiz" id="zayavka">
+ <div class="wrap qz">
+  <div>
+   <span class="mono kick">04 · Заявка на&nbsp;расчёт</span>
+   <h2>Соберите заявку на&nbsp;авто</h2>
+   <p class="sub">Шесть коротких шагов — и&nbsp;готовое сообщение менеджеру. Стоимость под&nbsp;ваш запрос рассчитают в&nbsp;ответ.</p>
+   <form id="quiz" class="q" action="#" novalidate>
+    <div class="q-top"><span class="q-cnt mono">1 / 6</span><span class="q-bar" aria-hidden="true"><i></i></span></div>
+    <fieldset class="step" data-auto>
+     <legend>Какая машина нужна?</legend>
+     <div class="opts">
+      <label class="opt"><input type="radio" name="type" value="Подержанный, из наличия"><span>Подержанный, из&nbsp;наличия</span></label>
+      <label class="opt"><input type="radio" name="type" value="Под заказ с аукциона"><span>Под заказ с&nbsp;аукциона</span></label>
+      <label class="opt"><input type="radio" name="type" value="Электромобиль"><span>Электромобиль</span></label>
+      <label class="opt"><input type="radio" name="type" value="Пока не решил, нужна консультация"><span>Пока не&nbsp;решил</span></label>
+     </div>
+    </fieldset>
+    <fieldset class="step" data-auto>
+     <legend>Откуда везти?</legend>
+     <div class="opts">
+      <label class="opt"><input type="radio" name="from" value="Германия" data-code="D"><span><i class="ov">D</i>Германия</span></label>
+      <label class="opt"><input type="radio" name="from" value="США" data-code="USA"><span><i class="ov">USA</i>США</span></label>
+      <label class="opt"><input type="radio" name="from" value="Китай" data-code="CN"><span><i class="ov">CN</i>Китай</span></label>
+      <label class="opt"><input type="radio" name="from" value="Корея" data-code="ROK"><span><i class="ov">ROK</i>Корея</span></label>
+      <label class="opt"><input type="radio" name="from" value="ОАЭ" data-code="UAE"><span><i class="ov">UAE</i>ОАЭ</span></label>
+      <label class="opt"><input type="radio" name="from" value="Армения" data-code="AM"><span><i class="ov">AM</i>Армения</span></label>
+      <label class="opt"><input type="radio" name="from" value="Грузия" data-code="GE"><span><i class="ov">GE</i>Грузия</span></label>
+      <label class="opt"><input type="radio" name="from" value="Не важно, посоветуйте" data-code="?"><span><i class="ov">?</i>Посоветуйте</span></label>
+     </div>
+    </fieldset>
+    <fieldset class="step" data-auto>
+     <legend>Какой кузов?</legend>
+     <div class="opts">
+      <label class="opt"><input type="radio" name="body" value="Седан"><span>Седан</span></label>
+      <label class="opt"><input type="radio" name="body" value="Кроссовер"><span>Кроссовер</span></label>
+      <label class="opt"><input type="radio" name="body" value="Внедорожник"><span>Внедорожник</span></label>
+      <label class="opt"><input type="radio" name="body" value="Хэтчбек или универсал"><span>Хэтчбек или универсал</span></label>
+      <label class="opt"><input type="radio" name="body" value="Минивэн"><span>Минивэн</span></label>
+      <label class="opt"><input type="radio" name="body" value="Не важно"><span>Не&nbsp;важно</span></label>
+     </div>
+    </fieldset>
+    <fieldset class="step">
+     <legend>Ваш бюджет</legend>
+     <div class="bud">
+      <output id="bval" for="budget">до 3&nbsp;000&nbsp;000&nbsp;₽</output>
+      <input type="range" id="budget" min="500000" max="10000000" step="100000" value="3000000" aria-label="Бюджет в рублях">
+      <div class="bud-scale mono"><span>500 тыс.</span><span>10 млн и&nbsp;больше</span></div>
+      <label class="chk"><input type="checkbox" id="bno"><span>Пока не&nbsp;знаю — нужна консультация</span></label>
+     </div>
+    </fieldset>
+    <fieldset class="step">
+     <legend>Сроки и&nbsp;оплата</legend>
+     <p class="q-lab">Когда нужна машина</p>
+     <div class="opts">
+      <label class="opt"><input type="radio" name="when" value="Как можно скорее"><span>Как можно скорее</span></label>
+      <label class="opt"><input type="radio" name="when" value="В ближайшие 1–2 месяца"><span>В&nbsp;ближайшие 1–2 месяца</span></label>
+      <label class="opt"><input type="radio" name="when" value="Пока присматриваюсь"><span>Пока присматриваюсь</span></label>
+     </div>
+     <p class="q-lab">Как удобнее оплатить</p>
+     <div class="opts">
+      <label class="opt"><input type="radio" name="pay" value="Наличными"><span>Наличными</span></label>
+      <label class="opt"><input type="radio" name="pay" value="Через банк"><span>Через банк</span></label>
+      <label class="opt"><input type="radio" name="pay" value="Переводом с карты"><span>Переводом с&nbsp;карты</span></label>
+      <label class="opt"><input type="radio" name="pay" value="Обсудим"><span>Обсудим</span></label>
+     </div>
+    </fieldset>
+    <fieldset class="step">
+     <legend>Пара деталей</legend>
+     <label class="fld"><span>Марка или модель, если уже выбрали</span><input id="model" type="text" maxlength="80" placeholder="модель, год, цвет — что важно"></label>
+     <label class="fld"><span>Как к&nbsp;вам обращаться</span><input id="name" type="text" maxlength="40" autocomplete="given-name"></label>
+     <label class="chk"><input type="checkbox" id="td"><span>Хочу тест-драйв</span></label>
+    </fieldset>
+    <div class="q-nav"><button type="button" class="btn btn-line" data-prev>Назад</button><button type="button" class="btn btn-red" data-next>Далее</button></div>
+   </form>
+  </div>
+  <aside class="ticket" id="ticket" aria-label="Ваша заявка">
+   <div class="tk-top"><span class="logo"><span><b>Авто</b>Дилер</span><small>Новочеркасск</small></span><i class="ov" id="tk-code">?</i></div>
+   <p class="mono tk-t">Заявка на&nbsp;подбор</p>
+   <dl id="sum"></dl>
+   <a id="send-wa" class="btn btn-red" href="https://wa.me/79897194628" target="_blank" rel="noopener"><i class="wa"></i>Отправить в WhatsApp</a>
+   <a id="send-tg" class="btn btn-line" href="https://t.me/+79526025653" target="_blank" rel="noopener">Скопировать и&nbsp;открыть Telegram</a>
+   <p class="tk-note" id="tk-note">Откроется чат с&nbsp;готовым текстом. Сообщение уйдёт, только когда вы сами нажмёте «отправить».</p>
+  </aside>
+ </div>
+</section>
+
+<section class="sec" id="kak">
+ <div class="wrap">
+  <div class="how-head" data-r>
+   <span class="mono kick">05 · Как работаем</span>
+   <h2>Путь машины до&nbsp;ваших ключей</h2>
+   <p class="sub">Общий порядок покупки под&nbsp;заказ. Сроки зависят от&nbsp;страны и&nbsp;машины — в&nbsp;одном из&nbsp;отзывов автомобиль приехал через полтора месяца.</p>
+  </div>
+  <ol class="road">
+   <li data-r><span class="st">01</span><h3>Заявка</h3><p>Пишете, какую машину ищете: через квиз, в&nbsp;WhatsApp или по&nbsp;телефону.</p></li>
+   <li data-r><span class="st">02</span><h3>Подбор и&nbsp;расчёт</h3><p>Подбираем варианты под&nbsp;бюджет и&nbsp;пожелания, считаем стоимость.</p></li>
+   <li data-r><span class="st">03</span><h3>Договор</h3><p>Условия фиксируем в&nbsp;договоре — до&nbsp;покупки.</p></li>
+   <li data-r><span class="st">04</span><h3>Осмотр и&nbsp;выкуп</h3><p>Машину осматривают и&nbsp;выкупают.</p></li>
+   <li data-r><span class="st">05</span><h3>Доставка</h3><p>Автомобиль едет в&nbsp;Новочеркасск, менеджер на&nbsp;связи.</p></li>
+   <li data-r><span class="st"><svg width="36" height="24" viewBox="0 0 48 32" aria-hidden="true"><path d="M24 16C16 3 3 3 3 11s13 9 21 5zM24 16c8-13 21-13 21-5s-13 9-21 5z" fill="#141416"/><path d="M21 17l-6 13h6l3-7 3 7h6l-6-13z" fill="#141416"/><circle cx="24" cy="16" r="4.5" fill="#f6c21c" stroke="#141416" stroke-width="2"/></svg></span><h3>Ключи</h3><p>Встречаем и&nbsp;передаём машину новому владельцу.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="sec light" id="ofis" style="padding-top:0">
+ <div class="wrap of">
+  <div class="of-info" data-r>
+   <span class="mono kick">06 · Офис</span>
+   <h2>Проспект Ермака,&nbsp;5</h2>
+   <p class="of-addr">Новочеркасск · 2&nbsp;этаж, офис&nbsp;1</p>
+   <span data-status></span>
+   <dl class="hrs"><div><dt>Пн–Сб</dt><dd>09:00–18:00, без перерыва</dd></div><div><dt>Вс</dt><dd>выходной</dd></div></dl>
+   <ul class="ct">
+    <li><span class="mono">Телефон</span><a href="tel:+79897194628">+7 989 719-46-28</a></li>
+    <li><span class="mono">WhatsApp</span><a href="https://wa.me/79897194628?text=Здравствуйте!%20Пишу%20с%20сайта%20АвтоДилер%20—%20хочу%20подобрать%20автомобиль." target="_blank" rel="noopener">Написать</a></li>
+    <li><span class="mono">Telegram</span><a href="https://t.me/+79526025653" target="_blank" rel="noopener">Открыть чат</a></li>
+    <li><span class="mono">ВКонтакте</span><a href="https://vk.ru/avtodiler61" target="_blank" rel="noopener">avtodiler61</a></li>
+   </ul>
+   <a class="btn btn-red" href="https://yandex.ru/maps/?rtext=~47.409379,40.118125" target="_blank" rel="noopener">Построить маршрут</a>
+  </div>
+  <div class="of-map" data-r><iframe loading="lazy" title="АвтоДилер на карте: Новочеркасск, проспект Ермака, 5" src="https://yandex.ru/map-widget/v1/?ll=40.118125,47.409379&amp;z=16&amp;pt=40.118125,47.409379,pm2rdm"></iframe></div>
+  <figure class="of-ph" data-r><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 675w, img/p10.jpg 960w" sizes="(min-width:1180px) 22vw, (min-width:760px) 50vw, 100vw" width="675" height="900" loading="lazy" alt="Дверь офиса с вывеской АвтоДилер и графиком работы"><figcaption>Ищите эту вывеску на&nbsp;втором этаже</figcaption></figure>
+ </div>
+</section>
+
+<section class="fin">
+ <div class="wrap" data-r>
+  <h2>Какую машину вы ищете?</h2>
+  <p>Опишите в&nbsp;двух словах — менеджер подберёт варианты и&nbsp;рассчитает стоимость.</p>
+  <div class="cta">
+   <a class="btn btn-white" href="#zayavka">Собрать заявку</a>
+   <a class="btn btn-ghost" href="https://wa.me/79897194628?text=Здравствуйте!%20Пишу%20с%20сайта%20АвтоДилер%20—%20хочу%20подобрать%20автомобиль." target="_blank" rel="noopener"><i class="wa"></i>Написать в WhatsApp</a>
+   <a class="btn btn-ghost" href="tel:+79897194628">Позвонить</a>
+  </div>
+  <div class="fin-ov" aria-hidden="true"><i class="ov">D</i><i class="ov">USA</i><i class="ov">CN</i><i class="ov">ROK</i><i class="ov">UAE</i><i class="ov">AM</i><i class="ov">GE</i><span class="to"></span><i class="ov rus">RUS</i></div>
+ </div>
+</section>
+</main>
+<footer class="ftr">
+ <div class="wrap ftr-in">
+  <span class="logo"><span><b>Авто</b>Дилер</span><small>компания по продаже легковых автомобилей</small></span>
+  <p>Новочеркасск, проспект Ермака, 5 · <a href="tel:+79897194628">+7 989 719-46-28</a></p>
+  <p>Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</p>
+ </div>
+</footer>
+<div class="fab"><a class="btn btn-ink" href="tel:+79897194628">Позвонить</a><a class="btn btn-red" href="https://wa.me/79897194628?text=Здравствуйте!%20Пишу%20с%20сайта%20АвтоДилер%20—%20хочу%20подобрать%20автомобиль." target="_blank" rel="noopener">WhatsApp</a></div>
+<script>
+(function(){
+ var q=document.getElementById('quiz');if(!q)return;
+ var steps=[].slice.call(q.querySelectorAll('.step')),i=0,ptr=0;
+ var bar=q.querySelector('.q-bar i'),cnt=q.querySelector('.q-cnt'),prev=q.querySelector('[data-prev]'),next=q.querySelector('[data-next]');
+ var sum=document.getElementById('sum'),wa=document.getElementById('send-wa'),tg=document.getElementById('send-tg'),code=document.getElementById('tk-code'),note=document.getElementById('tk-note');
+ var range=document.getElementById('budget'),bv=document.getElementById('bval'),bno=document.getElementById('bno'),touched=false;
+ function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ')}
+ function v(n){var e=q.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+ function bud(){return +range.value>=+range.max?'от 10 000 000 ₽':'до '+fmt(range.value)+' ₽'}
+ function rows(){
+  var b=bno.checked?'пока не знаю':(touched?bud():'');
+  return [['Что ищу',v('type')],['Откуда',v('from')],['Кузов',v('body')],['Бюджет',b],['Когда',v('when')],['Оплата',v('pay')],['Модель',document.getElementById('model').value.trim()],['Тест-драйв',document.getElementById('td').checked?'хочу':''],['Имя',document.getElementById('name').value.trim()]];
+ }
+ function text(){var t='Здравствуйте! Хочу подобрать автомобиль, заявка с сайта.';rows().forEach(function(r){if(r[1])t+='\n'+r[0]+': '+r[1]});return t+'\nПодскажите варианты и стоимость.'}
+ function render(){
+  sum.innerHTML='';
+  rows().forEach(function(r){if(!r[1]&&(r[0]==='Модель'||r[0]==='Имя'||r[0]==='Тест-драйв'))return;var d=document.createElement('div'),t=document.createElement('dt'),x=document.createElement('dd');t.textContent=r[0];x.textContent=r[1]||'не выбрано';if(!r[1])x.className='e';d.appendChild(t);d.appendChild(x);sum.appendChild(d)});
+  wa.href='https://wa.me/79897194628?text='+encodeURIComponent(text());
+  var f=q.querySelector('input[name="from"]:checked'),c=f?f.getAttribute('data-code'):'?';
+  if(code.textContent!==c){code.textContent=c;code.classList.remove('pop');void code.offsetWidth;code.classList.add('pop')}
+ }
+ function go(n,focus){
+  i=Math.max(0,Math.min(steps.length-1,n));
+  steps.forEach(function(s,k){s.hidden=k!==i});
+  bar.style.width=((i+1)/steps.length*100)+'%';cnt.textContent=(i+1)+' / '+steps.length;
+  prev.disabled=i===0;next.textContent=i===steps.length-1?'Готово':'Далее';
+  if(focus){var l=steps[i].querySelector('legend');l.setAttribute('tabindex','-1');l.focus({preventScroll:true})}
+ }
+ q.addEventListener('pointerdown',function(){ptr=Date.now()});
+ q.addEventListener('submit',function(e){e.preventDefault()});
+ q.addEventListener('input',render);
+ q.addEventListener('change',function(e){
+  render();
+  if(e.target.type==='radio'&&steps[i].hasAttribute('data-auto')&&Date.now()-ptr<1500&&i<steps.length-1)setTimeout(function(){go(i+1,true)},280);
+ });
+ range.addEventListener('input',function(){touched=true;bno.checked=false;bv.textContent=bud();render()});
+ bno.addEventListener('change',function(){bv.textContent=bno.checked?'Обсудим с менеджером':bud()});
+ prev.addEventListener('click',function(){go(i-1,true)});
+ next.addEventListener('click',function(){
+  if(i===3&&!bno.checked)touched=true;render();
+  if(i<steps.length-1)go(i+1,true);
+  else{var t=document.getElementById('ticket');t.scrollIntoView({behavior:'smooth',block:'center'});wa.focus({preventScroll:true})}
+ });
+ tg.addEventListener('click',function(){try{navigator.clipboard.writeText(text());note.textContent='Текст заявки скопирован — вставьте его в чат Telegram.'}catch(e){}});
+ [].forEach.call(document.querySelectorAll('[data-pre]'),function(a){a.addEventListener('click',function(){
+  var r=q.querySelector('input[name="type"][value="'+a.getAttribute('data-pre')+'"]');if(r)r.checked=true;
+  if(a.hasAttribute('data-td'))document.getElementById('td').checked=true;
+  render();go(1);
+ })});
+ render();go(0);
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["09:00","18:00"]],"tue":[["09:00","18:00"]],"wed":[["09:00","18:00"]],"thu":[["09:00","18:00"]],"fri":[["09:00","18:00"]],"sat":[["09:00","18:00"]],"sun":null},"is247":false}</script><script src="app.js"></script>
+</body>
+</html>
