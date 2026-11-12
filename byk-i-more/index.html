@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Бык и море — ресторан и банкеты в Самаре, Волжский проспект, 6</title><meta property="og:type" content="website"><meta property="og:title" content="Бык и море — ресторан и банкеты в Самаре, Волжский проспект, 6"><meta property="og:description" content="Бык и море: мясо и морепродукты, VIP-зал, летняя веранда и панорамный вид. Банкеты в Самаре, Волжский проспект, 6. Соберите заявку на банкет за минуту."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/byk-i-more/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Бык и море: мясо и морепродукты, VIP-зал, летняя веранда и панорамный вид. Банкеты в Самаре, Волжский проспект, 6. Соберите заявку на банкет за минуту.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"></noscript>
+<style>
+:root{
+  --bone:#f1ebe1;--paper:#fbf8f2;--ink:#17201f;--muted:#575c58;
+  --sea:#123a43;--sea-d:#0a262d;--foam:#a9d6db;
+  --ember:#a3402a;--ember-d:#7c2c1b;--sand:#d9c7aa;
+  --serif:'Oranienbaum',Georgia,'Times New Roman',serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+  --wrap:min(1320px,100% - 2*clamp(16px,4vw,48px));
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bone);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:var(--wrap);margin-inline:auto}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:4px}
+.dark :focus-visible{outline-color:var(--foam)}
+
+.demo{background:var(--ink);color:#e9e3d8;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+
+/* шапка */
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bone) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(23,32,31,.08)}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:26px;line-height:1}
+.logo svg{width:38px;height:38px;flex:none}
+.logo i{font-style:normal;color:var(--ember)}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:500}
+.nav a{text-decoration:none;padding:10px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:2px;background:var(--ember);transition:right .3s}
+.nav a:hover::after{right:0}
+.top-tel{font-weight:700;text-decoration:none;font-size:16px;white-space:nowrap;padding:10px 0}
+
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.b-ember{background:var(--ember);color:#fff;box-shadow:0 10px 24px -12px var(--ember)}
+.b-ember:hover{background:var(--ember-d)}
+.b-sea{background:var(--sea);color:#fff}
+.b-sea:hover{background:var(--sea-d)}
+.b-line{border-color:rgba(23,32,31,.28);color:var(--ink)}
+.b-line:hover{border-color:var(--ink);background:rgba(23,32,31,.04)}
+
+/* первый экран */
+.hero{position:relative;padding:clamp(20px,3.5vh,56px) 0 clamp(48px,7vh,90px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(28px,5vw,80px);align-items:center}
+.eyebrow{font:600 13px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ember)}
+.hero h1{font-size:clamp(2.6rem,min(5.4vw,9.6vh),6rem);line-height:.98;margin:16px 0 20px}
+.hero h1 .m{color:var(--ember)}
+.hero h1 .s{color:var(--sea)}
+.lead{font-size:clamp(17px,1.25vw,20px);max-width:36em;color:#2c3432}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px;margin-top:22px;font-size:15px}
+.sub a{font-weight:600;text-decoration:none;border-bottom:1.5px solid rgba(23,32,31,.25);padding:6px 0}
+.sub a:hover{border-color:var(--ember)}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-weight:500}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#9a9a9a}
+[data-status].is-open::before{background:#2f8a5b;box-shadow:0 0 0 4px rgba(47,138,91,.16)}
+[data-status].is-closed::before{background:var(--ember)}
+.hero-pic{position:relative;justify-self:end;width:min(100%,560px)}
+.hero-pic img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 45%;border-radius:6px;max-height:min(720px,calc(100vh - 170px))}
+.hero-pic::before{content:"";position:absolute;inset:-18px 18px 18px -18px;background:var(--sea);border-radius:6px;z-index:-1}
+.rate{position:absolute;left:-36px;bottom:34px;background:var(--paper);padding:16px 20px;border-radius:6px;box-shadow:0 20px 40px -24px rgba(0,0,0,.45);display:flex;gap:14px;align-items:center}
+.rate b{font:400 46px/1 var(--serif);color:var(--ember)}
+.rate span{font-size:13px;line-height:1.35;color:var(--muted)}
+.horizon{position:absolute;left:0;right:0;bottom:0;height:60px;width:100%;color:var(--sea);opacity:.12;pointer-events:none}
+
+/* две стихии */
+.sec{padding:clamp(64px,9vw,130px) 0}
+.h2{font-size:clamp(2.2rem,4.2vw,4.2rem);line-height:1.02}
+.kicker{display:flex;align-items:baseline;gap:14px;margin-bottom:18px;font:500 13px/1 var(--mono);letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.kicker::after{content:"";flex:1;height:1px;background:currentColor;opacity:.3;max-width:160px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:48px;border-radius:8px;overflow:hidden}
+.half{position:relative;padding:clamp(28px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,190px);gap:28px;align-items:end;min-height:460px}
+.half.meat{background:var(--ember-d);color:#f7ece4}
+.half.sea{background:var(--sea);color:#e6f2f2}
+.half .big{font:400 clamp(4.5rem,9vw,9rem)/.85 var(--serif);opacity:.95;margin-bottom:18px;display:block}
+.half p{max-width:30em;opacity:.92}
+.half ul{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:8px;font-weight:500}
+.half li{display:flex;gap:10px}
+.half li::before{content:"";width:14px;height:1.5px;background:currentColor;margin-top:.8em;flex:none;opacity:.6}
+.half img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;box-shadow:0 24px 40px -20px rgba(0,0,0,.6);transition:transform .5s}
+.half:hover img{transform:rotate(-1.5deg) scale(1.02)}
+.amp{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:86px;height:86px;border-radius:50%;background:var(--bone);display:grid;place-items:center;font:400 52px/1 var(--serif);color:var(--ink);z-index:2;box-shadow:0 0 0 8px rgba(241,235,225,.25)}
+.duo-wrap{position:relative}
+
+.formats{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);margin-top:clamp(56px,7vw,96px);align-items:start}
+.formats h3{font-size:clamp(1.8rem,2.6vw,2.6rem);line-height:1.08}
+.formats .note{margin-top:16px;color:var(--muted);max-width:28em}
+.flist{list-style:none;margin:0;padding:0;columns:2;column-gap:40px}
+.flist li{break-inside:avoid;display:flex;gap:14px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(23,32,31,.14);font-weight:500}
+.flist li span{font:400 12px/1 var(--mono);color:var(--ember);min-width:22px}
+.flist li.hl{font-weight:700}
+
+/* за что хвалят */
+.praise{background:var(--paper)}
+.praise .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,100px)}
+.score{position:sticky;top:110px;align-self:start}
+.score .n{font:400 clamp(7rem,15vw,13rem)/.8 var(--serif);color:var(--sea);letter-spacing:-.04em}
+.score .c{margin-top:18px;font-size:15px;color:var(--muted);max-width:18em}
+.score .c b{color:var(--ink)}
+.score a{display:inline-block;margin-top:14px;font-weight:600;font-size:15px;padding:8px 0}
+.points{display:grid;gap:0}
+.pt{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:34px 0;border-top:1px solid rgba(23,32,31,.14)}
+.pt:last-child{border-bottom:1px solid rgba(23,32,31,.14)}
+.pt .i{font:400 15px/1 var(--mono);color:var(--ember);padding-top:12px}
+.pt h3{font-size:clamp(1.6rem,2.3vw,2.25rem);line-height:1.1;margin-bottom:10px}
+.pt p{color:#3a413f;max-width:36em}
+.pt:nth-child(2){margin-left:clamp(0px,4vw,60px)}
+.pt:nth-child(3){margin-left:clamp(0px,8vw,120px)}
+
+/* фишка: банкет */
+.dark{background:var(--sea-d);color:#e8f1f1;position:relative;overflow:hidden}
+.dark .kicker{color:var(--foam)}
+.quiz-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:end;margin-bottom:48px}
+.quiz-head p{color:#bcd2d4;max-width:30em}
+.quiz{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,56px);align-items:start}
+.q{border-top:1px solid rgba(169,214,219,.22);padding:24px 0}
+.q legend,.q .lbl{font:600 13px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--foam);margin-bottom:14px;padding:0;display:block}
+fieldset.q{border-left:0;border-right:0;border-bottom:0;margin:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid rgba(169,214,219,.35);background:transparent;color:#e8f1f1;font:500 15px/1 var(--sans);cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .15s}
+.chip:hover{border-color:var(--foam)}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed="true"]{background:var(--foam);border-color:var(--foam);color:var(--sea-d);font-weight:700}
+.chip.m[aria-pressed="true"]{background:#e8a48f;border-color:#e8a48f}
+.step{display:inline-flex;align-items:center;border:1.5px solid rgba(169,214,219,.35);border-radius:999px;overflow:hidden}
+.step button{width:52px;height:52px;border:0;background:transparent;color:#fff;font:400 26px/1 var(--sans);cursor:pointer}
+.step button:hover{background:rgba(169,214,219,.14)}
+.step output{min-width:86px;text-align:center;font:400 34px/1 var(--serif)}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.inp{width:100%;min-height:52px;border-radius:10px;border:1.5px solid rgba(169,214,219,.35);background:rgba(255,255,255,.04);color:#fff;font:500 16px var(--sans);padding:0 16px;color-scheme:dark}
+.inp:focus{border-color:var(--foam);outline:none;box-shadow:0 0 0 3px rgba(169,214,219,.25)}
+.inp::placeholder{color:#8fa9ac}
+
+.ticket{position:sticky;top:96px;background:var(--paper);color:var(--ink);border-radius:6px;padding:28px 26px 24px;font:400 14px/1.5 var(--mono);box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.ticket::after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:10px;background:radial-gradient(circle at 8px -2px,transparent 8px,var(--paper) 8.5px) 0 0/16px 10px repeat-x}
+.t-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;border-bottom:1.5px dashed rgba(23,32,31,.35)}
+.t-head b{font:400 24px/1 var(--serif);letter-spacing:0}
+.t-head span{font-size:12px;color:var(--muted)}
+.t-rows{margin:14px 0;display:grid;gap:8px}
+.t-rows div{display:flex;justify-content:space-between;gap:16px}
+.t-rows dt,.t-rows dd{margin:0}
+.t-rows dt{color:var(--muted)}
+.t-rows dd{text-align:right;font-weight:600}
+.t-rows dd.e{color:#9a9a9a;font-weight:400}
+.t-foot{border-top:1.5px dashed rgba(23,32,31,.35);padding-top:14px;font-size:12.5px;color:var(--muted)}
+.ticket .btn{width:100%;margin-top:18px;font-family:var(--sans)}
+.ticket small{display:block;text-align:center;margin-top:10px;font-size:12px;color:var(--muted)}
+
+/* как работаем */
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:52px;counter-reset:f}
+.flow li{list-style:none;position:relative;padding:58px 22px 0 0}
+.flow li::before{counter-increment:f;content:"0" counter(f);position:absolute;top:0;left:0;font:400 15px/1 var(--mono);color:var(--ember)}
+.flow li::after{content:"";position:absolute;top:28px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--ember),var(--sea))}
+.flow li span{position:absolute;top:22px;left:0;width:14px;height:14px;border-radius:50%;background:var(--bone);border:2px solid var(--ember);z-index:1}
+.flow h3{font-size:1.6rem;line-height:1.1;margin-bottom:8px}
+.flow p{font-size:15px;color:var(--muted)}
+.flow{padding:0}
+
+/* полоса фото */
+.strip{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:16px;align-items:stretch;margin-top:clamp(56px,7vw,90px)}
+.strip figure{margin:0}
+.strip img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.panel{background:var(--sea);color:#e8f1f1;border-radius:4px;padding:clamp(28px,5vw,72px);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:24px;margin-bottom:34px}
+.pq{font:400 clamp(1.8rem,3vw,3rem)/1.12 var(--serif);max-width:16em}
+.strip figcaption{font:400 12.5px/1.4 var(--mono);color:var(--muted);margin-top:10px}
+
+/* контакты */
+.contact .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,72px)}
+.addr{font:400 clamp(2rem,3.4vw,3.2rem)/1.05 var(--serif);margin:10px 0 20px}
+.hours{width:100%;border-collapse:collapse;margin:22px 0;font-size:15.5px;max-width:380px}
+.hours td{padding:9px 0;border-bottom:1px solid rgba(23,32,31,.12)}
+.hours td:last-child{text-align:right;font-family:var(--mono);font-size:14.5px}
+.links{display:grid;gap:10px;margin-top:24px}
+.links a{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:0 20px;border-radius:8px;background:var(--paper);text-decoration:none;font-weight:600;transition:background .2s,transform .2s}
+.links a:hover{background:#fff;transform:translateX(4px)}
+.links a small{font-weight:500;color:var(--muted);font-size:14px}
+.map{border-radius:8px;overflow:hidden;min-height:440px;background:#d8d2c6}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+/* финал */
+.final{background:var(--ember-d);color:#f8ece5;text-align:center;padding:clamp(72px,10vw,140px) 0}
+.final h2{font-size:clamp(2.4rem,5vw,5rem);line-height:1;max-width:14em;margin:0 auto 20px}
+.final p{max-width:34em;margin:0 auto 32px;opacity:.9}
+.final .cta{justify-content:center}
+.final .b-line{border-color:rgba(255,255,255,.45);color:#fff}
+.final .b-line:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.b-paper{background:var(--paper);color:var(--ember-d)}
+.b-paper:hover{background:#fff}
+footer{background:var(--ink);color:#b9bdb8;font-size:13.5px;padding:28px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;display:none;width:60px;height:60px;border-radius:50%;background:var(--ember);color:#fff;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(124,44,27,.8)}
+.fab svg{width:26px;height:26px}
+
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+
+@media (max-width:1100px){
+  .nav{display:none}.top-tel{margin-left:auto}
+  .flow{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+  .half{grid-template-columns:minmax(0,1fr);min-height:0}
+  .half img{max-width:260px}
+}
+@media (max-width:860px){
+  .hero-pic img{max-height:none}
+  body{font-size:16px}
+  .hero .wrap,.formats,.praise .wrap,.quiz-head,.quiz,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-pic{justify-self:center;width:min(100%,460px);margin-top:12px}
+  .hero-pic::before{inset:-12px 12px 12px -12px}
+  .rate{left:-6px;bottom:22px}
+  .duo{grid-template-columns:minmax(0,1fr)}
+  .amp{width:68px;height:68px;font-size:40px}
+  .score{position:static}
+  .pt:nth-child(n){margin-left:0}
+  .ticket{position:relative;top:0}
+  .strip{grid-template-columns:minmax(0,1fr)}
+  .panel{margin-bottom:0}
+  .fab{display:flex}
+}
+@media (max-width:560px){
+  .top-tel{font-size:15px}
+  .logo{font-size:22px}.logo svg{width:32px;height:32px}
+  .cta .btn{flex:1 1 100%}
+  .flist{columns:1}
+  .flow{grid-template-columns:minmax(0,1fr)}
+  .row2{grid-template-columns:minmax(0,1fr)}
+  .half img{max-width:none;aspect-ratio:4/3}
+  .pt{grid-template-columns:minmax(0,1fr);gap:6px;padding:26px 0}
+  .pt .i{padding-top:0}
+  .map,.map iframe{min-height:340px}
+  .ticket{padding:24px 18px 20px}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Бык и море, наверх">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 9c0 7 5 11 14 11s14-4 14-11" fill="none" stroke="#a3402a" stroke-width="2.6" stroke-linecap="round"/><path d="M4 28c4-4 8-4 12 0s8 4 12 0 6-3 8-1" fill="none" stroke="#123a43" stroke-width="2.6" stroke-linecap="round"/><circle cx="20" cy="20" r="2.4" fill="#17201f"/></svg>
+      <span>Бык <i>&amp;</i> море</span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#kitchen">Кухня</a><a href="#praise">Отзывы</a><a href="#banket">Банкет</a><a href="#contact">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+79047107773">+7 904 710-77-73</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div data-r>
+      <p class="eyebrow">Ресторан и банкетные залы · Самара</p>
+      <h1>Банкет, где встретились <span class="m">мясо</span> и&nbsp;<span class="s">море</span></h1>
+      <p class="lead">Стейки и морепродукты, VIP-зал, летняя веранда и панорамный вид на Волжском проспекте. Гости пишут, что залы зонированы и даже при полной посадке не шумно.</p>
+      <div class="cta">
+        <a class="btn b-ember" href="#banket">Рассчитать банкет</a>
+        <a class="btn b-sea" href="https://wa.me/79047107773?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%20%D0%B1%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%20%D0%B2%20%C2%AB%D0%91%D1%8B%D0%BA%20%D0%B8%20%D0%BC%D0%BE%D1%80%D0%B5%C2%BB." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>
+          Написать в WhatsApp</a>
+      </div>
+      <div class="sub">
+        <a href="tel:+79047107773">Позвонить</a>
+        <a href="https://yandex.ru/maps/?rtext=~53.201468,50.100481" target="_blank" rel="noopener">Маршрут · Волжский пр., 6</a>
+        <span data-status></span>
+      </div>
+    </div>
+    <figure class="hero-pic" data-r style="margin:0">
+      <img src="img/p1-m.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 1350w" sizes="(max-width:860px) 92vw, 560px" width="675" height="900" alt="Тёплый салат с ростбифом в синей тарелке — мясо и море на одном блюде" fetchpriority="high">
+      <div class="rate"><b>4,9</b><span>3&nbsp;681 оценка<br>в 2ГИС</span></div>
+    </figure>
+  </div>
+  <svg class="horizon" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c120-24 240-24 360 0s240 24 360 0 240-24 360 0 240 24 360 0v30H0Z" fill="currentColor"/></svg>
+</section>
+
+<section class="sec" id="kitchen" style="padding-top:clamp(56px,7vw,100px)">
+  <div class="wrap">
+    <p class="kicker" data-r>Две стихии</p>
+    <h2 class="h2" data-r style="max-width:13em">Говядина с гриля и&nbsp;морской сет — на&nbsp;одном столе</h2>
+    <div class="duo-wrap" data-r>
+      <div class="duo">
+        <div class="half meat">
+          <div>
+            <span class="big">Бык</span>
+            <p>Европейская кухня с мясным характером. В отзывах чаще всего хвалят сочный стейк и достойную говядину.</p>
+            <ul><li>Стейки и говядина</li><li>Бургеры и горячее</li><li>Винная карта к мясу</li></ul>
+          </div>
+          <img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 1350w" sizes="(max-width:560px) 90vw, (max-width:1100px) 260px, 190px" width="675" height="900" loading="lazy" alt="Бургер на крафтовой бумаге">
+        </div>
+        <div class="half sea">
+          <div>
+            <span class="big">Море</span>
+            <p>Гости отмечают свежие морепродукты: морской сет на гриле и салаты с морскими жителями.</p>
+            <ul><li>Морской сет на гриле</li><li>Салаты с морепродуктами</li><li>Коктейли и лимонады</li></ul>
+          </div>
+          <img src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 1350w" sizes="(max-width:560px) 90vw, (max-width:1100px) 260px, 190px" width="675" height="900" loading="lazy" alt="Синий коктейль в бокале на мху">
+        </div>
+      </div>
+      <div class="amp" aria-hidden="true">&amp;</div>
+    </div>
+
+    <div class="formats">
+      <div data-r>
+        <h3>Для праздника, ужина вдвоём и большой компании</h3>
+        <p class="note">Средний чек по данным 2ГИС — 1&nbsp;560&nbsp;₽. Стоимость банкета посчитают по вашему составу гостей и меню.</p>
+      </div>
+      <ul class="flist" data-r>
+        <li class="hl"><span>01</span>Проведение банкетов</li>
+        <li class="hl"><span>02</span>VIP-зал</li>
+        <li class="hl"><span>03</span>Летняя веранда</li>
+        <li class="hl"><span>04</span>Панорамный вид</li>
+        <li><span>05</span>Кальянный зал</li>
+        <li><span>06</span>Детское меню</li>
+        <li><span>07</span>Заказ столиков</li>
+        <li><span>08</span>Еда навынос и доставка</li>
+        <li><span>09</span>Кофе и чай с собой</li>
+        <li><span>10</span>Wi-Fi, можно с ноутбуком</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec praise" id="praise">
+  <div class="wrap">
+    <div class="score" data-r>
+      <p class="kicker">За что хвалят</p>
+      <div class="n">4,9</div>
+      <p class="c">Рейтинг в 2ГИС по <b>3681 оценке</b>. Отметка «Любимый малый бизнес».</p>
+      <a href="https://2gis.ru/samara/firm/70000001094626580" target="_blank" rel="noopener">Читать отзывы в 2ГИС →</a>
+    </div>
+    <div class="points">
+      <article class="pt" data-r>
+        <span class="i">/01</span>
+        <div><h3>Мясо и море, которые получаются</h3><p>Стейк сочный, морепродукты свежие — так пишут о главном сочетании ресторана. Морской сет на гриле и салаты с морепродуктами отдельно советуют попробовать.</p></div>
+      </article>
+      <article class="pt" data-r>
+        <span class="i">/02</span>
+        <div><h3>Просторно даже при полной посадке</h3><p>Залы современные и зонированные, поэтому не шумно. Гости пишут, что здесь хорошо собраться компанией и отметить день рождения; в зале не курят, для кальяна — отдельный зал.</p></div>
+      </article>
+      <article class="pt" data-r>
+        <span class="i">/03</span>
+        <div><h3>Быстро и внимательно</h3><p>Подача быстрая, официанты вежливые и не навязчивые, музыка спокойная. Официантку Анастасию благодарят по имени.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="banket">
+  <div class="wrap">
+    <div class="quiz-head">
+      <div data-r>
+        <p class="kicker">Заявка на банкет</p>
+        <h2 class="h2">Соберите свой вечер — мы&nbsp;пришлём меню и&nbsp;расчёт</h2>
+      </div>
+      <p data-r>Выберите повод, число гостей и зал. Бланк справа заполняется сам и уходит администратору в WhatsApp одним нажатием.</p>
+    </div>
+    <div class="quiz">
+      <div data-r>
+        <fieldset class="q"><legend>Повод</legend>
+          <div class="chips" data-g="occ">
+            <button type="button" class="chip" aria-pressed="false">День рождения</button>
+            <button type="button" class="chip" aria-pressed="false">Свадьба</button>
+            <button type="button" class="chip" aria-pressed="false">Годовщина</button>
+            <button type="button" class="chip" aria-pressed="false">Корпоратив</button>
+            <button type="button" class="chip" aria-pressed="false">Встреча друзей</button>
+            <button type="button" class="chip" aria-pressed="false">Другое</button>
+          </div>
+        </fieldset>
+        <div class="q">
+          <span class="lbl" id="gl">Сколько гостей</span>
+          <div class="step" role="group" aria-labelledby="gl">
+            <button type="button" data-d="-1" aria-label="Меньше гостей">−</button>
+            <output id="guests" aria-live="polite">12</output>
+            <button type="button" data-d="1" aria-label="Больше гостей">+</button>
+          </div>
+        </div>
+        <fieldset class="q"><legend>Где сидим</legend>
+          <div class="chips" data-g="hall">
+            <button type="button" class="chip" aria-pressed="false">VIP-зал</button>
+            <button type="button" class="chip" aria-pressed="false">Общий зал</button>
+            <button type="button" class="chip" aria-pressed="false">Летняя веранда</button>
+            <button type="button" class="chip" aria-pressed="false">Посоветуйте</button>
+          </div>
+        </fieldset>
+        <fieldset class="q"><legend>Акцент меню</legend>
+          <div class="chips" data-g="menu">
+            <button type="button" class="chip m" aria-pressed="false">Больше мяса</button>
+            <button type="button" class="chip" aria-pressed="false">Больше морепродуктов</button>
+            <button type="button" class="chip" aria-pressed="false">Пополам</button>
+          </div>
+        </fieldset>
+        <fieldset class="q"><legend>Ещё понадобится</legend>
+          <div class="chips" data-g="ext" data-multi>
+            <button type="button" class="chip" aria-pressed="false">Детское меню</button>
+            <button type="button" class="chip" aria-pressed="false">Подбор вина</button>
+            <button type="button" class="chip" aria-pressed="false">Кальян</button>
+            <button type="button" class="chip" aria-pressed="false">Свой торт</button>
+          </div>
+        </fieldset>
+        <div class="q row2">
+          <label><span class="lbl">Дата</span><input class="inp" type="date" id="date"></label>
+          <label><span class="lbl">Как к вам обращаться</span><input class="inp" type="text" id="name" placeholder="Имя" autocomplete="given-name"></label>
+        </div>
+      </div>
+
+      <aside class="ticket" data-r aria-label="Бланк заявки">
+        <div class="t-head"><b>Бык &amp; море</b><span>заявка на банкет</span></div>
+        <dl class="t-rows">
+          <div><dt>Повод</dt><dd data-t="occ" class="e">не выбран</dd></div>
+          <div><dt>Гостей</dt><dd data-t="guests">12</dd></div>
+          <div><dt>Дата</dt><dd data-t="date" class="e">уточню</dd></div>
+          <div><dt>Зал</dt><dd data-t="hall" class="e">не выбран</dd></div>
+          <div><dt>Меню</dt><dd data-t="menu" class="e">не выбрано</dd></div>
+          <div><dt>Ещё</dt><dd data-t="ext" class="e">—</dd></div>
+        </dl>
+        <p class="t-foot">Волжский пр., 6 · Самара<br>Ответ — с меню и расчётом под ваш состав</p>
+        <a class="btn b-ember" id="send" href="https://wa.me/79047107773" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+        <small>или позвоните: <a href="tel:+79047107773">+7 904 710-77-73</a></small>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <p class="kicker" data-r>Как проходит заказ</p>
+    <h2 class="h2" data-r style="max-width:12em">От заявки до вашего вечера</h2>
+    <ol class="flow" data-r>
+      <li><span></span><h3>Заявка</h3><p>Бланк в WhatsApp или звонок по телефону.</p></li>
+      <li><span></span><h3>Подбор зала</h3><p>Администратор свяжется и предложит зал под число гостей.</p></li>
+      <li><span></span><h3>Меню</h3><p>Соберёте меню: мясо, море или всё вместе, напитки и детское меню.</p></li>
+      <li><span></span><h3>Подтверждение</h3><p>Согласуете детали и закрепите дату.</p></li>
+      <li><span></span><h3>Ваш вечер</h3><p>Приходите с гостями — остальное на ресторане.</p></li>
+    </ol>
+    <div class="strip">
+      <figure data-r><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 720w, img/p3.jpg 1440w" sizes="(max-width:860px) 92vw, 520px" width="720" height="900" loading="lazy" alt="Напиток с мятой и лаймом в глиняном стакане" style="object-position:50% 40%"><figcaption>Лимонад в глиняном стакане</figcaption></figure>
+      <div class="panel" data-r><p class="kicker" style="color:var(--foam)">Под ваш повод</p><p class="pq">Мясо, море или всё вместе — меню банкета собирают под состав гостей, с винной картой и детским меню.</p><a class="btn b-paper" href="#banket">Собрать заявку</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div data-r>
+      <p class="kicker">Как добраться</p>
+      <p class="addr">Самара,<br>Волжский проспект, 6</p>
+      <span data-status></span>
+      <table class="hours">
+        <tr><td>Понедельник — четверг</td><td>12:00–23:00</td></tr>
+        <tr><td>Пятница, суббота</td><td>12:00–01:00</td></tr>
+        <tr><td>Воскресенье</td><td>12:00–23:00</td></tr>
+      </table>
+      <div class="links">
+        <a href="tel:+79047107773">+7 904 710-77-73 <small>Позвонить</small></a>
+        <a href="https://wa.me/79047107773" target="_blank" rel="noopener">WhatsApp <small>Написать</small></a>
+        <a href="https://yandex.ru/maps/?rtext=~53.201468,50.100481" target="_blank" rel="noopener">Маршрут <small>Яндекс Карты</small></a>
+        <a href="https://2gis.ru/samara/firm/70000001094626580" target="_blank" rel="noopener">2ГИС <small>Отзывы и фото</small></a>
+      </div>
+    </div>
+    <div class="map" data-r>
+      <iframe loading="lazy" title="Бык и море на карте" src="https://yandex.ru/map-widget/v1/?ll=50.100481,53.201468&z=16&pt=50.100481,53.201468,pm2rdm"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap" data-r>
+    <h2>Праздник, который не придётся перекрикивать</h2>
+    <p>Просторные зонированные залы, VIP-зал и веранда, мясо и море на одном столе. Напишите — подберём зал и меню.</p>
+    <div class="cta">
+      <a class="btn b-paper" href="#banket">Рассчитать банкет</a>
+      <a class="btn b-line" href="tel:+79047107773">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Бык и море · Самара, Волжский проспект, 6 · +7 904 710-77-73</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+
+<a class="fab" href="tel:+79047107773" aria-label="Позвонить в ресторан"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg></a>
+
+<script>
+(function(){
+  var S={occ:'',hall:'',menu:'',ext:[],guests:12,date:'',name:''};
+  var $=function(s){return document.querySelector(s)};
+  function words(n){var a=n%10,b=n%100;return a===1&&b!==11?'гость':a>=2&&a<=4&&(b<12||b>14)?'гостя':'гостей'}
+  function fmt(d){if(!d)return '';var p=d.split('-');return p[2]+'.'+p[1]+'.'+p[0]}
+  function put(k,v,empty){var e=document.querySelector('[data-t="'+k+'"]');e.textContent=v||empty;e.classList.toggle('e',!v)}
+  function draw(){
+    put('occ',S.occ,'не выбран');put('guests',S.guests+' '+words(S.guests));put('date',fmt(S.date),'уточню');
+    put('hall',S.hall,'не выбран');put('menu',S.menu,'не выбрано');put('ext',S.ext.join(', '),'—');
+    $('#guests').textContent=S.guests;
+    var t='Здравствуйте! Хочу заказать банкет в «Бык и море».';
+    if(S.occ)t+='\nПовод: '+S.occ;
+    t+='\nГостей: '+S.guests;
+    t+='\nДата: '+(S.date?fmt(S.date):'уточню');
+    if(S.hall)t+='\nЗал: '+S.hall;
+    if(S.menu)t+='\nМеню: '+S.menu;
+    if(S.ext.length)t+='\nЕщё: '+S.ext.join(', ');
+    if(S.name)t+='\nМеня зовут '+S.name;
+    t+='\nПришлите, пожалуйста, варианты меню и расчёт.';
+    $('#send').href='https://wa.me/79047107773?text='+encodeURIComponent(t);
+  }
+  document.querySelectorAll('[data-g]').forEach(function(g){
+    var k=g.getAttribute('data-g'),multi=g.hasAttribute('data-multi');
+    g.addEventListener('click',function(ev){
+      var b=ev.target.closest('.chip');if(!b)return;
+      var on=b.getAttribute('aria-pressed')!=='true',v=b.textContent.trim();
+      if(multi){b.setAttribute('aria-pressed',on);S.ext=[].filter.call(g.querySelectorAll('.chip'),function(c){return c.getAttribute('aria-pressed')==='true'}).map(function(c){return c.textContent.trim()})}
+      else{g.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed',on);S[k]=on?v:''}
+      draw();
+    });
+  });
+  document.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){
+    var d=+b.getAttribute('data-d'),n=S.guests,st=n>=30?5:n>=10?2:1;
+    if(d<0&&n>10&&n<=30&&n-st<10)st=1;
+    S.guests=Math.max(2,Math.min(300,n+d*st));draw();
+  })});
+  var di=$('#date'),t=new Date();di.min=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2);
+  di.addEventListener('input',function(){S.date=di.value;draw()});
+  $('#name').addEventListener('input',function(e){S.name=e.target.value.trim();draw()});
+  draw();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["12:00","23:00"]],"tue":[["12:00","23:00"]],"wed":[["12:00","23:00"]],"thu":[["12:00","23:00"]],"fri":[["12:00","01:00"]],"sat":[["12:00","01:00"]],"sun":[["12:00","23:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

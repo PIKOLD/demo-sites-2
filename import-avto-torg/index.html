@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Импорт Авто Торг — пригон авто из Китая и с аукционов в Казань</title><meta property="og:type" content="website"><meta property="og:title" content="Импорт Авто Торг — пригон авто из Китая и с аукционов в Казань"><meta property="og:description" content="Импорт Авто Торг, Казань: заказ автомобилей из Китая и с аукционов. Подбор, проверка, доставка с отчётами и выдача в Казани. 4,9 в 2ГИС."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/import-avto-torg/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Импорт Авто Торг, Казань: заказ автомобилей из Китая и с аукционов. Подбор, проверка, доставка с отчётами и выдача в Казани. 4,9 в 2ГИС.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Unbounded:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Unbounded:wght@500;700&display=swap"></noscript>
+<style>
+:root{--bg:#ECEDE9;--paper:#F8F8F5;--ink:#0F1520;--ink2:#1B2433;--mute:#555C67;--line:#CBCEC7;--red:#C4221A;--red2:#A51A13;--sky:#DCE5EE;
+--d:'Unbounded',system-ui,sans-serif;--t:'Golos Text',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace;--w:1360px;--g:clamp(16px,4vw,48px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--t);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 var(--g)}
+.mono{font:500 12px/1.4 var(--m);letter-spacing:.08em;text-transform:uppercase}
+.demo{background:var(--ink);color:#C9CFD8;text-align:center;padding:7px 16px;font-size:13px}
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(236,237,233,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 15px/1 var(--d);letter-spacing:.02em}
+.logo svg{flex:none}
+.nav{display:flex;gap:22px;margin-left:auto;font-size:15px}
+.nav a{text-decoration:none;color:var(--mute);padding:10px 0}
+.nav a:hover{color:var(--ink)}
+.top .ph{font:600 16px var(--t);text-decoration:none;white-space:nowrap}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:600 16px var(--t);text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.b-red{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(196,34,26,.7)}
+.b-red:hover{background:var(--red2)}
+.b-ink{background:var(--ink);color:#fff}
+.b-ghost{background:transparent}
+.b-ghost:hover{background:var(--ink);color:#fff}
+.lnk{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration:none;border-bottom:1.5px solid currentColor}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--mute)}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#9AA0A8}
+[data-status].is-open::before{background:#1F9D55;box-shadow:0 0 0 4px rgba(31,157,85,.18)}
+/* hero */
+.hero{position:relative;padding:clamp(28px,4vw,56px) 0 0}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);gap:clamp(24px,4vw,64px);align-items:stretch}
+.eyebrow{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--mute);margin-bottom:22px}
+.eyebrow b{color:var(--red);font-weight:500}
+h1{font:700 clamp(30px,4.3vw,74px)/1.03 var(--d);letter-spacing:-.025em;margin-bottom:20px}
+h1 em{font-style:normal;color:var(--red)}
+.lead{font-size:clamp(17px,1.3vw,20px);max-width:36em;color:#2B323D;margin-bottom:24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:8px 26px}
+.hero-ph{position:relative;min-height:520px;border-radius:28px 28px 0 0;overflow:hidden;background:var(--sky)}
+.hero-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.ticket{position:absolute;left:18px;right:18px;bottom:18px;background:var(--paper);border-radius:18px;padding:16px 18px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 16px;align-items:center;box-shadow:0 20px 40px -20px rgba(0,0,0,.45)}
+.ticket .k{color:var(--mute)}
+.ticket strong{font:700 34px/1 var(--d);grid-row:span 2}
+.ticket .s{font-weight:600;font-size:15px}
+.stamp{grid-row:span 2;border:2px solid var(--red);color:var(--red);border-radius:8px;padding:6px 9px;transform:rotate(-6deg);font:500 11px/1.25 var(--m);letter-spacing:.06em;text-transform:uppercase;text-align:center}
+/* route band */
+.route{background:var(--ink);color:#E6E9EE;position:relative;z-index:2}
+.route .wrap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;position:relative;padding-top:26px;padding-bottom:24px}
+.route .wrap::before{content:"";position:absolute;left:var(--g);right:var(--g);top:31px;height:2px;background:repeating-linear-gradient(90deg,#4A5568 0 8px,transparent 8px 14px)}
+.rt{position:relative;padding-top:22px;padding-right:12px;font-size:14px;line-height:1.35;color:#AEB6C2}
+.rt::before{content:"";position:absolute;left:0;top:0;width:12px;height:12px;border-radius:50%;background:var(--ink);border:2px solid #7C8696}
+.rt:last-child{color:#fff;font-weight:600}
+.rt:last-child::before{background:var(--red);border-color:var(--red)}
+.car{position:absolute;top:24px;left:var(--g);width:16px;height:16px;border-radius:50%;background:var(--red);box-shadow:0 0 0 6px rgba(196,34,26,.25);animation:go 9s cubic-bezier(.6,0,.3,1) infinite}
+@keyframes go{0%{left:var(--g);opacity:0}6%{opacity:1}88%{left:calc(100% - var(--g) - 16px - (100% - 2*var(--g))/6 + 0px);opacity:1}100%{left:calc(100% - var(--g) - 16px - (100% - 2*var(--g))/6);opacity:0}}
+/* sections */
+section{padding:clamp(64px,8vw,120px) 0}
+.h2{font:700 clamp(28px,3.6vw,54px)/1.06 var(--d);letter-spacing:-.02em}
+.kicker{color:var(--red);margin-bottom:16px;display:block}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.7fr);gap:24px 64px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.head p{color:var(--mute)}
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-rows:auto auto;gap:20px}
+.s-main{grid-row:span 2;position:relative;border-radius:28px;overflow:hidden;min-height:560px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,3vw,40px)}
+.s-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.s-main::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,21,32,0) 35%,rgba(15,21,32,.88))}
+.s-main>*:not(img){position:relative;z-index:1}
+.s-main h3{font:700 clamp(26px,2.8vw,40px)/1.05 var(--d);margin:10px 0 12px}
+.s-main p{max-width:30em;color:#DDE2E8}
+.s-card{background:var(--paper);border-radius:28px;padding:clamp(24px,3vw,36px);border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
+.s-card:hover{transform:translateY(-3px);box-shadow:0 24px 40px -28px rgba(15,21,32,.4)}
+.s-card h3{font:700 clamp(22px,2vw,30px)/1.1 var(--d);margin:10px 0 12px}
+.s-card p{color:var(--mute)}
+.s-card.dark{background:var(--sky);border-color:transparent}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;background:var(--bg)}
+/* praise */
+.praise{background:var(--paper)}
+.pr-g{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:clamp(32px,5vw,90px)}
+.score{position:sticky;top:96px;align-self:start}
+.score .n{font:700 clamp(96px,12vw,180px)/.9 var(--d);letter-spacing:-.05em}
+.score .n span{color:var(--red)}
+.score p{color:var(--mute);margin-top:12px}
+.stars{display:flex;gap:4px;margin-top:18px}
+.pr-list{display:grid;gap:0}
+.pr{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:32px 0;border-top:1px solid var(--line)}
+.pr:last-child{border-bottom:1px solid var(--line)}
+.pr .i{font:500 14px var(--m);color:var(--red);padding-top:8px}
+.pr h3{font:500 clamp(21px,2.1vw,30px)/1.22 var(--d);letter-spacing:-.01em;margin-bottom:10px}
+.pr p{color:var(--mute);max-width:40em}
+.pr.big h3{font-size:clamp(24px,2.7vw,40px)}
+/* gallery */
+.gal{padding-bottom:clamp(48px,6vw,90px)}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(240px,24vw,340px);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(var(--g),calc((100vw - var(--w))/2 + var(--g))) 18px;scroll-padding-inline:max(var(--g),calc((100vw - var(--w))/2 + var(--g)));scrollbar-width:thin}
+.strip figure{scroll-snap-align:start;margin:0}
+.strip figure:nth-child(even){margin-top:48px}
+.strip img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:20px;background:var(--sky)}
+.strip figcaption{display:flex;justify-content:space-between;margin-top:10px;color:var(--mute)}
+.ctl{display:flex;gap:10px}
+.ctl button{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--ink);background:none;cursor:pointer;font-size:20px;transition:background .2s,color .2s}
+.ctl button:hover{background:var(--ink);color:#fff}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.st{padding:26px 22px 0 0;position:relative}
+.st::before{counter-increment:s;content:"0" counter(s);font:500 13px var(--m);color:var(--red);display:block;margin-bottom:46px}
+.st::after{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
+.st:last-child::after{background:var(--red);border-color:var(--red)}
+.st h3{font:700 20px/1.15 var(--d);margin-bottom:10px}
+.st p{color:var(--mute);font-size:16px}
+.steps-ph{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:20px;margin-top:56px;align-items:end}
+.steps-ph img{border-radius:24px;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 40%}
+.steps-ph p{font:500 clamp(20px,2.2vw,32px)/1.3 var(--d);max-width:24em}
+/* quiz */
+.quiz{background:var(--ink);color:#F1F3F6}
+.quiz .h2{color:#fff}
+.quiz .head p{color:#AEB6C2}
+.q-g{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+fieldset{border:0;padding:0 0 28px;margin:0 0 28px;border-bottom:1px solid #2A3445}
+legend{font:700 18px var(--d);margin-bottom:14px;display:flex;gap:14px;align-items:baseline}
+legend i{font:500 12px var(--m);color:#F0564E;font-style:normal}
+.ch{display:flex;flex-wrap:wrap;gap:10px}
+.ch label{position:relative}
+.ch input{position:absolute;opacity:0;width:1px;height:1px}
+.ch span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid #3A4659;border-radius:999px;cursor:pointer;font-size:15px;transition:border-color .2s,background .2s,color .2s}
+.ch label:hover span{border-color:#8B95A5}
+.ch input:checked+span{background:#fff;border-color:#fff;color:var(--ink);font-weight:600}
+.ch input:focus-visible+span{outline:3px solid #F0564E;outline-offset:2px}
+.q-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.q-in label{display:grid;gap:6px;font-size:14px;color:#AEB6C2}
+.q-in input{min-height:50px;border-radius:14px;border:1.5px solid #3A4659;background:var(--ink2);color:#fff;padding:0 16px;font:400 16px var(--t)}
+.q-in input:focus{border-color:#fff;outline:none}
+.bill{position:sticky;top:90px;background:var(--paper);color:var(--ink);border-radius:24px;padding:26px;overflow:hidden}
+.bill::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 22px,var(--ink) 22px 44px)}
+.bill h3{font:700 22px var(--d);margin:10px 0 4px}
+.bill .no{color:var(--mute)}
+.bill dl{margin:20px 0;display:grid;gap:0}
+.bill dl div{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.bill dt{color:var(--mute)}
+.bill dd{font-weight:600;margin:0}
+.bill dd.e{color:#9AA0A8;font-weight:400}
+.bill .btn{width:100%;margin-top:6px}
+.bill .fine{font-size:13px;color:var(--mute);margin-top:12px}
+.prog{height:6px;border-radius:6px;background:#E2E4DF;margin-top:4px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--red);transition:width .4s}
+/* contacts */
+.ct-g{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:20px}
+.ct-ph{border-radius:28px;overflow:hidden;position:relative;min-height:420px}
+.ct-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 70%}
+.ct-ph .mono{position:absolute;left:16px;bottom:16px;background:var(--paper);padding:8px 12px;border-radius:10px}
+.ct-r{display:grid;grid-template-rows:auto minmax(0,1fr);gap:20px}
+.ct-card{background:var(--paper);border-radius:28px;padding:clamp(24px,3vw,36px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px 40px}
+.ct-card h3{font:700 clamp(22px,2.2vw,30px)/1.15 var(--d);margin:8px 0}
+.ct-card .bigph{font:700 clamp(22px,2.2vw,30px)/1.1 var(--d);text-decoration:none;display:inline-block;margin:8px 0 6px}
+.hrs{display:grid;gap:4px;font-size:15px;margin-top:10px}
+.hrs div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding:6px 0}
+.soc{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:14px}
+.map{border-radius:28px;overflow:hidden;min-height:340px;background:var(--sky)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+/* final */
+.fin{background:var(--red);color:#fff;padding:clamp(64px,8vw,120px) 0}
+.fin .h2{font-size:clamp(30px,4.6vw,72px);max-width:15em;margin-bottom:32px}
+.fin .btn{border-color:#fff}
+.fin .b-w{background:#fff;color:var(--ink)}
+.fin .b-ghost{color:#fff}
+.fin .b-ghost:hover{background:#fff;color:var(--red)}
+footer{background:var(--ink);color:#8C95A3;font-size:14px;padding:28px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.fcall{position:fixed;right:16px;bottom:16px;z-index:30;display:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+@media (min-width:1900px){:root{--w:1440px}}
+@media (max-width:1100px){.nav{display:none}.top .ph{margin-left:auto}.steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:40px}}
+@media (max-width:900px){
+.hero-g,.svc,.pr-g,.q-g,.ct-g,.head{grid-template-columns:minmax(0,1fr)}
+.hero-ph{min-height:0;aspect-ratio:4/5;border-radius:24px;margin-bottom:28px}
+.s-main{grid-row:auto;min-height:480px}
+.score{position:static}
+.bill{position:static}
+.route .wrap{grid-template-columns:minmax(0,1fr);row-gap:14px;padding-left:calc(var(--g) + 28px)}
+.route .wrap::before{left:calc(var(--g) + 5px);right:auto;top:26px;bottom:26px;width:2px;height:auto;background:repeating-linear-gradient(180deg,#4A5568 0 8px,transparent 8px 14px)}
+.rt{padding:0}.rt::before{left:-28px;top:3px}
+.car{display:none}
+.ct-card{grid-template-columns:minmax(0,1fr)}
+.ct-ph{min-height:0;aspect-ratio:4/3}
+.steps-ph{grid-template-columns:minmax(0,1fr)}
+.steps-ph img{aspect-ratio:4/3;max-height:420px}
+}
+@media (max-width:640px){
+body{font-size:16px}
+.top .ph{display:none}
+.steps{grid-template-columns:minmax(0,1fr);border-top:0;border-left:2px solid var(--ink);row-gap:28px;margin-left:7px}
+.st{padding:0 0 0 26px}.st::before{margin-bottom:8px}.st::after{top:2px;left:-8px}
+.cta .btn{width:100%}
+.q-in{grid-template-columns:minmax(0,1fr)}
+.pr{grid-template-columns:minmax(0,1fr);gap:6px;padding:24px 0}
+.pr .i{padding:0}
+.ticket{grid-template-columns:auto minmax(0,1fr);left:12px;right:12px;bottom:12px}
+.ticket strong{font-size:28px}
+.stamp{display:none}
+.strip figure:nth-child(even){margin-top:0}
+.ctl{display:none}
+.fcall{display:inline-flex}
+.fin .btn{width:100%}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top" aria-label="Импорт Авто Торг — в начало"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#0F1520"/><path d="M7 22c6 0 7-10 13-10h7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-dasharray="3 3"/><circle cx="26" cy="12" r="3.4" fill="#C4221A"/></svg>Импорт Авто Торг</a>
+<nav class="nav" aria-label="Разделы"><a href="#svc">Что делаем</a><a href="#praise">Отзывы</a><a href="#how">Как работаем</a><a href="#calc">Заявка</a><a href="#contacts">Контакты</a></nav>
+<a class="ph" href="tel:+79872984644">+7 987 298-46-44</a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding-bottom:0">
+<div class="wrap hero-g">
+<div style="padding-bottom:clamp(28px,4vw,56px)">
+<div class="eyebrow mono"><b>Казань</b><span>ул. Ульянова-Ленина, 23 · 3 этаж</span></div>
+<h1>Машина из&nbsp;Китая или с&nbsp;аукциона — <em>с&nbsp;ключами в&nbsp;Казани</em></h1>
+<p class="lead">Импорт Авто Торг подбирает автомобиль под ваш бюджет, проверяет варианты, оформляет документы и привозит в Казань. Клиенты пишут, что связь держат на каждом этапе и присылают отчёты в пути.</p>
+<div class="cta"><a class="btn b-red" href="#calc">Рассчитать стоимость</a><a class="btn b-ghost" href="https://wa.me/79872984644?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%2C%20%D0%BF%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D0%BF%D0%BE%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%B0%D0%BC." target="_blank" rel="noopener">Написать в WhatsApp</a></div>
+<div class="sub"><a class="lnk" href="tel:+79872984644">Позвонить</a><a class="lnk" href="https://yandex.ru/maps/?rtext=~55.784931,49.133605" target="_blank" rel="noopener">Маршрут</a><span data-status></span></div>
+</div>
+<div class="hero-ph">
+<img src="img/p9.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 1350w" sizes="(max-width:900px) 92vw, 46vw" alt="Клиенты получают белый Nissan у эстакады в Казани" width="1350" height="1800">
+<div class="ticket"><strong>4,9</strong><span class="mono k">2ГИС · 82 оценки</span><span class="stamp">Выдано<br>Казань</span><span class="s">Пишут: машина приходит как с конвейера</span></div>
+</div>
+</div>
+</section>
+<div class="route" aria-label="Путь автомобиля"><div class="wrap"><span class="car" aria-hidden="true"></span>
+<div class="rt">Запрос и бюджет</div><div class="rt">Подбор вариантов</div><div class="rt">Проверка</div><div class="rt">Договор</div><div class="rt">Доставка с отчётами</div><div class="rt">Ключи в Казани</div>
+</div></div>
+
+<section id="svc">
+<div class="wrap">
+<div class="head" data-r><div><span class="kicker mono">Что делаем</span><h2 class="h2">Привозим авто под&nbsp;запрос, а&nbsp;не&nbsp;из&nbsp;наличия</h2></div><p>Вы говорите, какая машина нужна. Команда ищет варианты, проверяет их и ведёт сделку до последнего документа.</p></div>
+<div class="svc">
+<article class="s-main" data-r>
+<img src="img/p1.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 960w" sizes="(max-width:900px) 92vw, 54vw" alt="Синий Audi, привезённый из Китая, и его владельцы" loading="lazy" width="960" height="1280">
+<span class="mono">Основное направление</span>
+<h3>Заказ авто из&nbsp;Китая</h3>
+<p>Подбор по бюджету, комплектации и цвету. В отзывах — Audi, Volkswagen Sagitar и Tharu в максимальной комплектации, привезённые под заказ.</p>
+</article>
+<article class="s-card dark" data-r>
+<span class="mono" style="color:var(--red)">Второе направление</span>
+<h3>Автомобили с&nbsp;аукциона</h3>
+<p>Ищем лоты под ваш запрос и сопровождаем покупку до доставки в Казань.</p>
+</article>
+<article class="s-card" data-r>
+<span class="mono" style="color:var(--red)">Входит в работу</span>
+<h3>Сопровождение сделки</h3>
+<p>От первого «а можно посмотреть?» до выдачи ключей — с понятными объяснениями на каждом шаге.</p>
+<div class="tags"><span>Подбор</span><span>Проверка вариантов</span><span>Договор</span><span>Оплата траншами</span><span>Отчёты в пути</span><span>Документы</span></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="praise" id="praise">
+<div class="wrap pr-g">
+<div class="score" data-r>
+<span class="kicker mono">За что хвалят</span>
+<div class="n">4<span>,</span>9</div>
+<div class="stars" aria-hidden="true"><svg width="120" height="22" viewBox="0 0 120 22"><g fill="#C4221A"><path id="s" d="M11 1l3 6.6 7 .7-5.3 4.7 1.6 7L11 16.4 4.7 20l1.6-7L1 8.3l7-.7z"/><use href="#s" x="24"/><use href="#s" x="48"/><use href="#s" x="72"/><use href="#s" x="96"/></g></svg></div>
+<p>82 оценки в 2ГИС. Ниже — пересказ того, что пишут клиенты.</p>
+<a class="lnk" style="margin-top:10px" href="https://2gis.ru/kazan/firm/70000001097857543" target="_blank" rel="noopener">Все отзывы в 2ГИС</a>
+</div>
+<div class="pr-list">
+<div class="pr big" data-r><span class="i">01</span><div><h3>На связи от подбора до доставки в Казань</h3><p>Пишут, что команда присылает отчёты во время доставки и заранее предупреждает о каждом транше — без сюрпризов в процессе.</p></div></div>
+<div class="pr" data-r><span class="i">02</span><div><h3>Машина приходит в идеальном состоянии</h3><p>Клиенты отмечают, что автомобиль приезжает чистым, будто только с завода, а иногда — раньше обещанного срока.</p></div></div>
+<div class="pr" data-r><span class="i">03</span><div><h3>Помогают выбрать, а не продать</h3><p>Чаще всего благодарят менеджера Евгения: помог с выбором и подобрал машину мечты. Добрым словом вспоминают и Алмаза, Маргариту, руководителя Руслана.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="gal" aria-label="Выдачи автомобилей">
+<div class="wrap head" data-r><div><span class="kicker mono">Выдачи в Казани</span><h2 class="h2">Каждый кадр — чьи-то первые ключи</h2></div><div class="ctl" style="justify-self:end"><button type="button" aria-label="Листать назад" data-g="-1">←</button><button type="button" aria-label="Листать вперёд" data-g="1">→</button></div></div>
+<div class="strip" id="strip" data-qa-skip tabindex="0" aria-label="Фото выдач, листаются вбок">
+<figure><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 1350w" sizes="340px" alt="Синий Volkswagen седан у эстакады, рукопожатие" loading="lazy" width="675" height="900"><figcaption class="mono"><span>Volkswagen</span><span>01</span></figcaption></figure>
+<figure><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 1350w" sizes="340px" alt="Белый Mercedes-Benz и его владелица" loading="lazy" width="675" height="900"><figcaption class="mono"><span>Mercedes-Benz</span><span>02</span></figcaption></figure>
+<figure><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 675w, img/p12.jpg 1350w" sizes="340px" alt="Белый BMW и новые владельцы" loading="lazy" width="675" height="900"><figcaption class="mono"><span>BMW</span><span>03</span></figcaption></figure>
+<figure><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 675w, img/p10.jpg 1350w" sizes="340px" alt="Чёрный Volkswagen кроссовер и клиенты" loading="lazy" width="675" height="900"><figcaption class="mono"><span>Volkswagen</span><span>04</span></figcaption></figure>
+<figure><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 1350w" sizes="340px" alt="Белый Audi под эстакадой и владелец" loading="lazy" width="675" height="900"><figcaption class="mono"><span>Audi</span><span>05</span></figcaption></figure>
+<figure><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 675w, img/p14.jpg 1350w" sizes="340px" alt="Белый Volkswagen хэтчбек и пара владельцев" loading="lazy" width="675" height="900"><figcaption class="mono"><span>Volkswagen</span><span>06</span></figcaption></figure>
+<figure><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 675w, img/p8.jpg 1350w" sizes="340px" alt="Белый BMW кроссовер и владелица" loading="lazy" width="675" height="900"><figcaption class="mono"><span>BMW</span><span>07</span></figcaption></figure>
+<figure><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 675w, img/p7.jpg 1350w" sizes="340px" alt="Белый Hyundai, рукопожатие при выдаче" loading="lazy" width="675" height="900"><figcaption class="mono"><span>Hyundai</span><span>08</span></figcaption></figure>
+<figure><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="340px" alt="Чёрный Suzuki на закате у эстакады" loading="lazy" width="675" height="900"><figcaption class="mono"><span>Suzuki</span><span>09</span></figcaption></figure>
+</div>
+</section>
+
+<section id="how" style="padding-top:clamp(40px,5vw,80px)">
+<div class="wrap">
+<div class="head" data-r><div><span class="kicker mono">Как мы работаем</span><h2 class="h2">Пять шагов от&nbsp;заявки до&nbsp;выдачи</h2></div><p>Общий порядок работы. Детали и стоимость под вашу машину менеджер расскажет после заявки.</p></div>
+<div class="steps" data-r>
+<div class="st"><h3>Заявка</h3><p>Бюджет, кузов, пожелания по комплектации и цвету.</p></div>
+<div class="st"><h3>Подбор и проверка</h3><p>Менеджер ищет варианты и разбирает их вместе с вами.</p></div>
+<div class="st"><h3>Договор</h3><p>Обсуждаем детали и фиксируем всё на бумаге.</p></div>
+<div class="st"><h3>Доставка</h3><p>Отчёты в пути, о каждом транше — заранее.</p></div>
+<div class="st"><h3>Выдача в&nbsp;Казани</h3><p>Осмотр машины, документы и ключи.</p></div>
+</div>
+<div class="steps-ph" data-r>
+<img src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 1200w" sizes="(max-width:900px) 92vw, 30vw" alt="Выдача BMW рядом с автовозом" loading="lazy" width="675" height="900">
+<p>Машина едет на&nbsp;автовозе, а&nbsp;вы получаете отчёты в&nbsp;пути — и&nbsp;встречаете её уже в&nbsp;Казани.</p>
+</div>
+</div>
+</section>
+
+<section class="quiz" id="calc">
+<div class="wrap">
+<div class="head"><div><span class="kicker mono" style="color:#F0564E">Расчёт стоимости</span><h2 class="h2">Соберите заявку за&nbsp;минуту</h2></div><p>Отметьте, какая машина нужна. Заявка уйдёт менеджеру в WhatsApp, он посчитает стоимость под ваш вариант.</p></div>
+<div class="q-g">
+<form id="q" onsubmit="return false">
+<fieldset><legend><i>01</i>Бюджет</legend><div class="ch" data-k="Бюджет">
+<label><input type="radio" name="b" value="до 2 млн ₽"><span>до 2&nbsp;млн&nbsp;₽</span></label><label><input type="radio" name="b" value="2–3 млн ₽"><span>2–3&nbsp;млн&nbsp;₽</span></label><label><input type="radio" name="b" value="3–5 млн ₽"><span>3–5&nbsp;млн&nbsp;₽</span></label><label><input type="radio" name="b" value="от 5 млн ₽"><span>от 5&nbsp;млн&nbsp;₽</span></label></div></fieldset>
+<fieldset><legend><i>02</i>Откуда</legend><div class="ch" data-k="Откуда">
+<label><input type="radio" name="c" value="из Китая"><span>Из Китая</span></label><label><input type="radio" name="c" value="с аукциона"><span>С аукциона</span></label><label><input type="radio" name="c" value="посоветуйте"><span>Посоветуйте</span></label></div></fieldset>
+<fieldset><legend><i>03</i>Кузов</legend><div class="ch" data-k="Кузов">
+<label><input type="radio" name="t" value="седан"><span>Седан</span></label><label><input type="radio" name="t" value="кроссовер"><span>Кроссовер</span></label><label><input type="radio" name="t" value="внедорожник"><span>Внедорожник</span></label><label><input type="radio" name="t" value="хэтчбек"><span>Хэтчбек</span></label><label><input type="radio" name="t" value="минивэн"><span>Минивэн</span></label></div></fieldset>
+<fieldset><legend><i>04</i>Двигатель</legend><div class="ch" data-k="Двигатель">
+<label><input type="radio" name="e" value="бензин"><span>Бензин</span></label><label><input type="radio" name="e" value="гибрид"><span>Гибрид</span></label><label><input type="radio" name="e" value="электро"><span>Электро</span></label><label><input type="radio" name="e" value="не важно"><span>Не важно</span></label></div></fieldset>
+<fieldset><legend><i>05</i>Когда нужна</legend><div class="ch" data-k="Когда">
+<label><input type="radio" name="w" value="как можно скорее"><span>Как можно скорее</span></label><label><input type="radio" name="w" value="в ближайшие месяцы"><span>В ближайшие месяцы</span></label><label><input type="radio" name="w" value="пока присматриваюсь"><span>Присматриваюсь</span></label></div></fieldset>
+<fieldset style="border:0;margin:0"><legend><i>06</i>Пожелания</legend><div class="q-in">
+<label>Марка, модель, цвет<input id="qm" type="text" placeholder="например, Volkswagen Tharu, тёмный" autocomplete="off"></label>
+<label>Как к вам обращаться<input id="qn" type="text" autocomplete="given-name"></label></div></fieldset>
+</form>
+<aside class="bill" aria-live="polite">
+<span class="mono no">Заявка на подбор · Казань</span>
+<h3>Ваша машина</h3>
+<div class="prog"><i id="qp"></i></div>
+<dl id="qd"></dl>
+<a class="btn b-red" id="qs" href="#" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+<a class="btn b-ghost" style="margin-top:10px" href="https://t.me/importautotrade" target="_blank" rel="noopener">Telegram</a>
+<p class="fine">Можно отправить и неполную заявку — менеджер уточнит остальное. Цены на сайте не указываем: стоимость считается под конкретный автомобиль.</p>
+</aside>
+</div>
+</div>
+</section>
+
+<section id="contacts">
+<div class="wrap">
+<div class="head" data-r><div><span class="kicker mono">Офис</span><h2 class="h2">Приезжайте обсудить машину</h2></div><p>Центр Казани, третий этаж. Перед визитом лучше позвонить.</p></div>
+<div class="ct-g">
+<div class="ct-ph" data-r><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 675w, img/p6.jpg 1350w" sizes="(max-width:900px) 92vw, 900px" alt="Здание офиса на улице Ульянова-Ленина, 23" loading="lazy" width="675" height="900"><span class="mono">Ульянова-Ленина, 23</span></div>
+<div class="ct-r">
+<div class="ct-card" data-r>
+<div><span class="mono" style="color:var(--mute)">Адрес</span><h3>ул. Ульянова-Ленина, 23, 3&nbsp;этаж</h3><p style="color:var(--mute)">Казань</p>
+<a class="bigph" href="tel:+79872984644">+7 987 298-46-44</a><br><span data-status></span>
+<div class="soc"><a class="lnk" href="https://wa.me/79872984644" target="_blank" rel="noopener">WhatsApp</a><a class="lnk" href="https://t.me/importautotrade" target="_blank" rel="noopener">Telegram</a><a class="lnk" href="https://vk.ru/importautotorg" target="_blank" rel="noopener">ВКонтакте</a><a class="lnk" href="https://yandex.ru/maps/?rtext=~55.784931,49.133605" target="_blank" rel="noopener">Маршрут</a></div></div>
+<div><span class="mono" style="color:var(--mute)">Часы работы</span><div class="hrs"><div><span>Пн–Пт</span><b>10:00–17:00</b></div><div><span>Сб–Вс</span><b>10:00–16:00</b></div></div></div>
+</div>
+<div class="map" data-r><iframe loading="lazy" title="Карта: ул. Ульянова-Ленина, 23" src="https://yandex.ru/map-widget/v1/?ll=49.133605,55.784931&z=16&pt=49.133605,55.784931,pm2rdm"></iframe></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="fin">
+<div class="wrap">
+<span class="mono" style="display:block;margin-bottom:18px;opacity:.85">Импорт Авто Торг · Казань</span>
+<h2 class="h2">Расскажите, какую машину ищете, — подберём и&nbsp;привезём</h2>
+<div class="cta"><a class="btn b-w" href="#calc">Рассчитать стоимость</a><a class="btn b-ghost" href="tel:+79872984644">Позвонить</a></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap"><span>Импорт Авто Торг · Казань, ул. Ульянова-Ленина, 23</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+<a class="btn b-red fcall" href="tel:+79872984644">Позвонить</a>
+<script>
+(function(){var f=document.getElementById('q'),d=document.getElementById('qd'),s=document.getElementById('qs'),p=document.getElementById('qp');
+var K=[['b','Бюджет'],['c','Откуда'],['t','Кузов'],['e','Двигатель'],['w','Когда']];
+function v(n){var x=f.querySelector('input[name='+n+']:checked');return x?x.value:''}
+function u(){var h='',L=['Здравствуйте! Хочу заказать авто через Импорт Авто Торг.'],n=0;
+K.forEach(function(k){var x=v(k[0]);if(x){n++;L.push(k[1]+': '+x)}h+='<div><dt>'+k[1]+'</dt><dd'+(x?'>'+x:' class="e">не выбрано')+'</dd></div>'});
+var m=document.getElementById('qm').value.trim(),nm=document.getElementById('qn').value.trim();
+if(m){n++;L.push('Пожелания: '+m)}h+='<div><dt>Пожелания</dt><dd'+(m?'>'+m.replace(/</g,'&lt;'):' class="e">—')+'</dd></div>';
+if(nm)L.push('Меня зовут '+nm);L.push('Подскажите, сколько это будет стоить?');
+d.innerHTML=h;p.style.width=Math.round(n/6*100)+'%';s.href='https://wa.me/79872984644?text='+encodeURIComponent(L.join('\n'))}
+f.addEventListener('input',u);f.addEventListener('change',u);u();
+var st=document.getElementById('strip');document.querySelectorAll('[data-g]').forEach(function(b){b.addEventListener('click',function(){st.scrollBy({left:+b.dataset.g*st.clientWidth*.8,behavior:'smooth'})})});})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","17:00"]],"tue":[["10:00","17:00"]],"wed":[["10:00","17:00"]],"thu":[["10:00","17:00"]],"fri":[["10:00","17:00"]],"sat":[["10:00","16:00"]],"sun":[["10:00","16:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Окна Казани — остекление домов, веранд и балконов</title><meta property="og:type" content="website"><meta property="og:title" content="Окна Казани — остекление домов, веранд и балконов"><meta property="og:description" content="Окна Казани: панорамные алюминиевые окна, входные группы, пластиковые и деревянные окна, остекление и отделка балконов, ремонт окон. Казань, на связи круглосуточно."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/okna-kazani/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Окна Казани: панорамные алюминиевые окна, входные группы, пластиковые и деревянные окна, остекление и отделка балконов, ремонт окон. Казань, на связи круглосуточно.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{
+  --paper:#f3efe8;--paper2:#e9e3d9;--card:#fbf9f5;--ink:#1d1a17;--ink2:#4a443d;--mute:#6f675d;
+  --bronze:#5a3d2b;--bronze2:#7a5640;--glass:#2f5d75;--sky:#cfe0ea;--line:rgba(29,26,23,.14);
+  --serif:'Prata',Georgia,serif;--sans:'Onest',system-ui,-apple-system,Segoe UI,sans-serif;--mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+  --wrap:1360px;--gut:clamp(16px,4vw,48px);--r:4px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--glass);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.demo{background:var(--ink);color:#e9e3d9;font:500 13px/1.4 var(--sans);text-align:center;padding:8px 16px}
+
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{flex:none}
+.logo b{font:400 21px/1 var(--serif)}
+.logo small{display:block;font:500 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-top:4px}
+.nav ul{display:flex;gap:28px;list-style:none}
+.nav ul a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink2)}
+.nav ul a:hover{color:var(--glass)}
+.nav-tel{font-weight:600;text-decoration:none;white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);font:600 16px/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn:active{transform:translateY(1px)}
+.btn-main{background:var(--bronze);color:#fff}
+.btn-main:hover{background:#432c1f;box-shadow:0 10px 24px -12px rgba(90,61,43,.8)}
+.btn-wa{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-wa:hover{background:var(--ink);color:var(--paper)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:var(--ink)}
+.btn svg{flex:none}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(28px,4vw,72px);align-items:center;padding:clamp(12px,3vh,40px) 0 clamp(40px,6vw,88px)}
+.eyebrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-bottom:22px}
+.status{display:inline-flex;align-items:center;gap:8px;font:500 13px/1 var(--sans);color:var(--ink2);background:var(--card);border:1px solid var(--line);padding:8px 12px;border-radius:40px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:#9a9086}
+.status.is-open::before{background:#2f8a57;box-shadow:0 0 0 4px rgba(47,138,87,.15)}
+h1{font:400 clamp(2.15rem,4.6vw,4.6rem)/1.06 var(--serif);letter-spacing:-.01em;max-width:13ch}
+h1 em{font-style:normal;color:var(--glass)}
+.lead{font-size:clamp(17px,1.35vw,19px);color:var(--ink2);max-width:46ch;margin:22px 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:26px;font-size:15px;color:var(--ink2)}
+.hero-meta a{font-weight:600;text-decoration:none;color:var(--ink)}
+.hero-meta b{font-weight:600;color:var(--ink)}
+
+/* window frame figure */
+.frame{position:relative;padding:22px 0 0 26px}
+.frame .win{position:relative;background:var(--bronze);padding:12px;border-radius:2px;box-shadow:0 40px 70px -40px rgba(29,26,23,.6)}
+.frame .win img{width:100%;height:clamp(340px,64vh,640px);object-fit:cover;object-position:50% 55%}
+.frame .mull{position:absolute;inset:12px;display:grid;grid-template-columns:1fr 1fr 1fr;pointer-events:none}
+.frame .mull i{border-right:10px solid var(--bronze)}
+.frame .mull i:last-child{border:0}
+.frame .glare{position:absolute;inset:12px;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.18) 42%,transparent 50%);background-size:250% 100%;animation:glare 7s ease-in-out 1s infinite;pointer-events:none}
+@keyframes glare{0%,60%{background-position:120% 0}100%{background-position:-60% 0}}
+.dim{position:absolute;font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.dim-top{top:0;left:26px;right:0;display:flex;align-items:center;gap:10px}
+.dim-top::before,.dim-top::after{content:"";flex:1;height:1px;background:var(--mute)}
+.dim-left{top:22px;bottom:0;left:0;width:14px;border-right:1px solid var(--mute)}
+.dim-left span{position:absolute;top:50%;left:-4px;transform:translateY(-50%) rotate(-90deg);transform-origin:center;white-space:nowrap;background:var(--paper);padding:0 6px}
+.cap{position:absolute;right:16px;bottom:-18px;background:var(--card);border:1px solid var(--line);padding:14px 18px;max-width:300px;font-size:14px;line-height:1.45;color:var(--ink2);box-shadow:0 20px 40px -24px rgba(0,0,0,.35)}
+.cap b{display:block;font:400 26px/1 var(--serif);color:var(--ink);margin-bottom:6px}
+
+/* sections */
+section{padding:clamp(64px,9vw,128px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px 48px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+h2{font:400 clamp(2rem,3.6vw,3.4rem)/1.08 var(--serif);letter-spacing:-.01em}
+.sh p{color:var(--ink2);max-width:52ch}
+.num{display:block;margin-bottom:14px}
+
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,3vw,48px)}
+.svc-big{position:relative;overflow:hidden;border-radius:2px;min-height:520px;color:#fff;display:flex;align-items:flex-end}
+.svc-big img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%;transition:transform 1.2s}
+.svc-big:hover img{transform:scale(1.03)}
+.svc-big::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,12,.85),rgba(20,16,12,.25) 75%,rgba(20,16,12,0))}
+.svc-big div{position:relative;z-index:1;padding:clamp(22px,3vw,40px)}
+.svc-big h3{font:400 clamp(1.6rem,2.4vw,2.3rem)/1.12 var(--serif);margin-bottom:10px}
+.svc-big p{color:rgba(255,255,255,.86);max-width:44ch}
+.svc-list{list-style:none;border-top:1px solid var(--ink)}
+.svc-list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 14px;padding:22px 0;border-bottom:1px solid var(--line);transition:padding .25s,background .25s}
+.svc-list li:hover{padding-left:10px;background:linear-gradient(90deg,var(--paper2),transparent)}
+.svc-list .mono{padding-top:5px}
+.svc-list h3{font:600 19px/1.3 var(--sans)}
+.svc-list p{grid-column:2;color:var(--mute);font-size:15px}
+.pay{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
+.pay span{font-size:13px;padding:7px 12px;border:1px solid var(--line);border-radius:40px;color:var(--ink2);background:var(--card)}
+
+/* objects gallery */
+.objects{background:var(--ink);color:#efe9df}
+.objects .mono{color:#a99f92}
+.objects .sh p{color:#c9c0b4}
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(150px,15vw,230px);gap:12px}
+.gal figure{position:relative;overflow:hidden;background:#2a2622}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s,filter .4s;filter:saturate(.92)}
+.gal figure:hover img{transform:scale(1.04);filter:none}
+.gal figcaption{position:absolute;left:0;bottom:0;padding:10px 14px;font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:rgba(20,16,12,.62)}
+.g1{grid-column:span 7;grid-row:span 2}.g2{grid-column:span 5;grid-row:span 1}.g3{grid-column:span 5;grid-row:span 1}
+.g4{grid-column:span 4;grid-row:span 2}.g5{grid-column:span 4;grid-row:span 1}.g6{grid-column:span 4;grid-row:span 2}.g7{grid-column:span 4;grid-row:span 1}
+.g4 img,.g6 img{object-position:50% 40%}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,5vw,80px);align-items:start}
+.score{position:sticky;top:24px;border:1px solid var(--ink);padding:clamp(24px,3vw,40px);background:var(--card)}
+.score b{display:block;font:400 clamp(4.5rem,8vw,7.5rem)/.9 var(--serif)}
+.score .stars{display:flex;gap:4px;margin:16px 0 10px;color:var(--bronze)}
+.score p{color:var(--ink2);font-size:15px}
+.score a{display:inline-block;margin-top:16px;font-weight:600;font-size:15px}
+.pr{list-style:none;counter-reset:p}
+.pr li{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,5fr);gap:12px 40px;padding:32px 0;border-top:1px solid var(--line)}
+.pr li:first-child{border-top:1px solid var(--ink)}
+.pr h3{font:400 clamp(1.5rem,2.2vw,2.1rem)/1.15 var(--serif)}
+.pr p{color:var(--ink2)}
+
+/* steps */
+.steps{background:var(--paper2)}
+.st{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;position:relative}
+.st::before{content:"";position:absolute;left:0;right:0;top:27px;height:1px;background:var(--ink)}
+.st li{position:relative;padding:0 18px 0 0}
+.st i{display:grid;place-items:center;width:56px;height:56px;border:1px solid var(--ink);background:var(--paper2);font:500 14px/1 var(--mono);font-style:normal;margin-bottom:22px;transition:background .25s,color .25s}
+.st li:hover i{background:var(--ink);color:var(--paper)}
+.st h3{font:600 18px/1.3 var(--sans);margin-bottom:6px}
+.st p{font-size:15px;color:var(--mute)}
+
+/* quiz */
+.calc{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,64px);align-items:start}
+.q{border:0;padding:26px 0;border-top:1px solid var(--line)}
+.q:first-child{border-top:1px solid var(--ink);padding-top:22px}
+.q legend{float:left;width:100%;font:600 18px/1.3 var(--sans);margin-bottom:14px;display:flex;gap:12px;align-items:baseline}
+.q legend .mono{flex:none}
+.chips{clear:both;display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;cursor:pointer;margin:0}
+.chip span{display:flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid var(--line);border-radius:var(--r);background:var(--card);font-weight:500;font-size:15px;transition:border-color .2s,background .2s,color .2s}
+.chip:hover span{border-color:var(--ink2)}
+.chip input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip input:focus-visible+span{outline:3px solid var(--glass);outline-offset:2px}
+.rng{clear:both;display:flex;align-items:center;gap:18px}
+.rng input{flex:1;accent-color:var(--bronze);height:44px;cursor:pointer;min-width:0}
+.rng output{font:400 30px/1 var(--serif);min-width:2.4ch;text-align:right}
+.fld{clear:both;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.fld label{display:grid;gap:6px;font-size:14px;font-weight:500;color:var(--ink2)}
+.fld input{min-height:48px;padding:0 14px;border:1.5px solid var(--line);border-radius:var(--r);background:var(--card);font:400 16px var(--sans);color:var(--ink);width:100%}
+.fld input:focus{border-color:var(--glass);outline:none}
+.sheet{position:sticky;top:20px;background:var(--card);border:1px solid var(--ink);padding:clamp(20px,2.4vw,32px)}
+.sheet-h{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:14px}
+.sheet svg{width:100%;height:auto;display:block}
+.sum{list-style:none;margin:16px 0 20px;font-size:15px}
+.sum li{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.sum li span:first-child{color:var(--mute)}
+.sum li span:last-child{text-align:right;font-weight:500}
+.sheet .btn{width:100%}
+.sheet small{display:block;margin-top:12px;color:var(--mute);font-size:13px;line-height:1.45}
+
+/* contacts */
+.cont{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(28px,4vw,64px);align-items:stretch}
+.clock{background:var(--glass);color:#fff;padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:space-between;gap:32px;position:relative;overflow:hidden}
+.clock .mono{color:#cfe0ea}
+.clock b{font:400 clamp(1.8rem,2.9vw,3.2rem)/1.08 var(--serif);display:block}
+.clock p{color:#dfe9ef;max-width:36ch}
+.clock svg{position:absolute;right:-40px;top:-40px;opacity:.16}
+.clist{list-style:none}
+.clist li{display:grid;grid-template-columns:minmax(0,140px) minmax(0,1fr);gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.clist li:first-child{border-top:1px solid var(--ink)}
+.clist a{font-weight:600;font-size:clamp(17px,1.6vw,22px);text-decoration:none;word-break:break-word}
+.clist a:hover{color:var(--glass)}
+.clist .status{margin-top:8px}
+
+/* final */
+.final{background:var(--bronze);color:#fff;padding:clamp(56px,8vw,112px) 0}
+.final .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;align-items:end}
+.final h2{color:#fff;max-width:16ch}
+.final p{color:#ead9cc;margin-top:16px;max-width:44ch}
+.final .cta{justify-content:flex-end}
+.final .btn-main{background:#fff;color:var(--bronze)}
+.final .btn-main:hover{background:var(--paper)}
+.final .btn-wa{color:#fff;border-color:#fff}
+.final .btn-wa:hover{background:#fff;color:var(--bronze)}
+footer{padding:28px 0 96px;font-size:13px;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+.fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:20;display:none;gap:8px}
+.fab a{flex:1;min-height:54px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--r);font-weight:600;text-decoration:none;box-shadow:0 12px 28px -10px rgba(0,0,0,.5)}
+.fab .f1{background:var(--bronze);color:#fff}
+.fab .f2{background:var(--ink);color:#fff}
+
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+
+@media (max-width:1100px){
+  .nav ul{display:none}
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .frame .win img{height:clamp(300px,56vw,520px)}
+  .svc,.praise,.calc,.cont,.final .wrap{grid-template-columns:minmax(0,1fr)}
+  .score,.sheet{position:static}
+  .final .cta{justify-content:flex-start}
+  .st{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 20px}
+  .st::before{display:none}
+  .sh{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:700px){
+  body{font-size:16px}
+  .nav-tel{display:none}
+  .frame{padding:18px 0 0 20px}
+  .frame .win{padding:8px}
+  .frame .mull,.frame .glare{inset:8px}
+  .frame .mull i{border-right-width:6px}
+  .cap{position:relative;right:auto;bottom:auto;margin:-28px 12px 0 auto;max-width:none}
+  .cta .btn{flex:1 1 100%}
+  .svc-big{min-height:420px}
+  .gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px;gap:8px}
+  .gal figure{grid-column:span 1;grid-row:span 1}
+  .gal .g1,.gal .g4{grid-column:span 2;grid-row:span 2}
+  .pr li{grid-template-columns:minmax(0,1fr)}
+  .st{grid-template-columns:minmax(0,1fr)}
+  .st li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:0 16px}
+  .st i{margin:0;grid-row:span 2}
+  .fld{grid-template-columns:minmax(0,1fr)}
+  .clist li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .fab{display:flex}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="wrap nav">
+  <a class="logo" href="#top" aria-label="Окна Казани — наверх">
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" fill="none" stroke="#5a3d2b" stroke-width="4"/><path d="M20 2v36M2 16h36" stroke="#5a3d2b" stroke-width="3"/><path d="M8 34 16 22M23 34l9-12" stroke="#2f5d75" stroke-width="1.5" opacity=".6"/></svg>
+    <span><b>Окна Казани</b><small>остекление · Казань</small></span>
+  </a>
+  <ul>
+    <li><a href="#services">Что делаем</a></li>
+    <li><a href="#objects">Объекты</a></li>
+    <li><a href="#calc">Расчёт</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <a class="nav-tel" href="tel:+79655832337">+7&nbsp;965&nbsp;583-23-37</a>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <div class="eyebrow"><span class="mono">Казань · окна и остекление</span><span class="status" data-status></span></div>
+    <h1>Панорамы, веранды и балконы, за&nbsp;которыми <em>тепло и&nbsp;тихо</em></h1>
+    <p class="lead">Алюминиевые, пластиковые и деревянные окна, входные группы коттеджей, остекление и отделка балконов под ключ. Клиенты пишут: работали по договору, смету не превысили, сроки не сорвали.</p>
+    <div class="cta">
+      <a class="btn btn-main" href="#calc">Рассчитать стоимость
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h11M10 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+      <a class="btn btn-wa" href="https://wa.me/79655832337?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%80%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C%20%D0%BE%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5." target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+    <div class="hero-meta">
+      <a href="tel:+79655832337">Позвонить: +7&nbsp;965&nbsp;583-23-37</a>
+      <span><b>5,0</b> в 2ГИС · 33 отзыва</span>
+    </div>
+  </div>
+  <figure class="frame" data-r>
+    <span class="dim dim-top">Остекление веранды · тёмный профиль</span>
+    <span class="dim dim-left" aria-hidden="true"><span>фасад</span></span>
+    <div class="win">
+      <img src="img/p10.jpg" srcset="img/p10-m.jpg 900w, img/p10.jpg 1280w" sizes="(max-width:1100px) 100vw, 52vw" width="1280" height="960" alt="Остеклённая веранда коттеджа с тёмными рамами, работа компании Окна Казани">
+      <div class="mull" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="glare" aria-hidden="true"></div>
+    </div>
+    <figcaption class="cap"><b>Под ключ</b>Замер, изготовление, доставка и монтаж: по отзывам, привезли в обещанную дату и поставили за день.</figcaption>
+  </figure>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono num">01 / Что делаем</span><h2>От окна в&nbsp;квартире до&nbsp;стеклянного фасада дома</h2></div>
+      <p>Подберут профиль под задачу: тёплый для дома и котельной, лёгкий для балкона, солидный алюминий для панорам и входных групп. Принимают карту, наличные, оплату по QR и через банк.</p>
+    </div>
+    <div class="svc">
+      <a class="svc-big" href="#calc" data-r>
+        <img src="img/p5-m.jpg" srcset="img/p5-m.jpg 900w, img/p5.jpg 1440w" sizes="(max-width:700px) 175vw, (max-width:1100px) 100vw, 56vw" width="1440" height="1080" loading="lazy" alt="Панорамное алюминиевое остекление угла кирпичного дома">
+        <div><span class="mono" style="color:#e2d6c8">Главное направление</span><h3>Алюминиевые окна и входные группы</h3><p>Панорамное остекление коттеджей и таунхаусов, двери в пол, пристройки. Со стеклопакетом и без: для жилых комнат и для холодных помещений.</p></div>
+      </a>
+      <div data-r>
+        <ul class="svc-list">
+          <li><span class="mono">02</span><h3>Пластиковые окна</h3><p>Квартиры и дома: можно заменить все окна за один заход.</p></li>
+          <li><span class="mono">03</span><h3>Деревянные окна</h3><p>Со стеклопакетом и без него, в том числе для деревянных домов.</p></li>
+          <li><span class="mono">04</span><h3>Остекление и отделка балконов</h3><p>Балкон под ключ: остекление и отделка в одном заказе.</p></li>
+          <li><span class="mono">05</span><h3>Ремонт окон</h3><p>Когда менять целиком не нужно.</p></li>
+          <li><span class="mono">06</span><h3>Комплектующие</h3><p>Фурнитура и всё, что нужно для окна.</p></li>
+        </ul>
+        <div class="pay"><span>Доставка</span><span>Карта</span><span>Наличные</span><span>По QR-коду</span><span>Через банк</span><span>Перевод</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="objects" id="objects">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono num">02 / Объекты</span><h2>Сделанное: только их фото</h2></div>
+      <p>Веранды, панорамные углы, двери в пол и тёплый балкон. Тёмный профиль на светлой штукатурке, белый на кирпиче — смотрите, как это выглядит на настоящих домах.</p>
+    </div>
+    <div class="gal">
+      <figure class="g1" data-r><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 900w, img/p4.jpg 1440w" sizes="(max-width:700px) 135vw, 56vw" width="1440" height="1080" loading="lazy" alt="Белая остеклённая веранда у кирпичного дома на закате"><figcaption>Веранда · белый профиль</figcaption></figure>
+      <figure class="g2" data-r><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1280w" sizes="(max-width:700px) 70vw, 40vw" width="1280" height="960" loading="lazy" alt="Остеклённая веранда с тёмными рамами у двухэтажного дома"><figcaption>Веранда · тёмный профиль</figcaption></figure>
+      <figure class="g3" data-r><img src="img/p6-m.jpg" width="900" height="675" loading="lazy" alt="Панорамные окна и дверь в кирпичном доме"><figcaption>Панорамный угол</figcaption></figure>
+      <figure class="g4" data-r><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="(max-width:700px) 100vw, 33vw" width="1350" height="1800" loading="lazy" alt="Остеклённый и отделанный балкон с видом на берёзы"><figcaption>Балкон под ключ</figcaption></figure>
+      <figure class="g5" data-r><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1440w" sizes="(max-width:700px) 70vw, 33vw" width="1440" height="1080" loading="lazy" alt="Одноэтажный дом с панорамным остеклением"><figcaption>Дом · панорамы</figcaption></figure>
+      <figure class="g6" data-r><img src="img/p8-m.jpg" width="675" height="900" loading="lazy" alt="Остеклённая входная группа у дома"><figcaption>Входная группа</figcaption></figure>
+      <figure class="g7" data-r><img src="img/p14-m.jpg" width="900" height="450" loading="lazy" alt="Двухэтажный дом со сплошным остеклением второго этажа"><figcaption>Остекление этажа</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap praise">
+    <aside class="score" data-r>
+      <span class="mono">Рейтинг 2ГИС</span>
+      <b>5,0</b>
+      <div class="stars" aria-hidden="true"><svg width="110" height="20" viewBox="0 0 110 20"><g fill="currentColor"><path id="s" d="M10 1l2.6 6 6.4.6-4.9 4.3 1.5 6.3L10 15l-5.6 3.2 1.5-6.3L1 7.6 7.4 7z"/><use href="#s" x="22"/><use href="#s" x="44"/><use href="#s" x="66"/><use href="#s" x="88"/></g></svg></div>
+      <p>33 отзыва. Пишут и владельцы квартир, и те, кто строил дом и искал подрядчика на весь коттедж.</p>
+      <a href="https://2gis.ru/kazan/firm/70000001102825986" target="_blank" rel="noopener">Читать отзывы в 2ГИС</a>
+    </aside>
+    <div>
+      <div class="sh" style="grid-template-columns:minmax(0,1fr);margin-bottom:32px" data-r><div><span class="mono num">03 / За что хвалят</span><h2>Что говорят после монтажа</h2></div></div>
+      <ol class="pr">
+        <li data-r><h3>Стало тише и&nbsp;теплее</h3><p>Самое частое в отзывах: не дует, шума с улицы меньше, дома заметно теплее. Даже в пристройке-котельной после остекления стало тепло.</p></li>
+        <li data-r><h3>По договору и&nbsp;по&nbsp;смете</h3><p>Заказчик коттеджа пишет, что работали по плану, смету не превысили и сроки не сорвали. Замерщика называют грамотным: всё просчитал заранее. Упоминают гарантию по договору.</p></li>
+        <li data-r><h3>Быстро и&nbsp;чисто</h3><p>Монтажники работают быстро и аккуратно и убирают мусор за собой. Панорамные окна для таунхауса привезли в обещанную дату и поставили за день.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="steps" id="how">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono num">04 / Как работаем</span><h2>Порядок работы</h2></div>
+      <p>Всё детально объясняют до начала работ — об этом отдельно пишут в отзывах.</p>
+    </div>
+    <ol class="st" data-r>
+      <li><i>01</i><h3>Заявка</h3><p>Звонок или сообщение в WhatsApp с ответами из расчёта ниже.</p></li>
+      <li><i>02</i><h3>Замер и расчёт</h3><p>Замерщик смотрит проёмы и считает конструкцию.</p></li>
+      <li><i>03</i><h3>Договор и смета</h3><p>Фиксируют состав работ и стоимость.</p></li>
+      <li><i>04</i><h3>Изготовление и доставка</h3><p>Привозят конструкции в согласованную дату.</p></li>
+      <li><i>05</i><h3>Монтаж и уборка</h3><p>Устанавливают, проверяют створки и убирают за собой.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="calc">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono num">05 / Расчёт</span><h2>Соберите заявку за минуту</h2></div>
+      <p>Ответьте на пять вопросов — справа сразу появится эскиз проёма, а текст заявки уйдёт в WhatsApp. Точную стоимость назовут после замера.</p>
+    </div>
+    <form class="calc" id="quiz" onsubmit="return false">
+      <div>
+        <fieldset class="q"><legend><span class="mono">1</span>Что остекляем?</legend><div class="chips" data-k="obj">
+          <label class="chip"><input type="radio" name="obj" value="Окна в квартире" checked><span>Окна в квартире</span></label>
+          <label class="chip"><input type="radio" name="obj" value="Окна в доме / коттедже"><span>Дом или коттедж</span></label>
+          <label class="chip"><input type="radio" name="obj" value="Балкон / лоджия"><span>Балкон или лоджия</span></label>
+          <label class="chip"><input type="radio" name="obj" value="Входная группа"><span>Входная группа</span></label>
+          <label class="chip"><input type="radio" name="obj" value="Веранда / пристройка"><span>Веранда, пристройка</span></label>
+          <label class="chip"><input type="radio" name="obj" value="Ремонт окон"><span>Ремонт окон</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><span class="mono">2</span>Профиль</legend><div class="chips">
+          <label class="chip"><input type="radio" name="prof" value="Пластик" checked><span>Пластик</span></label>
+          <label class="chip"><input type="radio" name="prof" value="Алюминий"><span>Алюминий</span></label>
+          <label class="chip"><input type="radio" name="prof" value="Дерево"><span>Дерево</span></label>
+          <label class="chip"><input type="radio" name="prof" value="Пока не знаю, нужна консультация"><span>Не знаю, подскажите</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><span class="mono">3</span>Тёплое или холодное?</legend><div class="chips">
+          <label class="chip"><input type="radio" name="temp" value="Тёплое (со стеклопакетом)" checked><span>Тёплое, со стеклопакетом</span></label>
+          <label class="chip"><input type="radio" name="temp" value="Холодное (без стеклопакета)"><span>Холодное</span></label>
+          <label class="chip"><input type="radio" name="temp" value="Не знаю"><span>Не знаю</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><span class="mono">4</span>Сколько окон или секций?</legend>
+          <div class="rng"><input type="range" id="n" name="n" min="1" max="12" value="3" aria-label="Количество окон или секций"><output id="nOut" for="n">3</output></div>
+        </fieldset>
+        <fieldset class="q"><legend><span class="mono">5</span>Ещё нужно</legend><div class="chips">
+          <label class="chip"><input type="checkbox" name="ext" value="отделка балкона"><span>Отделка балкона</span></label>
+          <label class="chip"><input type="checkbox" name="ext" value="двери в пол"><span>Двери в пол</span></label>
+          <label class="chip"><input type="checkbox" name="ext" value="доставка"><span>Доставка</span></label>
+          <label class="chip"><input type="checkbox" name="ext" value="хочу сразу на замер"><span>Сразу на замер</span></label>
+        </div></fieldset>
+        <fieldset class="q"><legend><span class="mono">6</span>Куда и как к вам обращаться</legend>
+          <div class="fld"><label>Район или посёлок<input name="place" autocomplete="address-level2" placeholder="например, Советский район"></label><label>Имя<input name="name" autocomplete="given-name"></label></div>
+        </fieldset>
+      </div>
+      <aside class="sheet" aria-live="polite">
+        <div class="sheet-h"><span class="mono">Эскиз проёма</span><span class="mono" id="sk">лист 1</span></div>
+        <svg id="draw" viewBox="0 0 420 270" role="img" aria-label="Эскиз выбранного остекления"></svg>
+        <ul class="sum" id="sum"></ul>
+        <a class="btn btn-main" id="send" href="https://wa.me/79655832337" target="_blank" rel="noopener">Отправить заявку в WhatsApp</a>
+        <small>Без цен на сайте: стоимость зависит от размеров проёмов и считается после замера.</small>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh" data-r><div><span class="mono num">06 / Контакты</span><h2>На связи в&nbsp;любое время</h2></div><p>Работают по Казани, привозят конструкции сами. Удобнее всего прислать фото проёмов в WhatsApp.</p></div>
+    <div class="cont">
+      <div class="clock" data-r>
+        <svg width="260" height="260" viewBox="0 0 260 260" aria-hidden="true"><circle cx="130" cy="130" r="110" fill="none" stroke="#fff" stroke-width="16"/><path d="M130 60v70l50 30" stroke="#fff" stroke-width="16" fill="none"/></svg>
+        <span class="mono">Режим работы</span>
+        <div><b>Круглосуточно, без выходных</b><p style="margin-top:14px">В 2ГИС указан круглосуточный режим: звоните, когда удобно вам.</p></div>
+        <span class="status" data-status style="align-self:flex-start"></span>
+      </div>
+      <ul class="clist" data-r>
+        <li><span class="mono">Телефон</span><a href="tel:+79655832337">+7&nbsp;965&nbsp;583-23-37</a></li>
+        <li><span class="mono">WhatsApp</span><a href="https://wa.me/79655832337" target="_blank" rel="noopener">Написать в WhatsApp</a></li>
+        <li><span class="mono">ВКонтакте</span><a href="https://vk.ru/oknakazani1616" target="_blank" rel="noopener">vk.ru/oknakazani1616</a></li>
+        <li><span class="mono">2ГИС</span><a href="https://2gis.ru/kazan/firm/70000001102825986" target="_blank" rel="noopener">Карточка и отзывы</a></li>
+        <li><span class="mono">География</span><span>Казань</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div data-r><h2>Пришлите размеры проёмов — начнём с&nbsp;замера</h2><p>Квартира, балкон или целый коттедж: один звонок, и дальше всё по договору.</p></div>
+    <div class="cta" data-r>
+      <a class="btn btn-main" href="tel:+79655832337">Позвонить</a>
+      <a class="btn btn-wa" href="#calc">Рассчитать стоимость</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Окна Казани · остекление и окна · Казань</span><span>Демо-концепт по данным 2ГИС, не официальный сайт</span></div></footer>
+
+<div class="fab"><a class="f1" href="tel:+79655832337"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Позвонить</a><a class="f2" href="#calc">Расчёт</a></div>
+
+<script>
+(function(){
+  var f=document.getElementById('quiz'),svg=document.getElementById('draw'),sum=document.getElementById('sum'),send=document.getElementById('send'),nO=document.getElementById('nOut'),sk=document.getElementById('sk');
+  var col={'Пластик':'#f4f1ec','Алюминий':'#3b3632','Дерево':'#8a5a3a'};
+  function v(n){var e=f.querySelector('[name="'+n+'"]:checked');return e?e.value:''}
+  function draw(obj,prof,temp,n){
+    var c=col[prof]||'#cfc7bc',stroke=prof==='Пластик'?'#8c8378':'#1d1a17';
+    var W=360,H=obj.indexOf('Балкон')===0?120:obj.indexOf('Веранда')===0||obj.indexOf('Входная')===0?190:160;
+    var x0=30,y0=40+(190-H)/2,sw=W/n,s='';
+    s+='<defs><linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cfe0ea"/><stop offset="1" stop-color="#9ebccc"/></linearGradient></defs>';
+    s+='<rect x="'+x0+'" y="'+y0+'" width="'+W+'" height="'+H+'" fill="url(#gl)" stroke="'+stroke+'" stroke-width="1.5"/>';
+    for(var i=0;i<n;i++){var x=x0+i*sw;
+      s+='<rect x="'+(x+4)+'" y="'+(y0+4)+'" width="'+(sw-8)+'" height="'+(H-8)+'" fill="none" stroke="'+c+'" stroke-width="7"/>';
+      s+='<rect x="'+(x+0.5)+'" y="'+(y0+0.5)+'" width="'+(sw-1)+'" height="'+(H-1)+'" fill="none" stroke="'+stroke+'" stroke-width=".8"/>';
+      if(n<=8&&i%2===0)s+='<path d="M'+(x+10)+' '+(y0+H/2)+'L'+(x+sw-10)+' '+(y0+10)+'M'+(x+10)+' '+(y0+H/2)+'L'+(x+sw-10)+' '+(y0+H-10)+'" stroke="'+stroke+'" stroke-width=".7" stroke-dasharray="4 3" fill="none"/>';
+    }
+    s+='<path d="M'+(x0+16)+' '+(y0+H-14)+'l40 -50M'+(x0+30)+' '+(y0+H-14)+'l26 -32" stroke="#fff" stroke-width="2" opacity=".7"/>';
+    if(obj.indexOf('Входная')===0||obj.indexOf('Веранда')===0)s+='<line x1="10" y1="'+(y0+H)+'" x2="410" y2="'+(y0+H)+'" stroke="#1d1a17" stroke-width="2"/>';
+    else s+='<rect x="'+(x0-8)+'" y="'+(y0+H)+'" width="'+(W+16)+'" height="8" fill="#e9e3d9" stroke="#1d1a17" stroke-width=".8"/>';
+    var ty=y0-16;
+    s+='<path d="M'+x0+' '+ty+'H'+(x0+W)+'M'+x0+' '+(ty-6)+'v12M'+(x0+W)+' '+(ty-6)+'v12" stroke="#6f675d" stroke-width="1"/>';
+    s+='<text x="210" y="'+(ty-8)+'" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6f675d">'+n+' '+(n===1?'СЕКЦИЯ':n<5?'СЕКЦИИ':'СЕКЦИЙ')+' · '+prof.split(',')[0].toUpperCase()+'</text>';
+    s+='<text x="210" y="262" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#6f675d">'+obj.toUpperCase()+' · '+(temp.indexOf('Тёп')===0?'ТЁПЛОЕ':temp.indexOf('Хол')===0?'ХОЛОДНОЕ':'КОНТУР УТОЧНИТЬ')+'</text>';
+    svg.innerHTML=s;
+  }
+  function upd(){
+    var obj=v('obj'),prof=v('prof'),temp=v('temp'),n=+f.n.value,ext=[].map.call(f.querySelectorAll('[name="ext"]:checked'),function(e){return e.value});
+    var place=f.place.value.trim(),name=f.name.value.trim();
+    nO.textContent=n===12?'12+':n;sk.textContent=prof==='Пластик'?'ПВХ':prof==='Алюминий'?'AL':prof==='Дерево'?'дерево':'?';
+    draw(obj,prof.indexOf('Пока')===0?'профиль уточнить':prof,temp,n);
+    var rows=[['Объект',obj],['Профиль',prof.indexOf('Пока')===0?'нужна консультация':prof],['Контур',temp],['Окон / секций',n===12?'12 и больше':n]];
+    if(ext.length)rows.push(['Ещё',ext.join(', ')]);if(place)rows.push(['Район',place]);
+    sum.innerHTML=rows.map(function(r){return '<li><span>'+r[0]+'</span><span>'+String(r[1]).replace(/</g,'&lt;')+'</span></li>'}).join('');
+    var t='Здравствуйте'+(name?', меня зовут '+name:'')+'! Хочу рассчитать остекление.\n'+rows.map(function(r){return r[0]+': '+r[1]}).join('\n')+'\nПодскажите стоимость и когда возможен замер.';
+    send.href='https://wa.me/79655832337?text='+encodeURIComponent(t);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

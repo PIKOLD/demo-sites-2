@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Уют — ночлег у трассы М4 в Батайске</title><meta property="og:type" content="website"><meta property="og:title" content="Уют — ночлег у трассы М4 в Батайске"><meta property="og:description" content="Гостевой дом «Уют» в Батайске, 10-я линия, 802: чистые номера и коттедж, закрытая парковка, кондиционер, Wi-Fi. Рядом с трассой М4, круглосуточно."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/uyut/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Гостевой дом «Уют» в Батайске, 10-я линия, 802: чистые номера и коттедж, закрытая парковка, кондиционер, Wi-Fi. Рядом с трассой М4, круглосуточно.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"></noscript>
+<style>
+:root{
+  --ink:#191c1d;--muted:#555b58;--paper:#f7f3ec;--cream:#efe7d9;--line:#d9cfbf;
+  --sign:#0d5a42;--sign-d:#09432f;--asph:#1f2427;--asph2:#2a3034;--lamp:#f0b93c;--white:#fff;
+  --r:14px;--shadow:0 18px 40px -22px rgba(20,30,25,.45);
+  --disp:'Oswald','Arial Narrow',sans-serif;--body:'Onest',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lamp);outline-offset:3px;border-radius:6px}
+.wrap{width:min(100% - 32px,1320px);margin-inline:auto}
+.demo{background:var(--asph);color:#d8dcd9;font:500 12px/1.4 var(--mono);text-align:center;padding:8px 16px;letter-spacing:.02em}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase}
+
+/* sign plate */
+.plate{display:inline-flex;align-items:center;gap:.5em;background:var(--sign);color:#fff;border-radius:10px;padding:6px 14px 7px;box-shadow:inset 0 0 0 2px var(--sign),inset 0 0 0 4px #fff;font:600 22px/1 var(--disp);letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.plate small{font:500 11px/1.1 var(--mono);letter-spacing:.08em;opacity:.85}
+
+header.top{position:sticky;top:0;z-index:20;background:rgba(247,243,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.top nav{display:flex;gap:26px;font-size:15px}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--sign)}
+.tel{font:600 17px/1 var(--body);text-decoration:none;white-space:nowrap}
+.tel:hover{color:var(--sign)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;font:600 16px/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.b-sign{background:var(--sign);color:#fff;box-shadow:0 10px 24px -12px var(--sign)}
+.b-sign:hover{background:var(--sign-d)}
+.b-wa{background:#fff;color:var(--ink);border-color:var(--ink)}
+.b-wa:hover{background:var(--ink);color:#fff}
+.b-ghost{background:transparent;color:var(--ink);border-color:var(--line);min-height:46px;padding:0 18px;font-size:15px}
+.b-ghost:hover{border-color:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* hero */
+.hero{padding:clamp(28px,4vw,56px) 0 clamp(40px,5vw,72px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(28px,4vw,64px);align-items:center}
+.kick{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;color:var(--muted);margin-bottom:22px}
+h1{font:700 clamp(2.9rem,6.2vw,6.4rem)/.92 var(--disp);text-transform:uppercase;letter-spacing:-.005em}
+h1 .m4{display:inline-block;background:var(--sign);color:#fff;border-radius:.14em;padding:.02em .16em .04em;box-shadow:inset 0 0 0 .045em var(--sign),inset 0 0 0 .075em #fff;font-size:.86em;vertical-align:.04em}
+.lead{max-width:34ch;font-size:clamp(17px,1.35vw,20px);color:#333836;margin:24px 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta2{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:500}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#2a9d62;box-shadow:0 0 0 4px rgba(42,157,98,.18)}
+.hero-pic{position:relative}
+.hero-pic .ph{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.3}
+.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.post{position:absolute;left:-26px;bottom:34px;display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.post .plate{font-size:30px;padding:10px 18px 12px}
+.post .pole{width:10px;height:44px;margin-left:28px;background:linear-gradient(90deg,#9aa3a0,#d9dedc,#8b9491)}
+.score{position:absolute;right:18px;top:18px;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center}
+.score b{font:700 34px/1 var(--disp)}
+.score span{font-size:13px;line-height:1.3;color:var(--muted)}
+
+/* road strip */
+.road{background:var(--asph);color:#e9ece9;overflow:hidden}
+.road .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative}
+.road .wrap::before{content:"";position:absolute;left:0;right:0;top:50%;height:4px;background:repeating-linear-gradient(90deg,#f2f2ee 0 38px,transparent 38px 70px);opacity:.25;transform:translateY(-50%)}
+.road div{position:relative;padding:26px 18px 26px 0;display:flex;gap:12px;align-items:baseline}
+.road b{font:600 clamp(19px,1.8vw,24px)/1.1 var(--disp);text-transform:uppercase;letter-spacing:.02em;background:var(--asph);padding-right:10px}
+.road i{font-style:normal;font:500 11px var(--mono);color:var(--lamp);background:var(--asph);padding-right:6px}
+
+/* section heads */
+section{padding:clamp(64px,8vw,120px) 0}
+.sh{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+h2{font:700 clamp(2.2rem,4.4vw,4.2rem)/.98 var(--disp);text-transform:uppercase}
+.sh p{color:var(--muted);max-width:46ch}
+.mono.k{color:var(--sign);display:block;margin-bottom:14px}
+
+/* rooms */
+.rooms{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:minmax(0,auto);gap:18px}
+.fig{position:relative;border-radius:var(--r);overflow:hidden;background:var(--cream);margin:0}
+.fig img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.fig:hover img{transform:scale(1.03)}
+.fig figcaption{position:absolute;left:12px;bottom:12px;background:rgba(25,28,29,.82);color:#fff;font:500 12px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;padding:8px 10px;border-radius:8px}
+.r1{grid-column:1/8;aspect-ratio:4/3}
+.r2{grid-column:8/13}
+.r2 img{object-position:50% 60%}
+.r3{grid-column:1/4;aspect-ratio:3/4}
+.r4{grid-column:4/7;aspect-ratio:3/4}
+.r5{grid-column:7/13}
+.amen{grid-column:1/13;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:14px}
+.amen div{padding:22px 18px 22px 0;border-bottom:1px solid var(--line)}
+.amen b{display:block;font:600 21px/1.15 var(--disp);text-transform:uppercase;margin-bottom:6px}
+.amen span{font-size:15px;color:var(--muted)}
+
+/* praise */
+.praise{background:var(--cream)}
+.pg{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:clamp(32px,5vw,80px)}
+.big{font:700 clamp(7rem,14vw,12rem)/.8 var(--disp);color:var(--sign);letter-spacing:-.02em}
+.big-s{margin-top:18px;color:var(--muted);max-width:28ch}
+.big-s a{color:var(--sign);font-weight:600}
+.pl{list-style:none;padding:0;counter-reset:p}
+.pl li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;padding:26px 0;border-top:1px solid #cdbfa9}
+.pl li:last-child{border-bottom:1px solid #cdbfa9}
+.pl li::before{counter-increment:p;content:"0" counter(p);font:500 14px/1.9 var(--mono);color:var(--sign)}
+.pl h3{font:600 clamp(22px,2.2vw,30px)/1.1 var(--disp);text-transform:uppercase;margin-bottom:8px}
+.pl p{color:#3e4441;max-width:56ch}
+
+/* booking */
+.book{background:var(--asph);color:#eef0ee;position:relative;overflow:hidden}
+.book::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,var(--lamp) 0 46px,transparent 46px 84px);opacity:.75}
+.book h2{color:#fff}
+.book .sh p{color:#b8beba}
+.book .mono.k{color:var(--lamp)}
+.bg{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.q{display:grid;gap:26px}
+fieldset{border:0;padding:0;min-width:0}
+legend{font:600 20px/1.2 var(--disp);text-transform:uppercase;letter-spacing:.02em;margin-bottom:12px;display:flex;gap:12px;align-items:baseline}
+legend i{font:500 12px var(--mono);font-style:normal;color:var(--lamp)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:10px;border:1.5px solid #4a5357;background:var(--asph2);font-size:15.5px;transition:background .2s,border-color .2s,color .2s}
+.chip:hover span{border-color:#8b9692}
+.chip input:checked+span{background:var(--sign);border-color:#fff;color:#fff;box-shadow:inset 0 0 0 2px var(--sign)}
+.chip input:focus-visible+span{outline:3px solid var(--lamp);outline-offset:2px}
+.date{display:none;margin-top:12px}
+.date.on{display:block}
+.date input,.fld input{font:500 16px var(--body);min-height:48px;padding:0 14px;border-radius:10px;border:1.5px solid #4a5357;background:var(--asph2);color:#fff;color-scheme:dark;width:min(100%,280px)}
+.fld label{display:block;font:600 20px/1.2 var(--disp);text-transform:uppercase;margin-bottom:12px}
+.ticket{position:sticky;top:90px;background:var(--paper);color:var(--ink);border-radius:18px;padding:26px;box-shadow:0 30px 60px -30px #000}
+.ticket::before{content:"";position:absolute;left:18px;right:18px;top:68px;border-top:2px dashed var(--line)}
+.ticket .plate{font-size:18px}
+.ticket dl{margin:42px 0 20px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 16px;font-size:15.5px}
+.ticket dt{color:var(--muted)}
+.ticket dd{font-weight:600;text-align:right}
+.ticket .btn{width:100%}
+.ticket .alt{display:block;text-align:center;margin-top:14px;font-size:14.5px;color:var(--muted)}
+.ticket .alt a{color:var(--sign);font-weight:600}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;position:relative;counter-reset:s}
+.steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:3px;background:repeating-linear-gradient(90deg,var(--ink) 0 22px,transparent 22px 36px)}
+.step{position:relative;padding-right:22px}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--paper);border:3px solid var(--ink);font:700 22px/1 var(--disp);margin-bottom:20px;position:relative}
+.step:last-child::before{background:var(--sign);border-color:var(--sign);color:#fff}
+.step h3{font:600 22px/1.1 var(--disp);text-transform:uppercase;margin-bottom:8px}
+.step p{font-size:15.5px;color:var(--muted)}
+
+/* where */
+.where{background:var(--white);border-top:1px solid var(--line)}
+.wg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:clamp(24px,4vw,56px);align-items:stretch}
+.info{display:grid;gap:22px;align-content:start}
+.info .row{border-top:1px solid var(--line);padding-top:16px}
+.info .row .mono{color:var(--muted);display:block;margin-bottom:4px}
+.info .val{font:600 clamp(21px,2vw,27px)/1.2 var(--disp);text-transform:uppercase}
+.info .val a{text-decoration:none}
+.info .val a:hover{color:var(--sign)}
+.map{border-radius:18px;overflow:hidden;min-height:420px;background:var(--cream);box-shadow:var(--shadow)}
+.map iframe{display:block;width:100%;height:100%;min-height:420px;border:0}
+.annex{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:18px}
+
+/* final */
+.final{background:var(--sign);color:#fff;padding:clamp(64px,8vw,110px) 0;position:relative;overflow:hidden}
+.final .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:end;position:relative}
+.final h2{font-size:clamp(2.4rem,5.4vw,5.4rem)}
+.final p{color:#cfe4da;margin-top:16px;max-width:40ch}
+.final .cta{justify-content:flex-end}
+.final .b-wa{background:transparent;color:#fff;border-color:#fff}
+.final .b-wa:hover{background:#fff;color:var(--sign)}
+.final .b-lamp{background:var(--lamp);color:var(--ink)}
+.final .b-lamp:hover{background:#ffd06a}
+.final::before{content:"";position:absolute;inset:14px;border:3px solid rgba(255,255,255,.9);border-radius:20px;pointer-events:none}
+footer{background:var(--asph);color:#9aa29e;font-size:14px;padding:26px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+footer a{color:#dfe3e0}
+.fcall{display:none}
+
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}.js [data-r]{opacity:1;transform:none}}
+
+@media (min-width:1700px){body{font-size:18px}}
+@media (max-width:1100px){
+  .top nav{display:none}
+  .road .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .road .wrap::before{display:none}
+  .amen{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:34px}
+  .steps::before{display:none}
+}
+@media (max-width:900px){
+  .hero .wrap,.sh,.pg,.bg,.wg,.final .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-pic{order:-1}
+  .hero-pic .ph{aspect-ratio:16/11}
+  .post{left:14px;bottom:14px}
+  .post .plate{font-size:22px;padding:8px 14px 9px}
+  .post .pole{display:none}
+  .ticket{position:relative;top:0}
+  .final .cta{justify-content:flex-start}
+  .r1{grid-column:1/13}
+  .r2{grid-column:span 6;aspect-ratio:3/4}
+  .r3{grid-column:span 6}
+  .r4{grid-column:span 5}
+  .r5{grid-column:span 7}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .tel{display:none}
+  .hero{padding-top:16px}
+  .score{right:10px;top:10px;padding:8px 12px}
+  .score b{font-size:26px}
+  .lead{margin:18px 0 22px}
+  .cta .btn{flex:1 1 100%}
+  .cta2 .btn{flex:1 1 calc(50% - 5px)}
+  .road .wrap{grid-template-columns:minmax(0,1fr)}
+  .road div{padding:14px 0;border-bottom:1px solid #394045}
+  .rooms{gap:10px}
+  .amen{grid-template-columns:minmax(0,1fr)}
+  .pl li{grid-template-columns:44px minmax(0,1fr);gap:10px}
+  .steps{grid-template-columns:minmax(0,1fr);row-gap:22px}
+  .step{display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:16px;padding:0}
+  .step::before{margin:0;grid-row:span 2}
+  .ticket{padding:22px 18px}
+  .ticket dl{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}
+  .annex{grid-template-columns:minmax(0,1fr)}
+  .map,.map iframe{min-height:320px}
+  .final::before{inset:8px}
+  .final .cta .btn{flex:1 1 100%}
+  .fcall{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:30;min-height:56px;border-radius:14px;background:var(--sign);color:#fff;font:600 17px/1 var(--body);align-items:center;justify-content:center;gap:10px;text-decoration:none;box-shadow:0 14px 30px -10px rgba(0,0,0,.55),inset 0 0 0 2px var(--sign),inset 0 0 0 4px #fff}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="plate" href="#top" aria-label="Уют — в начало">Уют <small>Батайск</small></a>
+    <nav aria-label="Разделы">
+      <a href="#nomera">Номера</a><a href="#otzyvy">Отзывы</a><a href="#bron">Бронь</a><a href="#kontakty">Как доехать</a>
+    </nav>
+    <a class="tel" href="tel:+79508577558">+7&nbsp;950&nbsp;857-75-58</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-top:clamp(24px,3.4vw,48px)">
+  <div class="wrap">
+    <div>
+      <div class="kick"><span class="mono">Батайск · 10-я линия, 802</span><span class="status" data-status>Открыто круглосуточно</span></div>
+      <h1>Ночлег у&nbsp;трассы <span class="m4">М4</span></h1>
+      <p class="lead">Гостевой дом «Уют»: чистый номер, выглаженное бельё, кондиционер и закрытая парковка во дворе. Заселяем в любое время суток.</p>
+      <div class="cta">
+        <a class="btn b-sign" href="#bron">Забронировать ночь
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn b-wa" href="https://wa.me/79508577558?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D1%82%D1%8C%2C%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%BB%D0%B8%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%20%D0%B2%20%C2%AB%D0%A3%D1%8E%D1%82%D0%B5%C2%BB." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3z"/></svg>
+          Написать в WhatsApp</a>
+      </div>
+      <div class="cta2">
+        <a class="btn b-ghost" href="tel:+79508577558">Позвонить</a>
+        <a class="btn b-ghost" href="https://yandex.ru/maps/?rtext=~47.081139,39.762225" target="_blank" rel="noopener">Маршрут от вас</a>
+      </div>
+    </div>
+    <div class="hero-pic">
+      <div class="ph"><img src="img/p3.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1280w" sizes="(max-width:900px) 100vw, 48vw" width="1280" height="960" alt="Гостевой дом «Уют»: кирпичный дом, навес и столы во дворе" fetchpriority="high"></div>
+      <div class="post" aria-hidden="true"><span class="plate">Уют →</span><span class="pole"></span></div>
+      <div class="score"><b>4,3</b><span>76 оценок<br>в 2ГИС</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="road" aria-label="Коротко">
+  <div class="wrap">
+    <div><i>01</i><b>Рядом с трассой М4</b></div>
+    <div><i>02</i><b>Закрытый двор и парковка</b></div>
+    <div><i>03</i><b>Можно с животными</b></div>
+    <div><i>04</i><b>Открыто 24/7</b></div>
+  </div>
+</div>
+
+<section id="nomera">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono k">Номера и коттедж</span><h2>Всё, чтобы выспаться с&nbsp;дороги</h2></div>
+      <p>Можно снять номер или коттедж целиком. В комнатах — кровати со свежим бельём, кондиционер и телевизор, есть общая кухня, а поесть можно за столами во дворе.</p>
+    </div>
+    <div class="rooms">
+      <figure class="fig r1" data-r><img loading="lazy" src="img/p1-m.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1280w" sizes="(max-width:900px) 100vw, 58vw" width="1280" height="960" alt="Номер под скатной крышей: четыре кровати и кондиционер"><figcaption>Номер на мансарде</figcaption></figure>
+      <figure class="fig r2" data-r><img loading="lazy" src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 960w" sizes="(max-width:900px) 50vw, 40vw" width="960" height="1280" alt="Кухня с плитой, холодильником и обеденным столом"><figcaption>Кухня</figcaption></figure>
+      <figure class="fig r3" data-r><img loading="lazy" src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 960w" sizes="(max-width:900px) 50vw, 32vw" width="960" height="1280" alt="Номер с тремя застеленными кроватями и тумбочками"><figcaption>Номер</figcaption></figure>
+      <figure class="fig r4" data-r><img loading="lazy" src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 960w" sizes="(max-width:900px) 50vw, 32vw" width="960" height="1280" alt="Санузел с раковиной, унитазом и окном"><figcaption>Санузел</figcaption></figure>
+      <figure class="fig r5" data-r><img loading="lazy" src="img/p6-m.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1280w" sizes="(max-width:900px) 100vw, 48vw" width="1280" height="960" alt="Гостевой корпус с верандой и площадкой во дворе" style="object-position:40% 50%"><figcaption>Корпус во дворе</figcaption></figure>
+      <div class="amen" data-r>
+        <div><b>Кондиционер</b><span>в номерах</span></div>
+        <div><b>Wi-Fi</b><span>для гостей</span></div>
+        <div><b>Своя парковка</b><span>на закрытой территории</span></div>
+        <div><b>Оплата</b><span>наличными или переводом с карты</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="praise" id="otzyvy">
+  <div class="wrap pg">
+    <div data-r>
+      <span class="mono k">Отзывы гостей</span>
+      <div class="big">4,3</div>
+      <p class="big-s">Средняя оценка по 76 оценкам в 2ГИС. Ниже — о чём гости пишут чаще всего. <a href="https://2gis.ru/rostov/firm/70000001052858944" target="_blank" rel="noopener">Все отзывы</a></p>
+    </div>
+    <ol class="pl">
+      <li data-r><div><h3>Чисто и свежее бельё</h3><p>Гости раз за разом отмечают чистоту в номере, выглаженное постельное и удобные кровати — то, ради чего и останавливаются после долгой дороги.</p></div></li>
+      <li data-r><div><h3>Удобно с трассы</h3><p>Пишут, что место удобно расположено относительно М4: свернули, выспались и утром поехали дальше.</p></div></li>
+      <li data-r><div><h3>Закрытый двор и быстрый ответ</h3><p>Отмечают закрытую территорию с парковкой, быстрый ответ на бронь и то, что хозяин встречает гостей сам. В номере есть чайник, микроволновка и холодильник.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="book" id="bron">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono k">Бронь за минуту</span><h2>Соберите заявку на&nbsp;ночь</h2></div>
+      <p>Ответьте на пару вопросов — справа сложится готовое сообщение. Отправьте его в WhatsApp, и вам подтвердят свободный номер.</p>
+    </div>
+    <div class="bg">
+      <form class="q" id="q" onsubmit="return false">
+        <fieldset>
+          <legend><i>01</i>Когда заезд</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="d" value="сегодня" checked><span>Сегодня</span></label>
+            <label class="chip"><input type="radio" name="d" value="завтра"><span>Завтра</span></label>
+            <label class="chip"><input type="radio" name="d" value="other"><span>Другая дата</span></label>
+          </div>
+          <div class="date" id="dateBox"><input type="date" id="dt" aria-label="Дата заезда"></div>
+        </fieldset>
+        <fieldset>
+          <legend><i>02</i>Во сколько приедете</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="t" value="днём"><span>Днём</span></label>
+            <label class="chip"><input type="radio" name="t" value="вечером" checked><span>Вечером</span></label>
+            <label class="chip"><input type="radio" name="t" value="ночью, после 23:00"><span>После 23:00</span></label>
+            <label class="chip"><input type="radio" name="t" value="пока не знаю, в дороге"><span>Пока в дороге</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><i>03</i>Сколько гостей</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="g" value="1"><span>1</span></label>
+            <label class="chip"><input type="radio" name="g" value="2" checked><span>2</span></label>
+            <label class="chip"><input type="radio" name="g" value="3"><span>3</span></label>
+            <label class="chip"><input type="radio" name="g" value="4 и больше"><span>4 и больше</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><i>04</i>Что нужно</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="w" value="номер" checked><span>Номер</span></label>
+            <label class="chip"><input type="radio" name="w" value="коттедж целиком"><span>Коттедж целиком</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><i>05</i>Ещё</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="x" value="приеду на машине, нужна парковка" checked><span>Нужна парковка</span></label>
+            <label class="chip"><input type="checkbox" name="x" value="буду с питомцем"><span>С питомцем</span></label>
+            <label class="chip"><input type="checkbox" name="x" value="с ребёнком"><span>С ребёнком</span></label>
+          </div>
+        </fieldset>
+        <div class="fld"><label for="nm">Как к вам обращаться</label><input id="nm" type="text" autocomplete="given-name" placeholder="Например, Алексей"></div>
+      </form>
+      <aside class="ticket" data-r aria-live="polite">
+        <span class="plate">Уют <small>заявка</small></span>
+        <dl>
+          <dt>Заезд</dt><dd id="oD">сегодня</dd>
+          <dt>Приезд</dt><dd id="oT">вечером</dd>
+          <dt>Гостей</dt><dd id="oG">2</dd>
+          <dt>Нужно</dt><dd id="oW">номер</dd>
+          <dt>Ещё</dt><dd id="oX">парковка</dd>
+        </dl>
+        <a class="btn b-sign" id="send" href="#" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+        <span class="alt">или позвоните: <a href="tel:+79508577558">+7&nbsp;950&nbsp;857-75-58</a></span>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="kak">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono k">Как заселиться</span><h2>От заявки до утра</h2></div>
+      <p>Обычный порядок для тех, кто едет по трассе и ищет, где переночевать.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-r><h3>Заявка</h3><p>Пишете в WhatsApp или звоните — в любое время.</p></div>
+      <div class="step" data-r><h3>Подтверждение</h3><p>Вам отвечают, свободен ли номер на нужную ночь.</p></div>
+      <div class="step" data-r><h3>Дорога</h3><p>Строите маршрут до 10-й линии, 802 в Батайске.</p></div>
+      <div class="step" data-r><h3>Заселение</h3><p>Встречают на месте, показывают номер и двор.</p></div>
+      <div class="step" data-r><h3>Утро</h3><p>Выспались — и снова на трассу.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="where" id="kontakty">
+  <div class="wrap">
+    <div class="sh" data-r>
+      <div><span class="mono k">Как доехать</span><h2>Батайск, 10-я линия, 802</h2></div>
+      <p>Гостевой дом на закрытой территории в Батайском городском округе, рядом с трассой М4.</p>
+    </div>
+    <div class="wg">
+      <div class="info" data-r>
+        <div class="row"><span class="mono">Телефон и WhatsApp</span><div class="val"><a href="tel:+79508577558">+7&nbsp;950&nbsp;857-75-58</a></div></div>
+        <div class="row"><span class="mono">Режим</span><div class="val">Круглосуточно</div><span class="status" data-status style="margin-top:6px"></span></div>
+        <div class="row"><span class="mono">Оплата</span><div class="val">Наличные, перевод с&nbsp;карты</div></div>
+        <div class="row cta2" style="margin:0">
+          <a class="btn b-sign" href="https://yandex.ru/maps/?rtext=~47.081139,39.762225" target="_blank" rel="noopener">Построить маршрут</a>
+          <a class="btn b-ghost" href="https://2gis.ru/rostov/firm/70000001052858944" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+        </div>
+      </div>
+      <div class="map" data-r><iframe loading="lazy" title="Гостевой дом «Уют» на карте" src="https://yandex.ru/map-widget/v1/?ll=39.762225,47.081139&z=16&pt=39.762225,47.081139,pm2rdm"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="final">
+  <div class="wrap">
+    <div data-r>
+      <h2>Позади сотни километров?</h2>
+      <p>Сверните к «Уюту» в Батайске: чистая постель, тёплый душ и машина во дворе до утра.</p>
+    </div>
+    <div class="cta" data-r>
+      <a class="btn b-lamp" href="#bron">Забронировать ночь</a>
+      <a class="btn b-wa" href="tel:+79508577558">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>«Уют», Батайск, 10-я линия, 802 · круглосуточно</span>
+    <span>Данные из 2ГИС · <a href="https://2gis.ru/rostov/firm/70000001052858944" target="_blank" rel="noopener">карточка</a></span>
+  </div>
+</footer>
+
+<a class="fcall" href="tel:+79508577558"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+
+<script>
+(function(){
+  var f=document.getElementById('q'),box=document.getElementById('dateBox'),dt=document.getElementById('dt'),send=document.getElementById('send');
+  var $=function(id){return document.getElementById(id)};
+  function val(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+  function fmt(s){if(!s)return'дату уточню';var p=s.split('-');return p[2]+'.'+p[1]+'.'+p[0]}
+  function upd(){
+    var d=val('d'),other=d==='other';box.classList.toggle('on',other);
+    var dd=other?fmt(dt.value):d,t=val('t'),g=val('g'),w=val('w');
+    var xs=[].map.call(f.querySelectorAll('input[name="x"]:checked'),function(e){return e.value});
+    var nm=$('nm').value.trim();
+    $('oD').textContent=dd;$('oT').textContent=t;$('oG').textContent=g;$('oW').textContent=w;
+    $('oX').textContent=xs.length?xs.map(function(s){return s.replace('приеду на машине, нужна ','')}).join(', '):'—';
+    var msg='Здравствуйте!'+(nm?' Меня зовут '+nm+'.':'')+' Хочу забронировать '+w+' в «Уюте» (Батайск).\nЗаезд: '+dd+'\nПриеду: '+t+'\nГостей: '+g+(xs.length?'\nЕщё: '+xs.join(', '):'')+'\nПодскажите, есть ли места?';
+    send.href='https://wa.me/79508577558?text='+encodeURIComponent(msg);
+  }
+  f.addEventListener('change',upd);f.addEventListener('input',upd);
+  var t=new Date();dt.min=t.toISOString().slice(0,10);
+  upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

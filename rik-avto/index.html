@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Рик-Авто — автосалон в Самаре: покупка и срочный выкуп авто</title><meta property="og:type" content="website"><meta property="og:title" content="Рик-Авто — автосалон в Самаре: покупка и срочный выкуп авто"><meta property="og:description" content="Рик-Авто, Самара, ул. Антонова-Овсеенко, 9 к3. Новые автомобили в наличии и на заказ, авто с пробегом, срочный выкуп. Ежедневно с 9:00."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/rik-avto/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Рик-Авто, Самара, ул. Антонова-Овсеенко, 9 к3. Новые автомобили в наличии и на заказ, авто с пробегом, срочный выкуп. Ежедневно с 9:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap"></noscript>
+<style>
+:root{--paper:#f1f0eb;--paper2:#e6e5de;--ink:#111316;--ink2:#2a2e33;--mute:#565d63;--line:#cfcec6;--green:#17803f;--green-d:#0f5e2d;--lime:#b8e24a;--blue:#1d3c8c;--r:6px;
+--fd:'Oswald','Arial Narrow',sans-serif;--fb:'Golos Text',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--fb);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{width:min(1360px,100% - 48px);margin-inline:auto}
+.demo{background:var(--ink);color:#d9dcd6;font:500 12.5px/1.4 var(--fm);text-align:center;padding:8px 16px;letter-spacing:.02em}
+.mono{font-family:var(--fm);font-weight:500;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo b{font:700 26px/1 var(--fd);letter-spacing:.02em;text-transform:uppercase}
+.plate{display:inline-flex;align-items:stretch;border:2px solid var(--ink);border-radius:5px;background:#fff;font:700 13px/1 var(--fm);overflow:hidden}
+.plate span{padding:6px 8px;display:flex;align-items:center}
+.plate i{font-style:normal;border-left:2px solid var(--ink);padding:3px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;gap:2px}
+.plate i:after{content:"";width:16px;height:7px;background:linear-gradient(#fff 0 33%,var(--blue) 0 66%,#d52b1e 0);border:1px solid #999}
+.nav ul{display:flex;gap:28px;list-style:none;padding:0}
+.nav ul a{text-decoration:none;font-weight:500;font-size:15px;padding:10px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+.nav ul a:hover{border-color:var(--green)}
+.nav .tel{font:600 18px/1 var(--fd);letter-spacing:.03em;text-decoration:none;white-space:nowrap}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:var(--r);font:600 16px/1.1 var(--fb);text-decoration:none;border:2px solid var(--ink);cursor:pointer;transition:transform .15s,background .2s,color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 -3px var(--ink)}
+.btn:active{transform:translateY(0);box-shadow:none}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-green{background:var(--green);border-color:var(--green);color:#fff}
+.btn-green:hover{box-shadow:0 8px 0 -3px var(--green-d)}
+.btn-line{background:transparent}
+.btn svg{width:20px;height:20px;flex:none}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(24px,3vw,56px);align-items:stretch;padding:clamp(8px,2vh,28px) 0 0}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding-bottom:18px}
+.kicker{display:flex;align-items:center;gap:12px;color:var(--mute);margin-bottom:22px}
+.kicker:before{content:"";width:34px;height:2px;background:var(--green)}
+h1{font:700 clamp(42px,5.2vw,92px)/.94 var(--fd);text-transform:uppercase;letter-spacing:-.005em;max-width:13ch}
+h1 em{font-style:normal;color:var(--green)}
+.lead{font-size:clamp(17px,1.35vw,20px);max-width:36em;margin:24px 0 28px;color:var(--ink2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px;margin-top:20px;font-size:15px}
+.sub a{font-weight:600;text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:var(--green);min-height:44px;display:inline-flex;align-items:center;gap:8px}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font:500 13px/1.3 var(--fm);color:var(--mute)}
+[data-status]:before{content:"";width:9px;height:9px;border-radius:50%;background:#a3a39b;flex:none}
+[data-status].is-open:before{background:#21a453;box-shadow:0 0 0 4px rgba(33,164,83,.18)}
+.hero-pic{position:relative;height:clamp(380px,64vh,700px);align-self:center;border-radius:var(--r);overflow:hidden;background:var(--paper2)}
+.hero-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 60%}
+.hero-pic figcaption{position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;gap:10px;align-items:end;flex-wrap:wrap}
+.tag{background:var(--paper);padding:10px 14px;border-radius:4px;font:500 12px/1.35 var(--fm);letter-spacing:.04em;text-transform:uppercase}
+.tag b{display:block;font:700 22px/1 var(--fd);letter-spacing:.02em;margin-top:3px}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink);margin-top:clamp(20px,3vh,36px)}
+.facts div{padding:16px 18px 18px 0;border-right:1px solid var(--line);margin-right:18px}
+.facts div:last-child{border:0}
+.facts small{display:block;color:var(--mute)}
+.facts strong{font:600 clamp(17px,1.4vw,21px)/1.25 var(--fd);letter-spacing:.01em}
+/* sections */
+section{padding:clamp(72px,9vw,140px) 0 0}
+.h2{font:700 clamp(36px,4.6vw,72px)/.98 var(--fd);text-transform:uppercase;max-width:16ch}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.7fr);gap:32px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+.sec-head p{color:var(--ink2);max-width:34em}
+.num{color:var(--green);display:block;margin-bottom:14px}
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);grid-template-rows:auto auto;gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,2.6vw,40px);position:relative;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--ink);transform:translateY(-3px)}
+.card h3{font:700 clamp(28px,2.6vw,42px)/1 var(--fd);text-transform:uppercase;margin:10px 0 14px}
+.card p{color:var(--ink2);max-width:32em}
+.card ul{list-style:none;padding:0;margin-top:18px;display:grid;gap:10px}
+.card li{display:flex;gap:12px;align-items:baseline}
+.card li:before{content:"";flex:none;width:10px;height:2px;background:var(--green);transform:translateY(-4px)}
+.c-buy{grid-row:span 2;display:flex;flex-direction:column}
+.c-buy .pic{margin:28px calc(-1*clamp(24px,2.6vw,40px)) calc(-1*clamp(24px,2.6vw,40px));margin-top:auto;padding-top:28px}
+.c-buy .pic img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 62%;border-radius:0 0 var(--r) var(--r)}
+.c-sell{background:var(--green);color:#fff;border-color:var(--green)}
+.c-sell p,.c-sell li{color:#eaf6ee}
+.c-sell li:before{background:var(--lime)}
+.c-sell .mono{color:var(--lime)}
+.c-sell:hover{border-color:var(--green-d)}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pay span{border:1.5px solid var(--ink);border-radius:40px;padding:7px 14px;font-weight:500;font-size:15px}
+/* brands */
+.brands{margin-top:clamp(56px,6vw,96px);border-top:2px solid var(--ink);padding-top:22px;display:grid;grid-template-columns:minmax(0,.32fr) minmax(0,1fr);gap:24px}
+.brands p{color:var(--mute)}
+.bw{display:flex;flex-wrap:wrap;gap:4px 22px;font:600 clamp(28px,3.8vw,60px)/1.08 var(--fd);text-transform:uppercase}
+.bw span:nth-child(even){color:#6d7570}
+.bw span{transition:color .2s}
+.bw span:hover{color:var(--green)}
+/* lot gallery */
+.lot{background:var(--ink);color:var(--paper);margin-top:clamp(72px,9vw,140px);padding:clamp(56px,7vw,100px) 0}
+.lot .sec-head p{color:#b9bdb6}
+.lot .num{color:var(--lime)}
+.mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,15vw,232px);gap:12px}
+.mosaic figure{margin:0;overflow:hidden;border-radius:var(--r);background:#222}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.mosaic figure:hover img{transform:scale(1.04)}
+.mosaic .big{grid-column:span 2;grid-row:span 2}
+.mosaic .wide{grid-column:span 2}
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:clamp(32px,5vw,90px);align-items:start}
+.score{position:sticky;top:24px}
+.score b{display:block;font:700 clamp(110px,13vw,200px)/.82 var(--fd);letter-spacing:-.02em}
+.score .stars{display:flex;gap:4px;margin:18px 0 8px}
+.score .stars i{width:22px;height:22px;background:var(--ink);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.score .stars i.h{background:linear-gradient(90deg,var(--ink) 30%,var(--line) 30%)}
+.score a{display:inline-flex;min-height:44px;align-items:center;font-weight:600;text-underline-offset:4px}
+.quotes{display:grid;gap:0;counter-reset:q}
+.q{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid var(--line)}
+.q:last-child{border-bottom:1px solid var(--line)}
+.q:before{counter-increment:q;content:"0" counter(q);font:600 15px/1.6 var(--fm);color:var(--green)}
+.q h3{font:600 clamp(24px,2.3vw,34px)/1.1 var(--fd);text-transform:uppercase;margin-bottom:10px}
+.q p{color:var(--ink2);max-width:40em}
+/* quiz */
+.quiz{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);gap:clamp(20px,3vw,48px);align-items:start}
+.mode{display:inline-grid;grid-template-columns:1fr 1fr;background:var(--paper2);border-radius:60px;padding:5px;margin-bottom:26px;border:1px solid var(--line)}
+.mode button{min-height:50px;padding:0 28px;border:0;border-radius:60px;background:transparent;font:600 16px var(--fb);cursor:pointer;color:var(--ink2);transition:background .2s,color .2s}
+.mode button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.qset{display:none}
+.qset.on{display:grid;gap:24px}
+fieldset{border:0;padding:0;min-width:0}
+legend{font:600 13px/1.3 var(--fm);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px;color:var(--ink2);display:flex;gap:10px}
+legend span{color:var(--green)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chips span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid var(--line);background:#fff;border-radius:var(--r);font-weight:500;font-size:15.5px;transition:border-color .15s,background .15s,color .15s;cursor:pointer}
+.chips label:hover span{border-color:var(--ink)}
+.chips input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chips input:focus-visible+span{outline:3px solid var(--blue);outline-offset:2px}
+.fld{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fld label{display:grid;gap:6px;font-size:14px;color:var(--ink2);font-weight:500}
+.fld input{min-height:50px;border:1.5px solid var(--line);border-radius:var(--r);padding:0 14px;font:500 16px var(--fb);background:#fff;color:var(--ink)}
+.fld input:focus{border-color:var(--ink);outline:none}
+.sheet{position:sticky;top:20px;background:#fff;border:2px solid var(--ink);border-radius:var(--r);padding:26px 26px 22px;box-shadow:10px 10px 0 var(--ink)}
+.sheet-h{display:flex;justify-content:space-between;align-items:center;border-bottom:2px dashed var(--line);padding-bottom:14px;margin-bottom:12px}
+.sheet-h b{font:700 24px/1 var(--fd);text-transform:uppercase}
+.sheet dl{display:grid;gap:0;font-size:15px}
+.sheet dl div{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:12px;padding:9px 0;border-bottom:1px solid #ecebe5}
+.sheet dt{color:var(--mute)}
+.sheet dd{font-weight:600;text-align:right;word-break:break-word}
+.sheet dd.e{color:#a6a69e;font-weight:400}
+.meter{height:6px;background:var(--paper2);border-radius:6px;margin:18px 0 6px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--green);transition:width .3s}
+.sheet .note{font-size:13px;color:var(--mute);margin-bottom:16px}
+.sheet .btn{width:100%}
+.sheet .alt{display:flex;justify-content:center;margin-top:8px}
+.sheet .alt a{min-height:44px;display:inline-flex;align-items:center;font-weight:600;font-size:15px;text-underline-offset:4px}
+/* steps */
+.tracks{display:grid;gap:18px}
+.track{display:grid;grid-template-columns:minmax(0,.25fr) minmax(0,1fr);gap:24px;align-items:start;border-top:2px solid var(--ink);padding-top:22px}
+.track h3{font:700 clamp(26px,2.4vw,36px)/1 var(--fd);text-transform:uppercase}
+.road{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:0;list-style:none;padding:0;counter-reset:s;position:relative}
+.road li{position:relative;padding:44px 18px 0 0;counter-increment:s}
+.road li:before{content:counter(s);position:absolute;top:0;left:0;width:30px;height:30px;border-radius:50%;background:var(--paper);border:2px solid var(--ink);font:700 13px/26px var(--fm);text-align:center;z-index:1}
+.road li:after{content:"";position:absolute;top:14px;left:30px;right:0;height:2px;background:repeating-linear-gradient(90deg,var(--ink) 0 12px,transparent 12px 20px)}
+.road li:last-child:after{display:none}
+.road li:last-child:before{background:var(--green);border-color:var(--green);color:#fff}
+.road b{display:block;font:600 19px/1.2 var(--fd);text-transform:uppercase;margin-bottom:6px}
+.road span{font-size:15px;color:var(--ink2)}
+/* contacts */
+.contacts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:16px}
+.cbox{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3vw,44px);display:grid;gap:26px;align-content:start}
+.cbox h3{font:600 13px/1 var(--fm);text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin-bottom:8px}
+.addr{font:600 clamp(26px,2.4vw,36px)/1.1 var(--fd);text-transform:uppercase}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;font-size:16px}
+.phones a{display:flex;min-height:44px;align-items:center;font:600 22px/1 var(--fd);letter-spacing:.03em;text-decoration:none}
+.phones a:hover{color:var(--green)}
+.soc{display:flex;flex-wrap:wrap;gap:8px}
+.soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid var(--ink);border-radius:40px;font-weight:600;font-size:15px;text-decoration:none;transition:background .2s,color .2s}
+.soc a:hover{background:var(--ink);color:var(--paper)}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;background:var(--paper2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+/* final */
+.final{margin-top:clamp(72px,9vw,140px);background:var(--green);color:#fff;overflow:hidden}
+.final .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center;padding:clamp(56px,7vw,110px) 0}
+.final h2{font:700 clamp(40px,5.4vw,88px)/.95 var(--fd);text-transform:uppercase}
+.final p{color:#e3f3e8;margin:20px 0 28px;max-width:30em}
+.final .btn-ink{border-color:var(--ink)}
+.final .btn-line{border-color:#fff;color:#fff}
+.final img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);transform:rotate(1.5deg);box-shadow:-14px 14px 0 var(--green-d)}
+footer{background:var(--ink);color:#a9ada6;padding:28px 0 96px;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between}
+footer a{color:#e3e5df}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;display:none;min-height:56px;padding:0 22px;border-radius:60px;background:var(--green);color:#fff;font:600 16px var(--fb);text-decoration:none;align-items:center;gap:10px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.fab svg{width:20px;height:20px}
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+@media (min-width:1700px){.hero-pic{height:min(68vh,760px)}}
+@media (max-width:1100px){
+ .nav ul{display:none}
+ .hero{grid-template-columns:minmax(0,1fr)}
+ .hero-pic{height:clamp(300px,56vw,520px);order:2}
+ .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .facts div:nth-child(2){border:0}
+ .sec-head,.brands,.praise,.quiz,.contacts,.track,.final .wrap{grid-template-columns:minmax(0,1fr)}
+ .score{position:static}
+ .sheet{position:static}
+ .svc{grid-template-columns:minmax(0,1fr)}
+ .c-buy{grid-row:auto}
+}
+@media (max-width:720px){
+ body{font-size:16px}
+ .wrap{width:calc(100% - 32px)}
+ .nav{padding:14px 0}
+ .nav .tel{display:none}
+ .logo b{font-size:23px}
+ .kicker{margin-bottom:16px}
+ h1{font-size:clamp(38px,11.2vw,56px)}
+ .lead{margin:18px 0 22px}
+ .cta .btn{flex:1 1 100%}
+ .hero-pic{height:300px;margin:0 -16px;border-radius:0}
+ .facts div{padding:14px 10px 14px 0;margin-right:10px}
+ .road{grid-template-columns:minmax(0,1fr)}
+ .road li{padding:0 0 22px 46px}
+ .road li:after{top:30px;left:14px;width:2px;height:calc(100% - 30px);right:auto;background:repeating-linear-gradient(180deg,var(--ink) 0 8px,transparent 8px 14px)}
+ .fld{grid-template-columns:minmax(0,1fr)}
+ .mode{display:grid;width:100%}
+ .mode button{padding:0 10px}
+ .sheet{box-shadow:6px 6px 0 var(--ink);padding:22px 18px}
+ .mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:132px;gap:8px}
+ .q{grid-template-columns:minmax(0,1fr);gap:6px}
+ .map,.map iframe{min-height:340px}
+ .final img{transform:none;box-shadow:none}
+ .fab{display:inline-flex}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="wrap nav">
+ <a class="logo" href="#top" aria-label="Рик-Авто, наверх"><b>Рик-Авто</b><span class="plate" aria-hidden="true"><span>САМАРА</span><i>163</i></span></a>
+ <nav aria-label="Разделы"><ul><li><a href="#svc">Купить и продать</a></li><li><a href="#lot">Площадка</a></li><li><a href="#quiz">Подбор</a></li><li><a href="#contacts">Как доехать</a></li></ul></nav>
+ <a class="tel" href="tel:+79379924401">+7 937 992-44-01</a>
+</header>
+
+<main id="top">
+<div class="wrap">
+ <div class="hero">
+  <div class="hero-txt">
+   <p class="kicker mono">Автосалон · Самара · Антонова-Овсеенко</p>
+   <h1>Купить авто или продать своё — <em>без подводных</em> камней</h1>
+   <p class="lead">Новые автомобили в&nbsp;наличии и&nbsp;на&nbsp;заказ, машины с&nbsp;пробегом и&nbsp;срочный выкуп. Покупатели пишут, что здесь рассказывают всё как есть, дают прокатиться и&nbsp;не&nbsp;пытаются «впарить».</p>
+   <div class="cta">
+    <a class="btn btn-ink" href="#quiz">Подобрать или оценить авто</a>
+    <a class="btn btn-green" href="https://wa.me/79372088080?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%A0%D0%B8%D0%BA-%D0%90%D0%B2%D1%82%D0%BE." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>Написать в WhatsApp</a>
+   </div>
+   <div class="sub">
+    <a href="tel:+79379924401"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+    <a href="https://yandex.ru/maps/?rtext=~53.211323,50.199097" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8-8-2Z"/></svg>Маршрут</a>
+    <span data-status></span>
+   </div>
+  </div>
+  <figure class="hero-pic">
+   <img src="img/p1.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1440w" sizes="(max-width:1100px) 100vw, 46vw" alt="Чёрный кроссовер BMW на площадке Рик-Авто на фоне баннера салона" width="1440" height="1080" fetchpriority="high">
+   <figcaption><span class="tag">Площадка салона<b>Антонова-Овсеенко, 9 к3</b></span></figcaption>
+  </figure>
+ </div>
+ <div class="facts">
+  <div><small>Рейтинг 2ГИС</small><strong>4,3 · 13 оценок</strong></div>
+  <div><small>Работаем</small><strong>Ежедневно с 9:00</strong></div>
+  <div><small>Оплата</small><strong>Наличные, банк, карта</strong></div>
+  <div><small>Направления</small><strong>Продажа и выкуп</strong></div>
+ </div>
+</div>
+
+<section id="svc" class="wrap">
+ <div class="sec-head" data-r>
+  <h2 class="h2"><span class="num mono">01 / Что здесь делают</span>Два пути к&nbsp;сделке</h2>
+  <p>Можно приехать за машиной, а можно — со своей. В отзывах есть и те, кто покупал здесь дважды, и те, кто дважды сдавал своё авто на продажу.</p>
+ </div>
+ <div class="svc">
+  <article class="card c-buy" data-r>
+   <span class="mono num">Покупка</span>
+   <h3>Подобрать машину</h3>
+   <p>Покажут, заведут, дадут прокатиться и объяснят всё по автомобилю. Так пишут даже те, кто покупал свою первую машину.</p>
+   <ul><li>Новые автомобили в&nbsp;наличии</li><li>Новые автомобили на&nbsp;заказ</li><li>Автомобили с&nbsp;пробегом</li></ul>
+   <div class="pic"><img src="img/p9-m.jpg" alt="Чёрный кроссовер Geely на площадке салона" width="900" height="675" loading="lazy"></div>
+  </article>
+  <article class="card c-sell" data-r>
+   <span class="mono num">Продажа</span>
+   <h3>Срочный выкуп</h3>
+   <p>Если машину долго не удаётся продать — её можно привезти сюда. Люди пишут, что расчёт наличными был в тот же визит.</p>
+   <ul><li>Выкуп автомобиля</li><li>Продажа вашего авто через салон</li></ul>
+  </article>
+  <article class="card" data-r>
+   <span class="mono num">Оплата</span>
+   <h3>Как удобно</h3>
+   <p>Покупатели пишут, что вносили предоплату переводом, а остаток — когда приезжали за машиной.</p>
+   <div class="pay"><span>Наличными</span><span>Через банк</span><span>Переводом с&nbsp;карты</span></div>
+  </article>
+ </div>
+ <div class="brands" data-r>
+  <p class="mono">Марки в&nbsp;карточке салона</p>
+  <div class="bw"><span>Audi</span><span>BMW</span><span>Chery</span><span>Chevrolet</span><span>Citroen</span><span>Daewoo</span><span>Datsun</span><span>Fiat</span><span>Ford</span><span>Geely</span><span>Great Wall</span><span>Haval</span></div>
+ </div>
+</section>
+
+<div class="lot" id="lot">
+ <div class="wrap sec-head" data-r>
+  <h2 class="h2"><span class="num mono">02 / Площадка</span>Машины, которые здесь стояли</h2>
+  <p>Кадры с&nbsp;площадки салона из&nbsp;2ГИС. Что есть сейчас — уточните в&nbsp;WhatsApp или по&nbsp;телефону.</p>
+ </div>
+ <div class="wrap mosaic" data-r>
+  <figure class="big"><img src="img/p3-m.jpg" alt="Чёрный кроссовер Toyota на площадке салона" width="900" height="675" loading="lazy" style="object-position:40% 60%"></figure>
+  <figure><img src="img/p13-m.jpg" alt="Чёрный внедорожник Jeep у баннера салона" width="900" height="675" loading="lazy"></figure>
+  <figure><img src="img/p4-m.jpg" alt="Синий кроссовер на площадке" width="900" height="675" loading="lazy"></figure>
+  <figure><img src="img/p11-m.jpg" alt="Седан Toyota цвета бронзы у баннера салона" width="900" height="675" loading="lazy"></figure>
+  <figure><img src="img/p10-m.jpg" alt="Чёрный хэтчбек Mercedes-Benz у баннера салона" width="900" height="675" loading="lazy"></figure>
+  <figure class="wide"><img src="img/p8-m.jpg" alt="Чёрный кроссовер Kia" width="900" height="675" loading="lazy" style="object-position:50% 65%"></figure>
+  <figure><img src="img/p5-m.jpg" alt="Белый кроссовер Toyota у баннера салона" width="900" height="675" loading="lazy"></figure>
+  <figure><img src="img/p6-m.jpg" alt="Белый кроссовер Mazda и мотоцикл" width="900" height="675" loading="lazy"></figure>
+ </div>
+</div>
+
+<section class="wrap" id="reviews">
+ <div class="praise">
+  <div class="score" data-r>
+   <span class="num mono">03 / За что хвалят</span>
+   <b>4,3</b>
+   <div class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="h"></i></div>
+   <p>13 оценок в&nbsp;2ГИС</p>
+   <a href="https://2gis.ru/samara/firm/70000001019314242" target="_blank" rel="noopener">Читать отзывы в&nbsp;2ГИС</a>
+  </div>
+  <div class="quotes">
+   <div class="q" data-r><div><h3>Говорят как есть</h3><p>Покупатели отмечают, что продавцы адекватные, ничего не навязывают и сделка прошла без подводных камней. Один из клиентов, объехавший перед этим много салонов и авторынок, нашёл свою машину именно здесь. С Александром, пишут, разговор без воды.</p></div></div>
+   <div class="q" data-r><div><h3>Покажут и дадут прокатиться</h3><p>Машину заводят, катают, дают сесть за руль и всё объясняют. Оформление, по словам покупателя, заняло около получаса.</p></div></div>
+   <div class="q" data-r><div><h3>Быстрые деньги за ваше авто</h3><p>Продавцы пишут, что машину забрали сразу и по хорошей цене, а всю сумму наличными отдали за двадцать минут. Тот, кто сдавал авто на продажу, говорит, что его выкупили в течение двух недель.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="wrap" id="quiz">
+ <div class="sec-head" data-r>
+  <h2 class="h2"><span class="num mono">04 / Заявка за минуту</span>Подбор или оценка</h2>
+  <p>Отметьте, что нужно, — справа сразу соберётся лист заявки. Он уйдёт в&nbsp;WhatsApp салона готовым текстом, менеджеру не придётся переспрашивать.</p>
+ </div>
+ <div class="quiz">
+  <div>
+   <div class="mode" role="group" aria-label="Что хотите сделать"><button type="button" aria-pressed="true" data-mode="buy">Хочу купить</button><button type="button" aria-pressed="false" data-mode="sell">Хочу продать</button></div>
+   <form class="qset on" id="q-buy" onsubmit="return false">
+    <fieldset><legend><span>1</span>Бюджет</legend><div class="chips" data-k="Бюджет">
+     <label><input type="radio" name="b1" value="до 1 млн ₽"><span>до 1&nbsp;млн&nbsp;₽</span></label><label><input type="radio" name="b1" value="1–2 млн ₽"><span>1–2&nbsp;млн&nbsp;₽</span></label><label><input type="radio" name="b1" value="2–3,5 млн ₽"><span>2–3,5&nbsp;млн&nbsp;₽</span></label><label><input type="radio" name="b1" value="от 3,5 млн ₽"><span>от 3,5&nbsp;млн&nbsp;₽</span></label><label><input type="radio" name="b1" value="пока не решил"><span>Пока не решил</span></label></div></fieldset>
+    <fieldset><legend><span>2</span>Какой автомобиль</legend><div class="chips" data-k="Автомобиль">
+     <label><input type="radio" name="b2" value="новый, в наличии"><span>Новый в&nbsp;наличии</span></label><label><input type="radio" name="b2" value="новый, на заказ"><span>Новый на&nbsp;заказ</span></label><label><input type="radio" name="b2" value="с пробегом"><span>С&nbsp;пробегом</span></label><label><input type="radio" name="b2" value="не важно"><span>Не важно</span></label></div></fieldset>
+    <fieldset><legend><span>3</span>Кузов</legend><div class="chips" data-k="Кузов">
+     <label><input type="radio" name="b3" value="кроссовер / внедорожник"><span>Кроссовер, внедорожник</span></label><label><input type="radio" name="b3" value="седан"><span>Седан</span></label><label><input type="radio" name="b3" value="хэтчбек / универсал"><span>Хэтчбек, универсал</span></label><label><input type="radio" name="b3" value="минивэн"><span>Минивэн</span></label></div></fieldset>
+    <div class="fld"><label>Марка или модель, если есть мысли<input type="text" data-k="Пожелания по марке" placeholder="например, Haval или Geely" maxlength="60"></label><label>Как планируете платить<input type="text" data-k="Оплата" list="payl" placeholder="наличные, банк, карта" maxlength="40"></label></div>
+    <datalist id="payl"><option value="наличными"><option value="через банк"><option value="переводом с карты"></datalist>
+    <fieldset><legend><span>4</span>Когда нужна машина</legend><div class="chips" data-k="Сроки">
+     <label><input type="radio" name="b5" value="как можно скорее"><span>Как можно скорее</span></label><label><input type="radio" name="b5" value="в течение месяца"><span>В&nbsp;течение месяца</span></label><label><input type="radio" name="b5" value="пока присматриваюсь"><span>Пока присматриваюсь</span></label></div></fieldset>
+   </form>
+   <form class="qset" id="q-sell" onsubmit="return false">
+    <div class="fld"><label>Марка и модель<input type="text" data-k="Автомобиль" placeholder="например, Kia Sorento" maxlength="60"></label><label>Год выпуска<input type="text" inputmode="numeric" data-k="Год" placeholder="например, 2018" maxlength="4"></label></div>
+    <fieldset><legend><span>1</span>Пробег</legend><div class="chips" data-k="Пробег">
+     <label><input type="radio" name="s2" value="до 50 тыс. км"><span>до 50&nbsp;тыс.&nbsp;км</span></label><label><input type="radio" name="s2" value="50–100 тыс. км"><span>50–100&nbsp;тыс.</span></label><label><input type="radio" name="s2" value="100–200 тыс. км"><span>100–200&nbsp;тыс.</span></label><label><input type="radio" name="s2" value="больше 200 тыс. км"><span>больше 200&nbsp;тыс.</span></label></div></fieldset>
+    <fieldset><legend><span>2</span>Состояние</legend><div class="chips" data-k="Состояние">
+     <label><input type="radio" name="s3" value="на ходу, без ДТП"><span>На ходу, без ДТП</span></label><label><input type="radio" name="s3" value="были ДТП"><span>Были ДТП</span></label><label><input type="radio" name="s3" value="нужен ремонт"><span>Нужен ремонт</span></label></div></fieldset>
+    <fieldset><legend><span>3</span>Как продать</legend><div class="chips" data-k="Формат">
+     <label><input type="radio" name="s4" value="срочный выкуп"><span>Срочный выкуп</span></label><label><input type="radio" name="s4" value="на продажу через салон"><span>На продажу через салон</span></label><label><input type="radio" name="s4" value="хочу узнать цену"><span>Сначала узнать цену</span></label></div></fieldset>
+    <fieldset><legend><span>4</span>Когда сможете показать машину</legend><div class="chips" data-k="Осмотр">
+     <label><input type="radio" name="s5" value="сегодня или завтра"><span>Сегодня или завтра</span></label><label><input type="radio" name="s5" value="на этой неделе"><span>На этой неделе</span></label><label><input type="radio" name="s5" value="договоримся"><span>Договоримся</span></label></div></fieldset>
+   </form>
+  </div>
+  <aside class="sheet" aria-live="polite">
+   <div class="sheet-h"><b id="sh-t">Заявка на подбор</b><span class="plate" aria-hidden="true"><span>РИК</span><i>163</i></span></div>
+   <dl id="sh-l"></dl>
+   <div class="meter"><i id="sh-m"></i></div>
+   <p class="note" id="sh-n">Заполнено 0 из 6. Можно отправить и так — менеджер уточнит.</p>
+   <a class="btn btn-green" id="sh-wa" href="https://wa.me/79372088080" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>Отправить в WhatsApp</a>
+   <div class="alt"><a href="https://t.me/rikavto" target="_blank" rel="noopener">или написать в Telegram</a></div>
+  </aside>
+ </div>
+</section>
+
+<section class="wrap" id="how">
+ <div class="sec-head" data-r>
+  <h2 class="h2"><span class="num mono">05 / Как проходит сделка</span>По шагам</h2>
+  <p>Общий порядок. Детали по вашей машине менеджер расскажет по телефону или в WhatsApp.</p>
+ </div>
+ <div class="tracks">
+  <div class="track" data-r><h3>Покупка</h3><ol class="road" style="--n:5"><li><b>Заявка</b><span>Бюджет, кузов, пожелания</span></li><li><b>Подбор</b><span>Варианты из наличия или под заказ</span></li><li><b>Осмотр</b><span>Вживую на площадке, с поездкой</span></li><li><b>Договор</b><span>Оплата наличными, через банк или картой</span></li><li><b>Ключи</b><span>Уезжаете на своей машине</span></li></ol></div>
+  <div class="track" data-r><h3>Продажа</h3><ol class="road" style="--n:4"><li><b>Заявка</b><span>Модель, год, пробег, состояние</span></li><li><b>Осмотр</b><span>Привозите машину на площадку</span></li><li><b>Цена</b><span>Выкуп сразу или продажа через салон</span></li><li><b>Расчёт</b><span>Оформление и деньги</span></li></ol></div>
+ </div>
+</section>
+
+<section class="wrap" id="contacts">
+ <div class="sec-head" data-r>
+  <h2 class="h2"><span class="num mono">06 / Как доехать</span>Площадка в&nbsp;Самаре</h2>
+  <p>Перед приездом лучше позвонить и уточнить, на месте ли нужная машина.</p>
+ </div>
+ <div class="contacts">
+  <div class="cbox" data-r>
+   <div><h3>Адрес</h3><p class="addr">Ул. Антонова-Овсеенко, 9&nbsp;к3</p><p>Самара, вход с&nbsp;ул. Антонова-Овсеенко</p></div>
+   <div><h3>Часы</h3><div class="hours"><span>Пн–Пт</span><b>9:00–19:00</b><span>Сб–Вс</span><b>9:00–18:00</b></div><p style="margin-top:8px"><span data-status></span></p></div>
+   <div class="phones"><h3>Телефоны</h3><a href="tel:+79379924401">+7 937 992-44-01</a><a href="tel:+79372088080">+7 937 208-80-80</a><a href="tel:+78469934002">+7 846 993-40-02</a></div>
+   <div><h3>Написать</h3><div class="soc"><a href="https://wa.me/79372088080" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/rikavto" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/ric_avto163" target="_blank" rel="noopener">ВКонтакте</a><a href="https://yandex.ru/maps/?rtext=~53.211323,50.199097" target="_blank" rel="noopener">Маршрут</a></div></div>
+  </div>
+  <div class="map" data-r><iframe loading="lazy" title="Рик-Авто на карте" src="https://yandex.ru/map-widget/v1/?ll=50.199097,53.211323&amp;z=16&amp;pt=50.199097,53.211323,pm2rdm"></iframe></div>
+ </div>
+</section>
+
+<div class="final">
+ <div class="wrap">
+  <div data-r>
+   <h2>Приезжайте посмотреть машину вживую</h2>
+   <p>Покажут, заведут, дадут прокатиться. А если приедете на своей — её можно предложить на выкуп.</p>
+   <div class="cta"><a class="btn btn-ink" href="tel:+79379924401">Позвонить</a><a class="btn btn-line" href="#quiz">Оставить заявку</a></div>
+  </div>
+  <img src="img/p14-m.jpg" alt="Кроссоверы на площадке Рик-Авто" width="900" height="675" loading="lazy" data-r>
+ </div>
+</div>
+</main>
+
+<footer><div class="wrap"><span>Рик-Авто · Самара, ул. Антонова-Овсеенко, 9 к3</span><span>Демо-концепт по данным <a href="https://2gis.ru/samara/firm/70000001019314242" target="_blank" rel="noopener">2ГИС</a>, не официальный сайт</span></div></footer>
+<a class="fab" href="tel:+79379924401"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+
+<script>
+(function(){
+ var mode='buy',forms={buy:document.getElementById('q-buy'),sell:document.getElementById('q-sell')},
+ L=document.getElementById('sh-l'),M=document.getElementById('sh-m'),N=document.getElementById('sh-n'),W=document.getElementById('sh-wa'),T=document.getElementById('sh-t');
+ function rows(f){var r=[];f.querySelectorAll('[data-k]').forEach(function(el){var v='';if(el.tagName==='INPUT')v=el.value.trim();else{var c=el.querySelector('input:checked');v=c?c.value:''}r.push([el.getAttribute('data-k'),v])});return r}
+ function upd(){var r=rows(forms[mode]),n=0,h='';r.forEach(function(x){if(x[1])n++;h+='<div><dt>'+x[0]+'</dt><dd'+(x[1]?'':' class="e"')+'>'+(x[1]?x[1].replace(/[<>&]/g,''):'—')+'</dd></div>'});
+  L.innerHTML=h;M.style.width=Math.round(n/r.length*100)+'%';N.textContent='Заполнено '+n+' из '+r.length+'. Можно отправить и так — менеджер уточнит.';
+  var t=(mode==='buy'?'Здравствуйте! Хочу подобрать автомобиль.':'Здравствуйте! Хочу продать автомобиль.');r.forEach(function(x){if(x[1])t+='\n'+x[0]+': '+x[1]});t+='\n(заявка с сайта)';
+  W.href='https://wa.me/79372088080?text='+encodeURIComponent(t);T.textContent=mode==='buy'?'Заявка на подбор':'Заявка на оценку'}
+ document.querySelectorAll('[data-mode]').forEach(function(b){b.addEventListener('click',function(){mode=b.getAttribute('data-mode');document.querySelectorAll('[data-mode]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});forms.buy.classList.toggle('on',mode==='buy');forms.sell.classList.toggle('on',mode==='sell');upd()})});
+ Object.keys(forms).forEach(function(k){forms[k].addEventListener('input',upd);forms[k].addEventListener('change',upd)});upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["09:00","19:00"]],"tue":[["09:00","19:00"]],"wed":[["09:00","19:00"]],"thu":[["09:00","19:00"]],"fri":[["09:00","19:00"]],"sat":[["09:00","18:00"]],"sun":[["09:00","18:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

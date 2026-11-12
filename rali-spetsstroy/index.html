@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Рали-Спецстрой — аренда спецтехники с оператором в Казани</title><meta property="og:type" content="website"><meta property="og:title" content="Рали-Спецстрой — аренда спецтехники с оператором в Казани"><meta property="og:description" content="Экскаваторы, автокраны, манипуляторы, погрузчики и тракторы в аренду с оператором. Казань, ул. Журналистов, 56г. Заявки круглосуточно: +7 962 556-43-43."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/rali-spetsstroy/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Экскаваторы, автокраны, манипуляторы, погрузчики и тракторы в аренду с оператором. Казань, ул. Журналистов, 56г. Заявки круглосуточно: +7 962 556-43-43.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"></noscript>
+<style>
+:root{
+  --blue:#1c3d8f; --blue-d:#11275e; --blue-l:#2f5bd0;
+  --ink:#0f1520; --ink2:#3a4352; --mute:#667085;
+  --paper:#eceeea; --paper2:#f6f7f4; --line:#d3d6cf;
+  --yel:#f4c31a; --yel-d:#d9a900;
+  --ok:#1e8a4c;
+  --h:'Unbounded',system-ui,sans-serif; --b:'Golos Text',system-ui,sans-serif; --m:'JetBrains Mono',ui-monospace,monospace;
+  --wrap:1360px; --g:clamp(16px,4vw,48px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.55 var(--b);color:var(--ink);background:var(--paper);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--yel);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--g)}
+.demo{background:var(--ink);color:#c9ced8;font:500 12.5px/1.4 var(--m);text-align:center;padding:7px 16px;letter-spacing:.02em}
+.mono{font-family:var(--m)}
+.kicker{font:600 12.5px/1 var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.kicker::before{content:"";display:inline-block;width:22px;height:2px;background:currentColor;vertical-align:middle;margin-right:10px}
+h1,h2,h3{font-family:var(--h);font-weight:700;letter-spacing:-.02em;line-height:1.04}
+h2{font-size:clamp(1.75rem,3.4vw + .4rem,3.5rem);margin-top:14px}
+.lead{font-size:clamp(1.02rem,.5vw + .9rem,1.2rem);color:var(--ink2);max-width:36em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:6px;font:600 16px/1 var(--b);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .18s,background .18s,box-shadow .18s,border-color .18s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-y{background:var(--yel);color:var(--ink);box-shadow:0 1px 0 var(--yel-d),0 10px 24px -12px rgba(217,169,0,.8)}
+.btn-y:hover{background:#ffd23a;transform:translateY(-2px)}
+.btn-b{background:var(--blue);color:#fff}
+.btn-b:hover{background:var(--blue-l);transform:translateY(-2px)}
+.btn-o{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-o:hover{background:var(--ink);color:#fff}
+.btn-w{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-w:hover{background:#fff;color:var(--ink)}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(236,238,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:40px;height:40px}
+.logo b{font:800 17px/1 var(--h);letter-spacing:-.01em}
+.logo small{display:block;font:500 11px/1 var(--m);color:var(--mute);margin-top:5px;letter-spacing:.08em;text-transform:uppercase}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink2);padding:8px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--ink);border-color:var(--yel)}
+.top-tel{font:600 17px/1 var(--m);text-decoration:none;padding:12px 16px;background:var(--ink);color:#fff;border-radius:6px;white-space:nowrap}
+.top-tel:hover{background:var(--blue)}
+
+/* hero */
+.hero{position:relative;padding:clamp(28px,4vw,56px) 0 clamp(40px,5vw,72px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;font:600 13px/1 var(--m);background:#fff;border:1px solid var(--line);padding:9px 14px;border-radius:40px}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(30,138,76,.18);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(30,138,76,0)}}
+.hero h1{font-size:clamp(1.85rem,4.2vw + .5rem,4.5rem);margin:22px 0 22px;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--blue);display:block}
+.hero h1 .u{background:linear-gradient(transparent 68%,var(--yel) 68% 92%,transparent 92%)}
+.hero .lead{margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line);font-size:15px;color:var(--ink2)}
+.hero-meta a{text-decoration:none;border-bottom:1px solid var(--line)}
+.hero-meta a:hover{border-color:var(--ink)}
+.hero-meta b{font-family:var(--m);color:var(--ink)}
+.shot{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/3.55;background:#c9ced6;box-shadow:0 30px 60px -30px rgba(17,39,94,.55)}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:40% 60%}
+.shot::after{content:"";position:absolute;inset:auto 0 0 0;height:14px;background:repeating-linear-gradient(-45deg,var(--yel) 0 14px,var(--ink) 14px 28px)}
+.badge{position:absolute;left:16px;top:16px;background:var(--ink);color:#fff;border-radius:8px;padding:12px 16px;display:flex;gap:14px;align-items:center}
+.badge strong{font:800 30px/1 var(--h)}
+.badge span{font:500 12px/1.35 var(--m);color:#c9ced8}
+.badge .stars{color:var(--yel);letter-spacing:2px;font-size:13px}
+.tag{position:absolute;right:16px;bottom:30px;background:rgba(255,255,255,.94);border-radius:6px;padding:9px 12px;font:600 12px/1.3 var(--m);max-width:230px}
+
+/* spec strip */
+.spec{background:var(--ink);color:#fff}
+.spec .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.spec div{padding:26px 22px 26px 0;border-right:1px solid rgba(255,255,255,.12);padding-left:22px}
+.spec div:first-child{padding-left:0}
+.spec div:last-child{border:0}
+.spec b{display:block;font:700 clamp(1.2rem,1.6vw,1.6rem)/1.1 var(--h);color:var(--yel)}
+.spec span{display:block;font-size:14.5px;color:#b9c0cc;margin-top:8px}
+
+section{padding:clamp(64px,8vw,128px) 0}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:24px 64px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
+
+/* fleet bento */
+.fleet{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:minmax(200px,auto);gap:14px}
+.card{position:relative;border-radius:10px;overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;min-height:260px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 40px -24px rgba(15,21,32,.45)}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover img{transform:scale(1.04)}
+.card .cap{position:relative;padding:22px;background:linear-gradient(transparent,rgba(10,15,24,.86) 45%);color:#fff;padding-top:70px}
+.card h3{font-size:clamp(1.25rem,1.6vw + .4rem,2rem)}
+.card p{font-size:15px;color:#d8dde6;margin-top:6px;max-width:32em}
+.card .no{position:absolute;top:16px;left:16px;font:600 12px/1 var(--m);background:var(--yel);color:var(--ink);padding:7px 9px;border-radius:4px;z-index:1}
+.c1{grid-column:span 7;grid-row:span 2}
+.c2,.c3{grid-column:span 5}
+.c4{grid-column:span 4}.c5{grid-column:span 3}.c6{grid-column:span 5}
+.txt{background:var(--blue);border:0;color:#fff;justify-content:space-between;padding:22px}
+.txt .cap{background:none;padding:0}
+.txt.alt{background:var(--yel);color:var(--ink)}
+.txt.alt p{color:var(--ink2)}
+.txt svg{width:100%;max-width:220px;height:auto;opacity:.95}
+.fleet-note{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;font-size:15px;color:var(--ink2)}
+
+/* praise */
+.praise{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.praise .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:stretch}
+.pr-photo{position:sticky;top:100px;align-self:start;border-radius:10px;overflow:hidden;aspect-ratio:4/3;margin:0}
+.pr-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 50%}
+.score{position:absolute;left:0;right:0;bottom:0;padding:24px;background:linear-gradient(transparent,rgba(8,12,20,.9));color:#fff;display:flex;align-items:flex-end;gap:18px}
+.score strong{font:800 clamp(3rem,5vw,4.6rem)/.9 var(--h);color:var(--yel)}
+.score span{font-size:15px;color:#d5dae3}
+.pr-list{list-style:none;padding:0;margin-top:34px;counter-reset:p}
+.pr-list li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;padding:26px 0;border-top:1px solid var(--line)}
+.pr-list li::before{counter-increment:p;content:"0" counter(p);font:700 15px/1 var(--m);color:var(--blue);padding-top:8px}
+.pr-list h3{font-size:clamp(1.15rem,1.2vw + .5rem,1.55rem)}
+.pr-list p{color:var(--ink2);margin-top:8px}
+
+/* quiz */
+.order{background:var(--blue-d);color:#fff;position:relative;overflow:hidden}
+.order::before{content:"";position:absolute;inset:0;background:radial-gradient(1000px 500px at 85% -10%,rgba(47,91,208,.55),transparent 60%);pointer-events:none}
+.order .wrap{position:relative}
+.order .kicker{color:var(--yel)}
+.order .lead{color:#c7d1ea}
+.q{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:start}
+.qs{display:grid;gap:26px}
+.qf{border:0;padding:0;min-width:0}
+.qf legend{font:600 13px/1 var(--m);letter-spacing:.1em;text-transform:uppercase;color:#9fb0d8;margin-bottom:14px;padding:0}
+.qf legend b{color:var(--yel);margin-right:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:6px;border:1.5px solid rgba(255,255,255,.25);font-weight:500;font-size:15.5px;cursor:pointer;transition:background .15s,border-color .15s,color .15s;user-select:none}
+.chip span:hover{border-color:#fff}
+.chip input:checked+span{background:var(--yel);border-color:var(--yel);color:var(--ink)}
+.chip input:focus-visible+span{outline:3px solid #fff;outline-offset:2px}
+.field{display:grid;gap:8px}
+.field label{font:500 14px/1.2 var(--b);color:#c7d1ea}
+.field input{min-height:50px;border-radius:6px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;padding:0 14px;font:500 16px var(--b);width:100%}
+.field input::placeholder{color:#8696bd}
+.field input:focus{outline:none;border-color:var(--yel);background:rgba(255,255,255,.1)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.ticket{position:sticky;top:92px;background:#fbfbf8;color:var(--ink);border-radius:8px;padding:28px 26px 24px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+.ticket::before{content:"";position:absolute;left:0;right:0;top:-8px;height:16px;background:radial-gradient(circle at 8px 0,transparent 7px,#fbfbf8 7.5px) 0 8px/16px 16px repeat-x}
+.t-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.t-h b{font:800 18px/1.1 var(--h)}
+.t-h span{font:500 12px/1 var(--m);color:var(--mute)}
+.t-rows{list-style:none;padding:0;margin:8px 0 18px;font-family:var(--m);font-size:14px}
+.t-rows li{display:grid;grid-template-columns:118px minmax(0,1fr);gap:10px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.t-rows li span{color:var(--mute)}
+.t-rows li b{font-weight:600;overflow-wrap:anywhere}
+.t-rows li b.e{color:#a3a9b3;font-weight:400}
+.t-bar{height:6px;border-radius:6px;background:var(--line);overflow:hidden;margin-bottom:16px}
+.t-bar i{display:block;height:100%;width:0;background:var(--blue);transition:width .35s}
+.ticket .btn{width:100%}
+.t-note{font-size:13px;color:var(--mute);margin-top:12px;text-align:center}
+.t-alt{display:block;text-align:center;margin-top:8px;font:600 15px var(--m);text-decoration:none;color:var(--blue);padding:8px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;position:relative;margin-top:8px}
+.steps::before{content:"";position:absolute;left:0;right:0;top:22px;height:2px;background:repeating-linear-gradient(90deg,var(--ink) 0 10px,transparent 10px 18px)}
+.step{position:relative;padding-right:22px}
+.step i{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--paper);border:2px solid var(--ink);font:700 15px/1 var(--m);font-style:normal;position:relative}
+.step:first-child i{background:var(--yel);border-color:var(--yel)}
+.step h3{font-size:1.1rem;margin:20px 0 8px;letter-spacing:-.01em}
+.step p{font-size:15px;color:var(--ink2)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:dense;gap:14px}
+.gal figure{border-radius:8px;overflow:hidden;aspect-ratio:3/4;position:relative;background:#ccc;margin:0}
+.gal figure.w{grid-column:span 2;aspect-ratio:auto}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:rgba(15,21,32,.82);color:#fff;font:500 12px/1 var(--m);padding:7px 9px;border-radius:4px}
+
+/* contacts */
+.contact{background:var(--ink);color:#fff}
+.contact .kicker{color:var(--yel)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px)}
+.boom{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:16/10;margin-top:28px}
+.boom img{width:100%;height:100%;object-fit:cover;object-position:30% 30%}
+.boom figcaption{position:absolute;left:14px;bottom:14px;right:14px;font-size:14px;background:rgba(15,21,32,.85);padding:10px 12px;border-radius:6px;color:#dfe4ec}
+.boom figcaption b{color:var(--yel);font-family:var(--m)}
+.dl{display:grid;gap:0;margin-top:28px}
+.dl div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid rgba(255,255,255,.12)}
+.dl dt{font:500 13px/1.6 var(--m);color:#8f99a8;text-transform:uppercase;letter-spacing:.06em}
+.dl dd{margin:0;font-size:17px}
+.dl dd a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+.dl dd a:hover{border-color:var(--yel);color:var(--yel)}
+.dl .big{font:600 clamp(1.3rem,2vw,1.7rem)/1.2 var(--m)}
+.map{border-radius:10px;overflow:hidden;min-height:420px;background:#1b2230;height:100%}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block;filter:grayscale(.35)}
+
+/* final */
+.final{padding:clamp(56px,7vw,110px) 0;background:var(--yel);position:relative;overflow:hidden}
+.final::after{content:"";position:absolute;left:0;right:0;bottom:0;height:16px;background:repeating-linear-gradient(-45deg,var(--ink) 0 16px,var(--yel) 16px 32px)}
+.final .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:end}
+.final h2{font-size:clamp(1.8rem,4vw + .3rem,4.2rem)}
+.final .cta{justify-content:flex-end}
+.final .btn-o:hover{background:var(--ink)}
+footer{background:var(--ink);color:#8f99a8;font-size:13.5px;padding:24px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:#c9ced8}
+
+.fab{position:fixed;right:14px;bottom:14px;z-index:40;display:none;align-items:center;gap:10px;min-height:56px;padding:0 22px;border-radius:40px;background:var(--yel);color:var(--ink);font:700 16px var(--b);text-decoration:none;box-shadow:0 12px 30px -8px rgba(0,0,0,.45)}
+.fab svg{width:20px;height:20px}
+
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+
+@media (max-width:1100px){
+  .nav{display:none}
+  .fleet .c1{grid-column:span 12;grid-row:span 1;min-height:380px}
+  .c2,.c3{grid-column:span 6}
+  .c4,.c5{grid-column:span 6}.c6{grid-column:span 12}
+  .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:34px}
+  .steps::before{display:none}
+}
+@media (max-width:900px){
+  .hero .wrap,.head,.praise .wrap,.q,.ct,.final .wrap{grid-template-columns:minmax(0,1fr)}
+  .shot{aspect-ratio:4/3}
+  .ticket{position:relative;top:0}
+  .spec .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .spec div{padding:20px 14px!important;border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .final .cta{justify-content:flex-start}
+  .pr-photo{position:relative;top:0}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top .wrap{height:60px;gap:12px}
+  .logo small{display:none}
+  .top-tel{font-size:14px;padding:11px 12px}
+  .hero{padding-top:22px}
+  .hero h1{margin:16px 0}
+  .cta .btn{flex:1 1 100%}
+  .hero-meta{gap:8px 18px;font-size:14px}
+  .fleet{grid-template-columns:minmax(0,1fr)}
+  .fleet>*{grid-column:auto!important}
+  .txt{min-height:220px!important}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .chip span{padding:0 14px;font-size:15px}
+  .steps{grid-template-columns:minmax(0,1fr);row-gap:0}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:0 16px;padding:0 0 22px}
+  .step h3{margin:10px 0 6px}
+  .step p{grid-column:2}
+  .step::after{content:"";position:absolute;left:22px;top:46px;bottom:0;border-left:2px dashed var(--ink)}
+  .step:last-child::after{display:none}
+  .gal{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .gal figure.w{aspect-ratio:4/3}
+  .card{display:block;min-height:0!important}
+  .card img{position:static;aspect-ratio:4/3;height:auto}
+  .card .cap{background:var(--ink);padding:18px 20px 20px}
+  .card:hover img{transform:none}
+  .c2 img{aspect-ratio:16/9}
+  .dl div{grid-template-columns:minmax(0,1fr);gap:4px}
+  .t-rows li{grid-template-columns:96px minmax(0,1fr)}
+  .fab{display:inline-flex}
+  .badge strong{font-size:24px}
+  .tag{display:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Рали-Спецстрой, наверх">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="7" fill="#1c3d8f"/><path d="M8 29h24M11 29V18h8l3 5h7v6M19 18l7-9 3 2-5 8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M29 11v6" stroke="#f4c31a" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span><b>Рали-Спецстрой</b><small>аренда спецтехники · Казань</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#park">Техника</a><a href="#otzyvy">Отзывы</a><a href="#zayavka">Заявка</a><a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="top-tel" href="tel:+79625564343">+7 962 556-43-43</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-top:clamp(28px,4vw,56px)">
+  <div class="wrap">
+    <div>
+      <span class="status" data-status>Открыто круглосуточно</span>
+      <h1>Спецтехника с&nbsp;оператором <em><span class="u">на&nbsp;объект</span> к&nbsp;сроку</em></h1>
+      <p class="lead">Экскаваторы, автокраны, манипуляторы, погрузчики и&nbsp;тракторы в&nbsp;аренду по&nbsp;Казани. Заказчики чаще всего пишут одно: технику подали вовремя, чистую, оператор отработал аккуратно.</p>
+      <div class="cta">
+        <a class="btn btn-y" href="#zayavka"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h11l3 3v15H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg>Рассчитать стоимость</a>
+        <a class="btn btn-b" href="https://wa.me/79625564343?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D1%81%D0%BF%D0%B5%D1%86%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%BC." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>Написать в WhatsApp</a>
+        <a class="btn btn-o" href="tel:+79625564343"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Позвонить</a>
+      </div>
+      <div class="hero-meta">
+        <a href="https://yandex.ru/maps/?rtext=~55.823572,49.195931" target="_blank" rel="noopener">Маршрут: ул. Журналистов, 56г</a>
+      </div>
+    </div>
+    <figure class="shot">
+      <img src="img/p2.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1280w" sizes="(max-width:900px) 100vw, 46vw" width="1280" height="960" alt="Синий автокран Рали-Спецстрой с выдвинутой стрелой на стройплощадке">
+      <div class="badge"><strong>4,8</strong><span><span class="stars">★★★★★</span><br>12 оценок в 2ГИС</span></div>
+      <figcaption class="tag">Автокран 25&nbsp;т — номер для заказа прямо на кабине</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="spec">
+  <div class="wrap">
+    <div><b>24/7</b><span>принимаем заявки круглосуточно</span></div>
+    <div><b>С оператором</b><span>техника приезжает с человеком, который на ней работает</span></div>
+    <div><b>Нал и безнал</b><span>наличный расчёт или оплата через банк</span></div>
+    <div><b>4,8 ★</b><span>средняя оценка заказчиков в 2ГИС</span></div>
+  </div>
+</div>
+
+<section id="park">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="kicker">Парк техники</span><h2>Под земляные работы, подъём и&nbsp;погрузку</h2></div>
+      <p class="lead">Все фотографии — их собственная техника на объектах и стоянке. Не нашли нужную машину — напишите, что за задача, подберём.</p>
+    </div>
+    <div class="fleet">
+      <article class="card c1" data-r>
+        <span class="no">01</span>
+        <img src="img/p6.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1280w" sizes="(max-width:1100px) 100vw, 56vw" width="1280" height="960" loading="lazy" alt="Два гусеничных экскаватора на земляных работах">
+        <div class="cap"><h3>Экскаваторы</h3><p>Выемка и вывоз грунта, земляные работы на участке и стройплощадке — с оператором.</p></div>
+      </article>
+      <article class="card c2" data-r>
+        <span class="no">02</span>
+        <img src="img/p12.jpg" srcset="img/p12-m.jpg 900w, img/p12.jpg 1280w" sizes="(max-width:640px) 100vw, (max-width:1100px) 50vw, 40vw" width="1280" height="720" loading="lazy" alt="Автокран на стройплощадке">
+        <div class="cap"><h3>Автокраны</h3><p>Подъём и монтаж грузов на объекте.</p></div>
+      </article>
+      <article class="card c3" data-r>
+        <span class="no">03</span>
+        <img src="img/p8.jpg" srcset="img/p8-m.jpg 900w, img/p8.jpg 1280w" sizes="(max-width:640px) 100vw, (max-width:1100px) 50vw, 40vw" width="1280" height="960" loading="lazy" alt="Жёлтый экскаватор-погрузчик с ковшом">
+        <div class="cap"><h3>Погрузчики</h3><p>Погрузка, перемещение сыпучих и планировка.</p></div>
+      </article>
+      <article class="card c4 txt" data-r>
+        <svg viewBox="0 0 220 90" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><path d="M10 72h120v-24H96l-8-14H60v38"/><path d="M96 48 168 14l6 6-58 28"/><path d="M172 18v34"/><path d="M164 52h16l-2 10h-12z" stroke="#f4c31a"/></g><g fill="#fff"><circle cx="34" cy="78" r="8"/><circle cx="104" cy="78" r="8"/></g></svg>
+        <div class="cap"><span class="no" style="position:static;display:inline-block;margin-bottom:12px">04</span><h3>Манипуляторы</h3><p>Привезти, поднять и выгрузить одной машиной.</p></div>
+      </article>
+      <article class="card c5 txt alt" data-r>
+        <svg viewBox="0 0 220 90" aria-hidden="true"><g fill="none" stroke="#0f1520" stroke-width="2.5" stroke-linejoin="round"><path d="M40 60V22h36l10 22h40v16"/><path d="M52 22v22h34"/></g><g fill="none" stroke="#0f1520" stroke-width="2.5"><circle cx="58" cy="66" r="18"/><circle cx="120" cy="72" r="12"/></g></svg>
+        <div class="cap"><span class="no" style="position:static;display:inline-block;margin-bottom:12px;background:#0f1520;color:#f4c31a">05</span><h3>Тракторы</h3><p>Под задачу на участке.</p></div>
+      </article>
+      <article class="card c6" data-r>
+        <span class="no">06</span>
+        <img src="img/p1.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1280w" sizes="(max-width:1100px) 100vw, 40vw" width="1280" height="960" loading="lazy" alt="Компактный колёсный погрузчик бирюзового цвета">
+        <div class="cap"><h3>Компактные погрузчики</h3><p>Для тесных площадок и дворов.</p></div>
+      </article>
+    </div>
+    <div class="fleet-note">
+      <span>Расчёт стоимости — по задаче: тип техники, объём работ, адрес и время подачи.</span>
+      <a class="btn btn-o" href="#zayavka">Собрать заявку за минуту</a>
+    </div>
+  </div>
+</section>
+
+<section class="praise" id="otzyvy">
+  <div class="wrap">
+    <figure class="pr-photo" data-r>
+      <img src="img/p10.jpg" srcset="img/p10-m.jpg 900w, img/p10.jpg 1280w" sizes="(max-width:900px) 100vw, 640px" width="1280" height="960" loading="lazy" alt="Экскаватор на трале готов к подаче на объект">
+      <figcaption class="score"><strong>4,8</strong><span>средняя оценка<br>по 12 оценкам в 2ГИС</span></figcaption>
+    </figure>
+    <div>
+      <span class="kicker">За что хвалят</span>
+      <h2>Почти в&nbsp;каждом отзыве — слово «вовремя»</h2>
+      <ol class="pr-list">
+        <li data-r><div><h3>Подают точно к сроку</h3><p>Заказчики пишут, что технику пригнали к назначенному времени — и работа на площадке пошла сразу, без простоя. В том числе когда экскаватор был нужен срочно.</p></div></li>
+        <li data-r><div><h3>Чистая, новая техника и водитель в спецодежде</h3><p>Отдельно отмечают, что машина приезжает чистой и готовой к работе, а водитель — в форме. Один заказчик пишет, что перебрал много контор, прежде чем нашёл такое.</p></div></li>
+        <li data-r><div><h3>Оператор работает спокойно и аккуратно</h3><p>Объясняет, как будет копать, работает по плану и без спешки. Ничего не задел на площадке, после работы участок остался в порядке.</p></div></li>
+      </ol>
+      <a class="btn btn-o" href="https://2gis.ru/kazan/firm/70000001111552105" target="_blank" rel="noopener" style="margin-top:10px">Все отзывы в 2ГИС</a>
+    </div>
+  </div>
+</section>
+
+<section class="order" id="zayavka">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="kicker">Наряд-заявка</span><h2>Соберите заявку — диспетчер посчитает стоимость</h2></div>
+      <p class="lead">Отметьте технику, задачу и время подачи. Справа сразу собирается готовый наряд, его можно отправить в&nbsp;WhatsApp одной кнопкой.</p>
+    </div>
+    <div class="q">
+      <form class="qs" id="qz" onsubmit="return false">
+        <fieldset class="qf"><legend><b>01</b>Какая техника нужна</legend>
+          <div class="chips" data-k="t">
+            <label class="chip"><input type="radio" name="t" value="Экскаватор"><span>Экскаватор</span></label>
+            <label class="chip"><input type="radio" name="t" value="Автокран"><span>Автокран</span></label>
+            <label class="chip"><input type="radio" name="t" value="Манипулятор"><span>Манипулятор</span></label>
+            <label class="chip"><input type="radio" name="t" value="Погрузчик"><span>Погрузчик</span></label>
+            <label class="chip"><input type="radio" name="t" value="Трактор"><span>Трактор</span></label>
+            <label class="chip"><input type="radio" name="t" value="Не знаю — подскажите"><span>Не знаю, подскажите</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qf"><legend><b>02</b>Что нужно сделать</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="w" value="выемка грунта"><span>Выемка грунта</span></label>
+            <label class="chip"><input type="checkbox" name="w" value="вывоз грунта"><span>Вывоз грунта</span></label>
+            <label class="chip"><input type="checkbox" name="w" value="планировка участка"><span>Планировка участка</span></label>
+            <label class="chip"><input type="checkbox" name="w" value="подъём / монтаж груза"><span>Подъём груза</span></label>
+            <label class="chip"><input type="checkbox" name="w" value="погрузка / разгрузка"><span>Погрузка, разгрузка</span></label>
+            <label class="chip"><input type="checkbox" name="w" value="другое"><span>Другое</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qf"><legend><b>03</b>Когда подать</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="d" value="срочно, сегодня"><span>Срочно, сегодня</span></label>
+            <label class="chip"><input type="radio" name="d" value="завтра"><span>Завтра</span></label>
+            <label class="chip"><input type="radio" name="d" value="на эту неделю"><span>На этой неделе</span></label>
+            <label class="chip"><input type="radio" name="d" value="дату уточню"><span>Дату уточню</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qf"><legend><b>04</b>Сколько работы</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="v" value="несколько часов"><span>Несколько часов</span></label>
+            <label class="chip"><input type="radio" name="v" value="смена"><span>Смена</span></label>
+            <label class="chip"><input type="radio" name="v" value="несколько дней"><span>Несколько дней</span></label>
+            <label class="chip"><input type="radio" name="v" value="не знаю, оцените"><span>Не знаю, оцените</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="qf"><legend><b>05</b>Объект и оплата</legend>
+          <div class="two">
+            <div class="field"><label for="qa">Адрес или район объекта</label><input id="qa" name="a" placeholder="Например: Казань, Советский район" autocomplete="off"></div>
+            <div class="field"><label for="qn">Как к вам обращаться</label><input id="qn" name="n" placeholder="Имя" autocomplete="given-name"></div>
+          </div>
+          <div class="chips" style="margin-top:14px">
+            <label class="chip"><input type="radio" name="p" value="наличными"><span>Наличными</span></label>
+            <label class="chip"><input type="radio" name="p" value="через банк (безнал)"><span>Через банк</span></label>
+          </div>
+        </fieldset>
+      </form>
+      <aside class="ticket" aria-live="polite">
+        <div class="t-h"><b>Наряд-заявка</b><span>Рали-Спецстрой</span></div>
+        <ul class="t-rows">
+          <li><span>Техника</span><b class="e" data-o="t">не выбрана</b></li>
+          <li><span>Работы</span><b class="e" data-o="w">—</b></li>
+          <li><span>Подача</span><b class="e" data-o="d">—</b></li>
+          <li><span>Объём</span><b class="e" data-o="v">—</b></li>
+          <li><span>Объект</span><b class="e" data-o="a">—</b></li>
+          <li><span>Оплата</span><b class="e" data-o="p">—</b></li>
+        </ul>
+        <div class="t-bar"><i id="bar"></i></div>
+        <a class="btn btn-y" id="send" href="https://wa.me/79625564343" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Отправить диспетчеру в WhatsApp</a>
+        <p class="t-note">Цену называет диспетчер после уточнения задачи. Можно отправить и неполную заявку.</p>
+        <a class="t-alt" href="tel:+79625564343">или позвонить: +7 962 556-43-43</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="poryadok">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="kicker">Как работаем</span><h2>От заявки до сданного участка</h2></div>
+      <p class="lead">Общий порядок. Детали — объём, время подачи, оплату — обсуждаем с вами по телефону или в мессенджере.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-r><i>1</i><h3>Заявка</h3><p>Звонок или сообщение в любое время суток: что за техника и задача.</p></div>
+      <div class="step" data-r><i>2</i><h3>Расчёт</h3><p>Подбираем машину под работу и называем стоимость.</p></div>
+      <div class="step" data-r><i>3</i><h3>Договорённость</h3><p>Фиксируем адрес, время подачи и способ оплаты — наличными или через банк.</p></div>
+      <div class="step" data-r><i>4</i><h3>Подача и работа</h3><p>Техника приезжает с оператором, он объясняет план и работает по нему.</p></div>
+      <div class="step" data-r><i>5</i><h3>Сдача</h3><p>Принимаете результат, участок остаётся в порядке.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:28px">
+      <div><span class="kicker">С объектов</span><h2>Техника в работе</h2></div>
+      <p class="lead">Экскаваторы, погрузчики, катки и трал для перевозки — снимки самой компании.</p>
+    </div>
+    <div class="gal">
+      <figure data-r><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 656w, img/p5.jpg 750w" sizes="(max-width:640px) 50vw, 25vw" width="656" height="900" loading="lazy" alt="Экскаватор роет траншею на участке"><figcaption>Земляные работы</figcaption></figure>
+      <figure data-r><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 960w" sizes="(max-width:640px) 50vw, 25vw" width="675" height="900" loading="lazy" alt="Оранжевый экскаватор на песчаной площадке"><figcaption>Экскаватор</figcaption></figure>
+      <figure class="w" data-r><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 900w, img/p13.jpg 1280w" sizes="(max-width:640px) 100vw, 50vw" width="900" height="675" loading="lazy" alt="Экскаватор перевозят на трале"><figcaption>Доставка тралом</figcaption></figure>
+      <figure class="w" data-r><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 900w, img/p4.jpg 1280w" sizes="(max-width:640px) 100vw, 50vw" width="900" height="675" loading="lazy" alt="Грунтовые катки на площадке"><figcaption>Катки</figcaption></figure>
+      <figure data-r><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 506w, img/p3.jpg 720w" sizes="(max-width:640px) 50vw, 25vw" width="506" height="900" loading="lazy" alt="Гусеничный погрузчик зимой"><figcaption>Гусеничный погрузчик</figcaption></figure>
+      <figure data-r><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 675w, img/p14.jpg 960w" sizes="(max-width:640px) 50vw, 25vw" width="675" height="900" loading="lazy" alt="Гусеничный погрузчик на вечерней площадке"><figcaption>На объекте вечером</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakty">
+  <div class="wrap ct">
+    <div>
+      <span class="kicker">Контакты</span>
+      <h2>Диспетчер на связи круглосуточно</h2>
+      <dl class="dl">
+        <div><dt>Телефон</dt><dd><a class="big" href="tel:+79625564343">+7 962 556-43-43</a><br><a href="tel:+78432164343" style="display:inline-block;margin-top:8px">+7 843 216-43-43</a></dd></div>
+        <div><dt>Мессенджер</dt><dd><a href="https://wa.me/79625564343?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%BD%D0%B0%20%D1%81%D0%BF%D0%B5%D1%86%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%20%D1%81%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%BC." target="_blank" rel="noopener">WhatsApp</a></dd></div>
+        <div><dt>Офис</dt><dd>Казань, ул. Журналистов, 56г<br>2 этаж, офис 9</dd></div>
+        <div><dt>Режим</dt><dd><span data-status>Открыто круглосуточно</span> · без выходных</dd></div>
+        <div><dt>Оплата</dt><dd>Наличными или через банк</dd></div>
+      </dl>
+      <div class="cta" style="margin-top:28px">
+        <a class="btn btn-y" href="tel:+79625564343">Позвонить</a>
+        <a class="btn btn-w" href="https://yandex.ru/maps/?rtext=~55.823572,49.195931" target="_blank" rel="noopener">Маршрут до офиса</a>
+      </div>
+      <figure class="boom">
+        <img src="img/p9-m.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1280w" sizes="(max-width:900px) 100vw, 44vw" width="900" height="675" loading="lazy" alt="Автокран 25 тонн с номером 216-43-43 на стреле">
+        <figcaption>Этот номер вы могли видеть на стреле их автокрана: <b>216-43-43</b></figcaption>
+      </figure>
+    </div>
+    <div class="map"><iframe loading="lazy" title="Рали-Спецстрой на карте" src="https://yandex.ru/map-widget/v1/?ll=49.195931,55.823572&z=16&pt=49.195931,55.823572,pm2rdm"></iframe></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Нужна техника на&nbsp;завтра? Напишите сегодня.</h2>
+    <div class="cta">
+      <a class="btn btn-o" href="#zayavka" style="border-color:var(--ink)">Собрать заявку</a>
+      <a class="btn btn-b" href="tel:+79625564343">+7 962 556-43-43</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Рали-Спецстрой · аренда спецтехники · Казань, ул. Журналистов, 56г</span>
+    <span>Демо-концепт по данным <a href="https://2gis.ru/kazan/firm/70000001111552105" target="_blank" rel="noopener">2ГИС</a></span>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+79625564343"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Позвонить</a>
+
+<script>
+(function(){
+  var f=document.getElementById('qz'),send=document.getElementById('send'),bar=document.getElementById('bar');
+  var empty={t:'не выбрана',w:'—',d:'—',v:'—',a:'—',p:'—'};
+  var lbl={t:'Техника',w:'Работы',d:'Подача',v:'Объём',a:'Объект',p:'Оплата'};
+  function val(k){
+    if(k==='w'){return [].map.call(f.querySelectorAll('input[name=w]:checked'),function(i){return i.value}).join(', ')}
+    if(k==='a'){return f.a.value.trim()}
+    var c=f.querySelector('input[name='+k+']:checked');return c?c.value:'';
+  }
+  function upd(){
+    var lines=['Здравствуйте! Заявка на спецтехнику с сайта:'],n=0;
+    Object.keys(lbl).forEach(function(k){
+      var v=val(k),o=document.querySelector('[data-o='+k+']');
+      o.textContent=v||empty[k];o.classList.toggle('e',!v);
+      if(v){n++;lines.push(lbl[k]+': '+v)}
+    });
+    var nm=f.n.value.trim();if(nm)lines.push('Меня зовут '+nm+'.');
+    if(n===0)lines=['Здравствуйте! Нужна спецтехника с оператором, подскажите стоимость.'];
+    else lines.push('Подскажите, пожалуйста, стоимость.');
+    bar.style.width=Math.round(n/6*100)+'%';
+    send.href='https://wa.me/79625564343?text='+encodeURIComponent(lines.join('\n'));
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

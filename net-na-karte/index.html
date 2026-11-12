@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Нет на карте — база отдыха у воды под Самарой</title><meta property="og:type" content="website"><meta property="og:title" content="Нет на карте — база отдыха у воды под Самарой"><meta property="og:description" content="База отдыха «Нет на карте» в Кинельском округе под Самарой: домики, беседки, пляж с понтоном, свадьбы, корпоративы и банкеты. Работаем круглосуточно."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/net-na-karte/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="База отдыха «Нет на карте» в Кинельском округе под Самарой: домики, беседки, пляж с понтоном, свадьбы, корпоративы и банкеты. Работаем круглосуточно.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;800&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<style>
+:root{--paper:#f2eee3;--paper2:#e8e1cf;--ink:#16241d;--ink2:#46564d;--pine:#1f4235;--pine2:#2c5a48;--water:#2d6c78;--water2:#cfe1de;--sand:#dccb9f;--red:#c43d27;--line:#cfc6ae;--h:'Geologica',system-ui,sans-serif;--b:'Golos Text',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace;--w:1320px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--b);overflow-x:hidden}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(var(--w),100% - 40px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.demo{background:var(--ink);color:#e9e4d6;font:500 13px/1.4 var(--m);text-align:center;padding:8px 16px}
+.mono{font-family:var(--m);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 19px/1 var(--h);letter-spacing:-.01em}
+.logo svg{width:34px;height:34px}
+.nav{display:flex;gap:28px;font-size:15px}
+.nav a{text-decoration:none;color:var(--ink2)}.nav a:hover{color:var(--red)}
+.tphone{font:600 16px var(--h);text-decoration:none;white-space:nowrap}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--b);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0)}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:#a83220}
+.btn-ink{background:var(--ink);color:var(--paper)}.btn-ink:hover{background:var(--pine)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn svg{width:20px;height:20px;flex:none}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(24px,4vw,64px);align-items:center;padding:clamp(16px,3vw,40px) 0 clamp(48px,6vw,90px)}
+.coord{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--ink2);margin-bottom:22px}
+.coord b{color:var(--red);font-weight:500}
+h1{font:800 clamp(54px,8.6vw,148px)/.88 var(--h);letter-spacing:-.045em}
+h1 .s{position:relative;display:inline-block;color:var(--pine)}
+h1 .s:after{content:"";position:absolute;left:-2%;right:-2%;top:54%;height:.07em;background:var(--red);transform:rotate(-4deg);transform-origin:left;animation:strike .9s .5s both cubic-bezier(.6,0,.2,1)}
+@keyframes strike{from{transform:rotate(-4deg) scaleX(0)}}
+.lead{font-size:clamp(18px,1.6vw,22px);line-height:1.5;max-width:34ch;margin:26px 0 14px}
+.proof{display:flex;gap:14px;align-items:flex-start;max-width:46ch;color:var(--ink2);font-size:16px;border-left:3px solid var(--red);padding-left:14px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:18px;font-size:15px}
+.sub a{font-weight:600;text-decoration-thickness:1px;text-underline-offset:4px;display:inline-flex;align-items:center;min-height:44px}
+.sub a:hover{color:var(--red)}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font:500 13px var(--m);text-transform:uppercase;letter-spacing:.04em}
+[data-status]:before{content:"";width:9px;height:9px;border-radius:50%;background:#3a9a5b;box-shadow:0 0 0 4px rgba(58,154,91,.18)}
+[data-status].is-closed:before{background:var(--red)}
+.mapcard{position:relative;background:#f7f4ec;border:1px solid var(--line);border-radius:28px;overflow:hidden;aspect-ratio:6/6.4;box-shadow:0 30px 60px -40px rgba(22,36,29,.5)}
+.mapcard svg{width:100%;height:100%}
+.mapcard .tag{position:absolute;left:18px;top:16px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.mapcard .north{position:absolute;right:18px;top:14px;font:800 15px var(--h);text-align:center;line-height:1.1}
+.route{stroke-dasharray:8 9;animation:go 2.4s .3s both ease-out}
+@keyframes go{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
+.pin{animation:drop .7s 1.8s both cubic-bezier(.3,1.6,.5,1)}
+@keyframes drop{from{transform:translateY(-40px);opacity:0}}
+/* sections */
+section{padding:clamp(64px,8vw,120px) 0}
+.kick{color:var(--red);margin-bottom:14px}
+h2{font:800 clamp(36px,4.8vw,72px)/.98 var(--h);letter-spacing:-.035em;max-width:16ch}
+.intro{max-width:52ch;color:var(--ink2);margin-top:18px;font-size:18px}
+/* legend */
+.legend{border-top:2px solid var(--ink)}
+.lg-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:48px}
+.lg{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.it{border:1px solid var(--line);background:#f7f4ec;border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:12px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.it:hover{transform:translateY(-4px);box-shadow:0 20px 40px -28px rgba(22,36,29,.45);border-color:var(--ink2)}
+.it svg{width:46px;height:46px}
+.it h3{font:600 22px/1.15 var(--h);letter-spacing:-.015em}
+.it p{color:var(--ink2);font-size:15.5px}
+.c4{grid-column:span 4}.c5{grid-column:span 5}.c3{grid-column:span 3}.c7{grid-column:span 7}.c6{grid-column:span 6}
+.it.big{background:var(--water);color:#f2f6f4;border-color:var(--water);position:relative;overflow:hidden;min-height:300px;justify-content:flex-end}
+.it.big p{color:#d6e6e3}
+.it.big .waves{position:absolute;inset:0;opacity:.35}
+.it.big>*{position:relative}
+.it.sand{background:var(--sand);border-color:var(--sand)}
+.it.sand p{color:#4a4632}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chips span{font-size:14px;border:1px solid currentColor;border-radius:999px;padding:4px 12px;opacity:.85}
+/* events band */
+.events{background:var(--pine);color:#eef0e8;padding:clamp(56px,7vw,100px) 0;position:relative;overflow:hidden}
+.ev{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.ev h2{color:#f4f1e6}
+.ev .intro{color:#c9d3c9}
+.evlist{list-style:none;border-top:1px solid rgba(238,240,232,.25)}
+.evlist li{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:8px 28px;padding:22px 0;border-bottom:1px solid rgba(238,240,232,.25);align-items:baseline}
+.evlist b{font:800 clamp(26px,3vw,40px)/1 var(--h);letter-spacing:-.03em;min-width:7ch}
+.evlist span{color:#c9d3c9}
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,80px)}
+.score{position:sticky;top:30px;align-self:start}
+.score .n{font:800 clamp(110px,14vw,210px)/.85 var(--h);letter-spacing:-.06em;color:var(--pine)}
+.score .n small{font-size:.32em;color:var(--red);letter-spacing:0;margin-left:6px}
+.score p{margin-top:16px;color:var(--ink2);max-width:30ch}
+.ps{list-style:none;counter-reset:p}
+.ps li{counter-increment:p;display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid var(--line)}
+.ps li:last-child{border-bottom:1px solid var(--line)}
+.ps li:before{content:"0" counter(p);font:500 14px var(--m);color:var(--red);padding-top:8px}
+.ps h3{font:600 clamp(22px,2.2vw,30px)/1.15 var(--h);letter-spacing:-.02em;margin-bottom:10px}
+.ps p{color:var(--ink2)}
+/* quiz */
+.plan{background:var(--paper2);border-top:2px solid var(--ink)}
+.qz{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,56px);margin-top:48px;align-items:start}
+.stops{position:relative;padding-left:56px}
+.track{position:absolute;left:19px;top:14px;bottom:14px;width:3px;background:repeating-linear-gradient(var(--line) 0 8px,transparent 8px 15px)}
+.track i{position:absolute;left:0;top:0;width:100%;height:0;background:var(--red);transition:height .5s cubic-bezier(.4,0,.2,1)}
+fieldset{border:0;position:relative;margin-bottom:34px}
+fieldset:before{content:attr(data-n);position:absolute;left:-56px;top:-2px;width:41px;height:41px;border-radius:50%;background:var(--paper);border:2px solid var(--ink);display:grid;place-items:center;font:500 14px var(--m);transition:background .3s,color .3s,border-color .3s}
+fieldset.ok:before{background:var(--red);border-color:var(--red);color:#fff}
+legend{font:600 22px/1.2 var(--h);letter-spacing:-.015em;margin-bottom:14px;padding-top:6px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;cursor:pointer;margin:0}
+.opt span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid #b9b096;background:#f7f4ec;font-size:15.5px;transition:background .2s,color .2s,border-color .2s}
+.opt:hover span{border-color:var(--ink)}
+.opt input:checked+span{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.opt input:focus-visible+span{outline:3px solid var(--red);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.inp{min-height:48px;border:1.5px solid #b9b096;border-radius:14px;background:#f7f4ec;padding:0 14px;font:500 16px var(--b);color:var(--ink);max-width:100%}
+.inp:focus{border-color:var(--ink);outline:none}
+.guests{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.guests output{font:800 44px/1 var(--h);letter-spacing:-.03em;min-width:3ch}
+input[type=range]{flex:1;min-width:200px;accent-color:var(--red);height:44px}
+.ticket{position:sticky;top:24px;background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 30px 60px -44px rgba(22,36,29,.6)}
+.ticket:before{content:"";position:absolute;left:24px;right:24px;top:88px;border-top:2px dashed var(--line)}
+.ticket h3{font:800 26px/1.1 var(--h);letter-spacing:-.02em;margin:6px 0 34px}
+.ticket dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 16px;font-size:15.5px}
+.ticket dt{font:500 12px/1.9 var(--m);text-transform:uppercase;letter-spacing:.05em;color:var(--ink2)}
+.ticket dd{font-weight:500}
+.ticket .btn{width:100%;margin-top:24px}
+.ticket .alt{display:flex;justify-content:space-between;gap:12px;margin-top:14px;font-size:14.5px;flex-wrap:wrap}
+.ticket .alt a{min-height:44px;display:inline-flex;align-items:center}
+.note{font-size:14px;color:var(--ink2);margin-top:14px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:48px;border-top:2px solid var(--ink)}
+.st{padding:24px 22px 0 0;position:relative}
+.st:before{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+.st:last-child:before{background:var(--red);border-color:var(--red)}
+.st b{display:block;font:600 20px/1.2 var(--h);margin:10px 0 8px}
+.st p{color:var(--ink2);font-size:15.5px}
+/* place */
+.place{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,4vw,56px);margin-top:48px}
+.facts{display:grid;gap:0}
+.fx{display:grid;grid-template-columns:130px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--line)}
+.fx dt{color:var(--ink2)}
+.fx dd a{font-weight:600;text-underline-offset:4px}
+.fx dd a:hover{color:var(--red)}
+.big-phone{font:800 clamp(26px,2.6vw,34px)/1.1 var(--h);letter-spacing:-.02em;text-decoration:none}
+.soc{display:flex;flex-wrap:wrap;gap:10px}
+.soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}
+.soc a:hover{background:var(--ink);color:var(--paper)}
+.map{border-radius:26px;overflow:hidden;border:1px solid var(--line);min-height:440px;background:var(--water2)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+/* final */
+.final{background:var(--ink);color:var(--paper);text-align:left;position:relative;overflow:hidden}
+.final .wrap{position:relative}
+.final h2{color:var(--paper);max-width:13ch;font-size:clamp(42px,6.4vw,104px)}
+.final h2 em{font-style:normal;color:var(--red)}
+.final p{color:#c4c9bf;max-width:44ch;margin:22px 0 32px;font-size:18px}
+.final .btn-line{border-color:var(--paper);color:var(--paper)}.final .btn-line:hover{background:var(--paper);color:var(--ink)}
+.final .topo{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:640px;opacity:.22;pointer-events:none}
+footer{background:var(--ink);color:#9aa49c;font-size:14px;padding:24px 0 100px;border-top:1px solid rgba(255,255,255,.1)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.fab{display:none}
+.sr{display:block;width:100%;font:500 12px/1.4 var(--m);text-transform:uppercase;letter-spacing:.05em;color:var(--ink2);margin-bottom:6px}
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){.nav{display:none}.steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:34px}}
+@media (max-width:900px){
+ .hero,.lg-head,.ev,.praise,.qz,.place{grid-template-columns:minmax(0,1fr)}
+ .mapcard{aspect-ratio:auto;height:380px;order:2}
+ .lg-head{gap:0;margin-bottom:32px}
+ .c4,.c5,.c3,.c7,.c6{grid-column:span 6}
+ .score{position:static}
+ .ticket{position:static}
+}
+@media (max-width:600px){
+ body{font-size:16px}
+ .wrap{width:calc(100% - 32px)}
+ .tphone{display:none}
+ .c4,.c5,.c3,.c7,.c6{grid-column:span 12}
+ .it.big{min-height:240px}
+ .cta .btn{flex:1 1 100%}
+ .mapcard{height:320px}
+ .steps{grid-template-columns:minmax(0,1fr);border-top:0;border-left:2px solid var(--ink);margin-left:6px}
+ .st{padding:0 0 0 24px}.st:before{top:2px;left:-8px}
+ .stops{padding-left:48px}.track{left:16px}fieldset:before{left:-48px;width:35px;height:35px}
+ .ps li{grid-template-columns:minmax(0,1fr);gap:4px}
+ .fx{grid-template-columns:minmax(0,1fr);gap:4px}
+ .evlist li{grid-template-columns:minmax(0,1fr)}
+ .map,.map iframe{min-height:340px}
+ .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:50;min-height:56px;box-shadow:0 14px 30px -10px rgba(0,0,0,.45)}
+ .final .topo{display:none}
+}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <path id="c" d="M-180 -60C-120 -170 90 -190 170 -110S230 90 120 150-110 200-170 110-240 20-180 -60Z"/>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="ph" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></symbol>
+ </defs>
+</svg>
+
+<header class="wrap top">
+ <a class="logo" href="#top" aria-label="Нет на карте — в начало">
+  <svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15.5" fill="none" stroke="#16241d" stroke-width="2"/><path d="M17 7c-4 0-7 3-7 6.8 0 5 7 12.2 7 12.2s7-7.2 7-12.2C24 10 21 7 17 7Z" fill="#c43d27"/><path d="M8 26 26 8" stroke="#16241d" stroke-width="2.4"/></svg>
+  Нет на карте
+ </a>
+ <nav class="nav" aria-label="Разделы">
+  <a href="#legend">Территория</a><a href="#events">Праздники</a><a href="#praise">Отзывы</a><a href="#plan">Заявка</a><a href="#place">Как добраться</a>
+ </nav>
+ <a class="tphone" href="tel:+79272099293">+7 927 209-92-93</a>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+ <div>
+  <div class="coord mono"><span><b>●</b> 53°15′11″ с.ш. 50°34′18″ в.д.</span><span>Кинельский округ · Самара</span></div>
+  <h1>Нет <span class="s">на&nbsp;карте</span></h1>
+  <p class="lead">База отдыха у воды под Самарой: домики, беседки, свой пляж с понтоном — и площадка для свадьбы, корпоратива или банкета.</p>
+  <p class="proof">Гости отмечают ухоженную территорию и зонирование: площадки разнесены так, что компании не мешают друг другу.</p>
+  <div class="cta">
+   <a class="btn btn-red" href="#plan">Рассчитать праздник</a>
+   <a class="btn btn-ink" href="https://wa.me/79272099293?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%20%D1%83%20%D0%B2%D0%B0%D1%81." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Написать в WhatsApp</a>
+  </div>
+  <div class="sub">
+   <a href="tel:+79272099293"><svg width="18" height="18" style="margin-right:8px"><use href="#ph"/></svg>Позвонить</a>
+   <a href="https://yandex.ru/maps/?rtext=~53.253151,50.57155" target="_blank" rel="noopener">Маршрут в Яндекс Картах →</a>
+   <span data-status></span>
+  </div>
+ </div>
+
+ <div class="mapcard" role="img" aria-label="Схема: дорога из Самары к базе на берегу залива, домики, беседки, пляж и понтон">
+  <span class="tag mono">Лист 01 · база</span>
+  <span class="north" aria-hidden="true">С<br><svg width="14" height="22" viewBox="0 0 14 22" style="margin:2px auto 0"><path d="M7 0 14 22 7 17 0 22Z" fill="#16241d"/></svg></span>
+  <svg viewBox="0 0 600 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+   <rect width="600" height="640" fill="#f7f4ec"/>
+   <g fill="none" stroke="#9fb2a0" stroke-width="1.3">
+    <use href="#c" transform="translate(250 250) scale(1.25)" vector-effect="non-scaling-stroke"/>
+    <use href="#c" transform="translate(255 245) scale(1)"/>
+    <use href="#c" transform="translate(262 240) scale(.78)"/>
+    <use href="#c" transform="translate(268 236) scale(.56)"/>
+    <use href="#c" transform="translate(272 232) scale(.34)"/>
+   </g>
+   <path d="M600 360C520 380 470 420 420 470S330 560 330 640H600Z" fill="#cfe1de"/>
+   <path d="M600 410C540 430 500 460 465 500S400 590 395 640H600Z" fill="#a9cbc6"/>
+   <g stroke="#2d6c78" stroke-width="1" opacity=".5" fill="none"><path d="M470 560q15-8 30 0t30 0"/><path d="M500 610q15-8 30 0t30 0"/><path d="M530 470q15-8 30 0t30 0"/></g>
+   <path d="M600 352C518 372 466 414 414 466S322 558 322 640" fill="none" stroke="#dccb9f" stroke-width="12" stroke-linecap="round"/>
+   <rect x="430" y="478" width="66" height="12" rx="2" transform="rotate(-40 430 478)" fill="#16241d"/>
+   <text x="508" y="440" font-family="JetBrains Mono,monospace" font-size="13" fill="#2d6c78">ЗАЛИВ</text>
+   <text x="356" y="520" font-family="JetBrains Mono,monospace" font-size="11" fill="#7a6a3e" transform="rotate(-50 356 520)">ПЛЯЖ</text>
+   <path class="route" d="M-10 600C60 560 90 610 150 560S190 470 250 450 320 400 320 360" fill="none" stroke="#16241d" stroke-width="3" stroke-linecap="round"/>
+   <text x="18" y="586" font-family="JetBrains Mono,monospace" font-size="12" fill="#46564d">← САМАРА</text>
+   <g fill="#1f4235">
+    <path d="M200 300h26v18h-26z M197 300l16-13 16 13z"/>
+    <path d="M240 330h26v18h-26z M237 330l16-13 16 13z"/>
+    <path d="M190 350h26v18h-26z M187 350l16-13 16 13z"/>
+   </g>
+   <g fill="none" stroke="#1f4235" stroke-width="2.5"><polygon points="370,290 384,282 398,290 398,306 384,314 370,306"/><polygon points="400,330 414,322 428,330 428,346 414,354 400,346"/></g>
+   <g fill="#2c5a48" opacity=".75"><circle cx="120" cy="200" r="9"/><circle cx="138" cy="214" r="7"/><circle cx="110" cy="226" r="6"/><circle cx="430" cy="190" r="9"/><circle cx="450" cy="206" r="7"/><circle cx="96" cy="400" r="8"/><circle cx="470" cy="300" r="7"/></g>
+   <g class="pin"><path d="M320 362c-15-18-26-30-26-44a26 26 0 0 1 52 0c0 14-11 26-26 44Z" fill="#c43d27"/><circle cx="320" cy="318" r="9" fill="#f7f4ec"/></g>
+   <g font-family="JetBrains Mono,monospace" font-size="11" fill="#46564d"><text x="176" y="388">ДОМИКИ</text><text x="368" y="372">БЕСЕДКИ</text></g>
+  </svg>
+ </div>
+</div>
+
+<section id="legend" class="legend">
+ <div class="wrap">
+  <div class="lg-head">
+   <div><p class="kick mono">Условные обозначения</p><h2>Что есть на территории</h2></div>
+   <p class="intro">Всё, что гости видят по приезде: от домика на ночь до тёплой беседки на компанию. Работаем круглосуточно, без выходных.</p>
+  </div>
+  <div class="lg">
+   <article class="it big c7" data-r>
+    <svg class="waves" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true" style="width:100%;height:100%"><g fill="none" stroke="#fff" stroke-width="1.2"><path d="M0 60q50-20 100 0t100 0 100 0 100 0"/><path d="M0 110q50-20 100 0t100 0 100 0 100 0"/><path d="M0 160q50-20 100 0t100 0 100 0 100 0"/></g></svg>
+    <svg viewBox="0 0 46 46" aria-hidden="true"><path d="M4 30q5-4 10 0t10 0 10 0 10 0M4 38q5-4 10 0t10 0 10 0 10 0" fill="none" stroke="#fff" stroke-width="2.4"/><rect x="18" y="12" width="22" height="7" rx="1.5" fill="#dccb9f"/></svg>
+    <h3>Пляж и понтон</h3>
+    <p>Песчаное дно, лежаки и зонтики. Гости катаются здесь на своих сапах.</p>
+    <div class="chips"><span>Песок</span><span>Понтон</span><span>Лежаки</span><span>Зонтики</span></div>
+   </article>
+   <article class="it c5" data-r>
+    <svg viewBox="0 0 46 46" aria-hidden="true"><path d="M8 22 23 9l15 13v17H8Z" fill="none" stroke="#1f4235" stroke-width="2.4"/><rect x="19" y="27" width="8" height="12" fill="#c43d27"/></svg>
+    <h3>Домики с ночёвкой</h3>
+    <p>Кондиционер в номерах, чистое бельё, свежий ремонт. Утром — завтрак.</p>
+    <div class="chips"><span>Кондиционер</span><span>Завтрак</span><span>Wi-Fi</span></div>
+   </article>
+   <article class="it c4" data-r>
+    <svg viewBox="0 0 46 46" aria-hidden="true"><polygon points="8,16 23,6 38,16 38,36 8,36" fill="none" stroke="#1f4235" stroke-width="2.4"/><path d="M14 36V22h18v14" fill="none" stroke="#c43d27" stroke-width="2.4"/></svg>
+    <h3>Беседки и тёплая беседка</h3>
+    <p>Открытые беседки на лето и тёплая — когда за окном уже не июль.</p>
+   </article>
+   <article class="it sand c4" data-r>
+    <svg viewBox="0 0 46 46" aria-hidden="true"><path d="M10 20h26l-3 10H13Z" fill="#16241d"/><path d="M14 30l-4 10M32 30l4 10M17 14c2-3 0-5 2-8M23 14c2-3 0-5 2-8M29 14c2-3 0-5 2-8" stroke="#16241d" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+    <h3>Мангал и кафе</h3>
+    <p>Мангал можно взять в аренду, на территории работает кафе-бар.</p>
+   </article>
+   <article class="it c4" data-r>
+    <svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="15" fill="none" stroke="#1f4235" stroke-width="2.4"/><text x="23" y="29" text-anchor="middle" font-family="Geologica,sans-serif" font-weight="800" font-size="16" fill="#c43d27">P</text></svg>
+    <h3>Парковка и удобства</h3>
+    <p>Своя парковка, хранение багажа, детская площадка.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<div id="events" class="events">
+ <div class="wrap ev">
+  <div data-r>
+   <p class="kick mono" style="color:#e9a08f">Для событий</p>
+   <h2>Праздник на своей территории</h2>
+   <p class="intro">Площадку снимают под свадьбы, корпоративы и дни рождения. Кухня, официанты, беседки и домики для гостей, которые остаются до утра.</p>
+  </div>
+  <ul class="evlist" data-r>
+   <li><b>Свадьба</b><span>Красивая территория и уютная беседка для первого дня, домики — чтобы продолжить.</span></li>
+   <li><b>Корпоратив</b><span>Место, обстановка и еда — то, что гости хвалят после выезда коллективом.</span></li>
+   <li><b>Банкет</b><span>Стол от кухни базы, официанты на мероприятии, своя площадка.</span></li>
+   <li><b>Компанией</b><span>Подальше от городской суеты: пляж, мангал, беседка на вечер.</span></li>
+  </ul>
+ </div>
+</div>
+
+<section id="praise">
+ <div class="wrap praise">
+  <div class="score" data-r>
+   <p class="kick mono">За что хвалят</p>
+   <div class="n">4,4<small>/5</small></div>
+   <p>Средняя оценка в 2ГИС по 31 отзыву гостей. Ниже — то, что повторяется в отзывах чаще всего.</p>
+  </div>
+  <ol class="ps">
+   <li data-r><div><h3>Ухоженная территория и продуманное зонирование</h3><p>Пишут, что ожидали скромнее, а увидели стильное место, где площадки разнесены и никто никому не мешает.</p></div></li>
+   <li data-r><div><h3>Домики со свежим ремонтом и вкусные завтраки</h3><p>Чистая постель, без неприятного запаха, завтраки хвалят отдельно. Кухню на мероприятиях тоже.</p></div></li>
+   <li data-r><div><h3>Чистый пляж и отзывчивый персонал</h3><p>Песок, понтон, лежаки и зонтики. Сотрудники подсказывают и помогают — и на отдыхе, и на торжестве.</p></div></li>
+  </ol>
+ </div>
+</section>
+
+<section id="plan" class="plan">
+ <div class="wrap">
+  <p class="kick mono">Маршрут заявки · 5 точек</p>
+  <h2>Соберите свой выезд — мы рассчитаем</h2>
+  <p class="intro">Ответьте на пять вопросов — получится готовая заявка. Отправьте её в WhatsApp, администратор уточнит детали и назовёт стоимость.</p>
+  <div class="qz">
+   <form class="stops" id="qz" onsubmit="return false">
+    <div class="track" aria-hidden="true"><i id="bar"></i></div>
+    <fieldset data-n="01"><legend>Какой повод?</legend><div class="opts">
+     <label class="opt"><input type="radio" name="why" value="Отдых компанией"><span>Отдых компанией</span></label>
+     <label class="opt"><input type="radio" name="why" value="Семейный отдых"><span>Семьёй</span></label>
+     <label class="opt"><input type="radio" name="why" value="Свадьба"><span>Свадьба</span></label>
+     <label class="opt"><input type="radio" name="why" value="Корпоратив"><span>Корпоратив</span></label>
+     <label class="opt"><input type="radio" name="why" value="День рождения"><span>День рождения</span></label>
+     <label class="opt"><input type="radio" name="why" value="Другое событие"><span>Другое</span></label>
+    </div></fieldset>
+    <fieldset data-n="02"><legend>Когда и на сколько?</legend><div class="row">
+     <label class="sr" for="dt">Дата заезда</label>
+     <input class="inp" type="date" id="dt" name="dt">
+     <div class="opts">
+      <label class="opt"><input type="radio" name="len" value="один день"><span>Один день</span></label>
+      <label class="opt"><input type="radio" name="len" value="с ночёвкой"><span>С ночёвкой</span></label>
+      <label class="opt"><input type="radio" name="len" value="2 дня и больше"><span>2 дня+</span></label>
+     </div>
+    </div></fieldset>
+    <fieldset data-n="03"><legend>Сколько гостей?</legend><div class="guests">
+     <output id="gn" for="g">20</output>
+     <input type="range" id="g" name="g" min="2" max="150" step="1" value="20" aria-label="Количество гостей">
+    </div></fieldset>
+    <fieldset data-n="04"><legend>Что понадобится?</legend><div class="opts">
+     <label class="opt"><input type="checkbox" name="need" value="домики"><span>Домики</span></label>
+     <label class="opt"><input type="checkbox" name="need" value="беседка"><span>Беседка</span></label>
+     <label class="opt"><input type="checkbox" name="need" value="тёплая беседка"><span>Тёплая беседка</span></label>
+     <label class="opt"><input type="checkbox" name="need" value="банкет от кухни"><span>Банкет от кухни</span></label>
+     <label class="opt"><input type="checkbox" name="need" value="завтрак"><span>Завтрак</span></label>
+     <label class="opt"><input type="checkbox" name="need" value="мангал"><span>Мангал</span></label>
+     <label class="opt"><input type="checkbox" name="need" value="пляж"><span>Пляж</span></label>
+    </div></fieldset>
+    <fieldset data-n="05" style="margin-bottom:0"><legend>Как к вам обращаться?</legend>
+     <label class="sr" for="nm">Имя</label>
+     <input class="inp" id="nm" name="nm" placeholder="Имя" autocomplete="given-name" style="width:320px">
+    </fieldset>
+   </form>
+   <aside class="ticket" aria-live="polite">
+    <p class="mono" style="color:var(--red)">Маршрутный лист</p>
+    <h3>Ваша заявка</h3>
+    <dl>
+     <dt>Повод</dt><dd id="o-why">—</dd>
+     <dt>Дата</dt><dd id="o-dt">—</dd>
+     <dt>Гостей</dt><dd id="o-g">20</dd>
+     <dt>Нужно</dt><dd id="o-need">—</dd>
+    </dl>
+    <a class="btn btn-red" id="send" href="https://wa.me/79272099293" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Отправить в WhatsApp</a>
+    <div class="alt"><a href="tel:+79272099293">Или позвонить</a><a href="https://t.me/+79272099293" target="_blank" rel="noopener">Telegram →</a></div>
+    <p class="note">Стоимость зависит от даты, числа гостей и площадок — её назовёт администратор.</p>
+   </aside>
+  </div>
+
+  <div class="steps">
+   <div class="st" data-r><span class="mono">01</span><b>Заявка</b><p>Вы присылаете повод, дату и число гостей.</p></div>
+   <div class="st" data-r><span class="mono">02</span><b>Расчёт</b><p>Подбираем площадки, домики и меню, называем стоимость.</p></div>
+   <div class="st" data-r><span class="mono">03</span><b>Бронь</b><p>Фиксируем дату и всё, что вы выбрали, на каждый день.</p></div>
+   <div class="st" data-r><span class="mono">04</span><b>Заезд</b><p>Встречаем гостей, показываем домики и площадки.</p></div>
+   <div class="st" data-r><span class="mono">05</span><b>Ваш праздник</b><p>Кухня и персонал помогают на месте.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="place" style="padding-top:clamp(40px,5vw,80px)">
+ <div class="wrap">
+  <p class="kick mono">Как добраться</p>
+  <h2>Точка на карте всё-таки есть</h2>
+  <div class="place">
+   <dl class="facts" data-r>
+    <div class="fx"><dt>Где</dt><dd>Кинельский городской округ, под Самарой<br><a href="https://yandex.ru/maps/?rtext=~53.253151,50.57155" target="_blank" rel="noopener">Проложить маршрут →</a></dd></div>
+    <div class="fx"><dt>Телефоны</dt><dd><a class="big-phone" href="tel:+79272099293">+7 927 209-92-93</a><br><a href="tel:+79270019636">+7 927 001-96-36</a></dd></div>
+    <div class="fx"><dt>Часы</dt><dd>Круглосуточно, без выходных · <span data-status></span></dd></div>
+    <div class="fx"><dt>Оплата</dt><dd>Карта, наличные, QR-код, по счёту, частями</dd></div>
+    <div class="fx"><dt>Категория</dt><dd>«2 звезды», номер в реестре классифицированных объектов: <a href="https://tourism.fsa.gov.ru/ru/resorts/hotels/71f697d2-7f2c-11f0-aeb0-31d5eae5c509/about-resort" target="_blank" rel="noopener">С632025008077</a></dd></div>
+    <div class="fx"><dt>Связь</dt><dd><div class="soc"><a href="https://wa.me/79272099293" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79272099293" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/netnakarte63" target="_blank" rel="noopener">ВКонтакте</a><a href="https://2gis.ru/samara/firm/70000001038010291" target="_blank" rel="noopener">2ГИС</a></div></dd></div>
+   </dl>
+   <div class="map" data-r><iframe loading="lazy" title="Нет на карте на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=50.57155,53.253151&z=14&pt=50.57155,53.253151,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <svg class="topo" viewBox="-300 -260 600 520" aria-hidden="true"><g fill="none" stroke="#f2eee3" stroke-width="1.4"><use href="#c" transform="scale(1.4)"/><use href="#c" transform="scale(1.1)"/><use href="#c" transform="scale(.8)"/><use href="#c" transform="scale(.5)"/><use href="#c" transform="scale(.22)"/></g><circle r="10" fill="#c43d27"/></svg>
+ <div class="wrap" data-r>
+  <p class="kick mono" style="color:#e9a08f">Бронирование</p>
+  <h2>Поставьте свою дату <em>на&nbsp;карту</em></h2>
+  <p>Напишите повод и число гостей — администратор ответит, какие домики и беседки свободны.</p>
+  <div class="cta">
+   <a class="btn btn-red" href="https://wa.me/79272099293?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B4%D0%B0%D1%82%D1%83." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Забронировать в WhatsApp</a>
+   <a class="btn btn-line" href="tel:+79272099293"><svg><use href="#ph"/></svg>+7 927 209-92-93</a>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><span>«Нет на карте» · база отдыха · Кинельский округ, Самарская область</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
+<a class="btn btn-red fab" href="tel:+79272099293"><svg><use href="#ph"/></svg>Позвонить</a>
+
+<script>
+(function(){
+ var f=document.getElementById('qz');if(!f)return;
+ var $=function(i){return document.getElementById(i)},g=$('g'),fs=f.querySelectorAll('fieldset');
+ function upd(){
+  var why=(f.querySelector('[name=why]:checked')||{}).value||'',len=(f.querySelector('[name=len]:checked')||{}).value||'',dt=$('dt').value,
+   need=[].map.call(f.querySelectorAll('[name=need]:checked'),function(x){return x.value}),nm=$('nm').value.trim(),n=g.value;
+  var d=dt?dt.split('-').reverse().join('.'):'';
+  $('gn').textContent=n;$('o-g').textContent=n;
+  $('o-why').textContent=why||'—';$('o-dt').textContent=[d,len].filter(Boolean).join(', ')||'—';$('o-need').textContent=need.join(', ')||'—';
+  var ok=[!!why,!!(d||len),g.dataset.t==='1',need.length>0,!!nm],c=0;
+  fs.forEach(function(x,i){x.classList.toggle('ok',ok[i]);if(ok[i])c++});
+  $('bar').style.height=(c/5*100)+'%';
+  var t='Здравствуйте! Пишу с сайта. Хотим к вам'+(why?': '+why.toLowerCase():'')+'.'+(d||len?' Дата: '+[d||'пока не знаем',len].filter(Boolean).join(', ')+'.':'')+' Гостей: '+n+'.'+(need.length?' Нужно: '+need.join(', ')+'.':'')+' Подскажите, пожалуйста, свободные даты и стоимость.'+(nm?' Меня зовут '+nm+'.':'');
+  $('send').href='https://wa.me/79272099293?text='+encodeURIComponent(t);
+ }
+ g.addEventListener('input',function(){g.dataset.t='1'});
+ f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>
