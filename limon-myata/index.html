@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Лимон&amp;Мята — два A-frame домика с тёплым бассейном, Геленджик</title><meta property="og:type" content="website"><meta property="og:title" content="Лимон&amp;amp;Мята — два A-frame домика с тёплым бассейном, Геленджик"><meta property="og:description" content="Глэмпинг «Лимон&amp;amp;Мята» в Геленджике: два домика, бассейн с подогревом, баня, чан, мангальная зона. Улица Садоводов, 18."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/limon-myata/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Глэмпинг «Лимон&amp;Мята» в Геленджике: два домика, бассейн с подогревом, баня, чан, мангальная зона. Улица Садоводов, 18.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--lemon:#f4d23c;--lemon2:#fff6c9;--mint:#2f8f73;--mint2:#d7efe5;--deep:#173b31;--graph:#24282a;--ink:#1f2523;--muted:#56605c;--white:#fff;--bg:#fbfaf5;--line:rgba(31,37,35,.12);--acc:var(--lemon);--acc2:var(--lemon2);--accInk:#3b3204;--r:22px}
+body.mint{--acc:#7fd3b4;--acc2:var(--mint2);--accInk:#0f3a2d}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Golos Text",system-ui,sans-serif;color:var(--ink);background:var(--bg);font-size:17px;line-height:1.6;transition:background .5s}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;font-weight:700;line-height:1.08;letter-spacing:-.02em;color:var(--graph)}
+.wrap{width:min(1320px,100% - 40px);margin-inline:auto}
+.demo{background:var(--graph);color:#eee;font-size:13px;text-align:center;padding:7px 12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:14px;font:600 16px "Golos Text",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .3s,box-shadow .2s,color .2s}
+.btn:active{transform:scale(.97)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+.btn-acc{background:var(--acc);color:var(--accInk)}
+.btn-acc:hover{transform:translateY(-2px);box-shadow:0 12px 24px -12px rgba(0,0,0,.4)}
+.btn-dark{background:var(--graph);color:#fff}
+.btn-dark:hover{background:#000;transform:translateY(-2px)}
+.btn-out{border-color:var(--graph);color:var(--graph)}
+.btn-out:hover{background:var(--graph);color:#fff}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Unbounded,sans-serif;font-weight:800;font-size:18px}
+.logo svg{width:40px;height:34px}
+.top nav{display:flex;gap:26px;font-size:15px}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--graph)}
+.top .tel{font-weight:600;text-decoration:none;white-space:nowrap}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(24px,4vw,60px);align-items:center;padding:clamp(10px,2vw,28px) 0 clamp(50px,6vw,90px)}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--acc2);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600;transition:background .4s}
+.hero h1{font-size:clamp(40px,6.6vw,108px);font-weight:800;margin:20px 0}
+.hero h1 .l{color:#c9a400;display:block}
+.hero h1 .m{color:var(--mint)}
+.hero h1 .amp{font-weight:500;color:var(--graph)}
+.lead{font-size:clamp(18px,1.4vw,21px);max-width:31em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.sub{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;margin-top:18px;font-size:15px}
+.sub a{font-weight:600;text-decoration:none;padding:10px 0 2px;border-bottom:2px solid var(--acc)}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--mint)}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(47,143,115,.2)}
+.shot{position:relative}
+.shot>img{width:100%;height:min(66vh,640px);min-height:400px;object-fit:cover;border-radius:var(--r)}
+.shot .tri{position:absolute;left:-28px;bottom:-28px;width:150px;height:130px}
+.shot .badge{position:absolute;right:18px;top:18px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 14px 30px -18px rgba(0,0,0,.5);line-height:1.2}
+.shot .badge b{font-family:Unbounded,sans-serif;font-size:26px}
+.shot .badge small{display:block;font-size:12px;color:var(--muted)}
+.warm{position:absolute;left:24px;bottom:22px;background:rgba(255,255,255,.92);border-radius:999px;padding:10px 16px;font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px}
+.warm i{width:10px;height:10px;border-radius:50%;background:#ff8a3d;box-shadow:0 0 0 4px rgba(255,138,61,.25)}
+section{padding:clamp(64px,8vw,120px) 0}
+.kick{display:block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);margin-bottom:14px}
+.h2{font-size:clamp(30px,3.8vw,56px)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 60px;align-items:end;margin-bottom:clamp(30px,4vw,54px)}
+.intro p{color:var(--muted);max-width:34em}
+/* домики */
+.houses{background:var(--acc2);transition:background .5s}
+.sw{display:inline-flex;gap:6px;background:#fff;border-radius:18px;padding:6px;box-shadow:0 10px 30px -20px rgba(0,0,0,.4);margin-bottom:28px}
+.sw button{display:flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;border-radius:13px;border:0;background:transparent;font:700 15px Unbounded,sans-serif;cursor:pointer;color:var(--muted);transition:background .3s,color .3s}
+.sw button svg{width:24px;height:24px}
+.sw button[aria-pressed="true"]{background:var(--graph);color:#fff}
+.hg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:18px}
+.hg .main{border-radius:var(--r);overflow:hidden;position:relative}
+.hg .main img{width:100%;height:100%;min-height:440px;max-height:620px;object-fit:cover}
+.hg .side{display:grid;grid-template-rows:auto minmax(0,1fr);gap:18px}
+.hcard{background:#fff;border-radius:var(--r);padding:clamp(22px,2.6vw,36px)}
+.hcard h3{font-size:clamp(24px,2.4vw,34px);margin-bottom:10px}
+.hcard p{color:var(--muted)}
+.hcard ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.hcard li{background:var(--acc2);padding:7px 13px;border-radius:999px;font-size:14px;font-weight:600;transition:background .4s}
+.hg .side img{width:100%;height:100%;min-height:220px;max-height:360px;object-fit:cover;border-radius:var(--r)}
+/* территория */
+.terr{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px}
+.t{border-radius:var(--r);overflow:hidden;position:relative;background:#fff;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
+.t:hover{transform:translateY(-4px);box-shadow:0 22px 40px -28px rgba(0,0,0,.45)}
+.t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.t .cap{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,255,255,.94);border-radius:16px;padding:14px 16px}
+.t .cap h3{font-size:19px;margin-bottom:4px}
+.t .cap p{font-size:14px;color:var(--muted)}
+.t1{grid-column:span 7;min-height:440px}
+.t2{grid-column:span 5;min-height:440px}
+.t3{grid-column:span 4;min-height:380px}
+.t4{grid-column:span 4;background:var(--deep);color:#d9eee5;padding:30px;display:flex;flex-direction:column;justify-content:space-between;border:0}
+.t4 h3{color:#fff;font-size:clamp(22px,2vw,28px)}
+.t4 ul{list-style:none;display:grid;gap:10px;margin-top:18px}
+.t4 li{display:flex;gap:10px;align-items:center}
+.t4 li::before{content:"";width:12px;height:12px;flex:0 0 auto;background:var(--lemon);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.t5{grid-column:span 4;min-height:380px}
+/* отзывы */
+.praise{background:var(--graph);color:#e8ebe9}
+.praise .h2{color:#fff}
+.praise .kick{color:var(--lemon)}
+.pg{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(30px,5vw,80px);align-items:start}
+.score b{display:block;font-family:Unbounded,sans-serif;font-size:clamp(84px,9vw,150px);line-height:1;color:var(--lemon)}
+.score p{color:#b9c0bc;margin-top:10px}
+.score a{display:inline-block;margin-top:16px;padding:10px 0 2px;font-weight:600;text-decoration:none;border-bottom:2px solid var(--lemon)}
+.pl{list-style:none;display:grid;gap:14px}
+.pl li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:18px;padding:24px;border-radius:var(--r);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);transition:background .2s}
+.pl li:hover{background:rgba(255,255,255,.09)}
+.pl svg{width:46px;height:46px}
+.pl h3{color:#fff;font-size:clamp(19px,1.7vw,24px);margin-bottom:6px}
+.pl p{color:#b9c0bc}
+/* квиз */
+.qg{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(20px,3vw,40px);align-items:start}
+.qf{background:#fff;border-radius:var(--r);padding:clamp(22px,3vw,40px);border:1px solid var(--line);display:grid;gap:26px}
+.qf fieldset{border:0}
+.qf legend{font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(17px,1.5vw,21px);margin-bottom:12px}
+.ch{display:flex;flex-wrap:wrap;gap:10px}
+.ch label{position:relative}
+.ch input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.ch span{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:12px;border:2px solid var(--line);font-weight:600;font-size:15px;background:var(--bg);transition:all .2s}
+.ch input:hover+span{border-color:var(--mint)}
+.ch input:checked+span{background:var(--acc);border-color:var(--acc);color:var(--accInk)}
+.ch input:focus-visible+span{outline:3px solid var(--mint);outline-offset:2px}
+.dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.dates label{font-size:14px;color:var(--muted);display:grid;gap:6px}
+.dt{min-height:50px;padding:0 12px;border-radius:12px;border:2px solid var(--line);font:500 16px "Golos Text",sans-serif;background:var(--bg);width:100%}
+.ppl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cnt{display:flex;align-items:center;justify-content:space-between;gap:8px;border:2px solid var(--line);border-radius:12px;padding:4px 4px 4px 14px;font-weight:600}
+.cnt div{display:flex;align-items:center;gap:4px}
+.cnt button{width:44px;height:44px;border-radius:10px;border:0;background:var(--acc2);font-size:20px;cursor:pointer;transition:background .3s}
+.cnt button:hover{background:var(--acc)}
+.cnt output{min-width:30px;text-align:center;font-family:Unbounded,sans-serif}
+.res{position:sticky;top:24px;background:var(--deep);color:#e1efe9;border-radius:var(--r);padding:28px;overflow:hidden}
+.res .roof{width:100%;height:70px;margin-bottom:10px}
+.res h3{color:#fff;font-size:24px;margin-bottom:14px}
+.res dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 14px;font-size:15px;margin-bottom:22px}
+.res dt{color:#9fbdb2}
+.res dd{color:#fff;font-weight:600}
+.res .btn{width:100%}
+.res small{display:block;margin-top:12px;color:#9fbdb2;font-size:13px}
+/* контакты */
+.where{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:18px}
+.info{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3vw,42px)}
+.row{padding:15px 0;border-top:1px solid var(--line)}
+.row small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.row a{font-weight:600;text-decoration:none;display:inline-block;padding:4px 0}
+.soc{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.soc a{border:2px solid var(--line);border-radius:12px;padding:10px 18px}
+.soc a:hover{border-color:var(--mint)}
+.map{border-radius:var(--r);overflow:hidden;min-height:460px;background:var(--mint2)}
+.map iframe{width:100%;height:100%;min-height:460px;border:0;display:block}
+.final{background:var(--acc);text-align:center;transition:background .5s;position:relative;overflow:hidden}
+.final h2{font-size:clamp(32px,5vw,76px);max-width:16ch;margin:0 auto 16px;color:var(--graph)}
+.final p{max-width:32em;margin:0 auto 28px}
+.final .cta{justify-content:center}
+footer{padding:26px 0 90px;text-align:center;font-size:14px;color:var(--muted)}
+.fab{display:none}
+.js [data-r]{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){.top nav{display:none}.t3,.t4,.t5{grid-column:span 6}.t4{grid-column:span 12}}
+@media (max-width:900px){
+ body{font-size:16px}
+ .hero,.intro,.hg,.pg,.qg,.where{grid-template-columns:minmax(0,1fr)}
+ .shot>img{height:auto;min-height:0;aspect-ratio:4/3.3}
+ .shot .tri{width:100px;height:86px;left:-10px;bottom:-20px}
+ .hg .main img{min-height:0;aspect-ratio:4/3.4;max-height:none;height:auto}
+ .hg .side img{max-height:300px}
+ .t1,.t2{grid-column:span 12;min-height:360px}
+ .res{position:static}
+ .map,.map iframe{min-height:340px}
+ .fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:50;width:60px;height:60px;border-radius:50%;background:var(--graph);color:#fff;align-items:center;justify-content:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.5)}
+ .fab svg{width:26px;height:26px}
+}
+@media (max-width:560px){
+ .wrap{width:calc(100% - 32px)}
+ .hero h1{font-size:clamp(38px,13vw,56px)}
+ .cta .btn{flex:1 1 100%}
+ .sw{display:flex}.sw button{flex:1;justify-content:center;padding:0 12px}
+ .t3,.t5{grid-column:span 12;min-height:320px}
+ .pl li{grid-template-columns:minmax(0,1fr);gap:8px}
+ .dates,.ppl{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="lemon" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#f4d23c"/><circle cx="24" cy="24" r="16" fill="#fff6c9"/><path d="M24 9v30M9 24h30M13.4 13.4l21.2 21.2M34.6 13.4 13.4 34.6" stroke="#f4d23c" stroke-width="2"/><circle cx="24" cy="24" r="3" fill="#f4d23c"/></symbol>
+ <symbol id="mint" viewBox="0 0 48 48"><path d="M24 44C10 36 6 22 12 10c8 0 22 4 26 16 3 9-4 15-14 18Z" fill="#2f8f73"/><path d="M24 44c-2-10-4-20-12-34M18 26l8-3M21 34l9-3M15 18l7-3" stroke="#d7efe5" stroke-width="2" fill="none" stroke-linecap="round"/></symbol>
+</svg>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<div class="wrap">
+ <header class="top">
+  <a class="logo" href="#top"><svg viewBox="0 0 40 34" aria-hidden="true"><path d="M20 2 38 32H2Z" fill="#24282a"/><path d="M20 12 29 28H11Z" fill="#f4d23c"/><path d="M20 12v16" stroke="#7fd3b4" stroke-width="2"/></svg>Лимон&amp;Мята</a>
+  <nav aria-label="Разделы"><a href="#houses">Домики</a><a href="#terr">Бассейн и баня</a><a href="#praise">Отзывы</a><a href="#quiz">Забронировать</a><a href="#where">Контакты</a></nav>
+  <a class="tel" href="tel:+79280368896">+7 928 036-88-96</a>
+ </header>
+ <main id="top" class="hero">
+  <div>
+   <span class="pill">Глэмпинг · Геленджик, улица Садоводов, 18</span>
+   <h1><span class="l">Лимон</span><span class="amp">&amp;</span><span class="m">Мята</span></h1>
+   <p class="lead">Два домика-треугольника, бассейн с подогревом, баня и чан на одной территории. Для семьи с детьми или небольшой компании — тихо и только свои.</p>
+   <div class="cta">
+    <a class="btn btn-acc" href="#quiz">Выбрать домик и даты</a>
+    <a class="btn btn-dark" href="https://wa.me/79280368896" data-wa="Здравствуйте! Хочу забронировать домик в «Лимон&Мята». Подскажите свободные даты?">Написать в WhatsApp</a>
+   </div>
+   <div class="sub"><a href="tel:+79280368896">Позвонить</a><a href="https://yandex.ru/maps/?rtext=~44.45942,38.216782" target="_blank" rel="noopener">Маршрут</a><span data-status></span></div>
+  </div>
+  <div class="shot" data-r>
+   <img src="img/p1-m.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1440w" sizes="(max-width:900px) 100vw, 52vw" alt="Домик-треугольник с террасой и бассейн перед ним" width="1440" height="960">
+   <div class="badge"><b>4,9</b><small>2ГИС · 35 отзывов</small></div>
+   <span class="warm"><i></i>Бассейн с подогревом</span>
+   <svg class="tri" viewBox="0 0 150 130" aria-hidden="true"><path d="M75 4 146 126H4Z" fill="var(--acc)" style="transition:fill .5s"/><path d="M75 40 110 104H40Z" fill="#24282a"/></svg>
+  </div>
+ </main>
+</div>
+
+<section class="houses" id="houses">
+ <div class="wrap">
+  <div class="intro" data-r><div><span class="kick">Два домика</span><h2 class="h2">Какой сегодня вкус — лимон или мята?</h2></div><p>На территории всего два дома, и стоят они так, что в окна друг другу не смотрят. Гости пишут: в домиках есть абсолютно всё, вплоть до белоснежных халатов и полотенец.</p></div>
+  <div class="sw" role="group" aria-label="Домик">
+   <button type="button" aria-pressed="true" data-h="l"><svg aria-hidden="true"><use href="#lemon"/></svg>Лимон</button>
+   <button type="button" aria-pressed="false" data-h="m"><svg aria-hidden="true"><use href="#mint"/></svg>Мята</button>
+  </div>
+  <div class="hg" data-r>
+   <div class="main"><img id="h-img" src="img/p4-m.jpg" srcset="img/p4-m.jpg 561w, img/p4.jpg 1122w" sizes="(max-width:900px) 100vw, 700px" alt="Спальня под треугольным окном с жёлтым покрывалом" loading="lazy" width="1122" height="1800" style="object-position:50% 60%"></div>
+   <div class="side">
+    <div class="hcard">
+     <h3 id="h-t">Домик «Лимон»</h3>
+     <p id="h-p">Светлое дерево, треугольное окно в спальне и жёлтые акценты. Гости хвалят чистоту и уют — продумано до мелочей.</p>
+     <ul><li>Кондиционер</li><li>Wi-Fi</li><li>Кухня с посудой</li><li>Халаты и полотенца</li></ul>
+    </div>
+    <img id="h-img2" src="img/p6-m.jpg" srcset="img/p6-m.jpg 600w, img/p6.jpg 1201w" sizes="(max-width:900px) 100vw, 560px" alt="Кухня и стол с жёлтыми стульями" loading="lazy" width="1201" height="1800">
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="terr">
+ <div class="wrap">
+  <div class="intro" data-r><div><span class="kick">Территория</span><h2 class="h2">Тёплая вода, пар и мангал</h2></div><p>Главное, ради чего возвращаются, — бассейн с тёплой водой. Его подогревают и зимой. Рядом баня, чан и мангальная зона.</p></div>
+  <div class="terr">
+   <figure class="t t1" data-r><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1440w" sizes="(max-width:560px) 560px, (max-width:900px) 100vw, 760px" alt="Бассейн, шезлонги и домик на фоне гор" loading="lazy" width="1440" height="960"><figcaption class="cap"><h3>Бассейн с подогревом</h3><p>Тёплый даже зимой — об этом пишут гости</p></figcaption></figure>
+   <figure class="t t2" data-r><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 600w, img/p3.jpg 1200w" sizes="(max-width:900px) 100vw, 540px" alt="Мангальная зона с грилем, кресла и гирлянды" loading="lazy" width="1200" height="1800"><figcaption class="cap"><h3>Мангальная зона</h3><p>Гриль, кресла и гирлянды над двором</p></figcaption></figure>
+   <figure class="t t3" data-r><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 600w, img/p8.jpg 1201w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 430px" alt="Предбанник с деревянной отделкой и окном" loading="lazy" width="1201" height="1800"><figcaption class="cap"><h3>Баня</h3><p>Гости называют её шикарной</p></figcaption></figure>
+   <div class="t t4" data-r><div><h3>И ещё на территории</h3><ul><li>Банный чан</li><li>Беседки</li><li>Своя парковка</li><li>Хранение багажа</li><li>Вход с детской коляской</li></ul></div><p style="margin-top:18px;font-size:14px;color:#9fbdb2">Оплата наличными или переводом</p></div>
+   <figure class="t t5" data-r><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 600w, img/p7.jpg 1200w" sizes="(max-width:560px) 100vw, (max-width:1100px) 50vw, 430px" alt="Парная с полками из светлого дерева" loading="lazy" width="1200" height="1800"><figcaption class="cap"><h3>Парная</h3><p>Светлое дерево и тёплый свет</p></figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="praise" id="praise">
+ <div class="wrap pg">
+  <div class="score" data-r><span class="kick">Рейтинг в 2ГИС</span><b>4,9</b><p>35 отзывов. Чаще всего пишут, что хочется возвращаться снова и снова.</p><a href="https://2gis.ru/krasnodar/firm/70000001077175914" target="_blank" rel="noopener">Читать отзывы в 2ГИС</a></div>
+  <div><span class="kick">За что хвалят</span>
+   <ul class="pl">
+    <li data-r><svg aria-hidden="true"><use href="#lemon"/></svg><div><h3>Тёплый бассейн</h3><p>Его называют вишенкой на торте: ради бассейна с подогревом гости готовы вернуться, а семьи с детьми отмечают его отдельно.</p></div></li>
+    <li data-r><svg aria-hidden="true"><use href="#mint"/></svg><div><h3>Уединение</h3><p>Всего два домика, окна не смотрят друг на друга. Одни гости и вовсе оказались на территории одни — и смогли полностью расслабиться.</p></div></li>
+    <li data-r><svg aria-hidden="true"><use href="#lemon"/></svg><div><h3>Чисто и всё с душой</h3><p>Чистые уютные домики, где есть всё необходимое, и приветливая хозяйка Анжела, которую гости благодарят по имени.</p></div></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section id="quiz">
+ <div class="wrap">
+  <div class="intro" data-r><div><span class="kick">Бронирование</span><h2 class="h2">Соберите заявку за минуту</h2></div><p>Выберите домик, даты и что добавить. Заявка уйдёт хозяйке в WhatsApp — она ответит, свободно ли и сколько стоит.</p></div>
+  <div class="qg">
+   <form class="qf" id="qf" onsubmit="return false">
+    <fieldset><legend>Домик</legend><div class="ch">
+     <label><input type="radio" name="house" value="«Лимон»" checked><span>Лимон</span></label>
+     <label><input type="radio" name="house" value="«Мята»"><span>Мята</span></label>
+     <label><input type="radio" name="house" value="любой свободный"><span>Любой свободный</span></label>
+    </div></fieldset>
+    <fieldset><legend>Даты</legend><div class="dates">
+     <label>Заезд<input class="dt" type="date" name="d1"></label>
+     <label>Выезд<input class="dt" type="date" name="d2"></label>
+    </div></fieldset>
+    <fieldset><legend>Гости</legend><div class="ppl">
+     <div class="cnt">Взрослые<div><button type="button" data-k="a" data-d="-1" aria-label="Меньше взрослых">−</button><output id="na">2</output><button type="button" data-k="a" data-d="1" aria-label="Больше взрослых">+</button></div></div>
+     <div class="cnt">Дети<div><button type="button" data-k="c" data-d="-1" aria-label="Меньше детей">−</button><output id="nc">0</output><button type="button" data-k="c" data-d="1" aria-label="Больше детей">+</button></div></div>
+    </div></fieldset>
+    <fieldset><legend>Добавить</legend><div class="ch">
+     <label><input type="checkbox" name="a" value="баня"><span>Баня</span></label>
+     <label><input type="checkbox" name="a" value="чан"><span>Чан</span></label>
+     <label><input type="checkbox" name="a" value="хранение багажа"><span>Хранение багажа</span></label>
+    </div></fieldset>
+   </form>
+   <aside class="res" aria-live="polite">
+    <svg class="roof" viewBox="0 0 300 70" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><path d="M110 66 150 4l40 62Z" fill="var(--acc)" style="transition:fill .5s"/><path d="M60 66 90 20l30 46Z" fill="#2f8f73"/><path d="M180 66l30-46 30 46Z" fill="#2f8f73"/><path d="M0 66h300" stroke="#9fbdb2" stroke-width="2"/></svg>
+    <h3>Ваша заявка</h3>
+    <dl><dt>Домик</dt><dd id="r-h">«Лимон»</dd><dt>Даты</dt><dd id="r-d">не выбраны</dd><dt>Гости</dt><dd id="r-g">2 взрослых</dd><dt>Добавить</dt><dd id="r-a">—</dd></dl>
+    <a class="btn btn-acc" id="send" href="https://wa.me/79280368896" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+    <small>Откроется чат с готовым текстом. Стоимость и условия по бане подскажет хозяйка.</small>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section id="where" style="padding-top:0">
+ <div class="wrap where">
+  <div class="info" data-r>
+   <h2 class="h2" style="margin-bottom:22px">Как найти</h2>
+   <div class="row"><small>Адрес</small>Геленджик, улица Садоводов, 18<br><a href="https://yandex.ru/maps/?rtext=~44.45942,38.216782" target="_blank" rel="noopener">Построить маршрут</a></div>
+   <div class="row"><small>Часы</small>Круглосуточно · <span data-status></span></div>
+   <div class="row"><small>Телефон</small><a href="tel:+79280368896" style="font-size:20px">+7 928 036-88-96</a></div>
+   <div class="row"><small>Написать</small><div class="soc"><a href="https://wa.me/79280368896" data-wa="Здравствуйте! Хочу узнать про домики «Лимон&Мята».">WhatsApp</a><a href="https://t.me/+79280368896" target="_blank" rel="noopener">Telegram</a></div></div>
+  </div>
+  <div class="map" data-r><iframe loading="lazy" title="Лимон&amp;Мята на карте" src="https://yandex.ru/map-widget/v1/?ll=38.216782,44.45942&z=16&pt=38.216782,44.45942,pm2rdm"></iframe></div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="wrap" data-r>
+  <h2>Тёплая вода ждёт круглый год</h2>
+  <p>Напишите даты и сколько вас — хозяйка подскажет, какой домик свободен.</p>
+  <div class="cta"><a class="btn btn-dark" href="#quiz">Собрать заявку</a><a class="btn btn-out" href="tel:+79280368896">Позвонить</a></div>
+ </div>
+</section>
+<footer>«Лимон&amp;Мята» · глэмпинг в Геленджике · Демо-концепт по данным 2ГИС</footer>
+<a class="fab" href="tel:+79280368896" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></a>
+<script>
+(function(){
+ var WA='https://wa.me/79280368896?text=',$=function(i){return document.getElementById(i)};
+ document.querySelectorAll('[data-wa]').forEach(function(a){a.href=WA+encodeURIComponent(a.getAttribute('data-wa'));a.target='_blank';a.rel='noopener'});
+ var H={l:{t:'Домик «Лимон»',p:'Светлое дерево, треугольное окно в спальне и жёлтые акценты. Гости хвалят чистоту и уют — продумано до мелочей.',i:['img/p4-m.jpg','img/p4-m.jpg 561w, img/p4.jpg 1122w','Спальня под треугольным окном с жёлтым покрывалом'],j:['img/p6-m.jpg','img/p6-m.jpg 600w, img/p6.jpg 1201w','Кухня и стол с жёлтыми стульями']},
+        m:{t:'Домик «Мята»',p:'Белое дерево, зелёные акценты и треугольное окно над кроватью. В доме тепло и есть всё для жизни — гости приезжали и с детьми.',i:['img/p9-m.jpg','img/p9-m.jpg 600w, img/p9.jpg 1201w','Спальня под треугольным окном с зелёным покрывалом'],j:['img/p10-m.jpg','img/p10-m.jpg 900w, img/p10.jpg 1440w','Гостиная с зелёным диваном и стеклянными дверями']}};
+ function pick(k){
+  document.body.classList.toggle('mint',k==='m');
+  document.querySelectorAll('.sw button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.h===k)});
+  var h=H[k];$('h-t').textContent=h.t;$('h-p').textContent=h.p;
+  [['h-img',h.i],['h-img2',h.j]].forEach(function(x){var e=$(x[0]);e.src=x[1][0];e.srcset=x[1][1];e.alt=x[1][2]});
+  var r=document.querySelector('input[name=house][value="'+(k==='m'?'«Мята»':'«Лимон»')+'"]');if(r){r.checked=true;upd()}
+ }
+ document.querySelectorAll('.sw button').forEach(function(b){b.addEventListener('click',function(){pick(b.dataset.h)})});
+ var f=$('qf'),n={a:2,c:0};
+ var dd=function(v){return v?v.split('-').reverse().join('.'):''};
+ function upd(){
+  var adds=[];f.querySelectorAll('input[name=a]:checked').forEach(function(i){adds.push(i.value)});
+  var d1=dd(f.d1.value),d2=dd(f.d2.value),dates=d1?(d1+(d2?' — '+d2:'')):'',g=n.a+' взр.'+(n.c?', '+n.c+' дет.':'');
+  $('r-h').textContent=f.house.value;$('r-d').textContent=dates||'не выбраны';$('r-g').textContent=g;$('r-a').textContent=adds.length?adds.join(', '):'—';
+  var t='Здравствуйте! Хочу забронировать в «Лимон&Мята». Домик: '+f.house.value+'. '+(dates?'Даты: '+dates+'. ':'Даты уточню. ')+'Гости: '+n.a+' взрослых'+(n.c?' и '+n.c+' детей':'')+'.'+(adds.length?' Добавить: '+adds.join(', ')+'.':'')+' Подскажите, свободно ли и сколько это стоит?';
+  $('send').href=WA+encodeURIComponent(t);
+ }
+ f.addEventListener('change',function(e){if(e.target.name==='house'){var v=e.target.value;if(v==='«Мята»')pick('m');else if(v==='«Лимон»')pick('l');else upd()}else upd()});
+ document.querySelectorAll('.cnt button').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.k;n[k]=Math.min(12,Math.max(k==='a'?1:0,n[k]+ +b.dataset.d));$('n'+k).textContent=n[k];upd()})});
+ upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>

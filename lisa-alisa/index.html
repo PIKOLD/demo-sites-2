@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Лиса Алиса — эко-дом с баней и чаном у леса, Новосибирский район</title><meta property="og:type" content="website"><meta property="og:title" content="Лиса Алиса — эко-дом с баней и чаном у леса, Новосибирский район"><meta property="og:description" content="Эко-дом «Лиса Алиса»: домик-шалаш на четверых, баня и банный чан, участок у леса. Новосибирский район, улица Романтиков, 27. Можно с питомцем."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/lisa-alisa/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Эко-дом «Лиса Алиса»: домик-шалаш на четверых, баня и банный чан, участок у леса. Новосибирский район, улица Романтиков, 27. Можно с питомцем.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Alice&family=Golos+Text:wght@400;500;600&family=Caveat:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alice&family=Golos+Text:wght@400;500;600&family=Caveat:wght@500;700&display=swap"></noscript>
+<style>
+:root{--cream:#f4efe4;--paper:#fbf8f1;--fox:#b9541f;--fox2:#d9773d;--spruce:#1e3a2f;--moss:#4f6b4a;--ink:#221d18;--mute:#6b6257;--line:rgba(34,29,24,.14);--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.6 'Golos Text',system-ui,sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--fox2);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1320px,100% - 48px);margin-inline:auto}
+.demo{background:var(--spruce);color:#e9e4d6;font-size:13px;text-align:center;padding:7px 12px}
+h1,h2,h3{font-family:'Alice',Georgia,serif;font-weight:400;line-height:1.05;letter-spacing:-.01em}
+.hand{font-family:'Caveat',cursive;font-weight:700;color:var(--fox)}
+.kick{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--moss);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:1.5px solid var(--ink);transition:transform .2s,background .2s,color .2s,box-shadow .2s;cursor:pointer;background:transparent;color:var(--ink);font-family:inherit}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(34,29,24,.5)}
+.btn:active{transform:translateY(0)}
+.btn.fox{background:var(--fox);border-color:var(--fox);color:#fff}
+.btn.fox:hover{background:#a2461a}
+.btn.sp{background:var(--spruce);border-color:var(--spruce);color:#f4efe4}
+.btn svg{width:18px;height:18px;flex:none}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:40px;height:40px}
+.logo b{font-family:'Alice',serif;font-weight:400;font-size:24px;line-height:1}
+.logo small{display:block;font-size:12px;color:var(--mute);letter-spacing:.08em;text-transform:uppercase}
+.nav{display:flex;gap:26px;font-size:15px}
+.nav a{text-decoration:none;color:var(--mute);transition:color .2s}
+.nav a:hover{color:var(--fox)}
+.tel{font-weight:600;text-decoration:none;white-space:nowrap}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,64px);align-items:center;padding:clamp(16px,3vw,40px) 0 clamp(40px,6vw,90px)}
+.hero h1{font-size:clamp(56px,8.4vw,132px);margin:14px 0 18px;color:var(--spruce)}
+.hero h1 span{color:var(--fox)}
+.lead{font-size:clamp(18px,1.5vw,22px);max-width:30ch;color:#3a332c}
+.where{display:flex;flex-wrap:wrap;gap:8px 18px;margin:22px 0 26px;font-size:15px;color:var(--mute)}
+.where b{color:var(--ink);font-weight:500}
+[data-status]{display:inline-flex;align-items:center;gap:8px}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#999}
+[data-status].is-open::before{background:#3f9a54;box-shadow:0 0 0 4px rgba(63,154,84,.18)}
+[data-status].is-closed::before{background:var(--fox2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta2{display:flex;flex-wrap:wrap;gap:22px;margin-top:18px;font-size:15px}
+.cta2 a{font-weight:500;text-decoration-color:var(--fox2);text-underline-offset:4px}
+.frame{position:relative;aspect-ratio:4/4.3;max-height:78vh;justify-self:center;width:100%}
+.tri{position:absolute;inset:0;clip-path:polygon(50% 0,100% 100%,0 100%);overflow:hidden;background:var(--spruce)}
+.tri img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;transform:scale(1.04);transition:transform 1.2s ease}
+.frame:hover .tri img{transform:scale(1.08)}
+.tri::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,58,47,.35),transparent 40%)}
+.chip{position:absolute;right:-6px;bottom:8%;width:38%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--cream);box-shadow:0 20px 40px -20px rgba(0,0,0,.45)}
+.chip img{width:100%;height:100%;object-fit:cover}
+.note{position:absolute;left:0;top:30%;font-size:clamp(22px,2vw,30px);line-height:1;transform:rotate(-7deg);max-width:9ch}
+.note svg{display:block;width:60px;height:34px;margin:6px 0 0 50px;stroke:var(--fox);fill:none;stroke-width:2}
+/* sections */
+section{padding:clamp(60px,8vw,120px) 0}
+.h2{font-size:clamp(38px,5vw,72px);color:var(--spruce);max-width:16ch}
+.sub{color:var(--mute);max-width:52ch;margin-top:14px}
+/* inside */
+.inside{background:var(--paper);border-radius:40px 40px 0 0}
+.in-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(30px,5vw,80px);margin-top:48px;align-items:start}
+.big{border-radius:var(--r);overflow:hidden;aspect-ratio:3/2;max-width:900px}
+.big img{width:100%;height:100%;object-fit:cover}
+.cap{font-size:14px;color:var(--mute);margin-top:10px}
+.list{list-style:none;border-top:1px solid var(--line)}
+.list li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);font-size:18px;transition:padding .25s}
+.list li:hover{padding-left:8px}
+.list svg{width:36px;height:36px;stroke:var(--fox);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.list small{display:block;color:var(--mute);font-size:14px}
+.pay{margin-top:26px;font-size:15px;color:var(--mute)}
+/* gallery */
+.gal-h{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:36px max(24px,calc((100vw - 1320px)/2)) 20px;scrollbar-width:thin;scrollbar-color:var(--fox) transparent}
+.strip figure{flex:none;scroll-snap-align:center;width:clamp(240px,26vw,360px)}
+.strip figure.w{width:clamp(300px,40vw,540px)}
+.strip .ph{border-radius:var(--r);overflow:hidden;aspect-ratio:3/4}
+.strip figure.w .ph{aspect-ratio:4/3}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.strip figure:hover img{transform:scale(1.05)}
+.strip figcaption{font-family:'Caveat',cursive;font-size:24px;color:var(--fox);margin-top:6px;line-height:1.1}
+.hint{font-size:14px;color:var(--mute)}
+/* praise */
+.praise{background:var(--spruce);color:#ece6d8}
+.praise .h2{color:#f4efe4}
+.pr-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(30px,5vw,90px);align-items:start}
+.score{font-family:'Alice',serif;font-size:clamp(90px,12vw,180px);line-height:.9;color:var(--fox2)}
+.score small{display:block;font-family:'Golos Text',sans-serif;font-size:16px;color:#b9c2b4;margin-top:14px;line-height:1.5}
+.pts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.pt{border-top:1px solid rgba(236,230,216,.25);padding-top:20px}
+.pt:first-child{grid-column:1/-1;border-top:0;padding:0 0 10px}
+.pt:first-child p{font-family:'Alice',serif;font-size:clamp(24px,2.4vw,34px);line-height:1.3;color:#fff;max-width:28ch}
+.pt h3{font-family:'Golos Text',sans-serif;font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--fox2);margin-bottom:10px}
+.pt p{color:#d6d8cc}
+.src{margin-top:30px;font-size:14px;color:#9fab9c}
+.src a{color:#e9e4d6}
+/* quiz */
+.quiz{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,5vw,80px);align-items:start}
+.qside{position:sticky;top:30px}
+.qside .hand{font-size:30px;margin-top:22px;display:block;transform:rotate(-3deg)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,3vw,40px);box-shadow:0 30px 60px -40px rgba(30,58,47,.5)}
+.step{border:0;margin-bottom:26px}
+.step legend{font-weight:600;font-size:15px;margin-bottom:12px;display:flex;gap:10px;align-items:center}
+.step legend i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--spruce);color:#fff;display:grid;place-items:center;font-size:13px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opts span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:15px;transition:all .2s;cursor:pointer}
+.opts label:hover span{border-color:var(--fox2)}
+.opts input:checked+span{background:var(--fox);border-color:var(--fox);color:#fff}
+.opts input:focus-visible+span{outline:3px solid var(--fox2);outline-offset:2px}
+.dates{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.dates label{font-size:14px;color:var(--mute)}
+.dates input{display:block;width:100%;margin-top:6px;min-height:48px;border:1.5px solid var(--line);border-radius:14px;padding:0 14px;font:inherit;background:#fff;color:var(--ink)}
+.sum{margin:6px 0 20px;padding:18px 20px;border-radius:16px;background:#efe7d8;font-size:15px;white-space:pre-line;min-height:60px}
+.sum b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+/* steps */
+.how{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:48px;counter-reset:s;position:relative}
+.how li{list-style:none;padding:0 22px 0 0;position:relative}
+.how li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:54px;height:54px;border-radius:50%;border:1.5px solid var(--fox);font-family:'Alice',serif;font-size:24px;color:var(--fox);background:var(--cream);position:relative;z-index:1;margin-bottom:18px}
+.how li::after{content:"";position:absolute;top:27px;left:54px;right:0;border-top:1.5px dashed rgba(185,84,31,.4)}
+.how li:last-child::after{display:none}
+.how h3{font-size:24px;color:var(--spruce);margin-bottom:6px}
+.how p{color:var(--mute);font-size:16px}
+/* contacts */
+.contact{background:var(--paper)}
+.c-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,4vw,60px);margin-top:40px}
+.c-list{display:grid;gap:22px}
+.c-list div small{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.c-list div p,.c-list div a{font-size:20px;font-family:'Alice',serif;text-decoration:none}
+.c-list a:hover{color:var(--fox)}
+.soc{display:flex;gap:12px;flex-wrap:wrap}
+.soc a{font-family:'Golos Text',sans-serif!important;font-size:15px!important;min-height:44px;display:inline-flex;align-items:center;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);transition:border-color .2s}
+.soc a:hover{border-color:var(--fox)}
+.map{border-radius:24px;overflow:hidden;min-height:420px;background:#ddd5c4}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+/* final */
+.final{background:var(--fox);color:#fff;text-align:left;overflow:hidden;position:relative}
+.final .h2{color:#fff;max-width:14ch}
+.final p{max-width:44ch;margin:18px 0 30px;color:#fbe6d8}
+.final .btn{border-color:#fff;color:#fff}
+.final .btn.w{background:#fff;color:var(--fox)}
+.final svg.bg{position:absolute;right:-60px;bottom:-40px;width:min(560px,60vw);opacity:.16;stroke:#fff;fill:none;stroke-width:1.2}
+footer{padding:26px 0 90px;font-size:13px;color:var(--mute)}
+.fcall{position:fixed;right:16px;bottom:16px;z-index:20;display:none;width:60px;height:60px;border-radius:50%;background:var(--fox);color:#fff;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45)}
+.fcall svg{width:26px;height:26px}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+@media (max-width:1100px){.nav{display:none}.how{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:36px}.how li:nth-child(2)::after{display:none}}
+@media (max-width:860px){
+.hero,.in-grid,.pr-grid,.quiz,.c-grid{grid-template-columns:minmax(0,1fr)}
+.frame{max-width:520px;order:-1;aspect-ratio:1/1}
+.note{display:none}
+.qside{position:static}
+.pts{grid-template-columns:minmax(0,1fr)}
+.fcall{display:grid}
+.top .tel{display:none}
+}
+@media (max-width:520px){
+body{font-size:16px}
+.wrap{width:calc(100% - 32px)}
+.hero h1{font-size:clamp(50px,15vw,64px)}
+.cta .btn{flex:1 1 100%}
+.how{grid-template-columns:minmax(0,1fr)}
+.how li::after{display:none}
+.dates{grid-template-columns:minmax(0,1fr)}
+.map,.map iframe{min-height:320px}
+.inside{border-radius:26px 26px 0 0}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<div class="wrap">
+<header class="top">
+  <a class="logo" href="#" aria-label="Лиса Алиса — эко-дом">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 37 36H3Z" fill="#1e3a2f"/><path d="M20 15l7 13H13Z" fill="#b9541f"/><path d="M14.5 21 13 17l4 2.5M25.5 21 27 17l-4 2.5" stroke="#b9541f" stroke-width="1.6" fill="none"/></svg>
+    <span><b>Лиса Алиса</b><small>эко-дом у леса</small></span>
+  </a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#dom">Дом</a><a href="#foto">Фото</a><a href="#otzyvy">Отзывы</a><a href="#vyezd">Собрать выезд</a><a href="#kontakty">Как добраться</a>
+  </nav>
+  <a class="tel" href="tel:+79139249123">+7 913 924-91-23</a>
+</header>
+
+<main>
+<div class="hero">
+  <div data-r>
+    <p class="kick">Эко-дом · Новосибирский район</p>
+    <h1>Лиса <span>Алиса</span></h1>
+    <p class="lead">Домик на четверых с баней и банным чаном на крайнем участке, у самого леса.</p>
+    <p class="where"><b>улица Романтиков, 27</b><span data-status></span></p>
+    <div class="cta">
+      <a class="btn fox" href="#vyezd">Собрать выезд</a>
+      <a class="btn" href="https://wa.me/79139249123?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D1%82%D1%8B%20%D0%B2%20%D0%B4%D0%BE%D0%BC%D0%B8%D0%BA%D0%B5%20%C2%AB%D0%9B%D0%B8%D1%81%D0%B0%20%D0%90%D0%BB%D0%B8%D1%81%D0%B0%C2%BB">Написать в WhatsApp</a>
+    </div>
+    <p class="cta2"><a href="tel:+79139249123">Позвонить</a><a href="https://yandex.ru/maps/?rtext=~55.247156,82.995555" target="_blank" rel="noopener">Маршрут</a></p>
+  </div>
+  <div class="frame" data-r>
+    <div class="tri"><img src="img/p3.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 960w" sizes="(max-width:860px) 92vw, 46vw" alt="Кострище с шезлонгами на участке, вечерние огни среди берёз" width="960" height="1280"></div>
+    <div class="chip"><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 960w" sizes="200px" alt="Банный чан с еловыми ветками" loading="lazy" width="675" height="900"></div>
+    <p class="note hand">чан с еловыми веточками<svg viewBox="0 0 60 34" aria-hidden="true"><path d="M2 4c18 2 36 10 50 26M44 28l8 2 0-8"/></svg></p>
+  </div>
+</div>
+</div>
+
+<section class="inside" id="dom">
+  <div class="wrap">
+    <p class="kick">Что вас ждёт</p>
+    <h2 class="h2" data-r>Один дом — и весь лес вокруг для вас</h2>
+    <p class="sub" data-r>Дом сдаётся целиком: здесь один номер и нет соседей за стенкой. Гости пишут, что внутри всё продумано до мелочей.</p>
+    <div class="in-grid">
+      <figure data-r>
+        <div class="big"><img src="img/p1.jpg" srcset="img/p1-m.jpg 900w, img/p1.jpg 1440w" sizes="(max-width:860px) 92vw, 52vw" alt="Гостиная в деревянном доме-шалаше с панорамным окном" loading="lazy" width="1440" height="960"></div>
+        <figcaption class="cap">Гостиная с панорамным окном: вид, ради которого, по словам гостей, стоит приехать</figcaption>
+      </figure>
+      <div data-r>
+        <ul class="list">
+          <li><svg viewBox="0 0 36 36"><path d="M18 4 32 30H4Z"/><path d="M14 30v-8h8v8"/></svg><span>Коттедж-глэмпинг<small>дом целиком, один номер</small></span></li>
+          <li><svg viewBox="0 0 36 36"><path d="M6 30V14h24v16M4 14l14-9 14 9"/><path d="M13 9c0-3 2-3 2-6M20 9c0-3 2-3 2-6"/></svg><span>Баня<small>на этом же участке</small></span></li>
+          <li><svg viewBox="0 0 36 36"><path d="M5 14h26l-3 16H8Z"/><path d="M11 9c0-3 3-3 3-6M18 9c0-3 3-3 3-6M25 9c0-3 3-3 3-6"/></svg><span>Банный чан<small>гости хвалят аромат еловых веток</small></span></li>
+          <li><svg viewBox="0 0 36 36"><path d="M10 24c-3 0-5-2-5-4s2-3 3-2M26 24c3 0 5-2 5-4s-2-3-3-2"/><ellipse cx="18" cy="24" rx="7" ry="6"/><circle cx="11" cy="12" r="2.5"/><circle cx="25" cy="12" r="2.5"/><circle cx="16" cy="8" r="2.5"/><circle cx="20" cy="8" r="2.5"/></svg><span>Можно с питомцем<small>берите своего пушистого друга</small></span></li>
+          <li><svg viewBox="0 0 36 36"><path d="M6 14c7-7 17-7 24 0M10 19c4-4 12-4 16 0M14 24c2-2 6-2 8 0"/><circle cx="18" cy="29" r="1.5"/></svg><span>Wi-Fi, стиральная машина<small>и своя парковка у дома</small></span></li>
+        </ul>
+        <p class="pay">Оплата: наличными, переводом с карты, по QR-коду или через банк.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="foto" style="padding-bottom:40px">
+  <div class="wrap gal-h">
+    <div><p class="kick">В любое время года</p><h2 class="h2" data-r>Зимой берёзы, летом костёр</h2></div>
+    <p class="hint">Листайте ленту пальцем или колёсиком →</p>
+  </div>
+  <div class="strip" data-qa-skip tabindex="0" aria-label="Фото дома и участка">
+    <figure><div class="ph"><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 675w, img/p10.jpg 960w" sizes="360px" alt="Зимний участок среди берёз" loading="lazy" width="675" height="900"></div><figcaption>берёзы под снегом</figcaption></figure>
+    <figure class="w"><div class="ph"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 900w, img/p8.jpg 1440w" sizes="540px" alt="Гостьи в банном чане с дольками цитрусов" loading="lazy" width="900" height="675" style="object-position:50% 40%"></div><figcaption>чан летом, прямо на траве</figcaption></figure>
+    <figure><div class="ph"><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="360px" alt="Сервированный стол для свидания с красными шарами" loading="lazy" width="675" height="900"></div><figcaption>свидание или день рождения</figcaption></figure>
+    <figure><div class="ph"><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 600w, img/p5.jpg 1201w" sizes="360px" alt="Обеденный стол и экран для фильмов в доме" loading="lazy" width="600" height="900"></div><figcaption>кино на большом экране</figcaption></figure>
+    <figure><div class="ph"><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 600w, img/p7.jpg 1201w" sizes="360px" alt="Баня-модуль на заснеженном участке" loading="lazy" width="600" height="900"></div><figcaption>баня в двух шагах</figcaption></figure>
+    <figure><div class="ph"><img src="img/p9-m.jpg" alt="Деревянная лестница на второй ярус дома" loading="lazy" width="600" height="900"></div><figcaption>лестница наверх</figcaption></figure>
+    <figure><div class="ph"><img src="img/p4-m.jpg" alt="Кухня и диван в доме-шалаше" loading="lazy" width="600" height="900"></div><figcaption>своя кухня</figcaption></figure>
+  </div>
+</section>
+
+<section class="praise" id="otzyvy">
+  <div class="wrap pr-grid">
+    <div data-r>
+      <p class="kick" style="color:#a9b8a3">Отзывы в 2ГИС</p>
+      <p class="score">5,0<small>средняя оценка<br>по 32 оценкам гостей</small></p>
+    </div>
+    <div class="pts">
+      <div class="pt" data-r><p>Гости приезжают не по первому разу и пишут, что смогли по-настоящему выдохнуть и перезагрузиться.</p></div>
+      <div class="pt" data-r><h3>Хозяйка Мария</h3><p>Всегда на связи, даже из другой страны, подробно объясняет всё про быт и встречает как родных.</p></div>
+      <div class="pt" data-r><h3>Тишина и лес</h3><p>По утрам прибегают белки, поют птицы, а вид из окна гости называют отдельным видом искусства.</p></div>
+      <div class="pt" data-r><h3>Чисто и уютно</h3><p>В доме, бане и чане чисто, внутри есть всё нужное, а посуда — красивая, хватило даже на компанию.</p></div>
+    </div>
+  </div>
+  <div class="wrap"><p class="src">Пересказ отзывов с <a href="https://2gis.ru/novosibirsk/firm/70000001093506113" target="_blank" rel="noopener">карточки в 2ГИС</a></p></div>
+</section>
+
+<section id="vyezd">
+  <div class="wrap quiz">
+    <div class="qside" data-r>
+      <p class="kick">Подбор за минуту</p>
+      <h2 class="h2">Соберите свой выезд</h2>
+      <p class="sub">Отметьте даты, повод и что включить. Мы соберём сообщение — останется отправить его Марии в WhatsApp, и она подтвердит, свободен ли дом.</p>
+      <span class="hand">а белки — бесплатно</span>
+    </div>
+    <form class="card" id="q" data-r onsubmit="return false">
+      <fieldset class="step"><legend><i>1</i>Когда приедете</legend>
+        <div class="dates">
+          <label>Заезд<input type="date" name="in"></label>
+          <label>Выезд<input type="date" name="out"></label>
+        </div>
+      </fieldset>
+      <fieldset class="step"><legend><i>2</i>Сколько гостей</legend>
+        <div class="opts">
+          <label><input type="radio" name="g" value="вдвоём" checked><span>Вдвоём</span></label>
+          <label><input type="radio" name="g" value="втроём"><span>Втроём</span></label>
+          <label><input type="radio" name="g" value="вчетвером"><span>Вчетвером</span></label>
+          <label><input type="radio" name="g" value="компанией больше 4 человек — уточнить, можно ли"><span>Больше — уточнить</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="step"><legend><i>3</i>Повод</legend>
+        <div class="opts">
+          <label><input type="radio" name="p" value="просто отдохнуть от города" checked><span>Отдохнуть от города</span></label>
+          <label><input type="radio" name="p" value="свидание"><span>Свидание</span></label>
+          <label><input type="radio" name="p" value="день рождения"><span>День рождения</span></label>
+          <label><input type="radio" name="p" value="семейные выходные"><span>Семьёй</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="step"><legend><i>4</i>Что включить</legend>
+        <div class="opts">
+          <label><input type="checkbox" name="x" value="баня" checked><span>Баня</span></label>
+          <label><input type="checkbox" name="x" value="банный чан"><span>Чан</span></label>
+          <label><input type="checkbox" name="x" value="приедем с питомцем"><span>С питомцем</span></label>
+          <label><input type="checkbox" name="x" value="подсказать по сервировке стола"><span>Праздничный стол</span></label>
+        </div>
+      </fieldset>
+      <div class="sum" aria-live="polite"><b>Ваше сообщение</b><span id="qs"></span></div>
+      <a class="btn fox" id="qb" href="#" target="_blank" rel="noopener" style="width:100%">Отправить в WhatsApp</a>
+    </form>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="kick">Как забронировать</p>
+    <h2 class="h2" data-r>Четыре шага до тишины</h2>
+    <ol class="how">
+      <li data-r><h3>Пишете</h3><p>Даты, сколько вас и что включить — через подбор выше, в WhatsApp или звонком.</p></li>
+      <li data-r><h3>Подтверждаем</h3><p>Хозяйка отвечает, свободен ли дом, и договаривается об оплате удобным способом.</p></li>
+      <li data-r><h3>Заезжаете</h3><p>На своей машине — у дома есть парковка. Всё про быт объяснят на месте.</p></li>
+      <li data-r><h3>Отдыхаете</h3><p>Баня, чан, костёр, кино вечером и лес за окном.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="kontakty">
+  <div class="wrap">
+    <p class="kick">Как добраться</p>
+    <h2 class="h2" data-r>Новосибирский район, улица Романтиков</h2>
+    <div class="c-grid">
+      <div class="c-list" data-r>
+        <div><small>Адрес</small><p>улица Романтиков, 27</p></div>
+        <div><small>Телефон и WhatsApp</small><a href="tel:+79139249123">+7 913 924-91-23</a></div>
+        <div><small>На связи</small><p>ежедневно с 10:00 до 22:00</p><span data-status style="font-size:15px;color:var(--mute)"></span></div>
+        <div><small>Соцсети</small><div class="soc" style="margin-top:8px"><a href="https://t.me/ecodomlisaalisa" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/ecodomlisaalisa" target="_blank" rel="noopener">ВКонтакте</a></div></div>
+        <div><a class="btn sp" href="https://yandex.ru/maps/?rtext=~55.247156,82.995555" target="_blank" rel="noopener" style="font-family:'Golos Text',sans-serif;font-size:16px">Построить маршрут</a></div>
+      </div>
+      <div class="map" data-r><iframe loading="lazy" title="Карта: Лиса Алиса" src="https://yandex.ru/map-widget/v1/?ll=82.995555,55.247156&z=16&pt=82.995555,55.247156,pm2rdm"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <svg class="bg" viewBox="0 0 400 300" aria-hidden="true"><path d="M200 10 390 290H10Z"/><path d="M200 70 340 290H60Z"/><path d="M200 130 290 290H110Z"/></svg>
+  <div class="wrap" data-r>
+    <h2 class="h2">Лес уже ждёт. Осталось выбрать даты</h2>
+    <p>Напишите, когда хотите приехать, — хозяйка ответит, свободен ли дом.</p>
+    <div class="cta">
+      <a class="btn w" href="#vyezd">Собрать выезд</a>
+      <a class="btn" href="tel:+79139249123">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">Эко-дом «Лиса Алиса», Новосибирский район, улица Романтиков, 27. Демо-концепт по открытым данным 2ГИС.</footer>
+
+<a class="fcall" href="tel:+79139249123" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1Z"/></svg></a>
+
+<script>
+(function(){
+  var f=document.getElementById('q'),s=document.getElementById('qs'),b=document.getElementById('qb');
+  function d(v){if(!v)return'';var p=v.split('-');return p[2]+'.'+p[1]}
+  function upd(){
+    var a=f.elements['in'].value,o=f.elements['out'].value,g=f.querySelector('[name=g]:checked').value,p=f.querySelector('[name=p]:checked').value;
+    var x=[].map.call(f.querySelectorAll('[name=x]:checked'),function(e){return e.value});
+    var t='Здравствуйте! Хотим в домик «Лиса Алиса».\n';
+    t+=(a||o)?'Даты: '+(a?'с '+d(a):'')+(o?' по '+d(o):'')+'\n':'Даты: подскажите свободные\n';
+    t+='Гости: '+g+'\nПовод: '+p+'\n';
+    if(x.length)t+='Включить: '+x.join(', ')+'\n';
+    t+='Свободно ли?';
+    s.textContent=t;b.href='https://wa.me/79139249123?text='+encodeURIComponent(t);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","22:00"]],"tue":[["10:00","22:00"]],"wed":[["10:00","22:00"]],"thu":[["10:00","22:00"]],"fri":[["10:00","22:00"]],"sat":[["10:00","22:00"]],"sun":[["10:00","22:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Miros_glamp — A-фрейм с чаном над рекой, Усть-Лабинский район</title><meta property="og:type" content="website"><meta property="og:title" content="Miros_glamp — A-фрейм с чаном над рекой, Усть-Лабинский район"><meta property="og:description" content="Miros_glamp: глэмпинг-А-фрейм на высоком берегу реки в Усть-Лабинском районе Краснодарского края. Чан с подогревом, терраса с гирляндой, закаты над рекой. Можно с детьми и питомцами. Бронь в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/miros-glamp/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Miros_glamp: глэмпинг-А-фрейм на высоком берегу реки в Усть-Лабинском районе Краснодарского края. Чан с подогревом, терраса с гирляндой, закаты над рекой. Можно с детьми и питомцами. Бронь в WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Onest:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&family=Onest:wght@400;500;700&display=swap"></noscript>
+<style>
+:root{--walnut:#24170f;--wood:#5a3a22;--amber:#f3b04a;--sun:#e8764b;--sage:#a7b490;--steppe:#e9e2d0;--cream:#f8f3ea;--ink:#20160f;--mute:#6b5b4e;
+--h:"Oswald","Arial Narrow",sans-serif;--b:"Onest",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.62 var(--b);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1360px,100% - 40px);margin-inline:auto}
+.demo{background:#000;color:#e8dccb;font-size:13px;text-align:center;padding:8px 14px}
+.kick{font:500 14px/1.2 var(--h);letter-spacing:.2em;text-transform:uppercase;color:var(--sun)}
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:2px;font:500 17px/1 var(--h);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:0;cursor:pointer;transition:transform .25s,background .25s,box-shadow .25s,color .25s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.b-amber{background:var(--amber);color:var(--walnut);box-shadow:0 0 0 0 rgba(243,176,74,.6)}
+.b-amber:hover{box-shadow:0 0 34px 2px rgba(243,176,74,.55);transform:translateY(-2px)}
+.b-line{border:1.5px solid currentColor;background:transparent}
+.b-line:hover{background:rgba(243,176,74,.15)}
+.b-dark{background:var(--walnut);color:var(--cream)}
+.b-dark:hover{background:#000;transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+/* первый экран */
+.hero{background:var(--walnut);color:var(--cream);position:relative;overflow:hidden}
+.hero .g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);min-height:min(900px,calc(100vh - 36px))}
+.hl{padding:24px clamp(20px,5vw,80px) 48px max(20px,calc((100vw - 1360px)/2));display:flex;flex-direction:column}
+.top{display:flex;align-items:center;gap:22px;min-height:56px}
+.logo{font:600 22px/1 var(--h);letter-spacing:.04em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo svg{width:28px;height:26px}
+.top nav{display:flex;gap:22px;margin-left:auto}
+.top nav a{font:400 15px/1 var(--h);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;opacity:.75;padding:12px 0}
+.top nav a:hover{opacity:1;color:var(--amber)}
+.hm{margin:auto 0;padding-top:clamp(20px,4vh,50px)}
+h1{font:600 clamp(4rem,min(10.5vw,19vh),10.5rem)/.84 var(--h);text-transform:uppercase;letter-spacing:-.01em;margin:clamp(14px,2.4vh,24px) 0 clamp(16px,2.6vh,26px)}
+h1 span{display:block;font-weight:300;color:var(--amber)}
+.lead{font-size:clamp(18px,1.5vw,21px);max-width:34ch;color:#e6d8c6}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(20px,3vh,32px)}
+.sub{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;margin-top:14px;font-size:15px}
+.sub a{font-weight:700;min-height:44px;display:inline-flex;align-items:center;text-underline-offset:4px}
+[data-status]{display:inline-flex;align-items:center;gap:8px;font-weight:500}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#998}
+[data-status].is-open::before{background:#7ed39a;box-shadow:0 0 0 4px rgba(126,211,154,.2)}
+.hr{position:relative;overflow:hidden}
+.hr img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hr::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,23,15,.55),transparent 35%)}
+.aframe{position:absolute;left:50%;bottom:0;width:min(78%,520px);transform:translateX(-50%);z-index:2;pointer-events:none}
+.aframe circle{fill:#ffd27a;filter:drop-shadow(0 0 6px rgba(255,190,90,.95));animation:tw 2.4s ease-in-out infinite alternate}
+.aframe circle:nth-child(3n){animation-delay:.8s}.aframe circle:nth-child(3n+1){animation-delay:1.6s}
+@keyframes tw{to{opacity:.45}}
+.rate{position:absolute;right:20px;top:20px;z-index:3;background:rgba(248,243,234,.94);color:var(--ink);padding:14px 18px;display:flex;gap:12px;align-items:center}
+.rate b{font:600 38px/1 var(--h)}
+.rate span{font-size:13px;line-height:1.35;color:var(--mute)}
+/* секции */
+section{padding:clamp(70px,9vw,130px) 0}
+h2{font:500 clamp(2.4rem,5vw,4.6rem)/.98 var(--h);text-transform:uppercase;letter-spacing:-.005em;max-width:16ch}
+.hd{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 56px;align-items:end;margin-bottom:48px}
+.hd p{color:var(--mute);max-width:46ch;font-size:18px}
+/* вид */
+.view{background:var(--steppe)}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(20px,calc((100% - 1360px)/2)) 16px;scrollbar-width:thin;scrollbar-color:var(--sun) transparent}
+.strip figure{flex:none;scroll-snap-align:start;height:min(600px,72vh);aspect-ratio:3/4;position:relative;overflow:hidden}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.strip figure:hover img{transform:scale(1.05)}
+.strip figcaption{position:absolute;left:0;bottom:0;padding:10px 14px;background:var(--walnut);color:var(--amber);font:500 13px/1 var(--h);letter-spacing:.14em;text-transform:uppercase}
+.hint{color:var(--mute);font-size:14px;margin-top:10px}
+/* внутри */
+.inside .grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:22px;align-items:start}
+.tall{position:relative;aspect-ratio:4/5;overflow:hidden}
+.tall img{width:100%;height:100%;object-fit:cover}
+.tall .lbl{position:absolute;left:20px;bottom:20px;background:var(--cream);padding:12px 16px;font-size:14px;max-width:260px;line-height:1.4}
+.tall .lbl b{display:block;font:500 13px/1 var(--h);letter-spacing:.14em;text-transform:uppercase;color:var(--sun);margin-bottom:4px}
+.side{display:grid;gap:22px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.duo figure{aspect-ratio:4/5;overflow:hidden}
+.duo img{width:100%;height:100%;object-fit:cover}
+.feat{list-style:none;columns:2;column-gap:28px}
+.feat li{break-inside:avoid;padding:14px 0;border-top:1px solid #e2d6c3;font-size:16px}
+.feat b{display:block;font:500 18px/1.2 var(--h);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
+.feat span{color:var(--mute);font-size:15px}
+/* снаружи */
+.out{background:var(--walnut);color:var(--cream);overflow:hidden}
+.out h2{color:var(--cream)}
+.out .hd p{color:#cdb9a3}
+.og{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.og figure{aspect-ratio:3/4;overflow:hidden;position:relative}
+.og img{width:100%;height:100%;object-fit:cover}
+.og figure::before{content:"";position:absolute;inset:14px;border:1px solid rgba(243,176,74,.6);z-index:1;pointer-events:none}
+.cards{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1px;background:rgba(248,243,234,.14);border:1px solid rgba(248,243,234,.14)}
+.cards div{background:var(--walnut);padding:28px 24px;transition:background .3s}
+.cards div:hover{background:#2f1f15}
+.cards h3{font:500 24px/1.1 var(--h);text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+.cards p{color:#d8c7b3;font-size:15.5px}
+.cards .wide{grid-column:1/-1;background:var(--wood)}
+.cards .wide:hover{background:#6a4529}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{font:400 14px/1 var(--h);letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(243,176,74,.5);color:var(--amber);padding:10px 12px}
+/* отзывы */
+.rv{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:start}
+.five{position:sticky;top:30px}
+.five b{display:block;font:600 clamp(7rem,14vw,12rem)/.8 var(--h);color:var(--sun)}
+.five p{font:500 22px/1.2 var(--h);text-transform:uppercase;letter-spacing:.06em;margin-top:34px}
+.five small{display:block;color:var(--mute);margin-top:6px}
+.five a{display:inline-flex;align-items:center;min-height:44px;margin-top:10px;font-weight:700}
+.quotes{display:grid;gap:0}
+.quotes article{padding:30px 0;border-top:1px solid #e2d6c3;display:grid;grid-template-columns:minmax(0,64px) minmax(0,1fr);gap:20px}
+.quotes article:last-child{border-bottom:1px solid #e2d6c3}
+.quotes svg{width:46px;height:42px}
+.quotes h3{font:500 clamp(1.5rem,2.4vw,2rem)/1.1 var(--h);text-transform:uppercase;margin-bottom:8px}
+.quotes p{color:#4b3d33;max-width:58ch}
+/* бронь */
+.book{background:var(--steppe)}
+.bk{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:24px;align-items:start}
+.panel{background:var(--cream);padding:clamp(22px,3vw,42px)}
+.qq{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid #e2d6c3}
+.qq:last-child{border:0;margin:0;padding:0}
+.ql{display:block;font:500 18px/1.2 var(--h);letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+fieldset{border:0}
+.dates{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.dates label{display:grid;gap:6px;font-size:14px;color:var(--mute)}
+.dates input{min-height:52px;border:1.5px solid #dccdb6;background:#fff;padding:0 14px;font:500 16px var(--b);color:var(--ink);width:100%;border-radius:0}
+.cnt{display:flex;flex-wrap:wrap;gap:14px 26px}
+.cnt .c{display:flex;align-items:center;gap:8px}
+.cnt button{width:44px;height:44px;border:1.5px solid var(--walnut);background:transparent;font:500 22px/1 var(--h);cursor:pointer;transition:.2s}
+.cnt button:hover{background:var(--walnut);color:var(--cream)}
+.cnt output{min-width:30px;text-align:center;font:600 26px/1 var(--h)}
+.cnt small{color:var(--mute);font-size:14px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{position:relative}
+.opt input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.opt span{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border:1.5px solid #dccdb6;background:#fff;font-weight:500;font-size:15px;transition:.2s}
+.opt:hover span{border-color:var(--walnut)}
+.opt input:checked+span{background:var(--walnut);border-color:var(--walnut);color:var(--amber)}
+.opt input:focus-visible+span{outline:3px solid var(--sun);outline-offset:2px}
+.tk{position:sticky;top:24px;background:var(--walnut);color:var(--cream);padding:clamp(24px,3vw,38px);overflow:hidden}
+.tk svg.tri{position:absolute;right:-30px;bottom:-20px;width:220px;opacity:.5}
+.tk h3{font:500 clamp(1.8rem,2.6vw,2.4rem)/1 var(--h);text-transform:uppercase;margin:12px 0 20px;color:var(--amber)}
+.tk dl{display:grid;gap:10px;margin-bottom:24px;position:relative}
+.tk dl div{display:flex;justify-content:space-between;gap:14px;padding-bottom:10px;border-bottom:1px dashed rgba(248,243,234,.25);font-size:15px}
+.tk dt{color:#bfa98f}
+.tk dd{font-weight:700;text-align:right}
+.tk .btn{width:100%;position:relative}
+/* шаги */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;counter-reset:s}
+.steps li{list-style:none;border-top:3px solid var(--walnut);padding-top:18px}
+.steps li::before{counter-increment:s;content:"0" counter(s);font:300 46px/1 var(--h);color:var(--sun);display:block;margin-bottom:10px}
+.steps h3{font:500 22px/1.1 var(--h);text-transform:uppercase;margin-bottom:6px}
+.steps p{color:var(--mute);font-size:15.5px}
+/* контакты */
+.ct{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);background:var(--walnut);color:var(--cream)}
+.ci{padding:clamp(26px,4vw,50px)}
+.ci h2{color:var(--cream);font-size:clamp(2rem,3.4vw,3rem)}
+.ci dl{display:grid;gap:16px;margin:24px 0 28px}
+.ci dt{font:500 13px/1 var(--h);letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
+.ci dd a{font-weight:700}
+.map{min-height:460px;background:#3a2a1e}
+.map iframe{display:block;width:100%;height:100%;min-height:460px;border:0}
+/* финал */
+.final{position:relative;color:#fff;overflow:hidden;padding:clamp(100px,14vw,200px) 0;text-align:center}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.final::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(36,23,15,.35),rgba(36,23,15,.75))}
+.final .wrap{position:relative;z-index:1}
+.final h2{margin:0 auto;max-width:14ch;font-size:clamp(2.6rem,6.4vw,6rem)}
+.final p{margin:18px auto 30px;max-width:40ch;font-size:18px;color:#f1e6d6}
+.final .cta{justify-content:center}
+footer{background:#000;color:#a8988a;padding:22px 0 40px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px}
+.fab{display:none}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+@media (max-width:1100px){.top nav{display:none}.hero .g{grid-template-columns:minmax(0,1fr);min-height:0}.hr{min-height:520px}.hl{padding:24px 20px 48px}.hd,.inside .grid,.og,.rv,.bk,.ct{grid-template-columns:minmax(0,1fr)}.five,.tk{position:relative;top:0}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.top{order:-2}}
+@media (max-width:640px){body{font-size:16px}.wrap{width:min(100% - 32px,1360px)}.hl{padding:18px 16px 40px}.hr{min-height:420px}.cta .btn{flex:1 1 100%}.rate{right:12px;top:12px;padding:10px 12px}.rate b{font-size:30px}
+.strip figure{height:400px}.feat{columns:1}.cards{grid-template-columns:minmax(0,1fr)}.quotes article{grid-template-columns:minmax(0,1fr);gap:8px}.dates{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:minmax(0,1fr)}.map,.map iframe{min-height:320px}
+.fab{display:flex;position:fixed;right:14px;bottom:14px;z-index:40;align-items:center;gap:8px;min-height:54px;padding:0 22px;background:var(--amber);color:var(--walnut);font:500 17px/1 var(--h);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;box-shadow:0 12px 30px -8px rgba(0,0,0,.5)}
+.fab svg{width:20px;height:20px}footer{padding-bottom:90px}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="g">
+    <div class="hl">
+      <div class="top">
+        <a class="logo" href="#top"><svg viewBox="0 0 28 26" aria-hidden="true"><path d="M14 2 26 24H2Z" fill="none" stroke="#f3b04a" stroke-width="2.4" stroke-linejoin="round"/><path d="M10 24v-7h8v7" fill="#f3b04a"/></svg>Miros_glamp</a>
+        <nav aria-label="Разделы"><a href="#view">Вид</a><a href="#inside">Домик</a><a href="#out">Чан</a><a href="#book">Бронь</a><a href="#contacts">Контакты</a></nav>
+      </div>
+      <div class="hm">
+        <span class="kick">Усть-Лабинский район · Краснодарский край</span>
+        <h1>Miros<span>glamp</span></h1>
+        <p class="lead">Современный А-фрейм на&nbsp;высоком берегу реки: чан с&nbsp;подогревом, терраса в&nbsp;огнях гирлянды и&nbsp;закат, ради которого сюда и&nbsp;едут.</p>
+        <div class="cta">
+          <a class="btn b-amber" href="#book">Выбрать даты</a>
+          <a class="btn b-line" href="https://wa.me/79189846305?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D0%BC%D0%B8%D0%BA%20Miros_glamp." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2.1 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.3Z"/></svg>WhatsApp</a>
+        </div>
+        <div class="sub"><a href="tel:+79189846305">Позвонить</a><a href="https://yandex.ru/maps/?rtext=~45.150371,39.731977" target="_blank" rel="noopener">Маршрут</a><span data-status></span></div>
+      </div>
+    </div>
+    <div class="hr">
+      <img src="img/p1.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 1350w" sizes="(max-width:1100px) 100vw, 50vw" alt="Закат над рекой с высокого берега, степь и луга" width="1350" height="1800">
+      <svg class="aframe" viewBox="0 0 520 300" aria-hidden="true"><circle cx="260" cy="14" r="5"/><circle cx="240" cy="38" r="5"/><circle cx="280" cy="38" r="5"/><circle cx="220" cy="62" r="5"/><circle cx="300" cy="62" r="5"/><circle cx="200" cy="86" r="5"/><circle cx="320" cy="86" r="5"/><circle cx="180" cy="110" r="5"/><circle cx="340" cy="110" r="5"/><circle cx="160" cy="134" r="5"/><circle cx="360" cy="134" r="5"/><circle cx="140" cy="158" r="5"/><circle cx="380" cy="158" r="5"/><circle cx="120" cy="182" r="5"/><circle cx="400" cy="182" r="5"/><circle cx="100" cy="206" r="5"/><circle cx="420" cy="206" r="5"/><circle cx="80" cy="230" r="5"/><circle cx="440" cy="230" r="5"/><circle cx="60" cy="254" r="5"/><circle cx="460" cy="254" r="5"/><circle cx="40" cy="278" r="5"/><circle cx="480" cy="278" r="5"/></svg>
+      <div class="rate"><b>5,0</b><span>2ГИС<br>45 оценок</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="view" id="view">
+  <div class="wrap"><div class="hd" data-r><div><span class="kick">Вид</span><h2 style="margin-top:12px">Один только вид чего стоит</h2></div><p>Так и&nbsp;пишут гости. Река внизу, степь до&nbsp;горизонта и&nbsp;закаты в&nbsp;любое время года — даже зимой, когда берега в&nbsp;снегу.</p></div></div>
+  <div class="strip" data-qa-skip tabindex="0" aria-label="Фото видов, листается вбок">
+    <figure><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 675w" sizes="450px" alt="Солнце садится над изгибом реки" loading="lazy" width="675" height="900"><figcaption>Закат</figcaption></figure>
+    <figure><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w" sizes="450px" alt="Река с песчаной отмелью среди зелёных берегов" loading="lazy" width="675" height="900"><figcaption>Река внизу</figcaption></figure>
+    <figure><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 675w, img/p8.jpg 1350w" sizes="450px" alt="Зимняя река и заснеженный обрыв под голубым небом" loading="lazy" width="1350" height="1800"><figcaption>Зима</figcaption></figure>
+    <figure><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="450px" alt="Зелёная долина с грунтовой дорогой и пасущимися овцами" loading="lazy" width="1350" height="1800"><figcaption>Прогулка</figcaption></figure>
+    <figure><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 675w" sizes="450px" alt="Осенний закат над рекой и сухой травой" loading="lazy" width="675" height="900"><figcaption>Осень</figcaption></figure>
+  </div>
+  <div class="wrap"><p class="hint">Листайте вбок →</p></div>
+</section>
+
+<section class="inside" id="inside">
+  <div class="wrap">
+    <div class="hd" data-r><div><span class="kick">А-фрейм</span><h2 style="margin-top:12px">Тёплое дерево и&nbsp;стеклянная стена в&nbsp;степь</h2></div><p>Гости сравнивают домик с&nbsp;картинкой из&nbsp;Pinterest и&nbsp;пишут, что в&nbsp;нём есть всё необходимое — и&nbsp;даже больше.</p></div>
+    <div class="grid">
+      <div class="tall" data-r><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 720w, img/p13.jpg 1440w" sizes="(max-width:1100px) 100vw, 740px" alt="Интерьер А-фрейма: тёмные балки, гирлянда, кресла-мешки и панорамное окно" loading="lazy" width="1440" height="1800"><p class="lbl"><b>Внутри</b>Тёплые полы, кондиционер, вид из&nbsp;окна во&nbsp;всю стену.</p></div>
+      <div class="side" data-r>
+        <div class="duo">
+          <figure><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 720w, img/p3.jpg 1440w" sizes="(max-width:640px) 50vw, 300px" alt="Кухня и обеденный стол под деревянными балками" loading="lazy" width="1440" height="1800"></figure>
+          <figure><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 566w, img/p10.jpg 805w" sizes="(max-width:640px) 50vw, 300px" alt="Сервированный стол с бокалами и цветами" loading="lazy" width="805" height="1280"></figure>
+        </div>
+        <ul class="feat">
+          <li><b>Посуда для красивого стола</b><span>И&nbsp;соль, перец — всё для готовки</span></li>
+          <li><b>Халаты и&nbsp;полотенца</b><span>Постельное и&nbsp;ванные принадлежности</span></li>
+          <li><b>Проектор и&nbsp;игры</b><span>Настольные игры на&nbsp;выбор при заселении</span></li>
+          <li><b>Колонка Алиса, Wi-Fi</b><span>И&nbsp;тёплые полы</span></li>
+          <li><b>Можно с&nbsp;детьми</b><span>Для малыша гостям предоставили манеж</span></li>
+          <li><b>Можно с&nbsp;питомцами</b><span>Своя парковка, есть трансфер</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="out" id="out">
+  <div class="wrap">
+    <div class="og">
+      <figure data-r><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 675w, img/p14.jpg 1350w" sizes="(max-width:1100px) 100vw, 560px" alt="Терраса с газоном и гирляндой на краю обрыва над рекой" loading="lazy" width="1350" height="1800"></figure>
+      <div data-r>
+        <span class="kick">Снаружи</span>
+        <h2 style="margin:12px 0 30px">Купель на&nbsp;всю ночь</h2>
+        <div class="cards">
+          <div class="wide"><h3>Чан с&nbsp;подогревом</h3><p>Гости рассказывают, как Дмитрий растопил им купель, — и&nbsp;они отдыхали в&nbsp;ней весь вечер и&nbsp;всю ночь.</p></div>
+          <div><h3>Мангал-камин</h3><p>Для уютных вечеров и&nbsp;шашлыков с&nbsp;видом на&nbsp;реку.</p></div>
+          <div><h3>Зелёная лужайка</h3><p>Терраса с&nbsp;гирляндой, кресла и&nbsp;газон на&nbsp;краю берега.</p></div>
+          <div><h3>Прогулка к&nbsp;реке</h3><p>Спуститься вниз и&nbsp;пройтись вдоль воды.</p></div>
+          <div><h3>Тишина</h3><p>Далеко от&nbsp;суеты и&nbsp;от&nbsp;людей — за&nbsp;этим сюда и&nbsp;приезжают.</p></div>
+        </div>
+        <div class="tags"><span>С&nbsp;детьми</span><span>С&nbsp;питомцами</span><span>Парковка</span><span>Трансфер</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rev">
+  <div class="wrap rv">
+    <aside class="five" data-r><b>5,0</b><p>45 оценок в&nbsp;2ГИС</p><small>Пересказ отзывов гостей</small><a href="https://2gis.ru/krasnodar/firm/70000001082775742" target="_blank" rel="noopener">Все отзывы →</a></aside>
+    <div class="quotes">
+      <article data-r><svg viewBox="0 0 46 42" aria-hidden="true"><path d="M23 2 44 40H2Z" fill="none" stroke="#e8764b" stroke-width="3"/></svg><div><h3>Отдых без единого «но»</h3><p>Гостья признаётся, что давно так по-настоящему не&nbsp;отдыхала, — всё оказалось именно так, как хотелось.</p></div></article>
+      <article data-r><svg viewBox="0 0 46 42" aria-hidden="true"><path d="M23 2 44 40H2Z" fill="none" stroke="#e8764b" stroke-width="3"/></svg><div><h3>Продумано до&nbsp;мелочей</h3><p>Чисто и&nbsp;опрятно, есть даже посуда для сервировки. Семье с&nbsp;ребёнком предоставили манеж.</p></div></article>
+      <article data-r><svg viewBox="0 0 46 42" aria-hidden="true"><path d="M23 2 44 40H2Z" fill="none" stroke="#e8764b" stroke-width="3"/></svg><div><h3>Теперь только сюда</h3><p>Те, кто долго выбирали домики, пишут, что нашли своё место и&nbsp;вернутся ещё не&nbsp;раз. Отдельно благодарят персонал за&nbsp;гостеприимство.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="hd" data-r><div><span class="kick">Бронь</span><h2 style="margin-top:12px">Ваш закат над рекой</h2></div><p>Отметьте даты и&nbsp;пожелания — сообщение для WhatsApp соберётся само.</p></div>
+    <div class="bk">
+      <form class="panel" id="f" onsubmit="return false" data-r>
+        <div class="qq"><span class="ql">Даты</span><div class="dates"><label>Заезд<input type="date" id="d1"></label><label>Выезд<input type="date" id="d2"></label></div></div>
+        <div class="qq"><span class="ql">Гости</span><div class="cnt">
+          <div class="c"><button type="button" data-k="ad" data-d="-1" aria-label="Меньше взрослых">−</button><output id="ad">2</output><button type="button" data-k="ad" data-d="1" aria-label="Больше взрослых">+</button><small>взрослых</small></div>
+          <div class="c"><button type="button" data-k="ch" data-d="-1" aria-label="Меньше детей">−</button><output id="ch">0</output><button type="button" data-k="ch" data-d="1" aria-label="Больше детей">+</button><small>детей</small></div>
+        </div></div>
+        <fieldset class="qq"><legend class="ql">Пожелания</legend><div class="opts">
+          <label class="opt"><input type="checkbox" name="w" value="растопить чан к вечеру" checked><span>Чан к&nbsp;вечеру</span></label>
+          <label class="opt"><input type="checkbox" name="w" value="мангал-камин"><span>Мангал</span></label>
+          <label class="opt"><input type="checkbox" name="w" value="едем с питомцем"><span>С&nbsp;питомцем</span></label>
+          <label class="opt"><input type="checkbox" name="w" value="нужен манеж для малыша"><span>Манеж для малыша</span></label>
+          <label class="opt"><input type="checkbox" name="w" value="нужен трансфер"><span>Трансфер</span></label>
+        </div></fieldset>
+        <fieldset class="qq"><legend class="ql">Повод</legend><div class="opts">
+          <label class="opt"><input type="radio" name="why" value="отдых вдвоём" checked><span>Вдвоём</span></label>
+          <label class="opt"><input type="radio" name="why" value="отдых семьёй"><span>Семьёй</span></label>
+          <label class="opt"><input type="radio" name="why" value="день рождения"><span>День рождения</span></label>
+          <label class="opt"><input type="radio" name="why" value="перезагрузка в тишине"><span>Перезагрузка</span></label>
+        </div></fieldset>
+      </form>
+      <aside class="tk" aria-live="polite" data-r>
+        <svg class="tri" viewBox="0 0 220 200" aria-hidden="true"><path d="M110 6 214 194H6Z" fill="none" stroke="#f3b04a" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/></svg>
+        <span class="kick">Ваша заявка</span>
+        <h3 id="tt">Отдых вдвоём</h3>
+        <dl><div><dt>Даты</dt><dd id="td">выберите</dd></div><div><dt>Гости</dt><dd id="tg">2 взр.</dd></div><div><dt>Пожелания</dt><dd id="tw">чан к вечеру</dd></div></dl>
+        <a class="btn b-amber" id="wa" href="#" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="hd" data-r><h2>Как забронировать</h2></div>
+    <ol class="steps" data-r>
+      <li><h3>Заявка</h3><p>Даты и&nbsp;гости — в&nbsp;WhatsApp или звонком, на&nbsp;связи круглосуточно.</p></li>
+      <li><h3>Подтверждение</h3><p>Сверяем даты и&nbsp;пожелания: чан, манеж, трансфер.</p></li>
+      <li><h3>Оплата</h3><p>Переводом с&nbsp;карты или наличными.</p></li>
+      <li><h3>Заезд</h3><p>Своя парковка у&nbsp;домика, настольные игры — на&nbsp;выбор.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="ct" data-r>
+      <div class="ci">
+        <span class="kick">Контакты</span>
+        <h2 style="margin-top:12px">Почтовая, 62</h2>
+        <dl>
+          <div><dt>Адрес</dt><dd>Усть-Лабинский район, Почтовая улица, 62</dd></div>
+          <div><dt>На связи</dt><dd>Круглосуточно · <span data-status></span></dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79189846305">+7 918 984-63-05</a></dd></div>
+        </dl>
+        <div class="cta" style="margin-top:0"><a class="btn b-amber" href="https://yandex.ru/maps/?rtext=~45.150371,39.731977" target="_blank" rel="noopener">Маршрут</a><a class="btn b-line" href="https://wa.me/79189846305" target="_blank" rel="noopener">WhatsApp</a><a class="btn b-line" href="https://2gis.ru/krasnodar/firm/70000001082775742" target="_blank" rel="noopener">2ГИС</a></div>
+      </div>
+      <div class="map"><iframe loading="lazy" title="Карта: Почтовая улица, 62" src="https://yandex.ru/map-widget/v1/?ll=39.731977,45.150371&z=16&pt=39.731977,45.150371,pm2rdm"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="img/p12-m.jpg" srcset="img/p12-m.jpg 675w, img/p12.jpg 1350w" sizes="100vw" alt="Терраса А-фрейма с гирляндой и креслами вечером" loading="lazy" width="1350" height="1800">
+  <div class="wrap" data-r>
+    <h2>Гирлянда уже горит</h2>
+    <p>Напишите даты — расскажем, когда домик свободен.</p>
+    <div class="cta"><a class="btn b-amber" href="#book">Выбрать даты</a><a class="btn b-line" href="tel:+79189846305">Позвонить</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Miros_glamp · Усть-Лабинский район, Краснодарский край · данные 2ГИС</span><span>Демо-концепт, не&nbsp;официальный сайт</span></div></footer>
+<a class="fab" href="tel:+79189846305"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1Z"/></svg>Позвонить</a>
+
+<script>
+(function(){
+  var f=document.getElementById('f'),c={ad:2,ch:0},d1=document.getElementById('d1'),d2=document.getElementById('d2');
+  var t=new Date().toISOString().slice(0,10);d1.min=t;d2.min=t;
+  var ru=function(v){var p=v.split('-');return p[2]+'.'+p[1]};
+  f.addEventListener('click',function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.dataset.k;c[k]=Math.max(k==='ad'?1:0,Math.min(10,c[k]+ +b.dataset.d));document.getElementById(k).textContent=c[k];upd()});
+  function upd(){
+    if(d1.value){d2.min=d1.value;if(d2.value&&d2.value<=d1.value)d2.value=''}
+    var why=f.querySelector('[name=why]:checked').value,w=[].map.call(f.querySelectorAll('[name=w]:checked'),function(e){return e.value});
+    var dt=d1.value?(ru(d1.value)+(d2.value?' — '+ru(d2.value):'')):'';
+    document.getElementById('tt').textContent=why.charAt(0).toUpperCase()+why.slice(1);
+    document.getElementById('td').textContent=dt||'выберите';
+    document.getElementById('tg').textContent=c.ad+' взр.'+(c.ch?' + '+c.ch+' дет.':'');
+    document.getElementById('tw').textContent=w.length?w.join(', '):'—';
+    var txt='Здравствуйте! Хочу забронировать Miros_glamp'+(dt?' на '+dt:'')+'. Гостей: '+c.ad+' взрослых'+(c.ch?' и '+c.ch+' детей':'')+'. Повод: '+why+'.'+(w.length?' Пожелания: '+w.join(', ')+'.':'')+' Свободно?';
+    document.getElementById('wa').href='https://wa.me/79189846305?text='+encodeURIComponent(txt);
+  }
+  f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
+</body>
+</html>
