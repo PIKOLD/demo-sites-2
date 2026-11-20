@@ -1,551 +1,372 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Дубовая Долина — база отдыха в Уфе · коттедж, баня, чан</title><meta property="og:type" content="website"><meta property="og:title" content="Дубовая Долина — база отдыха в Уфе · коттедж, баня, чан"><meta property="og:description" content="База отдыха «Дубовая Долина» в Уфе: дом в лесу, баня и банный чан, коттедж для семьи и компании. Круглосуточно. Бронь через WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/dubovaya-dolina/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="База отдыха «Дубовая Долина» в Уфе: дом в лесу, баня и банный чан, коттедж для семьи и компании. Круглосуточно. Бронь через WhatsApp.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
+<title>Дубовая Долина — дом в лесу с баней и чаном под Уфой</title>
+<meta name="description" content="Дубовая Долина под Уфой: большой дом в лесу с баней, чаном, террасой и мангальной зоной. Для семьи, двух семей, дня рождения и девичника. Заявка в WhatsApp, на связи круглосуточно.">
+<meta property="og:type" content="website"><meta property="og:title" content="Дубовая Долина — дом в лесу с баней и чаном под Уфой"><meta property="og:description" content="Баня с жаркой парной, большой чан, терраса и мангал. Улица Лесная, 6."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/dubovaya-dolina/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Alegreya:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Alegreya:wght@400;500;700&display=swap"></noscript>
 <style>
-:root{
-  --paper:#f6efe2;
-  --paper-2:#efe4cf;
-  --ink:#2c2117;
-  --ink-soft:#5b4a37;
-  --oak:#b0762f;
-  --oak-deep:#8a5a22;
-  --oak-soft:#c08a3f;
-  --moss:#4a5b40;
-  --moss-deep:#34412e;
-  --line:#e0d0b6;
-  --glow:#f2c06a;
-  --wa:#2e7d52;
-}
-*{box-sizing:border-box}
+:root{--moss:#1d281c;--moss2:#283525;--moss3:#34432f;--sage:#e2e6d8;--paper:#eff0e8;--cream:#efe8d6;--oak:#c38a48;--gold:#dcae63;--ink:#1a2118;--mute:#4c5747;--line:#c9cebd;
+--d:"Cormorant Garamond",Georgia,serif;--b:"Alegreya",Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;font-family:"Manrope",system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.04;margin:0;letter-spacing:.005em}
-p{margin:0}
+body{font:400 18px/1.6 var(--b);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
 a{color:inherit}
-img,svg{max-width:100%}
-::selection{background:var(--oak);color:#fff}
-
-/* ===== top banner ===== */
-.demo-bar{background:var(--moss-deep);color:#f3e9d6;font-size:.78rem;letter-spacing:.02em;text-align:center;padding:.55rem 1rem;font-weight:600}
-.demo-bar b{color:var(--glow);font-weight:800}
-
-/* ===== header ===== */
-.site-head{position:sticky;top:0;z-index:50;background:rgba(246,239,226,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.site-head-in{max-width:1200px;margin:0 auto;padding:.7rem 1.15rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
-.brand-mark{width:42px;height:42px;border-radius:50%;background:var(--oak);color:#fff;display:grid;place-items:center;flex:0 0 auto}
-.brand-mark svg{width:26px;height:26px}
-.brand-name{font-family:"Playfair Display",serif;font-weight:600;font-size:1.12rem;letter-spacing:.01em;line-height:1.1}
-.brand-sub{display:block;font-family:"Manrope",sans-serif;font-size:.72rem;color:var(--ink-soft);font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-.head-call{display:flex;align-items:center;gap:.45rem;font-weight:700;font-size:.95rem;text-decoration:none;color:var(--oak-deep);padding:.5rem .2rem}
-.head-call svg{width:18px;height:18px}
-
-/* ===== hero ===== */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:
-  radial-gradient(120% 90% at 78% 30%, #f2e6cf 0%, #f6efe2 55%, #efe4cf 100%)}
-.hero-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:3rem 1.15rem 4rem;width:100%}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--oak-deep)}
-.hero-eyebrow::before{content:"";width:34px;height:2px;background:var(--oak)}
-.hero h1{font-size:clamp(3rem,10vw,7.2rem);margin:1rem 0 .2rem;letter-spacing:-.01em}
-.hero h1 .accent{color:var(--oak);font-style:italic;font-weight:500}
-.hero-sub{max-width:30ch;font-size:clamp(1.02rem,2vw,1.28rem);color:var(--ink-soft);font-weight:500;margin:.6rem 0 1rem}
-.hero-addr{display:flex;align-items:center;gap:.5rem;font-size:.95rem;color:var(--ink-soft);font-weight:600}
-.hero-addr svg{width:17px;height:17px;color:var(--oak);flex:0 0 auto}
-.status{display:inline-flex;align-items:center;gap:.5rem;margin:1.1rem 0 1.4rem;font-weight:700;font-size:.92rem;padding:.5rem .9rem;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.5)}
-.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#8a8a8a}
-.status.is-open::before{background:#3e9c5f;box-shadow:0 0 0 4px rgba(62,156,95,.18)}
-.status.is-closed::before{background:#c4573f}
-.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.5rem}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:.85rem 1.6rem;border-radius:14px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;font-family:inherit}
-.btn svg{width:19px;height:19px}
-.btn-primary{background:var(--oak-deep);color:#fff;box-shadow:0 10px 24px -10px rgba(138,90,34,.7)}
-.btn-primary:hover{background:var(--oak);transform:translateY(-2px)}
-.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
-.btn-ghost:hover{border-color:var(--oak);color:var(--oak-deep);transform:translateY(-2px)}
-.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -10px rgba(46,125,82,.6)}
-.btn-wa:hover{background:#236b45;transform:translateY(-2px)}
-.btn:focus-visible,.chip:focus-visible,a:focus-visible{outline:3px solid var(--oak);outline-offset:3px;border-radius:14px}
-.hero-tags{display:flex;flex-wrap:wrap;gap:.5rem;max-width:44rem}
-.tag{font-size:.8rem;font-weight:600;color:var(--ink-soft);background:rgba(255,255,255,.55);border:1px solid var(--line);padding:.4rem .8rem;border-radius:999px}
-
-/* ===== sections ===== */
-section{position:relative}
-.wrap{max-width:1200px;margin:0 auto;padding:4.5rem 1.15rem}
-.sec-eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--oak-deep)}
-.sec-title{font-size:clamp(1.9rem,4.4vw,3.3rem);margin:.55rem 0 .4rem}
-.sec-lead{color:var(--ink-soft);max-width:56ch;font-size:1.02rem}
-[data-r]{opacity:1;transform:none}
-.js [data-r]{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1320px,100% - 56px);margin-inline:auto}
+.nw{white-space:nowrap}
+.sc{font:500 13px/1.3 var(--b);letter-spacing:.16em;text-transform:uppercase}
+/* обложка */
+.cover{position:relative;background:var(--moss);color:var(--cream);min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;isolation:isolate}
+.demo{position:relative;z-index:3;text-align:center;font-size:13px;padding:8px 16px;color:#b9c0ac;border-bottom:1px solid rgba(239,232,214,.14)}
+.mast{position:relative;z-index:3;display:flex;align-items:center;gap:24px;min-height:68px;border-bottom:1px solid rgba(239,232,214,.14)}
+.mast .sc{color:#c8ceb9}
+.mast nav{display:flex;gap:28px;margin-left:auto;font-size:17px}
+.mast nav a{text-decoration:none;color:#dfe2d3}
+.mast nav a:hover{color:var(--gold)}
+.mast .tel{font-weight:500;text-decoration:none;color:var(--cream)}
+.rings{position:absolute;z-index:-1;right:-14vw;top:50%;width:max(88vh,64vw);aspect-ratio:1;translate:0 -46%;pointer-events:none}
+.rings svg{width:100%;height:100%;display:block}
+@supports (animation-timeline:scroll()){.rings svg{animation:turn linear both;animation-timeline:scroll(root);animation-range:0 100vh}}
+@keyframes turn{to{transform:rotate(24deg) scale(1.08)}}
+.rings path{transform-origin:500px 500px;animation:grow 1.6s cubic-bezier(.2,.7,.1,1) both;animation-delay:calc(var(--i) * 40ms)}
+@keyframes grow{from{transform:scale(.2);opacity:0}}
+.cv{position:relative;z-index:2;flex:1;display:grid;grid-template-columns:minmax(0,1fr);align-content:end;padding:clamp(28px,5vh,64px) 0 clamp(28px,5vh,56px)}
+.issue{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;margin-bottom:clamp(8px,2vh,20px);color:#c8ceb9}
+.st{display:inline-flex;align-items:center;gap:8px;font-size:16px;color:var(--cream)}
+.st::before{content:"";width:8px;height:8px;border-radius:50%;background:#8fcf8a;box-shadow:0 0 0 4px rgba(143,207,138,.18)}
+h1{font:500 clamp(64px,min(11.5vw,21vh),232px)/.84 var(--d);letter-spacing:-.025em;margin-left:-.05em}
+h1 em{display:block;font-style:italic;color:var(--gold);padding-left:.9em}
+.lines{display:grid;grid-template-columns:minmax(0,30em) auto;gap:24px 56px;align-items:end;margin-top:clamp(20px,4vh,44px);border-top:1px solid rgba(239,232,214,.22);padding-top:clamp(18px,3vh,28px)}
+.lead{font-size:clamp(18px,1.35vw,21px);line-height:1.5;color:#e4e0d0}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:2px;font:500 17px/1 var(--b);text-decoration:none;border:1px solid currentColor;background:transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn svg{width:18px;height:18px;flex:none}
+.cover .btn{color:var(--cream)}
+.cover .btn:hover{background:var(--cream);color:var(--moss)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#1d1608!important}
+.btn.gold:hover{background:#ebc27c;border-color:#ebc27c}
+.btn.dark{background:var(--moss);border-color:var(--moss);color:var(--cream)}
+.btn.dark:hover{background:var(--moss3)}
+.btn.line{color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--paper)}
+.score{position:absolute;z-index:2;right:max(28px,(100% - 1320px)/2);top:clamp(130px,20vh,220px);text-align:right;color:var(--cream)}
+.score b{display:block;font:500 clamp(72px,7vw,128px)/.8 var(--d);color:var(--cream)}
+.score span{font-size:15px;color:#c8ceb9}
+/* разделы */
+section{padding:clamp(80px,10vw,150px) 0}
+.kick{color:var(--oak);margin-bottom:18px}
+h2{font:500 clamp(44px,5.6vw,92px)/.92 var(--d);letter-spacing:-.02em}
+h2 em{font-style:italic;color:var(--oak)}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,25em);gap:28px 72px;align-items:end;margin-bottom:clamp(44px,6vw,88px)}
+.head p{color:var(--mute)}
+/* содержание */
+.toc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:0 clamp(40px,6vw,104px)}
+.toc ol{list-style:none;counter-reset:t}
+.toc ol li{counter-increment:t;display:grid;grid-template-columns:3.2em minmax(0,auto) minmax(24px,1fr) auto;align-items:baseline;gap:0 14px;padding:22px 0;border-top:1px solid var(--line)}
+.toc ol li::before{content:counter(t,decimal-leading-zero);font:italic 500 22px var(--d);color:var(--oak)}
+.toc ol li b{font:600 clamp(28px,2.6vw,40px)/1.05 var(--d)}
+.toc ol li i{border-bottom:2px dotted #a7ae99;height:1px;align-self:end;margin-bottom:.5em}
+.toc ol li span{color:var(--mute);font-size:17px;text-align:right}
+.toc .side{align-self:start;position:sticky;top:32px;background:var(--moss);color:var(--cream);padding:clamp(28px,3vw,44px);border-radius:2px}
+.side h3{font:500 clamp(30px,2.8vw,44px)/1 var(--d);margin-bottom:20px}
+.side ul{list-style:none;display:grid;gap:10px;font-size:17px;color:#dcdccc}
+.side li{display:flex;gap:12px}
+.side li::before{content:"";flex:none;width:7px;height:7px;margin-top:.62em;border-radius:50%;background:var(--gold)}
+.side .sc{color:#b9c0ac;margin:26px 0 10px}
+/* лента мелочей */
+.small{background:var(--sage)}
+.ribbon{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,22vw);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px max(28px,(100% - 1320px)/2) 28px;scroll-padding-inline:max(28px,(100% - 1320px)/2);scrollbar-width:thin;scrollbar-color:var(--oak) transparent}
+.card{scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);padding:28px 26px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .35s,border-color .35s}
+.card:hover{transform:translateY(-4px);border-color:var(--oak)}
+.card svg{width:56px;height:56px;stroke:var(--moss);fill:none;stroke-width:1.4}
+.card b{display:block;font:600 30px/1.05 var(--d);margin-bottom:8px}
+.card p{font-size:16px;color:var(--mute);line-height:1.45}
+.hint{display:flex;gap:12px;align-items:center;color:var(--mute);font-size:15px;margin-top:8px}
+/* отзывы */
+.praise{background:var(--moss);color:var(--cream)}
+.praise .kick{color:var(--gold)}
+.pr{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,6vw,112px)}
+.big5{font:500 clamp(150px,19vw,300px)/.8 var(--d);color:var(--gold);letter-spacing:-.03em}
+.pr .meta{margin-top:36px;color:#c8ceb9}
+.pr .meta a{color:var(--cream)}
+.qs{display:grid;gap:0}
+.q{border-top:1px solid rgba(239,232,214,.2);padding:28px 0;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px 40px}
+.q h3{font:italic 500 clamp(30px,2.8vw,44px)/1 var(--d);color:var(--cream)}
+.q p{color:#cfd2c3}
+/* заявка */
+.bk{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(36px,5vw,96px);align-items:start}
+.grp{border:0;padding:24px 0;border-top:1px solid var(--line)}
+.grp legend{font:600 28px/1 var(--d);float:left;width:100%;padding-bottom:16px}
+.ch{display:flex;flex-wrap:wrap;gap:10px;clear:both}
+.ch label{position:relative}
+.ch input{position:absolute;opacity:0;pointer-events:none}
+.ch span{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border:1px solid #aab19c;border-radius:999px;cursor:pointer;font-size:17px;background:#f7f7f1;transition:background .2s,color .2s,border-color .2s}
+.ch span:hover{border-color:var(--moss)}
+.ch input:checked+span{background:var(--moss);border-color:var(--moss);color:var(--cream)}
+.ch input:focus-visible+span{outline:2px solid var(--oak);outline-offset:3px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;clear:both}
+.fl label{display:block;font-size:14px;color:var(--mute);margin-bottom:6px}
+.fl input{width:100%;min-height:52px;border:1px solid #aab19c;background:#f7f7f1;font:500 17px var(--b);padding:0 14px;color:var(--ink);border-radius:2px}
+.fl input:focus{outline:none;border-color:var(--moss)}
+.stp{display:flex;align-items:center;justify-content:space-between;border:1px solid #aab19c;background:#f7f7f1;min-height:52px;border-radius:2px}
+.stp button{width:52px;height:50px;border:0;background:transparent;font:500 24px var(--b);cursor:pointer;color:var(--ink)}
+.stp button:hover{background:var(--sage)}
+.stp output{font:600 30px var(--d)}
+.tagw{position:sticky;top:28px;display:flex;flex-direction:column;align-items:center}
+.ring{width:96px;height:96px;border-radius:50%;border:5px solid #9a9f92;margin-bottom:-40px;position:relative;z-index:0;box-shadow:inset 0 2px 3px rgba(0,0,0,.25)}
+.tag{position:relative;z-index:1;width:100%;max-width:420px;border-radius:36px 36px 24px 24px;padding:76px clamp(24px,3vw,36px) 32px;color:#22170a;
+background:radial-gradient(ellipse 140% 60% at 30% 120%,rgba(0,0,0,.08),transparent 60%),repeating-radial-gradient(ellipse 260% 70% at 50% -30%,#c99252 0 9px,#bf8646 9px 11px,#cd9858 11px 19px,#c08947 19px 20px);box-shadow:0 24px 48px -20px rgba(29,40,28,.5),inset 0 0 0 1px rgba(0,0,0,.08)}
+.tag::before{content:"";position:absolute;left:50%;top:22px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:var(--paper);box-shadow:inset 0 2px 4px rgba(0,0,0,.35)}
+.tag h3{font:600 34px/1 var(--d);text-align:center;margin-bottom:4px}
+.tag .sub{text-align:center;font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px;opacity:.75}
+.tag dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px;font-size:16px;border-top:1px solid rgba(34,23,10,.25);padding-top:18px;margin-bottom:24px}
+.tag dt{opacity:.72}
+.tag dd{font-weight:500}
+.tag .btn{width:100%}
+.tag .tg{display:block;text-align:center;margin-top:14px;font-size:15px}
+/* контакты */
+.ct{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,5vw,88px)}
+.ci>div{border-top:1px solid var(--line);padding:20px 0}
+.ci .sc{color:var(--mute);margin-bottom:6px;font-size:12px}
+.ci p{font-size:20px}
+.ci a{text-underline-offset:5px}
+.rt{font-size:16px;color:#d8d4c4}.rt b{font:600 22px var(--d);color:var(--gold)}
+.ci .links{display:flex;flex-wrap:wrap;gap:8px 22px}
+.ci .links a{text-underline-offset:4px}
+.map{min-height:540px;border:1px solid var(--line);background:var(--sage)}
+.map iframe{display:block;width:100%;height:100%;min-height:540px;border:0}
+.final{background:var(--moss);color:var(--cream);text-align:center;padding:clamp(90px,12vw,170px) 0;position:relative;overflow:hidden;isolation:isolate}
+.final .rings{right:auto;left:50%;translate:-50% -50%;width:min(1100px,150vw);opacity:.6}
+.final h2{font-size:clamp(52px,7.4vw,128px);margin-bottom:36px}
+.final h2 em{color:var(--gold)}
+.final .acts{justify-content:center}
+.final .btn{color:var(--cream)}
+.final .btn:hover{background:var(--cream);color:var(--moss)}
+footer{background:var(--moss);color:#aeb6a2;font-size:14px;border-top:1px solid rgba(239,232,214,.14);padding:24px 0 36px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
+.fab{display:none}
+.js .fab{opacity:0;transform:scale(.6);pointer-events:none;transition:opacity .3s,transform .3s}
+.js .fab.on{opacity:1;transform:none;pointer-events:auto}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.7,.1,1)}
 .js [data-r].in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.js [data-r]{opacity:1;transform:none;transition:none}}
-
-/* ===== amenities ===== */
-.amenities{background:var(--paper-2)}
-.amen-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.2rem}
-.amen-card{background:#fbf6ec;border:1px solid var(--line);border-radius:18px;padding:1.4rem 1.3rem;transition:transform .2s ease,box-shadow .2s ease}
-.amen-card:hover{transform:translateY(-3px);box-shadow:0 16px 30px -18px rgba(44,33,23,.35)}
-.amen-card h3{font-size:1.28rem;margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem}
-.amen-card h3 .ic{width:40px;height:40px;border-radius:12px;background:var(--oak);color:#fff;display:grid;place-items:center;flex:0 0 auto}
-.amen-card h3 .ic svg{width:22px;height:22px}
-.amen-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.45rem}
-.amen-card li{display:flex;align-items:baseline;gap:.55rem;color:var(--ink-soft);font-weight:500}
-.amen-card li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--oak);flex:0 0 auto;transform:translateY(-1px)}
-.amen-note{margin-top:1.6rem;font-size:.9rem;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.4rem .8rem}
-.amen-note b{color:var(--ink)}
-
-/* ===== praise ===== */
-.praise{background:var(--paper)}
-.praise-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.5rem;margin-bottom:2rem}
-.rating{display:flex;align-items:center;gap:.8rem;background:var(--ink);color:#f3e9d6;padding:1rem 1.3rem;border-radius:16px}
-.rating .num{font-family:"Playfair Display",serif;font-size:2.6rem;line-height:1;font-weight:600}
-.rating .stars{color:var(--glow);letter-spacing:.1em;font-size:1rem}
-.rating .count{font-size:.8rem;opacity:.85}
-.praise-grid{display:grid;grid-template-columns:1fr;gap:1rem}
-.praise-card{background:#fbf6ec;border:1px solid var(--line);border-radius:18px;padding:1.6rem 1.4rem;position:relative;overflow:hidden}
-.praise-card .n{position:absolute;top:.4rem;right:1rem;font-family:"Playfair Display",serif;font-size:4rem;line-height:1;color:var(--oak);opacity:.16;font-weight:600}
-.praise-card h3{font-size:1.3rem;margin-bottom:.55rem;padding-right:2rem}
-.praise-card p{color:var(--ink-soft)}
-
-/* ===== feature ===== */
-.feature{background:var(--moss-deep);color:#f3e9d6;overflow:hidden}
-.feature::before{content:"";position:absolute;inset:0;background:radial-gradient(90% 70% at 85% 10%,rgba(176,118,47,.35),transparent 60%)}
-.feature .wrap{position:relative}
-.feature .sec-eyebrow{color:var(--glow)}
-.feature .sec-lead{color:#d9cdb4}
-.book{display:grid;grid-template-columns:1fr;gap:1.6rem;margin-top:2.2rem;background:#fbf6ec;color:var(--ink);border-radius:22px;padding:1.6rem 1.4rem;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
-.field label{display:block;font-size:.82rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.45rem}
-.field .dates{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
-.field input[type=date]{width:100%;min-height:50px;border:2px solid var(--line);border-radius:12px;background:#fff;padding:.6rem .8rem;font:inherit;font-weight:600;color:var(--ink)}
-.field input[type=date]:focus{border-color:var(--oak);outline:none}
-.stepper{display:inline-flex;align-items:center;border:2px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
-.stepper button{width:50px;height:50px;border:0;background:transparent;font-size:1.5rem;font-weight:700;color:var(--oak-deep);cursor:pointer;font-family:inherit}
-.stepper button:hover{background:var(--paper-2)}
-.stepper output{min-width:56px;text-align:center;font-weight:800;font-size:1.1rem}
-.chips{display:flex;flex-wrap:wrap;gap:.55rem}
-.chip{min-height:44px;padding:.6rem 1rem;border-radius:999px;border:2px solid var(--line);background:#fff;font:inherit;font-weight:600;color:var(--ink);cursor:pointer;transition:all .16s ease}
-.chip:hover{border-color:var(--oak)}
-.chip.on{background:var(--oak);border-color:var(--oak);color:#fff}
-.book-cta{display:flex;flex-direction:column;gap:.8rem;margin-top:.4rem}
-.book-preview{font-size:.85rem;color:var(--ink-soft);background:var(--paper);border:1px dashed var(--line);border-radius:12px;padding:.7rem .9rem;white-space:pre-wrap;word-break:break-word}
-
-/* ===== visit ===== */
-.visit{background:var(--paper-2)}
-.visit-grid{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:2rem}
-.visit-card{background:#fbf6ec;border:1px solid var(--line);border-radius:18px;padding:1.5rem 1.4rem}
-.visit-card h3{font-size:1.18rem;margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem}
-.visit-card h3 .ic{width:34px;height:34px;border-radius:10px;background:var(--moss);color:#fff;display:grid;place-items:center;flex:0 0 auto}
-.visit-card h3 .ic svg{width:19px;height:19px}
-.visit-card p{color:var(--ink-soft);margin-bottom:.35rem}
-.visit-card a{color:var(--oak-deep);font-weight:700;text-decoration:none}
-.visit-card a:hover{text-decoration:underline}
-.visit-card .rows{display:flex;flex-direction:column;gap:.5rem}
-.visit-card .row{display:flex;align-items:center;gap:.7rem;font-weight:600}
-.visit-card .row svg{width:18px;height:18px;color:var(--oak);flex:0 0 auto}
-.visit-map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:320px}
-.visit-map iframe{display:block;width:100%;height:360px;border:0}
-
-/* ===== final ===== */
-.final{background:var(--paper);text-align:center;overflow:hidden}
-.final .wrap{display:flex;flex-direction:column;align-items:center;gap:1rem;padding-top:5rem;padding-bottom:5rem}
-.final h2{font-size:clamp(2.2rem,6vw,4.2rem);max-width:18ch}
-.final h2 .accent{color:var(--oak);font-style:italic;font-weight:500}
-.final .sub{color:var(--ink-soft);max-width:44ch}
-.final-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin-top:.6rem}
-.final-leaf{width:70px;height:70px;color:var(--oak);opacity:.8}
-
-/* ===== footer ===== */
-.foot{border-top:1px solid var(--line);background:var(--paper);padding:1.6rem 1.15rem;text-align:center}
-.foot p{font-size:.82rem;color:var(--ink-soft)}
-
-/* ===== floating call ===== */
-.call-fab{display:none}
-@media (max-width:760px){
-  .call-fab{display:flex;position:fixed;right:14px;bottom:14px;z-index:60;align-items:center;gap:.5rem;background:var(--oak-deep);color:#fff;text-decoration:none;font-weight:700;padding:.9rem 1.15rem;border-radius:999px;box-shadow:0 12px 30px -8px rgba(44,33,23,.6)}
-  .call-fab svg{width:19px;height:19px}
+@media (max-width:1100px){
+ .mast nav{display:none}.mast .tel{margin-left:auto}
+ .lines,.head,.toc,.pr,.bk,.ct{grid-template-columns:minmax(0,1fr)}
+ .toc .side{position:static;margin-top:40px}
+ .tagw{position:static}
+ .score{position:static;text-align:left;margin-bottom:16px;display:flex;align-items:baseline;gap:14px}
+ .score b{display:inline;font-size:64px}
 }
-
-/* ===== responsive ===== */
-@media (min-width:640px){
-  .amen-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .praise-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}.praise-card:first-child{grid-row:span 2;display:flex;flex-direction:column;justify-content:flex-end;min-height:300px;background:var(--oak-deep);color:#fff;border-color:var(--oak-deep)}.praise-card:first-child p{color:#f6ead6}.praise-card:first-child h3{font-size:1.9rem}.praise-card:first-child .n{color:#fff;opacity:.3}
-  .book{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .book .field-full{grid-column:1/-1}
+@media (max-width:640px){
+ body{font-size:17px}
+ .wrap{width:calc(100% - 40px)}
+ .demo{font-size:12px}
+ .mast{min-height:60px}.mast .sc{font-size:11px;letter-spacing:.12em}.mast .tel{font-size:16px}
+ .rings{width:150vw;right:-70vw;top:30%}
+ h1{font-size:clamp(60px,19.5vw,96px)}
+ h1 em{padding-left:.6em}
+ .acts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);width:100%}
+ .acts .gold,.acts .dark{grid-column:1/-1}
+ .btn{padding:0 14px}
+ .toc ol li{grid-template-columns:2.4em minmax(0,1fr);row-gap:4px}
+ .toc ol li i{display:none}
+ .toc ol li span{grid-column:2;text-align:left;font-size:16px}
+ .ribbon{grid-auto-columns:78vw;padding-inline:20px;scroll-padding-inline:20px}
+ .q{grid-template-columns:minmax(0,1fr)}
+ .two{grid-template-columns:minmax(0,1fr)}
+ .map,.map iframe{min-height:380px}
+ .fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:50;width:60px;height:60px;border-radius:50%;background:var(--gold);color:#1d1608;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.3),0 0 0 6px rgba(220,174,99,.25)}
+ .fab svg{width:24px;height:24px}
+ footer{padding-bottom:100px}
 }
-@media (min-width:900px){
-  .visit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .visit-map{grid-row:span 2}
-  .hero-inner{padding-left:2rem;padding-right:2rem}
-  .hero-sub{max-width:34ch}
-  .book{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .book .field-wide{grid-column:span 2}
-  .book-cta{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between}
-  .book-preview{flex:1}
-}
-@media (min-width:1200px){
-  .wrap{padding-left:0;padding-right:0}
-  .hero-inner{padding-left:0;padding-right:0}
-}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js [data-r]{opacity:1;transform:none}}
 </style>
 <script>document.documentElement.className='js'</script>
 </head>
 <body>
-
-<!-- icon symbols -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="leaf" viewBox="0 0 64 64">
-      <path d="M32 6C20 10 10 20 12 34c1.6 12 12 22 22 20 12-2 20-12 18-24-2-10-10-18-20-24Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/>
-      <path d="M32 8 34 52" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
-      <path d="M32 22 21 18M32 34 19 34M32 46 23 48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    </symbol>
-    <symbol id="acorn" viewBox="0 0 64 64">
-      <path d="M23 22C23 11 41 11 41 22Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/>
-      <path d="M16 24h32" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
-      <path d="M22 28c0 17 4 26 10 32 6-6 10-15 10-32Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/>
-      <path d="M32 24v6" stroke="currentColor" stroke-width="2.4"/>
-    </symbol>
-    <symbol id="steam" viewBox="0 0 64 64">
-      <path d="M20 52c-6-6 2-12-2-18-4-6 4-9 2-15" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
-      <path d="M32 54c-6-6 2-12-2-18-4-6 4-9 2-15" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
-      <path d="M44 52c-6-6 2-12-2-18-4-6 4-9 2-15" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
-    </symbol>
-    <symbol id="house" viewBox="0 0 64 64">
-      <path d="M8 30 32 8l24 22" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/>
-      <path d="M13 30v26h38V30" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="round"/>
-      <path d="M26 56V41h12v15" fill="none" stroke="currentColor" stroke-width="3"/>
-    </symbol>
-    <symbol id="pine" viewBox="0 0 64 64">
-      <path d="M32 6 52 30H42l14 24H8l14-24H12Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/>
-      <path d="M32 34v20" stroke="currentColor" stroke-width="3"/>
-    </symbol>
-    <symbol id="tub" viewBox="0 0 64 64">
-      <path d="M10 28h44v14a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/>
-      <path d="M14 28V22a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v6" fill="none" stroke="currentColor" stroke-width="3.4"/>
-      <path d="M28 16c-4-6 4-9 2-14M38 16c-4-6 4-9 2-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    </symbol>
-    <symbol id="car" viewBox="0 0 64 64">
-      <path d="M10 40V28l8-10h20l8 10v12" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/>
-      <path d="M14 40v6h6v-6M44 40v6h6v-6" fill="none" stroke="currentColor" stroke-width="3.4"/>
-      <circle cx="20" cy="40" r="4"/><circle cx="44" cy="40" r="4"/>
-    </symbol>
-    <symbol id="pin" viewBox="0 0 64 64">
-      <path d="M32 58C22 46 14 36 14 26a18 18 0 1 1 36 0c0 10-8 20-18 32Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/>
-      <circle cx="32" cy="26" r="7" fill="none" stroke="currentColor" stroke-width="3.4"/>
-    </symbol>
-    <symbol id="phone" viewBox="0 0 24 24">
-      <path d="M6.6 3h2.8l1.3 4-1.9 1.5a13 13 0 0 0 5.7 5.7L16 12.3l4 1.3v2.8a1.5 1.5 0 0 1-1.6 1.5C10 17.2 6.8 14 6 5.9A1.5 1.5 0 0 1 7.5 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-    </symbol>
-    <symbol id="wa" viewBox="0 0 24 24">
-      <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-      <path d="M9 8.5c-.4 0-.9.1-1.2.5-.7.8-.7 2 0 3 1 1.4 2.3 2.8 4 3.7 1 .6 1.7.4 2.3-.1.4-.4.5-.8.5-1.2l-1.5-.7-1 .6c-.5-.2-1.2-.8-1.8-1.6l.6-1-.4-1.5c-.5-.2-1-.4-1.5-.4Z" fill="currentColor"/>
-    </symbol>
-  </defs>
-</svg>
-
-<div class="demo-bar"><b>Демо-концепт.</b> Пример по данным 2ГИС, не официальный сайт</div>
-
-<header class="site-head">
-  <div class="site-head-in">
-    <a class="brand" href="#top">
-      <span class="brand-mark"><svg><use href="#leaf"/></svg></span>
-      <span>
-        <span class="brand-name">Дубовая Долина</span>
-        <span class="brand-sub">база отдыха · Уфа</span>
-      </span>
-    </a>
-    <a class="head-call" href="tel:+79177906611"><svg><use href="#phone"/></svg><span>+7 917 790-66-11</span></a>
+<header class="cover" id="top">
+ <div class="demo">Демо-концепт. Пример по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</div>
+ <div class="wrap mast">
+  <span class="sc">Дом в&nbsp;лесу · Уфа</span>
+  <nav aria-label="Разделы"><a href="#house">Дом</a><a href="#praise">Отзывы</a><a href="#book">Заявка</a><a href="#contacts">Контакты</a></nav>
+  <a class="tel nw" href="tel:+79177906611">+7&nbsp;917&nbsp;790-66-11</a>
+ </div>
+ <div class="rings" aria-hidden="true"><svg id="rg" viewBox="0 0 1000 1000"></svg></div>
+ <div class="wrap cv">
+  <div class="issue"><span class="sc">Улица Лесная, 6</span><span class="st" data-status>Открыто круглосуточно</span><span class="rt"><b>5,0</b> · 75&nbsp;оценок в&nbsp;2ГИС</span></div>
+  <h1>Дубовая <em>Долина</em></h1>
+  <div class="lines">
+   <p class="lead">Большой дом в&nbsp;лесу под&nbsp;Уфой: баня с&nbsp;жаркой парной, большой чан, терраса и&nbsp;мангальная зона. Для&nbsp;семьи, двух семей и&nbsp;праздников.</p>
+   <div class="acts">
+    <a class="btn gold" href="#book">Собрать заявку</a>
+    <a class="btn" href="tel:+79177906611"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+    <a class="btn" href="https://yandex.ru/maps/?rtext=~54.565975,56.264444" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Маршрут</a>
+   </div>
   </div>
+ </div>
 </header>
 
-<main id="top">
+<main>
+<section id="house">
+ <div class="wrap">
+  <div class="head" data-r><div><div class="sc kick">Содержание</div><h2>Что вас ждёт <em>в&nbsp;Долине</em></h2></div><p>Гости пишут, что в&nbsp;доме есть всё и&nbsp;даже больше. Вот&nbsp;что точно на&nbsp;месте&nbsp;— по&nbsp;порядку, как в&nbsp;хорошем журнале.</p></div>
+  <div class="toc">
+   <ol>
+    <li data-r><b>Баня</b><i></i><span>жаркая парная</span></li>
+    <li data-r><b>Большой чан</b><i></i><span>купание вечером</span></li>
+    <li data-r><b>Терраса</b><i></i><span>хвалят в&nbsp;отзывах</span></li>
+    <li data-r><b>Мангальная зона</b><i></i><span>и&nbsp;беседки</span></li>
+    <li data-r><b>Спальные места</b><i></i><span>хватает на&nbsp;всех</span></li>
+    <li data-r><b>Парковка</b><i></i><span>своя</span></li>
+   </ol>
+   <aside class="side" data-r>
+    <h3>Удобства в&nbsp;доме</h3>
+    <ul><li>Кондиционер в&nbsp;номерах</li><li>Wi-Fi</li><li>Вся необходимая техника</li><li>Трансфер</li><li>Хранение багажа</li></ul>
+    <div class="sc">Оплата</div>
+    <ul><li>Наличными, переводом с&nbsp;карты, по&nbsp;QR-коду или&nbsp;через банк</li></ul>
+   </aside>
+  </div>
+ </div>
+</section>
 
-  <!-- ===== hero ===== -->
-  <section class="hero" aria-label="Дубовая Долина">
-    <svg class="hero-art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <!-- valley contours -->
-      <g fill="none" stroke="#e3d3ba" stroke-width="1.7" opacity=".95">
-        <path d="M-60 700C140 630 300 680 470 655C650 630 780 700 940 675C1090 652 1240 700 1480 668"/>
-        <path d="M-80 752C150 680 340 736 520 710C700 684 830 752 1000 726C1150 704 1300 752 1500 720"/>
-        <path d="M-100 806C170 734 380 790 570 764C760 738 890 806 1060 780C1220 756 1370 806 1520 774"/>
-      </g>
-      <!-- oak tree -->
-      <g>
-        <g fill="#c08a3f" stroke="#a5712a" stroke-width="2.5" opacity=".96">
-          <circle cx="1150" cy="240" r="150"/>
-          <circle cx="990" cy="300" r="115"/>
-          <circle cx="1310" cy="300" r="115"/>
-          <circle cx="1050" cy="170" r="105"/>
-          <circle cx="1250" cy="170" r="105"/>
-          <circle cx="1150" cy="130" r="105"/>
-          <circle cx="930" cy="380" r="85"/>
-          <circle cx="1370" cy="380" r="85"/>
-          <circle cx="1150" cy="370" r="135"/>
-        </g>
-        <g stroke="#7a5630" fill="none" stroke-linecap="round">
-          <path d="M1128 660C1132 560 1138 470 1150 400L1150 330" stroke-width="42"/>
-          <path d="M1150 410C1120 340 1060 300 1000 295" stroke-width="18"/>
-          <path d="M1150 410C1180 340 1240 300 1300 295" stroke-width="18"/>
-          <path d="M1150 340C1150 240 1150 180 1150 150" stroke-width="16"/>
-        </g>
-        <ellipse cx="1150" cy="664" rx="48" ry="14" fill="#7a5630"/>
-      </g>
-      <!-- cottage -->
-      <g>
-        <rect x="500" y="762" width="120" height="138" fill="#6b5238"/>
-        <path d="M480 764 560 692 640 764Z" fill="#5a4129"/>
-        <rect x="630" y="704" width="16" height="36" fill="#5a4129"/>
-        <path d="M638 700c-8-6 8-12 4-18" fill="none" stroke="#d9c8a8" stroke-width="4" opacity=".65"/>
-        <rect x="532" y="790" width="34" height="34" fill="#f2c06a" opacity=".95"/>
-        <rect x="566" y="782" width="18" height="18" fill="#f2c06a" opacity=".7"/>
-      </g>
-      <!-- forest -->
-      <g fill="#5a6b4a" opacity=".8">
-        <path d="M80 900V760l-42 60h26l-36 80Z"/>
-        <path d="M150 900V730l-50 70h32l-42 100Z"/>
-        <path d="M240 900V780l-40 55h25l-33 65Z"/>
-        <circle cx="350" cy="800" r="56"/><rect x="343" y="800" width="14" height="100"/>
-        <circle cx="430" cy="816" r="42"/><rect x="425" y="816" width="10" height="84"/>
-        <circle cx="1090" cy="800" r="60"/><rect x="1083" y="800" width="14" height="100"/>
-        <path d="M1200 900V740l-44 70h30l-42 90Z"/>
-        <path d="M1290 900V720l-50 80h33l-44 100Z"/>
-        <path d="M1370 900V770l-38 60h26l-34 70Z"/>
-      </g>
-    </svg>
+<section class="small" id="details">
+ <div class="wrap head" data-r><div><div class="sc kick">Мелочи, которые замечают</div><h2>Продумано <em>до&nbsp;мелочей</em></h2></div><p>То, о&nbsp;чём гости пишут отдельно,&nbsp;— особенно те, кто приезжает с&nbsp;детьми и&nbsp;большой компанией.</p></div>
+ <div class="ribbon" data-qa-skip tabindex="0" aria-label="Лента: мелочи в доме">
+  <div class="card"><svg viewBox="0 0 56 56"><rect x="18" y="8" width="20" height="36" rx="4"/><path d="M25 38h6M28 44v6M22 50h12"/></svg><div><b>Зарядки</b><p>Для&nbsp;телефонов&nbsp;— для&nbsp;каких только можно.</p></div></div>
+  <div class="card"><svg viewBox="0 0 56 56"><circle cx="28" cy="22" r="10"/><circle cx="19" cy="13" r="4"/><circle cx="37" cy="13" r="4"/><path d="M16 50c0-8 5-14 12-14s12 6 12 14"/></svg><div><b>Игрушки</b><p>Для&nbsp;детей&nbsp;— родители отмечают это как&nbsp;большой плюс.</p></div></div>
+  <div class="card"><svg viewBox="0 0 56 56"><path d="M18 10v40M38 10v40M18 30h20M14 24h28M18 50l-4 0M38 50h4"/></svg><div><b>Стульчик для&nbsp;кормления</b><p>Те, кто приезжал с&nbsp;годовалым малышом, были рады.</p></div></div>
+  <div class="card"><svg viewBox="0 0 56 56"><path d="M8 22c12-12 28-12 40 0M14 29c8-8 20-8 28 0M20 36c4-4 12-4 16 0"/><circle cx="28" cy="43" r="2.5"/></svg><div><b>Wi-Fi</b><p>Для&nbsp;всех гостей дома.</p></div></div>
+  <div class="card"><svg viewBox="0 0 56 56"><rect x="8" y="16" width="40" height="16" rx="3"/><path d="M14 38c0 4-2 6-2 8M28 38v8M42 38c0 4 2 6 2 8"/></svg><div><b>Кондиционер</b><p>В&nbsp;номерах.</p></div></div>
+  <div class="card"><svg viewBox="0 0 56 56"><path d="M8 36h40v-8l-6-10H18l-6 10H8z"/><circle cx="17" cy="40" r="4"/><circle cx="39" cy="40" r="4"/></svg><div><b>Трансфер и&nbsp;парковка</b><p>Своя парковка, а&nbsp;если без&nbsp;машины&nbsp;— есть трансфер.</p></div></div>
+ </div>
+ <div class="wrap hint"><svg width="28" height="12" viewBox="0 0 28 12" fill="none" stroke="currentColor"><path d="M0 6h26M21 1l5 5-5 5"/></svg>Листайте в&nbsp;сторону</div>
+</section>
 
-    <div class="hero-inner">
-      <p class="hero-eyebrow">Дом для отдыха · Уфа</p>
-      <h1>Дубовая<br><span class="accent">Долина</span></h1>
-      <p class="hero-sub">Дом в лесу под Уфой: баня, чан и тишина — для семьи и компании.</p>
-      <p class="hero-addr"><svg><use href="#pin"/></svg><span>Уфа, городской округ · улица Лесная, 6</span></p>
-      <span class="status" data-status></span>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#book-section">Выбрать даты</a>
-        <a class="btn btn-ghost" href="https://wa.me/79177906611?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D1%82%D1%8B%20%D0%B2%20%C2%AB%D0%94%D1%83%D0%B1%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D0%B5%C2%BB" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn-ghost" href="tel:+79177906611"><svg><use href="#phone"/></svg>Позвонить</a>
-        <a class="btn btn-ghost" href="https://yandex.ru/maps/?rtext=~54.565975,56.264444" target="_blank" rel="noopener">Маршрут</a>
-      </div>
-      <div class="hero-tags">
-        <span class="tag">Коттедж</span><span class="tag">Баня</span><span class="tag">Банный чан</span><span class="tag">Терраса и мангал</span><span class="tag">5,0 · 75 оценок в 2ГИС</span>
-      </div>
+<section class="praise" id="praise">
+ <div class="wrap pr">
+  <div data-r>
+   <div class="sc kick">Рейтинг в&nbsp;2ГИС</div>
+   <div class="big5">5,0</div>
+   <p class="meta">75&nbsp;оценок гостей. <a href="https://2gis.ru/ufa/firm/70000001109812789" target="_blank" rel="noopener">Все отзывы в&nbsp;2ГИС</a></p>
+  </div>
+  <div class="qs">
+   <div class="q" data-r><h3>Есть абсолютно всё</h3><p>Девичник, день рождения мужа, отдых двумя семьями&nbsp;— гости пишут, что дом большой, чистый и&nbsp;в&nbsp;нём предусмотрено всё для&nbsp;отдыха.</p></div>
+   <div class="q" data-r><h3>Будто нас ждали</h3><p>Отдельно благодарят администратора за&nbsp;вежливость: атмосфера уюта начинается ещё до&nbsp;заезда.</p></div>
+   <div class="q" data-r><h3>Приезжают снова</h3><p>Гости снимают дом не&nbsp;в&nbsp;первый раз&nbsp;— ради тишины, жаркой парной и&nbsp;вечернего чана.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="book">
+ <div class="wrap">
+  <div class="head" data-r><div><div class="sc kick">Заявка</div><h2>Соберите заявку <em>за&nbsp;минуту</em></h2></div><p>Отметьте повод, даты и&nbsp;кто едет. Мы&nbsp;соберём это на&nbsp;бирку от&nbsp;ключа&nbsp;— останется отправить её в&nbsp;WhatsApp или&nbsp;Telegram.</p></div>
+  <div class="bk">
+   <form id="f" onsubmit="return false">
+    <fieldset class="grp"><legend>Повод</legend><div class="ch">
+     <label><input type="radio" name="why" value="отдых семьёй" checked><span>Семьёй</span></label>
+     <label><input type="radio" name="why" value="отдых двумя семьями"><span>Двумя семьями</span></label>
+     <label><input type="radio" name="why" value="день рождения"><span>День рождения</span></label>
+     <label><input type="radio" name="why" value="девичник"><span>Девичник</span></label>
+     <label><input type="radio" name="why" value="отдых с друзьями"><span>С&nbsp;друзьями</span></label>
+    </div></fieldset>
+    <fieldset class="grp"><legend>Даты</legend><div class="two">
+     <div class="fl"><label for="d1">Заезд</label><input type="date" id="d1"></div>
+     <div class="fl"><label for="d2">Выезд</label><input type="date" id="d2"></div>
+    </div></fieldset>
+    <fieldset class="grp"><legend>Кто едет</legend><div class="two">
+     <div class="fl"><label id="la">Взрослые</label><div class="stp" role="group" aria-labelledby="la"><button type="button" data-s="a" data-d="-1" aria-label="Меньше взрослых">−</button><output id="oa">4</output><button type="button" data-s="a" data-d="1" aria-label="Больше взрослых">+</button></div></div>
+     <div class="fl"><label id="lk">Дети</label><div class="stp" role="group" aria-labelledby="lk"><button type="button" data-s="k" data-d="-1" aria-label="Меньше детей">−</button><output id="ok">0</output><button type="button" data-s="k" data-d="1" aria-label="Больше детей">+</button></div></div>
     </div>
-  </section>
-
-  <!-- ===== amenities ===== -->
-  <section class="amenities">
-    <div class="wrap">
-      <p class="sec-eyebrow" data-r>Что есть на базе</p>
-      <h2 class="sec-title" data-r>Всё для отдыха — на месте</h2>
-      <p class="sec-lead" data-r>Большой дом с баней, чаном, беседкой и парковкой. Оплата — как удобно: наличные, перевод с карты, по QR-коду или через банк.</p>
-      <div class="amen-grid">
-        <article class="amen-card" data-r>
-          <h3><span class="ic"><svg><use href="#house"/></svg></span>Дом</h3>
-          <ul><li>Коттедж целиком</li><li>Терраса и мангальная зона</li><li>Спальные места на компанию</li></ul>
-        </article>
-        <article class="amen-card" data-r>
-          <h3><span class="ic"><svg><use href="#steam"/></svg></span>Пар и вода</h3>
-          <ul><li>Баня с жаркой парной</li><li>Большой банный чан</li></ul>
-        </article>
-        <article class="amen-card" data-r>
-          <h3><span class="ic"><svg><use href="#pine"/></svg></span>На участке</h3>
-          <ul><li>Беседки</li><li>Своя парковка</li></ul>
-        </article>
-        <article class="amen-card" data-r>
-          <h3><span class="ic"><svg><use href="#car"/></svg></span>Комфорт</h3>
-          <ul><li>Кондиционер</li><li>Wi-Fi</li><li>Трансфер</li></ul>
-        </article>
-      </div>
+    <div class="ch" style="margin-top:14px"><label><input type="checkbox" id="baby"><span>С&nbsp;малышом&nbsp;— нужен стульчик</span></label></div>
+    </fieldset>
+    <fieldset class="grp"><legend>Что нужно</legend><div class="ch">
+     <label><input type="checkbox" name="w" value="баня" checked><span>Баня</span></label>
+     <label><input type="checkbox" name="w" value="чан" checked><span>Чан</span></label>
+     <label><input type="checkbox" name="w" value="мангал"><span>Мангал</span></label>
+     <label><input type="checkbox" name="w" value="трансфер"><span>Трансфер</span></label>
+    </div></fieldset>
+   </form>
+   <div class="tagw" aria-live="polite">
+    <div class="ring" aria-hidden="true"></div>
+    <div class="tag">
+     <h3>Дубовая Долина</h3><div class="sub">заявка</div>
+     <dl><dt>Повод</dt><dd id="tw">отдых семьёй</dd><dt>Даты</dt><dd id="td">выберите даты</dd><dt>Гости</dt><dd id="tgu">4 взрослых</dd><dt>Нужно</dt><dd id="tx">баня, чан</dd></dl>
+     <a class="btn dark" id="wa" href="https://wa.me/79177906611" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Отправить в&nbsp;WhatsApp</a>
+     <a class="tg" href="https://t.me/+79177906611" target="_blank" rel="noopener">или написать в&nbsp;Telegram</a>
     </div>
-  </section>
+   </div>
+  </div>
+ </div>
+</section>
 
-  <!-- ===== praise ===== -->
-  <section class="praise">
-    <div class="wrap">
-      <div class="praise-top" data-r>
-        <div>
-          <p class="sec-eyebrow">За что хвалят</p>
-          <h2 class="sec-title">Гости возвращаются</h2>
-        </div>
-        <div class="rating">
-          <div class="num">5,0</div>
-          <div>
-            <div class="stars">★★★★★</div>
-            <div class="count">75 оценок на 2ГИС</div>
-          </div>
-        </div>
-      </div>
-      <div class="praise-grid">
-        <article class="praise-card" data-r>
-          <span class="n">1</span>
-          <h3>Тишина и лес</h3>
-          <p>Уединённый дом вдали от суеты: вокруг деревья и свежий воздух, а вечером — жаркая парная и чан. Гости пишут, что отдыхают здесь всей семьёй и возвращаются снова.</p>
-        </article>
-        <article class="praise-card" data-r>
-          <span class="n">2</span>
-          <h3>Продумано до мелочей</h3>
-          <p>В доме есть всё для комфорта: техника, зарядки для телефонов, игрушки и стульчик для кормления. Не нужно ничего везти с собой.</p>
-        </article>
-        <article class="praise-card" data-r>
-          <span class="n">3</span>
-          <h3>Для семьи и компании</h3>
-          <p>Большой, чистый и уютный дом подходит и для дня рождения, и для девичника, и для отдыха двумя семьями сразу.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+<section id="contacts" style="padding-top:0">
+ <div class="wrap">
+  <div class="head" data-r><div><div class="sc kick">Контакты</div><h2>Как нас <em>найти</em></h2></div><p>Дом стоит в&nbsp;лесу, вдали от&nbsp;суеты. Постройте маршрут&nbsp;— или&nbsp;спросите про&nbsp;трансфер.</p></div>
+  <div class="ct">
+   <div class="ci">
+    <div><div class="sc">Адрес</div><p>Уфа, городской округ,<br>улица Лесная, 6</p></div>
+    <div><div class="sc">Телефон</div><p><a class="nw" href="tel:+79177906611">+7&nbsp;917&nbsp;790-66-11</a></p></div>
+    <div><div class="sc">На&nbsp;связи</div><p><span data-status>Открыто круглосуточно</span></p></div>
+    <div><div class="sc">Написать</div><p class="links"><a href="https://wa.me/79177906611" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79177906611" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/dubovayadolina" target="_blank" rel="noopener">ВКонтакте</a></p></div>
+    <div class="acts" style="padding-top:12px"><a class="btn dark" href="https://yandex.ru/maps/?rtext=~54.565975,56.264444" target="_blank" rel="noopener">Маршрут</a><a class="btn line" href="https://2gis.ru/ufa/firm/70000001109812789" target="_blank" rel="noopener">Открыть в&nbsp;2ГИС</a></div>
+   </div>
+   <div class="map"><iframe loading="lazy" title="Дубовая Долина на карте" src="https://yandex.ru/map-widget/v1/?ll=56.264444,54.565975&amp;z=14&amp;pt=56.264444,54.565975,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
 
-  <!-- ===== feature ===== -->
-  <section class="feature" id="book-section">
-    <div class="wrap">
-      <p class="sec-eyebrow" data-r>Бронь</p>
-      <h2 class="sec-title" data-r>Соберите заявку за минуту</h2>
-      <p class="sec-lead" data-r>Даты, гости и что нужно — соберём готовое сообщение, останется отправить его в WhatsApp.</p>
-
-      <form class="book" id="book" data-r>
-        <div class="field field-wide">
-          <label>Даты</label>
-          <div class="dates">
-            <input type="date" id="bk-in" aria-label="Дата заезда">
-            <input type="date" id="bk-out" aria-label="Дата выезда">
-          </div>
-        </div>
-        <div class="field">
-          <label>Гостей</label>
-          <div class="stepper">
-            <button type="button" id="g-dec" aria-label="Меньше гостей">−</button>
-            <output id="bk-guests">4</output>
-            <button type="button" id="g-inc" aria-label="Больше гостей">+</button>
-          </div>
-        </div>
-        <div class="field field-full">
-          <label>Что нужно</label>
-          <div class="chips">
-            <button type="button" class="chip" data-v="коттедж" aria-pressed="false">Коттедж</button>
-            <button type="button" class="chip" data-v="баня" aria-pressed="false">Баня</button>
-            <button type="button" class="chip" data-v="чан" aria-pressed="false">Чан</button>
-
-          </div>
-        </div>
-        <div class="book-cta">
-          <a class="btn btn-wa" id="wa-link" href="https://wa.me/79177906611" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Собрать заявку в WhatsApp</a>
-          <div class="book-preview" id="wa-preview"></div>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ===== visit ===== -->
-  <section class="visit">
-    <div class="wrap">
-      <p class="sec-eyebrow" data-r>Как добраться</p>
-      <h2 class="sec-title" data-r>Адрес и контакты</h2>
-      <div class="visit-grid">
-        <div class="visit-card" data-r>
-          <h3><span class="ic"><svg><use href="#pin"/></svg></span>Адрес</h3>
-          <p>Уфа, городской округ<br>улица Лесная, 6</p>
-        </div>
-        <div class="visit-card" data-r>
-          <h3><span class="ic"><svg><use href="#steam"/></svg></span>Режим работы</h3>
-          <p>Круглосуточно, без выходных</p>
-        </div>
-        <div class="visit-card" data-r>
-          <h3><span class="ic"><svg><use href="#phone"/></svg></span>Связаться</h3>
-          <div class="rows">
-            <div class="row"><svg><use href="#phone"/></svg><a href="tel:+79177906611">+7 917 790-66-11</a></div>
-            <div class="row"><svg><use href="#wa"/></svg><a href="https://wa.me/79177906611" target="_blank" rel="noopener">WhatsApp</a></div>
-            <div class="row"><svg><use href="#leaf"/></svg><a href="https://t.me/+79177906611" target="_blank" rel="noopener">Telegram</a></div>
-            <div class="row"><svg><use href="#acorn"/></svg><a href="https://vk.ru/dubovayadolina" target="_blank" rel="noopener">ВКонтакте</a></div>
-          </div>
-        </div>
-        <div class="visit-map" data-r>
-          <iframe loading="lazy" title="Дубовая Долина на карте" src="https://yandex.ru/map-widget/v1/?ll=56.264444,54.565975&z=16&pt=56.264444,54.565975,pm2rdm"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== final ===== -->
-  <section class="final">
-    <div class="wrap">
-      <svg class="final-leaf" data-r><use href="#leaf"/></svg>
-      <h2 data-r>Приезжайте за <span class="accent">тишиной</span></h2>
-      <p class="sub" data-r>Забронируйте даты — и проведите выходные в лесу, в бане с чаном и без городского шума.</p>
-      <div class="final-actions" data-r>
-        <a class="btn btn-primary" href="tel:+79177906611"><svg><use href="#phone"/></svg>Позвонить</a>
-        <a class="btn btn-wa" href="https://wa.me/79177906611?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D0%BC%D0%B8%D0%BA%20%D0%B2%20%C2%AB%D0%94%D1%83%D0%B1%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D0%B5%C2%BB" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Написать в WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
+<div class="final">
+ <div class="rings" aria-hidden="true"><svg id="rg2" viewBox="0 0 1000 1000"></svg></div>
+ <div class="wrap" data-r>
+  <h2>Тишина, баня <em>и&nbsp;чан под&nbsp;дубами</em></h2>
+  <div class="acts"><a class="btn gold" href="#book">Собрать заявку</a><a class="btn" href="tel:+79177906611">Позвонить</a></div>
+ </div>
+</div>
 </main>
-
-<footer class="foot">
-  <p>Демо-концепт по открытым данным 2ГИС · «Дубовая Долина», Уфа</p>
-</footer>
-
-<a class="call-fab" href="tel:+79177906611"><svg><use href="#phone"/></svg>Позвонить</a>
-
-<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
-<script src="app.js"></script>
+<footer><div class="wrap"><span>Дубовая Долина · улица Лесная, 6</span><span>Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</span></div></footer>
+<a class="fab" href="tel:+79177906611" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
 <script>
-(function () {
-  var form = document.getElementById('book');
-  var wa = document.getElementById('wa-link');
-  var preview = document.getElementById('wa-preview');
-  var inEl = document.getElementById('bk-in');
-  var outEl = document.getElementById('bk-out');
-  var guestsEl = document.getElementById('bk-guests');
-  var dec = document.getElementById('g-dec');
-  var inc = document.getElementById('g-inc');
-  var chips = Array.prototype.slice.call(document.querySelectorAll('#book .chip'));
-  var guests = 4;
-  var today = new Date();
-  var iso = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
-  inEl.min = iso; outEl.min = iso;
-  function setGuests(n) { guests = Math.max(1, Math.min(30, n)); guestsEl.textContent = guests; }
-  dec.addEventListener('click', function () { setGuests(guests - 1); });
-  inc.addEventListener('click', function () { setGuests(guests + 1); });
-  chips.forEach(function (c) {
-    c.addEventListener('click', function () {
-      var on = c.classList.toggle('on');
-      c.setAttribute('aria-pressed', on ? 'true' : 'false');
-    });
-  });
-  inEl.addEventListener('change', function () {
-    outEl.min = inEl.value || iso;
-    if (outEl.value && inEl.value && outEl.value < inEl.value) outEl.value = inEl.value;
-  });
-  function fmt(v) {
-    if (!v) return '—';
-    var d = new Date(v + 'T00:00:00');
-    return String(d.getDate()).padStart(2, '0') + '.' + String(d.getMonth() + 1).padStart(2, '0') + '.' + d.getFullYear();
-  }
-  function msg() {
-    var sel = chips.filter(function (c) { return c.classList.contains('on'); }).map(function (c) { return c.dataset.v; });
-    if (!sel.length) sel = ['домик или баня'];
-    return 'Здравствуйте! Хочу забронировать отдых в «Дубовой Долине».' +
-      '\nЗаезд: ' + fmt(inEl.value) + ', выезд: ' + fmt(outEl.value) + ', гостей: ' + guests + '.' +
-      '\nИнтересует: ' + sel.join(', ') + '.' +
-      '\nПодскажите, пожалуйста, свободные даты и стоимость.';
-  }
-  function update() { preview.textContent = msg(); }
-  form.addEventListener('input', update);
-  form.addEventListener('click', update);
-  update();
-  wa.addEventListener('click', function () {
-    wa.href = 'https://wa.me/79177906611?text=' + encodeURIComponent(msg());
-  });
+(function(){
+ /* годичные кольца дуба: генеративный срез */
+ function rings(svg,seed,a,b){if(!svg)return;var s=seed;var R=function(){s=(s*16807)%2147483647;return s/2147483647};
+  var H=[];for(var k=2;k<7;k++)H.push([k,R()*6.283,(R()*.5+.5)/(k*k)*.35]);
+  var N=30,out='',ns='http://www.w3.org/2000/svg';
+  for(var i=N;i>=1;i--){var r=i/N*470,own=R()*6.283,d='';
+   for(var j=0;j<=140;j++){var t=j/140*6.283,m=1;H.forEach(function(h){m+=h[2]*Math.sin(h[0]*t+h[1])*(.3+i/N)});m+=.012*Math.sin(9*t+own);
+    var x=500+Math.cos(t)*r*m,y=500+Math.sin(t)*r*m;d+=(j?'L':'M')+x.toFixed(1)+' '+y.toFixed(1)}
+   var c=i===N?b[0]:i===N-1?b[1]:(i%2?a[0]:a[1]);if(i===Math.round(N*.62))c=b[2];
+   out+='<path d="'+d+'Z" fill="'+c+'" style="--i:'+(N-i)+'"/>'}
+  out+='<path d="M500 500 L960 455 L968 470 Z" fill="'+b[0]+'" opacity=".9"/><circle cx="500" cy="500" r="7" fill="'+b[2]+'"/>';
+  svg.innerHTML=out}
+ rings(document.getElementById('rg'),7741,['#283525','#2f3d2b'],['#151d14','#3b4a34','#8a6a3a']);
+ rings(document.getElementById('rg2'),2213,['#243122','#2b3828'],['#1d281c','#334230','#7a5e34']);
+ /* кнопка звонка после первого экрана */
+ var fb=document.querySelector(".fab");addEventListener("scroll",function(){fb.classList.toggle("on",scrollY>innerHeight*.6)},{passive:true});
+ /* заявка */
+ var f=document.getElementById('f'),n={a:4,k:0},$=function(i){return document.getElementById(i)};
+ var iso=new Date().toISOString().slice(0,10);$('d1').min=iso;$('d2').min=iso;
+ var fmt=function(v){var p=v.split('-');return p[2]+'.'+p[1]+'.'+p[0]};
+ var pl=function(x,a,b,c){var m=x%10,h=x%100;return x+' '+(m===1&&h!==11?a:m>=2&&m<=4&&(h<12||h>14)?b:c)};
+ function upd(){var d1=$('d1').value,d2=$('d2').value;if(d1)$('d2').min=d1;
+  var dates=d1&&d2?fmt(d1)+' — '+fmt(d2):d1?'с '+fmt(d1):'';
+  var g=pl(n.a,'взрослый','взрослых','взрослых')+(n.k?', '+pl(n.k,'ребёнок','ребёнка','детей'):'');
+  var why=(f.querySelector('[name=why]:checked')||{}).value;
+  var w=[].slice.call(f.querySelectorAll('[name=w]:checked')).map(function(x){return x.value});
+  var baby=$('baby').checked;
+  $('tw').textContent=why;$('td').textContent=dates||'выберите даты';$('tgu').textContent=g+(baby?', малыш':'');$('tx').textContent=(w.length?w.join(', '):'—')+(baby?', стульчик':'');
+  var msg='Здравствуйте! Хочу снять дом в Дубовой Долине.\nПовод: '+why+'\nДаты: '+(dates||'пока не выбрали, подскажите свободные')+'\nГости: '+g+(baby?'\nС нами малыш, понадобится стульчик для кормления':'')+(w.length?'\nНужно: '+w.join(', '):'')+'\nПодскажите, свободно ли и сколько будет стоить?';
+  $('wa').href='https://wa.me/79177906611?text='+encodeURIComponent(msg)}
+ f.addEventListener('click',function(e){var b=e.target.closest('[data-s]');if(!b)return;var k=b.dataset.s;n[k]=Math.max(k==='a'?1:0,Math.min(40,n[k]+ +b.dataset.d));$('o'+k).textContent=n[k];upd()});
+ f.addEventListener('change',upd);upd();
 })();
 </script>
+<script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
+<script src="app.js"></script>
 </body>
 </html>

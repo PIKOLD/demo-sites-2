@@ -4,364 +4,429 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Ямки в Ёлках — глэмпинг с баней и чаном под Пермью</title><meta property="og:type" content="website"><meta property="og:title" content="Ямки в Ёлках — глэмпинг с баней и чаном под Пермью"><meta property="og:description" content="Глэмпинг в Пермском округе: домики с панорамным окном и тёплым полом, русская баня и банный чан, тишина и ёлки вокруг. Бронь в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/yamki-v-elkakh/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="Глэмпинг в Пермском округе: домики с панорамным окном и тёплым полом, русская баня и банный чан, тишина и ёлки вокруг. Бронь в WhatsApp.">
+<title>Ямки в Ёлках — глэмпинг с баней и чаном в Пермском округе</title>
+<meta name="description" content="Глэмпинг в Пермском округе: домики с панорамным окном на лес и ручей, жаркая русская баня, чан под открытым небом. Соберите поездку и отправьте в WhatsApp.">
+<meta property="og:type" content="website"><meta property="og:title" content="Ямки в Ёлках — глэмпинг с баней и чаном под Пермью"><meta property="og:description" content="Домики с панорамным окном, русская баня и чан под открытым небом. Бронь в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites-2/yamki-v-elkakh/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Sofia+Sans:wght@400;500;700&family=Martian+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Sofia+Sans:wght@400;500;700&family=Martian+Mono:wght@400;500&display=swap"></noscript>
 <style>
-:root{--snow:#f3f4ee;--frost:#e3e9e1;--sp1:#173126;--sp2:#24493a;--sp3:#3d6e55;--moss:#8fb08a;--ember:#e0582c;--ember2:#f4a259;--ink:#16241d;--mute:#5d6b62;--w:1300px}
+:root{--snow:#eef2ee;--paper:#f8faf7;--ink:#12231b;--ink2:#2b3d34;--mute:#56685e;--moss:#7f998a;--line:rgba(18,35,27,.14);--stream:#3a7690;--berry:#a3233a;--berry2:#c23a4f;--night:#0d1820;--w:1360px;
+--d:'Sofia Sans Extra Condensed','Arial Narrow',sans-serif;--t:'Sofia Sans',system-ui,sans-serif;--m:'Martian Mono',ui-monospace,monospace}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font:400 17px/1.6 Rubik,system-ui,sans-serif;color:var(--ink);background:var(--snow);overflow-x:hidden}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--snow);color:var(--ink);font:400 18px/1.55 var(--t);overflow-x:hidden}
 a{color:inherit}
-h1,h2,h3{font-family:"Montserrat Alternates",sans-serif;font-weight:800;line-height:1.04;letter-spacing:-.02em}
-.wrap{max-width:var(--w);margin:0 auto;padding:0 clamp(18px,4vw,48px)}
-.demo{background:var(--sp1);color:#dfe8df;font-size:13px;text-align:center;padding:7px 14px}
-:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:8px}
-.tag{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--sp3)}
-.tag::before{content:"";width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--ember)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:none}
-.b-em{background:var(--ember);color:#fff;box-shadow:0 12px 24px -14px var(--ember)}
-.b-em:hover{background:#c8441b}
-.b-sp{background:var(--sp1);color:#fff}
-.b-sp:hover{background:var(--sp2)}
-.b-ln{border-color:var(--sp1);color:var(--sp1)}
-.b-ln:hover{background:var(--sp1);color:#fff}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:70px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Montserrat Alternates",sans-serif;font-weight:800;font-size:19px}
+img,svg{display:block}
+.wrap{width:min(100% - 96px,var(--w));margin-inline:auto}
+.mono{font:500 11px/1.5 var(--m);letter-spacing:.08em;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--berry);outline-offset:3px}
+.demo{position:relative;z-index:5;border-bottom:1px solid var(--line);background:var(--paper);color:var(--mute);text-align:center;padding:7px 16px;font:400 11px/1.4 var(--m);letter-spacing:.04em}
+/* шапка */
+.top{position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 26px/1 var(--d);letter-spacing:.01em;text-transform:uppercase}
 .logo svg{width:34px;height:34px}
-nav{display:flex;gap:26px;font-weight:500;font-size:15px}
-nav a{text-decoration:none}
-nav a:hover{color:var(--ember)}
-.hd-t{font-weight:600;text-decoration:none}
-/* hero */
-.hero{padding:clamp(20px,3vw,44px) 0 clamp(60px,7vw,100px)}
-.hero-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(30px,5vw,70px);align-items:center}
-.hero h1{font-size:clamp(50px,6.6vw,108px);margin:16px 0 18px;color:var(--sp1)}
-.hero h1 span{color:var(--ember)}
-.lead{font-size:clamp(18px,1.45vw,21px);max-width:30em;color:#2f4037}
-.meta{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
-.pill{background:#fff;border-radius:999px;padding:8px 15px;font-size:15px;font-weight:500;box-shadow:0 1px 0 rgba(0,0,0,.06)}
-.pill b{color:var(--ember);font-family:"Montserrat Alternates",sans-serif}
-[data-status]::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:#2f9a5b;margin-right:8px}
-.cta{display:flex;flex-wrap:wrap;gap:12px}
-.sub{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:18px;font-size:15px;font-weight:500}
-.sub a{text-decoration:none;border-bottom:2px solid var(--ember2)}
-/* window scene */
-.win{position:relative}
-.frame{position:relative;border-radius:34px;padding:14px;background:#5a3a26;box-shadow:0 40px 70px -40px rgba(22,36,29,.7)}
-.frame::after{content:"";position:absolute;left:50%;top:14px;bottom:14px;width:12px;margin-left:-6px;background:#5a3a26;border-radius:4px}
-.scene{display:block;width:100%;height:auto;border-radius:22px;aspect-ratio:16/11}
-.scene .sky{transition:fill .8s}
-.scene .star{opacity:0;transition:opacity .8s}
-.scene .glow{opacity:0;transition:opacity .8s}
-.scene .sun{transition:transform 1s,opacity .8s}
-.night .scene .sky{fill:#152338}
-.night .scene .star,.night .scene .glow{opacity:1}
-.night .scene .sun{opacity:0;transform:translateY(60px)}
-.night .scene .far{fill:#1d3a30}
-.tog{position:absolute;right:20px;bottom:-22px;display:flex;background:#fff;border-radius:999px;padding:4px;box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
-.tog button{min-height:44px;padding:0 18px;border-radius:999px;border:0;background:transparent;font:500 15px Rubik,sans-serif;cursor:pointer;color:var(--sp1)}
-.tog button[aria-pressed=true]{background:var(--sp1);color:#fff}
-.win-cap{margin-top:34px;font-size:14px;color:var(--mute)}
-/* blocks */
-.sec{padding:clamp(70px,9vw,130px) 0}
-.h2{font-size:clamp(34px,4.6vw,66px);color:var(--sp1);max-width:13em}
-.house{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:44px}
-.cell{background:#fff;border-radius:24px;padding:clamp(22px,2.6vw,34px);position:relative;overflow:hidden;transition:transform .25s}
-.cell:hover{transform:translateY(-5px)}
-.cell h3{font-size:clamp(20px,1.9vw,27px);color:var(--sp1);margin-bottom:8px}
-.cell p{color:var(--mute)}
-.cell svg{width:58px;height:58px;margin-bottom:18px}
-.c1{grid-column:span 3;grid-row:span 2;background:var(--sp1);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;min-height:420px}
-.c1 h3{color:#fff;font-size:clamp(28px,3vw,44px)}
-.c1 p{color:#c9d8cb;max-width:26em}
-.c1 .pan{position:absolute;inset:26px 26px auto;height:46%;border-radius:18px;background:linear-gradient(180deg,#a9cde0,#e4efe6);overflow:hidden}
-.c1 .pan svg{position:absolute;inset:auto 0 0;width:100%;height:100%;margin:0}
-.c2{grid-column:span 3}.c3{grid-column:span 2;background:var(--frost)}.c4{grid-column:span 1;background:var(--ember);color:#fff}
-.c4 h3{color:#fff}.c4 p{color:#ffe6da}
-.list{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
-.list span{padding:9px 16px;border-radius:999px;border:2px solid var(--frost);background:#fff;font-weight:500;font-size:15px}
-/* banya */
-.banya{background:linear-gradient(180deg,var(--sp1),#0f2119);color:#fff;position:relative;overflow:hidden}
-.banya .h2{color:#fff}
-.banya .tag{color:var(--moss)}
-.b-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,6vw,90px);align-items:center}
-.thermo{display:grid;gap:16px}
-.th{display:grid;grid-template-columns:90px minmax(0,1fr);gap:20px;align-items:center;background:rgba(255,255,255,.06);border-radius:22px;padding:22px}
-.th h3{font-size:24px;margin-bottom:4px}
-.th p{color:#b9cbbd}
-.th .bar{height:90px;width:90px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--ember) 0 var(--p),rgba(255,255,255,.1) 0);position:relative}
-.th .bar::after{content:"";position:absolute;inset:12px;border-radius:50%;background:#173126}
-.th .bar svg{position:relative;z-index:1;width:36px;height:36px}
-.banya p.big{font-size:clamp(19px,1.6vw,23px);color:#d5e2d6;margin-top:20px;max-width:28em}
-.steam{display:none;position:absolute;right:6%;top:10%;width:200px;height:300px;pointer-events:none;opacity:.5}
-.steam i{position:absolute;bottom:0;width:70px;height:120px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.4),transparent);filter:blur(10px);animation:up 7s ease-in-out infinite}
-.steam i:nth-child(2){left:60px;animation-delay:2.3s}.steam i:nth-child(3){left:120px;animation-delay:4.6s}
-@keyframes up{0%{transform:translateY(40px) scale(.6);opacity:0}40%{opacity:1}100%{transform:translateY(-220px) scale(1.5);opacity:0}}
-/* praise */
-.pr-g{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(30px,6vw,90px);margin-top:44px;align-items:start}
-.score{background:#fff;border-radius:28px;padding:clamp(26px,3vw,40px);position:sticky;top:30px}
-.score b{display:block;font-family:"Montserrat Alternates",sans-serif;font-size:clamp(90px,10vw,150px);line-height:.9;color:var(--sp1)}
-.score .trees{display:flex;gap:6px;margin:16px 0}
-.score .trees svg{width:28px;height:32px}
-.score a{font-weight:600}
-.pr{display:grid;gap:22px}
-.pr article{border-left:4px solid var(--ember);padding:4px 0 4px 26px}
-.pr article:nth-child(2){border-color:var(--sp3);margin-left:clamp(0px,4vw,60px)}
-.pr article:nth-child(3){border-color:var(--ember2)}
-.pr h3{font-size:clamp(22px,2vw,30px);color:var(--sp1);margin-bottom:8px}
-.pr p{color:var(--mute);max-width:36em}
-/* quiz */
-.qz{background:var(--frost)}
-.qz-g{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,4vw,60px);margin-top:44px;align-items:start}
-.qf{background:#fff;border-radius:26px;padding:clamp(22px,3vw,38px)}
-.qr{padding:18px 0;border-bottom:1px solid var(--frost)}
-.qr:first-child{padding-top:0}.qr:last-child{border:0;padding-bottom:0}
-.qr h3{font-family:Rubik,sans-serif;font-weight:600;font-size:17px;letter-spacing:0;margin-bottom:12px;color:var(--sp1)}
-.op{display:flex;flex-wrap:wrap;gap:8px}
-.op input{position:absolute;opacity:0;pointer-events:none}
-.op label{min-height:46px;display:inline-flex;align-items:center;padding:0 18px;border-radius:999px;background:var(--snow);cursor:pointer;font-weight:500;font-size:15px;border:2px solid transparent;transition:all .18s}
-.op label:hover{border-color:var(--sp3)}
-.op input:checked+label{background:var(--sp1);color:#fff}
-.op input:focus-visible+label{outline:3px solid var(--ember);outline-offset:2px}
-.dt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
-.dt label{font-size:14px;color:var(--mute)}
-.dt input{display:block;width:100%;min-height:50px;margin-top:4px;padding:0 12px;border:2px solid var(--frost);border-radius:14px;font:inherit;background:var(--snow)}
-.stp{display:flex;align-items:center;gap:10px}
-.stp button{width:46px;height:46px;border-radius:50%;border:0;background:var(--snow);font-size:22px;cursor:pointer;color:var(--sp1)}
-.stp button:hover{background:var(--sp1);color:#fff}
-.stp output{min-width:40px;text-align:center;font-family:"Montserrat Alternates",sans-serif;font-weight:800;font-size:24px}
-.note{position:sticky;top:30px;background:var(--sp1);color:#fff;border-radius:26px;padding:30px;overflow:hidden}
-.note::after{content:"";position:absolute;right:-30px;bottom:-30px;width:150px;height:150px;background:var(--sp2);clip-path:polygon(50% 0,100% 100%,0 100%)}
-.note .tag{color:var(--moss)}
-.note pre{position:relative;z-index:1;white-space:pre-wrap;font:400 15px/1.65 Rubik,sans-serif;color:#d9e5da;margin:16px 0 22px;min-height:9em}
-.note .btn{position:relative;z-index:1;width:100%}
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:44px;counter-reset:s}
-.steps li{list-style:none;background:#fff;border-radius:22px;padding:24px 20px;position:relative}
-.steps li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--frost);font-family:"Montserrat Alternates",sans-serif;font-weight:800;margin-bottom:14px;color:var(--sp1)}
-.steps li:nth-child(odd)::before{background:var(--sp1);color:#fff}
-.steps h3{font-size:19px;color:var(--sp1);margin-bottom:6px}
-.steps p{color:var(--mute);font-size:15px}
-/* contacts */
-.ct{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:44px}
-.ct dl{display:grid;gap:20px;align-content:start}
-.ct dt{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--sp3);font-weight:600}
-.ct dd{font-size:19px;font-weight:500;margin-top:4px}
-.ct dd a{text-decoration:none;border-bottom:2px solid var(--ember2)}
-.map{border-radius:26px;overflow:hidden;min-height:420px;background:var(--frost)}
-.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
-.fin{position:relative;background:var(--sp1);color:#fff;text-align:center;padding:clamp(80px,10vw,140px) 0 0;overflow:hidden}
-.fin h2{font-size:clamp(36px,5.4vw,84px);max-width:11em;margin:0 auto 30px}
-.fin .cta{justify-content:center}
-.fin .b-ln{border-color:#fff;color:#fff}
-.fin .b-ln:hover{background:#fff;color:var(--sp1)}
-.fin svg{display:block;width:100%;height:auto;margin-top:60px}
-footer{background:#0f2119;color:#9db3a3;font-size:14px;padding:26px 0 100px}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px}
-.fab{position:fixed;right:16px;bottom:16px;z-index:40;width:60px;height:60px;border-radius:50%;background:var(--ember);display:none;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.5)}
-.fab svg{width:26px;height:26px;fill:#fff}
-.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.nav{display:flex;gap:28px}
+.nav a{text-decoration:none;font-size:15px;color:var(--ink2);position:relative;padding-block:6px}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:currentColor;transition:right .3s}
+.nav a:hover::after{right:0}
+.tel{font:500 13px/1 var(--m);text-decoration:none;white-space:nowrap;padding:12px 0}
+/* первый экран: топографическая карта */
+.hero{position:relative;min-height:calc(100svh - 30px);display:flex;flex-direction:column;overflow:hidden;isolation:isolate}
+.topo{position:absolute;inset:0;z-index:-1;width:100%;height:100%}
+.topo path{fill:none;stroke:var(--moss);stroke-width:.9;opacity:.55}
+.topo path.ix{stroke-width:1.6;opacity:.75}
+.topo .str{stroke:var(--stream);stroke-width:2.6;opacity:.9}
+.topo text{font:500 13px var(--m);fill:var(--stream);letter-spacing:.2em}
+.js .topo path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s cubic-bezier(.3,.1,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 70% at 18% 82%,var(--snow) 30%,rgba(238,242,238,0) 75%)}
+.cross{position:absolute;z-index:-1;left:0;top:0;width:1px;height:1px;pointer-events:none;opacity:0;transition:opacity .3s}
+.cross::before,.cross::after{content:"";position:absolute;background:var(--ink);opacity:.25}
+.cross::before{left:-1000px;width:2000px;top:0;height:1px}.cross::after{top:-1000px;height:2000px;left:0;width:1px}
+.cross span{position:absolute;left:12px;top:10px;white-space:nowrap;font:400 10px/1 var(--m);color:var(--ink2);background:var(--paper);padding:5px 6px}
+.hero:hover .cross{opacity:1}
+.pin{position:absolute;left:73.5%;top:31%;z-index:-1;display:flex;align-items:center;gap:10px;color:var(--berry)}
+.pin i{width:18px;height:18px;border:2px solid var(--berry);border-radius:50%;position:relative}
+.pin i::after{content:"";position:absolute;inset:4px;background:var(--berry);border-radius:50%}
+.pin b{font:500 12px/1 var(--m);letter-spacing:.06em;background:var(--snow);padding:4px 6px}
+.hgrid{flex:1;display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:48px;align-items:end;padding-block:48px 56px}
+.kick{display:flex;flex-wrap:wrap;gap:8px 24px;color:var(--ink2);margin-bottom:24px}
+.kick span:first-child{color:var(--berry)}
+h1{font:800 clamp(92px,15.2vw,248px)/.8 var(--d);text-transform:uppercase;letter-spacing:-.005em;margin-left:-.04em}
+h1 em{font-style:normal;display:block;margin-top:.07em;color:var(--ink);-webkit-text-stroke:0}
+h1 em span{color:var(--berry)}
+.lead{max-width:34em;margin-top:28px;font-size:19px;color:var(--ink2)}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border:1.5px solid var(--ink);border-radius:2px;font:700 16px/1 var(--t);text-decoration:none;color:var(--ink);background:transparent;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn:active{transform:translateY(1px)}
+.btn.main{background:var(--ink);color:var(--paper)}
+.btn.main:hover{background:var(--berry);border-color:var(--berry)}
+.btn svg{width:18px;height:18px}
+.hmeta{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;margin-top:16px}.hmeta .st{margin:0}.mrate{display:none;color:var(--ink2)}
+.legend{background:rgba(248,250,247,.92);backdrop-filter:blur(6px);border:1px solid var(--line);padding:24px 24px 20px}
+.legend h2{font:500 11px/1 var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding-bottom:14px;border-bottom:1px solid var(--line)}
+.legend ul{list-style:none}
+.legend li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.3}
+.legend li svg{width:28px;height:18px}
+.rate{display:flex;align-items:baseline;gap:12px;padding-top:16px}
+.rate b{font:800 44px/1 var(--d)}
+.rate span{font-size:14px;color:var(--mute);line-height:1.3}
+.st{display:inline-flex;align-items:center;gap:8px;font:500 11px/1.4 var(--m);letter-spacing:.06em;text-transform:uppercase;margin-top:16px;color:var(--ink2)}
+.st::before{content:"";width:8px;height:8px;border-radius:50%;background:#2f8a57;box-shadow:0 0 0 4px rgba(47,138,87,.15)}
+/* разделы */
+section{position:relative}
+.sec{padding-block:120px}
+.h2{font:800 clamp(52px,6.4vw,104px)/.88 var(--d);text-transform:uppercase;letter-spacing:-.005em;text-wrap:balance}
+.eyebrow{display:block;color:var(--berry);margin-bottom:20px}
+/* сутки в ямках: окно со сменой неба */
+.day{background:var(--paper);border-block:1px solid var(--line)}
+.day-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:72px}
+.win-wrap{position:sticky;top:8vh;height:84vh;display:flex;flex-direction:column;justify-content:center}
+.win{position:relative;aspect-ratio:16/11;max-height:70vh;border:10px solid var(--ink);background:var(--ink);box-shadow:0 40px 80px -40px rgba(18,35,27,.45)}
+.win svg{width:100%;height:100%}
+.win::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.14) 0 18%,transparent 18% 22%,rgba(255,255,255,.07) 22% 26%,transparent 26%);pointer-events:none}
+.win .mull{position:absolute;top:0;bottom:0;left:63%;width:8px;background:var(--ink)}
+.win-cap{display:flex;justify-content:space-between;gap:16px;margin-top:16px;color:var(--mute)}
+.win-cap b{color:var(--ink);font-weight:500}
+.chap{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding-block:48px;max-width:30em}
+.chap .mono{color:var(--mute);margin-bottom:18px}
+.chap h3{font:800 clamp(44px,4.6vw,76px)/.9 var(--d);text-transform:uppercase;margin-bottom:22px}
+.chap p{color:var(--ink2)}
+.chap .tag{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chap .tag span{font:400 12px/1 var(--m);padding:9px 12px;border:1px solid var(--line);color:var(--ink2)}
+.day-head{padding-top:120px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:72px;align-items:end}
+.day-head p{color:var(--ink2);max-width:28em}
+/* за что хвалят */
+.praise{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+.big5{font:800 clamp(180px,22vw,340px)/.78 var(--d);letter-spacing:-.02em;color:var(--ink)}
+.big5 sup{font-size:.2em;vertical-align:top;margin-left:.1em;color:var(--berry);letter-spacing:0}
+.praise .src{margin-top:24px;color:var(--mute);font-size:15px}
+.praise .src a{color:var(--ink)}
+.pts{list-style:none;counter-reset:p;margin-top:36px}
+.pts li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:24px;padding:32px 0;border-top:1px solid var(--line)}
+.pts li:last-child{border-bottom:1px solid var(--line)}
+.pts li::before{counter-increment:p;content:"0" counter(p);font:500 12px/2 var(--m);color:var(--berry)}
+.pts h3{font:800 34px/1 var(--d);text-transform:uppercase;margin-bottom:10px}
+.pts p{color:var(--ink2);max-width:34em}
+/* бронь */
+.book{background:var(--ink);color:var(--paper)}
+.book .eyebrow{color:#e8818f}
+.book-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,26em);gap:48px;align-items:end;margin-bottom:56px}
+.book-head p{color:#b9c6bf}
+.bk{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:32px;align-items:start}
+.panel{border:1px solid rgba(248,250,247,.16);padding:32px}
+.step{padding-bottom:28px;margin-bottom:28px;border-bottom:1px solid rgba(248,250,247,.12)}
+.step:last-child{border:0;margin:0;padding:0}
+.step>h3{display:flex;justify-content:space-between;align-items:baseline;gap:16px;font:800 28px/1 var(--d);text-transform:uppercase;margin-bottom:18px}
+.step>h3 .mono{color:#9fb0a7;font-size:10px}
+.cal{display:flex;gap:6px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:#46584f transparent}
+.cal .mo{flex:0 0 auto;writing-mode:vertical-rl;transform:rotate(180deg);font:500 10px/1 var(--m);letter-spacing:.14em;text-transform:uppercase;color:#e8818f;padding:4px 6px 4px 0;text-align:center}
+.cal button{flex:0 0 56px;scroll-snap-align:start;height:72px;border:1px solid rgba(248,250,247,.16);background:transparent;color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;font:700 22px/1 var(--d);transition:background .2s,border-color .2s}
+.cal button small{font:400 10px/1 var(--m);text-transform:uppercase;color:#9fb0a7}
+.cal button.we small{color:#e8818f}
+.cal button:hover{border-color:var(--paper)}
+.cal button.in{background:rgba(232,129,143,.16);border-color:rgba(232,129,143,.4)}
+.cal button.a,.cal button.b{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.cal button.a small,.cal button.b small{color:var(--berry)}
+.hint{font-size:14px;color:#9fb0a7;margin-top:8px}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:46px;padding:0 18px;border:1px solid rgba(248,250,247,.22);background:transparent;color:var(--paper);font:500 15px/1 var(--t);cursor:pointer;display:inline-flex;align-items:center;gap:10px;transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:var(--paper)}
+.chip[aria-pressed=true]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.chip i{width:14px;height:14px;border:1.5px solid currentColor;display:inline-block;position:relative}
+.chip[aria-pressed=true] i::after{content:"";position:absolute;inset:2px;background:var(--berry)}
+.stp{display:inline-flex;align-items:center;border:1px solid rgba(248,250,247,.22)}
+.stp button{width:52px;height:52px;background:none;border:0;color:var(--paper);font:400 24px/1 var(--t);cursor:pointer}
+.stp button:hover{background:rgba(248,250,247,.08)}
+.stp output{min-width:56px;text-align:center;font:800 30px/1 var(--d)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.ticket{position:sticky;top:24px;background:var(--paper);color:var(--ink);padding:28px}
+.ticket .mono{color:var(--mute)}
+.ticket h3{font:800 34px/1 var(--d);text-transform:uppercase;margin:10px 0 18px}
+.ticket dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 16px;border-top:1px dashed var(--line)}
+.ticket dt,.ticket dd{padding:11px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.ticket dt{color:var(--mute);font:400 11px/1.9 var(--m);text-transform:uppercase;letter-spacing:.06em}
+.ticket dd{text-align:right;font-weight:500}
+.ticket .btn{width:100%;margin-top:22px}
+.ticket .btn.main:hover{background:var(--berry)}
+.ticket small{display:block;margin-top:12px;color:var(--mute);font-size:13px;line-height:1.4}
+/* дорога */
+.road{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:0;border:1px solid var(--line);background:var(--paper)}
+.map{min-height:520px;position:relative;background:#dfe6e0}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.75)}
+.info{padding:40px}
+.info .h2{font-size:clamp(48px,4.4vw,72px);margin-bottom:28px}
+.info dl{display:grid;gap:0}
+.info dt{color:var(--mute);margin-top:18px}
+.info dd{font-size:18px;margin-top:6px}
+.info dd a{text-decoration-thickness:1px;text-underline-offset:3px}
+.info .acts{margin-top:32px}
+/* финал */
+.fin{padding-block:140px;text-align:center;overflow:hidden}
+.fin .h2{font-size:clamp(64px,10vw,176px)}
+.fin .h2 span{color:var(--berry)}
+.fin .acts{justify-content:center;margin-top:40px}
+.fin{isolation:isolate}.fin svg{position:absolute;inset:0;width:100%;height:100%;z-index:-1;opacity:.5}
+footer{border-top:1px solid var(--line);padding-block:28px 96px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.fab{display:none}
+.js .fab{opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .3s,transform .3s}.js body.sc .fab{opacity:1;transform:none;pointer-events:auto}
+/* появления */
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
 .js [data-r].in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
-@media (max-width:1100px){nav{display:none}.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1180px){.hgrid{grid-template-columns:minmax(0,1fr)}.legend{display:none}.mrate{display:inline}.nav{display:none}.bk{grid-template-columns:minmax(0,1fr)}.ticket{position:static}}
 @media (max-width:900px){
- .hero-g,.b-g,.pr-g,.qz-g,.ct{grid-template-columns:minmax(0,1fr)}
- .house{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
- .c1,.c2{grid-column:span 2}.c3,.c4{grid-column:span 1}
- .score,.note{position:relative;top:0}
- .steam{display:none}
+ body{font-size:17px}
+ .wrap{width:min(100% - 40px,var(--w))}
+ .sec{padding-block:80px}
+ .hero{min-height:auto}
+ .hgrid{padding-block:24px 48px}
+ .pin{display:none}
+ .kick{margin-bottom:18px}
+ h1{font-size:clamp(84px,29vw,150px)}
+ .lead{font-size:17px;margin-top:22px}
+ .acts .btn{flex:1 1 auto}
+ .day-head,.day-in,.praise,.book-head,.road{grid-template-columns:minmax(0,1fr);gap:28px}
+ .day-head{padding-top:80px}
+ .win-wrap{top:0;height:auto;padding-top:12px;z-index:2;background:var(--paper);margin-inline:-20px;padding-inline:20px;padding-bottom:12px}
+ .win{max-height:none;border-width:6px}
+ .win-cap{margin-top:10px}
+ .chap{min-height:62vh;padding-block:32px}
+ .big5{font-size:180px}
+ .pts li{grid-template-columns:44px minmax(0,1fr);gap:12px;padding:24px 0}
+ .pts h3{font-size:28px}
+ .panel{padding:22px 18px}
+ .two{grid-template-columns:minmax(0,1fr)}
+ .map{min-height:340px}
+ .info{padding:28px 20px}
+ .fin{padding-block:96px}
+ .fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:20;align-items:center;gap:10px;height:56px;padding:0 22px;background:var(--berry);color:#fff;text-decoration:none;font:700 16px/1 var(--t);box-shadow:0 12px 30px -8px rgba(163,35,58,.6);border-radius:2px}
+ .fab svg{width:20px;height:20px}
 }
-@media (max-width:600px){
- body{font-size:16px}
- .hd-t{display:none}
- .hero h1{font-size:clamp(44px,13vw,62px)}
- .cta .btn{flex:1 1 100%}
- .frame{border-radius:24px;padding:10px}.frame::after{top:10px;bottom:10px}
- .house{grid-template-columns:minmax(0,1fr)}
- .c1,.c2,.c3,.c4{grid-column:auto}
- .th{grid-template-columns:70px minmax(0,1fr);padding:18px}
- .th .bar{width:70px;height:70px}
- .dt{grid-template-columns:minmax(0,1fr)}
- .steps{grid-template-columns:minmax(0,1fr)}
- .pr article:nth-child(2){margin-left:0}
- .map,.map iframe{min-height:320px}
- .fab{display:grid}
-}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .topo path{stroke-dashoffset:0}.js [data-r]{opacity:1;transform:none}}
 </style>
 <script>document.documentElement.className='js'</script>
 </head>
 <body>
 <div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
-<header><div class="wrap">
- <a class="logo" href="#top" aria-label="Ямки в Ёлках — наверх"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M11 3l8 12h-4l6 9h-5l5 7H2l5-7H2l6-9H4z" fill="#24493a"/><path d="M25 10l6 9h-3l4 6h-4l3 5H17l3-5h-4l4-6h-3z" fill="#3d6e55"/><circle cx="29" cy="5" r="3" fill="#e0582c"/></svg>Ямки в Ёлках</a>
- <nav aria-label="Разделы"><a href="#house">Домики</a><a href="#banya">Баня и чан</a><a href="#praise">Отзывы</a><a href="#quiz">Бронь</a><a href="#contacts">Контакты</a></nav>
- <a class="hd-t" href="tel:+79922305501">+7 992 230-55-01</a>
-</div></header>
-<main id="top">
-<section class="hero">
- <div class="wrap hero-g">
+
+<header class="hero" id="top">
+ <svg class="topo" id="topo" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+ <div class="cross" id="cross" aria-hidden="true"><span id="coord">57.8263° с.ш. 56.6748° в.д.</span></div>
+ <div class="pin" aria-hidden="true"><i></i><b>Ямы, 29</b></div>
+ <div class="wrap top">
+  <a class="logo" href="#top" aria-label="Ямки в Ёлках — наверх"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="17" cy="17" rx="15.5" ry="12"/><ellipse cx="16" cy="17.5" rx="10" ry="7.5"/><ellipse cx="15.5" cy="18" rx="4.5" ry="3.2" fill="#a3233a" stroke="none"/></svg>Ямки в Ёлках</a>
+  <nav class="nav" aria-label="Разделы"><a href="#day">Домики и баня</a><a href="#praise">Отзывы</a><a href="#book">Бронь</a><a href="#road">Как доехать</a></nav>
+  <a class="tel" href="tel:+79922305501">+7&nbsp;992&nbsp;230-55-01</a>
+ </div>
+ <div class="wrap hgrid">
   <div>
-   <div class="tag">Глэмпинг · Пермский округ</div>
-   <h1>Ямки <span>в Ёлках</span></h1>
-   <p class="lead">Домики с панорамным окном на деревья, жаркая русская баня и горячий чан. Тишина, свежий воздух и никуда не нужно торопиться.</p>
-   <div class="meta"><span class="pill"><b>5,0</b> · 18 оценок в 2ГИС</span><span class="pill"><span data-status></span></span></div>
-   <div class="cta">
-    <a class="btn b-em" href="#quiz">Выбрать даты</a>
-    <a class="btn b-sp" href="https://wa.me/79922305501?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D1%82%D1%8B%20%D0%B2%20%C2%AB%D0%AF%D0%BC%D0%BA%D0%B0%D1%85%20%D0%B2%20%D0%81%D0%BB%D0%BA%D0%B0%D1%85%C2%BB" target="_blank" rel="noopener">Написать в WhatsApp</a>
-    <a class="btn b-ln" href="tel:+79922305501">Позвонить</a>
+   <p class="kick mono"><span>Глэмпинг</span><span>Пермский округ · Ямы, 29</span><span>57°49′35″ с.ш. 56°40′29″ в.д.</span></p>
+   <h1>Ямки <em>в&nbsp;Ёлках</em></h1>
+   <p class="lead">Домики с&nbsp;панорамным окном на&nbsp;лес и&nbsp;ручей, жаркая русская баня и&nbsp;чан под открытым небом. Тихо, и&nbsp;вокруг ни&nbsp;души.</p>
+   <div class="acts">
+    <a class="btn main" href="#book">Собрать поездку</a>
+    <a class="btn" href="tel:+79922305501"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+    <a class="btn" href="https://yandex.ru/maps/?rtext=~57.826258,56.674761" target="_blank" rel="noopener">Маршрут</a>
    </div>
-   <div class="sub"><a href="https://yandex.ru/maps/?rtext=~57.826258,56.674761" target="_blank" rel="noopener">Маршрут</a><span>Ямы, 29</span></div>
+   <p class="hmeta"><span class="st" data-status>Открыто круглосуточно</span><span class="mrate mono">5,0 · 18 оценок в&nbsp;2ГИС</span></p>
   </div>
-  <div class="win" id="win" data-r>
-   <div class="frame">
-    <svg class="scene" viewBox="0 0 640 440" role="img" aria-label="Рисунок: вид из панорамного окна на ёлки и ручей">
-     <rect class="sky" width="640" height="440" fill="#bfdcea"/>
-     <g class="star" fill="#fff"><circle cx="80" cy="60" r="2"/><circle cx="180" cy="40" r="1.6"/><circle cx="420" cy="70" r="2"/><circle cx="530" cy="36" r="1.6"/><circle cx="300" cy="90" r="1.4"/><circle cx="600" cy="110" r="1.6"/></g>
-     <circle class="sun" cx="470" cy="120" r="40" fill="#f4a259"/>
-     <path class="far" d="M0 260l40-70 30 50 40-90 40 80 30-50 40 70 40-100 40 90 30-40 40 60 40-90 40 80 30-50 40 70 40-60 40 50 40-30v220H0z" fill="#5e8f72"/>
-     <g fill="#24493a"><path d="M70 330l40-150 40 150z"/><path d="M50 360l60-120 60 120z"/><path d="M200 340l36-130 36 130z"/><path d="M520 330l44-170 44 170z"/><path d="M500 370l64-140 64 140z"/><path d="M380 350l30-110 30 110z"/></g>
-     <path d="M0 360c80-20 160 20 260 0s200-30 380 10v70H0z" fill="#e8efe6"/>
-     <path d="M0 400c120-30 240 10 340-6s200-24 300 0" fill="none" stroke="#8cc3dc" stroke-width="14" stroke-linecap="round"/>
-     <g class="glow"><rect x="300" y="300" width="40" height="34" rx="4" fill="#f4a259"/><path d="M290 300l30-24 30 24z" fill="#3a2a1e"/><circle cx="320" cy="317" r="40" fill="#f4a259" opacity=".25"/></g>
-     <g fill="#173126"><path d="M260 380l20-60 20 60z"/><path d="M590 400l24-80 24 80z"/></g>
-    </svg>
-   </div>
-   <div class="tog" role="group" aria-label="Время суток"><button type="button" aria-pressed="true" data-t="day">День</button><button type="button" aria-pressed="false" data-t="night">Вечер</button></div>
-   <p class="win-cap">Нарисовано по отзывам гостей: панорамное окно с видом на деревья и ручей.</p>
-  </div>
+  <aside class="legend" aria-label="Что есть на месте">
+   <h2>Условные обозначения</h2>
+   <ul>
+    <li><svg viewBox="0 0 28 18" fill="none" stroke="#12231b" stroke-width="1.5"><rect x="3" y="3" width="22" height="12"/><path d="M17 3v12"/></svg>Домики с&nbsp;панорамным окном и&nbsp;тёплым полом</li>
+    <li><svg viewBox="0 0 28 18" fill="none" stroke="#a3233a" stroke-width="1.8"><path d="M4 15h20M8 15V8l6-5 6 5v7"/></svg>Русская баня</li>
+    <li><svg viewBox="0 0 28 18"><circle cx="14" cy="9" r="6.5" fill="none" stroke="#a3233a" stroke-width="1.8"/><circle cx="14" cy="9" r="2.6" fill="#a3233a"/></svg>Банный чан под открытым небом</li>
+    <li><svg viewBox="0 0 28 18" fill="none" stroke="#3a7690" stroke-width="2"><path d="M2 12c5-6 8 4 13-2s8 2 11-3"/></svg>Ручей у&nbsp;домиков</li>
+    <li><svg viewBox="0 0 28 18" fill="none" stroke="#12231b" stroke-width="1.5"><path d="M3 13h17l4-4M7 13l2-5h7l3 5"/></svg>Прокат снегоходов, трансфер</li>
+   </ul>
+   <div class="rate"><b>5,0</b><span>18 оценок в&nbsp;2ГИС</span></div>
+  </aside>
  </div>
-</section>
+</header>
 
-<section class="sec" id="house" style="padding-top:clamp(30px,4vw,60px)">
- <div class="wrap">
-  <div class="tag" data-r>домики</div>
-  <h2 class="h2" style="margin-top:12px" data-r>Тепло, чисто и всё уже есть</h2>
-  <div class="house">
-   <div class="cell c1" data-r>
-    <div class="pan" aria-hidden="true"><svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMax slice"><path d="M0 120l30-50 30 40 30-70 30 60 30-40 30 50 30-80 30 70 30-40 30 50 30-60 30 50 30-30v130H0z" fill="#5e8f72"/><g fill="#24493a"><path d="M40 200l26-110 26 110z"/><path d="M300 200l30-130 30 130z"/></g><path d="M0 190c100-20 200 10 400-10" stroke="#8cc3dc" stroke-width="10" fill="none"/></svg></div>
-    <h3>Панорамное окно в лес</h3>
-    <p>Гости пишут про стильные уютные домики, удобную кровать, тёплый пол и вид из окна на деревья и ручей.</p>
-   </div>
-   <div class="cell c2" data-r><svg viewBox="0 0 58 58" aria-hidden="true"><rect x="6" y="30" width="46" height="18" rx="4" fill="#3d6e55"/><path d="M10 54c4-4 8 4 12 0s8 4 12 0 8 4 12 0" stroke="#e0582c" stroke-width="3" fill="none"/><rect x="10" y="20" width="16" height="10" rx="3" fill="#e3e9e1"/></svg><h3>Свой санузел</h3><p>Горячая вода, душ, полотенца — по словам гостей, предусмотрено всё необходимое.</p></div>
-   <div class="cell c3" data-r><h3>Большая территория</h3><p>Облагороженная, а вокруг — только природа и свежий воздух.</p></div>
-   <div class="cell c4" data-r><h3>Забота</h3><p>Тёплая встреча и хозяева, которые следят за местом.</p></div>
-  </div>
-  <div class="list" data-r><span>Глэмпинг</span><span>Баня</span><span>Банный чан</span><span>Прокат снегоходов</span><span>Трансфер</span><span>Оплата наличными или переводом</span></div>
+<main>
+<section class="day" id="day">
+ <div class="wrap day-head">
+  <h2 class="h2" data-r><span class="eyebrow mono">Сутки в&nbsp;Ямках</span>Вид из&nbsp;окна меняется, а&nbsp;торопиться некуда</h2>
+  <p data-r>Листайте&nbsp;— за&nbsp;панорамным окном домика наступит вечер, ночь и&nbsp;утро. Всё, что ниже, взято из&nbsp;того, что пишут гости.</p>
  </div>
-</section>
-
-<section class="sec banya" id="banya">
- <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
- <div class="wrap b-g">
-  <div data-r>
-   <div class="tag">ради чего едут</div>
-   <h2 class="h2" style="margin-top:12px">Жаркая баня, потом горячий чан</h2>
-   <p class="big">Баню гости называют настоящей русской и очень жаркой, а чан — тем, что запоминается больше всего: в нём расслабляются и перезагружаются.</p>
+ <div class="wrap day-in">
+  <div class="win-wrap">
+   <div class="win"><svg id="scene" viewBox="0 0 1200 820" preserveAspectRatio="xMidYMid slice" aria-label="Вид из панорамного окна на ёлки и ручей" role="img"></svg><span class="mull"></span></div>
+   <p class="win-cap mono"><span>Вид из&nbsp;окна · <b id="tod">день</b></span><span>Ямы, 29</span></p>
   </div>
-  <div class="thermo" data-r>
-   <div class="th"><div class="bar" style="--p:88%"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M10 30c0-6 5-6 5-14M18 30c0-6 5-6 5-14M26 30c0-6-4-6-4-12" stroke="#f4a259" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div><div><h3>Русская баня</h3><p>По словам гостей, очень жаркая — именно такая, как любят ценители.</p></div></div>
-   <div class="th"><div class="bar" style="--p:70%"><svg viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="18" cy="22" rx="14" ry="7" fill="#8cc3dc"/><path d="M12 12c-2-3 2-4 0-7M18 12c-2-3 2-4 0-7M24 12c-2-3 2-4 0-7" stroke="#fff" stroke-width="2" fill="none"/></svg></div><div><h3>Банный чан</h3><p>Горячий, чтобы посидеть и никуда не спешить после парной.</p></div></div>
+  <div>
+   <article class="chap" data-t="день"><span class="mono">01 / 05 · Домик</span><h3>Панорамное окно на&nbsp;деревья и&nbsp;ручей</h3><p>Тёплый пол, удобная кровать, свой санузел с&nbsp;горячей водой и&nbsp;душем. Гости пишут, что в&nbsp;доме есть всё необходимое&nbsp;— вплоть до&nbsp;мелочей, а&nbsp;бельё и&nbsp;полотенца идеально свежие.</p><div class="tag"><span>тёплый пол</span><span>душ</span><span>полотенца</span><span>чистота</span></div></article>
+   <article class="chap" data-t="вечер"><span class="mono">02 / 05 · Баня</span><h3>Настоящая русская баня, очень жаркая</h3><p>О&nbsp;ней пишут во&nbsp;многих отзывах: такая, как любят те, кто едет за&nbsp;паром. А&nbsp;после бани&nbsp;— сразу в&nbsp;чан.</p></article>
+   <article class="chap" data-t="сумерки"><span class="mono">03 / 05 · Чан</span><h3>Горячий чан под открытым небом</h3><p>После бани&nbsp;— в&nbsp;чан с&nbsp;веточками. Его вспоминают в&nbsp;отзывах чаще всего: посидеть, расслабиться и&nbsp;никуда не&nbsp;спешить.</p></article>
+   <article class="chap" data-t="ночь"><span class="mono">04 / 05 · Ночь</span><h3>Тишина и&nbsp;ни&nbsp;души вокруг</h3><p>Большая ухоженная территория, мангальная зона, свежий воздух. Сюда приезжают вдвоём, семьёй и&nbsp;на&nbsp;дни рождения.</p></article>
+   <article class="chap" data-t="утро"><span class="mono">05 / 05 · Утро</span><h3>Качели у&nbsp;дома и&nbsp;лес за&nbsp;окном</h3><p>Можно замедлиться, а&nbsp;можно взять снегоходы напрокат. До&nbsp;места есть трансфер&nbsp;— спросите при брони.</p><div class="tag"><span>снегоходы</span><span>трансфер</span><span>мангал</span></div></article>
   </div>
  </div>
 </section>
 
 <section class="sec" id="praise">
- <div class="wrap">
-  <div class="tag" data-r>за что хвалят</div>
-  <h2 class="h2" style="margin-top:12px" data-r>Получается отдохнуть по-настоящему</h2>
-  <div class="pr-g">
-   <div class="score" data-r><b>5,0</b><div class="trees" aria-hidden="true"><svg viewBox="0 0 28 32"><path d="M14 0l10 14h-5l7 10H2l7-10H4z" fill="#3d6e55"/></svg><svg viewBox="0 0 28 32"><path d="M14 0l10 14h-5l7 10H2l7-10H4z" fill="#3d6e55"/></svg><svg viewBox="0 0 28 32"><path d="M14 0l10 14h-5l7 10H2l7-10H4z" fill="#3d6e55"/></svg><svg viewBox="0 0 28 32"><path d="M14 0l10 14h-5l7 10H2l7-10H4z" fill="#3d6e55"/></svg><svg viewBox="0 0 28 32"><path d="M14 0l10 14h-5l7 10H2l7-10H4z" fill="#3d6e55"/></svg></div><p>18 оценок в 2ГИС. <a href="https://2gis.ru/perm/firm/70000001110477744" target="_blank" rel="noopener">Читать отзывы</a></p></div>
-   <div class="pr">
-    <article data-r><h3>Тишина и природа</h3><p>Уютно, тихо и спокойно, вокруг лес и свежий воздух. Гости пишут, что здесь действительно отдыхаешь, а не просто меняешь обстановку.</p></article>
-    <article data-r><h3>Чисто и продумано</h3><p>В домиках чисто и есть всё необходимое. Видно, что за местом следят и заботятся о гостях.</p></article>
-    <article data-r><h3>На праздник и всей семьёй</h3><p>Здесь отмечали день рождения, отдыхали вдвоём и семьёй, снимая сразу два домика, баню и чан.</p></article>
-   </div>
+ <div class="wrap praise">
+  <div data-r>
+   <span class="eyebrow mono">За что хвалят</span>
+   <div class="big5" aria-label="Рейтинг 5,0">5,0<sup>2ГИС</sup></div>
+   <p class="src">18 оценок в&nbsp;2ГИС. <a href="https://2gis.ru/perm/firm/70000001110477744" target="_blank" rel="noopener">Читать отзывы</a></p>
+  </div>
+  <div>
+   <h2 class="h2" data-r>Едут отдохнуть, а&nbsp;не&nbsp;сменить обстановку</h2>
+   <ol class="pts">
+    <li data-r><div><h3>Тишина</h3><p>Тихо, спокойно, вокруг природа и&nbsp;никого. Гости пишут, что здесь получается по-настоящему замедлиться.</p></div></li>
+    <li data-r><div><h3>Чисто и&nbsp;с&nbsp;заботой</h3><p>Свежее бельё, всё прибрано, в&nbsp;домиках есть всё нужное. Видно, что хозяева следят за&nbsp;местом и&nbsp;встречают тепло.</p></div></li>
+    <li data-r><div><h3>Баня и&nbsp;чан</h3><p>Жаркая русская баня, а&nbsp;после&nbsp;— горячий чан под открытым небом. Ради них гости обещают вернуться.</p></div></li>
+   </ol>
   </div>
  </div>
 </section>
 
-<section class="sec qz" id="quiz">
+<section class="sec book" id="book">
  <div class="wrap">
-  <div class="tag" data-r>бронь за минуту</div>
-  <h2 class="h2" style="margin-top:12px" data-r>Соберите выходные в ёлках</h2>
-  <div class="qz-g">
-   <form class="qf" id="qf" onsubmit="return false" data-r>
-    <div class="qr"><h3>Даты</h3><div class="dt"><label>Заезд<input type="date" name="in"></label><label>Выезд<input type="date" name="out"></label></div></div>
-    <div class="qr"><h3>Сколько гостей</h3><div class="stp"><button type="button" data-d="-1" aria-label="Меньше гостей">−</button><output id="gn">2</output><button type="button" data-d="1" aria-label="Больше гостей">+</button></div></div>
-    <div class="qr"><h3>Домиков</h3><div class="op"><input type="radio" name="h" id="h1" value="один" checked><label for="h1">Один</label><input type="radio" name="h" id="h2" value="два"><label for="h2">Два</label><input type="radio" name="h" id="h3" value="подскажите по числу гостей"><label for="h3">Подскажите</label></div></div>
-    <div class="qr"><h3>Что добавить</h3><div class="op"><input type="checkbox" name="x" id="x1" value="баня" checked><label for="x1">Баня</label><input type="checkbox" name="x" id="x2" value="чан" checked><label for="x2">Чан</label><input type="checkbox" name="x" id="x3" value="снегоходы"><label for="x3">Снегоходы</label><input type="checkbox" name="x" id="x4" value="трансфер"><label for="x4">Трансфер</label></div></div>
-    <div class="qr"><h3>Повод</h3><div class="op"><input type="radio" name="w" id="w1" value="вдвоём" checked><label for="w1">Вдвоём</label><input type="radio" name="w" id="w2" value="семьёй"><label for="w2">Семьёй</label><input type="radio" name="w" id="w3" value="день рождения"><label for="w3">День рождения</label><input type="radio" name="w" id="w4" value="с друзьями"><label for="w4">С друзьями</label></div></div>
-   </form>
-   <aside class="note" data-r>
-    <div class="tag">ваша заявка</div>
-    <pre id="msg"></pre>
-    <a class="btn b-em" id="wa" href="https://wa.me/79922305501" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+  <div class="book-head">
+   <h2 class="h2" data-r><span class="eyebrow mono">Бронь за&nbsp;минуту</span>Соберите поездку</h2>
+   <p data-r>Отметьте даты, гостей и&nbsp;что добавить. Мы&nbsp;соберём из&nbsp;этого сообщение&nbsp;— вам останется отправить его в&nbsp;WhatsApp и&nbsp;дождаться ответа.</p>
+  </div>
+  <div class="bk">
+   <div class="panel">
+    <div class="step"><h3>Даты <span class="mono" id="dsum">выберите заезд</span></h3><div class="cal" id="cal" data-qa-skip role="group" aria-label="Календарь заезда и выезда"></div><p class="hint" id="dhint">Первое нажатие&nbsp;— заезд, второе&nbsp;— выезд.</p></div>
+    <div class="step two">
+     <div><h3 style="font:800 28px/1 var(--d);text-transform:uppercase;margin-bottom:18px">Гостей</h3><div class="stp"><button type="button" data-g="-1" aria-label="Меньше гостей">−</button><output id="g">2</output><button type="button" data-g="1" aria-label="Больше гостей">+</button></div></div>
+     <div><h3 style="font:800 28px/1 var(--d);text-transform:uppercase;margin-bottom:18px">Домиков</h3><div class="row" data-one="h"><button class="chip" type="button" aria-pressed="true">Один</button><button class="chip" type="button" aria-pressed="false">Два</button><button class="chip" type="button" aria-pressed="false">Подскажите</button></div></div>
+    </div>
+    <div class="step"><h3>Добавить</h3><div class="row" data-many="x"><button class="chip" type="button" aria-pressed="true"><i></i>Баня</button><button class="chip" type="button" aria-pressed="true"><i></i>Чан</button><button class="chip" type="button" aria-pressed="false"><i></i>Снегоходы</button><button class="chip" type="button" aria-pressed="false"><i></i>Трансфер</button></div></div>
+    <div class="step"><h3>Повод</h3><div class="row" data-one="o"><button class="chip" type="button" aria-pressed="true">Просто отдохнуть</button><button class="chip" type="button" aria-pressed="false">Вдвоём</button><button class="chip" type="button" aria-pressed="false">Семьёй</button><button class="chip" type="button" aria-pressed="false">День рождения</button></div></div>
+   </div>
+   <aside class="ticket" aria-live="polite">
+    <span class="mono">Заявка · Ямки в&nbsp;Ёлках</span>
+    <h3 id="tt">Выходные в&nbsp;ёлках</h3>
+    <dl><dt>Заезд</dt><dd id="t1">—</dd><dt>Выезд</dt><dd id="t2">—</dd><dt>Гостей</dt><dd id="t3">2</dd><dt>Домиков</dt><dd id="t4">один</dd><dt>Добавить</dt><dd id="t5">баня, чан</dd><dt>Повод</dt><dd id="t6">просто отдохнуть</dd></dl>
+    <a class="btn main" id="wa" href="https://wa.me/79922305501" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5 0-1.1.1-3.4-.8-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.2-1.6-1.2-3s.7-2.2 1-2.5c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3 0 .2 0 .8-.2 1.5"/></svg>Отправить в&nbsp;WhatsApp</a>
+    <small>Свободные домики и&nbsp;стоимость подтвердят в&nbsp;ответ. Оплата наличными или переводом с&nbsp;карты.</small>
    </aside>
   </div>
  </div>
 </section>
 
-<section class="sec" style="padding-top:clamp(50px,6vw,90px)">
+<section class="sec" id="road">
  <div class="wrap">
-  <div class="tag" data-r>как забронировать</div>
-  <h2 class="h2" style="margin-top:12px" data-r>Пять шагов до тишины</h2>
-  <ol class="steps" data-r>
-   <li><h3>Заявка</h3><p>Даты и гости — в WhatsApp или по телефону.</p></li>
-   <li><h3>Ответ</h3><p>Хозяева проверяют даты и называют стоимость.</p></li>
-   <li><h3>Оплата</h3><p>Наличными или переводом с карты.</p></li>
-   <li><h3>Дорога</h3><p>Своим ходом или на трансфере.</p></li>
-   <li><h3>Отдых</h3><p>Домик, баня и чан на время брони.</p></li>
-  </ol>
- </div>
-</section>
-
-<section class="sec" id="contacts" style="padding-top:0">
- <div class="wrap">
-  <div class="tag" data-r>где мы</div>
-  <h2 class="h2" style="margin-top:12px" data-r>Ямы, 29 — Пермский округ</h2>
-  <div class="ct">
-   <dl data-r>
-    <div><dt>Адрес</dt><dd>Ямы, 29<br><span style="font-size:15px;color:var(--mute)">Пермский муниципальный округ, Пермский край</span></dd></div>
-    <div><dt>Телефон</dt><dd><a href="tel:+79922305501">+7 992 230-55-01</a></dd></div>
-    <div><dt>Написать</dt><dd><a href="https://wa.me/79922305501" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://vk.ru/club234823643" target="_blank" rel="noopener">ВКонтакте</a></dd></div>
-    <div><dt>На связи</dt><dd><span data-status></span></dd></div>
-    <div><a class="btn b-em" href="https://yandex.ru/maps/?rtext=~57.826258,56.674761" target="_blank" rel="noopener">Построить маршрут</a></div>
-   </dl>
-   <div class="map" data-r><iframe loading="lazy" title="Ямки в Ёлках на карте" src="https://yandex.ru/map-widget/v1/?ll=56.674761,57.826258&z=16&pt=56.674761,57.826258,pm2rdm"></iframe></div>
+  <div class="road" data-r>
+   <div class="map"><iframe loading="lazy" title="Ямки в Ёлках на карте" src="https://yandex.ru/map-widget/v1/?ll=56.674761,57.826258&amp;z=14&amp;pt=56.674761,57.826258,pm2rdm"></iframe></div>
+   <div class="info">
+    <h2 class="h2"><span class="eyebrow mono">Как доехать</span>Ямы, 29</h2>
+    <dl>
+     <dt class="mono">Где</dt><dd>Пермский муниципальный округ, Пермский край</dd>
+     <dt class="mono">Когда</dt><dd><span data-status>Открыто круглосуточно</span></dd>
+     <dt class="mono">Дорога</dt><dd>Есть трансфер&nbsp;— уточните при брони</dd>
+     <dt class="mono">Связь</dt><dd><a href="tel:+79922305501" style="white-space:nowrap">+7&nbsp;992&nbsp;230-55-01</a> · <a href="https://wa.me/79922305501" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://vk.ru/club234823643" target="_blank" rel="noopener">ВКонтакте</a></dd>
+    </dl>
+    <div class="acts"><a class="btn main" href="https://yandex.ru/maps/?rtext=~57.826258,56.674761" target="_blank" rel="noopener">Построить маршрут</a><a class="btn" href="tel:+79922305501">Позвонить</a></div>
+   </div>
   </div>
  </div>
 </section>
 
 <section class="fin">
+ <svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice" id="topo2" class="topo" aria-hidden="true"></svg>
  <div class="wrap">
-  <h2 data-r>Баня натоплена, чан горячий</h2>
-  <div class="cta" data-r><a class="btn b-em" href="#quiz">Выбрать даты</a><a class="btn b-ln" href="tel:+79922305501">Позвонить</a></div>
+  <h2 class="h2" data-r>Ёлки на&nbsp;месте.<br><span>Осталось выбрать&nbsp;даты</span></h2>
+  <div class="acts" data-r><a class="btn main" href="#book">Выбрать даты</a><a class="btn" href="tel:+79922305501">Позвонить</a></div>
  </div>
- <svg viewBox="0 0 1600 160" preserveAspectRatio="none" aria-hidden="true"><path d="M0 160V90l40-60 40 50 40-80 40 70 40-40 40 60 40-90 40 80 40-50 40 60 40-70 40 50 40-80 40 70 40-40 40 60 40-90 40 80 40-50 40 60 40-70 40 50 40-80 40 70 40-40 40 60 40-90 40 80 40-50 40 60 40-70 40 50 40-80 40 70 40-40 40 60 40-60 40 40V160z" fill="#0f2119"/></svg>
 </section>
 </main>
-<footer><div class="wrap"><span>Ямки в Ёлках · глэмпинг с баней и чаном · Пермский округ</span><span>Демо-концепт по данным 2ГИС</span></div></footer>
-<a class="fab" href="tel:+79922305501" aria-label="Позвонить"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></a>
+
+<footer><div class="wrap"><span>Ямки в&nbsp;Ёлках · глэмпинг · Ямы, 29, Пермский округ</span><span>Демо-концепт по&nbsp;данным 2ГИС</span></div></footer>
+<a class="fab" href="tel:+79922305501" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+
 <script>
 (function(){
- var win=document.getElementById('win');
- win.querySelectorAll('[data-t]').forEach(function(b){b.addEventListener('click',function(){var n=b.dataset.t==='night';win.classList.toggle('night',n);win.querySelectorAll('[data-t]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')})})});
- var f=document.getElementById('qf'),g=2,msg=document.getElementById('msg'),wa=document.getElementById('wa'),gn=document.getElementById('gn');
- function d(v){if(!v)return'';var p=v.split('-');return p[2]+'.'+p[1]+'.'+p[0]}
- function upd(){
-  var a=d(f.elements['in'].value),b=d(f.elements['out'].value),x=[].map.call(f.querySelectorAll('[name=x]:checked'),function(e){return e.value});
-  var s='Здравствуйте! Хочу забронировать «Ямки в Ёлках».\nДаты: '+(a?a+(b?' — '+b:''):'подскажите свободные')+'\nГостей: '+g+'\nДомиков: '+f.querySelector('[name=h]:checked').value+(x.length?'\nДобавить: '+x.join(', '):'')+'\nПовод: '+f.querySelector('[name=w]:checked').value+'\nПодскажите, свободно ли и сколько будет стоить?';
-  msg.textContent=s;wa.href='https://wa.me/79922305501?text='+encodeURIComponent(s);
- }
- f.addEventListener('change',upd);f.addEventListener('input',upd);
- f.querySelectorAll('[data-d]').forEach(function(b){b.addEventListener('click',function(){g=Math.max(1,Math.min(20,g+ +b.dataset.d));gn.textContent=g;upd()})});
- var td=new Date().toISOString().slice(0,10);f.elements['in'].min=td;f.elements['out'].min=td;
- upd();
+var sc=function(){document.body.classList.toggle('sc',scrollY>innerHeight*.6)};addEventListener('scroll',sc,{passive:true});sc();
+var NS='http://www.w3.org/2000/svg',RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e}
+/* топография: изолинии поля с «ямками» (marching squares) */
+function topo(svg,W,H,blobs,N){
+ var s=16,nx=Math.ceil(W/s)+1,ny=Math.ceil(H/s)+1,F=[],mn=1e9,mx=-1e9,i,j;
+ for(j=0;j<ny;j++)for(i=0;i<nx;i++){var x=i*s,y=j*s,v=.09*Math.sin(x*.0047+y*.0021)+.06*Math.sin(x*.0101-y*.0079+1.7)+.035*Math.sin(y*.016+x*.0043+.6);
+  blobs.forEach(function(b){v+=b[2]*Math.exp(-((x-b[0])*(x-b[0])+(y-b[1])*(y-b[1]))/(b[3]*b[3]))});F[j*nx+i]=v;if(v<mn)mn=v;if(v>mx)mx=v}
+ var g=el('g',{});
+ for(var l=1;l<N;l++){var L=mn+(mx-mn)*l/N,adj={},P={};
+  var pt=function(k,a,b,fa,fb){if(!P[k]){var t=(L-fa)/(fb-fa);P[k]=[(a[0]+(b[0]-a[0])*t)*s,(a[1]+(b[1]-a[1])*t)*s]}return k};
+  var link=function(a,b){(adj[a]=adj[a]||[]).push(b);(adj[b]=adj[b]||[]).push(a)};
+  for(j=0;j<ny-1;j++)for(i=0;i<nx-1;i++){var A=F[j*nx+i],B=F[j*nx+i+1],C=F[(j+1)*nx+i+1],D=F[(j+1)*nx+i];
+   var c=(A>L?8:0)|(B>L?4:0)|(C>L?2:0)|(D>L?1:0);if(!c||c===15)continue;
+   var T=function(){return pt('h'+i+','+j,[i,j],[i+1,j],A,B)},R=function(){return pt('v'+(i+1)+','+j,[i+1,j],[i+1,j+1],B,C)},
+       Bo=function(){return pt('h'+i+','+(j+1),[i,j+1],[i+1,j+1],D,C)},Le=function(){return pt('v'+i+','+j,[i,j],[i,j+1],A,D)};
+   switch(c){case 1:case 14:link(Le(),Bo());break;case 2:case 13:link(Bo(),R());break;case 3:case 12:link(Le(),R());break;case 4:case 11:link(T(),R());break;
+    case 6:case 9:link(T(),Bo());break;case 7:case 8:link(T(),Le());break;case 5:link(T(),Le());link(Bo(),R());break;case 10:link(T(),R());link(Le(),Bo());break}}
+  var seen={},keys=Object.keys(adj).sort(function(a,b){return adj[a].length-adj[b].length}),d='';
+  keys.forEach(function(k0){if(seen[k0])return;var line=[k0],cur=k0;seen[k0]=1;
+   for(;;){var nb=adj[cur].filter(function(n){return!seen[n]});if(!nb.length)break;cur=nb[0];seen[cur]=1;line.push(cur)}
+   if(line.length<4)return;var p=line.map(function(k){return P[k]}),closed=adj[line[0]].indexOf(line[line.length-1])>=0;if(closed)p.push(p[0],p[1]);
+   var m=function(a,b){return((a[0]+b[0])/2).toFixed(1)+' '+((a[1]+b[1])/2).toFixed(1)};
+   d+='M'+(closed?m(p[0],p[1]):p[0][0].toFixed(1)+' '+p[0][1].toFixed(1));
+   for(var q=1;q<p.length-1;q++)d+='Q'+p[q][0].toFixed(1)+' '+p[q][1].toFixed(1)+' '+m(p[q],p[q+1]);});
+  if(d)g.appendChild(el('path',{d:d,'class':l%5?'':'ix',pathLength:1,style:'animation-delay:'+(l*.06)+'s'}))}
+ svg.appendChild(g);return g}
+var t1=document.getElementById('topo');
+topo(t1,1600,1000,[[1180,310,-1,210],[400,640,-.8,260],[1380,820,-.6,170],[780,150,.55,200],[160,160,.45,170],[900,900,.4,220]],20);
+var st=el('path',{'class':'str',d:'M1010 -20C1060 120 960 210 1050 300S1260 420 1210 540 1010 700 1080 820 1240 960 1200 1030',id:'rv',pathLength:1});t1.appendChild(st);
+var tx=el('text',{dy:'-10'}),tp=el('textPath',{href:'#rv',startOffset:'38%'});tp.textContent='РУЧЕЙ';tx.appendChild(tp);t1.appendChild(tx);
+topo(document.getElementById('topo2'),1600,600,[[300,300,-1,220],[1250,260,-.8,240],[800,520,.5,200]],14);
+/* перекрестие с координатами под курсором */
+var hero=document.querySelector('.hero'),cr=document.getElementById('cross'),co=document.getElementById('coord');
+if(matchMedia('(hover:hover)').matches)hero.addEventListener('mousemove',function(e){var r=hero.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+ cr.style.transform='translate('+x+'px,'+y+'px)';co.textContent=(57.8263+(r.height*.31-y)*.00002).toFixed(4)+'° с.ш. '+(56.6748+(x-r.width*.735)*.00003).toFixed(4)+'° в.д.'});
+/* вид из окна: ёлки в три плана */
+var sc=document.getElementById('scene'),seed=7;function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647}
+var sky=el('linearGradient',{id:'sk',x1:0,y1:0,x2:0,y2:1}),s1=el('stop',{offset:0}),s2=el('stop',{offset:1});sky.appendChild(s1);sky.appendChild(s2);
+var defs=el('defs',{});defs.appendChild(sky);sc.appendChild(defs);sc.appendChild(el('rect',{width:1200,height:820,fill:'url(#sk)'}));
+var stars=el('g',{});for(var k=0;k<70;k++)stars.appendChild(el('circle',{cx:(rnd()*1200).toFixed(0),cy:(rnd()*380).toFixed(0),r:(rnd()*1.4+.4).toFixed(1),fill:'#fff'}));sc.appendChild(stars);
+var moon=el('circle',{cx:880,cy:150,r:26,fill:'#f4efe0'});sc.appendChild(moon);
+function tree(x,b,h,w){var n=Math.max(7,Math.round(h/22)),d='M'+x+' '+(b-h),L=[],R=[];
+ for(var q=1;q<=n;q++){var y=b-h+h*q/n*.94,ww=w*Math.pow(q/n,.9)*(.85+rnd()*.3);R.push((x+ww).toFixed(1)+' '+(y+3).toFixed(1),(x+ww*.42).toFixed(1)+' '+(y-h/n*.25).toFixed(1));L.unshift((x-ww*.42).toFixed(1)+' '+(y-h/n*.25).toFixed(1),(x-ww*(.9+rnd()*.2)).toFixed(1)+' '+(y+3).toFixed(1))}
+ return d+'L'+R.join('L')+'L'+(x+3)+' '+b+'L'+(x-3)+' '+b+'L'+L.join('L')+'Z'}
+var layers=[[560,90,170,26,14],[640,160,300,34,10],[760,300,560,60,7]],G=[];
+layers.forEach(function(ly,li){var d='',x=-40;while(x<1260){var h=ly[1]+rnd()*(ly[2]-ly[1]);d+=tree(x,ly[0]+rnd()*30,h,h*.2);x+=ly[3]+rnd()*ly[3]*1.2;if(li==2&&x>380&&x<760)x=760}
+ var p=el('path',{d:d});if(li==1)sc.appendChild(el('rect',{x:0,y:590,width:1200,height:240,'class':'gr'}));sc.appendChild(p);G.push(p)});
+var gr=sc.querySelector('.gr'),ground=el('path',{d:'M0 700C260 660 420 720 620 690S980 650 1200 690V820H0Z'});sc.appendChild(ground);
+var water=el('path',{d:'M380 820C460 780 520 760 600 744S760 716 840 708C780 730 700 748 640 770S520 800 500 820Z',opacity:.85});sc.appendChild(water);
+var PAL=[['#b9cfd9','#eef2ee','#a7b9b2','#5c7b6e','#1c3a2d','#f4f6f3',0,.0],['#6f87a8','#efc29a','#8a93a3','#4b5a62','#1a2a2a','#dcdfe6',0,.15],
+ ['#26355a','#c27b7c','#4b5370','#2d3548','#141b22','#9aa1b8',.35,.6],['#070f1a','#1b2a44','#1f2c45','#141f30','#080e15','#3a4660',1,1],['#d6c6d9','#f6e5d2','#bcb5c3','#7c8794','#28383a','#f3eff1',0,.2]];
+function hx(c){return[parseInt(c.substr(1,2),16),parseInt(c.substr(3,2),16),parseInt(c.substr(5,2),16)]}
+function mix(a,b,t){a=hx(a);b=hx(b);return'rgb('+a.map(function(v,i){return Math.round(v+(b[i]-v)*t)}).join(',')+')'}
+var day=document.getElementById('day'),tod=document.getElementById('tod'),chs=[].slice.call(document.querySelectorAll('.chap'));
+function paint(p){var f=p*(PAL.length-1),i=Math.min(PAL.length-2,Math.floor(f)),t=f-i,A=PAL[i],B=PAL[i+1];
+ s1.setAttribute('stop-color',mix(A[0],B[0],t));s2.setAttribute('stop-color',mix(A[1],B[1],t));G[0].setAttribute('fill',mix(A[2],B[2],t));G[1].setAttribute('fill',mix(A[3],B[3],t));G[2].setAttribute('fill',mix(A[4],B[4],t));
+ gr.setAttribute('fill',mix(A[3],B[3],t));ground.setAttribute('fill',mix(A[5],B[5],t));water.setAttribute('fill',mix(A[1],B[1],t));stars.setAttribute('opacity',A[6]+(B[6]-A[6])*t);moon.setAttribute('opacity',A[7]+(B[7]-A[7])*t)}
+var last=-1;function onScroll(){var r=day.getBoundingClientRect(),vh=innerHeight,c=0;chs.forEach(function(ch,i){if(ch.getBoundingClientRect().top<vh*.55)c=i});
+ var a=chs[0].getBoundingClientRect().top,b=chs[chs.length-1].getBoundingClientRect().top,p=Math.max(0,Math.min(1,(vh*.55-a)/(b-a||1)));if(Math.abs(p-last)>.002){paint(p);last=p}tod.textContent=chs[c].dataset.t}
+paint(0);addEventListener('scroll',onScroll,{passive:true});onScroll();
+/* бронь */
+var cal=document.getElementById('cal'),MO=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'],MS=['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'],WD=['вс','пн','вт','ср','чт','пт','сб'];
+var now=new Date();now.setHours(12,0,0,0);var days=[],A=null,B=null;
+for(var dd=0;dd<70;dd++){var D=new Date(now.getTime()+dd*864e5);if(dd===0||D.getDate()===1){var m=document.createElement('span');m.className='mo';m.textContent=MS[D.getMonth()];cal.appendChild(m)}
+ var bt=document.createElement('button');bt.type='button';bt.innerHTML='<small>'+WD[D.getDay()]+'</small>'+D.getDate();if(D.getDay()==0||D.getDay()==6)bt.className='we';bt.setAttribute('aria-label',D.getDate()+' '+MO[D.getMonth()]+', '+WD[D.getDay()]);bt.dataset.i=dd;cal.appendChild(bt);days.push([D,bt])}
+cal.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var i=+b.dataset.i;if(A===null||B!==null||i<=A){A=i;B=null}else B=i;upd()});
+function fd(i){var D=days[i][0];return WD[D.getDay()]+', '+D.getDate()+' '+MO[D.getMonth()]}
+function nights(n){var m=n%10,h=n%100;return n+' '+(m==1&&h!=11?'ночь':m>=2&&m<=4&&(h<10||h>=20)?'ночи':'ночей')}
+var g=2,gO=document.getElementById('g');
+document.querySelectorAll('[data-g]').forEach(function(b){b.addEventListener('click',function(){g=Math.max(1,Math.min(20,g+ +b.dataset.g));gO.textContent=g;upd()})});
+document.querySelectorAll('[data-one]').forEach(function(r){r.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;r.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c===b)});upd()})});
+document.querySelectorAll('[data-many]').forEach(function(r){r.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');upd()})});
+function pick(n,many){return[].slice.call(document.querySelectorAll('[data-'+(many?'many':'one')+'="'+n+'"] [aria-pressed=true]')).map(function(b){return b.textContent.trim().toLowerCase()})}
+function $(i){return document.getElementById(i)}
+function upd(){days.forEach(function(x,i){x[1].className=(x[0].getDay()%6===0?'we ':'')+(i===A?'a':i===B?'b':A!==null&&B!==null&&i>A&&i<B?'in':'');x[1].setAttribute('aria-pressed',i===A||i===B)});
+ var h=pick('h')[0],x=pick('x',1),o=pick('o')[0];
+ $('t1').textContent=A===null?'—':fd(A);$('t2').textContent=B===null?'—':fd(B)+' ('+nights(B-A)+')';$('t3').textContent=g;$('t4').textContent=h;$('t5').textContent=x.join(', ')||'—';$('t6').textContent=o;
+ $('dsum').textContent=A===null?'выберите заезд':B===null?'теперь выезд':nights(B-A);
+ var txt='Здравствуйте! Хотим к вам в «Ямки в Ёлках».\nЗаезд: '+(A===null?'даты пока не выбрали':fd(A))+(B!==null?'\nВыезд: '+fd(B)+' ('+nights(B-A)+')':'')+'\nГостей: '+g+'\nДомиков: '+h+(x.length?'\nДобавить: '+x.join(', '):'')+'\nПовод: '+o+'\nПодскажите, пожалуйста, свободно ли и сколько будет стоить?';
+ $('wa').href='https://wa.me/79922305501?text='+encodeURIComponent(txt)}
+upd();
 })();
 </script>
 <script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
