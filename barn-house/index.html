@@ -188,7 +188,20 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
 }
 </style>
 <script>document.documentElement.className='js'</script>
-</head>
+<style>
+.motion-stage{position:relative;overflow:hidden;isolation:isolate}
+.scene-menu{position:absolute;z-index:5;bottom:16px;left:16px;display:flex;gap:4px;padding:4px;background:#141a18ed;border:1px solid #ffffff46;border-radius:30px}
+.scene-menu button{background:none;color:white;font:600 14px/1.15 system-ui;border:0;border-radius:25px;padding:11px 13px;cursor:pointer}
+.scene-menu button[aria-pressed=true]{background:#e8e6cf;color:#141916}
+.scene-menu button:focus-visible{outline:2px solid white;outline-offset:2px}
+.shot .scene-menu{top:14px;bottom:auto;border-radius:4px;background:#181c20ef}
+.shot .scene-menu button{border-radius:2px}
+.shot .scene-menu button[aria-pressed=true]{background:#ffb16a;color:#201710}
+@media(prefers-reduced-motion:no-preference){
+.hero h1{animation:title-rise .85s cubic-bezier(.16,1,.3,1) both}
+@keyframes title-rise{from{opacity:.15;transform:translateY(.22em)}}
+}
+</style></head>
 <body>
 <div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
 <header>
@@ -205,7 +218,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
    <div class="lbl" style="color:var(--amb)">Емельяновский округ · под Красноярском</div>
    <h1>Barn<em>house</em></h1>
    <p class="lead">Барнхаус в лесу: баня, банный чан под гирляндами, тишина и тёплый дом ночью. Можно с детьми и с питомцем.</p>
-   <div class="meta"><span><b>5,0</b>71 оценка в 2ГИС</span><span data-status></span></div>
+   <div class="meta"><span><b>5,0</b>76 оценок в 2ГИС</span><span data-status></span></div>
    <div class="cta">
     <a class="btn b-amb" href="#quiz">Выбрать даты</a>
     <a class="btn b-ln" href="https://wa.me/79333253703?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B0%D1%82%D1%8B%20%D0%B2%20Barn%20house" target="_blank" rel="noopener">Написать в WhatsApp</a>
@@ -213,7 +226,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
    </div>
    <div class="sub"><a href="https://yandex.ru/maps/?rtext=~56.276524,92.588488" target="_blank" rel="noopener">Маршрут</a><span>Цветочная улица, 33</span><a href="https://t.me/ValeriaBARN" target="_blank" rel="noopener">Telegram</a></div>
   </div>
-  <div class="hero-ph"><img src="img/p4.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 896w" sizes="(max-width:900px) 100vw, (max-width:2000px) 45vw, 900px" alt="Барнхаус с панорамным окном и гирляндами в сумерках среди сосен" width="896" height="1195"></div>
+  <div class="hero-ph motion-stage"><img src="img/p4.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 896w" sizes="(max-width:900px) 100vw, (max-width:2000px) 45vw, 900px" alt="Барнхаус с панорамным окном и гирляндами в сумерках среди сосен" width="896" height="1195"><div class="scene-menu" role="group" aria-label="Выбор фотографии"><button type="button" data-photo="p4" data-alt="Барнхаус среди сосен" aria-pressed="true">Дом</button><button type="button" data-photo="p11" data-alt="Банный чан под гирляндами" aria-pressed="false">Чан</button><button type="button" data-photo="p5" data-alt="Вид из гамака на дом" aria-pressed="false">Гамак</button></div></div>
  </div>
 </section>
 
@@ -266,7 +279,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
  <div class="wrap">
   <div class="pr-top" data-r>
    <div><div class="lbl">за что хвалят</div><h2 class="h2" style="margin-top:14px">Хочется вернуться</h2></div>
-   <div class="big5"><b>5,0</b><span>71 оценка в 2ГИС. <a href="https://2gis.ru/krasnoyarsk/firm/70000001100793600" target="_blank" rel="noopener">Отзывы</a></span></div>
+   <div class="big5"><b>5,0</b><span>76 оценок в 2ГИС. <a href="https://2gis.ru/krasnoyarsk/firm/70000001100793600" target="_blank" rel="noopener">Отзывы</a></span></div>
   </div>
   <div class="pr-g">
    <article class="pr" data-r><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3L4 20v17h32V20z" fill="#ffb54a"/></svg><h3>Атмосфера и тишина</h3><p>Свежий воздух, лес, никакой суеты. Многие называют это место точкой перезагрузки и пишут, что уезжать не хотелось.</p></article>
@@ -360,5 +373,32 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 
 </script>
 <script type="application/json" id="site">{"hours":{"mon":[["00:00","24:00"]],"tue":[["00:00","24:00"]],"wed":[["00:00","24:00"]],"thu":[["00:00","24:00"]],"fri":[["00:00","24:00"]],"sat":[["00:00","24:00"]],"sun":[["00:00","24:00"]]},"is247":true}</script>
 <script src="app.js"></script>
+
+<script>
+(() => {
+ const stage=document.querySelector('.motion-stage');
+ const photo=stage.querySelector('img');
+ const menu=stage.querySelector('.scene-menu');
+ let revision=0;
+ menu.addEventListener('click', async event => {
+   const choice=event.target.closest('button');
+   if (!choice) return;
+   const current=++revision;
+   const next=new Image();
+   next.src='img/'+choice.dataset.photo+'.jpg';
+   try {await next.decode()} catch {return}
+   if(current!==revision)return;
+   photo.removeAttribute('srcset');
+   photo.src=next.src;
+   photo.alt=choice.dataset.alt;
+   menu.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button===choice)));
+   if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+     photo.getAnimations().forEach(anim=>anim.cancel());
+     const frames=stage.classList.contains('shot')?[{clipPath:'inset(0 95% 0 0)'},{clipPath:'inset(0 0 0 0)'}]:[{opacity:.42,scale:'1.045'},{opacity:1,scale:'1'}];
+     photo.animate(frames,{duration:550,easing:'cubic-bezier(.2,.65,.2,1)'});
+   }
+ });
+})();
+</script>
 </body>
 </html>

@@ -202,7 +202,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 footer{padding-bottom:90px}}
 </style>
 <script>document.documentElement.className='js'</script>
-</head>
+<style>
+.motion-stage{position:relative;overflow:hidden;isolation:isolate}
+.scene-menu{position:absolute;z-index:5;bottom:16px;left:16px;display:flex;gap:4px;padding:4px;background:#141a18ed;border:1px solid #ffffff46;border-radius:30px}
+.scene-menu button{background:none;color:white;font:600 14px/1.15 system-ui;border:0;border-radius:25px;padding:11px 13px;cursor:pointer}
+.scene-menu button[aria-pressed=true]{background:#e8e6cf;color:#141916}
+.scene-menu button:focus-visible{outline:2px solid white;outline-offset:2px}
+.shot .scene-menu{top:14px;bottom:auto;border-radius:4px;background:#181c20ef}
+.shot .scene-menu button{border-radius:2px}
+.shot .scene-menu button[aria-pressed=true]{background:#ffb16a;color:#201710}
+@media(prefers-reduced-motion:no-preference){
+.hero h1{animation:title-rise .85s cubic-bezier(.16,1,.3,1) both}
+@keyframes title-rise{from{opacity:.15;transform:translateY(.22em)}}
+}
+</style></head>
 <body>
 <div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
 
@@ -235,9 +248,9 @@ footer{padding-bottom:90px}}
         <span data-status></span>
       </div>
     </div>
-    <div class="shot" data-r>
+    <div class="shot motion-stage" data-r>
       <div class="pipe" aria-hidden="true"></div>
-      <img src="img/p2.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1440w" sizes="(max-width:640px) 100vw, 1000px" alt="Деревянный павильон «Печи Опт» с вывеской и витринами на Свердловском тракте" width="1440" height="1080">
+      <img src="img/p2.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1440w" sizes="(max-width:640px) 100vw, 1000px" alt="Деревянный павильон «Печи Опт» с вывеской и витринами на Свердловском тракте" width="1440" height="1080"><div class="scene-menu" role="group" aria-label="Выбор фотографии"><button type="button" data-photo="p2" data-alt="Павильон на Свердловском тракте" aria-pressed="true">Павильон</button><button type="button" data-photo="p7" data-alt="Печи и дымоходы в зале" aria-pressed="false">Печи</button><button type="button" data-photo="p6" data-alt="Стенд с печными дверцами" aria-pressed="false">Дверцы</button></div>
       <div class="tag"><span class="mono">Ежедневно 9:00–18:00</span>Приезжайте посмотреть печи вживую — всё стоит в&nbsp;зале.</div>
     </div>
   </div>
@@ -427,5 +440,32 @@ footer{padding-bottom:90px}}
 </script>
 <script type="application/json" id="site">{"hours":{"mon":[["09:00","18:00"]],"tue":[["09:00","18:00"]],"wed":[["09:00","18:00"]],"thu":[["09:00","18:00"]],"fri":[["09:00","18:00"]],"sat":[["09:00","18:00"]],"sun":[["09:00","18:00"]]},"is247":false}</script>
 <script src="app.js"></script>
+
+<script>
+(() => {
+ const stage=document.querySelector('.motion-stage');
+ const photo=stage.querySelector('img');
+ const menu=stage.querySelector('.scene-menu');
+ let revision=0;
+ menu.addEventListener('click', async event => {
+   const choice=event.target.closest('button');
+   if (!choice) return;
+   const current=++revision;
+   const next=new Image();
+   next.src='img/'+choice.dataset.photo+'.jpg';
+   try {await next.decode()} catch {return}
+   if(current!==revision)return;
+   photo.removeAttribute('srcset');
+   photo.src=next.src;
+   photo.alt=choice.dataset.alt;
+   menu.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button===choice)));
+   if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+     photo.getAnimations().forEach(anim=>anim.cancel());
+     const frames=stage.classList.contains('shot')?[{clipPath:'inset(0 95% 0 0)'},{clipPath:'inset(0 0 0 0)'}]:[{opacity:.42,scale:'1.045'},{opacity:1,scale:'1'}];
+     photo.animate(frames,{duration:550,easing:'cubic-bezier(.2,.65,.2,1)'});
+   }
+ });
+})();
+</script>
 </body>
 </html>
